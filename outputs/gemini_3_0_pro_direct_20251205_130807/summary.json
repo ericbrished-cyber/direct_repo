@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "total": 1,
+    "success": 0,
+    "failed": 1,
+    "skipped": 0
+  },
+  "failures": [
+    [
+      4987981,
+      "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+    ]
+  ],
+  "eval": null,
+  "run_folder": "outputs/gemini_3_0_pro_direct_20251205_130807"
+}
