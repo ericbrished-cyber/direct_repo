@@ -1,0 +1,31 @@
+examples:
+  - text: "Mean body weight gain: WGJ +50.6 g vs WA -0.7 g (n=30 per arm). Duration of illness (h): AJ 49.4 ± 32.6, WGJ 47.5 ± 38.9, WA 26.5 ± 27.4 (n=30/arm). Fecal losses (g/kg/h): AJ 3.94 ± 2.35, WGJ 3.59 ± 2.35, WA 2.19 ± 1.63 (n=30/arm)."
+    extractions:
+      - extraction_class: "intervention_mean"
+        extraction_text: "50.6"
+        attributes:
+          Intervention: "WGJ"
+          Comparator: "WA"
+          Outcome: "Mean body weight gain"
+
+      - extraction_class: "intervention_n"
+        extraction_text: "30"
+        attributes:
+          Intervention: "WGJ"
+          Comparator: "WA"
+          Outcome: "Mean body weight gain"
+
+      - extraction_class: "comparator_mean"
+        extraction_text: "-0.7"
+        attributes:
+          Intervention: "WGJ"
+          Comparator: "WA"
+          Outcome: "Mean body weight gain"
+
+      - extraction_class: "comparator_n"
+        extraction_text: "30"
+        attributes:
+          Intervention: "WGJ"
+          Comparator: "WA"
+          Outcome: "Mean body weight gain"
+

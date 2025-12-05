@@ -1,0 +1,10 @@
+pmcid,intervention,comparator,outcome,intervention_group_size,comparator_group_size,intervention_events,comparator_events,intervention_rate,comparator_rate,intervention_mean,comparator_mean,intervention_standard_deviation,comparator_standard_deviation,source_file
+2363753,Amifostine,Control,Days with fever,20.0,20.0,,,,,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Hospital stay,20.0,20.0,,,,,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Grade III/IV stomatitis,20.0,20.0,,,,,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Grade III/IV stomatitis,,,5.0,,25.0,,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Grade III/IV stomatitis,,,,10.0,,50.0,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Glomerular filtration rate fall,20.0,20.0,,,,,,,,,2363753_gpt5direct.jsonl
+2363753,Amifostine,Control,Glomerular filtration rate fall,,,,,,,10.0,37.0,,,2363753_gpt5direct.jsonl
+2596788,education,control,GERD-knowledge,102.0,109.0,,,,,17.0,13.1,,,2596788_gpt5direct.jsonl
+2596788,education,control,GERD-knowledge,102.0,109.0,,,,,17.1,14.0,,,2596788_gpt5direct.jsonl

@@ -1,0 +1,3 @@
+pmcid,filename,gold_facts,pred_facts,tp,fp_in_gold,fn,extra_predictions,precision,recall,f1
+2363753,2363753_gpt5direct.jsonl,12,16,10,2,2,4,0.8333333333333334,0.8333333333333334,0.8333333333333334
+2596788,2596788_gpt5direct.jsonl,4,6,4,0,0,0,1.0,1.0,1.0

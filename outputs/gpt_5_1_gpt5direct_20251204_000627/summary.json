@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "skipped": 0
+  },
+  "failures": [],
+  "eval": {
+    "run_name": "gpt_5_1_gpt5direct_20251204_000627",
+    "num_articles": 2,
+    "total_gold_facts": 16,
+    "total_pred_facts": 24,
+    "total_tp": 10,
+    "total_fp_in_gold": 2,
+    "total_fn": 6,
+    "total_extra_predictions": 12,
+    "macro_precision": 0.4166666666666667,
+    "macro_recall": 0.4166666666666667,
+    "macro_f1": 0.4166666666666667,
+    "micro_precision": 0.8333333333333334,
+    "micro_recall": 0.625,
+    "micro_f1": 0.7142857142857143
+  },
+  "run_folder": "outputs/gpt_5_1_gpt5direct_20251204_000627"
+}
