@@ -8,7 +8,8 @@ from run_experiments import ExperimentConfig, run_experiments
 # model="claude-opus-4-5",
 def main():
     config = ExperimentConfig(
-        model="gemini-3.0-pro",
+        # Use a widely available Gemini model; override with --model if you have access to newer previews.
+        model="gemini-1.5-pro-002",
         prompt_label="direct", 
         pdf_folder="data/PDF_excel_test",
         markdown_folder=None,  # PDFs are sent directly to the model
