@@ -5,10 +5,10 @@ Use `python run_experiments.py --help` for full CLI options.
 
 from run_experiments import ExperimentConfig, run_experiments
 
-
+# model="claude-opus-4-5",
 def main():
     config = ExperimentConfig(
-        model="claude-opus-4-5",
+        model="gemini-3.0-pro",
         prompt_label="direct", 
         pdf_folder="data/PDF_excel_test",
         markdown_folder=None,  # PDFs are sent directly to the model

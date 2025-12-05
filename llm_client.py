@@ -7,6 +7,7 @@ import base64
 import httpx
 from anthropic import Anthropic
 from openai import OpenAI
+from google import genai
 
 
 def _infer_provider(model: str) -> str:
@@ -47,7 +48,10 @@ class LLMClient:
                 raise EnvironmentError("ANTHROPIC_API_KEY is not set")
             self._client = Anthropic(api_key=api_key)
         elif self.provider == "google":
-            raise NotImplementedError("Provider 'google' not implemented yet.")
+            api_key = os.environ.get("GOOGLE_API_KEY")
+            if not api_key:
+                raise EnvironmentError("GOOGLE_API_KEY is not set")
+            self._client = genai.Client(api_key=api_key)
         else:
             raise ValueError(f"Unknown provider: {self.provider}")
 
@@ -116,5 +120,52 @@ class LLMClient:
                 if text:
                     return text
             raise ValueError("Anthropic response did not contain text content")
+
+        if self.provider == "google":
+            file_ref = None
+            if pdf_path:
+                file_ref = self._client.files.upload(file=pdf_path)
+
+            contents = []
+            if file_ref:
+                contents.append(file_ref)
+            contents.append(prompt)
+
+            gen_config = kwargs.get("config")
+            if gen_config is None:
+                temperature = kwargs.get("temperature", self.temperature)
+                max_output_tokens = kwargs.get("max_output_tokens")
+                cfg_kwargs = {}
+                # Only include keys when explicitly set to avoid overriding client defaults.
+                if temperature is not None:
+                    cfg_kwargs["temperature"] = temperature
+                if max_output_tokens is not None:
+                    cfg_kwargs["max_output_tokens"] = max_output_tokens
+                gen_config = genai.types.GenerateContentConfig(**cfg_kwargs) if cfg_kwargs else None
+
+            response = self._client.models.generate_content(
+                model=self.model,
+                contents=contents,
+                config=gen_config,
+            )
+
+            text = getattr(response, "text", None)
+            if text:
+                return text
+
+            for candidate in getattr(response, "candidates", []) or []:
+                content = getattr(candidate, "content", None)
+                if not content:
+                    continue
+                for part in getattr(content, "parts", []) or []:
+                    part_text = getattr(part, "text", None)
+                    if part_text:
+                        return part_text
+                    if isinstance(part, dict):
+                        part_text = part.get("text")
+                        if part_text:
+                            return part_text
+
+            raise ValueError("Google response did not contain text content")
 
         raise NotImplementedError(f"Provider '{self.provider}' not implemented")

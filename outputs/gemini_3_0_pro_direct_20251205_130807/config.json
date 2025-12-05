@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.0-pro",
+  "prompt_label": "direct",
+  "pdf_folder": "data/PDF_excel_test",
+  "markdown_folder": null,
+  "gold_path": "gold-standard/annotated_rct_dataset.json",
+  "prompt_template": "prompt_templates/guided_prompt_GPT5_direct.md",
+  "output_root": "outputs",
+  "run_name": null,
+  "pmcids": null,
+  "temperature": 0.0
+}
