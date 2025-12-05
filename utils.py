@@ -8,7 +8,7 @@ from typing import Any, Dict, Iterable, List, Optional
 import yaml
 
 PMCID_RE = re.compile(r"(?:PMCID)?(\d{6,8})", re.IGNORECASE)
-DEFAULT_GOLD_PATH = Path("gold-standard/annotated_rct_dataset.json")
+DEFAULT_GOLD_PATH = Path("gold-standard/gold_standard_clean.json")
 
 
 def list_pmcids(pdf_folder: str) -> List[int]:
@@ -42,10 +42,18 @@ def get_icos(
     pmcid: int | str,
     annotations: Optional[Iterable[Dict[str, Any]]] = None,
 ) -> List[Dict[str, Any]]:
-    """Return all ICO rows for a given PMCID from the gold annotations."""
+    """Return ICO rows (intervention, comparator, outcome only) for a given PMCID."""
     rows = annotations if annotations is not None else load_annotations()
     pmcid_int = int(pmcid)
-    return [row for row in rows if int(row.get("pmcid", -1)) == pmcid_int]
+    return [
+        {
+            "intervention": row.get("intervention"),
+            "comparator": row.get("comparator"),
+            "outcome": row.get("outcome"),
+        }
+        for row in rows
+        if int(row.get("pmcid", -1)) == pmcid_int
+    ]
 
 
 def get_prompt_all(prompt_path: str = "prompt_templates/all_prompt_new.md") -> str:

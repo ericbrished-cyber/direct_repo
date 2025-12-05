@@ -1,0 +1,21 @@
+pmcid,outcome,intervention,comparator,outcome_type,intervention_events,intervention_group_size,comparator_events,comparator_group_size,intervention_mean,intervention_standard_deviation,comparator_mean,comparator_standard_deviation,intervention_rate,comparator_rate,source_file
+4987981,PASI mean change,metformin,placebo,continuous,,21,,23,3.9,,1.7,,,,4987981_direct.jsonl
+4987981,PASI mean change,pioglitazone,placebo,continuous,,16,,23,4.3,,1.7,,,,4987981_direct.jsonl
+4987981,ESI mean change,metformin,placebo,continuous,,21,,23,4.2,,2.3,,,,4987981_direct.jsonl
+4987981,ESI mean change,pioglitazone,placebo,continuous,,16,,23,4.3,,2.3,,,,4987981_direct.jsonl
+4987981,PGA mean change,metformin,placebo,continuous,,21,,23,2.3,,1.3,,,,4987981_direct.jsonl
+4987981,PGA mean change,pioglitazone,placebo,continuous,,16,,23,2.3,,1.3,,,,4987981_direct.jsonl
+4987981,75% reduction in PASI,metformin,placebo,binary,18.0,21,1.0,23,,,,,,,4987981_direct.jsonl
+4987981,75% reduction in PASI,pioglitazone,placebo,binary,13.0,16,1.0,23,,,,,,,4987981_direct.jsonl
+4987981,75% reduction in ESI,metformin,placebo,binary,13.0,21,2.0,23,,,,,,,4987981_direct.jsonl
+4987981,75% reduction in ESI,pioglitazone,placebo,binary,9.0,16,2.0,23,,,,,,,4987981_direct.jsonl
+4987981,FPG mean change,metformin,placebo,continuous,,21,,23,15.2,19.2,2.2,10.0,,,4987981_direct.jsonl
+4987981,FPG mean change,pioglitazone,placebo,continuous,,16,,23,20.5,17.4,2.2,10.0,,,4987981_direct.jsonl
+4987981,total cholesterol mean change,metformin,placebo,continuous,,21,,23,21.8,25.2,1.4,29.2,,,4987981_direct.jsonl
+4987981,total cholesterol mean change,pioglitazone,placebo,continuous,,16,,23,24.0,29.5,1.4,29.2,,,4987981_direct.jsonl
+4987981,triglycerides mean change,metformin,placebo,continuous,,21,,23,44.3,45.4,1.1,43.3,,,4987981_direct.jsonl
+4987981,triglycerides mean change,pioglitazone,placebo,continuous,,16,,23,53.3,36.9,1.1,43.3,,,4987981_direct.jsonl
+4987981,IL-6 mean change,metformin,placebo,continuous,,7,,10,-75.7,,-24.21,,,,4987981_direct.jsonl
+4987981,IL-6 mean change,pioglitazone,placebo,continuous,,9,,10,-0.8,,-24.21,,,,4987981_direct.jsonl
+4987981,TNF-α mean change,metformin,placebo,continuous,,7,,10,-41.5,,-201.1,,,,4987981_direct.jsonl
+4987981,TNF-α mean change,pioglitazone,placebo,continuous,,9,,10,-196.6,,-201.1,,,,4987981_direct.jsonl

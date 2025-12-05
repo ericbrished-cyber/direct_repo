@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "total": 2,
+    "success": 0,
+    "failed": 2,
+    "skipped": 0
+  },
+  "failures": [
+    [
+      2363753,
+      "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.0.content.1.document.source: Field required'}, 'request_id': 'req_011CVmjNfquwJu6hsN5EHi6J'}"
+    ],
+    [
+      2596788,
+      "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.0.content.1.document.source: Field required'}, 'request_id': 'req_011CVmjQiHZokpBuWyodMuBB'}"
+    ]
+  ],
+  "eval": null,
+  "run_folder": "outputs/claude_opus_4_5_direct_20251204_143225"
+}

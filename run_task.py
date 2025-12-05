@@ -8,7 +8,7 @@ from run_experiments import ExperimentConfig, run_experiments
 
 def main():
     config = ExperimentConfig(
-        model="claude-4-5-sonnet",
+        model="claude-opus-4-5",
         prompt_label="direct", 
         pdf_folder="data/PDF_excel_test",
         markdown_folder=None,  # PDFs are sent directly to the model

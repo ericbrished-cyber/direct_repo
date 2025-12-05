@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 from typing import Any, Dict, Optional
+import base64
 
 import httpx
 from anthropic import Anthropic
@@ -89,14 +90,19 @@ class LLMClient:
         if self.provider == "anthropic":
             content_blocks = [{"type": "text", "text": prompt}]
             if pdf_path:
-                file_id = self._upload_anthropic_file(pdf_path)
-                content_blocks.append(
+                # Inline PDF as base64 to enable vision analysis (Claude messages API expects base64/url/content)
+                with open(pdf_path, "rb") as f:
+                    pdf_b64 = base64.standard_b64encode(f.read()).decode("utf-8")
+                content_blocks.insert(
+                    0,
                     {
                         "type": "document",
-                        "document": {
-                            "source": {"type": "file", "file_id": file_id},
+                        "source": {
+                            "type": "base64",
+                            "media_type": "application/pdf",
+                            "data": pdf_b64,
                         },
-                    }
+                    },
                 )
 
             response = self._client.messages.create(
@@ -112,30 +118,3 @@ class LLMClient:
             raise ValueError("Anthropic response did not contain text content")
 
         raise NotImplementedError(f"Provider '{self.provider}' not implemented")
-
-    def _upload_anthropic_file(self, pdf_path: str) -> str:
-        """
-        Upload a file to Anthropic to obtain a file_id for attachments.
-        Uses raw HTTP because the Anthropic SDK lacks file helpers in this version.
-        """
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
-        if not api_key:
-            raise EnvironmentError("ANTHROPIC_API_KEY is not set")
-
-        url = "https://api.anthropic.com/v1/files"
-        headers = {
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "anthropic-beta": "files-api-2025-04-14",
-        }
-        with open(pdf_path, "rb") as f:
-            files = {"file": (os.path.basename(pdf_path), f, "application/pdf")}
-            data = {"purpose": "message"}
-            resp = httpx.post(url, headers=headers, files=files, data=data, timeout=60)
-        if resp.status_code >= 400:
-            raise RuntimeError(f"Anthropic file upload failed: {resp.status_code} {resp.text}")
-        data = resp.json()
-        file_id = data.get("id")
-        if not file_id:
-            raise RuntimeError(f"Anthropic file upload response missing id: {data}")
-        return file_id

@@ -1,9 +1,7 @@
-# Prompt
+You are extracting pairwise ICO results from a randomized controlled trial.
+Return only JSON of the form: {"extractions":[ ... ]}.
 
-You are extracting **pairwise ICO results** from a randomized controlled trial.  
-Return **only** JSON of the form: `{"extractions":[ ... ]}`.
-
-Each item in "extractions" is one ICO row with EXACTLY these fields (use null for missing/not applicable):
+Each item in "extractions" is one ICO row with exactly these fields (use null for missing/not applicable):
 
 {
   "id": null,
@@ -23,47 +21,100 @@ Each item in "extractions" is one ICO row with EXACTLY these fields (use null fo
   "comparator_standard_deviation": null
 }
 
-## What to extract
+---------------------------------------------------------------------
+FIXED ICO TRIPLETS (MUST NOT BE ALTERED)
 
-You are given a list of target ICO triplets:
+The ICO triplets provided in {ico_list} are fixed and authoritative. You must:
 
-{ico_list}
+- use them exactly as written,
+- never modify their wording,
+- never expand, merge, split, or normalize them,
+- never create ANY new ICO triplets,
+- never change intervention, comparator, or outcome names,
+- never infer additional outcomes or arms from the text.
 
-Each triplet is `(Intervention, Comparator, Outcome)` (optionally with extra disambiguators like Timepoint/Population).
+If the study reports similar or related outcomes, ignore them unless they match an ICO triplet exactly.
 
-For **each such ICO triplet, and only these**:
+---------------------------------------------------------------------
+STRICT ITERATION LOGIC (ABSOLUTELY REQUIRED)
 
-- If the outcome is continuous, fill the mean/SD/group sizes when explicitly reported; leave other fields null.
-- If the outcome is binary, fill events/group sizes (and rates if explicitly reported); leave other fields null.
+Treat {ico_list} as the *complete and final* set of ICO triplets.
 
-## Rules
+Your task:
 
-- One JSON object per ICO triplet with at least one reported numeric value; omit triplets with no reported values.
-- Use plain numbers (no percent signs, no units).
-- Do not invent or derive numbers; use only what is explicitly stated in Abstract/Results.
-- Output raw JSON only (no markdown fencing, no extra text).
+1. **Iterate through the ICO triplets in {ico_list}, in the exact order they appear.**
+2. For each ICO triplet:
+   - Search the article ONLY for numeric information corresponding to that exact triplet.
+   - If at least one numeric value exists → produce exactly one JSON object for that triplet.
+   - If no numeric values exist → produce no JSON object for that triplet.
+3. **You must NOT generate any ICO extraction for outcomes or arms not in {ico_list}.**
+4. Your final JSON must contain **AT MOST len({ico_list}) objects**.
 
-## ICO uniqueness (critical)
+You are NOT allowed to scan the article for all outcomes.
+You may only scan the article for evidence that matches each triplet in {ico_list} verbatim.
 
-You must produce **at most one** JSON extraction per ICO triplet as defined in `{ico_list}`.
+---------------------------------------------------------------------
+EXTRACTION RULES
 
-A valid ICO extraction is uniquely identified by the tuple:
+Continuous outcomes: extract when explicitly reported
+- intervention_group_size
+- comparator_group_size
+- intervention_mean
+- comparator_mean
+- intervention_standard_deviation
+- comparator_standard_deviation
 
-  (intervention, comparator, outcome, and any additional disambiguators such as Timepoint or Population)
+Binary outcomes: extract when explicitly reported
+- intervention_group_size
+- comparator_group_size
+- intervention_events
+- comparator_events
+- numeric rates (if reported)
 
-If two potential extractions share the same values for all of these fields, they are considered **identical ICOs**, even if:
+---------------------------------------------------------------------
+ALLOWED INFERENCE (EVENTS FROM RATE × N)
 
-- the text mentions the numbers multiple times,
-- the numbers are formatted differently,
-- the numbers appear in different sections.
+If only rate (%) and group size are reported, you may infer:
 
-In such cases, **output only ONE extraction** and ignore all duplicates.
+events = round((rate / 100) * group_size)
 
-You may output additional ICO extractions **only** if at least one of these fields differs:
+Ensure 0 ≤ events ≤ group_size.
+Keep the original numeric rate in a *_rate field if present.
 
-- intervention  
-- comparator  
-- outcome  
-- an explicit disambiguator (e.g., Timepoint = baseline vs week 12)
+Do NOT infer means, SDs, or group sizes.
 
-If none of these fields differ, **do not create another extraction**.
+---------------------------------------------------------------------
+GENERAL RULES
+
+- Use plain numbers only (no %, no units).
+- Use only information from Abstract and Results.
+- If a numeric value is missing, set it to null.
+- If a numeric value is ambiguous and cannot be confidently extracted, set it to "?".
+- Output raw JSON only (no markdown, no text, no comments).
+
+---------------------------------------------------------------------
+ICO UNIQUENESS (CRITICAL)
+
+You must produce at most one JSON extraction per ICO triplet.
+
+If multiple mentions of the same value exist → extract it once.
+If slightly different values exist → choose the most precise or the value from the main Results section.
+
+---------------------------------------------------------------------
+TIMEPOINT RULES
+
+- If the ICO triplet specifies a timepoint → use only that timepoint.
+- If not specified:
+  - prefer post-intervention values,
+  - if multiple post-intervention values exist → choose the latest one.
+
+---------------------------------------------------------------------
+MISSING DATA
+
+- If no numeric values exist for an ICO triplet → omit that triplet entirely.
+- If at least one numeric field exists but others are unclear → include the triplet and set unclear fields to "?".
+
+---------------------------------------------------------------------
+FINAL RULE
+
+Do NOT output any ICO triplets other than those explicitly listed in {ico_list}.
