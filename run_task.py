@@ -6,10 +6,11 @@ Use `python run_experiments.py --help` for full CLI options.
 from run_experiments import ExperimentConfig, run_experiments
 
 # model="claude-opus-4-5",
+# model="gemini-2.5-pro",
 def main():
     config = ExperimentConfig(
         # Use a widely available Gemini model; override with --model if you have access to newer previews.
-        model="gemini-1.5-pro-002",
+        model="gemini-3.0",
         prompt_label="direct", 
         pdf_folder="data/PDF_excel_test",
         markdown_folder=None,  # PDFs are sent directly to the model
