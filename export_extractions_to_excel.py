@@ -1,7 +1,7 @@
 import argparse
 import json
 from pathlib import Path
-from typing import Dict, Tuple, Any, List
+from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
 
@@ -63,7 +63,7 @@ def _merge_cell(current: Any, new_val: Any) -> Any:
     return current
 
 
-def load_extractions(extractions_dir: Path, suffix: str | None = None) -> List[Dict[str, Any]]:
+def load_extractions(extractions_dir: Path, suffix: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Load JSONL outputs (new direct schema or legacy LangExtract) and aggregate them into rows keyed by (pmcid, intervention, comparator, outcome).
 
