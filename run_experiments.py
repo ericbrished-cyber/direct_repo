@@ -39,6 +39,8 @@ class ExperimentConfig:
     pmcids: Optional[List[int]] = None
     temperature: float = 0.0
     max_tokens: Optional[int] = None
+    fewshot_pdf_paths: Optional[List[str]] = None
+    fewshot_prompt_template: Optional[str] = None
 
     @classmethod
     def from_args(cls, args: argparse.Namespace) -> "ExperimentConfig":
@@ -134,7 +136,7 @@ def _is_retryable_error(exc: Exception) -> bool:
 def _generate_with_retry(
     client: LLMClient,
     prompt: str,
-    pdf_path: str,
+    pdf_paths: List[str],
     max_tokens: Optional[int],
     label: str,
     max_attempts: int = 3,
@@ -148,7 +150,7 @@ def _generate_with_retry(
         attempt_label = label if attempt == 1 else f"{label} (retry {attempt}/{max_attempts})"
         try:
             with Spinner(attempt_label):
-                return client.generate(prompt, pdf_path=str(pdf_path), max_tokens=max_tokens)
+                return client.generate(prompt, pdf_paths=pdf_paths, max_tokens=max_tokens)
         except Exception as exc:  # noqa: BLE001
             last_exc = exc
             if attempt >= max_attempts or not _is_retryable_error(exc):
@@ -175,15 +177,26 @@ def run_experiments(config: ExperimentConfig) -> Dict:
 
     for idx, pmcid in enumerate(pmcids, start=1):
         ico_rows = get_icos(pmcid, annotations=annotations)
-        pdf_path = _find_pdf_path(pmcid, config.pdf_folder)
-        if not pdf_path:
-            failures.append((pmcid, "PDF not found"))
-            stats["failed"] += 1
-            continue
+        pdf_paths: List[str] = []
+        if config.fewshot_pdf_paths:
+            pdf_paths.extend([str(Path(p)) for p in config.fewshot_pdf_paths])
+        pdf_path_main = _find_pdf_path(pmcid, config.pdf_folder)
+        if pdf_path_main:
+            pdf_paths.append(str(pdf_path_main))
+        else:
+            # No main PDF; if no few-shot PDFs either, fail
+            if not pdf_paths:
+                failures.append((pmcid, "PDF not found"))
+                stats["failed"] += 1
+                continue
 
         article_text = None
 
-        prompt = build_prompt(article_text=article_text, ico_rows=ico_rows, base_prompt_path=config.prompt_template)
+        prompt_template_path = config.prompt_template
+        if config.fewshot_pdf_paths and config.fewshot_prompt_template:
+            prompt_template_path = config.fewshot_prompt_template
+
+        prompt = build_prompt(article_text=article_text, ico_rows=ico_rows, base_prompt_path=prompt_template_path)
 
         raw_response = ""
         try:
@@ -191,7 +204,7 @@ def run_experiments(config: ExperimentConfig) -> Dict:
             raw_response = _generate_with_retry(
                 client=client,
                 prompt=prompt,
-                pdf_path=str(pdf_path),
+                pdf_paths=pdf_paths,
                 max_tokens=config.max_tokens,
                 label=label,
             )
@@ -211,6 +224,7 @@ def run_experiments(config: ExperimentConfig) -> Dict:
             stats["failed"] += 1
             failures.append((pmcid, str(exc)))
             log_path = folders["logs"] / f"{pmcid}_error.txt"
+            log_path.parent.mkdir(parents=True, exist_ok=True)
             log_path.write_text(f"Prompt:\\n{prompt}\\n\\nResponse:\\n{raw_response}\\n\\nError: {exc}", encoding="utf-8")
 
     # Evaluation (always, per flowchart)
@@ -257,6 +271,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--pmcids", nargs="+", type=int, default=None, help="Optional list of PMCIDs to process")
     parser.add_argument("--temperature", type=float, default=None, help="Sampling temperature")
     parser.add_argument("--max-tokens", type=int, default=None, help="Max tokens for the model response")
+    parser.add_argument("--fewshot-pdf-paths", nargs="+", default=None, help="Optional list of PDF paths for few-shot context")
+    parser.add_argument(
+        "--fewshot-prompt-template",
+        default=None,
+        help="Optional prompt template path to use when few-shot PDFs are provided",
+    )
     return parser
 
 

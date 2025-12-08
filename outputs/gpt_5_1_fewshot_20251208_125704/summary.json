@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "total": 10,
+    "success": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "failures": [],
+  "eval": {
+    "run_name": "gpt_5_1_fewshot_20251208_125704",
+    "num_articles": 10,
+    "total_gold_fields": 210,
+    "total_pred_fields": 268,
+    "total_tp": 164,
+    "total_fp": 64,
+    "total_fn": 46,
+    "total_tn": 278,
+    "macro_precision": 0.8303132161955691,
+    "macro_recall": 0.6743360805860805,
+    "macro_f1": 0.6986268099618524,
+    "micro_precision": 0.7192982456140351,
+    "micro_recall": 0.780952380952381,
+    "micro_f1": 0.7488584474885845
+  },
+  "run_folder": "outputs/gpt_5_1_fewshot_20251208_125704"
+}

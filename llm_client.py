@@ -71,15 +71,24 @@ class LLMClient:
                     return text
         raise ValueError("OpenAI response did not contain text content")
 
-    def generate(self, prompt: str, pdf_path: Optional[str] = None, **kwargs: Dict[str, Any]) -> str:
+    def generate(
+        self,
+        prompt: str,
+        pdf_path: Optional[str] = None,
+        pdf_paths: Optional[list[str]] = None,
+        **kwargs: Dict[str, Any],
+    ) -> str:
         """
         Execute a text-only prompt and return the raw string output.
         """
+        pdf_list = pdf_paths or ([] if pdf_path is None else [pdf_path])
+
         if self.provider == "openai":
             attachments = []
-            file_obj = None
-            if pdf_path:
-                file_obj = self._client.files.create(file=open(pdf_path, "rb"), purpose="user_data")
+            file_objs = []
+            for path in pdf_list:
+                file_obj = self._client.files.create(file=open(path, "rb"), purpose="user_data")
+                file_objs.append(file_obj)
                 attachments.append({"type": "input_file", "file_id": file_obj.id})
 
             messages = [{"role": "user", "content": [{"type": "input_text", "text": prompt}, *attachments]}]
@@ -93,13 +102,11 @@ class LLMClient:
             return self._parse_openai_response(response)
 
         if self.provider == "anthropic":
-            content_blocks = [{"type": "text", "text": prompt}]
-            if pdf_path:
-                # Inline PDF as base64 to enable vision analysis (Claude messages API expects base64/url/content)
-                with open(pdf_path, "rb") as f:
+            content_blocks = []
+            for path in pdf_list:
+                with open(path, "rb") as f:
                     pdf_b64 = base64.standard_b64encode(f.read()).decode("utf-8")
-                content_blocks.insert(
-                    0,
+                content_blocks.append(
                     {
                         "type": "document",
                         "source": {
@@ -107,8 +114,9 @@ class LLMClient:
                             "media_type": "application/pdf",
                             "data": pdf_b64,
                         },
-                    },
+                    }
                 )
+            content_blocks.append({"type": "text", "text": prompt})
 
             response = self._client.messages.create(
                 model=self.model,
@@ -123,13 +131,12 @@ class LLMClient:
             raise ValueError("Anthropic response did not contain text content")
 
         if self.provider == "google":
-            file_ref = None
-            if pdf_path:
-                file_ref = self._client.files.upload(file=pdf_path)
+            file_refs = []
+            for path in pdf_list:
+                file_refs.append(self._client.files.upload(file=path))
 
             contents = []
-            if file_ref:
-                contents.append(file_ref)
+            contents.extend(file_refs)
             contents.append(prompt)
 
             gen_config = kwargs.get("config")

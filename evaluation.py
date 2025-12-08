@@ -1,354 +1,253 @@
+"""
+Evaluation utilities.
+
+Primary flow mirrors eval.py: fuzzy row matching on outcome/intervention/comparator,
+numeric comparison with tolerance, and field-level TP/TN/FP/FN counts.
+"""
+
+from __future__ import annotations
+
+import difflib
 import json
+import math
+import os
 import re
+import sys
 import unicodedata
-from pathlib import Path
-from typing import Any, Dict, Iterable, Tuple
+from typing import Any, Dict, List
 
-from utils import get_pmcid_from_filename
+# Default gold path (single source of truth)
+GOLD_PATH_DEFAULT = "gold-standard/gold_standard_clean.json"
+# === Configuration (aligned with eval.py) ===
+MATCH_THRESHOLD = 0.8
+NUMBER_TOLERANCE = 0.01
 
-# =======================
-# Normalisation helpers
-# =======================
-
-def normalize_name(s: str):
-    """
-    Normalize arm / outcome / intervention names for matching.
-
-    - Unicode normalize (NFKC)
-    - Lowercase
-    - Fix common microgram encodings: _g, µg, μg → ug
-    - Collapse whitespace
-    """
-    if s is None:
-        return None
-
-    # 1) Unicode normalization (handles weird composed characters)
-    s = unicodedata.normalize("NFKC", str(s))
-
-    # 2) Lowercase
-    s = s.lower()
-
-    # 3) Fix common microgram variants:
-    #    "300 _g", "300µg", "300 μg" → "300 ug"
-    s = re.sub(r'(\d+)\s*[_µμ]\s*g\b', r'\1 ug', s)
-
-    # Fallback: any stray "_g", "µg", "μg" → " ug"
-    s = re.sub(r'[_µμ]\s*g\b', ' ug', s)
-
-    # Same for "/kg" forms: "3 _g/kg", "3µg/kg" → "3 ug/kg"
-    s = re.sub(r'(\d+)\s*[_µμ]\s*g/kg\b', r'\1 ug/kg', s)
-    s = re.sub(r'[_µμ]\s*g/kg\b', ' ug/kg', s)
-
-    # 4) Collapse whitespace
-    s = " ".join(s.split())
-
-    return s
+# Numeric fields we score
+NUMERIC_FIELDS = [
+    "intervention_group_size",
+    "comparator_group_size",
+    "intervention_events",
+    "comparator_events",
+    "intervention_mean",
+    "comparator_mean",
+    "intervention_standard_deviation",
+    "comparator_standard_deviation",
+]
 
 
-def normalize_value(v):
-    """
-    Normalize numeric-ish values for comparison.
-
-    - Treat common missing markers as None.
-    - Strip '%' and parse as float if possible.
-    """
-    if v is None:
-        return None
-
-    s = str(v).strip().lower()
-    if s in {"", "none", "nr", "not reported", "n/a", "na", "not extractable"}:
-        return None
-
-    # Remove percentage sign but keep the numeric scale
-    if s.endswith("%"):
-        s = s[:-1].strip()
-
+# === New evaluation logic (from eval.py) ===
+def load_json_file(filepath: str) -> Any:
     try:
-        return float(s)
-    except ValueError:
-        return None
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Error: File not found at {filepath}")
+        sys.exit(1)
+    except json.JSONDecodeError:
+        print(f"Error: Failed to decode JSON from {filepath}")
+        sys.exit(1)
 
 
+def normalize_text(text: Any) -> str:
+    if not isinstance(text, str):
+        return ""
+    return " ".join(text.lower().strip().split())
 
 
-
-# =======================
-# Schema mapping
-# =======================
-
-# Map gold/extraction classes to (role, field)
-# role: "I" = intervention arm, "C" = comparator arm
-# field: logical variable name used in evaluation
-CLASS_INFO = {
-    # counts
-    "intervention_events": ("I", "events"),
-    "comparator_events":   ("C", "events"),
-
-    # group sizes
-    "intervention_group_size": ("I", "group_size"),
-    "intervention_groupsize":  ("I", "group_size"),
-    "group_size_intervention": ("I", "group_size"),
-
-    "comparator_group_size": ("C", "group_size"),
-    "comparator_groupsize":  ("C", "group_size"),
-    "group_size_comparator": ("C", "group_size"),
-
-    # means
-    "intervention_mean": ("I", "mean"),
-    "mean_intervention": ("I", "mean"),
-
-    "comparator_mean": ("C", "mean"),
-    "mean_comparator": ("C", "mean"),
-
-    # standard deviations
-    "intervention_standard_deviation": ("I", "sd"),
-    "sd_intervention":                 ("I", "sd"),
-
-    "comparator_standard_deviation": ("C", "sd"),
-    "sd_comparator":                 ("C", "sd"),
-
-    # rates (percentage outcomes)
-    "intervention_rate": ("I", "rate"),
-    "comparator_rate":   ("C", "rate"),
-}
-
-# Direct-field output mapping (no extraction_class key)
-DIRECT_FIELD_INFO = {
-    "intervention_group_size": ("I", "group_size"),
-    "comparator_group_size": ("C", "group_size"),
-    "intervention_events": ("I", "events"),
-    "comparator_events": ("C", "events"),
-    "intervention_rate": ("I", "rate"),
-    "comparator_rate": ("C", "rate"),
-    "intervention_mean": ("I", "mean"),
-    "comparator_mean": ("C", "mean"),
-    "intervention_standard_deviation": ("I", "sd"),
-    "comparator_standard_deviation": ("C", "sd"),
-}
+def calculate_similarity(pred_row: Dict[str, Any], gold_row: Dict[str, Any]) -> float:
+    pred_str = (
+        f"{normalize_text(pred_row.get('outcome'))} | "
+        f"{normalize_text(pred_row.get('intervention'))} | "
+        f"{normalize_text(pred_row.get('comparator'))}"
+    )
+    gold_str = (
+        f"{normalize_text(gold_row.get('outcome'))} | "
+        f"{normalize_text(gold_row.get('intervention'))} | "
+        f"{normalize_text(gold_row.get('comparator'))}"
+    )
+    return difflib.SequenceMatcher(None, pred_str, gold_str).ratio()
 
 
-# ==================================
-# Gold side: build arm-level facts
-# ==================================
+def compare_numbers(pred_val: Any, gold_val: Any) -> bool:
+    """Return True if numbers match within tolerance."""
+    try:
+        if isinstance(pred_val, str):
+            pred_val = float(pred_val.replace(",", ""))
+        if isinstance(gold_val, str):
+            gold_val = float(gold_val.replace(",", ""))
+        return math.isclose(float(pred_val), float(gold_val), rel_tol=NUMBER_TOLERANCE)
+    except (ValueError, TypeError):
+        return False
 
-def build_gold_arm_facts(gold_path: str, pmcid: int):
+
+def _group_gold_by_pmcid(gold_rows: List[Dict[str, Any]]) -> Dict[Any, List[Dict[str, Any]]]:
+    grouped: Dict[Any, List[Dict[str, Any]]] = {}
+    for idx, entry in enumerate(gold_rows):
+        pmcid = entry.get("pmcid")
+        grouped.setdefault(pmcid, []).append({"data": entry, "index": idx})
+    return grouped
+
+
+def _normalize_pmcid(value: Any) -> Any:
+    # Try to keep integers as integers; otherwise return as-is.
+    try:
+        return int(value)
+    except Exception:
+        return value
+
+
+def _extract_rows(pred_obj: Dict[str, Any]) -> List[Dict[str, Any]]:
+    return pred_obj.get("rows") or pred_obj.get("extractions") or []
+
+
+def _group_predictions(pred_data: Any) -> List[Dict[str, Any]]:
     """
-    Build a set of arm-level facts from the gold-standard JSON.
-
-    Each fact is a tuple:
-      (pmcid, outcome_norm, role, arm_name_norm, field, value)
-
-    where:
-      - pmcid: int
-      - outcome_norm: normalized outcome name
-      - role: "I" or "C"
-      - arm_name_norm: normalized intervention/comparator name
-      - field: logical field name ("events", "group_size", "mean", "sd", "rate")
-      - value: normalized float value
+    Normalize predictions into a list of {"pmcid": pmcid, "rows": [...]},
+    accepting the current output schema (single dict with 'extractions') and
+    the eval.py grouped/flat variants.
     """
-    with open(gold_path, "r", encoding="utf-8") as f:
-        gold_rows = json.load(f)
+    if isinstance(pred_data, dict):
+        rows = _extract_rows(pred_data)
+        pmcid = _normalize_pmcid(pred_data.get("pmcid") or (rows[0].get("pmcid") if rows else None))
+        return [{"pmcid": pmcid, "rows": rows}]
 
-    facts = set()
+    if isinstance(pred_data, list) and pred_data and "rows" not in pred_data[0] and "extractions" not in pred_data[0]:
+        grouped: Dict[Any, Dict[str, Any]] = {}
+        for row in pred_data:
+            pid = _normalize_pmcid(row.get("pmcid"))
+            grouped.setdefault(pid, {"pmcid": pid, "rows": []})
+            grouped[pid]["rows"].append(row)
+        return list(grouped.values())
 
-    for row in gold_rows:
-        if int(row["pmcid"]) != int(pmcid):
+    if isinstance(pred_data, list):
+        grouped_objs = []
+        for obj in pred_data:
+            rows = _extract_rows(obj)
+            pmcid = _normalize_pmcid(obj.get("pmcid") or (rows[0].get("pmcid") if rows else None))
+            grouped_objs.append({"pmcid": pmcid, "rows": rows})
+        return grouped_objs
+
+    raise ValueError("Unsupported prediction format")
+
+
+def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, Any]:
+    gold_data_all = load_json_file(gold_file)
+    pred_data = load_json_file(pred_file)
+
+    grouped_predictions = _group_predictions(pred_data)
+    pmcid_filter = {pred_obj.get("pmcid") for pred_obj in grouped_predictions}
+    gold_data = [row for row in gold_data_all if row.get("pmcid") in pmcid_filter]
+
+    gold_by_pmcid = _group_gold_by_pmcid(gold_data)
+    all_matched_gold_indices = set()
+
+    tp = tn = fp = fn = 0
+
+    if verbose:
+        print(f"--- Evaluation ({gold_file} vs {pred_file}) ---")
+
+    for pred_obj in grouped_predictions:
+        pmcid = pred_obj.get("pmcid")
+        rows = pred_obj.get("rows") or []
+
+        if pmcid not in gold_by_pmcid:
+            for row in rows:
+                for field in NUMERIC_FIELDS:
+                    if row.get(field) is not None:
+                        fp += 1
             continue
 
-        outcome = normalize_name(row.get("outcome"))
-        I_name = normalize_name(row.get("intervention"))
-        C_name = normalize_name(row.get("comparator"))
+        gold_candidates = gold_by_pmcid[pmcid]
+        study_matched_indices = set()
 
-        # For each possible class, see if this row has a value
-        for cls, (role, field) in CLASS_INFO.items():
-            raw_val = row.get(cls)
-            val = normalize_value(raw_val)
-            if val is None:
-                continue
+        for pred_row in rows:
+            best_score = -1.0
+            best_gold_wrapper = None
 
-            # Pick the right arm for this role
-            if role == "I":
-                arm = I_name
+            for wrapper in gold_candidates:
+                if wrapper["index"] in study_matched_indices:
+                    continue
+                score = calculate_similarity(pred_row, wrapper["data"])
+                if score > best_score:
+                    best_score = score
+                    best_gold_wrapper = wrapper
+
+            if best_score >= MATCH_THRESHOLD and best_gold_wrapper:
+                gold_row = best_gold_wrapper["data"]
+                study_matched_indices.add(best_gold_wrapper["index"])
+                all_matched_gold_indices.add(best_gold_wrapper["index"])
+
+                for field in NUMERIC_FIELDS:
+                    p_val = pred_row.get(field)
+                    g_val = gold_row.get(field)
+                    is_p_none = p_val is None
+                    is_g_none = g_val is None
+
+                    if is_p_none and is_g_none:
+                        tn += 1
+                    elif not is_p_none and is_g_none:
+                        fp += 1
+                    elif is_p_none and not is_g_none:
+                        fn += 1
+                    else:
+                        if compare_numbers(p_val, g_val):
+                            tp += 1
+                        else:
+                            fn += 1
             else:
-                arm = C_name
+                for field in NUMERIC_FIELDS:
+                    if pred_row.get(field) is not None:
+                        fp += 1
 
-            if arm is None:
-                continue  # skip rows with missing arm name (defensive)
-
-            fact = (pmcid, outcome, role, arm, field, val)
-            facts.add(fact)
-
-    return facts
-
-
-# ==================================
-# Prediction side: build arm-facts
-# ==================================
-
-def build_pred_arm_facts(jsonl_path: str):
-    """
-    Build a set of arm-level facts from model outputs (direct JSON or legacy LangExtract JSONL).
-
-    Each fact is in the same form as gold:
-      (pmcid, outcome_norm, role, arm_name_norm, field, value)
-    """
-    pmcid = get_pmcid_from_filename(jsonl_path)
-    facts = set()
-
-    with open(jsonl_path, "r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            doc = json.loads(line)
-            ex_list = doc.get("extractions", [])
-            if not ex_list:
-                continue
-
-            # Detect direct-field schema (no extraction_class)
-            if all("extraction_class" not in ex for ex in ex_list):
-                facts |= _build_facts_from_direct_fields(pmcid, ex_list)
-                continue
-
-            for e in ex_list:
-                cls = e.get("extraction_class")
-                info = CLASS_INFO.get(cls)
-                if info is None:
-                    # ignore extraction classes we don't evaluate
-                    continue
-
-                role, field = info
-                attrs = e.get("attributes") or {}
-                outcome = normalize_name(attrs.get("Outcome"))
-
-                if role == "I":
-                    arm = normalize_name(attrs.get("Intervention"))
+    total_gold_rows = len(gold_data)
+    for i in range(total_gold_rows):
+        if i not in all_matched_gold_indices:
+            gold_row = gold_data[i]
+            for field in NUMERIC_FIELDS:
+                g_val = gold_row.get(field)
+                if g_val is not None:
+                    fn += 1
                 else:
-                    arm = normalize_name(attrs.get("Comparator"))
+                    tn += 1
 
-                if outcome is None or arm is None:
-                    # can't place this extraction on an arm + outcome
-                    continue
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
 
-                val = normalize_value(e.get("extraction_text"))
-                if val is None:
-                    continue
+    if verbose:
+        print("\n=== Confusion Matrix (Field Level) ===")
+        print(f"True Positives  (TP): {tp:<5} (Correctly extracted)")
+        print(f"True Negatives  (TN): {tn:<5} (Correctly identified as unavailable)")
+        print(f"False Positives (FP): {fp:<5} (Hallucinations / Data generated when none existed)")
+        print(f"False Negatives (FN): {fn:<5} (Missed or Incorrectly extracted)")
 
-                fact = (pmcid, outcome, role, arm, field, val)
-                facts.add(fact)
-
-    return facts
-
-
-def _build_facts_from_direct_fields(
-    pmcid: int,
-    rows: Iterable[Dict[str, Any]],
-):
-    """
-    Convert the new JSON shape (one dict per ICO row) into evaluation facts.
-    """
-    facts = set()
-    for row in rows:
-        outcome = normalize_name(row.get("outcome"))
-        I_name = normalize_name(row.get("intervention"))
-        C_name = normalize_name(row.get("comparator"))
-
-        if outcome is None or (I_name is None and C_name is None):
-            continue
-
-        for field_name, (role, logical_field) in DIRECT_FIELD_INFO.items():
-            val = normalize_value(row.get(field_name))
-            if val is None:
-                continue
-            arm = I_name if role == "I" else C_name
-            if arm is None:
-                continue
-            facts.add((pmcid, outcome, role, arm, logical_field, val))
-    return facts
-
-
-# ==================================
-# Open-world evaluation logic
-# ==================================
-
-def _dict_from_facts(facts):
-    """
-    Convert a set of facts:
-      (pmcid, outcome, role, arm, field, value)
-    into a dict: key -> value, where
-      key = (pmcid, outcome, role, arm, field).
-    """
-    d: Dict[Tuple[Any, ...], Any] = {}
-    for pmcid, outcome, role, arm, field, value in facts:
-        key = (pmcid, outcome, role, arm, field)
-        d[key] = value
-    return d
-
-
-def evaluate_arm_facts_open_world(gold_facts, pred_facts):
-    """
-    Open-world evaluation:
-
-    - Only cells (pmcid, outcome, role, arm, field) that exist in the gold
-      are used for TP / FP / FN.
-    - Predictions for cells not in the gold at all are treated as
-      'extra_predictions', not as false positives.
-
-    Returns a dict with:
-      - tp: number of correctly predicted gold cells
-      - fp_in_gold: number of gold cells that were predicted with the wrong value
-      - fn: number of gold cells that were not predicted correctly
-      - extra_predictions: number of predicted cells that don't exist in gold
-      - precision, recall, f1: over gold-defined cells only
-      - plus key-level breakdowns for inspection
-    """
-    gold_dict = _dict_from_facts(gold_facts)
-    pred_dict = _dict_from_facts(pred_facts)
-
-    gold_keys = set(gold_dict.keys())
-    pred_keys = set(pred_dict.keys())
-
-    shared_keys = gold_keys & pred_keys
-    extra_keys = pred_keys - gold_keys         # predicted cells outside gold
-    missing_keys = gold_keys - pred_keys       # gold cells with no prediction
-
-    # Figure out which shared keys are exact matches and which are mismatches
-    tp_keys = set()
-    fp_keys = set()          # wrong value on a gold cell
-    mismatched_keys = set()  # same as fp_keys, for clarity
-
-    for k in shared_keys:
-        g_val = gold_dict[k]
-        p_val = pred_dict[k]
-        if g_val == p_val:
-            tp_keys.add(k)
-        else:
-            fp_keys.add(k)
-            mismatched_keys.add(k)
-
-    # FN: gold cell either missing or mismatched
-    fn_keys = missing_keys | mismatched_keys
-
-    tp = len(tp_keys)
-    fp_in_gold = len(fp_keys)
-    fn = len(fn_keys)
-    extra = len(extra_keys)
-
-    precision = tp / (tp + fp_in_gold) if (tp + fp_in_gold) else 0.0
-    recall = tp / (tp + fn) if (tp + fn) else 0.0
-    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
+        print("\n=== Scores ===")
+        print(f"Precision: {precision:.4f}")
+        print(f"Recall:    {recall:.4f}")
+        print(f"F1 Score:  {f1:.4f}")
 
     return {
         "tp": tp,
-        "fp_in_gold": fp_in_gold,
+        "tn": tn,
+        "fp": fp,
         "fn": fn,
-        "extra_predictions": extra,
         "precision": precision,
         "recall": recall,
         "f1": f1,
-        "tp_keys": tp_keys,
-        "fp_keys": fp_keys,
-        "fn_keys": fn_keys,
-        "extra_keys": extra_keys,
-        "gold_dict": gold_dict,
-        "pred_dict": pred_dict,
     }
+
+
+def main():
+    gold_path = GOLD_PATH_DEFAULT
+    pred_path = sys.argv[1] if len(sys.argv) > 1 else None
+    if pred_path is None:
+        print("Usage: python evaluation.py <predictions.json>")
+        sys.exit(1)
+    if not os.path.exists(gold_path):
+        print(f"Please ensure {gold_path} is available.")
+        sys.exit(1)
+    evaluate(gold_path, pred_path, verbose=True)
+
+
+if __name__ == "__main__":
+    main()

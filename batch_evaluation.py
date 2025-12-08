@@ -3,14 +3,10 @@ import os
 from pathlib import Path
 from datetime import datetime
 import pandas as pd
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
-from evaluation import (
-    build_gold_arm_facts,
-    build_pred_arm_facts,
-    evaluate_arm_facts_open_world,  # NEW
-    get_pmcid_from_filename,
-)
+from evaluation import evaluate, NUMERIC_FIELDS, GOLD_PATH_DEFAULT
+from utils import get_pmcid_from_filename
 
 
 class BatchEvaluator:
@@ -18,7 +14,7 @@ class BatchEvaluator:
     Handles batch evaluation of multiple articles and aggregates results.
     """
 
-    def __init__(self, gold_path: str, output_dir: str = "evaluation_results"):
+    def __init__(self, gold_path: str = GOLD_PATH_DEFAULT, output_dir: str = "evaluation_results"):
         """
         Args:
             gold_path: Path to gold standard JSON file
@@ -55,9 +51,11 @@ class BatchEvaluator:
         if run_name is None:
             run_name = f"eval_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
-        # Find all JSONL files
-        pattern = f"*{suffix_filter}.jsonl" if suffix_filter else "*.jsonl"
-        pred_files = list(Path(predictions_dir).glob(pattern))
+        # Find prediction files (.json or .jsonl)
+        pattern = f"*{suffix_filter}*.json*" if suffix_filter else "*.json*"
+        pred_files = sorted(
+            [p for p in Path(predictions_dir).glob(pattern) if p.suffix in {".json", ".jsonl"}]
+        )
 
         if not pred_files:
             raise ValueError(f"No prediction files found in {predictions_dir} with pattern {pattern}")
@@ -78,23 +76,22 @@ class BatchEvaluator:
                     print(f"[{i}/{len(pred_files)}] PMCID={pmcid} ⚠ not in gold standard, skipping")
                     continue
 
-                # Build facts
-                gold_facts = build_gold_arm_facts(self.gold_path, pmcid)
-                pred_facts = build_pred_arm_facts(str(pred_file))
+                pred_data = self._load_json(pred_file)
+                gold_fields = self._count_gold_fields(pmcid)
+                pred_fields = self._count_pred_fields(pred_data)
 
-                # Evaluate with open-world evaluator
-                metrics = evaluate_arm_facts_open_world(gold_facts, pred_facts)
+                metrics = evaluate(self.gold_path, str(pred_file), verbose=False)
 
                 # Store results
                 result = {
                     "pmcid": pmcid,
                     "filename": pred_file.name,
-                    "gold_facts": len(gold_facts),
-                    "pred_facts": len(pred_facts),
+                    "gold_fields": gold_fields,
+                    "pred_fields": pred_fields,
                     "tp": metrics["tp"],
-                    "fp_in_gold": metrics["fp_in_gold"],            # NEW
+                    "fp": metrics["fp"],
                     "fn": metrics["fn"],
-                    "extra_predictions": metrics["extra_predictions"],  # NEW
+                    "tn": metrics["tn"],
                     "precision": metrics["precision"],
                     "recall": metrics["recall"],
                     "f1": metrics["f1"],
@@ -105,8 +102,7 @@ class BatchEvaluator:
                     f"[{i}/{len(pred_files)}] PMCID={pmcid} - "
                     f"P: {metrics['precision']:.3f}, "
                     f"R: {metrics['recall']:.3f}, "
-                    f"F1: {metrics['f1']:.3f}, "
-                    f"Extra: {metrics['extra_predictions']}"
+                    f"F1: {metrics['f1']:.3f}"
                 )
 
             except Exception as e:
@@ -125,9 +121,6 @@ class BatchEvaluator:
         """
         Compute macro and micro averages from individual results.
 
-        IMPORTANT:
-        - FP for precision/recall is ONLY fp_in_gold (wrong values on gold cells)
-        - extra_predictions are counted and reported separately
         """
         if not results_list:
             return {
@@ -139,12 +132,12 @@ class BatchEvaluator:
                 "micro_precision": 0.0,
                 "micro_recall": 0.0,
                 "micro_f1": 0.0,
-                "total_gold_facts": 0,
-                "total_pred_facts": 0,
+                "total_gold_fields": 0,
+                "total_pred_fields": 0,
                 "total_tp": 0,
-                "total_fp_in_gold": 0,
+                "total_fp": 0,
                 "total_fn": 0,
-                "total_extra_predictions": 0,
+                "total_tn": 0,
             }
 
         # Macro averages (average of per-article metrics)
@@ -154,11 +147,11 @@ class BatchEvaluator:
 
         # Micro averages (aggregate TP/FP/FN across all articles)
         total_tp = sum(r["tp"] for r in results_list)
-        total_fp_in_gold = sum(r["fp_in_gold"] for r in results_list)
+        total_fp = sum(r["fp"] for r in results_list)
         total_fn = sum(r["fn"] for r in results_list)
-        total_extra = sum(r["extra_predictions"] for r in results_list)
+        total_tn = sum(r["tn"] for r in results_list)
 
-        micro_precision = total_tp / (total_tp + total_fp_in_gold) if (total_tp + total_fp_in_gold) else 0.0
+        micro_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) else 0.0
         micro_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) else 0.0
         micro_f1 = (
             2 * micro_precision * micro_recall / (micro_precision + micro_recall)
@@ -169,12 +162,12 @@ class BatchEvaluator:
         return {
             "run_name": run_name,
             "num_articles": len(results_list),
-            "total_gold_facts": sum(r["gold_facts"] for r in results_list),
-            "total_pred_facts": sum(r["pred_facts"] for r in results_list),
+            "total_gold_fields": sum(r["gold_fields"] for r in results_list),
+            "total_pred_fields": sum(r["pred_fields"] for r in results_list),
             "total_tp": total_tp,
-            "total_fp_in_gold": total_fp_in_gold,
+            "total_fp": total_fp,
             "total_fn": total_fn,
-            "total_extra_predictions": total_extra,
+            "total_tn": total_tn,
             "macro_precision": macro_precision,
             "macro_recall": macro_recall,
             "macro_f1": macro_f1,
@@ -220,16 +213,16 @@ class BatchEvaluator:
                 f.write(f"Filter: {suffix_filter}\n")
             f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write(f"Articles evaluated: {aggregated['num_articles']}\n")
-            f.write(f"Total gold facts: {aggregated['total_gold_facts']}\n")
-            f.write(f"Total predicted facts: {aggregated['total_pred_facts']}\n\n")
+            f.write(f"Total gold fields: {aggregated['total_gold_fields']}\n")
+            f.write(f"Total predicted fields: {aggregated['total_pred_fields']}\n\n")
 
             f.write("-" * 80 + "\n")
-            f.write("MICRO-AVERAGED METRICS (aggregate TP / FP_in_gold / FN)\n")
+            f.write("MICRO-AVERAGED METRICS (aggregate TP / FP / FN)\n")
             f.write("-" * 80 + "\n")
             f.write(f"  TP:           {aggregated['total_tp']}\n")
-            f.write(f"  FP_in_gold:   {aggregated['total_fp_in_gold']}\n")
+            f.write(f"  FP:           {aggregated['total_fp']}\n")
             f.write(f"  FN:           {aggregated['total_fn']}\n")
-            f.write(f"  Extra preds:  {aggregated['total_extra_predictions']}\n")
+            f.write(f"  TN:           {aggregated['total_tn']}\n")
             f.write(f"  Precision:    {aggregated['micro_precision']:.4f}\n")
             f.write(f"  Recall:       {aggregated['micro_recall']:.4f}\n")
             f.write(f"  F1:           {aggregated['micro_f1']:.4f}\n\n")
@@ -248,10 +241,10 @@ class BatchEvaluator:
                 f.write("-" * 80 + "\n")
                 for r in sorted(results_list, key=lambda x: x["pmcid"]):
                     f.write(f"\nPMCID={r['pmcid']} ({r['filename']}):\n")
-                    f.write(f"  Gold/Pred facts: {r['gold_facts']}/{r['pred_facts']}\n")
+                    f.write(f"  Gold/Pred fields: {r['gold_fields']}/{r['pred_fields']}\n")
                     f.write(
-                        f"  TP / FP_in_gold / FN / Extra: "
-                        f"{r['tp']} / {r['fp_in_gold']} / {r['fn']} / {r['extra_predictions']}\n"
+                        f"  TP / FP / FN / TN: "
+                        f"{r['tp']} / {r['fp']} / {r['fn']} / {r['tn']}\n"
                     )
                     f.write(
                         f"  P/R/F1: {r['precision']:.3f} / "
@@ -275,21 +268,58 @@ class BatchEvaluator:
         print(f"  F1:        {aggregated['macro_f1']:.4f}")
         print("=" * 80)
 
+    def _load_json(self, path: Path) -> Any:
+        with open(path, "r", encoding="utf-8") as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                f.seek(0)
+                return [json.loads(line) for line in f if line.strip()]
+
+    def _count_gold_fields(self, pmcid: int) -> int:
+        return sum(
+            1
+            for row in self.gold_data
+            if int(row.get("pmcid")) == int(pmcid)
+            for field in NUMERIC_FIELDS
+            if row.get(field) is not None
+        )
+
+    def _count_pred_fields(self, pred_data: Any) -> int:
+        def _rows(obj: Any):
+            if isinstance(obj, dict):
+                return obj.get("rows") or obj.get("extractions") or []
+            return []
+
+        rows: List[Dict[str, Any]] = []
+        if isinstance(pred_data, list):
+            for obj in pred_data:
+                rows.extend(_rows(obj))
+        else:
+            rows = _rows(pred_data)
+
+        count = 0
+        for row in rows:
+            for field in NUMERIC_FIELDS:
+                if row.get(field) is not None:
+                    count += 1
+        return count
+
 def main():
     """
     Example usage of batch evaluation.
     """
     # Initialize evaluator
     evaluator = BatchEvaluator(
-        gold_path="gold-standard/annotated_rct_dataset.json",
+        gold_path="gold-standard/gold_standard_clean.json",
         output_dir="evaluation_results",
     )
 
     # Example 1: Evaluate guided PDF extractions
     evaluator.evaluate_directory(
-        predictions_dir="outputs",
-        suffix_filter="_guided_pdf",
-        run_name="guided_pdf_goldstandard_only_TP_FN",
+        predictions_dir="outputs/gemini_2_5_pro_direct_20251208_051356/extractions",
+        suffix_filter="",
+        run_name="test",
     )
 
     # Example 2: Evaluate guided XML extractions

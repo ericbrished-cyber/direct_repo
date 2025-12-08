@@ -1,0 +1,16 @@
+{
+  "run_name": "test",
+  "num_articles": 10,
+  "total_gold_fields": 210,
+  "total_pred_fields": 214,
+  "total_tp": 161,
+  "total_fp": 22,
+  "total_fn": 49,
+  "total_tn": 320,
+  "macro_precision": 0.8694980694980694,
+  "macro_recall": 0.6813873626373625,
+  "macro_f1": 0.7306214715900385,
+  "micro_precision": 0.8797814207650273,
+  "micro_recall": 0.7666666666666667,
+  "micro_f1": 0.8193384223918576
+}

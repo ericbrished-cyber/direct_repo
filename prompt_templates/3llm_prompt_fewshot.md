@@ -24,7 +24,7 @@ Each item in "extractions" is one ICO row with exactly these fields (use null fo
 ---------------------------------------------------------------------
 FIXED ICO TRIPLETS (MUST NOT BE ALTERED)
 
-The ICO triplets provided in {ico_list} are fixed and authoritative. You must:
+The ICO triplets provided in ico list: {ico_list} are fixed and authoritative. You must:
 
 - use them exactly as written in the JSON output,
 - never modify their wording,
@@ -38,24 +38,24 @@ If the study reports similar or related outcomes, ignore them unless they match 
 ---------------------------------------------------------------------
 SEMANTIC MATCHING RULE (CRITICAL)
 
-Although the ICO triplets in {ico_list} must be used *exactly as written* in the JSON output:
+Although the ICO triplets in ico_list must be used *exactly as written* in the JSON output:
 
 You MUST match interventions, comparators, and outcomes in the article *semantically*, not textually.
 
 This means:
 
 - The article may use synonyms, abbreviations, paraphrases, or group labels (“treatment arm”, “control group”, “usual care”, “placebo”, “FPG”, “blood glucose after fasting”, etc.).
-- The intervention/comparator/outcome in {ico_list} may NOT appear verbatim in the text.
+- The intervention/comparator/outcome in ico_list may NOT appear verbatim in the text.
 - You must identify equivalents based on clinical meaning, not wording.
 - Do NOT require exact string matches.
-- Use the {ico_list} names only in the output, not as literal search patterns.
+- Use the ico_list names only in the output, not as literal search patterns.
 
 Failing to find verbatim matches does NOT mean the ICO is absent.
 
 ---------------------------------------------------------------------
 STRICT ITERATION LOGIC (ABSOLUTELY REQUIRED)
 
-Treat {ico_list} as the complete and final set of ICO triplets.
+Treat ico_list as the complete and final set of ICO triplets.
 
 For each ICO triplet (in order):
 
@@ -70,13 +70,13 @@ For each ICO triplet (in order):
    - fill them if reported,
    - null is allowed only if the PDF omits the value.
 
-5. DO NOT generate any extraction for outcomes or arms not in {ico_list}.
+5. DO NOT generate any extraction for outcomes or arms not in ico_list.
 
-6. The final JSON must contain AT MOST len({ico_list}) objects.
+6. The final JSON must contain no more than equal to the length of ico_list objects.
 
 7. If zero objects are produced, still return: {"extractions": []}.
 
-You may not scan the article for outcomes outside {ico_list}.
+You may not scan the article for outcomes outside ico_list.
 
 ---------------------------------------------------------------------
 EXTRACTION RULES
@@ -89,26 +89,12 @@ Continuous outcomes (when explicitly reported):
 - intervention_standard_deviation
 - comparator_standard_deviation
 
-Continuous rows are complete only if group sizes, means, and SDs are filled when present.
-
 Binary outcomes (when explicitly reported):
 - intervention_group_size
 - comparator_group_size
 - intervention_events
 - comparator_events
 - numeric rates if reported
-
----------------------------------------------------------------------
-ALLOWED INFERENCE (EVENTS FROM RATE × N)
-
-If only rate (%) and group size are reported:
-
-events = round((rate / 100) * group_size)
-
-Rules:
-- 0 ≤ events ≤ group_size
-- Keep original rate in a *_rate field if present.
-- Do NOT infer means, standard deviations, or group sizes.
 
 ---------------------------------------------------------------------
 GENERAL RULES
@@ -137,7 +123,7 @@ TIMEPOINT RULE
 ---------------------------------------------------------------------
 FINAL RULE
 
-Output NO ICO triplets other than those in {ico_list}.
+Output NO ICO triplets other than those in ico_list.
 
 ---------------------------------------------------------------------
 EXAMPLES (FEW-SHOT)

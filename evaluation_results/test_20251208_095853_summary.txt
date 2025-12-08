@@ -1,0 +1,80 @@
+================================================================================
+EVALUATION SUMMARY: test
+================================================================================
+
+Timestamp: 2025-12-08 09:58:53
+Articles evaluated: 10
+Total gold fields: 210
+Total predicted fields: 214
+
+--------------------------------------------------------------------------------
+MICRO-AVERAGED METRICS (aggregate TP / FP / FN)
+--------------------------------------------------------------------------------
+  TP:           161
+  FP:           22
+  FN:           49
+  TN:           320
+  Precision:    0.8798
+  Recall:       0.7667
+  F1:           0.8193
+
+--------------------------------------------------------------------------------
+MACRO-AVERAGED METRICS (average of per-article metrics)
+--------------------------------------------------------------------------------
+  Precision: 0.8695
+  Recall:    0.6814
+  F1:        0.7306
+
+--------------------------------------------------------------------------------
+PER-ARTICLE BREAKDOWN
+--------------------------------------------------------------------------------
+
+PMCID=115849 (115849_direct.jsonl):
+  Gold/Pred fields: 62/74
+  TP / FP / FN / TN: 62 / 12 / 0 / 158
+  P/R/F1: 0.838 / 1.000 / 0.912
+
+PMCID=547916 (547916_direct.jsonl):
+  Gold/Pred fields: 6/6
+  TP / FP / FN / TN: 2 / 0 / 4 / 2
+  P/R/F1: 1.000 / 0.333 / 0.500
+
+PMCID=1475568 (1475568_direct.jsonl):
+  Gold/Pred fields: 52/50
+  TP / FP / FN / TN: 40 / 0 / 12 / 68
+  P/R/F1: 1.000 / 0.769 / 0.870
+
+PMCID=1574360 (1574360_direct.jsonl):
+  Gold/Pred fields: 12/8
+  TP / FP / FN / TN: 8 / 0 / 4 / 4
+  P/R/F1: 1.000 / 0.667 / 0.800
+
+PMCID=1863515 (1863515_direct.jsonl):
+  Gold/Pred fields: 24/12
+  TP / FP / FN / TN: 6 / 0 / 18 / 24
+  P/R/F1: 1.000 / 0.250 / 0.400
+
+PMCID=2363753 (2363753_direct.jsonl):
+  Gold/Pred fields: 14/16
+  TP / FP / FN / TN: 12 / 2 / 2 / 16
+  P/R/F1: 0.857 / 0.857 / 0.857
+
+PMCID=2430617 (2430617_direct.jsonl):
+  Gold/Pred fields: 12/12
+  TP / FP / FN / TN: 12 / 0 / 0 / 12
+  P/R/F1: 1.000 / 1.000 / 1.000
+
+PMCID=2596788 (2596788_direct.jsonl):
+  Gold/Pred fields: 4/4
+  TP / FP / FN / TN: 4 / 0 / 0 / 4
+  P/R/F1: 1.000 / 1.000 / 1.000
+
+PMCID=2667135 (2667135_direct.jsonl):
+  Gold/Pred fields: 16/16
+  TP / FP / FN / TN: 15 / 0 / 1 / 16
+  P/R/F1: 1.000 / 0.938 / 0.968
+
+PMCID=2836833 (2836833_direct.jsonl):
+  Gold/Pred fields: 8/16
+  TP / FP / FN / TN: 0 / 8 / 8 / 16
+  P/R/F1: 0.000 / 0.000 / 0.000

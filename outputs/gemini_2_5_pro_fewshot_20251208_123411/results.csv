@@ -1,0 +1,51 @@
+pmcid,outcome,intervention,comparator,outcome_type,intervention_events,intervention_group_size,comparator_events,comparator_group_size,intervention_mean,intervention_standard_deviation,comparator_mean,comparator_standard_deviation,intervention_rate,comparator_rate,source_file
+115849,Discontinuation due to lack of efficacy,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,binary,44.0,353.0,19.0,181.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of disease activity,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,investigator global assessment of disease activity,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Tender joint count,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Swollen joint count,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of pain,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Health Assessment Questionnaire disability,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Serum C-reactive protein,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,ACR20 responder criteria,etoricoxib 90 mg once daily,placebo,binary,207.0,353.0,146.0,357.0,,,,,,,115849_fewshot.jsonl
+115849,Discontinuation due to lack of efficacy,etoricoxib 90 mg once daily,placebo,binary,44.0,353.0,90.0,357.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of disease activity,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,investigator global assessment of disease activity,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Tender joint count,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Swollen joint count,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of pain,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Health Assessment Questionnaire disability,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,Serum C-reactive protein,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,,,,,,,115849_fewshot.jsonl
+115849,ACR20 responder criteria,naproxen 500 mg twice daily,placebo,binary,104.0,181.0,146.0,357.0,,,,,,,115849_fewshot.jsonl
+115849,Discontinuation due to lack of efficacy,naproxen 500 mg twice daily,placebo,binary,19.0,181.0,90.0,357.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of disease activity,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,investigator global assessment of disease activity,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,Tender joint count,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,Swollen joint count,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,Patient global assessment of pain,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,Health Assessment Questionnaire disability,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,Serum C-reactive protein,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,,,,,,,115849_fewshot.jsonl
+115849,ACR20 responder criteria,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,binary,207.0,353.0,104.0,181.0,,,,,,,115849_fewshot.jsonl
+115849,patients discontinued due to lack of efficacy,etoricoxib 90 mg once daily,placebo,binary,44.0,353.0,90.0,357.0,,,,,,,115849_fewshot.jsonl
+115849,patients discontinued due to lack of efficacy,naproxen 500 mg twice daily,placebo,binary,19.0,181.0,90.0,357.0,,,,,,,115849_fewshot.jsonl
+1475568,Minnesota living with heart failure (MLHF) questionnaire baseline scores,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,45.0,,57.0,,,,1475568_fewshot.jsonl
+1475568,Heart failure-related quality of life at the end of treatment,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,52.0,,59.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline hypertension,Follow-up and thorough education on self-care,Standard information about self-care,binary,51.0,59.0,57.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline diabetes,Follow-up and thorough education on self-care,Standard information about self-care,binary,35.0,59.0,33.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline life-quality score,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,45.0,,57.0,,,,1475568_fewshot.jsonl
+1475568,Knowledge about heart failure,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,52.0,,59.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline beta-blockers intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,32.0,59.0,46.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Self-efficacy,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,52.0,,59.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline systolic dysfunction,Follow-up and thorough education on self-care,Standard information about self-care,binary,23.0,59.0,28.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline angiotensin II receptor blockers (ARBs) intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,46.0,59.0,44.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline digoxin intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,15.0,59.0,12.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Baseline angiotensin-converting enzyme (ACE) inhibitors intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,46.0,59.0,44.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Hospitalization or death,Follow-up and thorough education on self-care,Standard information about self-care,binary,25.0,59.0,39.0,64.0,,,,,,,1475568_fewshot.jsonl
+1475568,Daily weight monitoring at the end of treatment,Follow-up and thorough education on self-care,Standard information about self-care,binary,41.0,52.0,17.0,59.0,,,,,,,1475568_fewshot.jsonl
+1475568,Cardiac-related hospitalization,Follow-up and thorough education on self-care,Standard information about self-care,binary,20.0,59.0,25.0,64.0,,,,,,,1475568_fewshot.jsonl
+2596788,GERD-knowledge,education,control,continuous,,102.0,,109.0,17.1,,14.0,,,,2596788_fewshot.jsonl
+2667135,proportion of patients completed therapy,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,93.0,103.0,44.0,97.0,,,,,,,2667135_fewshot.jsonl
+2667135,early discontinuations,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,10.0,103.0,53.0,97.0,,,,,,,2667135_fewshot.jsonl
+2667135,rate of clinical success at the test-of-cure visit,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,89.0,103.0,54.0,97.0,,,,,,,2667135_fewshot.jsonl
+2667135,deaths,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,4.0,103.0,18.0,97.0,,,,,,,2667135_fewshot.jsonl
+547916,matrix metalloproteinase-9 (MMP-9),doxycycline (100 mg),placebo,continuous,,10.0,,4.0,2.18,1.94,3.26,3.58,,,547916_fewshot.jsonl
