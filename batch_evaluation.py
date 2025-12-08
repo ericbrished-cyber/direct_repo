@@ -275,57 +275,6 @@ class BatchEvaluator:
         print(f"  F1:        {aggregated['macro_f1']:.4f}")
         print("=" * 80)
 
-    def compare_runs(self, run_patterns: List[str]):
-        """
-        Compare multiple evaluation runs.
-
-        Args:
-            run_patterns: List of patterns to match aggregated JSON files
-        """
-        comparison = []
-
-        for pattern in run_patterns:
-            files = list(Path(self.output_dir).glob(f"*{pattern}*aggregated.json"))
-            for file in files:
-                with open(file, "r") as f:
-                    data = json.load(f)
-                    comparison.append(data)
-
-        if not comparison:
-            print("No matching run files found")
-            return
-
-        # Create comparison DataFrame
-        df = pd.DataFrame(comparison)
-        df = df.sort_values("run_name")
-
-        # Select key columns
-        cols = [
-            "run_name",
-            "num_articles",
-            "micro_precision",
-            "micro_recall",
-            "micro_f1",
-            "macro_precision",
-            "macro_recall",
-            "macro_f1",
-            "total_extra_predictions",
-        ]
-        df = df[cols]
-
-        print("\n" + "=" * 80)
-        print("RUN COMPARISON")
-        print("=" * 80)
-        print(df.to_string(index=False))
-        print("=" * 80)
-
-        # Save comparison
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        comp_path = os.path.join(self.output_dir, f"comparison_{timestamp}.csv")
-        df.to_csv(comp_path, index=False)
-        print(f"\n✓ Comparison saved to: {comp_path}")
-
-
 def main():
     """
     Example usage of batch evaluation.
@@ -356,9 +305,6 @@ def main():
     #     suffix_filter="_all_xml",
     #     run_name="all_xml_run1"
     # )
-
-    # Example 4: Compare multiple runs
-    # evaluator.compare_runs(["guided_pdf", "guided_xml", "all_xml"])
 
 
 if __name__ == "__main__":

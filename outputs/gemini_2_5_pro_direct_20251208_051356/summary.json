@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "total": 10,
+    "success": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "failures": [],
+  "eval": {
+    "run_name": "gemini_2_5_pro_direct_20251208_051356",
+    "num_articles": 10,
+    "total_gold_facts": 188,
+    "total_pred_facts": 194,
+    "total_tp": 142,
+    "total_fp_in_gold": 34,
+    "total_fn": 46,
+    "total_extra_predictions": 18,
+    "macro_precision": 0.7511309523809524,
+    "macro_recall": 0.739720695970696,
+    "macro_f1": 0.7448004201680672,
+    "micro_precision": 0.8068181818181818,
+    "micro_recall": 0.7553191489361702,
+    "micro_f1": 0.7802197802197802
+  },
+  "run_folder": "outputs/gemini_2_5_pro_direct_20251208_051356"
+}

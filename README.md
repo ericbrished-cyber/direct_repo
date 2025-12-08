@@ -3,8 +3,7 @@ Direct LLM-based extraction of statistical results from RCT PDFs (LangExtract re
 
 ## End-to-end flow
 - `run_experiments.py` loads config (model, PMCIDs, prompt strategy), gold annotations, and ICO schema.
-- PDFs from `data/PDF_test` are converted to markdown on-demand.
-- Prompts are built as zero-shot or few-shot (schema + optional examples + article text).
+- Prompts are built from the template + ICO schema; the PDF itself is always attached (no markdown conversion).
 - LLM call → JSON extraction → validation (`models.ExtractionResult`).
 - Always evaluate vs gold (precision/recall/F1) and export Excel/CSV to `outputs/{run}`.
 
@@ -13,8 +12,7 @@ Direct LLM-based extraction of statistical results from RCT PDFs (LangExtract re
 python run_experiments.py \
   --model gpt-5.1-mini \
   --prompt-strategy few-shot \
-  --pdf-folder data/PDF_test \
-  --markdown-folder data/Markdown
+  --pdf-folder data/PDF_test
 ```
 - Outputs live in `outputs/<run_name>/` (auto-named if not provided).
 - Results are saved as JSONL under `extractions/`, metrics under `evaluation/`, and tabular exports as `results.xlsx` and `results.csv`.

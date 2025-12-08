@@ -1,0 +1,1 @@
+{"pmcid": 547916, "prompt_strategy": "direct", "model": "claude-opus-4-5", "extractions": [{"outcome": "matrix metalloproteinase-9 (MMP-9)", "intervention": "doxycycline (100 mg)", "comparator": "placebo", "intervention_group_size": 10, "comparator_group_size": 4, "pmcid": "PMC545647", "outcome_type": "continuous"}], "errors": []}

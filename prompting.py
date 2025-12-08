@@ -5,15 +5,7 @@ from typing import Any, Dict, Iterable, List, Optional
 
 
 def _as_template_string(path: str | Path) -> str:
-    raw = Path(path).read_text(encoding="utf-8")
-    # Allow YAML-formatted prompt files with a "prompt_description" key.
-    try:
-        parsed = yaml.safe_load(raw)
-        if isinstance(parsed, dict) and "prompt_description" in parsed:
-            return str(parsed["prompt_description"])
-    except Exception:
-        pass
-    return raw
+    return Path(path).read_text(encoding="utf-8")
 
 
 def format_ico_schema(ico_rows: Iterable[Dict[str, Any]]) -> str:
@@ -44,6 +36,9 @@ def build_prompt(
     """
     base = _as_template_string(base_prompt_path).strip()
     schema_block = format_ico_schema(ico_rows)
+
+    # Populate the template placeholder so the model sees the actual ICO list in the "fixed" section.
+    base = base.replace("{ico_list}", schema_block)
 
     parts = [base, "ICO schema for this article:\n" + schema_block]
     if article_text:

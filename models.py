@@ -228,20 +228,3 @@ class ExtractionResult:
     def save(self, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(self.to_jsonl() + "\n", encoding="utf-8")
-
-    @classmethod
-    def from_jsonl(cls, path: str | Path) -> "ExtractionResult":
-        text = Path(path).read_text(encoding="utf-8").strip()
-        if not text:
-            raise ValueError(f"No content in {path}")
-        first_line = text.splitlines()[0]
-        data = json.loads(first_line)
-        items = [OutcomeExtraction.from_dict(item) for item in data.get("extractions", [])]
-        return cls(
-            pmcid=data.get("pmcid"),
-            prompt_strategy=data.get("prompt_strategy", "unknown"),
-            model=data.get("model", "unknown"),
-            extractions=items,
-            raw_response=data.get("raw_response"),
-            errors=data.get("errors", []),
-        )

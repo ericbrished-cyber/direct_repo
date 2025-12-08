@@ -42,13 +42,21 @@ Treat {ico_list} as the *complete and final* set of ICO triplets.
 
 Your task:
 
-1. **Iterate through the ICO triplets in {ico_list}, in the exact order they appear.**
+1. Iterate through the ICO triplets in {ico_list}, in the exact order they appear.
+
 2. For each ICO triplet:
-   - Search the article ONLY for numeric information corresponding to that exact triplet.
-   - If at least one numeric value exists → produce exactly one JSON object for that triplet.
-   - If no numeric values exist → produce no JSON object for that triplet.
-3. **You must NOT generate any ICO extraction for outcomes or arms not in {ico_list}.**
-4. Your final JSON must contain **AT MOST len({ico_list}) objects**.
+   - Search the article ONLY for information corresponding to that exact triplet.
+   - If at least one numeric value exists → produce exactly one JSON object for that triplet and populate the numeric fields.
+   - If no numeric values exist BUT the triplet is mentioned in the {ico_list} → produce exactly one JSON object for that triplet with all numeric fields set to null.
+   - For continuous outcomes, do not stop at group sizes: explicitly search the PDF for mean AND standard deviation for each arm. If the PDF reports them, you MUST include them; only leave them null if absent in the PDF.
+
+
+3. You must NOT generate any ICO extraction for outcomes or arms not in {ico_list}.
+
+4. Your final JSON must contain AT MOST len({ico_list}) objects.
+
+5. Even if you produce zero objects, you must still return valid JSON of the form:
+   {"extractions": [ ... ]}
 
 You are NOT allowed to scan the article for all outcomes.
 You may only scan the article for evidence that matches each triplet in {ico_list} verbatim.
@@ -63,6 +71,7 @@ Continuous outcomes: extract when explicitly reported
 - comparator_mean
 - intervention_standard_deviation
 - comparator_standard_deviation
+- A continuous row is complete only when group sizes AND mean AND standard deviation are filled if the PDF reports them. Make an explicit pass to capture these; null is allowed only when the PDF omits the value.
 
 Binary outcomes: extract when explicitly reported
 - intervention_group_size
@@ -87,9 +96,7 @@ Do NOT infer means, SDs, or group sizes.
 GENERAL RULES
 
 - Use plain numbers only (no %, no units).
-- Use only information from Abstract and Results.
 - If a numeric value is missing, set it to null.
-- If a numeric value is ambiguous and cannot be confidently extracted, set it to "?".
 - Output raw JSON only (no markdown, no text, no comments).
 
 ---------------------------------------------------------------------
@@ -108,12 +115,7 @@ TIMEPOINT RULES
   - prefer post-intervention values,
   - if multiple post-intervention values exist → choose the latest one.
 
----------------------------------------------------------------------
-MISSING DATA
-
-- If no numeric values exist for an ICO triplet → omit that triplet entirely.
-- If at least one numeric field exists but others are unclear → include the triplet and set unclear fields to "?".
-
+---------------------------------------------------------------
 ---------------------------------------------------------------------
 FINAL RULE
 

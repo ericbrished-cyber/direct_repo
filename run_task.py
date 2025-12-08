@@ -1,20 +1,19 @@
-"""
-Convenience wrapper to trigger the new LangExtract-free pipeline.
-Use `python run_experiments.py --help` for full CLI options.
-"""
+
 
 from run_experiments import ExperimentConfig, run_experiments
 
 # model="claude-opus-4-5",
-# model="gemini-2.5-pro",
+# model="gemini-3-pro-preview",
+# model="gpt-5.1",
 def main():
     config = ExperimentConfig(
-        # Use a widely available Gemini model; override with --model if you have access to newer previews.
-        model="gemini-3.0",
-        prompt_label="direct", 
+        model="gpt-5.1",
+        prompt_label="fewshot", 
         pdf_folder="data/PDF_excel_test",
-        markdown_folder=None,  # PDFs are sent directly to the model
-        prompt_template="prompt_templates/guided_prompt_GPT5_direct.md",  # swap to your few-shot template when ready
+        gold_path="gold-standard/gold_standard_clean.json",
+        prompt_template="prompt_templates/3llm_prompt_fewshot.md",  # swap to your few-shot template when ready
+        temperature=0.0,
+        max_tokens=8000,
     )
     run_experiments(config)
 

@@ -1,0 +1,16 @@
+{
+  "run_name": "claude_opus_4_5_direct_20251207_192112",
+  "num_articles": 10,
+  "total_gold_facts": 188,
+  "total_pred_facts": 193,
+  "total_tp": 144,
+  "total_fp_in_gold": 25,
+  "total_fn": 44,
+  "total_extra_predictions": 24,
+  "macro_precision": 0.7056547619047618,
+  "macro_recall": 0.6131181318681318,
+  "macro_f1": 0.6397257236227825,
+  "micro_precision": 0.8520710059171598,
+  "micro_recall": 0.7659574468085106,
+  "micro_f1": 0.8067226890756302
+}

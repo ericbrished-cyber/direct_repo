@@ -4,7 +4,6 @@ import os
 from typing import Any, Dict, Optional
 import base64
 
-import httpx
 from anthropic import Anthropic
 from openai import OpenAI
 from google import genai
@@ -84,10 +83,12 @@ class LLMClient:
                 attachments.append({"type": "input_file", "file_id": file_obj.id})
 
             messages = [{"role": "user", "content": [{"type": "input_text", "text": prompt}, *attachments]}]
+            max_tokens = kwargs.get("max_tokens")
             response = self._client.responses.create(
                 model=self.model,
                 input=messages,
                 temperature=kwargs.get("temperature", self.temperature),
+                max_output_tokens=max_tokens,
             )
             return self._parse_openai_response(response)
 

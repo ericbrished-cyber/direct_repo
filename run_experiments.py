@@ -5,6 +5,7 @@ import json
 import os
 from dataclasses import dataclass, asdict
 from datetime import datetime
+import time
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -18,8 +19,6 @@ from models import ExtractionResult
 from prompting import build_prompt
 from spinner import Spinner
 from utils import (
-    ensure_markdown,
-    get_fulltext,
     get_icos,
     list_pmcids,
     load_annotations,
@@ -33,13 +32,13 @@ class ExperimentConfig:
     model: str = "gpt-5.1"
     prompt_label: Optional[str] = None  # human-friendly name for the prompt/template
     pdf_folder: str = "data/PDF_test"
-    markdown_folder: Optional[str] = None
-    gold_path: str = "gold-standard/annotated_rct_dataset.json"
+    gold_path: str = "gold-standard/gold_standard_clean.json"
     prompt_template: str = "prompt_templates/guided_prompt_GPT5_direct.md"
     output_root: str = "outputs"
     run_name: Optional[str] = None
     pmcids: Optional[List[int]] = None
     temperature: float = 0.0
+    max_tokens: Optional[int] = None
 
     @classmethod
     def from_args(cls, args: argparse.Namespace) -> "ExperimentConfig":
@@ -95,19 +94,6 @@ def _write_excel_autosize(df: pd.DataFrame, path: Path) -> None:
             ws.column_dimensions[get_column_letter(idx)].width = min(max_len + 2, 60)
 
 
-def _load_article_text(pmcid: int, config: ExperimentConfig) -> Optional[str]:
-    # Not used when sending PDFs directly; kept for compatibility if markdown_folder is set.
-    if not config.markdown_folder:
-        return None
-    md_path = ensure_markdown(pmcid, pdf_folder=config.pdf_folder, markdown_folder=config.markdown_folder)
-    if not md_path:
-        return None
-    text = get_fulltext(pmcid, text_folder_path=config.markdown_folder)
-    if text.startswith("Markdown file for PMCID"):
-        return None
-    return text
-
-
 def _find_pdf_path(pmcid: int, pdf_folder: str) -> Optional[Path]:
     primary = Path(pdf_folder) / f"{pmcid}.pdf"
     if primary.exists():
@@ -116,6 +102,63 @@ def _find_pdf_path(pmcid: int, pdf_folder: str) -> Optional[Path]:
     if alt.exists():
         return alt
     return None
+
+
+def _is_retryable_error(exc: Exception) -> bool:
+    """
+    Identify transient LLM errors where a retry makes sense (e.g., overloaded/unavailable).
+    """
+    text = str(exc).lower()
+    retry_terms = (
+        "overloaded",
+        "unavailable",
+        "try again later",
+        "temporarily unavailable",
+        "resource exhausted",
+        "rate limit",
+    )
+    if any(term in text for term in retry_terms):
+        return True
+
+    code = getattr(exc, "code", None)
+    try:
+        code = code() if callable(code) else code
+    except Exception:
+        code = None
+    if code and any(token in str(code).lower() for token in ("unavailable", "resource_exhausted")):
+        return True
+
+    return False
+
+
+def _generate_with_retry(
+    client: LLMClient,
+    prompt: str,
+    pdf_path: str,
+    max_tokens: Optional[int],
+    label: str,
+    max_attempts: int = 3,
+    backoff_seconds: int = 5,
+) -> str:
+    """
+    Call the LLM with a small retry loop for transient overload errors.
+    """
+    last_exc: Optional[Exception] = None
+    for attempt in range(1, max_attempts + 1):
+        attempt_label = label if attempt == 1 else f"{label} (retry {attempt}/{max_attempts})"
+        try:
+            with Spinner(attempt_label):
+                return client.generate(prompt, pdf_path=str(pdf_path), max_tokens=max_tokens)
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            if attempt >= max_attempts or not _is_retryable_error(exc):
+                break
+            wait_time = backoff_seconds * attempt
+            print(f"Transient LLM error ({exc}); retrying in {wait_time}s...")
+            time.sleep(wait_time)
+    if last_exc:
+        raise last_exc
+    raise RuntimeError("LLM call failed without raising an exception")
 
 
 def run_experiments(config: ExperimentConfig) -> Dict:
@@ -138,15 +181,20 @@ def run_experiments(config: ExperimentConfig) -> Dict:
             stats["failed"] += 1
             continue
 
-        article_text = _load_article_text(pmcid, config)
+        article_text = None
 
         prompt = build_prompt(article_text=article_text, ico_rows=ico_rows, base_prompt_path=config.prompt_template)
 
         raw_response = ""
         try:
             label = f"[{idx}/{len(pmcids)}] PMCID={pmcid} extracting…"
-            with Spinner(label):
-                raw_response = client.generate(prompt, pdf_path=str(pdf_path))
+            raw_response = _generate_with_retry(
+                client=client,
+                prompt=prompt,
+                pdf_path=str(pdf_path),
+                max_tokens=config.max_tokens,
+                label=label,
+            )
             result = ExtractionResult.from_response(
                 pmcid=pmcid,
                 response=raw_response,
@@ -202,13 +250,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", default=None, help="Model name (e.g., gpt-5.1-mini)")
     parser.add_argument("--prompt-label", default=None, help="Short name for the prompt/template (used in filenames)")
     parser.add_argument("--pdf-folder", default=None, help="Folder with PDFs")
-    parser.add_argument("--markdown-folder", default=None, help="Folder with converted markdown")
     parser.add_argument("--gold-path", default=None, help="Path to gold annotations JSON")
     parser.add_argument("--prompt-template", default=None, help="Prompt template path")
     parser.add_argument("--output-root", default=None, help="Root folder for outputs")
     parser.add_argument("--run-name", default=None, help="Optional run name (folder will be created)")
     parser.add_argument("--pmcids", nargs="+", type=int, default=None, help="Optional list of PMCIDs to process")
     parser.add_argument("--temperature", type=float, default=None, help="Sampling temperature")
+    parser.add_argument("--max-tokens", type=int, default=None, help="Max tokens for the model response")
     return parser
 
 
