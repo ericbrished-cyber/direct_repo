@@ -2,7 +2,7 @@ import json
 import re
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Union
 
 PMCID_RE = re.compile(r"(?:PMCID)?(\d{5,8})", re.IGNORECASE)
 DEFAULT_GOLD_PATH = Path("gold-standard/gold_standard_clean.json")
@@ -27,7 +27,7 @@ def list_pmcids(pdf_folder: str) -> List[int]:
 
 
 @lru_cache(maxsize=1)
-def load_annotations(gold_path: Path | str = DEFAULT_GOLD_PATH) -> List[Dict[str, Any]]:
+def load_annotations(gold_path: Union[Path, str] = DEFAULT_GOLD_PATH) -> List[Dict[str, Any]]:
     """Load the gold-standard annotations once and cache them."""
     path = Path(gold_path)
     if not path.exists():
@@ -36,7 +36,7 @@ def load_annotations(gold_path: Path | str = DEFAULT_GOLD_PATH) -> List[Dict[str
 
 
 def get_icos(
-    pmcid: int | str,
+    pmcid: Union[int, str],
     annotations: Optional[Iterable[Dict[str, Any]]] = None,
 ) -> List[Dict[str, Any]]:
     """Return ICO rows (intervention, comparator, outcome only) for a given PMCID."""

@@ -95,6 +95,7 @@ class BatchEvaluator:
                     "precision": metrics["precision"],
                     "recall": metrics["recall"],
                     "f1": metrics["f1"],
+                    "per_field_metrics": metrics.get("per_field_metrics", {}),
                 }
                 results_list.append(result)
 
@@ -132,6 +133,7 @@ class BatchEvaluator:
                 "micro_precision": 0.0,
                 "micro_recall": 0.0,
                 "micro_f1": 0.0,
+                "per_field_micro": {field: {} for field in NUMERIC_FIELDS},
                 "total_gold_fields": 0,
                 "total_pred_fields": 0,
                 "total_tp": 0,
@@ -159,6 +161,41 @@ class BatchEvaluator:
             else 0.0
         )
 
+        # Per-field micro metrics across all articles
+        per_field_totals: Dict[str, Dict[str, int]] = {
+            field: {"tp": 0, "fp": 0, "fn": 0, "tn": 0} for field in NUMERIC_FIELDS
+        }
+        for r in results_list:
+            pfm = r.get("per_field_metrics", {})
+            for field in NUMERIC_FIELDS:
+                counts = pfm.get(field, {})
+                per_field_totals[field]["tp"] += counts.get("tp", 0)
+                per_field_totals[field]["fp"] += counts.get("fp", 0)
+                per_field_totals[field]["fn"] += counts.get("fn", 0)
+                per_field_totals[field]["tn"] += counts.get("tn", 0)
+
+        per_field_micro: Dict[str, Dict[str, float]] = {}
+        for field, counts in per_field_totals.items():
+            tp_f = counts["tp"]
+            fp_f = counts["fp"]
+            fn_f = counts["fn"]
+            precision_f = tp_f / (tp_f + fp_f) if (tp_f + fp_f) else 0.0
+            recall_f = tp_f / (tp_f + fn_f) if (tp_f + fn_f) else 0.0
+            f1_f = (
+                2 * precision_f * recall_f / (precision_f + recall_f)
+                if (precision_f + recall_f)
+                else 0.0
+            )
+            per_field_micro[field] = {
+                "tp": tp_f,
+                "fp": fp_f,
+                "fn": fn_f,
+                "tn": counts["tn"],
+                "precision": precision_f,
+                "recall": recall_f,
+                "f1": f1_f,
+            }
+
         return {
             "run_name": run_name,
             "num_articles": len(results_list),
@@ -174,6 +211,7 @@ class BatchEvaluator:
             "micro_precision": micro_precision,
             "micro_recall": micro_recall,
             "micro_f1": micro_f1,
+            "per_field_micro": per_field_micro,
         }
 
     def _save_results(
@@ -233,6 +271,21 @@ class BatchEvaluator:
             f.write(f"  Precision: {aggregated['macro_precision']:.4f}\n")
             f.write(f"  Recall:    {aggregated['macro_recall']:.4f}\n")
             f.write(f"  F1:        {aggregated['macro_f1']:.4f}\n\n")
+
+            f.write("-" * 80 + "\n")
+            f.write("PER-FIELD MICRO METRICS (aggregate TP / FP / FN / TN)\n")
+            f.write("-" * 80 + "\n")
+            for field in NUMERIC_FIELDS:
+                m = aggregated["per_field_micro"].get(field, {})
+                f.write(
+                    f"{field:30s} "
+                    f"P: {m.get('precision', 0):.4f}  "
+                    f"R: {m.get('recall', 0):.4f}  "
+                    f"F1: {m.get('f1', 0):.4f}  "
+                    f"(TP={m.get('tp', 0)}, FP={m.get('fp', 0)}, "
+                    f"FN={m.get('fn', 0)}, TN={m.get('tn', 0)})\n"
+                )
+            f.write("\n")
 
             # Per-article breakdown
             if results_list:
@@ -317,7 +370,7 @@ def main():
 
     # Example 1: Evaluate guided PDF extractions
     evaluator.evaluate_directory(
-        predictions_dir="outputs/gemini_2_5_pro_direct_20251208_051356/extractions",
+        predictions_dir="outputs/gpt_5_1_fewshot_20251208_125704/extractions",
         suffix_filter="",
         run_name="test",
     )

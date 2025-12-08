@@ -142,6 +142,9 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
     all_matched_gold_indices = set()
 
     tp = tn = fp = fn = 0
+    per_field_counts: Dict[str, Dict[str, int]] = {
+        field: {"tp": 0, "tn": 0, "fp": 0, "fn": 0} for field in NUMERIC_FIELDS
+    }
 
     if verbose:
         print(f"--- Evaluation ({gold_file} vs {pred_file}) ---")
@@ -155,6 +158,7 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
                 for field in NUMERIC_FIELDS:
                     if row.get(field) is not None:
                         fp += 1
+                        per_field_counts[field]["fp"] += 1
             continue
 
         gold_candidates = gold_by_pmcid[pmcid]
@@ -183,21 +187,31 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
                     is_p_none = p_val is None
                     is_g_none = g_val is None
 
-                    if is_p_none and is_g_none:
+                    if is_g_none and is_p_none:
+                        # Gold says value unavailable, prediction correctly leaves it empty -> TN
                         tn += 1
-                    elif not is_p_none and is_g_none:
+                        per_field_counts[field]["tn"] += 1
+                    elif is_g_none and not is_p_none:
+                        # Gold says unavailable, prediction supplied a value -> FP (hallucination)
                         fp += 1
-                    elif is_p_none and not is_g_none:
+                        per_field_counts[field]["fp"] += 1
+                    elif not is_g_none and is_p_none:
+                        # Gold has value, prediction missing -> FN
                         fn += 1
+                        per_field_counts[field]["fn"] += 1
                     else:
                         if compare_numbers(p_val, g_val):
                             tp += 1
+                            per_field_counts[field]["tp"] += 1
                         else:
+                            # Gold has value, prediction has value but incorrect -> FN
                             fn += 1
+                            per_field_counts[field]["fn"] += 1
             else:
                 for field in NUMERIC_FIELDS:
                     if pred_row.get(field) is not None:
                         fp += 1
+                        per_field_counts[field]["fp"] += 1
 
     total_gold_rows = len(gold_data)
     for i in range(total_gold_rows):
@@ -207,12 +221,32 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
                 g_val = gold_row.get(field)
                 if g_val is not None:
                     fn += 1
+                    per_field_counts[field]["fn"] += 1
                 else:
                     tn += 1
+                    per_field_counts[field]["tn"] += 1
 
     precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
     recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
     f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+
+    per_field_metrics: Dict[str, Dict[str, float]] = {}
+    for field, counts in per_field_counts.items():
+        tp_f = counts["tp"]
+        fp_f = counts["fp"]
+        fn_f = counts["fn"]
+        precision_f = tp_f / (tp_f + fp_f) if (tp_f + fp_f) > 0 else 0.0
+        recall_f = tp_f / (tp_f + fn_f) if (tp_f + fn_f) > 0 else 0.0
+        f1_f = 2 * (precision_f * recall_f) / (precision_f + recall_f) if (precision_f + recall_f) > 0 else 0.0
+        per_field_metrics[field] = {
+            "tp": tp_f,
+            "tn": counts["tn"],
+            "fp": fp_f,
+            "fn": fn_f,
+            "precision": precision_f,
+            "recall": recall_f,
+            "f1": f1_f,
+        }
 
     if verbose:
         print("\n=== Confusion Matrix (Field Level) ===")
@@ -225,6 +259,15 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
         print(f"Precision: {precision:.4f}")
         print(f"Recall:    {recall:.4f}")
         print(f"F1 Score:  {f1:.4f}")
+        print("\n=== Per-field Scores ===")
+        for field in NUMERIC_FIELDS:
+            m = per_field_metrics[field]
+            print(
+                f"{field}: P={m['precision']:.4f} "
+                f"R={m['recall']:.4f} "
+                f"F1={m['f1']:.4f} "
+                f"(TP={m['tp']}, FP={m['fp']}, FN={m['fn']}, TN={m['tn']})"
+            )
 
     return {
         "tp": tp,
@@ -234,6 +277,7 @@ def evaluate(gold_file: str, pred_file: str, verbose: bool = True) -> Dict[str, 
         "precision": precision,
         "recall": recall,
         "f1": f1,
+        "per_field_metrics": per_field_metrics,
     }
 
 
