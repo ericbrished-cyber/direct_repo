@@ -11,7 +11,7 @@ from google import genai
 
 def _infer_provider(model: str) -> str:
     lowered = model.lower()
-    if lowered.startswith(("gpt", "o1")):
+    if lowered.startswith("gpt"):
         return "openai"
     if lowered.startswith("claude"):
         return "anthropic"

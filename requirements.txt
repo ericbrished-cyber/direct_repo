@@ -24,7 +24,7 @@ google-genai==1.49.0
 gprofiler-official==1.0.0
 h11==0.16.0
 httpcore==1.0.9
-httpx==0.27.2
+httpx==0.28.1
 humanfriendly==10.0
 idna==3.11
 jiter==0.12.0
@@ -53,9 +53,6 @@ pyasn1_modules==0.4.2
 pycparser==2.23
 pydantic==2.12.4
 pydantic_core==2.41.5
-PyMuPDF==1.26.6
-pymupdf-layout==1.26.6
-pymupdf4llm==0.2.0
 pypdfium2==5.0.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
