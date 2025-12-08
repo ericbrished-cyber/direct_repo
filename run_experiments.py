@@ -193,6 +193,7 @@ def run_experiments(config: ExperimentConfig) -> Dict:
         article_text = None
 
         prompt_template_path = config.prompt_template
+        
         if config.fewshot_pdf_paths and config.fewshot_prompt_template:
             prompt_template_path = config.fewshot_prompt_template
 
