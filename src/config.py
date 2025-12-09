@@ -12,9 +12,9 @@ RESULTS_DIR = DATA_DIR / "results"
 GOLD_STANDARD_PATH = DATA_DIR / "gold_standard.json"
 
 # Model Versions
-CLAUDE_MODEL_VERSION = os.getenv("CLAUDE_MODEL_VERSION", "claude-3-opus-20240229")
-GPT_MODEL_VERSION = os.getenv("GPT_MODEL_VERSION", "gpt-4-turbo")
-GEMINI_MODEL_VERSION = os.getenv("GEMINI_MODEL_VERSION", "gemini-1.5-pro")
+CLAUDE_MODEL_VERSION = os.getenv("CLAUDE_MODEL_VERSION", "claude-opus-4.5")
+GPT_MODEL_VERSION = os.getenv("GPT_MODEL_VERSION", "gpt-5.1")
+GEMINI_MODEL_VERSION = os.getenv("GEMINI_MODEL_VERSION", "gemini-2.5-pro")
 
 # API Keys
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")

@@ -16,7 +16,6 @@ STRATEGY = "zero-shot"
 # Select Temperature: 0.0 (deterministic) to 1.0 (creative)
 TEMPERATURE = 0.0
 
-# ==========================================
 
 if __name__ == "__main__":
     run_evaluation(
