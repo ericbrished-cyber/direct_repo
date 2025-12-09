@@ -1,0 +1,682 @@
+pmcid,outcome,intervention,comparator,outcome_type,intervention_events,intervention_group_size,comparator_events,comparator_group_size,intervention_mean,intervention_standard_deviation,comparator_mean,comparator_standard_deviation,intervention_rate,comparator_rate,source_file
+115849,Discontinuation due to lack of efficacy,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,binary,44.0,353.0,19.0,181.0,,,,,,,115849_zeroshot.jsonl
+115849,Patient global assessment of disease activity,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,66.0,20.0,65.0,19.0,,,115849_zeroshot.jsonl
+115849,investigator global assessment of disease activity,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,2.7,0.7,2.7,0.6,,,115849_zeroshot.jsonl
+115849,Tender joint count,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,29.0,15.0,29.0,15.0,,,115849_zeroshot.jsonl
+115849,Swollen joint count,etoricoxib 90 mg once daily,placebo,continuous,,353.0,,357.0,19.0,13.0,19.0,12.0,,,115849_zeroshot.jsonl
+115849,Patient global assessment of pain,etoricoxib 90 mg once daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Health Assessment Questionnaire disability,etoricoxib 90 mg once daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Serum C-reactive protein,etoricoxib 90 mg once daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,ACR20 responder criteria,etoricoxib 90 mg once daily,placebo,binary,207.0,353.0,146.0,357.0,,,,,,,115849_zeroshot.jsonl
+115849,Discontinuation due to lack of efficacy,etoricoxib 90 mg once daily,placebo,binary,44.0,353.0,90.0,357.0,,,,,,,115849_zeroshot.jsonl
+115849,Patient global assessment of disease activity,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,65.0,19.0,65.0,19.0,,,115849_zeroshot.jsonl
+115849,investigator global assessment of disease activity,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,2.7,0.6,2.7,0.6,,,115849_zeroshot.jsonl
+115849,Tender joint count,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,28.0,15.0,29.0,15.0,,,115849_zeroshot.jsonl
+115849,Swollen joint count,naproxen 500 mg twice daily,placebo,continuous,,181.0,,357.0,18.0,12.0,19.0,12.0,,,115849_zeroshot.jsonl
+115849,Patient global assessment of pain,naproxen 500 mg twice daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Health Assessment Questionnaire disability,naproxen 500 mg twice daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Serum C-reactive protein,naproxen 500 mg twice daily,placebo,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,ACR20 responder criteria,naproxen 500 mg twice daily,placebo,binary,104.0,181.0,146.0,357.0,,,,,,,115849_zeroshot.jsonl
+115849,Discontinuation due to lack of efficacy,naproxen 500 mg twice daily,placebo,binary,19.0,181.0,90.0,357.0,,,,,,,115849_zeroshot.jsonl
+115849,Patient global assessment of disease activity,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,66.0,20.0,65.0,19.0,,,115849_zeroshot.jsonl
+115849,investigator global assessment of disease activity,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,2.7,0.7,2.7,0.6,,,115849_zeroshot.jsonl
+115849,Tender joint count,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,29.0,15.0,28.0,15.0,,,115849_zeroshot.jsonl
+115849,Swollen joint count,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,353.0,,181.0,19.0,13.0,18.0,12.0,,,115849_zeroshot.jsonl
+115849,Patient global assessment of pain,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Health Assessment Questionnaire disability,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,Serum C-reactive protein,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,continuous,,,,,,,,,,,115849_zeroshot.jsonl
+115849,ACR20 responder criteria,etoricoxib 90 mg once daily,naproxen 500 mg twice daily,binary,207.0,353.0,104.0,181.0,,,,,,,115849_zeroshot.jsonl
+115849,patients discontinued due to lack of efficacy,etoricoxib 90 mg once daily,placebo,binary,44.0,353.0,90.0,357.0,,,,,,,115849_zeroshot.jsonl
+115849,patients discontinued due to lack of efficacy,naproxen 500 mg twice daily,placebo,binary,19.0,181.0,90.0,357.0,,,,,,,115849_zeroshot.jsonl
+1216327,The mean body weight gain,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,50.6,,-7.0,,,,1216327_zeroshot.jsonl
+1216327,The duration of the illness,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,47.5,38.9,26.5,27.4,,,1216327_zeroshot.jsonl
+1216327,The fecal losses,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,3.59,2.35,2.19,1.63,,,1216327_zeroshot.jsonl
+1475568,Minnesota living with heart failure (MLHF) questionnaire baseline scores,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,45.0,,57.0,,,,1475568_zeroshot.jsonl
+1475568,Heart failure-related quality of life at the end of treatment,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,,,,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline hypertension,Follow-up and thorough education on self-care,Standard information about self-care,binary,51.0,59.0,57.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline diabetes,Follow-up and thorough education on self-care,Standard information about self-care,binary,35.0,59.0,33.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline life-quality score,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,45.0,,57.0,,,,1475568_zeroshot.jsonl
+1475568,Knowledge about heart failure,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,55.0,,57.0,,,,1475568_zeroshot.jsonl
+1475568,Baseline beta-blockers intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,32.0,59.0,46.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Self-efficacy,Follow-up and thorough education on self-care,Standard information about self-care,continuous,,59.0,,64.0,22.0,,22.0,,,,1475568_zeroshot.jsonl
+1475568,Baseline systolic dysfunction,Follow-up and thorough education on self-care,Standard information about self-care,binary,23.0,59.0,28.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline angiotensin II receptor blockers (ARBs) intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,,,,,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline digoxin intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,15.0,59.0,12.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Baseline angiotensin-converting enzyme (ACE) inhibitors intake,Follow-up and thorough education on self-care,Standard information about self-care,binary,,,,,,,,,,,1475568_zeroshot.jsonl
+1475568,Hospitalization or death,Follow-up and thorough education on self-care,Standard information about self-care,binary,25.0,59.0,39.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Daily weight monitoring at the end of treatment,Follow-up and thorough education on self-care,Standard information about self-care,binary,47.0,59.0,19.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1475568,Cardiac-related hospitalization,Follow-up and thorough education on self-care,Standard information about self-care,binary,20.0,59.0,25.0,64.0,,,,,,,1475568_zeroshot.jsonl
+1574360,The amount of saturated fat in the foods purchased,fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat,control received general non-specific advice about how to eat a diet lower in saturated fat,continuous,,246.0,,251.0,0.77,,0.04,,,,1574360_zeroshot.jsonl
+1574360,the average cost of the food,fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat,control received general non-specific advice about how to eat a diet lower in saturated fat,continuous,,,,,0.63,,0.62,,,,1574360_zeroshot.jsonl
+1863515,haemoglobin level between 26 and 35 wk,Zidovudine prophylaxis initiation,placebo,continuous,,769.0,,667.0,10.7,,11.2,,,,1863515_zeroshot.jsonl
+1863515,leucocyte count between 26 and 35 wk,Zidovudine prophylaxis initiation,placebo,continuous,,769.0,,667.0,8818.0,,8362.0,,,,1863515_zeroshot.jsonl
+1863515,absolute neutrophil count between 26 and 35 wk,Zidovudine prophylaxis initiation,placebo,continuous,,769.0,,667.0,5639.0,,6150.0,,,,1863515_zeroshot.jsonl
+1863515,haemoglobin level at 35 wk gestation,Zidovudine prophylaxis initiation,placebo,continuous,,739.0,,638.0,10.7,,11.2,,,,1863515_zeroshot.jsonl
+1863515,leucocyte count at 35 wk gestation,Zidovudine prophylaxis initiation,placebo,continuous,,739.0,,632.0,8818.0,,8362.0,,,,1863515_zeroshot.jsonl
+1863515,absolute neutrophil count at 35 wk gestation,Zidovudine prophylaxis initiation,placebo,continuous,,739.0,,632.0,5639.0,,6150.0,,,,1863515_zeroshot.jsonl
+2363753,Days with fever,Amifostine,Control,continuous,,20.0,,20.0,2.0,,4.0,,,,2363753_zeroshot.jsonl
+2363753,Hospital stay,Amifostine,Control,continuous,,20.0,,20.0,16.0,,18.0,,,,2363753_zeroshot.jsonl
+2363753,Grade III/IV stomatitis,Amifostine,Control,binary,5.0,20.0,10.0,20.0,,,,,,,2363753_zeroshot.jsonl
+2363753,Glomerular filtration rate fall,Amifostine,Control,continuous,,20.0,,20.0,10.0,,37.0,,,,2363753_zeroshot.jsonl
+2430617,HBeAg sero-conversion rate,60 µg of immune complexes (YIC),placebo,binary,17.0,78.0,7.0,78.0,,,,,,,2430617_zeroshot.jsonl
+2430617,adverse events,30 µg YIC,placebo,binary,76.0,83.0,69.0,79.0,,,,,,,2430617_zeroshot.jsonl
+2430617,adverse events,60 µg of YIC,placebo,binary,74.0,80.0,69.0,79.0,,,,,,,2430617_zeroshot.jsonl
+2596788,GERD-knowledge,education,control,continuous,,102.0,,109.0,17.0,,13.4,,,,2596788_zeroshot.jsonl
+2667135,proportion of patients completed therapy,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,93.0,103.0,44.0,97.0,,,,,,,2667135_zeroshot.jsonl
+2667135,early discontinuations,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,10.0,103.0,53.0,97.0,,,,,,,2667135_zeroshot.jsonl
+2667135,rate of clinical success at the test-of-cure visit,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,89.0,103.0,54.0,97.0,,,,,,,2667135_zeroshot.jsonl
+2667135,deaths,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,binary,4.0,103.0,18.0,97.0,,,,,,,2667135_zeroshot.jsonl
+2681019,Adiponectin in women,Red wine,Control,continuous,,24.0,,24.0,29.8,,0.0,,,,2681019_zeroshot.jsonl
+2681019,Adiponectin in men,Ethanol solution,Control,continuous,,24.0,,24.0,17.4,,0.0,,,,2681019_zeroshot.jsonl
+2681019,Adiponectin in men,Beer,Control,continuous,,24.0,,24.0,16.1,,0.0,,,,2681019_zeroshot.jsonl
+2836833,Fecal fat loss,1500 mg calcium,500 mg calcium,continuous,,34.0,,34.0,10.35,1.8,7.35,1.75,,,2836833_zeroshot.jsonl
+2836833,weight loss,1500 mg calcium,500 mg calcium,continuous,,,,,,,,,,,2836833_zeroshot.jsonl
+2836833,systolic or diastolic blood pressure,1500 mg calcium,500 mg calcium,continuous,,,,,,,,,,,2836833_zeroshot.jsonl
+2836833,Urinary calcium excretion,1500 mg calcium,500 mg calcium,continuous,,34.0,,34.0,146.4,77.9,128.3,57.9,,,2836833_zeroshot.jsonl
+2952311,Verbal rating scale pain intensity,Acupressure at distal points,Control,continuous,,11.0,,11.0,1.7,0.8,1.8,0.6,,,2952311_zeroshot.jsonl
+2952311,Verbal rating scale pain intensity,Acupressure at local points,Control,continuous,,11.0,,11.0,2.1,0.5,1.8,0.6,,,2952311_zeroshot.jsonl
+2952311,State-Trait Anxiety Inventory-I,Acupressure at local points,Control,continuous,,11.0,,11.0,44.5,8.0,39.2,9.5,,,2952311_zeroshot.jsonl
+2952311,Salivary alpha-amylase,Acupressure at distal points,Acupressure at local points,continuous,,11.0,,11.0,36.8,27.9,20.0,9.0,,,2952311_zeroshot.jsonl
+2952311,Muscle hardness,Acupressure at local points,Control,continuous,,11.0,,11.0,57.4,4.5,56.9,5.0,,,2952311_zeroshot.jsonl
+2952311,State-Trait Anxiety Inventory-I,Acupressure at distal points,Control,continuous,,11.0,,11.0,43.2,6.8,39.2,9.5,,,2952311_zeroshot.jsonl
+2972614,Adverse effects,Laser therapy (Group I),Placebo laser therapy (Group II),binary,0.0,30.0,0.0,22.0,,,,,,,2972614_zeroshot.jsonl
+2972614,Severity of pain,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,3.76,1.45,4.63,2.1,,,2972614_zeroshot.jsonl
+2972614,Shoulder Pain and Disability Index score,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,44.33,2.8,36.39,20.53,,,2972614_zeroshot.jsonl
+2972614,Laboratory parameters,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,,,,,,,,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder flexion,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,168.0,22.65,174.31,14.98,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder extension,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,42.66,3.4,42.95,3.98,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder abduction,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,166.66,21.38,172.72,16.67,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder adduction,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,42.0,4.27,42.04,5.26,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder internal rotation,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,49.33,9.62,49.77,4.49,,,2972614_zeroshot.jsonl
+2972614,Motion range - Shoulder external rotation,Laser therapy (Group I),Placebo laser therapy (Group II),continuous,,30.0,,22.0,44.83,5.64,44.09,1.97,,,2972614_zeroshot.jsonl
+2974815,discontinued treatment,phone calls group,no phone calls group,binary,4.0,108.0,30.0,246.0,,,,,,,2974815_zeroshot.jsonl
+2974815,The percentage of patients with controlled blood pressure (<140/90 mmHg),phone calls group,no phone calls group,binary,86.0,108.0,175.0,246.0,,,,,,,2974815_zeroshot.jsonl
+2974815,percentage of patients with controlled blood pressure,phone calls group,no phone calls group,binary,86.0,108.0,175.0,246.0,,,,,,,2974815_zeroshot.jsonl
+3003523,Short-Form 36-Items improvement,Certolizumab 200 mg,Control,continuous,,393.0,,199.0,6.4,0.6,2.1,0.8,,,3003523_zeroshot.jsonl
+3003523,Short-Form 36-Items improvement,Certolizumab 400 mg,Control,continuous,,390.0,,199.0,6.4,0.6,2.1,0.8,,,3003523_zeroshot.jsonl
+3003523,Pain,Certolizumab 400 mg,Control,continuous,,390.0,,199.0,-2.5,,-0.8,,,,3003523_zeroshot.jsonl
+3003523,Health-related quality of life improvement - Short-Form 36-Items improvement,Certolizumab 200 mg,Control,continuous,,393.0,,199.0,7.8,0.4,1.7,0.6,,,3003523_zeroshot.jsonl
+3003523,Mental Component Summary improvement,Certolizumab 400 mg,Control,continuous,,390.0,,199.0,6.4,0.6,2.1,0.8,,,3003523_zeroshot.jsonl
+3003523,Fatigue Assessment Scale improvement,Certolizumab 200 mg,Control,continuous,,393.0,,199.0,-2.6,,-0.8,,,,3003523_zeroshot.jsonl
+3136370,Fibromyalgia Impact Questionnaire scores,Soy shake,Control,continuous,,25.0,,25.0,,,,,,,3136370_zeroshot.jsonl
+3136370,Fibromyalgia Impact Questionnaire scores,Soy shake,Casein shake (Placebo),continuous,,25.0,,25.0,,,,,,,3136370_zeroshot.jsonl
+3136370,Center for Epidemiologic Studies Depression Scale score,Soy shake,Control,continuous,,25.0,,25.0,,,,,,,3136370_zeroshot.jsonl
+3136370,Center for Epidemiologic Studies Depression Scale score,Soy shake,Casein shake (Placebo),continuous,,25.0,,25.0,,,,,,,3136370_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan dose of 600 mg,placebo,binary,5.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 0.2 mg,placebo,binary,0.0,6.0,0.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 1 mg,placebo,binary,0.0,6.0,0.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 5 mg,placebo,binary,0.0,6.0,0.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 25 mg,placebo,binary,0.0,6.0,0.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 100 mg,placebo,binary,1.0,6.0,1.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 300 mg,placebo,binary,0.0,6.0,1.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,unexpected adverse events,macitentan doses of 600 mg,placebo,binary,0.0,6.0,1.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 0.2 mg,placebo,binary,0.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 1 mg,placebo,binary,0.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 5 mg,placebo,binary,0.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 25 mg,placebo,binary,2.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 100 mg,placebo,binary,1.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,adverse event profile - headache,macitentan doses of 300 mg,placebo,binary,3.0,6.0,3.0,14.0,,,,,,,3169777_zeroshot.jsonl
+3169777,Plasma endothelin-1 concentrations,macitentan dose of 600 mg,placebo,continuous,,6.0,,14.0,200.0,,90.0,,,,3169777_zeroshot.jsonl
+3195393,Continuous restraint,After restraint reduction program,Before restraint reduction program,continuous,,562.0,,463.0,8.5,0.07,10.8,0.13,,,3195393_zeroshot.jsonl
+3195393,Restraint frecuency,After restraint reduction program,Before restraint reduction program,continuous,,562.0,,463.0,13.6,,11.5,,,,3195393_zeroshot.jsonl
+3195393,Intermittent restraint,After restraint reduction program,Before restraint reduction program,continuous,,562.0,,463.0,5.1,0.07,0.7,0.02,,,3195393_zeroshot.jsonl
+3195393,Restraint knowledge,After restraint reduction program,Before restraint reduction program,continuous,,89.0,,97.0,6.23,,5.51,,,,3195393_zeroshot.jsonl
+3214395,laryngoscopy duration,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 45",group 3 involved bispectral index (BIS) of 35,continuous,,60.0,,30.0,7.4,1.1,7.2,1.4,,,3214395_zeroshot.jsonl
+3214395,laryngospasm,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 46",group 3 involved bispectral index (BIS) of 36,binary,11.0,60.0,3.0,30.0,,,,,,,3214395_zeroshot.jsonl
+3214395,bronchospasm,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 47",group 3 involved bispectral index (BIS) of 37,binary,1.0,60.0,0.0,30.0,,,,,,,3214395_zeroshot.jsonl
+3214395,laryngoscopy failure,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 48",group 3 involved bispectral index (BIS) of 38,binary,,60.0,,30.0,,,,,,,3214395_zeroshot.jsonl
+3214395,extremity movement,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 49",group 3 involved bispectral index (BIS) of 39,binary,16.0,60.0,9.0,30.0,,,,,,,3214395_zeroshot.jsonl
+3214395,awakening,"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 50",group 3 involved bispectral index (BIS) of 40,continuous,,60.0,,30.0,8.75,1.3,8.8,1.6,,,3214395_zeroshot.jsonl
+3263860,HbA1c reduction,Real-Time Continuous Glucose Monitoring,Control,continuous,,,,,-0.1,0.6,-0.1,0.6,,,3263860_zeroshot.jsonl
+3263860,Severe hypoglycemia,Real-Time Continuous Glucose Monitoring,Control,binary,3.0,73.0,5.0,71.0,,,,,,,3263860_zeroshot.jsonl
+3263860,Serious skin reactions,Real-Time Continuous Glucose Monitoring,Control,binary,0.0,74.0,0.0,72.0,,,,,,,3263860_zeroshot.jsonl
+3263860,Diabetic ketoacidosis,Real-Time Continuous Glucose Monitoring,Control,binary,0.0,74.0,0.0,72.0,,,,,,,3263860_zeroshot.jsonl
+3263860,PAID questionnaire fear of hypoglycemia,Real-Time Continuous Glucose Monitoring,Control,continuous,,69.0,,68.0,44.0,17.0,49.0,16.0,,,3263860_zeroshot.jsonl
+3276927,relieving factors in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,3.0,,2.0,,,,3276927_zeroshot.jsonl
+3276927,effective in the treatment of reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_zeroshot.jsonl
+3276927,frequency of occurrence in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,2.0,,12.0,,,,3276927_zeroshot.jsonl
+3276927,"symptoms of hernia such as heaviness, fullness and pain",post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_zeroshot.jsonl
+3276927,pain in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,1.0,,6.0,,,,3276927_zeroshot.jsonl
+3276927,aggravating factors in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,1.0,,4.0,,,,3276927_zeroshot.jsonl
+3278655,maximum total point motion (MTPM),The trabecular metal tibial monoblock component (TM),cemented component.,continuous,,27.0,,18.0,0.98,,0.79,,,,3278655_zeroshot.jsonl
+3278655,subsidence,The trabecular metal tibial monoblock component (TM),cemented component.,continuous,,27.0,,18.0,-0.38,0.37,-0.04,0.11,,,3278655_zeroshot.jsonl
+3278655,"The proportion of ""at risk"" components at 5 years",The trabecular metal tibial monoblock component (TM),cemented component.,binary,0.0,27.0,2.0,18.0,,,,,,,3278655_zeroshot.jsonl
+3309311,differences in the disc herniation,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)","adults who had been involved in a minor traffic accident, and had mild symptoms but not limited mobility (group B)",binary,20.0,23.0,6.0,19.0,,,,,,,3309311_zeroshot.jsonl
+3309311,differences in the LDD,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)","adults who had been involved in a minor traffic accident, and had mild symptoms but not limited mobility (group B)",binary,23.0,23.0,9.0,19.0,,,,,,,3309311_zeroshot.jsonl
+3309311,differences in the annulus tear,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)","adults who had been involved in a minor traffic accident, and had mild symptoms but not limited mobility (group B)",binary,23.0,23.0,5.0,19.0,,,,,,,3309311_zeroshot.jsonl
+3309311,differences in the HIZ,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)","adults who had been involved in a minor traffic accident, and had mild symptoms but not limited mobility (group B)",binary,14.0,23.0,4.0,19.0,,,,,,,3309311_zeroshot.jsonl
+3309311,The proportion of HIZ incidence,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)",adults with LBP with radicular pain (group C),binary,14.0,23.0,3.0,18.0,,,,,,,3309311_zeroshot.jsonl
+3309311,The proportion of HIZ incidence,"adults with acute axial severe LBP who could not sit up or stand up for several days, but had not experienced previous back-related diseases or trauma (group A)","adults who had been involved in a minor traffic accident, and had mild symptoms but not limited mobility (group B)",binary,14.0,23.0,4.0,19.0,,,,,,,3309311_zeroshot.jsonl
+3321528,wrist flexion,electrical muscle stimulation (EMS),control,continuous,,24.0,,28.0,,,,,,,3321528_zeroshot.jsonl
+3321528,hip flexion,electrical muscle stimulation (EMS),control,continuous,,24.0,,28.0,,,,,,,3321528_zeroshot.jsonl
+3321528,knee extension,electrical muscle stimulation (EMS),control,continuous,,24.0,,28.0,,,,,,,3321528_zeroshot.jsonl
+3321528,ankle dorsiflexion,electrical muscle stimulation (EMS),control,continuous,,24.0,,28.0,,,,,,,3321528_zeroshot.jsonl
+3321528,handgrip strength,Intensive Care Unit acquired weakness (ICU-AW),without an ICU-AW diagnosis,continuous,,7.0,,14.0,6.6,4.4,23.4,8.9,,,3321528_zeroshot.jsonl
+3321528,the total MRC score of the legs,electrical muscle stimulation (EMS),control,continuous,,24.0,,28.0,,,,,,,3321528_zeroshot.jsonl
+3475525,Correct selection of the healthier product,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,73.3,6.9,67.8,10.3,,,3475525_zeroshot.jsonl
+3475525,Correct selection of the healthier product,MTL+caloric intake group,TL+SNL group,continuous,,90.0,,95.0,73.3,6.9,65.8,7.3,,,3475525_zeroshot.jsonl
+3475525,Correct selection of the healthier product,choices group,No label group,continuous,,98.0,,99.0,72.5,13.2,67.8,10.3,,,3475525_zeroshot.jsonl
+3475525,Correct selection of the healthier product,choices group,TL+SNL group,continuous,,98.0,,95.0,72.5,13.2,65.8,7.3,,,3475525_zeroshot.jsonl
+3475525,Taste perception,MTL group,No label group,continuous,,98.0,,99.0,5.6,1.4,5.8,1.4,,,3475525_zeroshot.jsonl
+3475525,Taste perception,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,5.4,1.4,5.8,1.4,,,3475525_zeroshot.jsonl
+3475525,Taste perception,MTL group,choices group,continuous,,98.0,,98.0,5.6,1.4,5.3,1.5,,,3475525_zeroshot.jsonl
+3475525,Taste perception,MTL+caloric intake group,choices group,continuous,,90.0,,98.0,5.4,1.4,5.3,1.5,,,3475525_zeroshot.jsonl
+3475525,intent of purchase,MTL group,No label group,continuous,,98.0,,99.0,3.8,1.4,4.1,1.5,,,3475525_zeroshot.jsonl
+3475525,intent of purchase,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,3.6,1.5,4.1,1.5,,,3475525_zeroshot.jsonl
+3475525,intent of purchase,MTL group,choices group,continuous,,98.0,,98.0,3.8,1.4,4.1,1.7,,,3475525_zeroshot.jsonl
+3475525,intent of purchase,MTL+caloric intake group,choices group,continuous,,90.0,,98.0,3.6,1.5,4.1,1.7,,,3475525_zeroshot.jsonl
+3475525,Scores on the saturated fat quiz,MTL group,No label group,continuous,,98.0,,99.0,90.7,20.4,33.6,16.3,,,3475525_zeroshot.jsonl
+3475525,Scores on the saturated fat quiz,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,92.3,15.1,33.6,16.3,,,3475525_zeroshot.jsonl
+3475525,Scores on the saturated fat quiz,MTL group,choices group,continuous,,98.0,,98.0,90.7,20.4,35.7,15.9,,,3475525_zeroshot.jsonl
+3475525,Scores on the saturated fat quiz,MTL+caloric intake group,choices group,continuous,,90.0,,98.0,92.3,15.1,35.7,15.9,,,3475525_zeroshot.jsonl
+3475525,Scores on sugar quiz,MTL group,No label group,continuous,,98.0,,99.0,90.0,20.7,47.2,19.6,,,3475525_zeroshot.jsonl
+3475525,Scores on sugar quiz,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,92.6,15.5,47.2,19.6,,,3475525_zeroshot.jsonl
+3475525,Scores on sugar quiz,MTL group,choices group,continuous,,98.0,,98.0,90.0,20.7,41.9,19.4,,,3475525_zeroshot.jsonl
+3475525,Scores on sugar quiz,MTL+caloric intake group,choices group,continuous,,90.0,,98.0,92.6,15.5,41.9,19.4,,,3475525_zeroshot.jsonl
+3475525,Scores on sodium quiz,MTL group,No label group,continuous,,98.0,,99.0,93.5,16.4,42.6,20.7,,,3475525_zeroshot.jsonl
+3475525,Scores on sodium quiz,MTL+caloric intake group,No label group,continuous,,90.0,,99.0,94.1,15.6,42.6,20.7,,,3475525_zeroshot.jsonl
+3475525,Scores on sodium quiz,MTL group,choices group,continuous,,98.0,,98.0,93.5,16.4,47.1,21.1,,,3475525_zeroshot.jsonl
+3475525,Scores on sodium quiz,MTL+caloric intake group,choices group,continuous,,90.0,,98.0,94.1,15.6,47.1,21.1,,,3475525_zeroshot.jsonl
+3493722,eradication rate of H. pylori in ITT,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,71.0,85.0,72.0,84.0,,,,,,,3493722_zeroshot.jsonl
+3493722,eradication rate of H. pylori in PP,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,71.0,81.0,72.0,81.0,,,,,,,3493722_zeroshot.jsonl
+3493722,side effects,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,19.0,85.0,32.0,84.0,,,,,,,3493722_zeroshot.jsonl
+3493722,good compliance rates,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,74.0,81.0,74.0,81.0,,,,,,,3493722_zeroshot.jsonl
+3493722,well compliance rates,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,8.0,81.0,4.0,81.0,,,,,,,3493722_zeroshot.jsonl
+3493722,poor compliance rates,1-week quadruple rescue therapy,2-week quadruple rescue therapy,binary,2.0,81.0,3.0,81.0,,,,,,,3493722_zeroshot.jsonl
+3496170,Self-report questionnaire,Biperiden,Placebo,continuous,,17.0,,17.0,,,,,,,3496170_zeroshot.jsonl
+3496170,Learned irrelevance index,Biperiden,Placebo,continuous,,15.0,,15.0,,,,,,,3496170_zeroshot.jsonl
+3496170,P3a amplitude,Biperiden,Placebo,continuous,,15.0,,15.0,,,,,,,3496170_zeroshot.jsonl
+3496170,P3a latency,Biperiden,Placebo,continuous,,15.0,,15.0,,,,,,,3496170_zeroshot.jsonl
+3496170,N1 latency,Biperiden,Placebo,continuous,,15.0,,15.0,,,,,,,3496170_zeroshot.jsonl
+3496170,N1 amplitude,Biperiden,Placebo,continuous,,15.0,,15.0,,,,,,,3496170_zeroshot.jsonl
+3504298,Depressive symptoms,Face-based attentional bias modification,Placebo,continuous,,16.0,,14.0,,,,,,,3504298_zeroshot.jsonl
+3504298,Depressive symptoms,Word-based attentional bias modification,Placebo,continuous,,16.0,,15.0,,,,,,,3504298_zeroshot.jsonl
+3504298,Anxious symptoms,Face-based attentional bias modification,Placebo,continuous,,16.0,,14.0,,,,,,,3504298_zeroshot.jsonl
+3504298,Attentional Function,Word-based attentional bias modification,Face-based attentional bias modification,continuous,,16.0,,16.0,,,,,,,3504298_zeroshot.jsonl
+3504298,Difference of cortisol on waking and the highest level of following samples,Word-based attentional bias modification,Placebo,continuous,,16.0,,15.0,,,,,,,3504298_zeroshot.jsonl
+3508963,Pain relief,Intravenous lidocaine,Intravenous morphine,continuous,,120.0,,120.0,65.0,,53.0,,,,3508963_zeroshot.jsonl
+3508963,Response to treatment,Intravenous lidocaine,Intravenous morphine,binary,108.0,120.0,84.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - age,Intravenous lidocaine,Intravenous morphine,continuous,,120.0,,120.0,35.23,12.37,37.71,11.08,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - hydronephrosis in left kidney,Intravenous lidocaine,Intravenous morphine,binary,52.0,120.0,52.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - hydronephrosis in right kidney,Intravenous lidocaine,Intravenous morphine,binary,57.0,120.0,53.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - did not have hydronephrosis,Intravenous lidocaine,Intravenous morphine,binary,11.0,120.0,15.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - history of reurrent stone,Intravenous lidocaine,Intravenous morphine,binary,49.0,119.0,64.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - history of first stone,Intravenous lidocaine,Intravenous morphine,binary,70.0,119.0,56.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - right kidney stone,Intravenous lidocaine,Intravenous morphine,binary,60.0,120.0,57.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Baseline characteristics - left kidney stone,Intravenous lidocaine,Intravenous morphine,binary,60.0,120.0,63.0,120.0,,,,,,,3508963_zeroshot.jsonl
+3508963,Pain score after 5 minutes,Intravenous lidocaine,Intravenous morphine,continuous,,120.0,,120.0,3.18,2.27,4.45,2.16,,,3508963_zeroshot.jsonl
+3510731,Clicked on Results link,received the debriefing information in the body of an email with links to protocol and results pages,received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.,binary,247.0,6051.0,515.0,5892.0,,,,,,,3510731_zeroshot.jsonl
+3510731,Clicked on Protocol link,received the debriefing information in the body of an email with links to protocol and results pages,received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.,binary,202.0,6051.0,362.0,5892.0,,,,,,,3510731_zeroshot.jsonl
+3510731,Median time in seconds (interquartile range) - Results link,received the debriefing information in the body of an email with links to protocol and results pages,received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.,continuous,,247.0,,515.0,25.0,37.2,25.3,35.8,,,3510731_zeroshot.jsonl
+3510731,Median time in seconds (interquartile range) - Protocol link,received the debriefing information in the body of an email with links to protocol and results pages,received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.,continuous,,202.0,,362.0,3.5,5.4,3.6,3.9,,,3510731_zeroshot.jsonl
+3546023,Urine cotinine levels,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,continuous,,20.0,,19.0,1.179,0.738,0.047,0.017,,,3546023_zeroshot.jsonl
+3546023,serum α1-antitrypsin,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,continuous,,30.0,,19.0,1.75,0.39,1.45,0.24,,,3546023_zeroshot.jsonl
+3546023,The percentage of B cells,200 mg/day palmvitee nonsmokers,baseline,continuous,,29.0,,29.0,13.72,4.53,11.97,4.0,,,3546023_zeroshot.jsonl
+3546023,The percentage of B cells,200 mg/day palmvitee smokers,baseline,continuous,,30.0,,30.0,14.4,4.03,14.06,3.81,,,3546023_zeroshot.jsonl
+3546023,The percentage of NK cells,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,continuous,,30.0,,29.0,19.03,7.82,24.72,8.78,,,3546023_zeroshot.jsonl
+3546023,tocopherol levels,200 mg/day palmvitee smokers,baseline,continuous,,30.0,,30.0,14.11,3.89,11.39,3.06,,,3546023_zeroshot.jsonl
+3546023,tocotrienol levels,200 mg/day palmvitee smokers,baseline,continuous,,30.0,,30.0,587.68,87.5,59.49,4.21,,,3546023_zeroshot.jsonl
+3546023,tocopherol levels,200 mg/day palmvitee nonsmokers,baseline,continuous,,29.0,,29.0,14.56,3.06,11.75,2.27,,,3546023_zeroshot.jsonl
+3546023,tocotrienol levels,200 mg/day palmvitee nonsmokers,baseline,continuous,,29.0,,29.0,675.16,150.0,63.6,5.67,,,3546023_zeroshot.jsonl
+3546023,CD4+/CD8+ ratio,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,continuous,,30.0,,29.0,1.19,0.43,1.03,0.53,,,3546023_zeroshot.jsonl
+3577738,website use in terms of the number of pages visited,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,7.5,4.0,8.0,3.8,,,3577738_zeroshot.jsonl
+3577738,website use in terms of time on the website,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,151.0,117.4,150.8,107.8,,,3577738_zeroshot.jsonl
+3577738,focused on the social presence elements in terms of frequency,website with social presence elements.,website without social presence elements.,continuous,,19.0,,19.0,,,,,,,3577738_zeroshot.jsonl
+3577738,focused on the social presence elements in terms of duration,website with social presence elements.,website without social presence elements.,continuous,,19.0,,19.0,,,,,,,3577738_zeroshot.jsonl
+3577738,efficiency,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,,,,,,,3577738_zeroshot.jsonl
+3577738,effectiveness,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,,,,,,,3577738_zeroshot.jsonl
+3577738,enjoyment,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,,,,,,,3577738_zeroshot.jsonl
+3577738,active trust,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,,,,,,,3577738_zeroshot.jsonl
+3577738,interest,website with social presence elements.,website without social presence elements.,continuous,,231.0,,227.0,,,,,,,3577738_zeroshot.jsonl
+3580751,mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,Interrupted surveillance unit A,"Continuous surveillance, unit B",continuous,,,,,,,,,,,3580751_zeroshot.jsonl
+3648394,LF:HF component of HRV,10-week yoga program,Control,continuous,,18.0,,19.0,0.35,0.43,0.04,0.38,,,3648394_zeroshot.jsonl
+3648394,Push-up test,10-week yoga program,Control,continuous,,18.0,,19.0,21.0,11.0,20.0,13.0,,,3648394_zeroshot.jsonl
+3648394,Quality of life - PCS (SF36),10-week yoga program,Control,continuous,,18.0,,19.0,47.5,2.7,46.9,4.8,,,3648394_zeroshot.jsonl
+3648394,Quality of life - MCS (SF36),10-week yoga program,Control,continuous,,18.0,,19.0,47.5,10.6,48.5,7.7,,,3648394_zeroshot.jsonl
+3648394,pNN50,10-week yoga program,Control,continuous,,18.0,,19.0,20.7,25.3,19.4,18.4,,,3648394_zeroshot.jsonl
+3648394,Flexibility,10-week yoga program,Control,continuous,,18.0,,19.0,31.0,8.7,26.4,10.4,,,3648394_zeroshot.jsonl
+3654355,Body weight,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,-17.5,6.1,-0.5,2.8,,,3654355_zeroshot.jsonl
+3654355,Fat mass,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,-15.7,5.3,-0.4,5.0,,,3654355_zeroshot.jsonl
+3654355,Visceral fat,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,-82.3,31.6,4.3,22.7,,,3654355_zeroshot.jsonl
+3654355,Baseline Height,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,173.2,8.6,172.3,10.4,,,3654355_zeroshot.jsonl
+3654355,Baseline body mass index,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,42.8,4.6,42.8,6.3,,,3654355_zeroshot.jsonl
+3654355,baseline body weight,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,128.9,19.4,127.1,21.6,,,3654355_zeroshot.jsonl
+3654355,baseline fat mass,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,60.5,11.0,60.4,13.5,,,3654355_zeroshot.jsonl
+3654355,baseline fat-free mass,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,68.3,13.2,67.1,12.8,,,3654355_zeroshot.jsonl
+3654355,baseline skeletal muscle mass,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,38.4,7.9,37.9,7.4,,,3654355_zeroshot.jsonl
+3654355,baseline visceral fat area,Intensive lifestyle intervention (ILI) group,Waiting list control,continuous,,71.0,,33.0,255.7,64.7,245.6,66.3,,,3654355_zeroshot.jsonl
+3687098,adverse event of constipation,sitagliptin 100 mg/day,comparator agent,binary,,7726.0,,6885.0,2.3,,1.8,,,,3687098_zeroshot.jsonl
+3687098,The incidence rates of malignancy,sitagliptin 100 mg/day,comparator agent,binary,,7726.0,,6885.0,0.9,,0.93,,,,3687098_zeroshot.jsonl
+3687098,The incidence rates of pancreatitis,sitagliptin 100 mg/day,comparator agent,binary,,7726.0,,6885.0,0.1,,0.1,,,,3687098_zeroshot.jsonl
+3687098,The incidence of the composite endpoint of rash,sitagliptin 100 mg/day,comparator agent,binary,,7726.0,,6885.0,1.7,,1.1,,,,3687098_zeroshot.jsonl
+3751573,improvement in nursing,phase I externship program,phase II corporate-academic cooperation program,continuous,,19.0,,23.0,22.95,24.33,36.6,29.01,,,3751573_zeroshot.jsonl
+3786549,Improvement in Vaginal Maturation Index,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,continuous,,44.0,,44.0,35.2,21.7,9.9,14.5,,,3786549_zeroshot.jsonl
+3786549,Baseline characteristics: menopause,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,continuous,,44.0,,44.0,13.11,7.02,13.0,6.94,,,3786549_zeroshot.jsonl
+3786549,Baseline characteristics: height,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,continuous,,44.0,,44.0,154.86,5.45,153.43,5.88,,,3786549_zeroshot.jsonl
+3786549,Baseline characteristics: weight,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,continuous,,44.0,,44.0,56.16,8.1,57.82,8.24,,,3786549_zeroshot.jsonl
+3786549,Baseline characteristics: deliveries,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,continuous,,44.0,,44.0,2.14,1.76,2.64,1.79,,,3786549_zeroshot.jsonl
+3877023,quantitative contour sharpness of the Cervicothoracic Spine,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,18.0,,21.0,0.8,0.1,1.1,0.2,,,3877023_zeroshot.jsonl
+3877023,quantitative contour sharpness of the thoracolumbar spine,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,30.0,,34.0,0.9,0.1,1.5,0.4,,,3877023_zeroshot.jsonl
+3877023,contrast-to-noise ratios (CNR) of Cervicothoracic Spine - T2w sagittal Cerebrospinal fluid – Spinal cord,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,18.0,,21.0,18.1,11.6,9.3,5.5,,,3877023_zeroshot.jsonl
+3877023,contrast-to-noise ratios (CNR) of Thoracolumbar Spine - T2w sagittal Cerebrospinal fluid – Spinal cord,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,30.0,,34.0,22.3,13.2,14.0,5.6,,,3877023_zeroshot.jsonl
+3877023,contrast-to-noise ratios (CNR) of Cervicothoracic Spine - T2w sagittal Cerebrospinal fluid – Vertebral bone,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,18.0,,21.0,19.3,10.3,8.2,5.7,,,3877023_zeroshot.jsonl
+3877023,contrast-to-noise ratios (CNR) of Thoracolumbar Spine - T2w sagittal Cerebrospinal fluid – Vertebral bone,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,30.0,,34.0,24.0,12.9,11.7,6.3,,,3877023_zeroshot.jsonl
+3877023,Scanning times,high-field horizontal open MR scanner,short-bore MR scanner,continuous,,55.0,,48.0,31.7,21.6,19.8,8.5,,,3877023_zeroshot.jsonl
+3877023,The mean signal-to-noise (SNR) values,short-bore MR scanner,high-field horizontal open MR scanner,continuous,,,,,17.97,6.58,11.28,4.35,,,3877023_zeroshot.jsonl
+3912320,Correct response rate for 500 Hz frequency,Occupational noise,Control,continuous,,19.0,,10.0,31.9,,55.9,,,,3912320_zeroshot.jsonl
+3912320,"Correct response rate for 4,000 Hz frequency",Occupational noise,Control,continuous,,19.0,,10.0,28.07,,53.07,,,,3912320_zeroshot.jsonl
+3912320,"Correct response rate for 2,000 Hz frequency",Occupational noise,Control,continuous,,19.0,,10.0,30.4,,51.4,,,,3912320_zeroshot.jsonl
+3929816,Baseline characteristics and general anesthesia procedure,Intraabdominal pressure 20 mm Hg,Intraabdominal pressure 12 mm Hg,continuous,,10.0,,10.0,,,,,,,3929816_zeroshot.jsonl
+3929816,Pathologic changes in the liver,Intraabdominal pressure 20 mm Hg,Intraabdominal pressure 12 mm Hg,binary,,10.0,,10.0,,,,,,,3929816_zeroshot.jsonl
+3929816,Pathologic changes in the kidneys,Intraabdominal pressure 20 mm Hg,Intraabdominal pressure 12 mm Hg,binary,10.0,10.0,0.0,10.0,,,,,,,3929816_zeroshot.jsonl
+3936115,The number of diverticulitis clinical symptom occurrences during 12months,Microencapsulated sodium butyrate (MSB) 300 mg daily,control group was administered placebo,binary,2.0,30.0,7.0,22.0,,,,,,,3936115_zeroshot.jsonl
+3936115,the number of abdominal ultrasound examinations performed for suspected diverticulitis and subsequent number of diverticulitis diagnosed based on abdominal US,Microencapsulated sodium butyrate (MSB) 300 mg daily,control group was administered placebo,binary,1.0,30.0,5.0,22.0,,,,,,,3936115_zeroshot.jsonl
+3936115,"Subjective improvement in observed symptoms based on a single closed-end question (yes or no answer): ""Did you observe adequate relief of diverticulosis related to abdominal pain or discomfort within the past 12 months?""",Microencapsulated sodium butyrate (MSB) 300 mg daily,control group was administered placebo,binary,17.0,30.0,5.0,22.0,,,,,,,3936115_zeroshot.jsonl
+4033571,Overall seizure median percent improvement,Extended-release oxcarbazepine 2400 mg,Control,continuous,,111.0,,117.0,42.9,,28.7,,,,4033571_zeroshot.jsonl
+4033571,Adverse effects,Extended-release oxcarbazepine 1200 mg,Control,binary,69.0,122.0,67.0,121.0,,,,,,,4033571_zeroshot.jsonl
+4033571,Overall seizure median percent reduction,Extended-release oxcarbazepine 1200 mg,Control,continuous,,109.0,,117.0,38.2,,28.7,,,,4033571_zeroshot.jsonl
+4033571,Adverse effects,Extended-release oxcarbazepine 2400 mg,Control,binary,85.0,123.0,67.0,121.0,,,,,,,4033571_zeroshot.jsonl
+4033571,Seizure median percent improvement in North America,Extended-release oxcarbazepine 1200 mg,Control,continuous,,40.0,,41.0,34.5,,13.3,,,,4033571_zeroshot.jsonl
+4033571,Seizure median percent improvement in North America,Extended-release oxcarbazepine 2400 mg,Control,continuous,,35.0,,41.0,52.7,,13.3,,,,4033571_zeroshot.jsonl
+4132222,decrease in average lesion,application of a canola phenolic acid-based cream (CPA),placebo,continuous,,27.0,,15.0,4.71,,12.57,,,,4132222_zeroshot.jsonl
+4132222,"higher prevalence of lesion scabbing, a sign of healing",application of a canola phenolic acid-based cream (CPA),placebo,binary,,,,,,,,,,,4132222_zeroshot.jsonl
+4140238,ocular itching for visit 3B at 7 min,bepotastine besilate ophthalmic solution (BBOS) 1.5%,placebo,continuous,,68.0,,69.0,1.2,,2.1,,,,4140238_zeroshot.jsonl
+4144850,Independent household latrines number,Total Sanitation Campaign,Control,binary,631.0,1522.0,342.0,1512.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Open defecation - adult men,Total Sanitation Campaign,Control,binary,1138.0,1525.0,1274.0,1514.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Open defecation - adult women,Total Sanitation Campaign,Control,binary,1116.0,1525.0,1265.0,1514.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Open defecation - children,Total Sanitation Campaign,Control,binary,1280.0,1525.0,1351.0,1514.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Helminth infections,Total Sanitation Campaign,Control,binary,34.0,581.0,32.0,569.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Anemia,Total Sanitation Campaign,Control,binary,1079.0,1919.0,977.0,1922.0,,,,,,,4144850_zeroshot.jsonl
+4144850,Sanitation facility improvement,Total Sanitation Campaign,Control,binary,631.0,1522.0,342.0,1512.0,,,,,,,4144850_zeroshot.jsonl
+4144850,E. coli contaminated water,Total Sanitation Campaign,Control,binary,310.0,404.0,331.0,403.0,,,,,,,4144850_zeroshot.jsonl
+4173437,Postoperatively hematocrit,Tranexamic acid,Control,continuous,,30.0,,30.0,30.14,2.2,29.36,1.8,,,4173437_zeroshot.jsonl
+4173437,Complications,Tranexamic acid,Control,binary,0.0,30.0,0.0,30.0,,,,,,,4173437_zeroshot.jsonl
+4173437,Adverse effects,Tranexamic acid,Control,binary,0.0,30.0,0.0,30.0,,,,,,,4173437_zeroshot.jsonl
+4173437,Total blood loss,Tranexamic acid,Control,continuous,,30.0,,30.0,576.0,53.0,823.0,74.0,,,4173437_zeroshot.jsonl
+4173437,Coagulation profile,Tranexamic acid,Control,continuous,,30.0,,30.0,,,,,,,4173437_zeroshot.jsonl
+4173437,Crystalloid solution needed,Tranexamic acid,Control,continuous,,30.0,,30.0,,,,,,,4173437_zeroshot.jsonl
+4183415,completion of each dose at the correct time,receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).,no text message,binary,150.0,453.0,147.0,451.0,,,,,,,4183415_zeroshot.jsonl
+4183415,patient adherence,receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).,no text message,binary,309.0,453.0,315.0,451.0,,,,,,,4183415_zeroshot.jsonl
+4183415,Completed treatment,receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).,no text message,binary,309.0,453.0,315.0,451.0,,,,,,,4183415_zeroshot.jsonl
+4188762,withdrawal response of rocuronium,lidocaine,normal saline,binary,6.0,30.0,26.0,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,withdrawal response of rocuronium,ketamine,normal saline,binary,9.0,30.0,26.0,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,withdrawal response of rocuronium,remifentanil,normal saline,binary,0.0,30.0,26.0,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,heart rate,remifentanil,normal saline,continuous,,30.0,,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,heart rate,remifentanil,lidocaine,continuous,,30.0,,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,heart rate,remifentanil,ketamine,continuous,,30.0,,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,mean blood pressure,remifentanil,normal saline,continuous,,30.0,,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,mean blood pressure,remifentanil,lidocaine,continuous,,30.0,,30.0,,,,,,,4188762_zeroshot.jsonl
+4188762,mean blood pressure,remifentanil,"normal saline, lidocaine, or ketamine",continuous,,30.0,,90.0,,,,,,,4188762_zeroshot.jsonl
+4210722,vaccination certificates were submitted,a separate reminder card 4 days before the appointment (IG3),no further reminder (IG1),binary,94.0,102.0,84.0,104.0,,,,,,,4210722_zeroshot.jsonl
+4210722,vaccination certificates were submitted,a separate reminder card 4 days before the appointment (IG3),reminder card together with the appointment letter (IG2),binary,94.0,102.0,91.0,107.0,,,,,,,4210722_zeroshot.jsonl
+4210722,use of a reminder card,a separate reminder card 4 days before the appointment (IG3); reminder card together with the appointment letter (IG2);,no further reminder (IG1),binary,185.0,209.0,84.0,104.0,,,,,,,4210722_zeroshot.jsonl
+4215531,alpha power,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,,,,,,,4215531_zeroshot.jsonl
+4215531,alpha power,facial affect training (FAT) in 20 daily 1-hour sessions,treatment as usual (TAU),continuous,,19.0,,19.0,,,,,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Processing Speed,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,44.6,12.2,39.5,10.6,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Attentional Vigilance,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,38.5,11.8,33.6,11.5,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Visual Learning,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,49.4,14.0,42.8,12.8,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Working Memory,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,48.2,9.2,44.6,10.2,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Verbal Learning,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,47.1,10.0,46.2,9.9,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Reasoning,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,47.9,8.8,44.5,10.7,,,4215531_zeroshot.jsonl
+4215531,MCCB performance : Social Cognition,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,continuous,,19.0,,19.0,39.3,10.4,39.3,11.1,,,4215531_zeroshot.jsonl
+4230312,improvement of disorder,quetiapine 600 mg/day,placebo,continuous,,289.0,,204.0,-14.88,,-11.61,,,,4230312_zeroshot.jsonl
+4230312,improvement of disorder,quetiapine 300 mg/day,placebo,continuous,,283.0,,204.0,-15.58,,-11.61,,,,4230312_zeroshot.jsonl
+4319071,High-energy snack intake,Individual cognition and self-regulation processes intervention,Control,continuous,,808.0,,808.0,-0.51,,-2.43,,,,4319071_zeroshot.jsonl
+4319071,High-energy snack intake,Intervention + targeting environmental-level factors,Control,continuous,,808.0,,808.0,-0.81,,-2.43,,,,4319071_zeroshot.jsonl
+4319071,Vegetable intake,Intervention + targeting environmental-level factors,Control,continuous,,1014.0,,1014.0,20.76,,12.72,,,,4319071_zeroshot.jsonl
+4319071,Vegetable intake,Intervention + targeting environmental-level factors,Individual cognition and self-regulation processes intervention,continuous,,1014.0,,1014.0,20.76,,24.21,,,,4319071_zeroshot.jsonl
+4319071,Fruit intake,Intervention + targeting environmental-level factors,Control,continuous,,803.0,,803.0,0.77,,0.37,,,,4319071_zeroshot.jsonl
+4319071,Fruit intake,Intervention + targeting environmental-level factors,Individual cognition and self-regulation processes intervention,continuous,,803.0,,803.0,0.77,,0.53,,,,4319071_zeroshot.jsonl
+4323894,Improvement in Glasgow outcome score at 6 months post-trauma,Deep-cooling,Mild-cooling,binary,5.0,9.0,7.0,10.0,,,,,,,4323894_zeroshot.jsonl
+4323894,Improvement in Glasgow outcome score at 6 months post-trauma,Deep-cooling,No cooling,binary,5.0,9.0,2.0,13.0,,,,,,,4323894_zeroshot.jsonl
+4323894,Rate of complications,Mild-cooling or deep-cooling,No cooling,binary,10.0,19.0,6.0,13.0,,,,,,,4323894_zeroshot.jsonl
+4323894,Improvement in Glasgow outcome score at 6 months post-trauma,Mild-cooling,No cooling,binary,7.0,10.0,2.0,13.0,,,,,,,4323894_zeroshot.jsonl
+4355974,Days of wheeze,BostonBreathes system,Control,continuous,,28.0,,14.0,-1.4,,-4.2,,,,4355974_zeroshot.jsonl
+4355974,ER visits,BostonBreathes system,Control,binary,1.0,26.0,1.0,14.0,,,,,,,4355974_zeroshot.jsonl
+4355974,Days limited activity from asthma,BostonBreathes system,Control,continuous,,28.0,,14.0,-0.2,,-1.8,,,,4355974_zeroshot.jsonl
+4355974,Knowledge,BostonBreathes system,Control,binary,9.0,12.0,3.0,8.0,,,,,,,4355974_zeroshot.jsonl
+4355974,School days missed for asthma,BostonBreathes system,Control,continuous,,28.0,,14.0,-0.2,,-0.4,,,,4355974_zeroshot.jsonl
+4355974,Days patient had to slow down,BostonBreathes system,Control,continuous,,28.0,,14.0,-1.4,,-0.4,,,,4355974_zeroshot.jsonl
+4357072,improvement in symptom scores,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,continuous,,15.0,,15.0,0.2,0.4,0.8,0.6,,,4357072_zeroshot.jsonl
+4357072,reduction in burning sensation,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,continuous,,15.0,,15.0,1.0,2.1,5.3,6.1,,,4357072_zeroshot.jsonl
+4357072,reduction in erythematous area,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,binary,14.0,15.0,10.0,15.0,,,,,,,4357072_zeroshot.jsonl
+4357072,reappearance of erythematous areas after 2 months posttreatment,pimecrolimus,triamcinolone acetate,binary,1.0,15.0,5.0,15.0,,,,,,,4357072_zeroshot.jsonl
+4411165,tympanic temperature from Pre to P20 (-0.28 ±0.11°C),"whole-body to cold (whole-body cryostimulation, WBC)","whole-body except the head (partial-body cryostimulation, PBC)",continuous,,10.0,,10.0,-0.28,0.11,-0.14,0.05,,,4411165_zeroshot.jsonl
+4411165,systolic BP,"whole-body to cold (whole-body cryostimulation, WBC)","whole-body except the head (partial-body cryostimulation, PBC)",continuous,,10.0,,10.0,,,,,,,4411165_zeroshot.jsonl
+4411165,diastolic BP,"whole-body to cold (whole-body cryostimulation, WBC)","whole-body except the head (partial-body cryostimulation, PBC)",continuous,,10.0,,10.0,,,,,,,4411165_zeroshot.jsonl
+4411165,effects of cryostimulation on the ANS - heart rate,"whole-body to cold (whole-body cryostimulation, WBC)","whole-body except the head (partial-body cryostimulation, PBC)",continuous,,10.0,,10.0,-7.7,2.3,-5.02,1.07,,,4411165_zeroshot.jsonl
+4411165,Tskin of the head,"whole-body to cold (whole-body cryostimulation, WBC)","whole-body except the head (partial-body cryostimulation, PBC)",continuous,,10.0,,10.0,-7.6,,-1.5,,,,4411165_zeroshot.jsonl
+4450164,ureteropelvic junction obstruction,internal drainage group,stentless cases,binary,0.0,30.0,1.0,52.0,,,,,,,4450164_zeroshot.jsonl
+4458006,amplitude of whisking,facial nerve transection and subsequent repair either at the main trunk of the nerve (group 1),"2 cm distally, at the main bifurcation (group 2)",continuous,,12.0,,12.0,17.2,,5.9,,,,4458006_zeroshot.jsonl
+4467620,decrease in exercise intensity as time elapsed (at time 10),Hot + Cooling conditions,Hot conditions,continuous,,8.0,,8.0,114.6,35.6,123.9,30.2,,,4467620_zeroshot.jsonl
+4467620,weight reduction,Hot + Cooling conditions,Hot conditions,continuous,,8.0,,8.0,0.37,0.22,0.41,0.07,,,4467620_zeroshot.jsonl
+4467620,accuracy of the cognitive tasks,Exercise - Hot + Cooling conditions,At rest - Hot + Cooling conditions,continuous,,8.0,,8.0,,,,,,,4467620_zeroshot.jsonl
+4467620,accuracy of the cognitive tasks,Exercise - Hot condition,At rest - Hot condition,continuous,,8.0,,8.0,,,,,,,4467620_zeroshot.jsonl
+4467620,differences in the accuracy,Hot + Cooling conditions,Hot conditions,continuous,,8.0,,8.0,,,,,,,4467620_zeroshot.jsonl
+4483334,Total weight percentage of calcium,CPP-ACP plus laser (group D),Distilled and deionized water (group A),continuous,,20.0,,20.0,18.06,15.68,6.98,4.42,,,4483334_zeroshot.jsonl
+4483334,Total weight percentage of calcium,CPP-ACP plus laser (group D),Nd:YAG laser (group B),continuous,,20.0,,20.0,18.06,15.68,9.36,5.49,,,4483334_zeroshot.jsonl
+4483334,Total weight percentage of calcium,CPP-ACP plus laser (group D),CPP-ACP crème (group C),continuous,,20.0,,20.0,18.06,15.68,13.17,7.1,,,4483334_zeroshot.jsonl
+4483334,Total weight percentage of phosphate,CPP-ACP plus laser (group D),Distilled and deionized water (group A),continuous,,20.0,,20.0,12.68,10.5,6.99,3.37,,,4483334_zeroshot.jsonl
+4483334,Total weight percentage of phosphate,CPP-ACP plus laser (group D),Nd:YAG laser (group B),continuous,,20.0,,20.0,12.68,10.5,8.19,3.3,,,4483334_zeroshot.jsonl
+4483334,Total weight percentage of phosphate,CPP-ACP plus laser (group D),CPP-ACP crème (group C),continuous,,20.0,,20.0,12.68,10.5,10.12,2.72,,,4483334_zeroshot.jsonl
+4486927,"The SVR rates if the patients had IL-28B rs8099917 TT genotype, and GT/GG genotype",peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks,peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks,binary,62.0,88.0,37.0,84.0,,,,,,,4486927_zeroshot.jsonl
+4486927,The early virologic response (EVR),peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks,peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks,binary,86.0,94.0,82.0,93.0,,,,,,,4486927_zeroshot.jsonl
+4486927,the end-of-treatment virologic response,peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks,peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks,binary,83.0,94.0,75.0,93.0,,,,,,,4486927_zeroshot.jsonl
+4486927,The SVR rates when the patients had BMI >30 kg/m2,peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks,peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks,binary,10.0,19.0,6.0,12.0,,,,,,,4486927_zeroshot.jsonl
+4493951,the incidence of postoperative nausea and vomiting (PONV),H1(haloperidol 1 mg),H0 (saline),binary,14.0,49.0,27.0,50.0,,,,,,,4493951_zeroshot.jsonl
+4493951,the incidence of postoperative nausea and vomiting (PONV),H2 (haloperidol 2 mg),H0 (saline),binary,12.0,50.0,27.0,50.0,,,,,,,4493951_zeroshot.jsonl
+4493951,the incidence of postoperative nausea and vomiting (PONV),H1(haloperidol 1 mg),H2 (haloperidol 2 mg),binary,14.0,49.0,12.0,50.0,,,,,,,4493951_zeroshot.jsonl
+4493951,The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period,and H2 (haloperidol 2 mg),H0 (saline),continuous,,50.0,,50.0,,,,,,,4493951_zeroshot.jsonl
+4493951,The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period,and H2 (haloperidol 2 mg),H1(haloperidol 1 mg),continuous,,50.0,,49.0,,,,,,,4493951_zeroshot.jsonl
+4493951,The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period,H0 (saline),"H1(haloperidol 1 mg),",continuous,,50.0,,49.0,,,,,,,4493951_zeroshot.jsonl
+4511433,LDL cholesterol,5 mg elobixibat,placebo,continuous,,12.0,,12.0,4.78,0.65,4.29,0.71,,,4511433_zeroshot.jsonl
+4511433,LDL cholesterol,2.5 mg,placebo,continuous,,12.0,,12.0,4.61,0.63,4.29,0.71,,,4511433_zeroshot.jsonl
+4550271,Community knowledge,provider,control,binary,94.0,116.0,61.0,85.0,,,,,,,4550271_zeroshot.jsonl
+4550271,Community knowledge,provider-school intervention,control,binary,97.0,115.0,61.0,85.0,,,,,,,4550271_zeroshot.jsonl
+4550271,treatment according to guidelines,provider,control,binary,275.0,1832.0,299.0,1536.0,,,,,,,4550271_zeroshot.jsonl
+4550271,treatment according to guidelines,provider-school intervention,control,binary,131.0,1496.0,299.0,1536.0,,,,,,,4550271_zeroshot.jsonl
+4550271,the proportion of patients who tested positive and received (or were prescribed) an ACT,provider,control,binary,95.0,142.0,238.0,320.0,,,,,,,4550271_zeroshot.jsonl
+4550271,the proportion of patients who tested positive and received (or were prescribed) an ACT,provider-school intervention,control,binary,59.0,98.0,238.0,320.0,,,,,,,4550271_zeroshot.jsonl
+4574984,numbers overall complications,"intervention group, i.e. patient empowerment through information booklet and diary keeping","control group, which received standard care",binary,238.0,326.0,241.0,326.0,,,,,,,4574984_zeroshot.jsonl
+4574984,level of postoperative pain,"intervention group, i.e. patient empowerment through information booklet and diary keeping","control group, which received standard care",binary,234.0,311.0,261.0,317.0,,,,,,,4574984_zeroshot.jsonl
+4574984,overall mortality,"intervention group, i.e. patient empowerment through information booklet and diary keeping","control group, which received standard care",binary,45.0,326.0,58.0,326.0,,,,,,,4574984_zeroshot.jsonl
+4574984,Health-Related Quality of Life at 12 month - females,"intervention group, i.e. patient empowerment through information booklet and diary keeping - females","control group, which received standard care - females",continuous,,76.0,,71.0,61.07,,63.27,,,,4574984_zeroshot.jsonl
+4574984,Health-Related Quality of Life at 12 month - males,"intervention group, i.e. patient empowerment through information booklet and diary keeping - males","control group, which received standard care - males",continuous,,151.0,,145.0,72.49,,71.71,,,,4574984_zeroshot.jsonl
+4574984,postoperative in-hospital stay,"intervention group, i.e. patient empowerment through information booklet and diary keeping","control group, which received standard care",continuous,,326.0,,326.0,,,,,,,4574984_zeroshot.jsonl
+4675066,The mean cognitive score on the Bayley-III,iodine (150 μg/d),placebo,continuous,,27.0,,26.0,99.4,12.2,101.7,8.2,,,4675066_zeroshot.jsonl
+4675066,The mean language score on the Bayley-III,iodine (150 μg/d),placebo,continuous,,27.0,,26.0,97.2,12.2,97.9,11.5,,,4675066_zeroshot.jsonl
+4675066,The mean motor score on the Bayley-III,iodine (150 μg/d),placebo,continuous,,27.0,,26.0,93.9,10.8,92.4,9.7,,,4675066_zeroshot.jsonl
+4678179,progression-free-survival (PFS),vismodegib plus gemcitabine (GV),gemcitabine plus placebo (GP),continuous,,53.0,,53.0,4.0,,2.5,,,,4678179_zeroshot.jsonl
+4678179,Median overall survival (OS),vismodegib plus gemcitabine (GV),gemcitabine plus placebo (GP),continuous,,53.0,,53.0,6.9,,6.1,,,,4678179_zeroshot.jsonl
+4678179,Response rates,vismodegib plus gemcitabine (GV),gemcitabine plus placebo (GP),binary,4.0,53.0,7.0,53.0,,,,,,,4678179_zeroshot.jsonl
+4678179,rate of adverse events,vismodegib plus gemcitabine (GV),gemcitabine plus placebo (GP),binary,,53.0,,53.0,,,,,,,4678179_zeroshot.jsonl
+4709985,would have liked more information on acupuncture,tertiary education,other educations,binary,,,,,,,,,,,4709985_zeroshot.jsonl
+4830045,Birth status,Patients in the 3h group,Patients in the 20h group,binary,32.0,74.0,22.0,60.0,,,,,,,4830045_zeroshot.jsonl
+4830045,Embryo quality,Patients in the 3h group,Patients in the 20h group,binary,524.0,672.0,503.0,700.0,,,,,,,4830045_zeroshot.jsonl
+4879328,waist circumference,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,103.0,,112.0,-1.34,,-0.32,,,,4879328_zeroshot.jsonl
+4879328,effects for walking,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,104.0,,114.0,-0.55,,0.31,,,,4879328_zeroshot.jsonl
+4879328,effects for vigorous activity,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,103.0,,114.0,0.2,,-0.4,,,,4879328_zeroshot.jsonl
+4879328,FFBQ Total Index Score,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,104.0,,114.0,0.07,,0.01,,,,4879328_zeroshot.jsonl
+4879328,weekly moderate physical activity sessions,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,103.0,,114.0,0.19,,-0.68,,,,4879328_zeroshot.jsonl
+4879328,accelerometer-assessed moderate to vigorous physical activity (MVPA),"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,99.0,,108.0,7.41,,-16.1,,,,4879328_zeroshot.jsonl
+4879328,weight loss,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,continuous,,104.0,,114.0,-0.89,,0.3,,,,4879328_zeroshot.jsonl
+4928400,Stone-free rate,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,binary,22.0,22.0,16.0,20.0,,,,,,,4928400_zeroshot.jsonl
+4928400,Operative time,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,continuous,,22.0,,20.0,74.1,12.2,78.1,6.4,,,4928400_zeroshot.jsonl
+4928400,Complication,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,binary,5.0,22.0,7.0,20.0,,,,,,,4928400_zeroshot.jsonl
+4928400,Postoperative pain,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,continuous,,22.0,,20.0,6.4,1.3,5.1,1.6,,,4928400_zeroshot.jsonl
+4928400,Hospital stay,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,continuous,,22.0,,20.0,4.2,1.2,2.1,1.1,,,4928400_zeroshot.jsonl
+4928400,Time for return to daily activities,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,continuous,,22.0,,20.0,13.3,1.7,9.0,1.6,,,4928400_zeroshot.jsonl
+4987981,FPG,metformin,placebo,continuous,,21.0,,23.0,15.2,19.2,2.2,10.0,,,4987981_zeroshot.jsonl
+4987981,FPG,pioglitazone,placebo,continuous,,16.0,,23.0,20.5,17.4,2.2,10.0,,,4987981_zeroshot.jsonl
+4987981,total cholesterol,metformin,placebo,continuous,,21.0,,23.0,21.8,25.2,1.4,29.2,,,4987981_zeroshot.jsonl
+4987981,total cholesterol,pioglitazone,placebo,continuous,,16.0,,23.0,24.0,29.5,1.4,29.2,,,4987981_zeroshot.jsonl
+4987981,triglycerides levels,metformin,placebo,continuous,,21.0,,23.0,44.3,45.4,1.1,43.3,,,4987981_zeroshot.jsonl
+4987981,triglycerides levels,pioglitazone,placebo,continuous,,16.0,,23.0,53.3,36.9,1.1,43.3,,,4987981_zeroshot.jsonl
+4987981,PASI,pioglitazone,placebo,continuous,,16.0,,23.0,3.9,,1.7,,,,4987981_zeroshot.jsonl
+4987981,PASI,metformin,placebo,continuous,,21.0,,23.0,2.3,,1.7,,,,4987981_zeroshot.jsonl
+4987981,ESI,pioglitazone,placebo,continuous,,16.0,,23.0,4.2,,2.3,,,,4987981_zeroshot.jsonl
+4987981,ESI,metformin,placebo,continuous,,21.0,,23.0,1.3,,2.3,,,,4987981_zeroshot.jsonl
+4987981,PGA,pioglitazone,placebo,continuous,,16.0,,23.0,2.3,,1.3,,,,4987981_zeroshot.jsonl
+4987981,PGA,metformin,placebo,continuous,,21.0,,23.0,2.3,,1.3,,,,4987981_zeroshot.jsonl
+4996097,"""a"" vowel improvement",Septoplasty,Control,continuous,,33.0,,30.0,,,,,,,4996097_zeroshot.jsonl
+4996097,Total nasal resistance,Septoplasty,Control,continuous,,33.0,,30.0,0.25,,0.27,,,,4996097_zeroshot.jsonl
+4996097,"""n"" consonant improvement",Septoplasty,Control,continuous,,33.0,,30.0,,,,,,,4996097_zeroshot.jsonl
+5055753,The percentages of patients in the calm,0.2 mg oral clonidine,2 mg oral midazolam,binary,14.0,40.0,7.0,40.0,,,,,,,5055753_zeroshot.jsonl
+5055753,The percentages of patients in the sedated scale,0.2 mg oral clonidine,2 mg oral midazolam,binary,17.0,40.0,7.0,40.0,,,,,,,5055753_zeroshot.jsonl
+5055753,The mean ¬± SD of intraoperatively administered fentany,0.2 mg oral clonidine,2 mg oral midazolam,continuous,,40.0,,40.0,105.0,30.8,165.0,34.5,,,5055753_zeroshot.jsonl
+5055753,the percentages of patients in the agitated sedation scale,0.2 mg oral clonidine,2 mg oral midazolam,binary,4.0,40.0,12.0,40.0,,,,,,,5055753_zeroshot.jsonl
+5055753,the percentages of patients in the heavily sedated,0.2 mg oral clonidine,2 mg oral midazolam,binary,2.0,40.0,8.0,40.0,,,,,,,5055753_zeroshot.jsonl
+5055753,Mean ± SD of heart rate at 60 min,0.2 mg oral clonidine,2 mg oral midazolam,continuous,,,,,,,,,,,5055753_zeroshot.jsonl
+5056957,Weight reduction at 12 months,Multi-component physical activity,Usual PE and sport programmes,continuous,,592.0,,459.0,55.91,12.51,56.48,12.6,,,5056957_zeroshot.jsonl
+5056957,BMI reduction at 12 months,Multi-component physical activity,Usual PE and sport programmes,continuous,,592.0,,459.0,21.07,3.96,21.27,3.76,,,5056957_zeroshot.jsonl
+5056957,BMI z-score at 12months,Multi-component physical activity,Usual PE and sport programmes,continuous,,502.0,,406.0,0.61,1.11,0.66,1.13,,,5056957_zeroshot.jsonl
+5056957,Weight reduction at 24 months,Multi-component physical activity,Usual PE and sport programmes,continuous,,560.0,,425.0,61.08,12.72,61.94,13.23,,,5056957_zeroshot.jsonl
+5056957,BMI reduction at 24 months,Multi-component physical activity,Usual PE and sport programmes,continuous,,560.0,,425.0,21.86,4.06,22.06,4.33,,,5056957_zeroshot.jsonl
+5056957,BMI z-score at 24 months,Multi-component physical activity,Usual PE and sport programmes,continuous,,488.0,,343.0,0.69,1.12,0.71,1.09,,,5056957_zeroshot.jsonl
+5062234,The visual analog scale scores at rest timepoint 24 h,Transversus abdominis plane block with 0.375% ropivacaine,local anesthetic infiltration of the port site.,continuous,,21.0,,21.0,2.0,,0.5,,,,5062234_zeroshot.jsonl
+5062234,The visual analog scale score on coughing timepoint 24. h,Transversus abdominis plane block with 0.375% ropivacaine,local anesthetic infiltration of the port site.,continuous,,21.0,,21.0,4.0,,4.0,,,,5062234_zeroshot.jsonl
+5062234,The 24 h morphine requirement,Transversus abdominis plane block with 0.375% ropivacaine,local anesthetic infiltration of the port site.,continuous,,21.0,,21.0,34.57,14.64,32.76,14.34,,,5062234_zeroshot.jsonl
+5062234,intraoperative supplemental fentanyl,Transversus abdominis plane block with 0.375% ropivacaine,local anesthetic infiltration of the port site.,binary,8.0,21.0,16.0,21.0,,,,,,,5062234_zeroshot.jsonl
+5079604,The restricted mean time to hyperglycemia relapse,"metformin 1,000 mg daily, sitagliptin 100 mg daily",placebo,continuous,,33.0,,15.0,480.0,,305.0,,,,5079604_zeroshot.jsonl
+5079604,The probability of relapse,"metformin 1,000 mg daily, sitagliptin 100 mg daily",placebo,binary,9.0,33.0,11.0,15.0,,,,,,,5079604_zeroshot.jsonl
+5079604,Disposition index (DI),subjects who remained in remission,patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si),continuous,,28.0,,20.0,2.0,,0.8,,,,5079604_zeroshot.jsonl
+5079604,incremental area under the curve for insulin (AUCi),subjects who remained in remission,patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si),continuous,,28.0,,20.0,8000.0,,3000.0,,,,5079604_zeroshot.jsonl
+5079604,hyperglycemia relapse-free survival,"metformin 1,000 mg daily",sitagliptin 100 mg daily,continuous,,17.0,,16.0,,,,,,,5079604_zeroshot.jsonl
+5079604,Cox proportional hazards of failure-free survival,"metformin 1,000 mg daily",sitagliptin 100 mg daily,continuous,,17.0,,16.0,,,,,,,5079604_zeroshot.jsonl
+5079604,Hyperglycemia relapse-free survival,"metformin 1,000 mg daily, sitagliptin 100 mg daily",placebo,continuous,,33.0,,15.0,,,,,,,5079604_zeroshot.jsonl
+5079604,The 2-year failure rate,"metformin 1,000 mg daily, sitagliptin 100 mg daily",placebo,binary,13.0,33.0,12.0,15.0,,,,,,,5079604_zeroshot.jsonl
+5086025,Intuitive eating total score,Intuitive Eating and Acceptance and Commitment Therapy,Control,continuous,,26.0,,26.0,3.45,0.55,2.54,0.58,,,5086025_zeroshot.jsonl
+5086025,Psychological flexibility,Intuitive Eating and Acceptance and Commitment Therapy,Control,continuous,,26.0,,26.0,18.23,8.14,22.46,8.67,,,5086025_zeroshot.jsonl
+5086025,General mental health,Intuitive Eating and Acceptance and Commitment Therapy,Control,continuous,,26.0,,26.0,50.24,7.41,45.63,6.31,,,5086025_zeroshot.jsonl
+5086025,Binge eating,Intuitive Eating and Acceptance and Commitment Therapy,Control,binary,7.0,26.0,14.0,26.0,,,,,,,5086025_zeroshot.jsonl
+5086025,BMI,Intuitive Eating and Acceptance and Commitment Therapy,Control,continuous,,26.0,,26.0,32.81,5.31,32.93,4.85,,,5086025_zeroshot.jsonl
+5086025,General physical health,Intuitive Eating and Acceptance and Commitment Therapy,Control,continuous,,26.0,,26.0,50.87,11.02,50.46,7.83,,,5086025_zeroshot.jsonl
+5122613,Left SCTT,Digestion-resistant maltodextrin,Placebo,continuous,,29.0,,28.0,10.2,8.6,12.1,9.5,,,5122613_zeroshot.jsonl
+5122613,Adverse events,Digestion-resistant maltodextrin,Placebo,binary,4.0,33.0,2.0,33.0,,,,,,,5122613_zeroshot.jsonl
+5122613,Baseline characteristics and diet,Digestion-resistant maltodextrin,Placebo,continuous,,33.0,,33.0,10.0,4.6,11.5,4.6,,,5122613_zeroshot.jsonl
+5122613,Improvement in faeces consistency,Digestion-resistant maltodextrin,Placebo,continuous,,33.0,,33.0,3.4,1.0,3.2,0.5,,,5122613_zeroshot.jsonl
+5122613,Colonic transit time,Digestion-resistant maltodextrin,Placebo,continuous,,29.0,,28.0,39.7,22.3,48.0,25.0,,,5122613_zeroshot.jsonl
+5154016,24 h drainage volume,Stypro hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,187.9,82.0,230.8,75.0,,,5154016_zeroshot.jsonl
+5154016,Second 24 h drainage volume,Stypro hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,53.7,3.8,63.5,14.2,,,5154016_zeroshot.jsonl
+5154016,Second 24 h drainage volume,Collagen hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,63.3,8.9,63.5,14.2,,,5154016_zeroshot.jsonl
+5154016,24 h drainage volume,Collagen hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,185.2,68.0,230.8,75.0,,,5154016_zeroshot.jsonl
+5154016,Total drainage volume,Stypro hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,231.5,18.1,318.5,26.7,,,5154016_zeroshot.jsonl
+5154016,Total drainage volume,Collagen hemostatic sponge,Gelatin sponge,continuous,,30.0,,32.0,248.5,18.8,318.5,26.7,,,5154016_zeroshot.jsonl
+5244530,remission rate,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,61.0,125.0,63.0,133.0,,,,,,,5244530_zeroshot.jsonl
+5244530,sedative prescriptions,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,52.0,125.0,51.0,133.0,,,,,,,5244530_zeroshot.jsonl
+5244530,sick leave,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,124.8,102.5,123.3,85.0,,,5244530_zeroshot.jsonl
+5244530,continued antidepressants until the 6-month,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,86.0,125.0,78.0,133.0,,,,,,,5244530_zeroshot.jsonl
+5244530,depression severity reduction 12 months,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_zeroshot.jsonl
+5244530,change in quality of life 12 months,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_zeroshot.jsonl
+5244530,psychological well-being,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_zeroshot.jsonl
+5268424,score on the general dimension scale of negative affects (referred to as NA from here onward),view a video featuring individuals that live in extreme poverty,control,continuous,,55.0,,50.0,21.036,6.327,17.68,5.859,,,5268424_zeroshot.jsonl
+5325897,First test results,Evaluation with feedback,Evaluation without feedback,continuous,,15.0,,15.0,10.24,0.77,9.73,0.77,,,5325897_zeroshot.jsonl
+5325897,Second test results,Evaluation with feedback,Evaluation without feedback,continuous,,15.0,,15.0,17.73,0.46,12.13,0.47,,,5325897_zeroshot.jsonl
+5325897,Final test results,Evaluation with feedback,Evaluation without feedback,continuous,,15.0,,15.0,18.53,0.22,18.99,0.22,,,5325897_zeroshot.jsonl
+5360580,Plasma PlsPE,1 mg/day of Pls purified from scallop,placebo,continuous,,55.0,,48.0,0.16,,-0.34,,,,5360580_zeroshot.jsonl
+5360580,occurrence of adverse events,1 mg/day of Pls purified from scallop,placebo,binary,,169.0,,167.0,,,,,,,5360580_zeroshot.jsonl
+5360580,"WMS-R (30 min) In the patients aged 77 years or younger,",1 mg/day of Pls purified from scallop,placebo,continuous,,19.0,,21.0,1.84,,0.0,,,,5360580_zeroshot.jsonl
+5360580,WMS-R (0 min),1 mg/day of Pls purified from scallop,placebo,continuous,,140.0,,135.0,1.41,,1.39,,,,5360580_zeroshot.jsonl
+5380284,Pain scores 48 hours after the surgery,Gum-chewing group,No gum group,continuous,,38.0,,37.0,,,,,,,5380284_zeroshot.jsonl
+5380284,Surgery duration,Gum-chewing group,No gum group,continuous,,38.0,,37.0,,,,,,,5380284_zeroshot.jsonl
+5380284,Rates of POI,Gum-chewing group,No gum group,binary,2.0,38.0,2.0,37.0,,,,,,,5380284_zeroshot.jsonl
+5380284,Consumption of fentanyl,Gum-chewing group,No gum group,continuous,,38.0,,37.0,1.01,0.29,1.0,0.37,,,5380284_zeroshot.jsonl
+5380284,Pain scores 24 hours and 72 hours after the surgery,Gum-chewing group,No gum group,continuous,,38.0,,37.0,,,,,,,5380284_zeroshot.jsonl
+5380326,Interferon gamma-induced protein 10,Vitamin D supplementation,Control,continuous,,40.0,,40.0,636.47,70.91,748.88,87.12,,,5380326_zeroshot.jsonl
+5380326,Vitamin D levels,Vitamin D supplementation,Control,continuous,,40.0,,40.0,45.93,2.43,21.87,0.84,,,5380326_zeroshot.jsonl
+5380326,Th1/Th2 cytokines,Vitamin D supplementation,Control,continuous,,40.0,,40.0,,,,,,,5380326_zeroshot.jsonl
+5380326,Interleukin 2,Vitamin D supplementation,Control,continuous,,40.0,,40.0,4.49,2.11,28.69,16.29,,,5380326_zeroshot.jsonl
+5380326,Dipeptidyl peptidase-4,Vitamin D supplementation,Control,continuous,,40.0,,40.0,6032.37,214.9,6408.33,288.11,,,5380326_zeroshot.jsonl
+5380326,Tumor necrosis factor alpha,Vitamin D supplementation,Control,continuous,,40.0,,40.0,752.94,298.86,548.33,191.46,,,5380326_zeroshot.jsonl
+5419060,Sample rejection rate: CHC A,Phlebotomy training programme,Control,binary,79.0,10218.0,60.0,7557.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Sample rejection rate: CHC B,Phlebotomy training programme,Control,binary,48.0,4114.0,45.0,3973.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Sample rejection rate: CDC C,Phlebotomy training programme,Control,binary,37.0,2279.0,38.0,2321.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Sample rejection rate: CDC D,Phlebotomy training programme,Control,binary,7.0,630.0,8.0,589.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Request-form errors: CHC A,Phlebotomy training programme,Control,binary,8.0,10218.0,11.0,7557.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Request-form errors: CHC B,Phlebotomy training programme,Control,binary,12.0,4114.0,11.0,3973.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Request-form errors: CDC C,Phlebotomy training programme,Control,binary,6.0,2279.0,3.0,2321.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Request-form errors: CDC D,Phlebotomy training programme,Control,binary,0.0,630.0,0.0,589.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Preanalytical errors: CHC A,Phlebotomy training programme,Control,binary,55.0,10218.0,47.0,7557.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Preanalytical errors: CHC B,Phlebotomy training programme,Control,binary,48.0,4114.0,45.0,3973.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Preanalytical errors: CDC C,Phlebotomy training programme,Control,binary,37.0,2279.0,38.0,2321.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Preanalytical errors: CDC D,Phlebotomy training programme,Control,binary,7.0,630.0,8.0,589.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Phlebotomy questionnaire score: CHC A,Phlebotomy training programme,Control,continuous,,5.0,,5.0,96.0,,63.0,,,,5419060_zeroshot.jsonl
+5419060,Phlebotomy questionnaire score: CHC B,Phlebotomy training programme,Control,continuous,,7.0,,7.0,93.0,,58.0,,,,5419060_zeroshot.jsonl
+5419060,Phlebotomy questionnaire score: CDC C,Phlebotomy training programme,Control,continuous,,7.0,,7.0,97.0,,60.0,,,,5419060_zeroshot.jsonl
+5419060,Phlebotomy questionnaire score: CDC D,Phlebotomy training programme,Control,continuous,,4.0,,4.0,97.0,,63.0,,,,5419060_zeroshot.jsonl
+5419060,Techinque related rejections: CHC A,Phlebotomy training programme,Control,binary,20.0,10218.0,20.0,7557.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Techinque related rejections: CHC B,Phlebotomy training programme,Control,binary,15.0,4114.0,8.0,3973.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Techinque related rejections: CDC C,Phlebotomy training programme,Control,binary,18.0,2279.0,15.0,2321.0,,,,,,,5419060_zeroshot.jsonl
+5419060,Techinque related rejections: CDC D,Phlebotomy training programme,Control,binary,2.0,630.0,4.0,589.0,,,,,,,5419060_zeroshot.jsonl
+5459456,number of days with received courses of antibiotics,some portion of therapy outside of the hospital (CoPAT),full course of therapy in the hospital setting,continuous,,,,,,,,,,,5459456_zeroshot.jsonl
+5459456,inflexion-extension for the C2-C6 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,6.25,0.9,6.5,0.9,,,5459456_zeroshot.jsonl
+5459456,inflexion-extension for the C2-C4 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,4.0,0.5,4.0,0.6,,,5459456_zeroshot.jsonl
+5459456,inflexion-extension for the C4-C5 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,1.45,0.3,1.3,0.2,,,5459456_zeroshot.jsonl
+5459456,inflexion-extension for the C5-C6 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,1.35,0.15,1.4,0.2,,,5459456_zeroshot.jsonl
+5459456,lateral bending for the C2-C6 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,9.15,1.2,9.6,1.1,,,5459456_zeroshot.jsonl
+5459456,lateral bending for the C2-C4 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,5.7,0.65,5.9,0.7,,,5459456_zeroshot.jsonl
+5459456,lateral bending for the C4-C5 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,2.0,0.35,1.8,0.2,,,5459456_zeroshot.jsonl
+5459456,lateral bending for the C5-C6 segments,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,control,continuous,,16.0,,8.0,2.05,0.35,2.0,0.3,,,5459456_zeroshot.jsonl
+5459456,surgery time,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,67.5,13.5,65.0,13.0,,,5459456_zeroshot.jsonl
+5459456,blood loss,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,55.5,18.5,51.0,20.0,,,5459456_zeroshot.jsonl
+5459456,recovery time,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,3.85,1.85,3.5,1.4,,,5459456_zeroshot.jsonl
+5459456,time before eating,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,4.5,2.0,3.9,2.3,,,5459456_zeroshot.jsonl
+5459456,Flexion-Extension stiffness of C2-4,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,0.315,0.09,7.2,1.33,,,5459456_zeroshot.jsonl
+5459456,Lateral bending stiffness of C2-4,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,0.05,0.015,2.53,0.67,,,5459456_zeroshot.jsonl
+5459456,Rotation stiffness of C2-4,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),continuous,,16.0,,8.0,0.02,0.0,1.53,0.42,,,5459456_zeroshot.jsonl
+5459456,new bone formation around the screws and bone-implant contact (BIC) in both sections,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating,ACVC,continuous,,8.0,,8.0,,,,,,,5459456_zeroshot.jsonl
+547916,matrix metalloproteinase-9 (MMP-9),doxycycline (100 mg),placebo,continuous,,10.0,,4.0,2.18,1.94,3.26,3.58,,,547916_zeroshot.jsonl
+5498715,Scores of external regulation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,0.43,1.04,1.19,1.37,,,5498715_zeroshot.jsonl
+5498715,Scores of amotivation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,0.06,0.36,0.58,0.92,,,5498715_zeroshot.jsonl
+5498715,Body mass index,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,25.32,3.05,26.59,3.53,,,5498715_zeroshot.jsonl
+5498715,Sedentary behavior,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,4.26,1.76,5.91,2.21,,,5498715_zeroshot.jsonl
+5498715,agility test,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.21,1.44,13.8,1.14,,,5498715_zeroshot.jsonl
+5498715,Physical activity,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,854.0,271.6,470.0,80.46,,,5498715_zeroshot.jsonl
+5498715,physical fitness - flexibility,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,35.53,5.87,26.83,5.47,,,5498715_zeroshot.jsonl
+5498715,physical fitness - muscular endurance,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,17.83,2.7,12.48,2.9,,,5498715_zeroshot.jsonl
+5498715,physical fitness - agility,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.21,1.44,13.8,1.14,,,5498715_zeroshot.jsonl
+5498715,physical fitness - cardiorespiratory endurance,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,39.1,2.76,37.99,2.14,,,5498715_zeroshot.jsonl
+5498715,Scores of intrinsic motivation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.5,1.79,5.51,2.39,,,5498715_zeroshot.jsonl
+5498715,Scores of perception of competence,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,17.2,3.46,14.1,3.82,,,5498715_zeroshot.jsonl
+5498715,Scores of perception of autonomy,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,30.4,2.83,19.85,5.24,,,5498715_zeroshot.jsonl
+5498715,Scores of enjoyment,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,30.0,3.83,24.89,5.2,,,5498715_zeroshot.jsonl
+5498715,Scores of health care climate,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,83.1,1.37,69.57,1.61,,,5498715_zeroshot.jsonl
+5515881,memory score,demanding balance training program,relaxation group,continuous,,19.0,,21.0,9.44,5.48,8.0,4.16,,,5515881_zeroshot.jsonl
+5515881,dynamic balance performance on the stability platform,demanding balance training program,relaxation group,continuous,,19.0,,21.0,7.54,2.57,6.29,1.84,,,5515881_zeroshot.jsonl
+5515881,center of pressure (CoP) sway velocity,demanding balance training program,relaxation group,continuous,,19.0,,21.0,0.63,0.11,0.67,0.18,,,5515881_zeroshot.jsonl
+5515881,spatial score,demanding balance training program,relaxation group,continuous,,19.0,,21.0,0.443,0.75,0.04,0.91,,,5515881_zeroshot.jsonl
+5515881,VO2peak,demanding balance training program,relaxation group,continuous,,19.0,,21.0,32.07,6.52,31.947,7.89,,,5515881_zeroshot.jsonl
+5534041,composite z-scores in autism spectrum disorder (ASD),right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,continuous,,12.0,,12.0,0.11,0.81,-0.25,0.71,,,5534041_zeroshot.jsonl
+5534041,overall working memory (WM) performance in autism spectrum disorder (ASD),right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,continuous,,12.0,,12.0,0.11,0.81,-0.25,0.71,,,5534041_zeroshot.jsonl
+5534041,overall working memory (WM) performance in autism spectrum disorder (ASD),right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),continuous,,12.0,,12.0,0.11,0.81,0.13,0.82,,,5534041_zeroshot.jsonl
+5534041,overall working memory (WM) performance in autism spectrum disorder (ASD),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,continuous,,12.0,,12.0,0.13,0.82,-0.25,0.71,,,5534041_zeroshot.jsonl
+5534041,composite z-scores in autism spectrum disorder (ASD),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,continuous,,12.0,,12.0,0.13,0.82,-0.25,0.71,,,5534041_zeroshot.jsonl
+5539943,reflections of sustain talk,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5539943,"""sustain talk"" (ST)",Language Enhanced Attention and Focus MI training condition (MI-LEAF),baseline,continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5539943,"Frequency of client ""change talk"" (CT)",Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5539943,Motivational Interviewing (MI) knowledge,Language Enhanced Attention and Focus MI training condition (MI-LEAF),baseline,continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5539943,Motivational Interviewing (MI) knowledge,MI training (MI-AU),baseline,continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5539943,Motivational Interviewing (MI) knowledge,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),continuous,,,,,,,,,,,5539943_zeroshot.jsonl
+5541727,Tibial bone expansion,Allogeneic mesenchymal precursor cells,Control,continuous,,9.0,,5.0,0.5,2.4,4.0,2.3,,,5541727_zeroshot.jsonl
+5541727,Treatment-related serious adverse events,Allogeneic mesenchymal precursor cells,Control,binary,0.0,11.0,0.0,6.0,,,,,,,5541727_zeroshot.jsonl
+5541727,medial tibial cartilage volume loss,Allogeneic mesenchymal precursor cells,Control,continuous,,9.0,,5.0,0.7,5.9,-4.0,3.9,,,5541727_zeroshot.jsonl
+5541727,lateral tibial cartilage volume loss,Allogeneic mesenchymal precursor cells,Control,continuous,,9.0,,5.0,-1.4,5.3,-2.7,4.4,,,5541727_zeroshot.jsonl
+5541727,Activities of daily living,Allogeneic mesenchymal precursor cells,Control,continuous,,,,,,,,,,,5541727_zeroshot.jsonl
+5541727,Symptoms,Allogeneic mesenchymal precursor cells,Control,continuous,,,,,,,,,,,5541727_zeroshot.jsonl
+5541727,SF-36 bodily pain score,Allogeneic mesenchymal precursor cells,Control,continuous,,,,,,,,,,,5541727_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 32 mg,No treatment,continuous,,5.0,,,1.0,2.23,,,,,5559992_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 64 mg,No treatment,continuous,,4.0,,,1.25,2.5,,,,,5559992_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 96 mg,No treatment,continuous,,5.0,,,0.0,0.0,,,,,5559992_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 32 mg,Buprenophine 64 mg,continuous,,5.0,,4.0,1.0,2.23,1.25,2.5,,,5559992_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 32 mg,Buprenophine 96 mg,continuous,,5.0,,5.0,1.0,2.23,0.0,0.0,,,5559992_zeroshot.jsonl
+5559992,Anxiety,Buprenophine 64 mg,Buprenophine 96 mg,continuous,,4.0,,5.0,1.25,2.5,0.0,0.0,,,5559992_zeroshot.jsonl
+5571493,Glycemic level,Dw 5% with Quinine infusion,Dw 5% without Quinine infusion,continuous,,10.0,,10.0,82.0,5.0,92.0,7.0,,,5571493_zeroshot.jsonl
+5571493,Glycemic level,Saline + Quinine infusion,Dw 5% + Quinine infusion,continuous,,10.0,,10.0,74.0,5.0,82.0,5.0,,,5571493_zeroshot.jsonl
+5571493,Glycemic level,Saline + Quinine infusion,Saline without Quinine infusion,continuous,,10.0,,10.0,74.0,5.0,83.0,5.0,,,5571493_zeroshot.jsonl
+5571493,QT interval,Saline + Quinine infusion,Saline without Quinine infusion,continuous,,,,,,,,,,,5571493_zeroshot.jsonl
+5571493,QT interval,Dw 5%+ Quinine infusion,Dw 5% without Quinine infusion,continuous,,,,,,,,,,,5571493_zeroshot.jsonl
+5571493,Hypoglycemia,Saline + Quinine infusion,Saline without Quinine infusion,binary,0.0,10.0,0.0,10.0,,,,,,,5571493_zeroshot.jsonl
+5614421,The incidence of respiratory distress syndrome,vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone),placebo,binary,42.0,402.0,41.0,388.0,,,,,,,5614421_zeroshot.jsonl
+5614421,severity of any neonatal respiratory disease,vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone),placebo,binary,,402.0,,388.0,,,,,,,5614421_zeroshot.jsonl
+5614421,other respiratory morbidities,vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone),placebo,binary,43.0,402.0,45.0,388.0,,,,,,,5614421_zeroshot.jsonl
+5614421,"adverse infant outcomes, including serious infant composite outcome",vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone),placebo,binary,155.0,406.0,152.0,393.0,,,,,,,5614421_zeroshot.jsonl
+5614421,side effects,vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone),placebo,binary,134.0,394.0,118.0,382.0,,,,,,,5614421_zeroshot.jsonl
+5617873,Parent-rated Aberrant Behavior Checklis improvement,Aripiprazole,Placbeo,continuous,,47.0,,45.0,-11.4,,-7.5,,,,5617873_zeroshot.jsonl
+5617873,Clinician-rated Clinical Global Impression-Improvement scores,Aripiprazole,Placbeo,continuous,,47.0,,45.0,2.7,,3.4,,,,5617873_zeroshot.jsonl
+5617873,Serious adverse effects,Aripiprazole,Placbeo,binary,0.0,47.0,1.0,45.0,,,,,,,5617873_zeroshot.jsonl
+5617873,Inappropriate speech,Aripiprazole,Placbeo,continuous,,47.0,,45.0,-2.2,,-1.5,,,,5617873_zeroshot.jsonl
+5617873,Social withdrawal,Aripiprazole,Placbeo,continuous,,47.0,,45.0,-5.2,,-4.7,,,,5617873_zeroshot.jsonl
+5617873,Compulsion scale,Aripiprazole,Placbeo,continuous,,47.0,,45.0,-2.0,,-1.3,,,,5617873_zeroshot.jsonl
+5655920,Nausea,Lixisenatide with normal renal function,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,vomiting,Lixisenatide with normal renal function,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,Nausea,Lixisenatide with moderate impairment,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,vomiting,Lixisenatide with moderate impairment,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,Nausea,Lixisenatide with moderate impairment,Lixisenatide with normal renal function,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,vomiting,Lixisenatide with moderate impairment,Lixisenatide with normal renal function,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,Hypoglycaemia,Lixisenatide with normal renal function,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5655920,Hypoglycaemia,Lixisenatide with moderate impairment,Lixisenatide with mild impairment,binary,,,,,,,,,,,5655920_zeroshot.jsonl
+5686687,Pain,Resveratrol,Placebo,continuous,,22.0,,22.0,3.2,,3.9,,,,5686687_zeroshot.jsonl
+5686687,Need for dipyrone,Resveratrol,Placebo,continuous,,5.0,,5.0,1944.0,1793.0,625.0,250.0,,,5686687_zeroshot.jsonl
+5686687,Need for Ibuprofen,Resveratrol,Placebo,continuous,,5.0,,5.0,1200.0,848.0,5640.0,328.0,,,5686687_zeroshot.jsonl
+5686687,Prolactin levels,Resveratrol,Placebo,continuous,,,,,,,,,,,5686687_zeroshot.jsonl
+5686687,CA-125 levels,Resveratrol,Placebo,continuous,,,,,,,,,,,5686687_zeroshot.jsonl
+5711682,In-stent late lumen loss at 9 months,Genoss drug-eluting stent (DES),Promus Element,continuous,,38.0,,39.0,0.11,0.25,0.16,0.43,,,5711682_zeroshot.jsonl
+5711682,myocardial infarction (MI),Genoss drug-eluting stent (DES),Promus Element,binary,0.0,38.0,0.0,39.0,,,,,,,5711682_zeroshot.jsonl
+5711682,target lesion revascularization (TLR),Genoss drug-eluting stent (DES),Promus Element,binary,1.0,38.0,1.0,39.0,,,,,,,5711682_zeroshot.jsonl
+5711682,stent thrombosis,Genoss drug-eluting stent (DES),Promus Element,binary,0.0,38.0,0.0,39.0,,,,,,,5711682_zeroshot.jsonl
+5711682,rates of death,Genoss drug-eluting stent (DES),Promus Element,binary,1.0,38.0,0.0,39.0,,,,,,,5711682_zeroshot.jsonl
+5712123,time to first rescue analgesic,duloxetine 60 and etoricoxib 120mg (group D/E),Duloxetine (D),continuous,,30.0,,30.0,137.06,61.3,91.7,35.5,,,5712123_zeroshot.jsonl
+5712123,postoperative pain at rest,duloxetine 60 and etoricoxib 120mg (group D/E),placebo,continuous,,30.0,,30.0,2.0,,3.0,,,,5712123_zeroshot.jsonl
+5712123,postoperative pain on movement,duloxetine 60 and etoricoxib 120mg (group D/E),placebo,continuous,,30.0,,30.0,3.0,,3.5,,,,5712123_zeroshot.jsonl
+5712123,morphine requirements at 24 h,E group,P group,continuous,,30.0,,30.0,24.6,4.5,31.9,6.7,,,5712123_zeroshot.jsonl
+5712123,morphine requirements at 24 h,D group,P group,continuous,,30.0,,30.0,22.6,4.1,31.9,6.7,,,5712123_zeroshot.jsonl
+5712123,morphine requirements at 24 h,D/E group,P group,continuous,,30.0,,30.0,17.9,3.2,31.9,6.7,,,5712123_zeroshot.jsonl
+5712123,time to first rescue analgesic,duloxetine 60 and etoricoxib 120mg (group D/E),Placebo group (P),continuous,,30.0,,30.0,137.06,61.3,62.03,37.2,,,5712123_zeroshot.jsonl
+5712123,time to first rescue analgesic,duloxetine 60 and etoricoxib 120mg (group D/E),etoricoxib (E),continuous,,30.0,,30.0,137.06,61.3,105.3,28.4,,,5712123_zeroshot.jsonl
+5726464,Glucose,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,89.0,,91.0,,,,5726464_zeroshot.jsonl
+5726464,insulin,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,5.4,,5.8,,,,5726464_zeroshot.jsonl
+5726464,25(OH)D levels,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,52.6,,27.0,,,,5726464_zeroshot.jsonl
+5726464,Lipid profile: total cholesterol,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,174.0,,170.0,,,,5726464_zeroshot.jsonl
+5726464,Lipid profile: HDL-c,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,51.0,,50.0,,,,5726464_zeroshot.jsonl
+5726464,Lipid profile: LDL-c,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,97.0,,93.0,,,,5726464_zeroshot.jsonl
+5726464,Lipid profile: Triglycerides,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,102.0,,100.0,,,,5726464_zeroshot.jsonl
+5726464,Changes in body mass index,Vitamin D plus calcium supplementation,Placebo,continuous,,79.0,,86.0,25.1,,24.1,,,,5726464_zeroshot.jsonl
+5726464,Metabolic syndrome,Vitamin D plus calcium supplementation,Placebo,binary,9.0,66.0,11.0,75.0,,,,,,,5726464_zeroshot.jsonl
+5771543,CGI-I response rate,fluoxetine,placebo,binary,79.0,101.0,62.0,99.0,,,,,,,5771543_zeroshot.jsonl
+5771543,CGI-I response rate,desvenlafaxine,placebo,binary,68.0,99.0,62.0,99.0,,,,,,,5771543_zeroshot.jsonl
+5771543,Treatment-emergent adverse events (TEAEs),desvenlafaxine,placebo,binary,69.0,115.0,79.0,112.0,,,,,,,5771543_zeroshot.jsonl
+5771543,Treatment-emergent adverse events (TEAEs),fluoxetine,placebo,binary,72.0,112.0,79.0,112.0,,,,,,,5771543_zeroshot.jsonl
+5773985,mean volume of both the solutions used,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,4.15,0.52,4.12,0.6,,,5773985_zeroshot.jsonl
+5773985,subjective onset of action,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,3.0,1.08,2.92,1.03,,,5773985_zeroshot.jsonl
+5773985,objective onset of action,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,7.28,1.59,7.4,1.93,,,5773985_zeroshot.jsonl
+5773985,duration of surgical procedure,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,32.2,15.5,33.68,18.91,,,5773985_zeroshot.jsonl
+5773985,the mean duration of postoperative analgesia,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,508.92,63.3,1840.84,819.51,,,5773985_zeroshot.jsonl
+5773985,number of analgesic tablets,0.5% bupivacaine with 1:200000 epinephrine in group I,mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II,continuous,,25.0,,25.0,1.64,0.99,0.8,1.08,,,5773985_zeroshot.jsonl
+57750,Death or myocardial infarction,eptifibatide,placebo,binary,14.2,,15.7,,,,,,,,57750_zeroshot.jsonl
+57750,Myocardial infarction,eptifibatide,placebo,binary,12.6,,13.6,,,,,,,,57750_zeroshot.jsonl
+5777419,the total cultivable microbiota,probiotic,placebo,continuous,,16.0,,15.0,0.8,,0.5,,,,5777419_zeroshot.jsonl
+5777419,the total cultivable microbiota,antibiotic,placebo,continuous,,16.0,,15.0,1.9,,0.5,,,,5777419_zeroshot.jsonl
+5777419,attachment gain,probiotic,placebo,continuous,,16.0,,15.0,-0.4,,-0.4,,,,5777419_zeroshot.jsonl
+5777419,reduction of PPD,probiotic,placebo,continuous,,16.0,,15.0,-0.5,,-0.6,,,,5777419_zeroshot.jsonl
+5777419,reduction of plaque,probiotic,placebo,continuous,,16.0,,15.0,-26.4,,-28.7,,,,5777419_zeroshot.jsonl
+5777419,attachment gain,antibiotic,placebo,continuous,,16.0,,15.0,-0.5,,-0.4,,,,5777419_zeroshot.jsonl
+5777419,reduction of PPD,antibiotic,placebo,continuous,,16.0,,15.0,-0.6,,-0.6,,,,5777419_zeroshot.jsonl
+5777419,reduction of plaque,antibiotic,placebo,continuous,,16.0,,15.0,-26.8,,-28.7,,,,5777419_zeroshot.jsonl
+5777645,HbA1c levels,to peer-led structured patient education,conventional care alone,continuous,,70.0,,70.0,-1.05,2.0,-0.15,1.7,,,5777645_zeroshot.jsonl
+5777645,Mean BMI change,to peer-led structured patient education,conventional care alone,continuous,,70.0,,70.0,-1.65,2.5,0.05,3.2,,,5777645_zeroshot.jsonl
+5777645,Mean waist circumference,to peer-led structured patient education,conventional care alone,continuous,,70.0,,70.0,-3.34,9.3,2.65,10.3,,,5777645_zeroshot.jsonl
+5781260,adverse events,lemon verbena extract,placebo,binary,,22.0,,22.0,,,,,,,5781260_zeroshot.jsonl
+5781260,Movement induced pain (VAS),lemon verbena extract,placebo,continuous,,17.0,,20.0,,,,,,,5781260_zeroshot.jsonl
+5781260,Interleukin 6,lemon verbena extract,placebo,continuous,,17.0,,20.0,,,,,,,5781260_zeroshot.jsonl
+5781260,Exercise-induced Creatine kinase (CK),lemon verbena extract,placebo,continuous,,17.0,,20.0,,,,,,,5781260_zeroshot.jsonl
+5781260,exercise-related loss of muscle strength (MVC),lemon verbena extract,placebo,continuous,,17.0,,20.0,,,,,,,5781260_zeroshot.jsonl
+5781260,Glutathione peroxidase (GPxP),lemon verbena extract,placebo,continuous,,17.0,,20.0,,,,,,,5781260_zeroshot.jsonl
+5800236,Months of sick leave,Nacadia® nature-based therapy,Cognitive behavioral therapy,continuous,,,,,,,,,,,5800236_zeroshot.jsonl
+5830087,objective response rate (ORR),"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",Control arm ( bevacizumab/carboplatin/paclitaxel as above),binary,29.0,48.0,10.0,23.0,,,,,,,5830087_zeroshot.jsonl
+5830087,disease control rate,"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",Control arm ( bevacizumab/carboplatin/paclitaxel as above),binary,45.0,48.0,21.0,23.0,,,,,,,5830087_zeroshot.jsonl
+5830087,duration of objective response,"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",Control arm ( bevacizumab/carboplatin/paclitaxel as above),continuous,,29.0,,10.0,10.3,,5.6,,,,5830087_zeroshot.jsonl
+5830087,progression-free survival,"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",Control arm ( bevacizumab/carboplatin/paclitaxel as above),continuous,,50.0,,23.0,11.6,,9.6,,,,5830087_zeroshot.jsonl
+5874317,Knee extension (1-rep Max),Bilateral training,Unilateral training,continuous,,9.0,,9.0,237.2,51.0,182.4,8.4,,,5874317_zeroshot.jsonl
+5874317,Knee flexion (1-rep Max),Bilateral training,Unilateral training,continuous,,9.0,,9.0,99.8,10.2,86.8,2.9,,,5874317_zeroshot.jsonl
+5874317,Change of direction improvement,Bilateral training,Unilateral training,continuous,,9.0,,9.0,5.46,0.2,5.67,0.16,,,5874317_zeroshot.jsonl
+5874317,Squat jump,Bilateral training,Unilateral training,continuous,,9.0,,9.0,0.37,0.04,0.34,0.04,,,5874317_zeroshot.jsonl
+5874317,Horizontal countermovement jump,Bilateral training,Unilateral training,continuous,,9.0,,9.0,2.34,0.07,2.21,0.15,,,5874317_zeroshot.jsonl
+5874317,Horizontal triple jump (non-dominant leg),Bilateral training,Unilateral training,continuous,,9.0,,9.0,6.29,0.31,6.35,0.34,,,5874317_zeroshot.jsonl
+5884950,objective-SCORAD score,extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).,extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).,continuous,,13.0,,13.0,13.0,,17.0,,,,5884950_zeroshot.jsonl
+5884950,chemokines CXCL9,extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).,extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).,continuous,,21.0,,20.0,2.33,,1.95,,,,5884950_zeroshot.jsonl
+5971365,clinically meaningful improvement at week 144 (⩾3-point increase on the SDMT),daclizumab beta,intramuscular (IM) interferon (IFN) beta-1a,binary,188.0,287.0,144.0,277.0,,,,,,,5971365_zeroshot.jsonl
+5971365,Symbol Digit Modalities Test (SDMT) score at week 144 in limited patients,daclizumab beta,intramuscular (IM) interferon (IFN) beta-1a,continuous,,287.0,,277.0,6.3,12.6,3.1,13.2,,,5971365_zeroshot.jsonl
+5971365,Symbol Digit Modalities Test (SDMT) score at week 96,daclizumab beta,intramuscular (IM) interferon (IFN) beta-1a,continuous,,720.0,,682.0,4.1,12.4,2.9,12.7,,,5971365_zeroshot.jsonl
+5971365,clinically meaningful worsening at week 96 (⩾3-point decrease on the SDMT),daclizumab beta,intramuscular (IM) interferon (IFN) beta-1a,binary,140.0,720.0,169.0,682.0,,,,,,,5971365_zeroshot.jsonl
+5971365,clinically meaningful improvement at week 96 (⩾3-point increase on the SDMT),daclizumab beta,intramuscular (IM) interferon (IFN) beta-1a,binary,432.0,720.0,369.0,682.0,,,,,,,5971365_zeroshot.jsonl
+5976307,induction time,etomidate,propofol based on midazolam,continuous,,62.0,,62.0,2.46,0.993,2.21,1.0,,,5976307_zeroshot.jsonl
+5976307,total procedure time,etomidate,propofol based on midazolam,continuous,,62.0,,62.0,29.73,12.23,29.46,16.04,,,5976307_zeroshot.jsonl
+5976307,awake time,etomidate,propofol based on midazolam,continuous,,62.0,,62.0,15.08,10.06,17.07,11.83,,,5976307_zeroshot.jsonl
+5976307,The incidence rate of all cardiopulmonary adverse events,etomidate,propofol based on midazolam,binary,34.0,62.0,45.0,62.0,,,,,,,5976307_zeroshot.jsonl
+5976307,The incidence rate of vital sign fluctuation (VSF),etomidate,propofol based on midazolam,binary,17.0,62.0,31.0,62.0,,,,,,,5976307_zeroshot.jsonl
+5976307,the incidence rate of adverse events disturbing the procedure,etomidate,propofol based on midazolam,binary,16.0,62.0,5.0,62.0,,,,,,,5976307_zeroshot.jsonl
+5976307,The incidence rate of myoclonus,etomidate,propofol based on midazolam,binary,10.0,62.0,1.0,62.0,,,,,,,5976307_zeroshot.jsonl
+5976949,ANGPTL4 expression,"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)",control group- normal glucose tolerance,continuous,,20.0,,25.0,23.1,25.6,98.3,104.6,,,5976949_zeroshot.jsonl
+5976949,ANGPTL4 expression,"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)","GDM2 (less tight glycaemic targets, <5.3_mmol/L and <_7.8_mmol/L)",continuous,,20.0,,21.0,23.1,25.6,21.5,25.8,,,5976949_zeroshot.jsonl
+5976949,leptin/adiponectin ratio (LAR),"GDM2 (less tight glycaemic targets, <5.3 mmol/L and < 7.8 mmol/L)","GDM1 (tight glycaemic targets, fasting blood glucose_<_5.1_mmol/L and <7.0_mmol/L postprandial) postprandial,), control group- normal glucose tolerance)",continuous,,21.0,,20.0,1.7,1.66,0.97,1.31,,,5976949_zeroshot.jsonl
+5976949,leptin/adiponectin ratio (LAR),"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)",control group- normal glucose tolerance,continuous,,20.0,,25.0,0.97,1.31,0.72,0.46,,,5976949_zeroshot.jsonl

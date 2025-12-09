@@ -1,0 +1,113 @@
+================================================================================
+EVALUATION SUMMARY: gpt_5_1_fewshot_20251209_104548
+================================================================================
+
+Filter: _fewshot
+Timestamp: 2025-12-09 10:48:10
+Articles evaluated: 8
+Total gold fields: 154
+Total predicted fields: 154
+
+--------------------------------------------------------------------------------
+MICRO-AVERAGED METRICS (aggregate TP/FP/FN across all articles)
+--------------------------------------------------------------------------------
+  TP:           72
+  FP:           10
+  FN:           82
+  TN:           132
+  Precision:    0.8780
+  Recall:       0.4675
+  F1:           0.6102
+
+--------------------------------------------------------------------------------
+MACRO-AVERAGED METRICS (average of per-article metrics)
+--------------------------------------------------------------------------------
+  Precision: 0.5875
+  Recall:    0.4958
+  F1:        0.5151
+
+--------------------------------------------------------------------------------
+ERROR METRICS
+--------------------------------------------------------------------------------
+  MSE (Mean Squared Error):       1200.1852
+  RMSE (Root Mean Squared Error): 34.6437
+  Number of comparisons:          144
+
+--------------------------------------------------------------------------------
+EXACT MATCH ACCURACY (all fields correct for an ICO)
+--------------------------------------------------------------------------------
+  Overall:    0.2400 (6/25)
+  Binary:     0.6250 (5/8)
+  Continuous: 0.0588 (1/17)
+
+--------------------------------------------------------------------------------
+PER-FIELD MICRO METRICS (aggregate TP/FP/FN/TN for each field)
+--------------------------------------------------------------------------------
+intervention_group_size                  P: 0.9444  R: 0.4857  F1: 0.6415  MSE: 183.8529  (TP=17, FP=1, FN=18, TN=1)
+comparator_group_size                    P: 0.9444  R: 0.4857  F1: 0.6415  MSE: 148.9706  (TP=17, FP=1, FN=18, TN=1)
+intervention_events                      P: 0.7143  R: 0.6250  F1: 0.6667  MSE: 24.0000  (TP=5, FP=2, FN=3, TN=27)
+comparator_events                        P: 0.7143  R: 0.6250  F1: 0.6667  MSE: 80.6667  (TP=5, FP=2, FN=3, TN=27)
+intervention_mean                        P: 0.8571  R: 0.3529  F1: 0.5000  MSE: 8406.0607  (TP=6, FP=1, FN=11, TN=19)
+comparator_mean                          P: 0.9000  R: 0.5294  F1: 0.6667  MSE: 17.0453  (TP=9, FP=1, FN=8, TN=19)
+intervention_standard_deviation          P: 0.8571  R: 0.3529  F1: 0.5000  MSE: 1607.9965  (TP=6, FP=1, FN=11, TN=19)
+comparator_standard_deviation            P: 0.8750  R: 0.4118  F1: 0.5600  MSE: 24.0647  (TP=7, FP=1, FN=10, TN=19)
+
+--------------------------------------------------------------------------------
+PER-ARTICLE BREAKDOWN
+--------------------------------------------------------------------------------
+
+PMCID=57750 (57750_fewshot.jsonl):
+  Gold/Pred fields: 0/4
+  TP/FP/FN/TN: 0/4/0/12
+  P/R/F1: 0.000 / 0.000 / 0.000
+  MSE: 0.000 (0 comparisons)
+  Exact match: 0.000 (0/0)
+
+PMCID=3276927 (3276927_fewshot.jsonl):
+  Gold/Pred fields: 12/12
+  TP/FP/FN/TN: 12/0/0/36
+  P/R/F1: 1.000 / 1.000 / 1.000
+  MSE: 0.000 (12 comparisons)
+  Exact match: 0.000 (0/0)
+
+PMCID=3580751 (3580751_fewshot.jsonl):
+  Gold/Pred fields: 6/0
+  TP/FP/FN/TN: 0/0/6/2
+  P/R/F1: 0.000 / 0.000 / 0.000
+  MSE: 0.000 (0 comparisons)
+  Exact match: 0.000 (0/1)
+
+PMCID=3751573 (3751573_fewshot.jsonl):
+  Gold/Pred fields: 6/6
+  TP/FP/FN/TN: 6/0/0/2
+  P/R/F1: 1.000 / 1.000 / 1.000
+  MSE: 0.000 (6 comparisons)
+  Exact match: 1.000 (1/1)
+
+PMCID=4450164 (4450164_fewshot.jsonl):
+  Gold/Pred fields: 4/2
+  TP/FP/FN/TN: 0/0/4/4
+  P/R/F1: 0.000 / 0.000 / 0.000
+  MSE: 82.000 (2 comparisons)
+  Exact match: 0.000 (0/1)
+
+PMCID=5244530 (5244530_fewshot.jsonl):
+  Gold/Pred fields: 20/24
+  TP/FP/FN/TN: 14/6/6/30
+  P/R/F1: 0.700 / 0.700 / 0.700
+  MSE: 620.278 (18 comparisons)
+  Exact match: 0.333 (1/3)
+
+PMCID=5498715 (5498715_fewshot.jsonl):
+  Gold/Pred fields: 90/90
+  TP/FP/FN/TN: 24/0/66/30
+  P/R/F1: 1.000 / 0.267 / 0.421
+  MSE: 1794.419 (90 comparisons)
+  Exact match: 0.000 (0/15)
+
+PMCID=5771543 (5771543_fewshot.jsonl):
+  Gold/Pred fields: 16/16
+  TP/FP/FN/TN: 16/0/0/16
+  P/R/F1: 1.000 / 1.000 / 1.000
+  MSE: 0.000 (16 comparisons)
+  Exact match: 1.000 (4/4)

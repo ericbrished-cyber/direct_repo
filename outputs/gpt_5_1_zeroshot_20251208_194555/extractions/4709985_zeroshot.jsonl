@@ -1,0 +1,1 @@
+{"pmcid": 4709985, "prompt_strategy": "zeroshot", "model": "gpt-5.1", "extractions": [{"outcome": "would have liked more information on acupuncture", "intervention": "tertiary education", "comparator": "other educations", "pmcid": "PMC4719634", "outcome_type": "binary"}], "errors": []}
