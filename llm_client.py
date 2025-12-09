@@ -78,10 +78,14 @@ class LLMClient:
         prompt: str,
         pdf_path: Optional[str] = None,
         pdf_paths: Optional[list[str]] = None,
+        num_fewshot_pdfs: int = 0,
         **kwargs: Dict[str, Any],
     ) -> str:
         """
         Execute a text-only prompt and return the raw string output.
+
+        :param num_fewshot_pdfs: The number of PDFs at the start of pdf_paths that are 'few-shot' examples
+                                 and should be cached (if supported by provider).
         """
         pdf_list = pdf_paths or ([] if pdf_path is None else [pdf_path])
 
@@ -105,26 +109,44 @@ class LLMClient:
 
         if self.provider == "anthropic":
             content_blocks = []
-            for path in pdf_list:
+
+            # Add PDF blocks
+            for i, path in enumerate(pdf_list):
                 with open(path, "rb") as f:
                     pdf_b64 = base64.standard_b64encode(f.read()).decode("utf-8")
-                content_blocks.append(
-                    {
-                        "type": "document",
-                        "source": {
-                            "type": "base64",
-                            "media_type": "application/pdf",
-                            "data": pdf_b64,
-                        },
-                    }
-                )
+
+                block = {
+                    "type": "document",
+                    "source": {
+                        "type": "base64",
+                        "media_type": "application/pdf",
+                        "data": pdf_b64,
+                    },
+                }
+
+                # Apply caching to the last few-shot PDF.
+                # Only the last item in a contiguous cached sequence needs the marker,
+                # but for simplicity/safety with PDF blocks, marking the break point is key.
+                # If we have [FS1, FS2, Target], we cache FS2.
+                # This caches FS1 and FS2.
+                if i == num_fewshot_pdfs - 1 and num_fewshot_pdfs > 0:
+                    block["cache_control"] = {"type": "ephemeral"}
+
+                content_blocks.append(block)
+
             content_blocks.append({"type": "text", "text": prompt})
+
+            extra_headers = {}
+            # Enable beta prompt caching headers if we are using caching
+            if num_fewshot_pdfs > 0:
+                extra_headers["anthropic-beta"] = "prompt-caching-2024-07-31"
 
             response = self._client.messages.create(
                 model=self.model,
                 max_tokens=kwargs.get("max_tokens", 4000),
                 temperature=kwargs.get("temperature", self.temperature),
                 messages=[{"role": "user", "content": content_blocks}],
+                extra_headers=extra_headers if extra_headers else None,
             )
             for block in response.content or []:
                 text = getattr(block, "text", None)

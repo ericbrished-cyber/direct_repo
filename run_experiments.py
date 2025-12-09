@@ -139,6 +139,7 @@ def _generate_with_retry(
     pdf_paths: List[str],
     max_tokens: Optional[int],
     label: str,
+    num_fewshot_pdfs: int = 0,
     max_attempts: int = 3,
     backoff_seconds: int = 5,
 ) -> str:
@@ -150,7 +151,12 @@ def _generate_with_retry(
         attempt_label = label if attempt == 1 else f"{label} (retry {attempt}/{max_attempts})"
         try:
             with Spinner(attempt_label):
-                return client.generate(prompt, pdf_paths=pdf_paths, max_tokens=max_tokens)
+                return client.generate(
+                    prompt,
+                    pdf_paths=pdf_paths,
+                    max_tokens=max_tokens,
+                    num_fewshot_pdfs=num_fewshot_pdfs
+                )
         except Exception as exc:  # noqa: BLE001
             last_exc = exc
             if attempt >= max_attempts or not _is_retryable_error(exc):
@@ -178,8 +184,13 @@ def run_experiments(config: ExperimentConfig) -> Dict:
     for idx, pmcid in enumerate(pmcids, start=1):
         ico_rows = get_icos(pmcid, annotations=annotations)
         pdf_paths: List[str] = []
+        num_fewshot_pdfs = 0
+
         if config.fewshot_pdf_paths:
+            # Add few-shot PDFs first
             pdf_paths.extend([str(Path(p)) for p in config.fewshot_pdf_paths])
+            num_fewshot_pdfs = len(config.fewshot_pdf_paths)
+
         pdf_path_main = _find_pdf_path(pmcid, config.pdf_folder)
         if pdf_path_main:
             pdf_paths.append(str(pdf_path_main))
@@ -208,6 +219,7 @@ def run_experiments(config: ExperimentConfig) -> Dict:
                 pdf_paths=pdf_paths,
                 max_tokens=config.max_tokens,
                 label=label,
+                num_fewshot_pdfs=num_fewshot_pdfs,
             )
             result = ExtractionResult.from_response(
                 pmcid=pmcid,
