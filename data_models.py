@@ -11,8 +11,6 @@ NUMERIC_FIELDS = [
     "comparator_group_size",
     "intervention_events",
     "comparator_events",
-    "intervention_rate",
-    "comparator_rate",
     "intervention_mean",
     "comparator_mean",
     "intervention_standard_deviation",
@@ -21,79 +19,45 @@ NUMERIC_FIELDS = [
 
 IDENTITY_FIELDS = ["outcome", "intervention", "comparator"]
 
-# Map per-field extraction classes to direct-row fields
-EXTRACTION_CLASS_TO_FIELD = {
-    "intervention_group_size": "intervention_group_size",
-    "comparator_group_size": "comparator_group_size",
-    "intervention_events": "intervention_events",
-    "comparator_events": "comparator_events",
-    "intervention_rate": "intervention_rate",
-    "comparator_rate": "comparator_rate",
-    "intervention_mean": "intervention_mean",
-    "comparator_mean": "comparator_mean",
-    "intervention_standard_deviation": "intervention_standard_deviation",
-    "comparator_standard_deviation": "comparator_standard_deviation",
-}
-
-
-def _coerce_numeric(value: Any) -> Any:
-    """Best-effort numeric coercion; leave untouched on failure."""
-    if value is None:
-        return None
-    if isinstance(value, (int, float)):
-        return value
-    text = str(value).strip()
-    if not text:
-        return None
-    # Strip common trailing symbols (%, commas)
-    cleaned = text.replace(",", "")
-    cleaned = cleaned[:-1] if cleaned.endswith("%") else cleaned
-    try:
-        return float(cleaned)
-    except ValueError:
-        return text
-
-
-def _extract_json_snippet(text: str) -> str:
-    """Extract the first JSON object from a text blob."""
-    if "```" in text:
-        parts = re.split(r"```(?:json)?", text, flags=re.IGNORECASE)
-        if len(parts) >= 3:
-            text = parts[1]
-    start = text.find("{")
-    end = text.rfind("}")
-    if start != -1 and end != -1 and end > start:
-        return text[start : end + 1]
-    return text
-
-
 @dataclass
 class OutcomeExtraction:
     outcome: str
     intervention: str
     comparator: str
-    intervention_group_size: Optional[Any] = None
-    comparator_group_size: Optional[Any] = None
-    intervention_events: Optional[Any] = None
-    comparator_events: Optional[Any] = None
-    intervention_rate: Optional[Any] = None
-    comparator_rate: Optional[Any] = None
-    intervention_mean: Optional[Any] = None
-    comparator_mean: Optional[Any] = None
-    intervention_standard_deviation: Optional[Any] = None
-    comparator_standard_deviation: Optional[Any] = None
+    intervention_group_size: Optional[float] = None
+    comparator_group_size: Optional[float] = None
+    intervention_events: Optional[float] = None
+    comparator_events: Optional[float] = None
+    intervention_mean: Optional[float] = None
+    comparator_mean: Optional[float] = None
+    intervention_standard_deviation: Optional[float] = None
+    comparator_standard_deviation: Optional[float] = None
     extra: Dict[str, Any] = field(default_factory=dict)
 
     @classmethod
     def from_dict(cls, payload: Dict[str, Any]) -> "OutcomeExtraction":
-        data = {k: payload.get(k) for k in IDENTITY_FIELDS + NUMERIC_FIELDS}
-        missing = [k for k in IDENTITY_FIELDS if not data.get(k)]
-        if missing:
-            raise ValueError(f"Missing required fields: {missing}")
-        for key in NUMERIC_FIELDS:
-            data[key] = _coerce_numeric(data[key])
+        # Extract identity fields
+        data = {}
+        for k in IDENTITY_FIELDS:
+            if k not in payload:
+                 raise ValueError(f"Missing required field: {k}")
+            data[k] = payload[k]
+
+        # Extract numeric fields
+        for k in NUMERIC_FIELDS:
+            val = payload.get(k)
+            if val is not None:
+                try:
+                    # Simple numeric conversion
+                    data[k] = float(val)
+                except (ValueError, TypeError):
+                    data[k] = None
+            else:
+                data[k] = None
+
+        # Store anything else in extra
         extra = {k: v for k, v in payload.items() if k not in data}
-        return cls(extra=extra, **data)  # type: ignore[arg-type]
+        return cls(extra=extra, **data)
 
     def to_dict(self) -> Dict[str, Any]:
         payload = asdict(self)
@@ -118,91 +82,46 @@ class ExtractionResult:
         model: str,
         prompt_strategy: str,
     ) -> "ExtractionResult":
-        def _attrs_get(attrs: Dict[str, Any], key: str) -> Any:
-            return attrs.get(key) if key in attrs else attrs.get(key.lower())
-
-        def _convert_field_schema(items: List[Dict[str, Any]]) -> tuple[List["OutcomeExtraction"], List[str]]:
-            grouped: Dict[Any, Dict[str, Any]] = {}
-            errs: List[str] = []
-
-            for item in items:
-                if not isinstance(item, dict):
-                    errs.append(f"Ignoring non-dict extraction {item!r}")
-                    continue
-
-                ex_class = item.get("extraction_class")
-                field_name = EXTRACTION_CLASS_TO_FIELD.get(ex_class)
-                if not field_name:
-                    errs.append(f"Unrecognized extraction_class {ex_class!r}")
-                    continue
-
-                attrs = item.get("attributes") or {}
-                outcome = _attrs_get(attrs, "Outcome")
-                intervention = _attrs_get(attrs, "Intervention")
-                comparator = _attrs_get(attrs, "Comparator")
-                extra_attrs = {
-                    k: v
-                    for k, v in attrs.items()
-                    if k not in {"Outcome", "outcome", "Intervention", "intervention", "Comparator", "comparator"}
-                }
-
-                key = (
-                    outcome,
-                    intervention,
-                    comparator,
-                    tuple(sorted((k, str(v)) for k, v in extra_attrs.items())),
-                )
-                row = grouped.setdefault(
-                    key,
-                    {
-                        "outcome": outcome,
-                        "intervention": intervention,
-                        "comparator": comparator,
-                        "extra": dict(extra_attrs),
-                    },
-                )
-                # Keep any new extra attributes that were not seen before
-                for k, v in extra_attrs.items():
-                    row["extra"].setdefault(k, v)
-
-                raw_val = item.get("value", item.get("extraction_text"))
-                row[field_name] = _coerce_numeric(raw_val)
-
-            parsed_rows: List[OutcomeExtraction] = []
-            for row in grouped.values():
-                payload = {k: v for k, v in row.items() if k != "extra"}
-                payload.update(row.get("extra") or {})
-                try:
-                    parsed_rows.append(OutcomeExtraction.from_dict(payload))
-                except Exception as exc:  # noqa: BLE001
-                    errs.append(f"Could not parse grouped extraction {payload}: {exc}")
-
-            return parsed_rows, errs
-
+        # 1. Parse JSON
         if isinstance(response, dict):
             data = response
             raw_text = json.dumps(response)
         else:
             raw_text = response
-            snippet = _extract_json_snippet(response)
-            data = json.loads(snippet)
+            # Simple JSON extraction regex
+            match = re.search(r"(\{.*\})", response.replace("\n", " "), re.DOTALL)
+            if match:
+                try:
+                    data = json.loads(match.group(1))
+                except json.JSONDecodeError:
+                    # Fallback: try to find the largest bracketed block
+                    # But if the regex failed to find valid JSON, we likely can't do much.
+                    # Let's try the whole string just in case.
+                    try:
+                        data = json.loads(response)
+                    except json.JSONDecodeError:
+                        return cls(pmcid=pmcid, prompt_strategy=prompt_strategy, model=model, raw_response=raw_text, errors=["Could not parse JSON"])
+            else:
+                 # Try parsing the whole string directly
+                try:
+                    data = json.loads(response)
+                except json.JSONDecodeError:
+                     return cls(pmcid=pmcid, prompt_strategy=prompt_strategy, model=model, raw_response=raw_text, errors=["No JSON object found"])
 
+        # 2. Extract items
         items = data.get("extractions", [])
         if not isinstance(items, list):
-            raise ValueError("Response must contain an 'extractions' list")
+            return cls(pmcid=pmcid, prompt_strategy=prompt_strategy, model=model, raw_response=raw_text, errors=["Response missing 'extractions' list"])
 
+        # 3. Convert to objects
         parsed: List[OutcomeExtraction] = []
         errors: List[str] = []
 
-        # Newer prompts may emit per-field schema with `extraction_class` and `attributes`
-        if items and all(isinstance(item, dict) and "extraction_class" in item for item in items):
-            parsed, errors = _convert_field_schema(items)
-        else:
-            for item in items:
-                try:
-                    parsed.append(OutcomeExtraction.from_dict(item))
-                except Exception as exc:  # noqa: BLE001
-                    errors.append(f"Could not parse extraction {item}: {exc}")
+        for item in items:
+            try:
+                parsed.append(OutcomeExtraction.from_dict(item))
+            except Exception as exc:
+                errors.append(f"Invalid item {item}: {exc}")
 
         return cls(
             pmcid=int(pmcid),
