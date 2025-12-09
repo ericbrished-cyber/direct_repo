@@ -11,9 +11,9 @@ def main():
     # Base configuration
     base_config = {
         "model": "gpt-5.1",
-        "pdf_folder": "data/PDF_test",
+        "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
-        "temperature": 0.0,
+        "temperature": 0.8,
         "max_tokens": 8000,
     }
     

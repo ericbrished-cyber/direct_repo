@@ -1,24 +1,21 @@
 You are extracting pairwise ICO results from a randomized controlled trial.  
 Return only JSON of the form: {"extractions":[ ... ]}.
 
-Each item in "extractions" is one ICO row with exactly these fields (use null for missing/not applicable):
+Each item in "extractions" is one ICO row with exactly these fields (use null for missing/not in article/not applicable):
 
 {
-  "id": null,
-  "evidence_inference_prompt_id": null,
-  "pmcid": "<STRING OR INTEGER>",
   "outcome": "<STRING>",
   "intervention": "<STRING>",
   "comparator": "<STRING>",
   "outcome_type": "<continuous | binary>",
-  "intervention_events": null,
-  "intervention_group_size": null,
-  "comparator_events": null,
-  "comparator_group_size": null,
-  "intervention_mean": null,
-  "intervention_standard_deviation": null,
-  "comparator_mean": null,
-  "comparator_standard_deviation": null
+  "intervention_events": <int>,
+  "intervention_group_size": <int>,
+  "comparator_events": <int>,
+  "comparator_group_size": <int>,
+  "intervention_mean": <int>,
+  "intervention_standard_deviation": <int>,
+  "comparator_mean": <int>,
+  "comparator_standard_deviation": <int>
 }
 
 ---------------------------------------------------------------------
