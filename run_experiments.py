@@ -15,7 +15,7 @@ from dotenv import find_dotenv, load_dotenv
 from batch_evaluation import BatchEvaluator
 from export_extractions_to_excel import COLUMNS, load_extractions
 from llm_client import LLMClient
-from models import ExtractionResult
+from data_models import ExtractionResult
 from prompting import build_prompt
 from spinner import Spinner
 from utils import (
