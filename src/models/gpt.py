@@ -28,8 +28,8 @@ class GPTModel(ModelAdapter):
             pdf = pdfium.PdfDocument(pdf_path)
             for i in range(len(pdf)):
                 page = pdf[i]
-                # Render page to bitmap (scale=2.0 for better quality)
-                bitmap = page.render(scale=2.0)
+                # Render page to bitmap (scale=1.0 for ok quality and hopefully goodenough quality...)
+                bitmap = page.render(scale=1.0)
                 pil_image = bitmap.to_pil()
 
                 # Convert to base64
@@ -45,21 +45,18 @@ class GPTModel(ModelAdapter):
     def _create_user_message(self, text: str, images: List[str]) -> Dict:
         """
         Constructs a user message with text and images.
-        UPDATED: Uses 'input_text' and 'input_image' for newer API schema.
+        UPDATED: Flattens image_url structure.
         """
-        # ÄNDRING 1: "text" -> "input_text"
-        content = [{"type": "input_text", "text": text}] 
+        content = [{"type": "input_text", "text": text}]
         
         for img_b64 in images:
             content.append({
-                # ÄNDRING 2: "image_url" -> "input_image"
-                "type": "input_image", 
-                "image_url": {
-                    "url": f"data:image/jpeg;base64,{img_b64}"
-                }
+                "type": "input_image",
+                # ÄNDRING: Ta bort det inre objektet {"url": ...}
+                "image_url": f"data:image/jpeg;base64,{img_b64}"
             })
         return {"role": "user", "content": content}
-
+    
     def _create_assistant_message(self, text: str) -> Dict:
         """
         Constructs an assistant message.
@@ -106,13 +103,17 @@ class GPTModel(ModelAdapter):
             # Extract text
             raw_text = response.output_text
 
-            # Extract usage (standard OpenAI fields: prompt_tokens, completion_tokens)
+# Extract usage
             usage = response.usage
-            token_usage = {
-                "input": usage.prompt_tokens if usage else 0,
-                "output": usage.completion_tokens if usage else 0
-            }
+            
+            # Försök konvertera till dict om det är ett pydantic-objekt, annars använd som det är
+            usage_dict = usage.model_dump() if hasattr(usage, 'model_dump') else (usage.__dict__ if hasattr(usage, '__dict__') else {})
 
+            # Hämta värdena säkert
+            token_usage = {
+                "input": usage_dict.get("prompt_tokens", 0) if usage else 0,
+                "output": usage_dict.get("completion_tokens", 0) if usage else 0
+            }
             return raw_text, token_usage
 
         except Exception as e:
