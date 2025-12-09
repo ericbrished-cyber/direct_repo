@@ -1,1 +1,0 @@
-{"pmcid": 2596788, "prompt_strategy": "direct", "model": "gpt-5.1", "extractions": [{"outcome": "GERD-knowledge", "intervention": "education", "comparator": "control", "intervention_group_size": 102, "comparator_group_size": 109, "intervention_mean": 17.1, "comparator_mean": 14.0, "pmcid": "236", "outcome_type": "continuous"}], "errors": []}
