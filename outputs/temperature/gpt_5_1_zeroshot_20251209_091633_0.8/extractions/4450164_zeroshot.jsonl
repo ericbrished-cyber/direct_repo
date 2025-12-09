@@ -1,1 +1,0 @@
-{"pmcid": 4450164, "prompt_strategy": "zeroshot", "model": "gpt-5.1", "extractions": [{"outcome": "ureteropelvic junction obstruction", "intervention": "internal drainage group", "comparator": "stentless cases", "intervention_group_size": 30, "comparator_group_size": 52, "intervention_events": 2, "comparator_events": 9, "outcome_type": "binary"}], "errors": []}
