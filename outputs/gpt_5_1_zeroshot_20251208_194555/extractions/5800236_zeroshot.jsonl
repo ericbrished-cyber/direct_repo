@@ -1,1 +1,0 @@
-{"pmcid": 5800236, "prompt_strategy": "zeroshot", "model": "gpt-5.1", "extractions": [{"outcome": "Months of sick leave", "intervention": "Nacadia® nature-based therapy", "comparator": "Cognitive behavioral therapy", "pmcid": "137", "outcome_type": "continuous"}], "errors": []}

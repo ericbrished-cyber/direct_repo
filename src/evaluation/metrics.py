@@ -24,8 +24,6 @@ def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dic
                 true_positives += 1
                 matched_indices.add(idx)
                 match_found = True
-
-                # Check numerical accuracy here if needed (e.g. for RMSE)
                 break
 
         if not match_found:

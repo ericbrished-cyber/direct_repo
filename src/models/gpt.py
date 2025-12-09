@@ -11,7 +11,6 @@ class GPTModel(ModelAdapter):
     def __init__(self, model_version: str = "gpt-4-turbo"):
         self.model_version = model_version
         self.api_key = os.getenv("OPENAI_API_KEY")
-        # Initialize client here
 
     def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
         """
@@ -21,24 +20,4 @@ class GPTModel(ModelAdapter):
              raise ValueError("OPENAI_API_KEY not found in environment variables.")
 
         # Logic structure (Placeholder for User Implementation):
-        # 1. Prepare Messages
-        # messages = [{"role": "system", "content": payload.instruction}]
-
-        # 2. Add Few-Shot
-        # for pdf_path, answer in payload.few_shot_examples:
-        #     # Encode PDF to base64
-        #     # Add User message with image_url/file_url (depending on specific API version support for PDFs)
-        #     # Add Assistant message with 'answer'
-        #     pass
-
-        # 3. Add Target PDF
-        # Encode target PDF
-        # Add User message
-
-        # 4. Call API
-        # response = client.chat.completions.create(...)
-
-        # 5. Extract text and usage
-        # return response.choices[0].message.content, response.usage
-
         raise NotImplementedError("User to implement OpenAI API call with Base64 encoding.")
