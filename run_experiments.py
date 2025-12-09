@@ -37,7 +37,6 @@ class ExperimentConfig:
     output_root: str = "outputs"
     run_name: Optional[str] = None
     pmcids: Optional[List[int]] = None
-    temperature: float = 0.0
     max_tokens: Optional[int] = None
     fewshot_pdf_paths: Optional[List[str]] = None
     fewshot_prompt_template: Optional[str] = None
@@ -170,7 +169,7 @@ def run_experiments(config: ExperimentConfig) -> Dict:
     if not pmcids:
         raise SystemExit(f"No PDFs found in {config.pdf_folder}")
 
-    client = LLMClient(model=config.model, temperature=config.temperature)
+    client = LLMClient(model=config.model)
 
     stats = {"total": len(pmcids), "success": 0, "failed": 0, "skipped": 0}
     failures: List[tuple[int, str]] = []

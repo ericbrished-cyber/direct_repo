@@ -13,7 +13,6 @@ def main():
         "model": "gpt-5.1",
         "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
-        "temperature": 0.0,
         "max_tokens": 8000,
     }
     

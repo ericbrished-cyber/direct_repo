@@ -1,0 +1,1 @@
+{"pmcid": 3580751, "prompt_strategy": "fewshot", "model": "gpt-5.1", "extractions": [{"outcome": "mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP", "intervention": "Interrupted surveillance unit A", "comparator": "Continuous surveillance, unit B", "outcome_type": "continuous"}], "errors": []}
