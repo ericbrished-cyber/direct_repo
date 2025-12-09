@@ -1,1 +1,0 @@
-{"pmcid": 2596788, "prompt_strategy": "zeroshot", "model": "gemini-3-pro-preview", "extractions": [{"outcome": "GERD-knowledge", "intervention": "education", "comparator": "control", "intervention_group_size": 85, "comparator_group_size": 88, "intervention_mean": 17.1, "comparator_mean": 14.0, "outcome_type": "continuous"}], "errors": []}
