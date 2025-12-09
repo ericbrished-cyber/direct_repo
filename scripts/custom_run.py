@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Lägg till föräldramappen (roten) i Pythons sökväg
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.evaluation.runner import run_evaluation
 
 # ==========================================

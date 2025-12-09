@@ -45,11 +45,15 @@ class GPTModel(ModelAdapter):
     def _create_user_message(self, text: str, images: List[str]) -> Dict:
         """
         Constructs a user message with text and images.
+        UPDATED: Uses 'input_text' and 'input_image' for newer API schema.
         """
-        content = [{"type": "text", "text": text}]
+        # ÄNDRING 1: "text" -> "input_text"
+        content = [{"type": "input_text", "text": text}] 
+        
         for img_b64 in images:
             content.append({
-                "type": "image_url",
+                # ÄNDRING 2: "image_url" -> "input_image"
+                "type": "input_image", 
                 "image_url": {
                     "url": f"data:image/jpeg;base64,{img_b64}"
                 }
