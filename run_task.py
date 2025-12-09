@@ -3,7 +3,7 @@ from pathlib import Path
 from run_experiments import ExperimentConfig, run_experiments
 
 # Configuration
-USE_FEWSHOT = False  # Set to False for zero-shot
+USE_FEWSHOT = True  # Set to False for zero-shot
 
 def main():
     root = Path(__file__).resolve().parent
@@ -13,7 +13,7 @@ def main():
         "model": "gpt-5.1",
         "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
-        "temperature": 0.8,
+        "temperature": 0.0,
         "max_tokens": 8000,
     }
     

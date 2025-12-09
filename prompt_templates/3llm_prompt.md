@@ -12,10 +12,10 @@ Each item in "extractions" is one ICO row with exactly these fields (use null fo
   "intervention_group_size": <int>,
   "comparator_events": <int>,
   "comparator_group_size": <int>,
-  "intervention_mean": <int>,
-  "intervention_standard_deviation": <int>,
-  "comparator_mean": <int>,
-  "comparator_standard_deviation": <int>
+  "intervention_mean": <float>,
+  "intervention_standard_deviation": <float>,
+  "comparator_mean": <float>,
+  "comparator_standard_deviation": <float>
 }
 
 ---------------------------------------------------------------------
