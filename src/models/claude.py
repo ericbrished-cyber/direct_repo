@@ -11,7 +11,7 @@ class ClaudeModel(ModelAdapter):
         self.model_version = model_version
         self.api_key = os.getenv("ANTHROPIC_API_KEY")
 
-    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
         """
         Iterate through payload.few_shot_examples.
         Crucial: Detect the last message of the few-shot sequence and attach cache_control: {"type": "ephemeral"}.
