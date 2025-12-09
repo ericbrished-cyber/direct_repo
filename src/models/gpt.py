@@ -28,13 +28,14 @@ class GPTModel(ModelAdapter):
             pdf = pdfium.PdfDocument(pdf_path)
             for i in range(len(pdf)):
                 page = pdf[i]
-                # Render page to bitmap (scale=1.0 for ok quality and hopefully goodenough quality...)
-                bitmap = page.render(scale=1.0)
+                # ÄNDRING: Sänkt skala till 0.75 för att minska storleken drastiskt
+                bitmap = page.render(scale=0.75)
                 pil_image = bitmap.to_pil()
 
                 # Convert to base64
                 buffered = io.BytesIO()
-                pil_image.save(buffered, format="JPEG")
+                # ÄNDRING: Komprimerar bilden hårdare (quality=50) för snabbare upload
+                pil_image.save(buffered, format="JPEG", quality=50, optimize=True)
                 img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
                 images_b64.append(img_str)
         except Exception as e:
@@ -45,14 +46,12 @@ class GPTModel(ModelAdapter):
     def _create_user_message(self, text: str, images: List[str]) -> Dict:
         """
         Constructs a user message with text and images.
-        UPDATED: Flattens image_url structure.
         """
         content = [{"type": "input_text", "text": text}]
         
         for img_b64 in images:
             content.append({
                 "type": "input_image",
-                # ÄNDRING: Ta bort det inre objektet {"url": ...}
                 "image_url": f"data:image/jpeg;base64,{img_b64}"
             })
         return {"role": "user", "content": content}
@@ -66,12 +65,12 @@ class GPTModel(ModelAdapter):
     def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
         """
         Generates a response using GPT-5.1.
-        Uses client.responses.create with input=messages and reasoning={"effort": "none"}.
         """
         if not self.api_key:
              raise ValueError("OPENAI_API_KEY not found in environment variables.")
 
-        client = OpenAI(api_key=self.api_key)
+        # ÄNDRING: Sätter timeout till 5 minuter (300s) istället för default (ofta 60s)
+        client = OpenAI(api_key=self.api_key, timeout=600.0)
         messages = []
 
         # Process Few-Shot Examples
@@ -79,9 +78,7 @@ class GPTModel(ModelAdapter):
             for example_pdf_path, example_answer in payload.few_shot_examples:
                 try:
                     example_images = self._encode_pdf(str(example_pdf_path))
-                    # Add User message (PDF + generic instruction)
                     messages.append(self._create_user_message("Please extract the data according to the schema.", example_images))
-                    # Add Assistant message (Expected Output)
                     messages.append(self._create_assistant_message(example_answer))
                 except Exception as e:
                     print(f"Warning: Failed to process few-shot example {example_pdf_path}: {e}")
@@ -92,24 +89,27 @@ class GPTModel(ModelAdapter):
 
         # Call API
         try:
-            # Using client.responses.create. 'input' parameter takes the conversation history (messages).
             response = client.responses.create(
                 model=self.model_version,
                 input=messages,
-                reasoning={"effort": "none"}, # Required for temperature support
+                reasoning={"effort": "none"}, 
                 temperature=temperature
             )
 
-            # Extract text
-            raw_text = response.output_text
+            # Extract text (Safe extraction)
+            raw_text = getattr(response, 'output_text', None)
+            if raw_text is None and hasattr(response, 'choices'):
+                 raw_text = response.choices[0].message.content
 
-# Extract usage
-            usage = response.usage
-            
-            # Försök konvertera till dict om det är ett pydantic-objekt, annars använd som det är
-            usage_dict = usage.model_dump() if hasattr(usage, 'model_dump') else (usage.__dict__ if hasattr(usage, '__dict__') else {})
+            # Extract usage (Safe extraction)
+            usage = getattr(response, 'usage', None)
+            usage_dict = {}
+            if usage:
+                if hasattr(usage, 'model_dump'):
+                    usage_dict = usage.model_dump()
+                elif hasattr(usage, '__dict__'):
+                    usage_dict = usage.__dict__
 
-            # Hämta värdena säkert
             token_usage = {
                 "input": usage_dict.get("prompt_tokens", 0) if usage else 0,
                 "output": usage_dict.get("completion_tokens", 0) if usage else 0
