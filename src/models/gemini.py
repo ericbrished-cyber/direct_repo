@@ -11,7 +11,7 @@ class GeminiModel(ModelAdapter):
         self.model_version = model_version
         self.api_key = os.getenv("GOOGLE_API_KEY")
 
-    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
         """
         Use google.generativeai. Pass PDF bytes directly as inline blobs (mime_type='application/pdf').
         """

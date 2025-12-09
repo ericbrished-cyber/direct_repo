@@ -12,7 +12,7 @@ class GPTModel(ModelAdapter):
         self.model_version = model_version
         self.api_key = os.getenv("OPENAI_API_KEY")
 
-    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
         """
         Use openai. Encode PDF to Base64 and pass as a file attachment (assuming GPT-5.1/4o multimodal capability).
         """
