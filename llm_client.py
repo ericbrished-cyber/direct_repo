@@ -4,6 +4,7 @@ import os
 from typing import Any, Dict, Optional
 import base64
 
+import httpx
 from anthropic import Anthropic
 from openai import OpenAI
 from google import genai
@@ -45,7 +46,8 @@ class LLMClient:
             api_key = os.environ.get("ANTHROPIC_API_KEY")
             if not api_key:
                 raise EnvironmentError("ANTHROPIC_API_KEY is not set")
-            self._client = Anthropic(api_key=api_key)
+            # Use an explicit httpx client to avoid incompatible defaults between the SDK and httpx>=0.28.
+            self._client = Anthropic(api_key=api_key, http_client=httpx.Client())
         elif self.provider == "google":
             api_key = os.environ.get("GOOGLE_API_KEY")
             if not api_key:

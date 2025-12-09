@@ -3,17 +3,18 @@ from pathlib import Path
 from run_experiments import ExperimentConfig, run_experiments
 
 # Configuration
-USE_FEWSHOT = True  # Set to False for zero-shot
+USE_FEWSHOT = False  # Set to False for zero-shot
 
 def main():
     root = Path(__file__).resolve().parent
     
     # Base configuration
     base_config = {
-        "model": "gemini-3-pro-preview",
+        "model": "claude-opus-4-5",
         "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
-        "max_tokens": 8000,
+        "temperature": 0.8,
+        "max_tokens": 30000,
     }
     
     if USE_FEWSHOT:
