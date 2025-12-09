@@ -1,0 +1,14 @@
+{
+  "model": "gemini-2.5-pro",
+  "prompt_label": "zeroshot",
+  "pdf_folder": "data/PDF_dev",
+  "gold_path": "gold-standard/gold_standard_clean.json",
+  "prompt_template": "prompt_templates/3llm_prompt.md",
+  "output_root": "outputs",
+  "run_name": null,
+  "pmcids": null,
+  "max_tokens": 30000,
+  "temperature": 1.0,
+  "fewshot_pdf_paths": null,
+  "fewshot_prompt_template": null
+}

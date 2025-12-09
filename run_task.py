@@ -10,10 +10,10 @@ def main():
     
     # Base configuration
     base_config = {
-        "model": "claude-opus-4-5",
+        "model": "gemini-2.5-pro",
         "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
-        "temperature": 0.8,
+        "temperature": 1.0,
         "max_tokens": 30000,
     }
     
