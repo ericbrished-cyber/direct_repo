@@ -29,12 +29,6 @@ class PromptBuilder:
         target_pdf = self.loader.get_pdf_path(target_pmcid)
         target_icos = self.loader.get_icos(target_pmcid)
 
-        # We construct a specific instruction for this PDF, listing the targets.
-        # This is appended to the generic system prompt or passed as user message.
-        # For now, let's keep the generic system prompt in the payload or we can combine.
-        # The requirement says "PromptPayload(instruction, target_pdf, few_shot_examples)"
-
-        # Let's customize the instruction to include the targets
         targets_str = "\n".join([f"- Outcome: {ico.get('outcome', 'Unknown')} (Intervention: {ico.get('intervention')}, Comparator: {ico.get('comparator')})" for ico in target_icos])
 
         instruction = f"{SYSTEM_PROMPT}\n\nPlease extract data for the following specific outcomes:\n{targets_str}\n"

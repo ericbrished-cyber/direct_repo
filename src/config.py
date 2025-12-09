@@ -11,7 +11,7 @@ PDF_DIR = DATA_DIR / "pdfs"
 RESULTS_DIR = DATA_DIR / "results"
 GOLD_STANDARD_PATH = DATA_DIR / "gold_standard.json"
 
-# Model Versions (Using placeholders/defaults as requested, can be overridden via env vars)
+# Model Versions
 CLAUDE_MODEL_VERSION = os.getenv("CLAUDE_MODEL_VERSION", "claude-3-opus-20240229")
 GPT_MODEL_VERSION = os.getenv("GPT_MODEL_VERSION", "gpt-4-turbo")
 GEMINI_MODEL_VERSION = os.getenv("GEMINI_MODEL_VERSION", "gemini-1.5-pro")
