@@ -1,0 +1,1 @@
+{"pmcid": 57750, "prompt_strategy": "zeroshot", "model": "gemini-3-pro-preview", "extractions": [{"outcome": "Death or myocardial infarction", "intervention": "eptifibatide", "comparator": "placebo", "outcome_type": "binary"}, {"outcome": "Myocardial infarction", "intervention": "eptifibatide", "comparator": "placebo", "outcome_type": "binary"}], "errors": []}

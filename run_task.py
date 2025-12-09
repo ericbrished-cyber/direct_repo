@@ -10,7 +10,7 @@ def main():
     
     # Base configuration
     base_config = {
-        "model": "gpt-5.1",
+        "model": "gemini-3-pro-preview",
         "pdf_folder": "data/PDF_dev",
         "gold_path": "gold-standard/gold_standard_clean.json",
         "max_tokens": 8000,
