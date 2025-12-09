@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "total": 10,
+    "success": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "failures": [],
+  "eval": {
+    "run_name": "gpt_5_1_zeroshot_20251209_091633",
+    "num_articles": 10,
+    "total_gold_fields": 182,
+    "total_pred_fields": 166,
+    "total_tp": 68,
+    "total_fp": 6,
+    "total_fn": 114,
+    "total_tn": 156,
+    "macro_precision": 0.6625,
+    "macro_recall": 0.43486111111111114,
+    "macro_f1": 0.48342940546133095,
+    "micro_precision": 0.918918918918919,
+    "micro_recall": 0.37362637362637363,
+    "micro_f1": 0.5312500000000001,
+    "per_field_micro": {
+      "intervention_group_size": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 21,
+        "tn": 2,
+        "precision": 1.0,
+        "recall": 0.4878048780487805,
+        "f1": 0.6557377049180327
+      },
+      "comparator_group_size": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 21,
+        "tn": 2,
+        "precision": 1.0,
+        "recall": 0.4878048780487805,
+        "f1": 0.6557377049180327
+      },
+      "intervention_events": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 2,
+        "tn": 34,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999
+      },
+      "comparator_events": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 2,
+        "tn": 34,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999
+      },
+      "intervention_mean": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 18,
+        "tn": 19,
+        "precision": 0.8333333333333334,
+        "recall": 0.21739130434782608,
+        "f1": 0.3448275862068966
+      },
+      "comparator_mean": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 17,
+        "tn": 19,
+        "precision": 0.8571428571428571,
+        "recall": 0.2608695652173913,
+        "f1": 0.4
+      },
+      "intervention_standard_deviation": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 16,
+        "tn": 23,
+        "precision": 0.75,
+        "recall": 0.15789473684210525,
+        "f1": 0.2608695652173913
+      },
+      "comparator_standard_deviation": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 17,
+        "tn": 23,
+        "precision": 0.6666666666666666,
+        "recall": 0.10526315789473684,
+        "f1": 0.18181818181818182
+      }
+    }
+  },
+  "run_folder": "outputs/gpt_5_1_zeroshot_20251209_091633"
+}
