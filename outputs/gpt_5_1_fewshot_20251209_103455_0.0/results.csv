@@ -1,0 +1,44 @@
+pmcid,outcome,intervention,comparator,outcome_type,intervention_events,intervention_group_size,comparator_events,comparator_group_size,intervention_mean,intervention_standard_deviation,comparator_mean,comparator_standard_deviation,intervention_rate,comparator_rate,source_file
+1216327,The mean body weight gain,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,50.6,,-7.0,,,,1216327_fewshot.jsonl
+1216327,The duration of the illness,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,47.5,38.9,26.5,27.4,,,1216327_fewshot.jsonl
+1216327,The fecal losses,White Grape Juice (WGJ),colored and flavored water (WA),continuous,,30.0,,30.0,3.59,2.35,2.19,1.63,,,1216327_fewshot.jsonl
+2681019,Adiponectin in women,Red wine,Control,continuous,,24.0,,24.0,29.8,,0.0,,,,2681019_fewshot.jsonl
+2681019,Adiponectin in men,Ethanol solution,Control,continuous,,24.0,,24.0,17.4,,0.0,,,,2681019_fewshot.jsonl
+2681019,Adiponectin in men,Beer,Control,continuous,,24.0,,24.0,16.1,,0.0,,,,2681019_fewshot.jsonl
+3276927,relieving factors in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3276927,effective in the treatment of reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3276927,frequency of occurrence in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3276927,"symptoms of hernia such as heaviness, fullness and pain",post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3276927,pain in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3276927,aggravating factors in reversible inguinal hernia,post-Yoga,pre-Yoga,continuous,,19.0,,19.0,,,,,,,3276927_fewshot.jsonl
+3580751,mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,Interrupted surveillance unit A,"Continuous surveillance, unit B",continuous,,,,,,,,,,,3580751_fewshot.jsonl
+3751573,improvement in nursing,phase I externship program,phase II corporate-academic cooperation program,continuous,,19.0,,23.0,117.63,19.01,158.52,23.19,,,3751573_fewshot.jsonl
+4450164,ureteropelvic junction obstruction,internal drainage group,stentless cases,binary,0.0,30.0,1.0,52.0,,,,,,,4450164_fewshot.jsonl
+5244530,remission rate,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,61.0,125.0,63.0,133.0,,,,,,,5244530_fewshot.jsonl
+5244530,sedative prescriptions,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,52.0,125.0,51.0,133.0,,,,,,,5244530_fewshot.jsonl
+5244530,sick leave,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,124.8,102.5,123.3,85.0,,,5244530_fewshot.jsonl
+5244530,continued antidepressants until the 6-month,person-centred general practitioners (GP) consultations,treatment as usual (TAU),binary,86.0,125.0,78.0,133.0,,,,,,,5244530_fewshot.jsonl
+5244530,depression severity reduction 12 months,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_fewshot.jsonl
+5244530,change in quality of life 12 months,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_fewshot.jsonl
+5244530,psychological well-being,person-centred general practitioners (GP) consultations,treatment as usual (TAU),continuous,,125.0,,133.0,,,,,,,5244530_fewshot.jsonl
+5498715,Scores of external regulation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,0.43,1.04,1.19,1.37,,,5498715_fewshot.jsonl
+5498715,Scores of amotivation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,0.06,0.36,0.58,0.92,,,5498715_fewshot.jsonl
+5498715,Body mass index,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,25.32,3.05,26.59,3.53,,,5498715_fewshot.jsonl
+5498715,Sedentary behavior,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,4.26,1.76,5.91,2.21,,,5498715_fewshot.jsonl
+5498715,agility test,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.21,1.44,13.8,1.14,,,5498715_fewshot.jsonl
+5498715,Physical activity,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,854.0,271.6,470.0,80.46,,,5498715_fewshot.jsonl
+5498715,physical fitness - flexibility,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,35.53,5.87,26.83,5.47,,,5498715_fewshot.jsonl
+5498715,physical fitness - muscular endurance,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,17.83,2.7,12.48,2.9,,,5498715_fewshot.jsonl
+5498715,physical fitness - agility,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.21,1.44,13.8,1.14,,,5498715_fewshot.jsonl
+5498715,physical fitness - cardiorespiratory endurance,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,39.1,2.76,37.99,2.14,,,5498715_fewshot.jsonl
+5498715,Scores of intrinsic motivation,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,13.5,1.79,5.51,2.39,,,5498715_fewshot.jsonl
+5498715,Scores of perception of competence,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,17.2,3.46,14.1,3.82,,,5498715_fewshot.jsonl
+5498715,Scores of perception of autonomy,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,30.4,2.83,19.85,5.24,,,5498715_fewshot.jsonl
+5498715,Scores of enjoyment,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,30.0,3.83,24.89,5.2,,,5498715_fewshot.jsonl
+5498715,Scores of health care climate,Motivational interviewing through self-determination theory sessions,Standard education session,continuous,,30.0,,31.0,83.1,1.37,69.57,1.61,,,5498715_fewshot.jsonl
+5771543,CGI-I response rate,fluoxetine,placebo,binary,79.0,101.0,62.0,99.0,,,,,,,5771543_fewshot.jsonl
+5771543,CGI-I response rate,desvenlafaxine,placebo,binary,68.0,99.0,62.0,99.0,,,,,,,5771543_fewshot.jsonl
+5771543,Treatment-emergent adverse events (TEAEs),desvenlafaxine,placebo,binary,69.0,115.0,79.0,112.0,,,,,,,5771543_fewshot.jsonl
+5771543,Treatment-emergent adverse events (TEAEs),fluoxetine,placebo,binary,72.0,112.0,79.0,112.0,,,,,,,5771543_fewshot.jsonl
+57750,Death or myocardial infarction,eptifibatide,placebo,binary,14.0,4722.0,17.0,4722.0,,,,,,,57750_fewshot.jsonl
+57750,Myocardial infarction,eptifibatide,placebo,binary,12.0,4722.0,13.0,4722.0,,,,,,,57750_fewshot.jsonl
