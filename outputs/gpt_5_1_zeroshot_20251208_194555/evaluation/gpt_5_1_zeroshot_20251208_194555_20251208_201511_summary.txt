@@ -1,628 +1,1 @@
-================================================================================
-EVALUATION SUMMARY: gpt_5_1_zeroshot_20251208_194555
-================================================================================
-
-Filter: _zeroshot
-Timestamp: 2025-12-08 20:15:11
-Articles evaluated: 117
-Total gold fields: 3001
-Total predicted fields: 2927
-
---------------------------------------------------------------------------------
-MICRO-AVERAGED METRICS (aggregate TP / FP / FN)
---------------------------------------------------------------------------------
-  TP:           2145
-  FP:           227
-  FN:           856
-  TN:           2220
-  Precision:    0.9043
-  Recall:       0.7148
-  F1:           0.7984
-
---------------------------------------------------------------------------------
-MACRO-AVERAGED METRICS (average of per-article metrics)
---------------------------------------------------------------------------------
-  Precision: 0.8259
-  Recall:    0.6814
-  F1:        0.7201
-
---------------------------------------------------------------------------------
-PER-FIELD MICRO METRICS (aggregate TP / FP / FN / TN)
---------------------------------------------------------------------------------
-intervention_group_size        P: 0.9981  R: 0.7798  F1: 0.8755  (TP=524, FP=1, FN=148, TN=8)
-comparator_group_size          P: 0.9981  R: 0.7991  F1: 0.8876  (TP=537, FP=1, FN=135, TN=8)
-intervention_events            P: 0.8075  R: 0.8176  F1: 0.8125  (TP=130, FP=31, FN=29, TN=491)
-comparator_events              P: 0.8086  R: 0.8239  F1: 0.8162  (TP=131, FP=31, FN=28, TN=491)
-intervention_mean              P: 0.8207  R: 0.6398  F1: 0.7190  (TP=238, FP=52, FN=134, TN=257)
-comparator_mean                P: 0.8247  R: 0.6469  F1: 0.7251  (TP=240, FP=51, FN=131, TN=259)
-intervention_standard_deviation P: 0.8500  R: 0.5705  F1: 0.6827  (TP=170, FP=30, FN=128, TN=353)
-comparator_standard_deviation  P: 0.8537  R: 0.5872  F1: 0.6958  (TP=175, FP=30, FN=123, TN=353)
-
---------------------------------------------------------------------------------
-PER-ARTICLE BREAKDOWN
---------------------------------------------------------------------------------
-
-PMCID=57750 (57750_zeroshot.jsonl):
-  Gold/Pred fields: 0/4
-  TP / FP / FN / TN: 0 / 4 / 0 / 12
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=115849 (115849_zeroshot.jsonl):
-  Gold/Pred fields: 62/104
-  TP / FP / FN / TN: 44 / 60 / 18 / 110
-  P/R/F1: 0.423 / 0.710 / 0.530
-
-PMCID=547916 (547916_zeroshot.jsonl):
-  Gold/Pred fields: 6/6
-  TP / FP / FN / TN: 6 / 0 / 0 / 2
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=1216327 (1216327_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 15 / 0 / 1 / 8
-  P/R/F1: 1.000 / 0.938 / 0.968
-
-PMCID=1475568 (1475568_zeroshot.jsonl):
-  Gold/Pred fields: 52/48
-  TP / FP / FN / TN: 44 / 4 / 8 / 64
-  P/R/F1: 0.917 / 0.846 / 0.880
-
-PMCID=1574360 (1574360_zeroshot.jsonl):
-  Gold/Pred fields: 12/6
-  TP / FP / FN / TN: 4 / 0 / 8 / 4
-  P/R/F1: 1.000 / 0.333 / 0.500
-
-PMCID=1863515 (1863515_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 6 / 0 / 18 / 24
-  P/R/F1: 1.000 / 0.250 / 0.400
-
-PMCID=2363753 (2363753_zeroshot.jsonl):
-  Gold/Pred fields: 14/16
-  TP / FP / FN / TN: 12 / 2 / 2 / 16
-  P/R/F1: 0.857 / 0.857 / 0.857
-
-PMCID=2430617 (2430617_zeroshot.jsonl):
-  Gold/Pred fields: 12/12
-  TP / FP / FN / TN: 8 / 0 / 4 / 12
-  P/R/F1: 1.000 / 0.667 / 0.800
-
-PMCID=2596788 (2596788_zeroshot.jsonl):
-  Gold/Pred fields: 4/4
-  TP / FP / FN / TN: 3 / 0 / 1 / 4
-  P/R/F1: 1.000 / 0.750 / 0.857
-
-PMCID=2667135 (2667135_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 15 / 0 / 1 / 16
-  P/R/F1: 1.000 / 0.938 / 0.968
-
-PMCID=2681019 (2681019_zeroshot.jsonl):
-  Gold/Pred fields: 12/12
-  TP / FP / FN / TN: 8 / 0 / 4 / 12
-  P/R/F1: 1.000 / 0.667 / 0.800
-
-PMCID=2836833 (2836833_zeroshot.jsonl):
-  Gold/Pred fields: 8/12
-  TP / FP / FN / TN: 0 / 8 / 8 / 16
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=2952311 (2952311_zeroshot.jsonl):
-  Gold/Pred fields: 22/36
-  TP / FP / FN / TN: 13 / 14 / 9 / 12
-  P/R/F1: 0.481 / 0.591 / 0.531
-
-PMCID=2972614 (2972614_zeroshot.jsonl):
-  Gold/Pred fields: 54/52
-  TP / FP / FN / TN: 48 / 0 / 6 / 26
-  P/R/F1: 1.000 / 0.889 / 0.941
-
-PMCID=2974815 (2974815_zeroshot.jsonl):
-  Gold/Pred fields: 10/12
-  TP / FP / FN / TN: 10 / 2 / 0 / 12
-  P/R/F1: 0.833 / 1.000 / 0.909
-
-PMCID=3003523 (3003523_zeroshot.jsonl):
-  Gold/Pred fields: 32/32
-  TP / FP / FN / TN: 12 / 2 / 20 / 14
-  P/R/F1: 0.857 / 0.375 / 0.522
-
-PMCID=3136370 (3136370_zeroshot.jsonl):
-  Gold/Pred fields: 24/8
-  TP / FP / FN / TN: 0 / 0 / 24 / 8
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=3169777 (3169777_zeroshot.jsonl):
-  Gold/Pred fields: 62/60
-  TP / FP / FN / TN: 53 / 0 / 9 / 58
-  P/R/F1: 1.000 / 0.855 / 0.922
-
-PMCID=3195393 (3195393_zeroshot.jsonl):
-  Gold/Pred fields: 22/20
-  TP / FP / FN / TN: 18 / 0 / 4 / 10
-  P/R/F1: 1.000 / 0.818 / 0.900
-
-PMCID=3214395 (3214395_zeroshot.jsonl):
-  Gold/Pred fields: 16/26
-  TP / FP / FN / TN: 14 / 10 / 2 / 22
-  P/R/F1: 0.583 / 0.875 / 0.700
-
-PMCID=3263860 (3263860_zeroshot.jsonl):
-  Gold/Pred fields: 20/22
-  TP / FP / FN / TN: 14 / 4 / 6 / 16
-  P/R/F1: 0.778 / 0.700 / 0.737
-
-PMCID=3276927 (3276927_zeroshot.jsonl):
-  Gold/Pred fields: 12/20
-  TP / FP / FN / TN: 12 / 8 / 0 / 28
-  P/R/F1: 0.600 / 1.000 / 0.750
-
-PMCID=3278655 (3278655_zeroshot.jsonl):
-  Gold/Pred fields: 16/14
-  TP / FP / FN / TN: 14 / 0 / 2 / 8
-  P/R/F1: 1.000 / 0.875 / 0.933
-
-PMCID=3309311 (3309311_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 24 / 0 / 0 / 24
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3321528 (3321528_zeroshot.jsonl):
-  Gold/Pred fields: 14/16
-  TP / FP / FN / TN: 14 / 2 / 0 / 32
-  P/R/F1: 0.875 / 1.000 / 0.933
-
-PMCID=3475525 (3475525_zeroshot.jsonl):
-  Gold/Pred fields: 144/144
-  TP / FP / FN / TN: 143 / 0 / 1 / 48
-  P/R/F1: 1.000 / 0.993 / 0.997
-
-PMCID=3493722 (3493722_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 24 / 0 / 0 / 24
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3496170 (3496170_zeroshot.jsonl):
-  Gold/Pred fields: 14/12
-  TP / FP / FN / TN: 10 / 0 / 4 / 34
-  P/R/F1: 1.000 / 0.714 / 0.833
-
-PMCID=3504298 (3504298_zeroshot.jsonl):
-  Gold/Pred fields: 10/10
-  TP / FP / FN / TN: 10 / 0 / 0 / 30
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3508963 (3508963_zeroshot.jsonl):
-  Gold/Pred fields: 50/48
-  TP / FP / FN / TN: 46 / 0 / 4 / 38
-  P/R/F1: 1.000 / 0.920 / 0.958
-
-PMCID=3510731 (3510731_zeroshot.jsonl):
-  Gold/Pred fields: 16/20
-  TP / FP / FN / TN: 12 / 4 / 4 / 12
-  P/R/F1: 0.750 / 0.750 / 0.750
-
-PMCID=3546023 (3546023_zeroshot.jsonl):
-  Gold/Pred fields: 60/60
-  TP / FP / FN / TN: 51 / 0 / 9 / 20
-  P/R/F1: 1.000 / 0.850 / 0.919
-
-PMCID=3577738 (3577738_zeroshot.jsonl):
-  Gold/Pred fields: 26/26
-  TP / FP / FN / TN: 22 / 0 / 4 / 46
-  P/R/F1: 1.000 / 0.846 / 0.917
-
-PMCID=3580751 (3580751_zeroshot.jsonl):
-  Gold/Pred fields: 6/0
-  TP / FP / FN / TN: 0 / 0 / 6 / 2
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=3648394 (3648394_zeroshot.jsonl):
-  Gold/Pred fields: 36/36
-  TP / FP / FN / TN: 36 / 0 / 0 / 12
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3654355 (3654355_zeroshot.jsonl):
-  Gold/Pred fields: 60/60
-  TP / FP / FN / TN: 60 / 0 / 0 / 20
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3687098 (3687098_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 8 / 8 / 8 / 8
-  P/R/F1: 0.500 / 0.500 / 0.500
-
-PMCID=3751573 (3751573_zeroshot.jsonl):
-  Gold/Pred fields: 6/6
-  TP / FP / FN / TN: 2 / 0 / 4 / 2
-  P/R/F1: 1.000 / 0.333 / 0.500
-
-PMCID=3786549 (3786549_zeroshot.jsonl):
-  Gold/Pred fields: 30/30
-  TP / FP / FN / TN: 30 / 0 / 0 / 10
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=3877023 (3877023_zeroshot.jsonl):
-  Gold/Pred fields: 48/46
-  TP / FP / FN / TN: 34 / 0 / 14 / 16
-  P/R/F1: 1.000 / 0.708 / 0.829
-
-PMCID=3912320 (3912320_zeroshot.jsonl):
-  Gold/Pred fields: 12/12
-  TP / FP / FN / TN: 9 / 0 / 3 / 12
-  P/R/F1: 1.000 / 0.750 / 0.857
-
-PMCID=3929816 (3929816_zeroshot.jsonl):
-  Gold/Pred fields: 7/8
-  TP / FP / FN / TN: 6 / 2 / 1 / 15
-  P/R/F1: 0.750 / 0.857 / 0.800
-
-PMCID=3936115 (3936115_zeroshot.jsonl):
-  Gold/Pred fields: 12/12
-  TP / FP / FN / TN: 12 / 0 / 0 / 12
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=4033571 (4033571_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 16 / 0 / 8 / 24
-  P/R/F1: 1.000 / 0.667 / 0.800
-
-PMCID=4132222 (4132222_zeroshot.jsonl):
-  Gold/Pred fields: 6/4
-  TP / FP / FN / TN: 1 / 0 / 5 / 10
-  P/R/F1: 1.000 / 0.167 / 0.286
-
-PMCID=4140238 (4140238_zeroshot.jsonl):
-  Gold/Pred fields: 4/4
-  TP / FP / FN / TN: 2 / 0 / 2 / 4
-  P/R/F1: 1.000 / 0.500 / 0.667
-
-PMCID=4144850 (4144850_zeroshot.jsonl):
-  Gold/Pred fields: 32/32
-  TP / FP / FN / TN: 17 / 0 / 15 / 32
-  P/R/F1: 1.000 / 0.531 / 0.694
-
-PMCID=4173437 (4173437_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 20 / 0 / 4 / 24
-  P/R/F1: 1.000 / 0.833 / 0.909
-
-PMCID=4183415 (4183415_zeroshot.jsonl):
-  Gold/Pred fields: 18/12
-  TP / FP / FN / TN: 0 / 6 / 18 / 0
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=4188762 (4188762_zeroshot.jsonl):
-  Gold/Pred fields: 29/24
-  TP / FP / FN / TN: 23 / 0 / 6 / 43
-  P/R/F1: 1.000 / 0.793 / 0.885
-
-PMCID=4210722 (4210722_zeroshot.jsonl):
-  Gold/Pred fields: 12/12
-  TP / FP / FN / TN: 12 / 0 / 0 / 12
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=4215531 (4215531_zeroshot.jsonl):
-  Gold/Pred fields: 46/46
-  TP / FP / FN / TN: 30 / 0 / 16 / 26
-  P/R/F1: 1.000 / 0.652 / 0.789
-
-PMCID=4230312 (4230312_zeroshot.jsonl):
-  Gold/Pred fields: 12/8
-  TP / FP / FN / TN: 8 / 0 / 4 / 4
-  P/R/F1: 1.000 / 0.667 / 0.800
-
-PMCID=4319071 (4319071_zeroshot.jsonl):
-  Gold/Pred fields: 36/24
-  TP / FP / FN / TN: 0 / 0 / 36 / 12
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=4323894 (4323894_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 10 / 6 / 6 / 10
-  P/R/F1: 0.625 / 0.625 / 0.625
-
-PMCID=4355974 (4355974_zeroshot.jsonl):
-  Gold/Pred fields: 22/24
-  TP / FP / FN / TN: 21 / 2 / 1 / 24
-  P/R/F1: 0.913 / 0.955 / 0.933
-
-PMCID=4357072 (4357072_zeroshot.jsonl):
-  Gold/Pred fields: 20/20
-  TP / FP / FN / TN: 20 / 0 / 0 / 12
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=4411165 (4411165_zeroshot.jsonl):
-  Gold/Pred fields: 24/20
-  TP / FP / FN / TN: 18 / 0 / 6 / 16
-  P/R/F1: 1.000 / 0.750 / 0.857
-
-PMCID=4450164 (4450164_zeroshot.jsonl):
-  Gold/Pred fields: 4/4
-  TP / FP / FN / TN: 0 / 0 / 4 / 4
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=4458006 (4458006_zeroshot.jsonl):
-  Gold/Pred fields: 4/4
-  TP / FP / FN / TN: 3 / 0 / 1 / 4
-  P/R/F1: 1.000 / 0.750 / 0.857
-
-PMCID=4467620 (4467620_zeroshot.jsonl):
-  Gold/Pred fields: 18/18
-  TP / FP / FN / TN: 14 / 0 / 4 / 22
-  P/R/F1: 1.000 / 0.778 / 0.875
-
-PMCID=4483334 (4483334_zeroshot.jsonl):
-  Gold/Pred fields: 36/36
-  TP / FP / FN / TN: 36 / 0 / 0 / 12
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=4486927 (4486927_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 12 / 0 / 4 / 16
-  P/R/F1: 1.000 / 0.750 / 0.857
-
-PMCID=4493951 (4493951_zeroshot.jsonl):
-  Gold/Pred fields: 24/18
-  TP / FP / FN / TN: 12 / 0 / 12 / 24
-  P/R/F1: 1.000 / 0.500 / 0.667
-
-PMCID=4511433 (4511433_zeroshot.jsonl):
-  Gold/Pred fields: 4/12
-  TP / FP / FN / TN: 4 / 8 / 0 / 4
-  P/R/F1: 0.333 / 1.000 / 0.500
-
-PMCID=4550271 (4550271_zeroshot.jsonl):
-  Gold/Pred fields: 28/24
-  TP / FP / FN / TN: 0 / 12 / 28 / 8
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=4574984 (4574984_zeroshot.jsonl):
-  Gold/Pred fields: 26/22
-  TP / FP / FN / TN: 16 / 0 / 10 / 22
-  P/R/F1: 1.000 / 0.615 / 0.762
-
-PMCID=4675066 (4675066_zeroshot.jsonl):
-  Gold/Pred fields: 18/18
-  TP / FP / FN / TN: 18 / 0 / 0 / 6
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=4678179 (4678179_zeroshot.jsonl):
-  Gold/Pred fields: 16/14
-  TP / FP / FN / TN: 10 / 4 / 6 / 12
-  P/R/F1: 0.714 / 0.625 / 0.667
-
-PMCID=4709985 (4709985_zeroshot.jsonl):
-  Gold/Pred fields: 2/0
-  TP / FP / FN / TN: 0 / 0 / 2 / 6
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=4830045 (4830045_zeroshot.jsonl):
-  Gold/Pred fields: 6/8
-  TP / FP / FN / TN: 4 / 2 / 2 / 8
-  P/R/F1: 0.667 / 0.667 / 0.667
-
-PMCID=4879328 (4879328_zeroshot.jsonl):
-  Gold/Pred fields: 42/28
-  TP / FP / FN / TN: 25 / 0 / 17 / 14
-  P/R/F1: 1.000 / 0.595 / 0.746
-
-PMCID=4928400 (4928400_zeroshot.jsonl):
-  Gold/Pred fields: 32/32
-  TP / FP / FN / TN: 28 / 0 / 4 / 16
-  P/R/F1: 1.000 / 0.875 / 0.933
-
-PMCID=4987981 (4987981_zeroshot.jsonl):
-  Gold/Pred fields: 60/60
-  TP / FP / FN / TN: 32 / 0 / 28 / 36
-  P/R/F1: 1.000 / 0.533 / 0.696
-
-PMCID=4996097 (4996097_zeroshot.jsonl):
-  Gold/Pred fields: 12/8
-  TP / FP / FN / TN: 8 / 0 / 4 / 12
-  P/R/F1: 1.000 / 0.667 / 0.800
-
-PMCID=5055753 (5055753_zeroshot.jsonl):
-  Gold/Pred fields: 22/22
-  TP / FP / FN / TN: 18 / 4 / 4 / 22
-  P/R/F1: 0.818 / 0.818 / 0.818
-
-PMCID=5056957 (5056957_zeroshot.jsonl):
-  Gold/Pred fields: 36/36
-  TP / FP / FN / TN: 20 / 0 / 16 / 12
-  P/R/F1: 1.000 / 0.556 / 0.714
-
-PMCID=5062234 (5062234_zeroshot.jsonl):
-  Gold/Pred fields: 14/18
-  TP / FP / FN / TN: 14 / 4 / 0 / 14
-  P/R/F1: 0.778 / 1.000 / 0.875
-
-PMCID=5079604 (5079604_zeroshot.jsonl):
-  Gold/Pred fields: 30/26
-  TP / FP / FN / TN: 22 / 0 / 8 / 34
-  P/R/F1: 1.000 / 0.733 / 0.846
-
-PMCID=5086025 (5086025_zeroshot.jsonl):
-  Gold/Pred fields: 34/34
-  TP / FP / FN / TN: 34 / 0 / 0 / 14
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5122613 (5122613_zeroshot.jsonl):
-  Gold/Pred fields: 28/28
-  TP / FP / FN / TN: 26 / 0 / 2 / 12
-  P/R/F1: 1.000 / 0.929 / 0.963
-
-PMCID=5154016 (5154016_zeroshot.jsonl):
-  Gold/Pred fields: 36/36
-  TP / FP / FN / TN: 31 / 0 / 5 / 12
-  P/R/F1: 1.000 / 0.861 / 0.925
-
-PMCID=5244530 (5244530_zeroshot.jsonl):
-  Gold/Pred fields: 20/24
-  TP / FP / FN / TN: 18 / 6 / 2 / 30
-  P/R/F1: 0.750 / 0.900 / 0.818
-
-PMCID=5268424 (5268424_zeroshot.jsonl):
-  Gold/Pred fields: 6/6
-  TP / FP / FN / TN: 6 / 0 / 0 / 2
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5325897 (5325897_zeroshot.jsonl):
-  Gold/Pred fields: 18/18
-  TP / FP / FN / TN: 18 / 0 / 0 / 6
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5360580 (5360580_zeroshot.jsonl):
-  Gold/Pred fields: 22/14
-  TP / FP / FN / TN: 6 / 0 / 16 / 10
-  P/R/F1: 1.000 / 0.273 / 0.429
-
-PMCID=5380284 (5380284_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 14 / 0 / 2 / 24
-  P/R/F1: 1.000 / 0.875 / 0.933
-
-PMCID=5380326 (5380326_zeroshot.jsonl):
-  Gold/Pred fields: 31/32
-  TP / FP / FN / TN: 21 / 1 / 10 / 16
-  P/R/F1: 0.955 / 0.677 / 0.792
-
-PMCID=5419060 (5419060_zeroshot.jsonl):
-  Gold/Pred fields: 88/80
-  TP / FP / FN / TN: 64 / 0 / 24 / 72
-  P/R/F1: 1.000 / 0.727 / 0.842
-
-PMCID=5459456 (5459456_zeroshot.jsonl):
-  Gold/Pred fields: 98/92
-  TP / FP / FN / TN: 52 / 0 / 46 / 38
-  P/R/F1: 1.000 / 0.531 / 0.693
-
-PMCID=5498715 (5498715_zeroshot.jsonl):
-  Gold/Pred fields: 90/90
-  TP / FP / FN / TN: 24 / 0 / 66 / 30
-  P/R/F1: 1.000 / 0.267 / 0.421
-
-PMCID=5515881 (5515881_zeroshot.jsonl):
-  Gold/Pred fields: 30/30
-  TP / FP / FN / TN: 30 / 0 / 0 / 10
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5534041 (5534041_zeroshot.jsonl):
-  Gold/Pred fields: 30/30
-  TP / FP / FN / TN: 18 / 0 / 12 / 10
-  P/R/F1: 1.000 / 0.600 / 0.750
-
-PMCID=5539943 (5539943_zeroshot.jsonl):
-  Gold/Pred fields: 0/0
-  TP / FP / FN / TN: 0 / 0 / 0 / 48
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=5541727 (5541727_zeroshot.jsonl):
-  Gold/Pred fields: 40/22
-  TP / FP / FN / TN: 4 / 0 / 36 / 16
-  P/R/F1: 1.000 / 0.100 / 0.182
-
-PMCID=5559992 (5559992_zeroshot.jsonl):
-  Gold/Pred fields: 36/27
-  TP / FP / FN / TN: 25 / 0 / 11 / 12
-  P/R/F1: 1.000 / 0.694 / 0.820
-
-PMCID=5571493 (5571493_zeroshot.jsonl):
-  Gold/Pred fields: 24/22
-  TP / FP / FN / TN: 8 / 2 / 16 / 22
-  P/R/F1: 0.800 / 0.333 / 0.471
-
-PMCID=5614421 (5614421_zeroshot.jsonl):
-  Gold/Pred fields: 18/18
-  TP / FP / FN / TN: 16 / 2 / 2 / 20
-  P/R/F1: 0.889 / 0.889 / 0.889
-
-PMCID=5617873 (5617873_zeroshot.jsonl):
-  Gold/Pred fields: 34/24
-  TP / FP / FN / TN: 11 / 0 / 23 / 14
-  P/R/F1: 1.000 / 0.324 / 0.489
-
-PMCID=5655920 (5655920_zeroshot.jsonl):
-  Gold/Pred fields: 16/0
-  TP / FP / FN / TN: 0 / 0 / 16 / 48
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=5686687 (5686687_zeroshot.jsonl):
-  Gold/Pred fields: 22/16
-  TP / FP / FN / TN: 11 / 0 / 11 / 18
-  P/R/F1: 1.000 / 0.500 / 0.667
-
-PMCID=5711682 (5711682_zeroshot.jsonl):
-  Gold/Pred fields: 22/22
-  TP / FP / FN / TN: 22 / 0 / 0 / 18
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5712123 (5712123_zeroshot.jsonl):
-  Gold/Pred fields: 44/44
-  TP / FP / FN / TN: 42 / 0 / 2 / 20
-  P/R/F1: 1.000 / 0.955 / 0.977
-
-PMCID=5726464 (5726464_zeroshot.jsonl):
-  Gold/Pred fields: 20/36
-  TP / FP / FN / TN: 20 / 16 / 0 / 36
-  P/R/F1: 0.556 / 1.000 / 0.714
-
-PMCID=5771543 (5771543_zeroshot.jsonl):
-  Gold/Pred fields: 16/16
-  TP / FP / FN / TN: 16 / 0 / 0 / 16
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5773985 (5773985_zeroshot.jsonl):
-  Gold/Pred fields: 32/36
-  TP / FP / FN / TN: 32 / 4 / 0 / 12
-  P/R/F1: 0.889 / 1.000 / 0.941
-
-PMCID=5777419 (5777419_zeroshot.jsonl):
-  Gold/Pred fields: 40/32
-  TP / FP / FN / TN: 16 / 4 / 24 / 20
-  P/R/F1: 0.800 / 0.400 / 0.533
-
-PMCID=5777645 (5777645_zeroshot.jsonl):
-  Gold/Pred fields: 18/18
-  TP / FP / FN / TN: 16 / 0 / 2 / 6
-  P/R/F1: 1.000 / 0.889 / 0.941
-
-PMCID=5781260 (5781260_zeroshot.jsonl):
-  Gold/Pred fields: 20/12
-  TP / FP / FN / TN: 5 / 0 / 15 / 28
-  P/R/F1: 1.000 / 0.250 / 0.400
-
-PMCID=5800236 (5800236_zeroshot.jsonl):
-  Gold/Pred fields: 2/0
-  TP / FP / FN / TN: 0 / 0 / 2 / 6
-  P/R/F1: 0.000 / 0.000 / 0.000
-
-PMCID=5830087 (5830087_zeroshot.jsonl):
-  Gold/Pred fields: 12/16
-  TP / FP / FN / TN: 9 / 4 / 3 / 16
-  P/R/F1: 0.692 / 0.750 / 0.720
-
-PMCID=5874317 (5874317_zeroshot.jsonl):
-  Gold/Pred fields: 36/36
-  TP / FP / FN / TN: 32 / 0 / 4 / 12
-  P/R/F1: 1.000 / 0.889 / 0.941
-
-PMCID=5884950 (5884950_zeroshot.jsonl):
-  Gold/Pred fields: 4/8
-  TP / FP / FN / TN: 2 / 4 / 2 / 8
-  P/R/F1: 0.333 / 0.500 / 0.400
-
-PMCID=5971365 (5971365_zeroshot.jsonl):
-  Gold/Pred fields: 24/24
-  TP / FP / FN / TN: 24 / 0 / 0 / 16
-  P/R/F1: 1.000 / 1.000 / 1.000
-
-PMCID=5976307 (5976307_zeroshot.jsonl):
-  Gold/Pred fields: 34/34
-  TP / FP / FN / TN: 32 / 0 / 2 / 22
-  P/R/F1: 1.000 / 0.941 / 0.970
-
-PMCID=5976949 (5976949_zeroshot.jsonl):
-  Gold/Pred fields: 22/24
-  TP / FP / FN / TN: 20 / 2 / 2 / 8
-  P/R/F1: 0.909 / 0.909 / 0.909
+57750.pdf115849.pdf547916.pdf1216327.pdf1475568.pdf1574360.pdf1863515.pdf2363753.pdf2430617.pdf2596788.pdf2667135.pdf2681019.pdf2836833.pdf2952311.pdf2972614.pdf2974815.pdf3003523.pdf3136370.pdf3169777.pdf3195393.pdf3214395.pdf3263860.pdf3276927.pdf3278655.pdf3309311.pdf3321528.pdf3343759.pdf3475525.pdf3493722.pdf3496170.pdf3504298.pdf3508963.pdf3510731.pdf3546023.pdf3577738.pdf3580751.pdf3648394.pdf3654355.pdf3687098.pdf3751573.pdf3786549.pdf3877023.pdf3912320.pdf3929816.pdf3936115.pdf4033571.pdf4132222.pdf4140238.pdf4144850.pdf4173437.pdf4183415.pdf4188762.pdf4210722.pdf4215531.pdf4230312.pdf4319071.pdf4323894.pdf4355974.pdf4357072.pdf4411165.pdf4450164.pdf4458006.pdf4467620.pdf4483334.pdf4486927.pdf4493951.pdf4511433.pdf4550271.pdf4574984.pdf4675066.pdf4678179.pdf4709985.pdf4830045.pdf4879328.pdf4928400.pdf4987981.pdf4996097.pdf5055753.pdf5056957.pdf5062234.pdf5079604.pdf5086025.pdf5122613.pdf5154016.pdf5244530.pdf5268424.pdf5325897.pdf5360580.pdf5380284.pdf5380326.pdf5419060.pdf5459456.pdf5498715.pdf5515881.pdf5534041.pdf5539943.pdf5541727.pdf5559992.pdf5571493.pdf5614421.pdf5617873.pdf5655920.pdf5686687.pdf5711682.pdf5712123.pdf5726464.pdf5771543.pdf5773985.pdf5777419.pdf5777645.pdf5781260.pdf5800236.pdf5830087.pdf5874317.pdf5884950.pdf5971365.pdf5976307.pdf5976949.pdf
