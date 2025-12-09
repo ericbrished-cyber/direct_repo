@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "total": 8,
+    "success": 7,
+    "failed": 1,
+    "skipped": 0
+  },
+  "failures": [
+    [
+      57750,
+      "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)"
+    ]
+  ],
+  "eval": {
+    "run_name": "gemini_2_5_pro_zeroshot_20251209_115506",
+    "num_articles": 7,
+    "total_gold_fields": 154,
+    "total_pred_fields": 160,
+    "total_tp": 102,
+    "total_fp": 14,
+    "total_fn": 52,
+    "total_tn": 112,
+    "macro_precision": 0.7464285714285713,
+    "macro_recall": 0.680952380952381,
+    "macro_f1": 0.6936507936507936,
+    "micro_precision": 0.8793103448275862,
+    "micro_recall": 0.6623376623376623,
+    "micro_f1": 0.7555555555555555,
+    "overall_mse": 10598.82654109589,
+    "overall_rmse": 102.9506024319231,
+    "total_mse_comparisons": 146,
+    "exact_match_accuracy": 0.48,
+    "exact_match_correct": 12,
+    "exact_match_total": 25,
+    "exact_match_by_type": {
+      "binary": {
+        "correct": 6,
+        "total": 8,
+        "accuracy": 0.75
+      },
+      "continuous": {
+        "correct": 6,
+        "total": 17,
+        "accuracy": 0.35294117647058826
+      }
+    },
+    "per_field_micro": {
+      "intervention_group_size": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 6,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 0.8285714285714286,
+        "f1": 0.90625,
+        "mse": 8875.75,
+        "rmse": 94.21119890968377,
+        "num_comparisons": 32
+      },
+      "comparator_group_size": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 6,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 0.8285714285714286,
+        "f1": 0.90625,
+        "mse": 34447.3125,
+        "rmse": 185.5998720365938,
+        "num_comparisons": 32
+      },
+      "intervention_events": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 2,
+        "tn": 26,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999,
+        "mse": 9.142857142857142,
+        "rmse": 3.0237157840738176,
+        "num_comparisons": 7
+      },
+      "comparator_events": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 2,
+        "tn": 26,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999,
+        "mse": 20.571428571428573,
+        "rmse": 4.535573676110727,
+        "num_comparisons": 7
+      },
+      "intervention_mean": {
+        "tp": 7,
+        "fp": 5,
+        "fn": 10,
+        "tn": 13,
+        "precision": 0.5833333333333334,
+        "recall": 0.4117647058823529,
+        "f1": 0.4827586206896552,
+        "mse": 7911.586511764708,
+        "rmse": 88.94709951293919,
+        "num_comparisons": 17
+      },
+      "comparator_mean": {
+        "tp": 10,
+        "fp": 5,
+        "fn": 7,
+        "tn": 13,
+        "precision": 0.6666666666666666,
+        "recall": 0.5882352941176471,
+        "f1": 0.625,
+        "mse": 16.0426411764706,
+        "rmse": 4.005326600474747,
+        "num_comparisons": 17
+      },
+      "intervention_standard_deviation": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 10,
+        "tn": 17,
+        "precision": 0.875,
+        "recall": 0.4117647058823529,
+        "f1": 0.56,
+        "mse": 1513.4084764705888,
+        "rmse": 38.90255102780008,
+        "num_comparisons": 17
+      },
+      "comparator_standard_deviation": {
+        "tp": 8,
+        "fp": 1,
+        "fn": 9,
+        "tn": 17,
+        "precision": 0.8888888888888888,
+        "recall": 0.47058823529411764,
+        "f1": 0.6153846153846153,
+        "mse": 22.64913529411764,
+        "rmse": 4.759110767162038,
+        "num_comparisons": 17
+      }
+    }
+  },
+  "run_folder": "outputs/gemini_2_5_pro_zeroshot_20251209_115506"
+}
