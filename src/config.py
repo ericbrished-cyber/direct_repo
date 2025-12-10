@@ -9,7 +9,8 @@ BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 PDF_DIR = DATA_DIR / "pdfs"
 RESULTS_DIR = DATA_DIR / "results"
-GOLD_STANDARD_PATH = DATA_DIR / "gold_standard.json"
+# GOLD_STANDARD_PATH points to the correct location in the root gold-standard folder
+GOLD_STANDARD_PATH = BASE_DIR / "gold-standard" / "gold_standard_clean.json"
 
 # Model Versions
 CLAUDE_MODEL_VERSION = os.getenv("CLAUDE_MODEL_VERSION", "claude-opus-4.5")
