@@ -7,7 +7,7 @@ class ClaudeModel(ModelAdapter):
     """
     Anthropic + Caching logic.
     """
-    def __init__(self, model_version: str = "claude-3-opus-20240229"):
+    def __init__(self, model_version: str = "claude-4-5-opus"):
         self.model_version = model_version
         self.api_key = os.getenv("ANTHROPIC_API_KEY")
 
