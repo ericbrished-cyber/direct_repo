@@ -29,9 +29,9 @@ class DataLoader:
         }
         return sorted(list(pmcids))
 
-    def get_icos(self, pmcid: str) -> List[Dict]:
+    def get_entry(self, pmcid: str) -> List[Dict]:
         """
-        Returns the list of specific ICO targets (outcomes) for a given document.
+        Returns the list of entries in gold standard for a given pmcid.
         """
         return [
             entry for entry in self._data
@@ -43,13 +43,22 @@ class DataLoader:
         Returns (pdf_path, formatted_answer_str) for entries marked as split="FEW-SHOT".
         """
         few_shot_pmcids = self.get_split_pmcids("FEW-SHOT")
+
+        wanted_keys = ["outcome", "intervention", "comparator",
+                        "outcome_type", "intervention_events", "intervention_group_size", "comparator_events",
+                        "comparator_group_size", "intervention_mean", "intervention_standard_deviation", "comparator_mean",
+                        "comparator_standard_deviation"]
+
         examples = []
 
         for pmcid in few_shot_pmcids:
             pdf_path = self.get_pdf_path(pmcid)
-            icos = self.get_icos(pmcid)
-            formatted_answer_str = json.dumps(icos, indent=2)
-            examples.append((pdf_path, formatted_answer_str))
+            entry = self.get_entry(pmcid)
+            gold_for_few_shot_str = [
+                {k: item for k in wanted_keys if k in item}
+                for item in entry
+            ]
+            examples.append((pdf_path, gold_for_few_shot_str))
 
         return examples
 
