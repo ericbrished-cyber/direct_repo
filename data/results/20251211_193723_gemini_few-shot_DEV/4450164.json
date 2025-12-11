@@ -1,0 +1,29 @@
+{
+  "pmcid": "4450164",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 13817,
+    "output": 150
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"ureteropelvic junction obstruction\",\n      \"intervention\": \"internal drainage group\",\n      \"comparator\": \"stentless cases\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 8,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": 13,\n      \"comparator_group_size\": 44,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "ureteropelvic junction obstruction",
+      "intervention": "internal drainage group",
+      "comparator": "stentless cases",
+      "outcome_type": "binary",
+      "intervention_events": 8,
+      "intervention_group_size": 20,
+      "comparator_events": 13,
+      "comparator_group_size": 44,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4450164"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 from typing import Tuple, Dict
 from src.models.base import ModelAdapter
 from src.prompts.builder import PromptPayload
+from src.models.dry_run import dump_debug_json, clean_claude_messages
 import os
 import base64
 from anthropic import Anthropic
@@ -34,26 +35,26 @@ class ClaudeModel(ModelAdapter):
         
         return block
 
-    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, dry_run: bool = False) -> Tuple[str, Dict[str, int]]:
         """Generates response using Claude Opus 4.5 with prompt caching."""
-        if not self.api_key:
-            raise ValueError("ANTHROPIC_API_KEY not found in environment variables.")
-
-        client = Anthropic(api_key=self.api_key)
+        client = None if dry_run else Anthropic(api_key=self.api_key)
         messages = []
 
         # Few-shot examples - cache the last assistant response
         # Few-shot examples - cache the last assistant response
         if payload.few_shot_examples:
-            for idx, (example_pdf_path, example_answer) in enumerate(payload.few_shot_examples):
+            for idx, example in enumerate(payload.few_shot_examples):
                 is_last = (idx == len(payload.few_shot_examples) - 1)
+                example_pdf_path = example["pdf_path"]
+                example_instruction = example["instruction"]
+                example_answer = example["answer"]
                 
                 # User message with PDF (no cache)
                 messages.append({
                     "role": "user",
                     "content": [
                         # Use the actual instruction here for consistency
-                        {"type": "text", "text": payload.instruction}, 
+                        {"type": "text", "text": example_instruction}, 
                         self._create_document_block(example_pdf_path, use_cache=False)
                     ]
                 })
@@ -76,6 +77,13 @@ class ClaudeModel(ModelAdapter):
                 self._create_document_block(payload.target_pdf, use_cache=False)
             ]
         })
+
+        if dry_run:
+            dump_debug_json("claude_messages", clean_claude_messages(messages))
+            return "", {"input": 0, "output": 0, "cache_creation": 0, "cache_read": 0}
+
+        if not self.api_key:
+            raise ValueError("ANTHROPIC_API_KEY not found in environment variables.")
 
         # API call
         response = client.messages.create(

@@ -1,0 +1,86 @@
+{
+  "aggregated": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1": 0.8,
+    "rmse": 0.0,
+    "true_positives": 8,
+    "false_positives": 0,
+    "false_negatives": 4,
+    "exact_match": 0.6666666666666666
+  },
+  "by_field": {
+    "comparator_events": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "comparator_group_size": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "rmse": 0.0,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 2
+    },
+    "comparator_mean": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "comparator_standard_deviation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "intervention_events": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "intervention_group_size": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "rmse": 0.0,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 2
+    },
+    "intervention_mean": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "intervention_standard_deviation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    }
+  }
+}

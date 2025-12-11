@@ -38,9 +38,9 @@ class DataLoader:
             if str(entry['pmcid']) == str(pmcid)
         ]
 
-    def get_few_shot_examples(self) -> List[Tuple[Path, str]]:
+    def get_few_shot_examples(self) -> List[Dict[str, object]]:
         """
-        Returns (pdf_path, formatted_answer_str) for entries marked as split="FEW-SHOT".
+        Returns a list of few-shot examples with their PDF, PMCID, and gold JSON string.
         """
         few_shot_pmcids = self.get_split_pmcids("FEW-SHOT")
 
@@ -61,7 +61,11 @@ class DataLoader:
 
             gold_for_few_shot_str = json.dumps(filtered_entry)
 
-            examples.append((pdf_path, gold_for_few_shot_str))
+            examples.append({
+                "pmcid": pmcid,
+                "pdf_path": pdf_path,
+                "answer": gold_for_few_shot_str,
+            })
 
         return examples
 

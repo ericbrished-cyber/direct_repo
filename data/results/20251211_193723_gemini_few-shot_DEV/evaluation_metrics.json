@@ -1,0 +1,86 @@
+{
+  "aggregated": {
+    "precision": 0.9487179487179487,
+    "recall": 0.49333333333333335,
+    "f1": 0.6491228070175438,
+    "rmse": 115.3834448846466,
+    "true_positives": 74,
+    "false_positives": 4,
+    "false_negatives": 76,
+    "exact_match": 0.36363636363636365
+  },
+  "by_field": {
+    "comparator_events": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rmse": 0.0,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "comparator_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 280.3570427661332,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "comparator_mean": {
+      "precision": 0.8181818181818182,
+      "recall": 0.45,
+      "f1": 0.5806451612903226,
+      "rmse": 3.9523088189057307,
+      "true_positives": 9,
+      "false_positives": 2,
+      "false_negatives": 11
+    },
+    "comparator_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.5263157894736842,
+      "f1": 0.6896551724137931,
+      "rmse": 4.501668111875161,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "intervention_events": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rmse": 0.0,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "intervention_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 142.18298069740976,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "intervention_mean": {
+      "precision": 0.8333333333333334,
+      "recall": 0.5,
+      "f1": 0.625,
+      "rmse": 82.00517383067974,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 10
+    },
+    "intervention_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.47368421052631576,
+      "f1": 0.6428571428571429,
+      "rmse": 36.79812931458109,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 10
+    }
+  }
+}

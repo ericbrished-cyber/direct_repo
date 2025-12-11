@@ -1,0 +1,44 @@
+{
+  "pmcid": "57750",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16388,
+    "output": 278
+  },
+  "raw_text": "```json\n{\"extractions\":[\n  {\n    \"outcome\": \"Death or myocardial infarction\",\n    \"intervention\": \"eptifibatide\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": null,\n    \"comparator_events\": null,\n    \"comparator_group_size\": null,\n    \"intervention_mean\": 14.2,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": 15.7,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"Myocardial infarction\",\n    \"intervention\": \"eptifibatide\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": null,\n    \"comparator_events\": null,\n    \"comparator_group_size\": null,\n    \"intervention_mean\": 12.6,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": 13.6,\n    \"comparator_standard_deviation\": null\n  }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "Death or myocardial infarction",
+      "intervention": "eptifibatide",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 14.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 15.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "57750"
+    },
+    {
+      "outcome": "Myocardial infarction",
+      "intervention": "eptifibatide",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 12.6,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 13.6,
+      "comparator_standard_deviation": null,
+      "pmcid": "57750"
+    }
+  ]
+}

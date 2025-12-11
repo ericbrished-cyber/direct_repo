@@ -8,12 +8,12 @@ class ModelAdapter(ABC):
     """
 
     @abstractmethod
-    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, dry_run: bool = False) -> Tuple[str, Dict[str, int]]:
         """
         Generates text based on the payload.
         Args:
             payload: The prompt payload object.
-            temperature: The temperature for generation (0.0 to 1.0).
+            dry_run: If True, dump the constructed request and skip the API call. For debugging and testing.
         Returns:
             raw_text (str): The model's response text.
             token_usage_dict (dict): Dictionary containing token usage stats (e.g., {'input': 100, 'output': 50}).

@@ -1,6 +1,7 @@
 from typing import Tuple, Dict
 from src.models.base import ModelAdapter
 from src.prompts.builder import PromptPayload
+from src.models.dry_run import dump_debug_json, clean_gpt_messages
 import os
 import base64
 from openai import OpenAI
@@ -18,23 +19,23 @@ class GPTModel(ModelAdapter):
         with open(pdf_path, "rb") as f:
             return base64.b64encode(f.read()).decode("utf-8")
 
-    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, dry_run: bool = False) -> Tuple[str, Dict[str, int]]:
         """Generates response using GPT-5.1."""
-        if not self.api_key:
-            raise ValueError("OPENAI_API_KEY not found in environment variables.")
-
-        client = OpenAI(api_key=self.api_key)
+        client = None if dry_run else OpenAI(api_key=self.api_key)
         messages = []
 
         # Few-shot examples
         if payload.few_shot_examples:
-            for example_pdf_path, example_answer in payload.few_shot_examples:
-                pdf_b64 = self._encode_pdf_to_base64(str(example_pdf_path))
+            for example in payload.few_shot_examples:
+                example_pdf_path = example["pdf_path"]
+                example_instruction = example["instruction"]
+                example_answer = example["answer"]
+                pdf_b64 = "<omitted>" if dry_run else self._encode_pdf_to_base64(str(example_pdf_path))
                 
                 messages.append({
                     "role": "user",
                     "content": [
-                        {"type": "input_text", "text":payload.instruction},
+                        {"type": "input_text", "text": example_instruction},
                         {
                             "type": "input_file",
                             "filename": example_pdf_path.name,
@@ -49,7 +50,7 @@ class GPTModel(ModelAdapter):
                 })
 
         # Target PDF
-        target_pdf_b64 = self._encode_pdf_to_base64(str(payload.target_pdf))
+        target_pdf_b64 = "<omitted>" if dry_run else self._encode_pdf_to_base64(str(payload.target_pdf))
         messages.append({
             "role": "user",
             "content": [
@@ -61,6 +62,13 @@ class GPTModel(ModelAdapter):
                 }
             ]
         })
+
+        if dry_run:
+            dump_debug_json("gpt_messages", clean_gpt_messages(messages))
+            return "", {"input": 0, "output": 0}
+
+        if not self.api_key:
+            raise ValueError("OPENAI_API_KEY not found in environment variables.")
 
         # API call
         response = client.responses.create(

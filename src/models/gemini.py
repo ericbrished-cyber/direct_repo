@@ -1,6 +1,7 @@
 from typing import Tuple, Dict, List
 from src.models.base import ModelAdapter
 from src.prompts.builder import PromptPayload
+from src.models.dry_run import dump_debug_json
 import os
 import base64
 from google import genai
@@ -28,7 +29,6 @@ class GeminiModel(ModelAdapter):
     def _create_content_with_pdf(self, text: str, pdf_path: str) -> types.Content:
         """
         Creates a Content object with text and PDF inline blob.
-        Uses media_resolution_medium for PDFs (recommended in docs).
         """
         pdf_bytes = self._encode_pdf_to_base64(pdf_path)
         
@@ -40,8 +40,7 @@ class GeminiModel(ModelAdapter):
                     inline_data=types.Blob(
                         mime_type="application/pdf",
                         data=pdf_bytes
-                    ),
-                    media_resolution={"level": "media_resolution_medium"}  # Optimal for PDFs
+                    )                
                 )
             ]
         )
@@ -55,56 +54,77 @@ class GeminiModel(ModelAdapter):
             parts=[types.Part(text=text)]
         )
 
-    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload, dry_run: bool = False) -> Tuple[str, Dict[str, int]]:
         """
         Generates a response using Gemini 3 Pro with native PDF processing.
         
         Args:
             payload: Prompt payload with PDFs and instructions
-            temperature: IGNORED - Gemini 3 uses default 1.0 (per docs recommendation)
-        
+                    
         Note: Uses 'high' thinking level by default for maximum reasoning depth.
         """
-        if not self.api_key:
-            raise ValueError("GOOGLE_API_KEY not found in environment variables.")
-
-        client = genai.Client(api_key=self.api_key)
         contents = []
 
         # Process Few-Shot Examples
         if payload.few_shot_examples:
-            for example_pdf_path, example_answer in payload.few_shot_examples:
-                try:
-                    # User: PDF + instruction
-                    contents.append(
-                        self._create_content_with_pdf(
-                            "Please extract the data according to the schema.",
-                            str(example_pdf_path)
+            for example in payload.few_shot_examples:
+                example_pdf_path = example["pdf_path"]
+                example_instruction = example["instruction"]
+                example_answer = example["answer"]
+                if dry_run:
+                    contents.append({
+                        "role": "user",
+                        "text": example_instruction,
+                        "pdf": os.path.basename(example_pdf_path)
+                    })
+                    contents.append({"role": "model", "text": example_answer})
+                else:
+                    try:
+                        # User: PDF + instruction
+                        contents.append(
+                            self._create_content_with_pdf(
+                                example_instruction,
+                                str(example_pdf_path)
+                            )
                         )
-                    )
-                    # Model: Expected answer
-                    contents.append(self._create_model_response(example_answer))
-                except Exception as e:
-                    print(f"Warning: Failed to process few-shot example {example_pdf_path}: {e}")
+                        # Model: Expected answer
+                        contents.append(self._create_model_response(example_answer))
+                    except Exception as e:
+                        print(f"Warning: Failed to process few-shot example {example_pdf_path}: {e}")
 
         # Process Target PDF
-        contents.append(
-            self._create_content_with_pdf(
-                payload.instruction,
-                str(payload.target_pdf)
+        if dry_run:
+            contents.append({
+                "role": "user",
+                "text": payload.instruction,
+                "pdf": os.path.basename(payload.target_pdf)
+            })
+        else:
+            contents.append(
+                self._create_content_with_pdf(
+                    payload.instruction,
+                    str(payload.target_pdf)
+                )
             )
-        )
+
+        if dry_run:
+            dump_debug_json("gemini_contents", contents)
+            return "", {"input": 0, "output": 0}
+
+        if not self.api_key:
+            raise ValueError("GOOGLE_API_KEY not found in environment variables.")
+
+        client = genai.Client(api_key=self.api_key)
 
         # Call API with reasoning configuration
         try:
             response = client.models.generate_content(
-                model=self.model_version,
-                contents=contents,
-                config=types.GenerateContentConfig(
-                    thinking_config=types.ThinkingConfig(
-                        thinking_level="high"  # Maximum reasoning for medical data
+                model = self.model_version,
+                contents = contents,
+                config = types.GenerateContentConfig(
+                    thinking_config = types.ThinkingConfig(
+                        thinking_level = "high"
                     )
-                    # Note: temperature is NOT set - Gemini 3 uses default 1.0
                 )
             )
 

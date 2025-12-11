@@ -17,7 +17,7 @@ from src.models.gpt import GPTModel
 from src.models.claude import ClaudeModel
 from src.models.gemini import GeminiModel
 
-def run_extraction(model_name: str, strategy: str, split: str, pmcids = None):
+def run_extraction(model_name: str, strategy: str, split: str, pmcids = None, dry_run: bool = False):
     # 1. Setup Run Directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     # When running a specific PMCID, suffix with _custom instead of the split
@@ -61,7 +61,7 @@ def run_extraction(model_name: str, strategy: str, split: str, pmcids = None):
             payload = prompt_builder.build(pmcid, mode=strategy)
 
             # Generate
-            raw_text, usage = model.generate(payload)
+            raw_text, usage = model.generate(payload, dry_run=dry_run)
 
             # Parse
             parsed_data = clean_and_parse_json(raw_text)
@@ -129,6 +129,13 @@ if __name__ == "__main__":
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"])
     parser.add_argument("--split", type=str, default="DEV", help="Split to extract (DEV, TEST)")
     parser.add_argument("--pmcid", help="Run only this PMCID")
+    parser.add_argument("--dry-run", action="store_true", help="Build and dump prompts without calling the API")
     args = parser.parse_args()
 
-    run_extraction(args.model, args.strategy, args.split, pmcids=[args.pmcid] if args.pmcid else None)
+    run_extraction(
+        args.model,
+        args.strategy,
+        args.split,
+        pmcids=[args.pmcid] if args.pmcid else None,
+        dry_run=args.dry_run,
+    )

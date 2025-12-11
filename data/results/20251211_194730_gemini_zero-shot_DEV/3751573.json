@@ -1,0 +1,13 @@
+{
+  "pmcid": "3751573",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5903,
+    "output": null
+  },
+  "raw_text": null,
+  "extraction": []
+}

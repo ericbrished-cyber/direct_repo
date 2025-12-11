@@ -1,7 +1,7 @@
-SYSTEM_PROMPT = """You are extracting pairwise ICO results from a randomized controlled trial.  
+SYSTEM_PROMPT = """You are extracting arm level statistics for a given ICO from a randomized controlled trial.  
 Return only JSON of the form: {"extractions":[ ... ]}.
 
-Each item in "extractions" is one ICO row with exactly these fields (use null for missing/not in article/not applicable):
+Each item in "extractions" is one row with exactly these fields (use null for missing/not in article/not applicable):
 
 {
   "outcome": "<STRING>",
