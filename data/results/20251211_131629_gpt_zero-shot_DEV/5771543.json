@@ -1,0 +1,74 @@
+{
+  "pmcid": "5771543",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 18513,
+    "output": 500
+  },
+  "raw_text": "{\"extractions\":[\n  {\n    \"outcome\": \"CGI-I response rate\",\n    \"intervention\": \"fluoxetine\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 79,\n    \"intervention_group_size\": 101,\n    \"comparator_events\": 62,\n    \"comparator_group_size\": 99,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"CGI-I response rate\",\n    \"intervention\": \"desvenlafaxine\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 68,\n    \"intervention_group_size\": 99,\n    \"comparator_events\": 62,\n    \"comparator_group_size\": 99,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"Treatment-emergent adverse events (TEAEs)\",\n    \"intervention\": \"desvenlafaxine\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 69,\n    \"intervention_group_size\": 115,\n    \"comparator_events\": 79,\n    \"comparator_group_size\": 112,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"Treatment-emergent adverse events (TEAEs)\",\n    \"intervention\": \"fluoxetine\",\n    \"comparator\": \"placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 72,\n    \"intervention_group_size\": 112,\n    \"comparator_events\": 79,\n    \"comparator_group_size\": 112,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  }\n]}",
+  "extraction": [
+    {
+      "outcome": "CGI-I response rate",
+      "intervention": "fluoxetine",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 79,
+      "intervention_group_size": 101,
+      "comparator_events": 62,
+      "comparator_group_size": 99,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5771543"
+    },
+    {
+      "outcome": "CGI-I response rate",
+      "intervention": "desvenlafaxine",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 68,
+      "intervention_group_size": 99,
+      "comparator_events": 62,
+      "comparator_group_size": 99,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5771543"
+    },
+    {
+      "outcome": "Treatment-emergent adverse events (TEAEs)",
+      "intervention": "desvenlafaxine",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 69,
+      "intervention_group_size": 115,
+      "comparator_events": 79,
+      "comparator_group_size": 112,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5771543"
+    },
+    {
+      "outcome": "Treatment-emergent adverse events (TEAEs)",
+      "intervention": "fluoxetine",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 72,
+      "intervention_group_size": 112,
+      "comparator_events": 79,
+      "comparator_group_size": 112,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5771543"
+    }
+  ]
+}

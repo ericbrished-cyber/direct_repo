@@ -1,0 +1,29 @@
+{
+  "pmcid": "3751573",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 32683,
+    "output": 112
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"improvement in nursing\",\"intervention\":\"phase I externship program\",\"comparator\":\"phase II corporate-academic cooperation program\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":19,\"comparator_events\":null,\"comparator_group_size\":24,\"intervention_mean\":22.95,\"intervention_standard_deviation\":24.22,\"comparator_mean\":36.6,\"comparator_standard_deviation\":16.61}]}",
+  "extraction": [
+    {
+      "outcome": "improvement in nursing",
+      "intervention": "phase I externship program",
+      "comparator": "phase II corporate-academic cooperation program",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 24,
+      "intervention_mean": 22.95,
+      "intervention_standard_deviation": 24.22,
+      "comparator_mean": 36.6,
+      "comparator_standard_deviation": 16.61,
+      "pmcid": "3751573"
+    }
+  ]
+}

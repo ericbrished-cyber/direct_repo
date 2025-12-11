@@ -1,0 +1,60 @@
+{
+  "pmcid": "2681019",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot",
+    "temp": 0.0
+  },
+  "usage": {
+    "input": 5403,
+    "output": 398
+  },
+  "raw_text": "{\"extractions\":[\n  {\n    \"outcome\": \"Adiponectin in women\",\n    \"intervention\": \"Red wine\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 24,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 24,\n    \"intervention_mean\": 29.8,\n    \"intervention_standard_deviation\": 15.0,\n    \"comparator_mean\": 0.0,\n    \"comparator_standard_deviation\": 10.0\n  },\n  {\n    \"outcome\": \"Adiponectin in men\",\n    \"intervention\": \"Ethanol solution\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 24,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 24,\n    \"intervention_mean\": 17.4,\n    \"intervention_standard_deviation\": 10.0,\n    \"comparator_mean\": 0.0,\n    \"comparator_standard_deviation\": 10.0\n  },\n  {\n    \"outcome\": \"Adiponectin in men\",\n    \"intervention\": \"Beer\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 24,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 24,\n    \"intervention_mean\": 16.1,\n    \"intervention_standard_deviation\": 10.0,\n    \"comparator_mean\": 0.0,\n    \"comparator_standard_deviation\": 10.0\n  }\n]}",
+  "extraction": [
+    {
+      "outcome": "Adiponectin in women",
+      "intervention": "Red wine",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 24,
+      "intervention_mean": 29.8,
+      "intervention_standard_deviation": 15.0,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 10.0,
+      "pmcid": "2681019"
+    },
+    {
+      "outcome": "Adiponectin in men",
+      "intervention": "Ethanol solution",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 24,
+      "intervention_mean": 17.4,
+      "intervention_standard_deviation": 10.0,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 10.0,
+      "pmcid": "2681019"
+    },
+    {
+      "outcome": "Adiponectin in men",
+      "intervention": "Beer",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 24,
+      "intervention_mean": 16.1,
+      "intervention_standard_deviation": 10.0,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 10.0,
+      "pmcid": "2681019"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "aggregated": {
+    "precision": 1.0,
+    "recall": 0.4533333333333333,
+    "f1": 0.6238532110091742,
+    "rmse": 33.76694827452798,
+    "true_positives": 68,
+    "false_positives": 0,
+    "false_negatives": 82,
+    "exact_match": 0.42424242424242425
+  },
+  "by_field": {
+    "comparator_events": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "rmse": 5.366563145999495,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    "comparator_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 3.237708853601518,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "comparator_mean": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714285714285715,
+      "rmse": 4.054983288952523,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 12
+    },
+    "comparator_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.47368421052631576,
+      "f1": 0.6428571428571429,
+      "rmse": 4.625024324260359,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 10
+    },
+    "intervention_events": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "rmse": 3.5777087639996634,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    "intervention_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 4.047136067001897,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "intervention_mean": {
+      "precision": 1.0,
+      "recall": 0.45,
+      "f1": 0.6206896551724138,
+      "rmse": 84.13553310925741,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 11
+    },
+    "intervention_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.42105263157894735,
+      "f1": 0.5925925925925926,
+      "rmse": 37.80648393831114,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 11
+    }
+  }
+}
