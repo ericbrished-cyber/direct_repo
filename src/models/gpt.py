@@ -18,7 +18,7 @@ class GPTModel(ModelAdapter):
         with open(pdf_path, "rb") as f:
             return base64.b64encode(f.read()).decode("utf-8")
 
-    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
         """Generates response using GPT-5.1."""
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY not found in environment variables.")
@@ -65,8 +65,7 @@ class GPTModel(ModelAdapter):
         # API call
         response = client.responses.create(
             model=self.model_version,
-            input=messages,
-            temperature=temperature
+            input=messages
         )
 
         token_usage = {
