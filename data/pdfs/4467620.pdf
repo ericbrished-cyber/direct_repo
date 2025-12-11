@@ -8111,6 +8111,8 @@ trailer
 startxref
 949385
 %%EOF
+<<<<<<< HEAD
+=======
 1 0 obj
 << /CreationDate (D:20150630134043+05'30') /CrossmarkDomainExclusive (true)
 /Title (The effects of temporal neck cooling on cognitive function during strenuous exercise in a hot environment: a pilot study)
@@ -8408,3 +8410,4 @@ trailer
 startxref
 991693
 %%EOF
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff

@@ -1,0 +1,29 @@
+{
+  "pmcid": "3580751",
+  "raw_text": "```json\n[\n  {\n    \"pmcid\": \"PMC3580670\",\n    \"outcome\": \"mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP\",\n    \"intervention\": \"Interrupted surveillance, unit A\",\n    \"comparator\": \"Continuous surveillance, unit B\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": null,\n    \"comparator_events\": null,\n    \"comparator_group_size\": null,\n    \"intervention_mean\": 9.3,\n    \"intervention_standard_deviation\": 11.9,\n    \"comparator_mean\": 11.3,\n    \"comparator_standard_deviation\": 13.0,\n    \"notes\": \"Values are mean \u00b1 SD length of hospital stay (days) during period 1 for patients without VAP, reported separately by ICU. Period-2 values (unit A: 9.9 \u00b1 14.8; unit B: 9.1 \u00b1 9.9) are also given in text but no group sizes are reported.\",\n    \"pmcid\": \"PMC3580670\"\n  }\n]\n```",
+  "extraction": [
+    {
+      "pmcid": "PMC3580670",
+      "outcome": "mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP",
+      "intervention": "Interrupted surveillance, unit A",
+      "comparator": "Continuous surveillance, unit B",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 9.3,
+      "intervention_standard_deviation": 11.9,
+      "comparator_mean": 11.3,
+      "comparator_standard_deviation": 13.0,
+      "notes": "Values are mean \u00b1 SD length of hospital stay (days) during period 1 for patients without VAP, reported separately by ICU. Period-2 values (unit A: 9.9 \u00b1 14.8; unit B: 9.1 \u00b1 9.9) are also given in text but no group sizes are reported."
+    }
+  ],
+  "usage": {
+    "input": 0,
+    "output": 0
+  },
+  "model": "gpt",
+  "strategy": "zero-shot",
+  "temperature": 0.0
+}

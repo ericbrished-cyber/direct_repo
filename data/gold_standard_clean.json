@@ -241,15 +241,25 @@
     "intervention": "Amifostine",
     "comparator": "Control",
     "outcome_type": "binary",
+<<<<<<< HEAD
+    "intervention_events": 0.0,
+    "intervention_group_size": 20.0,
+    "comparator_events": 5.0,
+=======
     "intervention_events": 5.0,
     "intervention_group_size": 20.0,
     "comparator_events": 10.0,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "comparator_group_size": 20.0,
     "intervention_mean": null,
     "intervention_standard_deviation": null,
     "comparator_mean": null,
     "comparator_standard_deviation": null,
+<<<<<<< HEAD
+    "notes": null,
+=======
     "notes": "Abstract and result section do not agree. Settled on result section value as correct",
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
@@ -416,6 +426,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 17,
     "evidence_inference_prompt_id": 8237,
     "pmcid": 2681019,
@@ -494,6 +506,7 @@
     "split": "FEW-SHOT"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 20,
     "evidence_inference_prompt_id": 3246,
     "pmcid": 2972614,
@@ -884,6 +897,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 35,
     "evidence_inference_prompt_id": 5579,
     "pmcid": 3003523,
@@ -910,6 +925,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 36,
     "evidence_inference_prompt_id": 6988,
     "pmcid": 3169777,
@@ -1118,6 +1134,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 44,
     "evidence_inference_prompt_id": 6986,
     "pmcid": 3169777,
@@ -1144,6 +1162,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 45,
     "evidence_inference_prompt_id": 6989,
     "pmcid": 3169777,
@@ -2288,6 +2307,8 @@
     "split": "DEV"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 89,
     "evidence_inference_prompt_id": 5538,
     "pmcid": 3912320,
@@ -2366,6 +2387,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 92,
     "evidence_inference_prompt_id": 10164,
     "pmcid": 4173437,
@@ -2385,7 +2407,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 854.0,
     "tiktoken_without_attributes_xml_token_num": 745.0,
     "tiktoken_without_attributes_markdown_token_num": 637.0,
@@ -2600,6 +2626,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 101,
     "evidence_inference_prompt_id": 1886,
     "pmcid": 4188762,
@@ -2756,6 +2784,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 107,
     "evidence_inference_prompt_id": 1884,
     "pmcid": 4188762,
@@ -3061,7 +3090,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 3049.0,
     "tiktoken_without_attributes_xml_token_num": 2670.0,
     "tiktoken_without_attributes_markdown_token_num": 2328.0,
@@ -3224,6 +3257,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 125,
     "evidence_inference_prompt_id": 4926,
     "pmcid": 4493951,
@@ -3276,6 +3311,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 127,
     "evidence_inference_prompt_id": 4924,
     "pmcid": 4493951,
@@ -3328,6 +3364,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 129,
     "evidence_inference_prompt_id": 4927,
     "pmcid": 4493951,
@@ -3354,6 +3392,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 130,
     "evidence_inference_prompt_id": 4925,
     "pmcid": 4493951,
@@ -3614,6 +3653,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 140,
     "evidence_inference_prompt_id": 1275,
     "pmcid": 4880652,
@@ -3640,6 +3681,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 141,
     "evidence_inference_prompt_id": 1272,
     "pmcid": 4880652,
@@ -3659,6 +3701,8 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+=======
     "is_data_complete": true,
     "tiktoken_with_attributes_xml_token_num": 1406.0,
     "tiktoken_without_attributes_xml_token_num": 1149.0,
@@ -3763,6 +3807,7 @@
     "is_data_in_figure_graphics": true,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "is_data_complete": false,
     "tiktoken_with_attributes_xml_token_num": 1406.0,
     "tiktoken_without_attributes_xml_token_num": 1149.0,
@@ -3789,6 +3834,8 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+=======
     "is_data_complete": true,
     "tiktoken_with_attributes_xml_token_num": 1406.0,
     "tiktoken_without_attributes_xml_token_num": 1149.0,
@@ -3841,6 +3888,7 @@
     "is_data_in_figure_graphics": true,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "is_data_complete": false,
     "tiktoken_with_attributes_xml_token_num": 1406.0,
     "tiktoken_without_attributes_xml_token_num": 1149.0,
@@ -3978,6 +4026,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 154,
     "evidence_inference_prompt_id": 13480,
     "pmcid": 5055753,
@@ -4030,6 +4080,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 156,
     "evidence_inference_prompt_id": 13481,
     "pmcid": 5055753,
@@ -4056,6 +4107,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 157,
     "evidence_inference_prompt_id": 13482,
     "pmcid": 5055753,
@@ -4082,6 +4135,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 158,
     "evidence_inference_prompt_id": 7710,
     "pmcid": 5056957,
@@ -4342,6 +4396,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 168,
     "evidence_inference_prompt_id": 2797,
     "pmcid": 5079604,
@@ -4446,6 +4502,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 172,
     "evidence_inference_prompt_id": 2793,
     "pmcid": 5079604,
@@ -4472,6 +4529,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 173,
     "evidence_inference_prompt_id": 2790,
     "pmcid": 5079604,
@@ -4524,6 +4583,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 175,
     "evidence_inference_prompt_id": 2796,
     "pmcid": 5079604,
@@ -4836,6 +4896,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 187,
     "evidence_inference_prompt_id": 13818,
     "pmcid": 5244530,
@@ -4862,6 +4924,7 @@
     "split": "FEW-SHOT"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 188,
     "evidence_inference_prompt_id": 13818,
     "pmcid": 5244530,
@@ -4885,6 +4948,9 @@
     "tiktoken_with_attributes_xml_token_num": 6216.0,
     "tiktoken_without_attributes_xml_token_num": 5516.0,
     "tiktoken_without_attributes_markdown_token_num": 4050.0,
+<<<<<<< HEAD
+    "split": "DEV"
+=======
     "split": "FEW-SHOT"
   },
   {
@@ -4938,6 +5004,7 @@
     "tiktoken_without_attributes_xml_token_num": 5516.0,
     "tiktoken_without_attributes_markdown_token_num": 4050.0,
     "split": "FEW-SHOT"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 191,
@@ -4963,7 +5030,11 @@
     "tiktoken_with_attributes_xml_token_num": 6216.0,
     "tiktoken_without_attributes_xml_token_num": 5516.0,
     "tiktoken_without_attributes_markdown_token_num": 4050.0,
+<<<<<<< HEAD
+    "split": "DEV"
+=======
     "split": "FEW-SHOT"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 192,
@@ -4989,7 +5060,11 @@
     "tiktoken_with_attributes_xml_token_num": 6216.0,
     "tiktoken_without_attributes_xml_token_num": 5516.0,
     "tiktoken_without_attributes_markdown_token_num": 4050.0,
+<<<<<<< HEAD
+    "split": "DEV"
+=======
     "split": "FEW-SHOT"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 193,
@@ -5015,7 +5090,11 @@
     "tiktoken_with_attributes_xml_token_num": 6216.0,
     "tiktoken_without_attributes_xml_token_num": 5516.0,
     "tiktoken_without_attributes_markdown_token_num": 4050.0,
+<<<<<<< HEAD
+    "split": "DEV"
+=======
     "split": "FEW-SHOT"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 194,
@@ -5193,7 +5272,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1731.0,
     "tiktoken_without_attributes_xml_token_num": 1429.0,
     "tiktoken_without_attributes_markdown_token_num": 1251.0,
@@ -5219,7 +5302,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1731.0,
     "tiktoken_without_attributes_xml_token_num": 1429.0,
     "tiktoken_without_attributes_markdown_token_num": 1251.0,
@@ -5616,6 +5703,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 217,
     "evidence_inference_prompt_id": 2915,
     "pmcid": 5459456,
@@ -5642,6 +5731,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 218,
     "evidence_inference_prompt_id": 2912,
     "pmcid": 5459456,
@@ -6942,6 +7032,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 268,
     "evidence_inference_prompt_id": 12440,
     "pmcid": 2596788,
@@ -6968,6 +7060,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 269,
     "evidence_inference_prompt_id": 2991,
     "pmcid": 3214395,
@@ -7013,7 +7106,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1201.0,
     "tiktoken_without_attributes_xml_token_num": 996.0,
     "tiktoken_without_attributes_markdown_token_num": 880.0,
@@ -7039,7 +7136,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1201.0,
     "tiktoken_without_attributes_xml_token_num": 996.0,
     "tiktoken_without_attributes_markdown_token_num": 880.0,
@@ -7741,7 +7842,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": true,
+=======
     "is_data_complete": false,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 7450.0,
     "tiktoken_without_attributes_xml_token_num": 5464.0,
     "tiktoken_without_attributes_markdown_token_num": 3820.0,
@@ -8105,7 +8210,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1359.0,
     "tiktoken_without_attributes_xml_token_num": 1043.0,
     "tiktoken_without_attributes_markdown_token_num": 907.0,
@@ -8131,7 +8240,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1359.0,
     "tiktoken_without_attributes_xml_token_num": 1043.0,
     "tiktoken_without_attributes_markdown_token_num": 907.0,
@@ -8469,7 +8582,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -8495,7 +8612,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -8521,7 +8642,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -8547,7 +8672,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -8573,7 +8702,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -8599,7 +8732,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1146.0,
     "tiktoken_without_attributes_xml_token_num": 884.0,
     "tiktoken_without_attributes_markdown_token_num": 721.0,
@@ -9334,6 +9471,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 360,
     "evidence_inference_prompt_id": 8711,
     "pmcid": 5971365,
@@ -9360,6 +9499,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 361,
     "evidence_inference_prompt_id": 8712,
     "pmcid": 5971365,
@@ -9386,6 +9526,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 362,
     "evidence_inference_prompt_id": 8713,
     "pmcid": 5971365,
@@ -9438,6 +9580,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 364,
     "evidence_inference_prompt_id": 12884,
     "pmcid": 5976949,
@@ -10029,7 +10172,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 3018.0,
     "tiktoken_without_attributes_xml_token_num": 2080.0,
     "tiktoken_without_attributes_markdown_token_num": 1653.0,
@@ -10055,7 +10202,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 3018.0,
     "tiktoken_without_attributes_xml_token_num": 2080.0,
     "tiktoken_without_attributes_markdown_token_num": 1653.0,
@@ -10452,6 +10603,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 403,
     "evidence_inference_prompt_id": 2804,
     "pmcid": 5781260,
@@ -10530,6 +10683,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 406,
     "evidence_inference_prompt_id": 2807,
     "pmcid": 5781260,
@@ -11492,6 +11646,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 443,
     "evidence_inference_prompt_id": 8805,
     "pmcid": 4467620,
@@ -11570,6 +11726,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 446,
     "evidence_inference_prompt_id": 4098,
     "pmcid": 4140238,
@@ -11849,7 +12006,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -11875,7 +12036,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -11901,7 +12066,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -11927,7 +12096,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -11953,7 +12126,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -11979,7 +12156,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1396.0,
     "tiktoken_without_attributes_xml_token_num": 1236.0,
     "tiktoken_without_attributes_markdown_token_num": 1068.0,
@@ -12168,6 +12349,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 469,
     "evidence_inference_prompt_id": 4802,
     "pmcid": 5515881,
@@ -12272,6 +12455,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 473,
     "evidence_inference_prompt_id": 5710,
     "pmcid": 3343759,
@@ -12298,6 +12482,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 474,
     "evidence_inference_prompt_id": 5711,
     "pmcid": 3343759,
@@ -12324,6 +12510,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 475,
     "evidence_inference_prompt_id": 5522,
     "pmcid": 4144850,
@@ -12480,6 +12667,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 481,
     "evidence_inference_prompt_id": 4801,
     "pmcid": 5515881,
@@ -12506,6 +12695,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 482,
     "evidence_inference_prompt_id": 5521,
     "pmcid": 4144850,
@@ -12603,7 +12793,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 3838.0,
     "tiktoken_without_attributes_xml_token_num": 2633.0,
     "tiktoken_without_attributes_markdown_token_num": 2065.0,
@@ -13364,6 +13558,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 515,
     "evidence_inference_prompt_id": 6551,
     "pmcid": 4033571,
@@ -13416,6 +13612,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 517,
     "evidence_inference_prompt_id": 6554,
     "pmcid": 4033571,
@@ -13676,6 +13873,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 527,
     "evidence_inference_prompt_id": 6916,
     "pmcid": 4411165,
@@ -13884,6 +14083,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 535,
     "evidence_inference_prompt_id": 7794,
     "pmcid": 3508963,
@@ -14560,6 +14760,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 561,
     "evidence_inference_prompt_id": 9834,
     "pmcid": 3496170,
@@ -14638,6 +14840,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 564,
     "evidence_inference_prompt_id": 9837,
     "pmcid": 3496170,
@@ -14664,6 +14867,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 565,
     "evidence_inference_prompt_id": 9838,
     "pmcid": 3496170,
@@ -14716,6 +14921,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 567,
     "evidence_inference_prompt_id": 8560,
     "pmcid": 5541727,
@@ -14768,6 +14974,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 569,
     "evidence_inference_prompt_id": 8557,
     "pmcid": 5541727,
@@ -14846,6 +15054,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 572,
     "evidence_inference_prompt_id": 8561,
     "pmcid": 5541727,
@@ -14898,6 +15107,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 574,
     "evidence_inference_prompt_id": 8565,
     "pmcid": 2952311,
@@ -15080,6 +15291,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 581,
     "evidence_inference_prompt_id": 11584,
     "pmcid": 115849,
@@ -15106,6 +15318,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 582,
     "evidence_inference_prompt_id": 10219,
     "pmcid": 3504298,
@@ -15158,6 +15372,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 584,
     "evidence_inference_prompt_id": 10215,
     "pmcid": 3504298,
@@ -15236,6 +15451,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 587,
     "evidence_inference_prompt_id": 11581,
     "pmcid": 115849,
@@ -15288,6 +15505,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 589,
     "evidence_inference_prompt_id": 11583,
     "pmcid": 115849,
@@ -15964,6 +16182,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 615,
     "evidence_inference_prompt_id": 11602,
     "pmcid": 1863515,
@@ -16120,6 +16340,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 621,
     "evidence_inference_prompt_id": 11904,
     "pmcid": 3493722,
@@ -16217,7 +16438,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1684.0,
     "tiktoken_without_attributes_xml_token_num": 1549.0,
     "tiktoken_without_attributes_markdown_token_num": 1357.0,
@@ -16243,7 +16468,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1684.0,
     "tiktoken_without_attributes_xml_token_num": 1549.0,
     "tiktoken_without_attributes_markdown_token_num": 1357.0,
@@ -16269,7 +16498,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 1684.0,
     "tiktoken_without_attributes_xml_token_num": 1549.0,
     "tiktoken_without_attributes_markdown_token_num": 1357.0,
@@ -16841,7 +17074,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16867,7 +17104,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16893,7 +17134,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16919,7 +17164,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16945,7 +17194,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16971,7 +17224,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -16997,7 +17254,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2560.0,
     "tiktoken_without_attributes_xml_token_num": 2044.0,
     "tiktoken_without_attributes_markdown_token_num": 1751.0,
@@ -17023,7 +17284,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2609.0,
     "tiktoken_without_attributes_xml_token_num": 2261.0,
     "tiktoken_without_attributes_markdown_token_num": 1917.0,
@@ -17049,7 +17314,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2609.0,
     "tiktoken_without_attributes_xml_token_num": 2261.0,
     "tiktoken_without_attributes_markdown_token_num": 1917.0,
@@ -17075,7 +17344,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2609.0,
     "tiktoken_without_attributes_xml_token_num": 2261.0,
     "tiktoken_without_attributes_markdown_token_num": 1917.0,
@@ -17101,7 +17374,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": true,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2609.0,
     "tiktoken_without_attributes_xml_token_num": 2261.0,
     "tiktoken_without_attributes_markdown_token_num": 1917.0,
@@ -17127,7 +17404,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 2609.0,
     "tiktoken_without_attributes_xml_token_num": 2261.0,
     "tiktoken_without_attributes_markdown_token_num": 1917.0,
@@ -17186,6 +17467,8 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 662,
     "evidence_inference_prompt_id": 13296,
     "pmcid": 4987981,
@@ -17342,6 +17625,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 668,
     "evidence_inference_prompt_id": 13296,
     "pmcid": 4987981,
@@ -17673,7 +17957,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": true,
+=======
     "is_data_complete": false,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 9410.0,
     "tiktoken_without_attributes_xml_token_num": 4699.0,
     "tiktoken_without_attributes_markdown_token_num": 3181.0,
@@ -17699,7 +17987,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": true,
+=======
     "is_data_complete": false,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 9410.0,
     "tiktoken_without_attributes_xml_token_num": 4699.0,
     "tiktoken_without_attributes_markdown_token_num": 3181.0,
@@ -17725,7 +18017,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 12992.0,
     "tiktoken_without_attributes_xml_token_num": 7163.0,
     "tiktoken_without_attributes_markdown_token_num": 5694.0,
@@ -17751,7 +18047,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 12992.0,
     "tiktoken_without_attributes_xml_token_num": 7163.0,
     "tiktoken_without_attributes_markdown_token_num": 5694.0,
@@ -17777,7 +18077,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 12992.0,
     "tiktoken_without_attributes_xml_token_num": 7163.0,
     "tiktoken_without_attributes_markdown_token_num": 5694.0,
@@ -17803,7 +18107,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": true,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 12992.0,
     "tiktoken_without_attributes_xml_token_num": 7163.0,
     "tiktoken_without_attributes_markdown_token_num": 5694.0,
@@ -17881,13 +18189,19 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": true,
+=======
     "is_data_complete": false,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 10493.0,
     "tiktoken_without_attributes_xml_token_num": 8112.0,
     "tiktoken_without_attributes_markdown_token_num": 5695.0,
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+=======
     "id": 689,
     "evidence_inference_prompt_id": 13761,
     "pmcid": 2836833,
@@ -17914,6 +18228,7 @@
     "split": "TEST"
   },
   {
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 690,
     "evidence_inference_prompt_id": 13762,
     "pmcid": 2836833,
@@ -17966,6 +18281,2479 @@
     "split": "TEST"
   },
   {
+<<<<<<< HEAD
+    "id": 17,
+    "evidence_inference_prompt_id": 8237,
+    "pmcid": 2681019,
+    "outcome": "Adiponectin in women",
+    "intervention": "Red wine",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 24.0,
+    "comparator_events": null,
+    "comparator_group_size": 24.0,
+    "intervention_mean": 30.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -1.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and SD in figure. Group sizes not available in results section. Group sizes somewhat unclear",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 726.0,
+    "tiktoken_without_attributes_xml_token_num": 647.0,
+    "tiktoken_without_attributes_markdown_token_num": 543.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 18,
+    "evidence_inference_prompt_id": 8238,
+    "pmcid": 2681019,
+    "outcome": "Adiponectin in men",
+    "intervention": "Ethanol solution",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 24.0,
+    "comparator_events": null,
+    "comparator_group_size": 24.0,
+    "intervention_mean": 17.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 4.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and SD in figure. Group sizes not available in results section. Group sizes somewhat unclear",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 726.0,
+    "tiktoken_without_attributes_xml_token_num": 647.0,
+    "tiktoken_without_attributes_markdown_token_num": 543.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 19,
+    "evidence_inference_prompt_id": 8239,
+    "pmcid": 2681019,
+    "outcome": "Adiponectin in men",
+    "intervention": "Beer",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 24.0,
+    "comparator_events": null,
+    "comparator_group_size": 24.0,
+    "intervention_mean": 16.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 4.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and SD in figure. Group sizes not available in results section. Group sizes somewhat unclear",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 726.0,
+    "tiktoken_without_attributes_xml_token_num": 647.0,
+    "tiktoken_without_attributes_markdown_token_num": 543.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 35,
+    "evidence_inference_prompt_id": 5579,
+    "pmcid": 3003523,
+    "outcome": "Fatigue Assessment Scale improvement",
+    "intervention": "Certolizumab 200 mg",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 393.0,
+    "comparator_events": null,
+    "comparator_group_size": 199.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Values are in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12247.0,
+    "tiktoken_without_attributes_xml_token_num": 10091.0,
+    "tiktoken_without_attributes_markdown_token_num": 7520.0,
+    "split": "TEST"
+  },
+  {
+    "id": 44,
+    "evidence_inference_prompt_id": 6986,
+    "pmcid": 3169777,
+    "outcome": "Plasma endothelin-1 concentrations",
+    "intervention": "macitentan dose of 600 mg",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 6.0,
+    "comparator_events": null,
+    "comparator_group_size": 14.0,
+    "intervention_mean": 149.0,
+    "intervention_standard_deviation": 51.0,
+    "comparator_mean": 60.0,
+    "comparator_standard_deviation": 12.0,
+    "notes": "The mean and SD are in bar chart (figure). Eyeballed from figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 5143.0,
+    "tiktoken_without_attributes_xml_token_num": 4376.0,
+    "tiktoken_without_attributes_markdown_token_num": 3326.0,
+    "split": "TEST"
+  },
+  {
+    "id": 89,
+    "evidence_inference_prompt_id": 5538,
+    "pmcid": 3912320,
+    "outcome": "Correct response rate for 500 Hz frequency",
+    "intervention": "Occupational noise",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": 31.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 56.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean were in a figure and SD was not given anywhere.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1648.0,
+    "tiktoken_without_attributes_xml_token_num": 1217.0,
+    "tiktoken_without_attributes_markdown_token_num": 1015.0,
+    "split": "TEST"
+  },
+  {
+    "id": 90,
+    "evidence_inference_prompt_id": 5540,
+    "pmcid": 3912320,
+    "outcome": "Correct response rate for 4,000 Hz frequency",
+    "intervention": "Occupational noise",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": 29.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 53.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean were in a figure and SD was not given anywhere.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1648.0,
+    "tiktoken_without_attributes_xml_token_num": 1217.0,
+    "tiktoken_without_attributes_markdown_token_num": 1015.0,
+    "split": "TEST"
+  },
+  {
+    "id": 91,
+    "evidence_inference_prompt_id": 5539,
+    "pmcid": 3912320,
+    "outcome": "Correct response rate for 2,000 Hz frequency",
+    "intervention": "Occupational noise",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": 30.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 51.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean were in a figure and SD was not given anywhere.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1648.0,
+    "tiktoken_without_attributes_xml_token_num": 1217.0,
+    "tiktoken_without_attributes_markdown_token_num": 1015.0,
+    "split": "TEST"
+  },
+  {
+    "id": 101,
+    "evidence_inference_prompt_id": 1886,
+    "pmcid": 4188762,
+    "outcome": "heart rate",
+    "intervention": "remifentanil",
+    "comparator": "normal saline",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Data in figure, messed up legend",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 102,
+    "evidence_inference_prompt_id": 1886,
+    "pmcid": 4188762,
+    "outcome": "heart rate",
+    "intervention": "remifentanil",
+    "comparator": "lidocaine",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Data in figure, messed up legend",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 103,
+    "evidence_inference_prompt_id": 1886,
+    "pmcid": 4188762,
+    "outcome": "heart rate",
+    "intervention": "remifentanil",
+    "comparator": "ketamine",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Data in figure, messed up legend",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 104,
+    "evidence_inference_prompt_id": 1885,
+    "pmcid": 4188762,
+    "outcome": "mean blood pressure",
+    "intervention": "remifentanil",
+    "comparator": "normal saline",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": 77.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 96.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 105,
+    "evidence_inference_prompt_id": 1885,
+    "pmcid": 4188762,
+    "outcome": "mean blood pressure",
+    "intervention": "remifentanil",
+    "comparator": "lidocaine",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": 77.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 92.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 106,
+    "evidence_inference_prompt_id": 1885,
+    "pmcid": 4188762,
+    "outcome": "mean blood pressure",
+    "intervention": "remifentanil",
+    "comparator": "normal saline, lidocaine, or ketamine",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 30.0,
+    "comparator_events": null,
+    "comparator_group_size": 30.0,
+    "intervention_mean": 77.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Unclear compararator",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2068.0,
+    "tiktoken_without_attributes_xml_token_num": 1758.0,
+    "tiktoken_without_attributes_markdown_token_num": 1564.0,
+    "split": "TEST"
+  },
+  {
+    "id": 125,
+    "evidence_inference_prompt_id": 4926,
+    "pmcid": 4493951,
+    "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+    "intervention": "and H2 (haloperidol 2 mg)",
+    "comparator": "H0 (saline)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 50.0,
+    "comparator_events": null,
+    "comparator_group_size": 50.0,
+    "intervention_mean": 4.2,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 3.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure. No SD",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3932.0,
+    "tiktoken_without_attributes_xml_token_num": 3205.0,
+    "tiktoken_without_attributes_markdown_token_num": 2434.0,
+    "split": "TEST"
+  },
+  {
+    "id": 126,
+    "evidence_inference_prompt_id": 4926,
+    "pmcid": 4493951,
+    "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+    "intervention": "and H2 (haloperidol 2 mg)",
+    "comparator": "H1(haloperidol 1 mg)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 50.0,
+    "comparator_events": null,
+    "comparator_group_size": 49.0,
+    "intervention_mean": 4.2,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 3.2,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure. No SD",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3932.0,
+    "tiktoken_without_attributes_xml_token_num": 3205.0,
+    "tiktoken_without_attributes_markdown_token_num": 2434.0,
+    "split": "TEST"
+  },
+  {
+    "id": 129,
+    "evidence_inference_prompt_id": 4927,
+    "pmcid": 4493951,
+    "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+    "intervention": "H0 (saline)",
+    "comparator": "H1(haloperidol 1 mg),",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 50.0,
+    "comparator_events": null,
+    "comparator_group_size": 49.0,
+    "intervention_mean": 3.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 3.2,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure. No SD",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3932.0,
+    "tiktoken_without_attributes_xml_token_num": 3205.0,
+    "tiktoken_without_attributes_markdown_token_num": 2434.0,
+    "split": "TEST"
+  },
+  {
+    "id": 140,
+    "evidence_inference_prompt_id": 1275,
+    "pmcid": 4880652,
+    "outcome": "SpO2 at 5 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 97.8,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 99.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean in figure 5's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 142,
+    "evidence_inference_prompt_id": 1272,
+    "pmcid": 4880652,
+    "outcome": "systolic pressures at 0 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 128.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 126.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean in figure 3's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 143,
+    "evidence_inference_prompt_id": 1272,
+    "pmcid": 4880652,
+    "outcome": "oxygen saturation at 20 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 98.6,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 98.8,
+    "comparator_standard_deviation": null,
+    "notes": "Means in figure 5's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 144,
+    "evidence_inference_prompt_id": 1272,
+    "pmcid": 4880652,
+    "outcome": "diastolic blood pressure at 10 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 67.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 69.9,
+    "comparator_standard_deviation": null,
+    "notes": "Means in figure 4's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 145,
+    "evidence_inference_prompt_id": 1272,
+    "pmcid": 4880652,
+    "outcome": "heart rate at 0 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 93.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 89.8,
+    "comparator_standard_deviation": null,
+    "notes": "Means in figure 2's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 147,
+    "evidence_inference_prompt_id": 1273,
+    "pmcid": 4880652,
+    "outcome": "systolic blood pressures at 20 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 118.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 121.0,
+    "comparator_standard_deviation": null,
+    "notes": "Means in figure 3's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 148,
+    "evidence_inference_prompt_id": 1274,
+    "pmcid": 4880652,
+    "outcome": "Diastolic blood pressures at 5 minutes",
+    "intervention": "fentanyl (1 µg/kg) and propofol",
+    "comparator": "paracetamol (20 mg/kg) and propofol",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 76.0,
+    "comparator_events": null,
+    "comparator_group_size": 70.0,
+    "intervention_mean": 64.5,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 69.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean in figure 4's graphics.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 1406.0,
+    "tiktoken_without_attributes_xml_token_num": 1149.0,
+    "tiktoken_without_attributes_markdown_token_num": 966.0,
+    "split": "FEW-SHOT"
+  },
+  {
+    "id": 154,
+    "evidence_inference_prompt_id": 13480,
+    "pmcid": 5055753,
+    "outcome": "the percentages of patients in the agitated sedation scale",
+    "intervention": "0.2 mg oral clonidine",
+    "comparator": "2 mg oral midazolam",
+    "outcome_type": "binary",
+    "intervention_events": null,
+    "intervention_group_size": 40.0,
+    "comparator_events": null,
+    "comparator_group_size": 40.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": null,
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3292.0,
+    "tiktoken_without_attributes_xml_token_num": 2470.0,
+    "tiktoken_without_attributes_markdown_token_num": 2114.0,
+    "split": "TEST"
+  },
+  {
+    "id": 155,
+    "evidence_inference_prompt_id": 13480,
+    "pmcid": 5055753,
+    "outcome": "the percentages of patients in the heavily sedated",
+    "intervention": "0.2 mg oral clonidine",
+    "comparator": "2 mg oral midazolam",
+    "outcome_type": "binary",
+    "intervention_events": null,
+    "intervention_group_size": 40.0,
+    "comparator_events": null,
+    "comparator_group_size": 40.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": null,
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3292.0,
+    "tiktoken_without_attributes_xml_token_num": 2470.0,
+    "tiktoken_without_attributes_markdown_token_num": 2114.0,
+    "split": "TEST"
+  },
+  {
+    "id": 157,
+    "evidence_inference_prompt_id": 13482,
+    "pmcid": 5055753,
+    "outcome": "Mean ± SD of heart rate at 60 min",
+    "intervention": "0.2 mg oral clonidine",
+    "comparator": "2 mg oral midazolam",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 40.0,
+    "comparator_events": null,
+    "comparator_group_size": 40.0,
+    "intervention_mean": 75.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 87.0,
+    "comparator_standard_deviation": null,
+    "notes": "Info in figure graphics. No SD",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3292.0,
+    "tiktoken_without_attributes_xml_token_num": 2470.0,
+    "tiktoken_without_attributes_markdown_token_num": 2114.0,
+    "split": "TEST"
+  },
+  {
+    "id": 168,
+    "evidence_inference_prompt_id": 2797,
+    "pmcid": 5079604,
+    "outcome": "Disposition index (DI)",
+    "intervention": "subjects who remained in remission",
+    "comparator": "patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 28.0,
+    "comparator_events": null,
+    "comparator_group_size": 20.0,
+    "intervention_mean": 1.8,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 0.6,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 169,
+    "evidence_inference_prompt_id": 2797,
+    "pmcid": 5079604,
+    "outcome": "incremental area under the curve for insulin (AUCi)",
+    "intervention": "subjects who remained in remission",
+    "comparator": "patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 28.0,
+    "comparator_events": null,
+    "comparator_group_size": 20.0,
+    "intervention_mean": 7900.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 2900.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 170,
+    "evidence_inference_prompt_id": 2792,
+    "pmcid": 5079604,
+    "outcome": "hyperglycemia relapse-free survival",
+    "intervention": "metformin 1,000 mg daily",
+    "comparator": "sitagliptin 100 mg daily",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 17.0,
+    "comparator_events": null,
+    "comparator_group_size": 16.0,
+    "intervention_mean": 65.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 58.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 171,
+    "evidence_inference_prompt_id": 2795,
+    "pmcid": 5079604,
+    "outcome": "Cox proportional hazards of failure-free survival",
+    "intervention": "metformin 1,000 mg daily",
+    "comparator": "sitagliptin 100 mg daily",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 17.0,
+    "comparator_events": null,
+    "comparator_group_size": 16.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure. Does not fit format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 173,
+    "evidence_inference_prompt_id": 2790,
+    "pmcid": 5079604,
+    "outcome": "Hyperglycemia relapse-free survival",
+    "intervention": "metformin 1,000 mg daily, sitagliptin 100 mg daily",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 33.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": 65.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 21.0,
+    "comparator_standard_deviation": null,
+    "notes": "Data is in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 174,
+    "evidence_inference_prompt_id": 2791,
+    "pmcid": 5079604,
+    "outcome": "The 2-year failure rate",
+    "intervention": "metformin 1,000 mg daily, sitagliptin 100 mg daily",
+    "comparator": "placebo",
+    "outcome_type": "binary",
+    "intervention_events": 13.0,
+    "intervention_group_size": 33.0,
+    "comparator_events": 12.0,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Used percentage to calculate events as binary outcome.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 12690.0,
+    "tiktoken_without_attributes_xml_token_num": 6902.0,
+    "tiktoken_without_attributes_markdown_token_num": 4923.0,
+    "split": "TEST"
+  },
+  {
+    "id": 187,
+    "evidence_inference_prompt_id": 13818,
+    "pmcid": 5244530,
+    "outcome": "depression severity reduction 12 months",
+    "intervention": "person-centred general practitioners (GP) consultations",
+    "comparator": "treatment as usual (TAU)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 125.0,
+    "comparator_events": null,
+    "comparator_group_size": 133.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "In figure medians",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6216.0,
+    "tiktoken_without_attributes_xml_token_num": 5516.0,
+    "tiktoken_without_attributes_markdown_token_num": 4050.0,
+    "split": "DEV"
+  },
+  {
+    "id": 189,
+    "evidence_inference_prompt_id": 13818,
+    "pmcid": 5244530,
+    "outcome": "change in quality of life 12 months",
+    "intervention": "person-centred general practitioners (GP) consultations",
+    "comparator": "treatment as usual (TAU)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 125.0,
+    "comparator_events": null,
+    "comparator_group_size": 133.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "In figure medians",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6216.0,
+    "tiktoken_without_attributes_xml_token_num": 5516.0,
+    "tiktoken_without_attributes_markdown_token_num": 4050.0,
+    "split": "DEV"
+  },
+  {
+    "id": 190,
+    "evidence_inference_prompt_id": 13818,
+    "pmcid": 5244530,
+    "outcome": "psychological well-being",
+    "intervention": "person-centred general practitioners (GP) consultations",
+    "comparator": "treatment as usual (TAU)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 125.0,
+    "comparator_events": null,
+    "comparator_group_size": 133.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "In figure medians",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6216.0,
+    "tiktoken_without_attributes_xml_token_num": 5516.0,
+    "tiktoken_without_attributes_markdown_token_num": 4050.0,
+    "split": "DEV"
+  },
+  {
+    "id": 217,
+    "evidence_inference_prompt_id": 2915,
+    "pmcid": 5459456,
+    "outcome": "new bone formation around the screws and bone-implant contact (BIC) in both sections",
+    "intervention": "ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating",
+    "comparator": "ACVC",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 8.0,
+    "comparator_events": null,
+    "comparator_group_size": 8.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": null,
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 13404.0,
+    "tiktoken_without_attributes_xml_token_num": 7477.0,
+    "tiktoken_without_attributes_markdown_token_num": 5693.0,
+    "split": "TEST"
+  },
+  {
+    "id": 268,
+    "evidence_inference_prompt_id": 12440,
+    "pmcid": 2596788,
+    "outcome": "GERD-knowledge",
+    "intervention": "education",
+    "comparator": "control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 102.0,
+    "comparator_events": null,
+    "comparator_group_size": 109.0,
+    "intervention_mean": 17.1,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 14.0,
+    "comparator_standard_deviation": null,
+    "notes": "no standard deviations given",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 5143.0,
+    "tiktoken_without_attributes_xml_token_num": 3554.0,
+    "tiktoken_without_attributes_markdown_token_num": 2520.0,
+    "split": "TEST"
+  },
+  {
+    "id": 360,
+    "evidence_inference_prompt_id": 8711,
+    "pmcid": 5971365,
+    "outcome": "Symbol Digit Modalities Test (SDMT) score at week 96",
+    "intervention": "daclizumab beta",
+    "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 720.0,
+    "comparator_events": null,
+    "comparator_group_size": 682.0,
+    "intervention_mean": 4.1,
+    "intervention_standard_deviation": 12.4,
+    "comparator_mean": 2.9,
+    "comparator_standard_deviation": 12.7,
+    "notes": "found in figure and text, totals found in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 3177.0,
+    "tiktoken_without_attributes_xml_token_num": 2394.0,
+    "tiktoken_without_attributes_markdown_token_num": 2130.0,
+    "split": "TEST"
+  },
+  {
+    "id": 362,
+    "evidence_inference_prompt_id": 8713,
+    "pmcid": 5971365,
+    "outcome": "clinically meaningful worsening at week 96 (⩾3-point decrease on the SDMT)",
+    "intervention": "daclizumab beta",
+    "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+    "outcome_type": "binary",
+    "intervention_events": 140.0,
+    "intervention_group_size": 720.0,
+    "comparator_events": 169.0,
+    "comparator_group_size": 682.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "counts calculated from percentages given in text, totals found in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 3177.0,
+    "tiktoken_without_attributes_xml_token_num": 2394.0,
+    "tiktoken_without_attributes_markdown_token_num": 2130.0,
+    "split": "TEST"
+  },
+  {
+    "id": 363,
+    "evidence_inference_prompt_id": 8714,
+    "pmcid": 5971365,
+    "outcome": "clinically meaningful improvement at week 96 (⩾3-point increase on the SDMT)",
+    "intervention": "daclizumab beta",
+    "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+    "outcome_type": "binary",
+    "intervention_events": 432.0,
+    "intervention_group_size": 720.0,
+    "comparator_events": 369.0,
+    "comparator_group_size": 682.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "counts calculated from percentages given in text, totals found in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 3177.0,
+    "tiktoken_without_attributes_xml_token_num": 2394.0,
+    "tiktoken_without_attributes_markdown_token_num": 2130.0,
+    "split": "TEST"
+  },
+  {
+    "id": 403,
+    "evidence_inference_prompt_id": 2804,
+    "pmcid": 5781260,
+    "outcome": "Exercise-induced Creatine kinase (CK)",
+    "intervention": "lemon verbena extract",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 20.0,
+    "comparator_events": null,
+    "comparator_group_size": 20.0,
+    "intervention_mean": 80.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 160.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and CI in figure. Mean diff in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4385.0,
+    "tiktoken_without_attributes_xml_token_num": 3505.0,
+    "tiktoken_without_attributes_markdown_token_num": 2662.0,
+    "split": "TEST"
+  },
+  {
+    "id": 404,
+    "evidence_inference_prompt_id": 2802,
+    "pmcid": 5781260,
+    "outcome": "exercise-related loss of muscle strength (MVC)",
+    "intervention": "lemon verbena extract",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 20.0,
+    "comparator_events": null,
+    "comparator_group_size": 20.0,
+    "intervention_mean": 0.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -25.0,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and CI in figure. Mean diff in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4385.0,
+    "tiktoken_without_attributes_xml_token_num": 3505.0,
+    "tiktoken_without_attributes_markdown_token_num": 2662.0,
+    "split": "TEST"
+  },
+  {
+    "id": 405,
+    "evidence_inference_prompt_id": 2805,
+    "pmcid": 5781260,
+    "outcome": "Glutathione peroxidase (GPxP)",
+    "intervention": "lemon verbena extract",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 20.0,
+    "comparator_events": null,
+    "comparator_group_size": 20.0,
+    "intervention_mean": 0.5,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -1.5,
+    "comparator_standard_deviation": null,
+    "notes": "Mean and CI in figure. Mean diff in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4385.0,
+    "tiktoken_without_attributes_xml_token_num": 3505.0,
+    "tiktoken_without_attributes_markdown_token_num": 2662.0,
+    "split": "TEST"
+  },
+  {
+    "id": 443,
+    "evidence_inference_prompt_id": 8805,
+    "pmcid": 4467620,
+    "outcome": "accuracy of the cognitive tasks",
+    "intervention": "Exercise - Hot + Cooling conditions",
+    "comparator": "At rest - Hot + Cooling conditions",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 8.0,
+    "comparator_events": null,
+    "comparator_group_size": 8.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "In figure however uninterpretable. Bar chart is divided weirdly.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 7288.0,
+    "tiktoken_without_attributes_xml_token_num": 4607.0,
+    "tiktoken_without_attributes_markdown_token_num": 3858.0,
+    "split": "TEST"
+  },
+  {
+    "id": 444,
+    "evidence_inference_prompt_id": 8801,
+    "pmcid": 4467620,
+    "outcome": "accuracy of the cognitive tasks",
+    "intervention": "Exercise - Hot condition",
+    "comparator": "At rest - Hot condition",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 8.0,
+    "comparator_events": null,
+    "comparator_group_size": 8.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "In figure however uninterpretable. Bar chart is divided weirdly.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 7288.0,
+    "tiktoken_without_attributes_xml_token_num": 4607.0,
+    "tiktoken_without_attributes_markdown_token_num": 3858.0,
+    "split": "TEST"
+  },
+  {
+    "id": 445,
+    "evidence_inference_prompt_id": 8802,
+    "pmcid": 4467620,
+    "outcome": "differences in the accuracy",
+    "intervention": "Hot + Cooling conditions",
+    "comparator": "Hot conditions",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 8.0,
+    "comparator_events": null,
+    "comparator_group_size": 8.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Cannot find this data",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 7288.0,
+    "tiktoken_without_attributes_xml_token_num": 4607.0,
+    "tiktoken_without_attributes_markdown_token_num": 3858.0,
+    "split": "TEST"
+  },
+  {
+    "id": 469,
+    "evidence_inference_prompt_id": 4802,
+    "pmcid": 5515881,
+    "outcome": "memory score",
+    "intervention": "demanding balance training program",
+    "comparator": "relaxation group",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 21.0,
+    "intervention_mean": 9.44,
+    "intervention_standard_deviation": 5.48,
+    "comparator_mean": 8.0,
+    "comparator_standard_deviation": 4.16,
+    "notes": "Group sizes are in methods section only. Numerical values are from posttest.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4475.0,
+    "tiktoken_without_attributes_xml_token_num": 3500.0,
+    "tiktoken_without_attributes_markdown_token_num": 2868.0,
+    "split": "TEST"
+  },
+  {
+    "id": 470,
+    "evidence_inference_prompt_id": 4799,
+    "pmcid": 5515881,
+    "outcome": "dynamic balance performance on the stability platform",
+    "intervention": "demanding balance training program",
+    "comparator": "relaxation group",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 21.0,
+    "intervention_mean": 7.54,
+    "intervention_standard_deviation": 2.57,
+    "comparator_mean": 6.29,
+    "comparator_standard_deviation": 1.84,
+    "notes": "Group sizes are in methods section only. Numerical values are from posttest.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4475.0,
+    "tiktoken_without_attributes_xml_token_num": 3500.0,
+    "tiktoken_without_attributes_markdown_token_num": 2868.0,
+    "split": "TEST"
+  },
+  {
+    "id": 471,
+    "evidence_inference_prompt_id": 4800,
+    "pmcid": 5515881,
+    "outcome": "center of pressure (CoP) sway velocity",
+    "intervention": "demanding balance training program",
+    "comparator": "relaxation group",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 21.0,
+    "intervention_mean": 0.63,
+    "intervention_standard_deviation": 0.11,
+    "comparator_mean": 0.67,
+    "comparator_standard_deviation": 0.18,
+    "notes": "Group sizes are in methods section only. Numerical values are from posttest.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4475.0,
+    "tiktoken_without_attributes_xml_token_num": 3500.0,
+    "tiktoken_without_attributes_markdown_token_num": 2868.0,
+    "split": "TEST"
+  },
+  {
+    "id": 472,
+    "evidence_inference_prompt_id": 4803,
+    "pmcid": 5515881,
+    "outcome": "spatial score",
+    "intervention": "demanding balance training program",
+    "comparator": "relaxation group",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 21.0,
+    "intervention_mean": 0.443,
+    "intervention_standard_deviation": 0.75,
+    "comparator_mean": 0.04,
+    "comparator_standard_deviation": 0.91,
+    "notes": "Group sizes are in methods section only. Numerical values are from posttest.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4475.0,
+    "tiktoken_without_attributes_xml_token_num": 3500.0,
+    "tiktoken_without_attributes_markdown_token_num": 2868.0,
+    "split": "TEST"
+  },
+  {
+    "id": 474,
+    "evidence_inference_prompt_id": 5711,
+    "pmcid": 3343759,
+    "outcome": "aphasia types",
+    "intervention": "very early speech and language therapy (SLT)",
+    "comparator": "control",
+    "outcome_type": "binary",
+    "intervention_events": null,
+    "intervention_group_size": 59.0,
+    "comparator_events": null,
+    "comparator_group_size": 55.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical data is in figure and group sizes are not available in abstract or results sections. Outcome is lumped together",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3838.0,
+    "tiktoken_without_attributes_xml_token_num": 2633.0,
+    "tiktoken_without_attributes_markdown_token_num": 2065.0,
+    "split": "TEST"
+  },
+  {
+    "id": 481,
+    "evidence_inference_prompt_id": 4801,
+    "pmcid": 5515881,
+    "outcome": "VO2peak",
+    "intervention": "demanding balance training program",
+    "comparator": "relaxation group",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 19.0,
+    "comparator_events": null,
+    "comparator_group_size": 21.0,
+    "intervention_mean": 32.07,
+    "intervention_standard_deviation": 6.52,
+    "comparator_mean": 31.947,
+    "comparator_standard_deviation": 7.89,
+    "notes": "Group sizes are in methods section only. Numerical values are from posttest.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4475.0,
+    "tiktoken_without_attributes_xml_token_num": 3500.0,
+    "tiktoken_without_attributes_markdown_token_num": 2868.0,
+    "split": "TEST"
+  },
+  {
+    "id": 515,
+    "evidence_inference_prompt_id": 6551,
+    "pmcid": 4033571,
+    "outcome": "Seizure median percent improvement in North America",
+    "intervention": "Extended-release oxcarbazepine 1200 mg",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 40.0,
+    "comparator_events": null,
+    "comparator_group_size": 41.0,
+    "intervention_mean": -34.5,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -13.3,
+    "comparator_standard_deviation": null,
+    "notes": "Group sizes are only in figure, and SD is not available.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 8206.0,
+    "tiktoken_without_attributes_xml_token_num": 5593.0,
+    "tiktoken_without_attributes_markdown_token_num": 4514.0,
+    "split": "TEST"
+  },
+  {
+    "id": 516,
+    "evidence_inference_prompt_id": 6552,
+    "pmcid": 4033571,
+    "outcome": "Seizure median percent improvement in North America",
+    "intervention": "Extended-release oxcarbazepine 2400 mg",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 35.0,
+    "comparator_events": null,
+    "comparator_group_size": 41.0,
+    "intervention_mean": -52.7,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -13.3,
+    "comparator_standard_deviation": null,
+    "notes": "Group sizes are only in figure, and SD is not available.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 8206.0,
+    "tiktoken_without_attributes_xml_token_num": 5593.0,
+    "tiktoken_without_attributes_markdown_token_num": 4514.0,
+    "split": "TEST"
+  },
+  {
+    "id": 527,
+    "evidence_inference_prompt_id": 6916,
+    "pmcid": 4411165,
+    "outcome": "tympanic temperature from Pre to P20 (-0.28 ±0.11°C)",
+    "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+    "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 10.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": -0.28,
+    "intervention_standard_deviation": 0.11,
+    "comparator_mean": -0.14,
+    "comparator_standard_deviation": 0.05,
+    "notes": "Values on mean change are based on what is reported in abstract. ",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 3146.0,
+    "tiktoken_without_attributes_xml_token_num": 2589.0,
+    "tiktoken_without_attributes_markdown_token_num": 2336.0,
+    "split": "TEST"
+  },
+  {
+    "id": 528,
+    "evidence_inference_prompt_id": 6918,
+    "pmcid": 4411165,
+    "outcome": "systolic BP",
+    "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+    "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 10.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": -2.1,
+    "intervention_standard_deviation": null,
+    "comparator_mean": -2.8,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values are only in the figures. Timepoint: day 5",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3146.0,
+    "tiktoken_without_attributes_xml_token_num": 2589.0,
+    "tiktoken_without_attributes_markdown_token_num": 2336.0,
+    "split": "TEST"
+  },
+  {
+    "id": 529,
+    "evidence_inference_prompt_id": 6919,
+    "pmcid": 4411165,
+    "outcome": "diastolic BP",
+    "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+    "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 10.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": 2.6,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.25,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values are only in the figures.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3146.0,
+    "tiktoken_without_attributes_xml_token_num": 2589.0,
+    "tiktoken_without_attributes_markdown_token_num": 2336.0,
+    "split": "TEST"
+  },
+  {
+    "id": 530,
+    "evidence_inference_prompt_id": 6915,
+    "pmcid": 4411165,
+    "outcome": "effects of cryostimulation on the ANS - heart rate",
+    "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+    "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 10.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": -7.7,
+    "intervention_standard_deviation": 2.3,
+    "comparator_mean": -5.02,
+    "comparator_standard_deviation": 1.07,
+    "notes": "Changed from original outcome but adding \"- heart rate\" to make it more specific. Numbers are mean change.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 3146.0,
+    "tiktoken_without_attributes_xml_token_num": 2589.0,
+    "tiktoken_without_attributes_markdown_token_num": 2336.0,
+    "split": "TEST"
+  },
+  {
+    "id": 531,
+    "evidence_inference_prompt_id": 6917,
+    "pmcid": 4411165,
+    "outcome": "Tskin of the head",
+    "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+    "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 10.0,
+    "comparator_events": null,
+    "comparator_group_size": 10.0,
+    "intervention_mean": 33.2,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 33.1,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values are only in the figures.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3146.0,
+    "tiktoken_without_attributes_xml_token_num": 2589.0,
+    "tiktoken_without_attributes_markdown_token_num": 2336.0,
+    "split": "TEST"
+  },
+  {
+    "id": 532,
+    "evidence_inference_prompt_id": 7830,
+    "pmcid": 4230312,
+    "outcome": "improvement of disorder",
+    "intervention": "quetiapine 600 mg/day",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 289.0,
+    "comparator_events": null,
+    "comparator_group_size": 204.0,
+    "intervention_mean": -14.88,
+    "intervention_standard_deviation": 10.54,
+    "comparator_mean": -11.61,
+    "comparator_standard_deviation": 10.12,
+    "notes": "Back calculated SD from SE.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 6201.0,
+    "tiktoken_without_attributes_xml_token_num": 5058.0,
+    "tiktoken_without_attributes_markdown_token_num": 3918.0,
+    "split": "TEST"
+  },
+  {
+    "id": 533,
+    "evidence_inference_prompt_id": 7829,
+    "pmcid": 4230312,
+    "outcome": "improvement of disorder",
+    "intervention": "quetiapine 300 mg/day",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 283.0,
+    "comparator_events": null,
+    "comparator_group_size": 204.0,
+    "intervention_mean": -15.58,
+    "intervention_standard_deviation": 10.43,
+    "comparator_mean": -11.61,
+    "comparator_standard_deviation": 10.12,
+    "notes": "Back calculated SD from SE.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 6201.0,
+    "tiktoken_without_attributes_xml_token_num": 5058.0,
+    "tiktoken_without_attributes_markdown_token_num": 3918.0,
+    "split": "TEST"
+  },
+  {
+    "id": 534,
+    "evidence_inference_prompt_id": 8166,
+    "pmcid": 5800236,
+    "outcome": "Months of sick leave",
+    "intervention": "Nacadia® nature-based therapy",
+    "comparator": "Cognitive behavioral therapy",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 37.0,
+    "comparator_events": null,
+    "comparator_group_size": 35.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values were not given for this outcome.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4517.0,
+    "tiktoken_without_attributes_xml_token_num": 2571.0,
+    "tiktoken_without_attributes_markdown_token_num": 1980.0,
+    "split": "TEST"
+  },
+  {
+    "id": 561,
+    "evidence_inference_prompt_id": 9834,
+    "pmcid": 3496170,
+    "outcome": "Learned irrelevance index",
+    "intervention": "Biperiden",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 15.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": 0.19,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 0.2,
+    "comparator_standard_deviation": null,
+    "notes": "numerical data in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2318.0,
+    "tiktoken_without_attributes_xml_token_num": 1990.0,
+    "tiktoken_without_attributes_markdown_token_num": 1731.0,
+    "split": "TEST"
+  },
+  {
+    "id": 562,
+    "evidence_inference_prompt_id": 9835,
+    "pmcid": 3496170,
+    "outcome": "P3a amplitude",
+    "intervention": "Biperiden",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 15.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "No numerical values are given.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2318.0,
+    "tiktoken_without_attributes_xml_token_num": 1990.0,
+    "tiktoken_without_attributes_markdown_token_num": 1731.0,
+    "split": "TEST"
+  },
+  {
+    "id": 563,
+    "evidence_inference_prompt_id": 9836,
+    "pmcid": 3496170,
+    "outcome": "P3a latency",
+    "intervention": "Biperiden",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 15.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "No numerical values are given.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2318.0,
+    "tiktoken_without_attributes_xml_token_num": 1990.0,
+    "tiktoken_without_attributes_markdown_token_num": 1731.0,
+    "split": "TEST"
+  },
+  {
+    "id": 565,
+    "evidence_inference_prompt_id": 9838,
+    "pmcid": 3496170,
+    "outcome": "N1 latency",
+    "intervention": "Biperiden",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 15.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "No numerical values are given.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2318.0,
+    "tiktoken_without_attributes_xml_token_num": 1990.0,
+    "tiktoken_without_attributes_markdown_token_num": 1731.0,
+    "split": "TEST"
+  },
+  {
+    "id": 566,
+    "evidence_inference_prompt_id": 9839,
+    "pmcid": 3496170,
+    "outcome": "N1 amplitude",
+    "intervention": "Biperiden",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 15.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "numerical data in figure. Complex outcome not quite sure if possible to convert to our format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 2318.0,
+    "tiktoken_without_attributes_xml_token_num": 1990.0,
+    "tiktoken_without_attributes_markdown_token_num": 1731.0,
+    "split": "TEST"
+  },
+  {
+    "id": 569,
+    "evidence_inference_prompt_id": 8557,
+    "pmcid": 5541727,
+    "outcome": "Activities of daily living",
+    "intervention": "Allogeneic mesenchymal precursor cells",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 6.0,
+    "intervention_mean": 82.1,
+    "intervention_standard_deviation": 11.0,
+    "comparator_mean": 92.8,
+    "comparator_standard_deviation": 6.4,
+    "notes": "Numerical values in table ",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6118.0,
+    "tiktoken_without_attributes_xml_token_num": 5345.0,
+    "tiktoken_without_attributes_markdown_token_num": 4032.0,
+    "split": "TEST"
+  },
+  {
+    "id": 570,
+    "evidence_inference_prompt_id": 8558,
+    "pmcid": 5541727,
+    "outcome": "Symptoms",
+    "intervention": "Allogeneic mesenchymal precursor cells",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 6.0,
+    "intervention_mean": 59.7,
+    "intervention_standard_deviation": 10.8,
+    "comparator_mean": 83.9,
+    "comparator_standard_deviation": 11.7,
+    "notes": "Numerical values in table ",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6118.0,
+    "tiktoken_without_attributes_xml_token_num": 5345.0,
+    "tiktoken_without_attributes_markdown_token_num": 4032.0,
+    "split": "TEST"
+  },
+  {
+    "id": 571,
+    "evidence_inference_prompt_id": 8559,
+    "pmcid": 5541727,
+    "outcome": "SF-36 bodily pain score",
+    "intervention": "Allogeneic mesenchymal precursor cells",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 6.0,
+    "intervention_mean": 41.3,
+    "intervention_standard_deviation": 4.7,
+    "comparator_mean": 45.9,
+    "comparator_standard_deviation": 5.8,
+    "notes": "Numerical values in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6118.0,
+    "tiktoken_without_attributes_xml_token_num": 5345.0,
+    "tiktoken_without_attributes_markdown_token_num": 4032.0,
+    "split": "TEST"
+  },
+  {
+    "id": 574,
+    "evidence_inference_prompt_id": 8565,
+    "pmcid": 2952311,
+    "outcome": "Verbal rating scale pain intensity",
+    "intervention": "Acupressure at distal points",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": 1.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.6,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values in figure. Choose latest timepoint: 1 day",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 575,
+    "evidence_inference_prompt_id": 8562,
+    "pmcid": 2952311,
+    "outcome": "Verbal rating scale pain intensity",
+    "intervention": "Acupressure at local points",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": 1.4,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.6,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values in figure. Choose latest timepoint: 1 day",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 576,
+    "evidence_inference_prompt_id": 8563,
+    "pmcid": 2952311,
+    "outcome": "State-Trait Anxiety Inventory-I",
+    "intervention": "Acupressure at local points",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": 41.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 40.0,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values in figure. Choose latest timepoint: 1 day",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 577,
+    "evidence_inference_prompt_id": 8567,
+    "pmcid": 2952311,
+    "outcome": "Salivary alpha-amylase",
+    "intervention": "Acupressure at distal points",
+    "comparator": "Acupressure at local points",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "No post-treatment values",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 578,
+    "evidence_inference_prompt_id": 8564,
+    "pmcid": 2952311,
+    "outcome": "Muscle hardness",
+    "intervention": "Acupressure at local points",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": 55.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 57.0,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values in figure. Mean change in muscle hardness",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 579,
+    "evidence_inference_prompt_id": 8566,
+    "pmcid": 2952311,
+    "outcome": "State-Trait Anxiety Inventory-I",
+    "intervention": "Acupressure at distal points",
+    "comparator": "Control",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 11.0,
+    "comparator_events": null,
+    "comparator_group_size": 11.0,
+    "intervention_mean": 42.5,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 40.0,
+    "comparator_standard_deviation": null,
+    "notes": "Numerical values in figure.",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3603.0,
+    "tiktoken_without_attributes_xml_token_num": 2475.0,
+    "tiktoken_without_attributes_markdown_token_num": 2143.0,
+    "split": "TEST"
+  },
+  {
+    "id": 580,
+    "evidence_inference_prompt_id": 10217,
+    "pmcid": 3504298,
+    "outcome": "Anxious symptoms",
+    "intervention": "Face-based attentional bias modification",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 14.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "F-values given, cant use for point estimates, and values in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4963.0,
+    "tiktoken_without_attributes_xml_token_num": 4205.0,
+    "tiktoken_without_attributes_markdown_token_num": 3331.0,
+    "split": "TEST"
+  },
+  {
+    "id": 582,
+    "evidence_inference_prompt_id": 10219,
+    "pmcid": 3504298,
+    "outcome": "Attentional Function",
+    "intervention": "Word-based attentional bias modification",
+    "comparator": "Face-based attentional bias modification",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 16.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "F-values given, cant use for point estimates, and values in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4963.0,
+    "tiktoken_without_attributes_xml_token_num": 4205.0,
+    "tiktoken_without_attributes_markdown_token_num": 3331.0,
+    "split": "TEST"
+  },
+  {
+    "id": 583,
+    "evidence_inference_prompt_id": 10218,
+    "pmcid": 3504298,
+    "outcome": "Difference of cortisol on waking and the highest level of following samples",
+    "intervention": "Word-based attentional bias modification",
+    "comparator": "Placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 15.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "F-values given, cant use for point estimates, and values in figure",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 4963.0,
+    "tiktoken_without_attributes_xml_token_num": 4205.0,
+    "tiktoken_without_attributes_markdown_token_num": 3331.0,
+    "split": "TEST"
+  },
+  {
+    "id": 587,
+    "evidence_inference_prompt_id": 11581,
+    "pmcid": 115849,
+    "outcome": "patients discontinued due to lack of efficacy",
+    "intervention": "etoricoxib 90 mg once daily",
+    "comparator": "placebo",
+    "outcome_type": "binary",
+    "intervention_events": 44.0,
+    "intervention_group_size": 353.0,
+    "comparator_events": 90.0,
+    "comparator_group_size": 357.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "found in fig 1",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 6464.0,
+    "tiktoken_without_attributes_xml_token_num": 5362.0,
+    "tiktoken_without_attributes_markdown_token_num": 4091.0,
+    "split": "TEST"
+  },
+  {
+    "id": 588,
+    "evidence_inference_prompt_id": 11581,
+    "pmcid": 115849,
+    "outcome": "patients discontinued due to lack of efficacy",
+    "intervention": "naproxen 500 mg twice daily",
+    "comparator": "placebo",
+    "outcome_type": "binary",
+    "intervention_events": 19.0,
+    "intervention_group_size": 181.0,
+    "comparator_events": 90.0,
+    "comparator_group_size": 357.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "found in fig 1",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": true,
+    "tiktoken_with_attributes_xml_token_num": 6464.0,
+    "tiktoken_without_attributes_xml_token_num": 5362.0,
+    "tiktoken_without_attributes_markdown_token_num": 4091.0,
+    "split": "TEST"
+  },
+  {
+    "id": 615,
+    "evidence_inference_prompt_id": 11602,
+    "pmcid": 1863515,
+    "outcome": "haemoglobin level between 26 and 35 wk",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": -0.4,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 0.0,
+    "comparator_standard_deviation": null,
+    "notes": "given as estimated change and no std given, also in figure and graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 616,
+    "evidence_inference_prompt_id": 11602,
+    "pmcid": 1863515,
+    "outcome": "leucocyte count between 26 and 35 wk",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": -423.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 0.0,
+    "comparator_standard_deviation": null,
+    "notes": "given as estimated change and no std given, also in figure and graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 617,
+    "evidence_inference_prompt_id": 11602,
+    "pmcid": 1863515,
+    "outcome": "absolute neutrophil count between 26 and 35 wk",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": -485.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 0.0,
+    "comparator_standard_deviation": null,
+    "notes": "given as estimated change and no std given, also in figure and graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 618,
+    "evidence_inference_prompt_id": 11603,
+    "pmcid": 1863515,
+    "outcome": "haemoglobin level at 35 wk gestation",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": 10.7,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 11.2,
+    "comparator_standard_deviation": null,
+    "notes": "means given but no std given, tables and figures in graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 619,
+    "evidence_inference_prompt_id": 11603,
+    "pmcid": 1863515,
+    "outcome": "leucocyte count at 35 wk gestation",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": 8818.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 8362.0,
+    "comparator_standard_deviation": null,
+    "notes": "means given but no std given, tables and figures in graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 620,
+    "evidence_inference_prompt_id": 11603,
+    "pmcid": 1863515,
+    "outcome": "absolute neutrophil count at 35 wk gestation",
+    "intervention": "Zidovudine prophylaxis initiation",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 754.0,
+    "comparator_events": null,
+    "comparator_group_size": 656.0,
+    "intervention_mean": 5639.0,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 6150.0,
+    "comparator_standard_deviation": null,
+    "notes": "means given but no std given, tables and figures in graphic format",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": true,
+    "is_table_in_graphic_format": true,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 3963.0,
+    "tiktoken_without_attributes_xml_token_num": 3457.0,
+    "tiktoken_without_attributes_markdown_token_num": 3103.0,
+    "split": "TEST"
+  },
+  {
+    "id": 662,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "PASI",
+    "intervention": "pioglitazone",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 4.3,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.7,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 663,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "PASI",
+    "intervention": "metformin",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 21.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 3.9,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.7,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 664,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "ESI",
+    "intervention": "pioglitazone",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 4.3,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 2.3,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 665,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "ESI",
+    "intervention": "metformin",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 21.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 4.2,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 2.3,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 666,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "PGA",
+    "intervention": "pioglitazone",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 16.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 2.3,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.3,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 667,
+    "evidence_inference_prompt_id": 13296,
+    "pmcid": 4987981,
+    "outcome": "PGA",
+    "intervention": "metformin",
+    "comparator": "placebo",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 21.0,
+    "comparator_events": null,
+    "comparator_group_size": 23.0,
+    "intervention_mean": 2.3,
+    "intervention_standard_deviation": null,
+    "comparator_mean": 1.3,
+    "comparator_standard_deviation": null,
+    "notes": "New outcome from old lumped together outcome. Data in figure. Mean change",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 9637.0,
+    "tiktoken_without_attributes_xml_token_num": 7894.0,
+    "tiktoken_without_attributes_markdown_token_num": 5779.0,
+    "split": "TEST"
+  },
+  {
+    "id": 689,
+    "evidence_inference_prompt_id": 13761,
+    "pmcid": 2836833,
+    "outcome": "Urinary calcium excretion",
+    "intervention": "1500 mg calcium",
+    "comparator": "500 mg calcium",
+    "outcome_type": "continuous",
+    "intervention_events": null,
+    "intervention_group_size": 17.0,
+    "comparator_events": null,
+    "comparator_group_size": 17.0,
+    "intervention_mean": null,
+    "intervention_standard_deviation": null,
+    "comparator_mean": null,
+    "comparator_standard_deviation": null,
+    "notes": "assumed group sizes were half and half of 34, values for low and high calcium groups have multiple seperated groups within them",
+    "is_data_in_figure_graphics": true,
+    "is_relevant_data_in_table": false,
+    "is_table_in_graphic_format": false,
+    "is_data_complete": false,
+    "tiktoken_with_attributes_xml_token_num": 6401.0,
+    "tiktoken_without_attributes_xml_token_num": 5359.0,
+    "tiktoken_without_attributes_markdown_token_num": 3891.0,
+    "split": "TEST"
+  },
+  {
+=======
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "id": 692,
     "evidence_inference_prompt_id": 13830,
     "pmcid": 4210722,
@@ -17985,7 +20773,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 6401.0,
     "tiktoken_without_attributes_xml_token_num": 5359.0,
     "tiktoken_without_attributes_markdown_token_num": 3891.0,
@@ -18011,7 +20803,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 6401.0,
     "tiktoken_without_attributes_xml_token_num": 5359.0,
     "tiktoken_without_attributes_markdown_token_num": 3891.0,
@@ -18037,7 +20833,11 @@
     "is_data_in_figure_graphics": false,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 6401.0,
     "tiktoken_without_attributes_xml_token_num": 5359.0,
     "tiktoken_without_attributes_markdown_token_num": 3891.0,
@@ -18063,7 +20863,11 @@
     "is_data_in_figure_graphics": true,
     "is_relevant_data_in_table": false,
     "is_table_in_graphic_format": false,
+<<<<<<< HEAD
+    "is_data_complete": false,
+=======
     "is_data_complete": true,
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
     "tiktoken_with_attributes_xml_token_num": 6401.0,
     "tiktoken_without_attributes_xml_token_num": 5359.0,
     "tiktoken_without_attributes_markdown_token_num": 3891.0,
@@ -18119,7 +20923,11 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 698,
@@ -18145,7 +20953,11 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 699,
@@ -18171,7 +20983,11 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 700,
@@ -18197,7 +21013,11 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 701,
@@ -18223,7 +21043,11 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   },
   {
     "id": 702,
@@ -18249,6 +21073,10 @@
     "tiktoken_with_attributes_xml_token_num": null,
     "tiktoken_without_attributes_xml_token_num": null,
     "tiktoken_without_attributes_markdown_token_num": null,
+<<<<<<< HEAD
+    "split": null
+=======
     "split": "TEST"
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff
   }
 ]

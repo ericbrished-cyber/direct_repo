@@ -1,0 +1,61 @@
+{
+  "pmcid": "2681019",
+  "raw_text": "```json\n[\n  {\n    \"pmcid\": \"PMC2682685\",\n    \"outcome\": \"Adiponectin in women\",\n    \"intervention\": \"Red wine\",\n    \"comparator\": \"Control (water)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 12,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 12,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Only percent change from baseline reported (29.8% increase after red wine in women, P<0.05). Absolute means and SDs for red wine vs water not provided in text or figure.\",\n    \"pmcid\": \"PMC2682685\"\n  },\n  {\n    \"pmcid\": \"PMC2682685\",\n    \"outcome\": \"Adiponectin in men\",\n    \"intervention\": \"Ethanol solution\",\n    \"comparator\": \"Control (water)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 12,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 12,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Only percent change from baseline reported (17.4% increase after ethanol solution in men, P<0.05). Absolute means and SDs for ethanol vs water not provided in text or figure.\",\n    \"pmcid\": \"PMC2682685\"\n  },\n  {\n    \"pmcid\": \"PMC2682685\",\n    \"outcome\": \"Adiponectin in men\",\n    \"intervention\": \"Beer\",\n    \"comparator\": \"Control (water)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 12,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 12,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Only percent change from baseline reported (16.1% increase after beer in men, P=0.04). Absolute means and SDs for beer vs water not provided in text or figure.\",\n    \"pmcid\": \"PMC2682685\"\n  }\n]\n```",
+  "extraction": [
+    {
+      "pmcid": "PMC2682685",
+      "outcome": "Adiponectin in women",
+      "intervention": "Red wine",
+      "comparator": "Control (water)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Only percent change from baseline reported (29.8% increase after red wine in women, P<0.05). Absolute means and SDs for red wine vs water not provided in text or figure."
+    },
+    {
+      "pmcid": "PMC2682685",
+      "outcome": "Adiponectin in men",
+      "intervention": "Ethanol solution",
+      "comparator": "Control (water)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Only percent change from baseline reported (17.4% increase after ethanol solution in men, P<0.05). Absolute means and SDs for ethanol vs water not provided in text or figure."
+    },
+    {
+      "pmcid": "PMC2682685",
+      "outcome": "Adiponectin in men",
+      "intervention": "Beer",
+      "comparator": "Control (water)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Only percent change from baseline reported (16.1% increase after beer in men, P=0.04). Absolute means and SDs for beer vs water not provided in text or figure."
+    }
+  ],
+  "usage": {
+    "input": 0,
+    "output": 0
+  },
+  "model": "gpt",
+  "strategy": "zero-shot",
+  "temperature": 0.0
+}

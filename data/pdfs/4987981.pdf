@@ -7138,6 +7138,8 @@ trailer
 startxref
 905985
 %%EOF
+<<<<<<< HEAD
+=======
 1 0 obj
 << /CreationDate (D:20160815014717Z00'00') /Creator (Arbortext Advanced Print Publisher 9.1.440/W Unicode)
 /Title (Randomized placebo control study of insulin sensitizers \(Metformin and Pioglitazone\) in psoriasis patients with metabolic syndrome \(Topical Treatment Cohort\))
@@ -7357,3 +7359,4 @@ trailer
 startxref
 929357
 %%EOF
+>>>>>>> 0de06b98056d5ad8b89f227ea3257ad42343eeff

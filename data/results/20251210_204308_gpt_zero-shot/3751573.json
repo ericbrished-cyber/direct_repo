@@ -1,0 +1,29 @@
+{
+  "pmcid": "3751573",
+  "raw_text": "```json\n[\n  {\n    \"pmcid\": \"PMC3751820\",\n    \"outcome\": \"improvement in nursing\",\n    \"intervention\": \"phase I externship program\",\n    \"comparator\": \"phase II corporate-academic cooperation program\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 19,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 23,\n    \"intervention_mean\": 117.63,\n    \"intervention_standard_deviation\": 19.01,\n    \"comparator_mean\": 158.52,\n    \"comparator_standard_deviation\": 23.19,\n    \"notes\": \"Outcome interpreted as post-practicum total nursing competence score (T1). EP group is phase I externship program; CACP group is phase II corporate-academic cooperation program. Values from Table 2.\",\n    \"pmcid\": \"PMC3751820\"\n  }\n]\n```",
+  "extraction": [
+    {
+      "pmcid": "PMC3751820",
+      "outcome": "improvement in nursing",
+      "intervention": "phase I externship program",
+      "comparator": "phase II corporate-academic cooperation program",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 23,
+      "intervention_mean": 117.63,
+      "intervention_standard_deviation": 19.01,
+      "comparator_mean": 158.52,
+      "comparator_standard_deviation": 23.19,
+      "notes": "Outcome interpreted as post-practicum total nursing competence score (T1). EP group is phase I externship program; CACP group is phase II corporate-academic cooperation program. Values from Table 2."
+    }
+  ],
+  "usage": {
+    "input": 0,
+    "output": 0
+  },
+  "model": "gpt",
+  "strategy": "zero-shot",
+  "temperature": 0.0
+}

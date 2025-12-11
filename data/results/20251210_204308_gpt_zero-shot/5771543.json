@@ -1,0 +1,77 @@
+{
+  "pmcid": "5771543",
+  "raw_text": "```json\n[\n  {\n    \"pmcid\": null,\n    \"outcome\": \"CGI-I response rate (Intervention: fluoxetine, Comparator: placebo)\",\n    \"intervention\": \"Fluoxetine 20 mg/day\",\n    \"comparator\": \"Placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 79,\n    \"intervention_group_size\": 101,\n    \"comparator_events\": 62,\n    \"comparator_group_size\": 99,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"CGI-I response defined as CGI-I score \u2264 2 (very much improved or much improved) at week 8; data from Table 2, ITT population.\",\n    \"pmcid\": null\n  },\n  {\n    \"pmcid\": null,\n    \"outcome\": \"CGI-I response rate (Intervention: desvenlafaxine, Comparator: placebo)\",\n    \"intervention\": \"Desvenlafaxine 25\u201350 mg/day (weight-based dosing)\",\n    \"comparator\": \"Placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 68,\n    \"intervention_group_size\": 99,\n    \"comparator_events\": 62,\n    \"comparator_group_size\": 99,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"CGI-I response defined as CGI-I score \u2264 2 (very much improved or much improved) at week 8; data from Table 2, ITT population.\",\n    \"pmcid\": null\n  },\n  {\n    \"pmcid\": null,\n    \"outcome\": \"Treatment-emergent adverse events (TEAEs) (Intervention: desvenlafaxine, Comparator: placebo)\",\n    \"intervention\": \"Desvenlafaxine 25\u201350 mg/day (weight-based dosing)\",\n    \"comparator\": \"Placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 69,\n    \"intervention_group_size\": 115,\n    \"comparator_events\": 79,\n    \"comparator_group_size\": 112,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Any treatment-emergent adverse event during on-therapy period; overall safety population. Percentages reported as 60.0% for desvenlafaxine and 70.5% for placebo.\",\n    \"pmcid\": null\n  },\n  {\n    \"pmcid\": null,\n    \"outcome\": \"Treatment-emergent adverse events (TEAEs) (Intervention: fluoxetine, Comparator: placebo)\",\n    \"intervention\": \"Fluoxetine 20 mg/day\",\n    \"comparator\": \"Placebo\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 72,\n    \"intervention_group_size\": 112,\n    \"comparator_events\": 79,\n    \"comparator_group_size\": 112,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Any treatment-emergent adverse event during on-therapy period; overall safety population. Percentages reported as 64.3% for fluoxetine and 70.5% for placebo.\",\n    \"pmcid\": null\n  }\n]\n```",
+  "extraction": [
+    {
+      "pmcid": null,
+      "outcome": "CGI-I response rate (Intervention: fluoxetine, Comparator: placebo)",
+      "intervention": "Fluoxetine 20 mg/day",
+      "comparator": "Placebo",
+      "outcome_type": "binary",
+      "intervention_events": 79,
+      "intervention_group_size": 101,
+      "comparator_events": 62,
+      "comparator_group_size": 99,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "CGI-I response defined as CGI-I score \u2264 2 (very much improved or much improved) at week 8; data from Table 2, ITT population."
+    },
+    {
+      "pmcid": null,
+      "outcome": "CGI-I response rate (Intervention: desvenlafaxine, Comparator: placebo)",
+      "intervention": "Desvenlafaxine 25\u201350 mg/day (weight-based dosing)",
+      "comparator": "Placebo",
+      "outcome_type": "binary",
+      "intervention_events": 68,
+      "intervention_group_size": 99,
+      "comparator_events": 62,
+      "comparator_group_size": 99,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "CGI-I response defined as CGI-I score \u2264 2 (very much improved or much improved) at week 8; data from Table 2, ITT population."
+    },
+    {
+      "pmcid": null,
+      "outcome": "Treatment-emergent adverse events (TEAEs) (Intervention: desvenlafaxine, Comparator: placebo)",
+      "intervention": "Desvenlafaxine 25\u201350 mg/day (weight-based dosing)",
+      "comparator": "Placebo",
+      "outcome_type": "binary",
+      "intervention_events": 69,
+      "intervention_group_size": 115,
+      "comparator_events": 79,
+      "comparator_group_size": 112,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Any treatment-emergent adverse event during on-therapy period; overall safety population. Percentages reported as 60.0% for desvenlafaxine and 70.5% for placebo."
+    },
+    {
+      "pmcid": null,
+      "outcome": "Treatment-emergent adverse events (TEAEs) (Intervention: fluoxetine, Comparator: placebo)",
+      "intervention": "Fluoxetine 20 mg/day",
+      "comparator": "Placebo",
+      "outcome_type": "binary",
+      "intervention_events": 72,
+      "intervention_group_size": 112,
+      "comparator_events": 79,
+      "comparator_group_size": 112,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Any treatment-emergent adverse event during on-therapy period; overall safety population. Percentages reported as 64.3% for fluoxetine and 70.5% for placebo."
+    }
+  ],
+  "usage": {
+    "input": 0,
+    "output": 0
+  },
+  "model": "gpt",
+  "strategy": "zero-shot",
+  "temperature": 0.0
+}
