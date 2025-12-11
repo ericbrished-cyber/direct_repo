@@ -2,9 +2,13 @@ import pandas as pd
 import numpy as np
 from typing import List, Dict, Any
 from sklearn.metrics import mean_squared_error
+from difflib import SequenceMatcher
 
 class Evaluator:
     def __init__(self, gold_standard: List[Dict], extractions: List[Dict]):
+
+        aligned_extractions = self._align_extractions(extractions, gold_standard)
+
         self.gold_df = pd.DataFrame(gold_standard)
         self.extractions_df = pd.DataFrame(extractions)
         
@@ -13,6 +17,67 @@ class Evaluator:
         
         # Prepare the long-format data
         self.long_df = self._prepare_long_data()
+
+    def _align_extractions(self, extractions: List[Dict], gold_standard: List[Dict], threshold: float = 0.85) -> List[Dict]:
+        """
+        Aligns extraction keys to Gold Standard keys using fuzzy matching.
+        This prevents 'Aspirin.' vs 'Aspirin' causing mismatch errors.
+        """
+        # 1. Index Gold Standard ICOs by PMCID for fast lookup
+        gold_map = {}
+        for item in gold_standard:
+            pmcid = str(item.get('pmcid'))
+            if pmcid not in gold_map:
+                gold_map[pmcid] = []
+            
+            # Store the authoritative tuple
+            ico_tuple = (
+                item.get('intervention', ''),
+                item.get('comparator', ''),
+                item.get('outcome', ''),
+                item.get('outcome_type', '')
+            )
+            gold_map[pmcid].append(ico_tuple)
+
+        aligned_extractions = []
+        
+        for item in extractions:
+            # Create a copy to avoid mutating original list
+            new_item = item.copy()
+            pmcid = str(new_item.get('pmcid'))
+            
+            # If we have gold data for this paper, try to match
+            if pmcid in gold_map:
+                candidates = gold_map[pmcid]
+                
+                # Construct the query string for this extraction
+                # We usually don't fuzzy match 'outcome_type' as it should be strict 'binary'/'continuous'
+                query_str = f"{new_item.get('intervention', '')} {new_item.get('comparator', '')} {new_item.get('outcome', '')}"
+                
+                best_ratio = 0.0
+                best_match = None
+                
+                for cand in candidates:
+                    # cand is (int, comp, out, type)
+                    target_str = f"{cand[0]} {cand[1]} {cand[2]}"
+                    
+                    # Calculate similarity
+                    ratio = SequenceMatcher(None, query_str, target_str).ratio()
+                    
+                    if ratio > best_ratio:
+                        best_ratio = ratio
+                        best_match = cand
+                
+                # If the best match is good enough, overwrite the keys
+                if best_match and best_ratio >= threshold:
+                    new_item['intervention'] = best_match[0]
+                    new_item['comparator'] = best_match[1]
+                    new_item['outcome'] = best_match[2]
+                    new_item['outcome_type'] = best_match[3] # Force type alignment too if the text matched
+            
+            aligned_extractions.append(new_item)
+            
+        return aligned_extractions        
 
     def _prepare_long_data(self):
         """
@@ -71,7 +136,7 @@ class Evaluator:
                 return 'FP' # Hallucination
             else:
                 return 'TN'
-
+            
     def _is_match(self, val1, val2, tolerance=1e-3):
         try:
             return np.isclose(float(val1), float(val2), atol=tolerance)
