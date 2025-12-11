@@ -17,7 +17,7 @@ from src.models.gpt import GPTModel
 from src.models.claude import ClaudeModel
 from src.models.gemini import GeminiModel
 
-def run_extraction(model_name: str, strategy: str, split: str, temperature: float = 0.0, pmcids = None):
+def run_extraction(model_name: str, strategy: str, split: str, pmcids = None):
     # 1. Setup Run Directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     run_name = f"{timestamp}_{model_name}_{strategy}_{split}"
@@ -29,7 +29,8 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
 
     # 2. Initialize Components
     loader = DataLoader()
-    #Get all PMCIDs for a split or PMCID overwrite to just run a single article.
+    # Get all PMCIDs for a split or PMCID overwrite to just run a single article.
+    provided_pmcids = pmcids
     pmcids = pmcids or loader.get_split_pmcids(split)
     prompt_builder = PromptBuilder(loader)
     
@@ -43,7 +44,10 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
     else:
         raise ValueError(f"Unknown model: {model_name}")
 
-    print(f"Found {len(pmcids)} documents in split '{split}'")
+    if provided_pmcids:
+        print(f"Running extraction for specified PMCID(s): {', '.join(map(str, pmcids))}")
+    else:
+        print(f"Found {len(pmcids)} documents in split '{split}'")
 
     # 3. Extraction Loop
     stats = {"total": len(pmcids), "successful": 0, "failed": 0, "empty": 0,
@@ -55,7 +59,7 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
             payload = prompt_builder.build(pmcid, mode=strategy)
 
             # Generate
-            raw_text, usage = model.generate(payload, temperature=temperature)
+            raw_text, usage = model.generate(payload)
 
             # Parse
             parsed_data = clean_and_parse_json(raw_text)
@@ -89,7 +93,7 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
             result_file = output_dir / f"{pmcid}.json"
             file_data = {
                 "pmcid": pmcid,
-                "config": {"model": model_name, "strategy": strategy, "temp": temperature},
+                "config": {"model": model_name, "strategy": strategy},
                 "usage": usage,
                 "raw_text": raw_text,
                 "extraction": extraction_list 
@@ -123,7 +127,6 @@ if __name__ == "__main__":
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"])
     parser.add_argument("--split", type=str, default="DEV", help="Split to extract (DEV, TEST)")
     parser.add_argument("--pmcid", help="Run only this PMCID")
-    parser.add_argument("--temperature", type=float, default=0.0)
     args = parser.parse_args()
 
-    run_extraction(args.model, args.strategy, args.split, args.temperature, pmcids=[args.pmcid] if args.pmcid else None)
+    run_extraction(args.model, args.strategy, args.split, pmcids=[args.pmcid] if args.pmcid else None)
