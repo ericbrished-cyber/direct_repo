@@ -1,6 +1,5 @@
 Here is a clean, barebones `README.md` that captures the essential usage of your new pipeline structure.
 
-````markdown
 # LLM RCT Extraction & Evaluation
 
 A pipeline for extracting statistical results for a given ICO (Intervention, Comparator, Outcome) from Randomized Controlled Trial (RCT) PDFs using LLMs (GPT, Claude, Gemini) and evaluating performance against a gold standard.
@@ -10,7 +9,6 @@ A pipeline for extracting statistical results for a given ICO (Intervention, Com
 1. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
-````
 
 2.  **Environment Variables**
     Create a `.env` file or set these in your terminal:
@@ -56,8 +54,3 @@ Results are saved in `data/results/<timestamp>_<config>/`:
   * `*.json`: Individual extraction files per paper.
   * `evaluation_metrics.json`: Final precision, recall, F1, and RMSE scores.
   * `run_metadata.json`: Logs and configuration details.
-
-<!-- end list -->
-
-```
-```
