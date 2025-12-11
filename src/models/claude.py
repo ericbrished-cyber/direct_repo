@@ -34,7 +34,7 @@ class ClaudeModel(ModelAdapter):
         
         return block
 
-    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
         """Generates response using Claude Opus 4.5 with prompt caching."""
         if not self.api_key:
             raise ValueError("ANTHROPIC_API_KEY not found in environment variables.")
@@ -80,8 +80,7 @@ class ClaudeModel(ModelAdapter):
             model=self.model_version,
             max_tokens=4096,
             messages=messages,
-            temperature=temperature
-        )
+            )
 
         # Extract text
         raw_text = ""

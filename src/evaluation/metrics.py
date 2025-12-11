@@ -132,15 +132,15 @@ class Evaluator:
         gold = row['gold']
         pred = row['pred']
         gold_exists = pd.notna(gold)
-        pred_exists = pd.notna(pred)
+        extraction_exists = pd.notna(pred)
         
         if gold_exists:
-            if pred_exists and self._is_match(gold, pred):
+            if extraction_exists and self._is_match(gold, pred):
                 return 'TP'
             else:
                 return 'FN' # Missed or Wrong Value
         else:
-            if pred_exists:
+            if extraction_exists:
                 return 'FP' # Hallucination
             else:
                 return 'TN'
