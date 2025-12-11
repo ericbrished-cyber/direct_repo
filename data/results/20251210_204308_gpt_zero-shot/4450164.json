@@ -1,0 +1,29 @@
+{
+  "pmcid": "4450164",
+  "raw_text": "```json\n[\n  {\n    \"pmcid\": \"null\",\n    \"outcome\": \"ureteropelvic junction obstruction\",\n    \"intervention\": \"internal drainage group\",\n    \"comparator\": \"stentless cases\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 0,\n    \"intervention_group_size\": 30,\n    \"comparator_events\": 1,\n    \"comparator_group_size\": 52,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null,\n    \"notes\": \"Recurrence of stenosis requiring reoperation used as proxy for persistent/recurrent ureteropelvic junction obstruction; data from Table 2: 'Recurrence of stenosis reoperation 0 (0) vs 1 (1.9)'.\",\n    \"pmcid\": null\n  }\n]\n```",
+  "extraction": [
+    {
+      "pmcid": null,
+      "outcome": "ureteropelvic junction obstruction",
+      "intervention": "internal drainage group",
+      "comparator": "stentless cases",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 30,
+      "comparator_events": 1,
+      "comparator_group_size": 52,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "notes": "Recurrence of stenosis requiring reoperation used as proxy for persistent/recurrent ureteropelvic junction obstruction; data from Table 2: 'Recurrence of stenosis reoperation 0 (0) vs 1 (1.9)'."
+    }
+  ],
+  "usage": {
+    "input": 0,
+    "output": 0
+  },
+  "model": "gpt",
+  "strategy": "zero-shot",
+  "temperature": 0.0
+}
