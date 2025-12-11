@@ -6,17 +6,29 @@ from difflib import SequenceMatcher
 
 class Evaluator:
     def __init__(self, gold_standard: List[Dict], extractions: List[Dict]):
+        # Restrict gold to only the PMCIDs present in predictions to avoid counting missing PMCIDs as FN when running subset evaluations
+        pmcid_filter = {str(item.get('pmcid')) for item in extractions if item.get('pmcid') is not None}
+        if pmcid_filter:
+            gold_standard = [row for row in gold_standard if str(row.get('pmcid')) in pmcid_filter]
 
         aligned_extractions = self._align_extractions(extractions, gold_standard)
 
         self.gold_df = pd.DataFrame(gold_standard)
-        self.extractions_df = pd.DataFrame(extractions)
+        self.extractions_df = pd.DataFrame(aligned_extractions)
         
         # Keys for aligning rows
         self.id_cols = ['intervention', 'comparator', 'outcome', 'outcome_type']
-        
+        self.numeric_fields = [
+            'intervention_group_size', 'comparator_group_size',
+            'intervention_mean', 'intervention_standard_deviation',
+            'comparator_mean', 'comparator_standard_deviation',
+            'intervention_events', 'comparator_events'
+        ]
+
         # Prepare the long-format data
         self.long_df = self._prepare_long_data()
+
+        
 
     def _align_extractions(self, extractions: List[Dict], gold_standard: List[Dict], threshold: float = 0.85) -> List[Dict]:
         """
@@ -83,13 +95,6 @@ class Evaluator:
         """
         Transforms data from Wide to Long format and classifies each item.
         """
-        numeric_fields = [
-            'intervention_group_size', 'comparator_group_size',
-            'intervention_mean', 'intervention_standard_deviation',
-            'comparator_mean', 'comparator_standard_deviation',
-            'intervention_events', 'comparator_events'
-        ]
-        
         if self.gold_df.empty:
             return pd.DataFrame(columns=self.id_cols + ['field', 'gold', 'pred', 'category'])
         
@@ -97,29 +102,32 @@ class Evaluator:
         gold_id_vars = [c for c in self.id_cols if c in self.gold_df.columns]
         g_melt = self.gold_df.melt(
             id_vars=gold_id_vars, 
-            value_vars=[f for f in numeric_fields if f in self.gold_df.columns], 
+            value_vars=[f for f in self.numeric_fields if f in self.gold_df.columns], 
             var_name='field', value_name='gold'
-        )
+        ).assign(from_gold=True)
         
         # Melt Extractions
         if self.extractions_df.empty:
-            m_melt = pd.DataFrame(columns=self.id_cols + ['field', 'pred'])
+            m_melt = pd.DataFrame(columns=self.id_cols + ['field', 'pred', 'from_pred'])
         else:
             ext_id_vars = [c for c in self.id_cols if c in self.extractions_df.columns]
             m_melt = self.extractions_df.melt(
                 id_vars=ext_id_vars, 
-                value_vars=[f for f in numeric_fields if f in self.extractions_df.columns], 
+                value_vars=[f for f in self.numeric_fields if f in self.extractions_df.columns], 
                 var_name='field', value_name='pred'
-            )
+            ).assign(from_pred=True)
         
         # Merge
         merge_keys = self.id_cols + ['field']
         merged = pd.merge(g_melt, m_melt, on=merge_keys, how='outer')
+        merged['from_gold'] = merged['from_gold'].fillna(False)
+        merged['from_pred'] = merged['from_pred'].fillna(False)
         
         # Classify
         merged['category'] = merged.apply(self._get_row_category, axis=1)
         return merged
 
+    
     def _get_row_category(self, row):
         gold = row['gold']
         pred = row['pred']
@@ -136,7 +144,7 @@ class Evaluator:
                 return 'FP' # Hallucination
             else:
                 return 'TN'
-            
+        
     def _is_match(self, val1, val2, tolerance=1e-3):
         try:
             return np.isclose(float(val1), float(val2), atol=tolerance)
@@ -145,8 +153,17 @@ class Evaluator:
 
     def _compute_stats(self, df_subset):
         """Helper to compute P/R/F1/RMSE on a specific dataframe slice."""
+        df_subset = df_subset[df_subset['category'] != 'IGNORE']
         if df_subset.empty:
-            return {"precision": 0.0, "recall": 0.0, "f1": 0.0, "rmse": 0.0, "tp":0, "fp":0, "fn":0}
+            return {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "rmse": 0.0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+            }
 
         counts = df_subset['category'].value_counts()
         TP = counts.get('TP', 0)
@@ -182,13 +199,14 @@ class Evaluator:
             "by_field": { "intervention_mean": {...}, ... }
         }
         """
+        scorable_df = self.long_df[self.long_df['category'] != 'IGNORE']
         # 1. Aggregated Metrics (All fields combined)
-        agg_stats = self._compute_stats(self.long_df)
+        agg_stats = self._compute_stats(scorable_df)
         
         # 2. Exact Match (ICO level)
         exact_matches = []
-        if not self.long_df.empty:
-            groups = self.long_df.groupby(self.id_cols)
+        if not scorable_df.empty:
+            groups = scorable_df.groupby(self.id_cols)
             for _, group in groups:
                 is_perfect = group['category'].isin(['TP', 'TN']).all()
                 exact_matches.append(1 if is_perfect else 0)
@@ -197,8 +215,8 @@ class Evaluator:
 
         # 3. Per-Field Metrics
         by_field = {}
-        if not self.long_df.empty:
-            for field_name, group in self.long_df.groupby('field'):
+        if not scorable_df.empty:
+            for field_name, group in scorable_df.groupby('field'):
                 by_field[field_name] = self._compute_stats(group)
 
         return {
