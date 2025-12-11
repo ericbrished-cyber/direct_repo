@@ -1,5 +1,3 @@
-Here is a clean, barebones `README.md` that captures the essential usage of your new pipeline structure.
-
 # LLM RCT Extraction & Evaluation
 
 A pipeline for extracting statistical results for a given ICO (Intervention, Comparator, Outcome) from Randomized Controlled Trial (RCT) PDFs using LLMs (GPT, Claude, Gemini) and evaluating performance against a gold standard.
