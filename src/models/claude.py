@@ -61,7 +61,7 @@ class ClaudeModel(ModelAdapter):
                 # Assistant response - CACHE THE LAST ONE (this caches entire few-shot prefix)
                 assistant_content = [{"type": "text", "text": example_answer}]
                 if is_last:
-                    assistant_content[0]["cache_control"] = {"type": "ephemeral"}
+                    assistant_content[0]["cache_control"] = {"type": "ephemeral", "ttl": "5m"}
                 
                 messages.append({
                     "role": "assistant",
