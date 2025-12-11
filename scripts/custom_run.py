@@ -11,7 +11,7 @@ from src.evaluation.runner import run_evaluation
 # ==========================================
 
 # Select Model: "claude", "gpt", or "gemini"
-MODEL = "gpt"
+MODEL = "gemini"
 
 # Select Split: "DEV", "TRAIN", "TEST"
 SPLIT = "DEV"
