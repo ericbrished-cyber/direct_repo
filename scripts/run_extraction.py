@@ -113,6 +113,8 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
     print(f"\nExtraction complete. Results saved to {output_dir}")
     print(f"Run 'python scripts/run_evaluation.py --run_folder {run_name} --split {split}' to evaluate.")
 
+    return run_name
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Extraction Phase")
     parser.add_argument("--model", type=str, required=True, choices=["gpt", "claude", "gemini"])
