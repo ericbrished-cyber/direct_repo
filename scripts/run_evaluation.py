@@ -70,7 +70,7 @@ def run_evaluation_task(run_folder, split):
         return
 
     # 3. Calculate Metrics
-    print("Step 3: Calculating metrics (Thesis Definitions)...")
+    print("Step 3: Calculating metrics...")
     
     # This calls your updated metrics logic
     metrics = calculate_metrics(extractions, gold_standard)
