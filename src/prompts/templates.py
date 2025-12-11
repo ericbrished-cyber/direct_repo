@@ -18,10 +18,14 @@ Each item in "extractions" is one ICO row with exactly these fields (use null fo
   "comparator_standard_deviation": <float>
 }
 
+
+Extract this data for each ico triplet in the following ico list:
+{ico_list}
+
 ---------------------------------------------------------------------
 FIXED ICO TRIPLETS (MUST NOT BE ALTERED)
 
-The ICO triplets provided in ico list: {ico_list} are fixed and authoritative. You must:
+The ICO triplets provided in ico list are fixed and authoritative. You must:
 
 - use them exactly as written in the JSON output,
 - never modify their wording,
@@ -120,7 +124,7 @@ TIMEPOINT RULE
 ---------------------------------------------------------------------
 FINAL RULE
 
-Output NO ICO triplets other than those in ico_list.
+Output NO ICO triplets other than those in ico list.
 
 --------------------------------------------------------------------
 """

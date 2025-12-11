@@ -54,13 +54,29 @@ class DataLoader:
         for pmcid in few_shot_pmcids:
             pdf_path = self.get_pdf_path(pmcid)
             entry = self.get_entry(pmcid)
-            gold_for_few_shot_str = [
-                {k: item for k in wanted_keys if k in item}
+            filtered_entry = [
+                {k: item[k] for k in wanted_keys if k in item}
                 for item in entry
             ]
+
+            gold_for_few_shot_str = json.dumps(filtered_entry)
+
             examples.append((pdf_path, gold_for_few_shot_str))
 
         return examples
+
+    def get_icos(self, pmcid: str) -> List[Dict[str, str]]:
+        """
+        Returns [{"outcome" = x, "intervention" = y, "comparator" = z, "outcome_type" = x}] for a given pmcid.
+        This for all targeted ICO in PMCID article
+        """
+        wanted_keys = ["outcome", "intervention", "comparator",
+                        "outcome_type"]
+        entry = self.get_entry(pmcid)
+        return [
+                {k: item[k] for k in wanted_keys if k in item}
+                for item in entry
+            ]
 
     def get_pdf_path(self, pmcid: str) -> Path:
         """

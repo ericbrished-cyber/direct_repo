@@ -1,3 +1,4 @@
+import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Tuple, Dict
@@ -29,9 +30,19 @@ class PromptBuilder:
         target_pdf = self.loader.get_pdf_path(target_pmcid)
         target_icos = self.loader.get_icos(target_pmcid)
 
-        targets_str = "\n".join([f"- Outcome: {ico.get('outcome', 'Unknown')} (Intervention: {ico.get('intervention')}, Comparator: {ico.get('comparator')})" for ico in target_icos])
+        # Inject the current ICO list into the system prompt placeholder for transparency
+        ico_list_lines = []
+        for idx, ico in enumerate(target_icos, start=1):
+            ico_list_lines.append(
+                f"- ICO {idx}:\n"
+                f"    outcome: {ico.get('outcome')}\n"
+                f"    intervention: {ico.get('intervention')}\n"
+                f"    comparator: {ico.get('comparator')}\n"
+                f"    outcome_type: {ico.get('outcome_type')}"
+            )
+        ico_list_str = "\n".join(ico_list_lines)
 
-        instruction = f"{SYSTEM_PROMPT}\n\nPlease extract data for the following specific outcomes:\n{targets_str}\n"
+        instruction = SYSTEM_PROMPT.replace("{ico_list}", ico_list_str)
 
         few_shot_examples = []
         if mode == "few-shot":
