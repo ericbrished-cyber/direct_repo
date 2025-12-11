@@ -43,6 +43,7 @@ class ClaudeModel(ModelAdapter):
         messages = []
 
         # Few-shot examples - cache the last assistant response
+        # Few-shot examples - cache the last assistant response
         if payload.few_shot_examples:
             for idx, (example_pdf_path, example_answer) in enumerate(payload.few_shot_examples):
                 is_last = (idx == len(payload.few_shot_examples) - 1)
@@ -51,7 +52,8 @@ class ClaudeModel(ModelAdapter):
                 messages.append({
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "Extract data according to schema."},
+                        # Use the actual instruction here for consistency
+                        {"type": "text", "text": payload.instruction}, 
                         self._create_document_block(example_pdf_path, use_cache=False)
                     ]
                 })

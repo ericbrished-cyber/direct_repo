@@ -34,7 +34,7 @@ class GPTModel(ModelAdapter):
                 messages.append({
                     "role": "user",
                     "content": [
-                        {"type": "input_text", "text": "Extract data according to schema."},
+                        {"type": "input_text", "text":payload.instruction},
                         {
                             "type": "input_file",
                             "filename": example_pdf_path.name,
