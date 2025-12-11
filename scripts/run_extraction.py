@@ -20,7 +20,9 @@ from src.models.gemini import GeminiModel
 def run_extraction(model_name: str, strategy: str, split: str, pmcids = None):
     # 1. Setup Run Directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    run_name = f"{timestamp}_{model_name}_{strategy}_{split}"
+    # When running a specific PMCID, suffix with _custom instead of the split
+    run_suffix = "custom" if pmcids else split
+    run_name = f"{timestamp}_{model_name}_{strategy}_{run_suffix}"
     output_dir = RESULTS_DIR / run_name
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -83,7 +85,7 @@ def run_extraction(model_name: str, strategy: str, split: str, pmcids = None):
                 # Inject PMCID into every extracted object
                 for item in raw_list:
                     if isinstance(item, dict):
-                        item['pmcid'] = str(pmcid)  # <--- CRITICAL INJECTION
+                        item['pmcid'] = str(pmcid)
                         extraction_list.append(item)
             
             if not extraction_list:

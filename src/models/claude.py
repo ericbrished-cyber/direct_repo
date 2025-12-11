@@ -34,7 +34,7 @@ class ClaudeModel(ModelAdapter):
         
         return block
 
-    def generate(self, payload: PromptPayload, temperature: float = 0.0) -> Tuple[str, Dict[str, int]]:
+    def generate(self, payload: PromptPayload) -> Tuple[str, Dict[str, int]]:
         """Generates response using Claude Opus 4.5 with prompt caching."""
         if not self.api_key:
             raise ValueError("ANTHROPIC_API_KEY not found in environment variables.")
@@ -42,6 +42,7 @@ class ClaudeModel(ModelAdapter):
         client = Anthropic(api_key=self.api_key)
         messages = []
 
+        # Few-shot examples - cache the last assistant response
         # Few-shot examples - cache the last assistant response
         if payload.few_shot_examples:
             for idx, (example_pdf_path, example_answer) in enumerate(payload.few_shot_examples):
@@ -51,7 +52,8 @@ class ClaudeModel(ModelAdapter):
                 messages.append({
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "Extract data according to schema."},
+                        # Use the actual instruction here for consistency
+                        {"type": "text", "text": payload.instruction}, 
                         self._create_document_block(example_pdf_path, use_cache=False)
                     ]
                 })
@@ -59,7 +61,7 @@ class ClaudeModel(ModelAdapter):
                 # Assistant response - CACHE THE LAST ONE (this caches entire few-shot prefix)
                 assistant_content = [{"type": "text", "text": example_answer}]
                 if is_last:
-                    assistant_content[0]["cache_control"] = {"type": "ephemeral"}
+                    assistant_content[0]["cache_control"] = {"type": "ephemeral", "ttl": "5m"}
                 
                 messages.append({
                     "role": "assistant",
@@ -80,8 +82,7 @@ class ClaudeModel(ModelAdapter):
             model=self.model_version,
             max_tokens=4096,
             messages=messages,
-            temperature=temperature
-        )
+            )
 
         # Extract text
         raw_text = ""
