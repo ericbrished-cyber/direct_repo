@@ -17,7 +17,7 @@ from src.models.gpt import GPTModel
 from src.models.claude import ClaudeModel
 from src.models.gemini import GeminiModel
 
-def run_extraction(model_name: str, strategy: str, split: str, temperature: float = 0.0):
+def run_extraction(model_name: str, strategy: str, split: str, temperature: float = 0.0, pmcids = None):
     # 1. Setup Run Directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     run_name = f"{timestamp}_{model_name}_{strategy}_{split}"
@@ -29,7 +29,8 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
 
     # 2. Initialize Components
     loader = DataLoader()
-    pmcids = loader.get_split_pmcids(split)
+    #Get all PMCIDs for a split or PMCID overwrite to just run a single article.
+    pmcids = pmcids or loader.get_split_pmcids(split)
     prompt_builder = PromptBuilder(loader)
     
     # Model Factory
@@ -121,7 +122,8 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, required=True, choices=["gpt", "claude", "gemini"])
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"])
     parser.add_argument("--split", type=str, default="DEV", help="Split to extract (DEV, TEST)")
+    parser.add_argument("--pmcid", help="Run only this PMCID")
     parser.add_argument("--temperature", type=float, default=0.0)
     args = parser.parse_args()
 
-    run_extraction(args.model, args.strategy, args.split, args.temperature)
+    run_extraction(args.model, args.strategy, args.split, args.temperature, pmcids=[args.pmcid] if args.pmcid else None)

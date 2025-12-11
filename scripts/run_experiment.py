@@ -15,7 +15,9 @@ def main():
     parser.add_argument("--model", type=str, required=True, choices=["claude", "gpt", "gemini"], help="Model to use")
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"], help="Prompting strategy")
     parser.add_argument("--split", type=str, default="DEV", help="Data split to run on (e.g., DEV, TEST)")
+    parser.add_argument("--pmcid", help="Run only this PMCID")
     parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature")
+    
     
     # Flags
     parser.add_argument("--skip-eval", action="store_true", help="If set, only runs extraction without evaluation")
@@ -37,7 +39,8 @@ def main():
         model_name=args.model,
         strategy=args.strategy,
         split=args.split,
-        temperature=args.temperature
+        temperature=args.temperature,
+        pmcids=[args.pmcid] if args.pmcid else None
     )
     
     if not run_name:
