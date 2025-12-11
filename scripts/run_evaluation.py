@@ -71,30 +71,39 @@ def run_evaluation_task(run_folder, split):
 
     # 3. Calculate Metrics
     print("Step 3: Calculating metrics...")
+    all_metrics = calculate_metrics(extractions, gold_standard)
     
-    # This calls your updated metrics logic
-    metrics = calculate_metrics(extractions, gold_standard)
+    # Extract the parts
+    agg = all_metrics["aggregated"]
+    by_field = all_metrics["by_field"]
 
-    # 4. Print & Save Results
-    print("\n" + "="*40)
+    # 4. Output Results
+    print("\n" + "="*60)
     print(f"EVALUATION REPORT: {run_folder}")
-    print("="*40)
-    print(f"Precision:      {metrics.get('precision', 0):.2%}")
-    print(f"Recall:         {metrics.get('recall', 0):.2%}")
-    print(f"F1 Score:       {metrics.get('f1', 0):.2%}")
-    print("-" * 40)
-    print(f"RMSE:           {metrics.get('rmse', 0):.4f}")
-    print(f"Exact Match:    {metrics.get('exact_match', 0):.2%}")
-    print("-" * 40)
-    print(f"True Positives: {metrics.get('true_positives', 0)}")
-    print(f"False Positives:{metrics.get('false_positives', 0)}")
-    print(f"False Negatives:{metrics.get('false_negatives', 0)}")
-    print("="*40)
+    print("="*60)
+    print(f"{'METRIC':<20} {'AGGREGATED':<10}")
+    print("-" * 60)
+    print(f"{'Precision':<20} {agg['precision']:.2%}")
+    print(f"{'Recall':<20} {agg['recall']:.2%}")
+    print(f"{'F1 Score':<20} {agg['f1']:.2%}")
+    print(f"{'RMSE':<20} {agg['rmse']:.4f}")
+    print(f"{'Exact Match':<20} {agg['exact_match']:.2%}")
+    print("-" * 60)
+    
+    print("\n--- BREAKDOWN BY FIELD TYPE ---")
+    header = f"{'FIELD':<35} | {'P':<8} | {'R':<8} | {'F1':<8} | {'RMSE':<8}"
+    print(header)
+    print("-" * len(header))
+    
+    for field, m in by_field.items():
+        print(f"{field:<35} | {m['precision']:.1%}   | {m['recall']:.1%}   | {m['f1']:.1%}   | {m['rmse']:.2f}")
+
+    print("="*60)
 
     # Save metrics to file
     save_path = RESULTS_DIR / run_folder / "evaluation_metrics.json"
     with open(save_path, 'w') as f:
-        json.dump(metrics, f, indent=2)
+        json.dump(all_metrics, f, indent=2)
     print(f"Metrics saved to: {save_path}")
 
 if __name__ == "__main__":

@@ -1,24 +1,22 @@
 import pandas as pd
 import numpy as np
-from typing import List, Dict
+from typing import List, Dict, Any
 from sklearn.metrics import mean_squared_error
 
 class Evaluator:
     def __init__(self, gold_standard: List[Dict], extractions: List[Dict]):
-        # Convert lists of dicts to DataFrames
         self.gold_df = pd.DataFrame(gold_standard)
         self.extractions_df = pd.DataFrame(extractions)
         
-        # We rely on the text strings to align the extraction to the gold standard
+        # Keys for aligning rows
         self.id_cols = ['intervention', 'comparator', 'outcome', 'outcome_type']
         
-        # Prepare the data
+        # Prepare the long-format data
         self.long_df = self._prepare_long_data()
 
     def _prepare_long_data(self):
         """
-        Transforms data from Wide (one row per ICO) to Long (one row per Field).
-        Aligns Gold and Extraction based on the id_cols.
+        Transforms data from Wide to Long format and classifies each item.
         """
         numeric_fields = [
             'intervention_group_size', 'comparator_group_size',
@@ -27,12 +25,10 @@ class Evaluator:
             'intervention_events', 'comparator_events'
         ]
         
-        # 1. Handle empty dataframes gracefully
         if self.gold_df.empty:
             return pd.DataFrame(columns=self.id_cols + ['field', 'gold', 'pred', 'category'])
         
-        # 2. Melt Gold Standard
-        # We assume gold standard might have 'pmcid' or 'id', we keep them if present but don't match on them
+        # Melt Gold
         gold_id_vars = [c for c in self.id_cols if c in self.gold_df.columns]
         g_melt = self.gold_df.melt(
             id_vars=gold_id_vars, 
@@ -40,7 +36,7 @@ class Evaluator:
             var_name='field', value_name='gold'
         )
         
-        # 3. Melt Extractions
+        # Melt Extractions
         if self.extractions_df.empty:
             m_melt = pd.DataFrame(columns=self.id_cols + ['field', 'pred'])
         else:
@@ -51,24 +47,17 @@ class Evaluator:
                 var_name='field', value_name='pred'
             )
         
-        # 4. Merge strictly on the Text Columns + Field
-        # This aligns "Mean" of "Intervention A" in Gold with "Mean" of "Intervention A" in Model
+        # Merge
         merge_keys = self.id_cols + ['field']
         merged = pd.merge(g_melt, m_melt, on=merge_keys, how='outer')
         
-        # 5. Classify every single field
+        # Classify
         merged['category'] = merged.apply(self._get_row_category, axis=1)
         return merged
 
     def _get_row_category(self, row):
-        """
-        Classifies prediction based on THESIS definitions:
-        - FN: Data missed OR incorrectly extracted.
-        - FP: Model generated data when none existed.
-        """
         gold = row['gold']
         pred = row['pred']
-        
         gold_exists = pd.notna(gold)
         pred_exists = pd.notna(pred)
         
@@ -76,30 +65,25 @@ class Evaluator:
             if pred_exists and self._is_match(gold, pred):
                 return 'TP'
             else:
-                # Gold exists, but model is missing OR model is wrong -> FN
-                return 'FN'
+                return 'FN' # Missed or Wrong Value
         else:
             if pred_exists:
-                # Gold is empty, but model predicted something -> FP
-                return 'FP'
+                return 'FP' # Hallucination
             else:
                 return 'TN'
 
     def _is_match(self, val1, val2, tolerance=1e-3):
         try:
-            # Handle float comparison
             return np.isclose(float(val1), float(val2), atol=tolerance)
         except (ValueError, TypeError):
             return False
 
-    def calculate_metrics(self):
-        """Calculates Precision, Recall, F1, RMSE, and Exact Match."""
-        df = self.long_df
-        if df.empty:
-            return {}
+    def _compute_stats(self, df_subset):
+        """Helper to compute P/R/F1/RMSE on a specific dataframe slice."""
+        if df_subset.empty:
+            return {"precision": 0.0, "recall": 0.0, "f1": 0.0, "rmse": 0.0, "tp":0, "fp":0, "fn":0}
 
-        # 1. Classification Metrics (Field Level)
-        counts = df['category'].value_counts()
+        counts = df_subset['category'].value_counts()
         TP = counts.get('TP', 0)
         FP = counts.get('FP', 0)
         FN = counts.get('FN', 0)
@@ -108,41 +92,55 @@ class Evaluator:
         recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
         f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
         
-        # 2. RMSE (Strictly on intersection)
-        rmse_subset = df[pd.notna(df['gold']) & pd.notna(df['pred'])]
+        # RMSE only on intersections
+        rmse_subset = df_subset[pd.notna(df_subset['gold']) & pd.notna(df_subset['pred'])]
         if len(rmse_subset) > 0:
             rmse = np.sqrt(mean_squared_error(rmse_subset['gold'], rmse_subset['pred']))
         else:
             rmse = 0.0
             
-        # 3. Exact Match (Aggregated by ICO)
-        # Groups by the text triplets to check if ALL fields for that ICO are correct
-        exact_matches = []
-        # Group by the unique ICO keys
-        groups = df.groupby(self.id_cols)
-        
-        for name, group in groups:
-            # Check if all relevant fields for this specific ICO are TP or TN
-            # (i.e., no errors)
-            is_perfect = group['category'].isin(['TP', 'TN']).all()
-            exact_matches.append(1 if is_perfect else 0)
-            
-        exact_match_score = np.mean(exact_matches) if exact_matches else 0.0
-
         return {
             "precision": precision,
             "recall": recall,
             "f1": f1,
             "rmse": rmse,
-            "exact_match": exact_match_score,
             "true_positives": int(TP),
             "false_positives": int(FP),
             "false_negatives": int(FN)
         }
 
-def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, float]:
-    """
-    Wrapper function to maintain compatibility with runner.py
-    """
+    def calculate_metrics(self) -> Dict[str, Any]:
+        """
+        Main entry point. Returns:
+        {
+            "aggregated": { ... },
+            "by_field": { "intervention_mean": {...}, ... }
+        }
+        """
+        # 1. Aggregated Metrics (All fields combined)
+        agg_stats = self._compute_stats(self.long_df)
+        
+        # 2. Exact Match (ICO level)
+        exact_matches = []
+        if not self.long_df.empty:
+            groups = self.long_df.groupby(self.id_cols)
+            for _, group in groups:
+                is_perfect = group['category'].isin(['TP', 'TN']).all()
+                exact_matches.append(1 if is_perfect else 0)
+        
+        agg_stats['exact_match'] = np.mean(exact_matches) if exact_matches else 0.0
+
+        # 3. Per-Field Metrics
+        by_field = {}
+        if not self.long_df.empty:
+            for field_name, group in self.long_df.groupby('field'):
+                by_field[field_name] = self._compute_stats(group)
+
+        return {
+            "aggregated": agg_stats,
+            "by_field": by_field
+        }
+
+def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, Any]:
     evaluator = Evaluator(gold_standard, extractions)
     return evaluator.calculate_metrics()

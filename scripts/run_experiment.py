@@ -32,7 +32,7 @@ def main():
     print(f"\nPhase 1: Running Extraction ({args.model}, {args.split})...")
     
     # Call the extraction script. 
-    # It returns the 'run_name' (e.g., "20231211_gpt_zero-shot_DEV")
+    # It returns the 'run_name' (e.g., "20251211_gpt_zero-shot_DEV")
     run_name = run_extraction(
         model_name=args.model,
         strategy=args.strategy,

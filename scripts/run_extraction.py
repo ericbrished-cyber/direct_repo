@@ -45,7 +45,8 @@ def run_extraction(model_name: str, strategy: str, split: str, temperature: floa
     print(f"Found {len(pmcids)} documents in split '{split}'")
 
     # 3. Extraction Loop
-    stats = {"total": len(pmcids), "successful": 0, "failed": 0, "empty": 0, "end_time": None}
+    stats = {"total": len(pmcids), "successful": 0, "failed": 0, "empty": 0,
+              "start_time": datetime.now().strftime("%Y%m%d_%H%M%S"), "end_time": None,}
     
     for pmcid in tqdm(pmcids, desc="Extracting"):
         try:
