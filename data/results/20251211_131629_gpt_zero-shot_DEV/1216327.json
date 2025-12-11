@@ -1,0 +1,59 @@
+{
+  "pmcid": "1216327",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 10980,
+    "output": 417
+  },
+  "raw_text": "{\"extractions\":[\n  {\n    \"outcome\": \"The mean body weight gain\",\n    \"intervention\": \"White Grape Juice (WGJ)\",\n    \"comparator\": \"colored and flavored water (WA)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 30,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 30,\n    \"intervention_mean\": 50.6,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": -7.0,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"The duration of the illness\",\n    \"intervention\": \"White Grape Juice (WGJ)\",\n    \"comparator\": \"colored and flavored water (WA)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 30,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 30,\n    \"intervention_mean\": 47.5,\n    \"intervention_standard_deviation\": 38.9,\n    \"comparator_mean\": 26.5,\n    \"comparator_standard_deviation\": 27.4\n  },\n  {\n    \"outcome\": \"The fecal losses\",\n    \"intervention\": \"White Grape Juice (WGJ)\",\n    \"comparator\": \"colored and flavored water (WA)\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 30,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 30,\n    \"intervention_mean\": 3.59,\n    \"intervention_standard_deviation\": 2.35,\n    \"comparator_mean\": 2.19,\n    \"comparator_standard_deviation\": 1.63\n  }\n]}",
+  "extraction": [
+    {
+      "outcome": "The mean body weight gain",
+      "intervention": "White Grape Juice (WGJ)",
+      "comparator": "colored and flavored water (WA)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 50.6,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -7.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "1216327"
+    },
+    {
+      "outcome": "The duration of the illness",
+      "intervention": "White Grape Juice (WGJ)",
+      "comparator": "colored and flavored water (WA)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 47.5,
+      "intervention_standard_deviation": 38.9,
+      "comparator_mean": 26.5,
+      "comparator_standard_deviation": 27.4,
+      "pmcid": "1216327"
+    },
+    {
+      "outcome": "The fecal losses",
+      "intervention": "White Grape Juice (WGJ)",
+      "comparator": "colored and flavored water (WA)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 3.59,
+      "intervention_standard_deviation": 2.35,
+      "comparator_mean": 2.19,
+      "comparator_standard_deviation": 1.63,
+      "pmcid": "1216327"
+    }
+  ]
+}
