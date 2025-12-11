@@ -30,7 +30,7 @@ class PromptBuilder:
         target_pdf = self.loader.get_pdf_path(target_pmcid)
         target_icos = self.loader.get_icos(target_pmcid)
 
-        # Inject the current ICO list into the system prompt placeholder for transparency
+        # Inject the current target ICO list into the system prompt placeholder
         ico_list_lines = []
         for idx, ico in enumerate(target_icos, start=1):
             ico_list_lines.append(

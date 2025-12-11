@@ -1,5 +1,7 @@
+import pandas as pd
+import numpy as np
 from typing import List, Dict
-from src.evaluation.matching import match_ico, verify_numerical_values
+from sklearn.metrics import mean_squared_error
 
 def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, float]:
     """
