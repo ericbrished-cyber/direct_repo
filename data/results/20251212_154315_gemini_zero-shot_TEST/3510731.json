@@ -1,0 +1,74 @@
+{
+  "pmcid": "3510731",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5047,
+    "output": 746
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Clicked on Results link\",\n      \"intervention\": \"received the debriefing information in the body of an email with links to protocol and results pages;\",\n      \"comparator\": \"received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 247,\n      \"intervention_group_size\": 6051,\n      \"comparator_events\": 515,\n      \"comparator_group_size\": 5892,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Clicked on Protocol link\",\n      \"intervention\": \"received the debriefing information in the body of an email with links to protocol and results pages;\",\n      \"comparator\": \"received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 202,\n      \"intervention_group_size\": 6051,\n      \"comparator_events\": 362,\n      \"comparator_group_size\": 5892,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Median time in seconds (interquartile range) - Results link\",\n      \"intervention\": \"received the debriefing information in the body of an email with links to protocol and results pages;\",\n      \"comparator\": \"received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 247,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 515,\n      \"intervention_mean\": 25.0,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 25.3,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Median time in seconds (interquartile range) - Protocol link\",\n      \"intervention\": \"received the debriefing information in the body of an email with links to protocol and results pages;\",\n      \"comparator\": \"received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 202,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 362,\n      \"intervention_mean\": 3.5,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 3.6,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Clicked on Results link",
+      "intervention": "received the debriefing information in the body of an email with links to protocol and results pages;",
+      "comparator": "received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.",
+      "outcome_type": "binary",
+      "intervention_events": 247,
+      "intervention_group_size": 6051,
+      "comparator_events": 515,
+      "comparator_group_size": 5892,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3510731"
+    },
+    {
+      "outcome": "Clicked on Protocol link",
+      "intervention": "received the debriefing information in the body of an email with links to protocol and results pages;",
+      "comparator": "received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.",
+      "outcome_type": "binary",
+      "intervention_events": 202,
+      "intervention_group_size": 6051,
+      "comparator_events": 362,
+      "comparator_group_size": 5892,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3510731"
+    },
+    {
+      "outcome": "Median time in seconds (interquartile range) - Results link",
+      "intervention": "received the debriefing information in the body of an email with links to protocol and results pages;",
+      "comparator": "received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 247,
+      "comparator_events": null,
+      "comparator_group_size": 515,
+      "intervention_mean": 25.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 25.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "3510731"
+    },
+    {
+      "outcome": "Median time in seconds (interquartile range) - Protocol link",
+      "intervention": "received the debriefing information in the body of an email with links to protocol and results pages;",
+      "comparator": "received these links after clicking on an initial link in the body of the email to view the debriefing information on a website.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 202,
+      "comparator_events": null,
+      "comparator_group_size": 362,
+      "intervention_mean": 3.5,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 3.6,
+      "comparator_standard_deviation": null,
+      "pmcid": "3510731"
+    }
+  ]
+}

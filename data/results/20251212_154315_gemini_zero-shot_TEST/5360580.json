@@ -1,0 +1,74 @@
+{
+  "pmcid": "5360580",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4967,
+    "output": 624
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Plasma PlsPE\",\n      \"intervention\": \"1 mg/day of Pls purified from scallop\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 138,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 131,\n      \"intervention_mean\": -0.59,\n      \"intervention_standard_deviation\": 1.1,\n      \"comparator_mean\": -0.63,\n      \"comparator_standard_deviation\": 1.04\n    },\n    {\n      \"outcome\": \"occurrence of adverse events\",\n      \"intervention\": \"1 mg/day of Pls purified from scallop\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"WMS-R (30 min) In the patients aged 77 years or younger,\",\n      \"intervention\": \"1 mg/day of Pls purified from scallop\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 2.21,\n      \"intervention_standard_deviation\": 3.32,\n      \"comparator_mean\": 0.48,\n      \"comparator_standard_deviation\": 2.19\n    },\n    {\n      \"outcome\": \"WMS-R (0 min)\",\n      \"intervention\": \"1 mg/day of Pls purified from scallop\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 80,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 78,\n      \"intervention_mean\": 2.3,\n      \"intervention_standard_deviation\": 3.68,\n      \"comparator_mean\": 2.46,\n      \"comparator_standard_deviation\": 3.51\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Plasma PlsPE",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 138,
+      "comparator_events": null,
+      "comparator_group_size": 131,
+      "intervention_mean": -0.59,
+      "intervention_standard_deviation": 1.1,
+      "comparator_mean": -0.63,
+      "comparator_standard_deviation": 1.04,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "occurrence of adverse events",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "WMS-R (30 min) In the patients aged 77 years or younger,",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 2.21,
+      "intervention_standard_deviation": 3.32,
+      "comparator_mean": 0.48,
+      "comparator_standard_deviation": 2.19,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "WMS-R (0 min)",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 80,
+      "comparator_events": null,
+      "comparator_group_size": 78,
+      "intervention_mean": 2.3,
+      "intervention_standard_deviation": 3.68,
+      "comparator_mean": 2.46,
+      "comparator_standard_deviation": 3.51,
+      "pmcid": "5360580"
+    }
+  ]
+}

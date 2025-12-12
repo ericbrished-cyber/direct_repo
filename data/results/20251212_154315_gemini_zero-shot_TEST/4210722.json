@@ -1,0 +1,59 @@
+{
+  "pmcid": "4210722",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5489,
+    "output": 485
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"vaccination certificates were submitted\",\n      \"intervention\": \"a separate reminder card 4 days before the appointment (IG3)\",\n      \"comparator\": \"no further reminder (IG1)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 94,\n      \"intervention_group_size\": 102,\n      \"comparator_events\": 84,\n      \"comparator_group_size\": 104,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"vaccination certificates were submitted\",\n      \"intervention\": \"a separate reminder card 4 days before the appointment (IG3)\",\n      \"comparator\": \"reminder card together with the appointment letter (IG2)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 94,\n      \"intervention_group_size\": 102,\n      \"comparator_events\": 91,\n      \"comparator_group_size\": 107,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"use of a reminder card\",\n      \"intervention\": \"a separate reminder card 4 days before the appointment (IG3); reminder card together with the appointment letter (IG2);\",\n      \"comparator\": \"no further reminder (IG1)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 185,\n      \"intervention_group_size\": 209,\n      \"comparator_events\": 84,\n      \"comparator_group_size\": 104,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "vaccination certificates were submitted",
+      "intervention": "a separate reminder card 4 days before the appointment (IG3)",
+      "comparator": "no further reminder (IG1)",
+      "outcome_type": "binary",
+      "intervention_events": 94,
+      "intervention_group_size": 102,
+      "comparator_events": 84,
+      "comparator_group_size": 104,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4210722"
+    },
+    {
+      "outcome": "vaccination certificates were submitted",
+      "intervention": "a separate reminder card 4 days before the appointment (IG3)",
+      "comparator": "reminder card together with the appointment letter (IG2)",
+      "outcome_type": "binary",
+      "intervention_events": 94,
+      "intervention_group_size": 102,
+      "comparator_events": 91,
+      "comparator_group_size": 107,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4210722"
+    },
+    {
+      "outcome": "use of a reminder card",
+      "intervention": "a separate reminder card 4 days before the appointment (IG3); reminder card together with the appointment letter (IG2);",
+      "comparator": "no further reminder (IG1)",
+      "outcome_type": "binary",
+      "intervention_events": 185,
+      "intervention_group_size": 209,
+      "comparator_events": 84,
+      "comparator_group_size": 104,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4210722"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pmcid": "4675066",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 6001,
+    "output": 491
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"The mean cognitive score on the Bayley-III\",\n      \"intervention\": \"iodine (150 \u03bcg/d)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 27,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 26,\n      \"intervention_mean\": 99.4,\n      \"intervention_standard_deviation\": 12.2,\n      \"comparator_mean\": 101.7,\n      \"comparator_standard_deviation\": 8.2\n    },\n    {\n      \"outcome\": \"The mean language score on the Bayley-III\",\n      \"intervention\": \"iodine (150 \u03bcg/d)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 27,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 26,\n      \"intervention_mean\": 97.2,\n      \"intervention_standard_deviation\": 12.2,\n      \"comparator_mean\": 97.9,\n      \"comparator_standard_deviation\": 11.5\n    },\n    {\n      \"outcome\": \"The mean motor score on the Bayley-III\",\n      \"intervention\": \"iodine (150 \u03bcg/d)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 27,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 26,\n      \"intervention_mean\": 93.9,\n      \"intervention_standard_deviation\": 10.8,\n      \"comparator_mean\": 92.4,\n      \"comparator_standard_deviation\": 9.7\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "The mean cognitive score on the Bayley-III",
+      "intervention": "iodine (150 \u03bcg/d)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 26,
+      "intervention_mean": 99.4,
+      "intervention_standard_deviation": 12.2,
+      "comparator_mean": 101.7,
+      "comparator_standard_deviation": 8.2,
+      "pmcid": "4675066"
+    },
+    {
+      "outcome": "The mean language score on the Bayley-III",
+      "intervention": "iodine (150 \u03bcg/d)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 26,
+      "intervention_mean": 97.2,
+      "intervention_standard_deviation": 12.2,
+      "comparator_mean": 97.9,
+      "comparator_standard_deviation": 11.5,
+      "pmcid": "4675066"
+    },
+    {
+      "outcome": "The mean motor score on the Bayley-III",
+      "intervention": "iodine (150 \u03bcg/d)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 26,
+      "intervention_mean": 93.9,
+      "intervention_standard_deviation": 10.8,
+      "comparator_mean": 92.4,
+      "comparator_standard_deviation": 9.7,
+      "pmcid": "4675066"
+    }
+  ]
+}

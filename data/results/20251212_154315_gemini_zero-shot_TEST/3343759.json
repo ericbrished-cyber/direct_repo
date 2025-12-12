@@ -1,0 +1,89 @@
+{
+  "pmcid": "3343759",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 6081,
+    "output": 682
+  },
+  "raw_text": "```json\n{\"extractions\":[\n{\n  \"outcome\": \"improvment in ANELT by day 21\",\n  \"intervention\": \"higher level of education (>12 years)\",\n  \"comparator\": \"<12 years of education\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": null,\n  \"comparator_events\": null,\n  \"comparator_group_size\": null,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"aphasia types\",\n  \"intervention\": \"very early speech and language therapy (SLT)\",\n  \"comparator\": \"control\",\n  \"outcome_type\": \"binary\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": null,\n  \"comparator_events\": null,\n  \"comparator_group_size\": null,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"Amsterdam-Nijmegen everyday language test (ANELT)\",\n  \"intervention\": \"very early speech and language therapy (SLT)\",\n  \"comparator\": \"control\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 59,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 55,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"history of myocardial infarction\",\n  \"intervention\": \"very early speech and language therapy (SLT)\",\n  \"comparator\": \"control\",\n  \"outcome_type\": \"binary\",\n  \"intervention_events\": 14,\n  \"intervention_group_size\": 62,\n  \"comparator_events\": 3,\n  \"comparator_group_size\": 61,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"communication ability\",\n  \"intervention\": \"very early speech and language therapy (SLT)\",\n  \"comparator\": \"control\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 59,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 55,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n}\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "improvment in ANELT by day 21",
+      "intervention": "higher level of education (>12 years)",
+      "comparator": "<12 years of education",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3343759"
+    },
+    {
+      "outcome": "aphasia types",
+      "intervention": "very early speech and language therapy (SLT)",
+      "comparator": "control",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3343759"
+    },
+    {
+      "outcome": "Amsterdam-Nijmegen everyday language test (ANELT)",
+      "intervention": "very early speech and language therapy (SLT)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 59,
+      "comparator_events": null,
+      "comparator_group_size": 55,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3343759"
+    },
+    {
+      "outcome": "history of myocardial infarction",
+      "intervention": "very early speech and language therapy (SLT)",
+      "comparator": "control",
+      "outcome_type": "binary",
+      "intervention_events": 14,
+      "intervention_group_size": 62,
+      "comparator_events": 3,
+      "comparator_group_size": 61,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3343759"
+    },
+    {
+      "outcome": "communication ability",
+      "intervention": "very early speech and language therapy (SLT)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 59,
+      "comparator_events": null,
+      "comparator_group_size": 55,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3343759"
+    }
+  ]
+}

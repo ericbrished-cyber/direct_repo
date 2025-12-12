@@ -1,0 +1,104 @@
+{
+  "pmcid": "4483334",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5071,
+    "output": 969
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Total weight percentage of calcium\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"Distilled and deionized water (group A)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 18.06,\n      \"intervention_standard_deviation\": 15.68,\n      \"comparator_mean\": 6.98,\n      \"comparator_standard_deviation\": 4.42\n    },\n    {\n      \"outcome\": \"Total weight percentage of calcium\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"Nd:YAG laser (group B)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 18.06,\n      \"intervention_standard_deviation\": 15.68,\n      \"comparator_mean\": 9.36,\n      \"comparator_standard_deviation\": 5.49\n    },\n    {\n      \"outcome\": \"Total weight percentage of calcium\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"CPP-ACP cr\u00e8me (group C)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 18.06,\n      \"intervention_standard_deviation\": 15.68,\n      \"comparator_mean\": 13.17,\n      \"comparator_standard_deviation\": 7.1\n    },\n    {\n      \"outcome\": \"Total weight percentage of phosphate\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"Distilled and deionized water (group A)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 12.68,\n      \"intervention_standard_deviation\": 10.5,\n      \"comparator_mean\": 6.99,\n      \"comparator_standard_deviation\": 3.37\n    },\n    {\n      \"outcome\": \"Total weight percentage of phosphate\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"Nd:YAG laser (group B)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 12.68,\n      \"intervention_standard_deviation\": 10.5,\n      \"comparator_mean\": 8.19,\n      \"comparator_standard_deviation\": 3.3\n    },\n    {\n      \"outcome\": \"Total weight percentage of phosphate\",\n      \"intervention\": \"CPP-ACP plus laser (group D)\",\n      \"comparator\": \"CPP-ACP cr\u00e8me (group C)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 12.68,\n      \"intervention_standard_deviation\": 10.5,\n      \"comparator_mean\": 10.12,\n      \"comparator_standard_deviation\": 2.72\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Distilled and deionized water (group A)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.68,
+      "comparator_mean": 6.98,
+      "comparator_standard_deviation": 4.42,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Nd:YAG laser (group B)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.68,
+      "comparator_mean": 9.36,
+      "comparator_standard_deviation": 5.49,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "CPP-ACP cr\u00e8me (group C)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.68,
+      "comparator_mean": 13.17,
+      "comparator_standard_deviation": 7.1,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Distilled and deionized water (group A)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.5,
+      "comparator_mean": 6.99,
+      "comparator_standard_deviation": 3.37,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Nd:YAG laser (group B)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.5,
+      "comparator_mean": 8.19,
+      "comparator_standard_deviation": 3.3,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "CPP-ACP cr\u00e8me (group C)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.5,
+      "comparator_mean": 10.12,
+      "comparator_standard_deviation": 2.72,
+      "pmcid": "4483334"
+    }
+  ]
+}

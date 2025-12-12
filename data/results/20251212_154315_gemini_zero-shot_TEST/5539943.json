@@ -1,0 +1,104 @@
+{
+  "pmcid": "5539943",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 10657,
+    "output": 847
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"reflections of sustain talk\",\n      \"intervention\": \"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\n      \"comparator\": \"MI training (MI-AU)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"\\\"sustain talk\\\" (ST)\",\n      \"intervention\": \"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\n      \"comparator\": \"baseline\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Frequency of client \\\"change talk\\\" (CT)\",\n      \"intervention\": \"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\n      \"comparator\": \"MI training (MI-AU)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Motivational Interviewing (MI) knowledge\",\n      \"intervention\": \"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\n      \"comparator\": \"baseline\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Motivational Interviewing (MI) knowledge\",\n      \"intervention\": \"MI training (MI-AU)\",\n      \"comparator\": \"baseline\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Motivational Interviewing (MI) knowledge\",\n      \"intervention\": \"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\n      \"comparator\": \"MI training (MI-AU)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "reflections of sustain talk",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "\"sustain talk\" (ST)",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Frequency of client \"change talk\" (CT)",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "MI training (MI-AU)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pmcid": "2430617",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4760,
+    "output": 416
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"HBeAg sero-conversion rate\",\n      \"intervention\": \"60 \u00b5g of immune complexes (YIC)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 17,\n      \"intervention_group_size\": 78,\n      \"comparator_events\": 7,\n      \"comparator_group_size\": 78,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"adverse events\",\n      \"intervention\": \"30 \u00b5g YIC\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"adverse events\",\n      \"intervention\": \"60 \u00b5g of YIC\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "HBeAg sero-conversion rate",
+      "intervention": "60 \u00b5g of immune complexes (YIC)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 17,
+      "intervention_group_size": 78,
+      "comparator_events": 7,
+      "comparator_group_size": 78,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2430617"
+    },
+    {
+      "outcome": "adverse events",
+      "intervention": "30 \u00b5g YIC",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2430617"
+    },
+    {
+      "outcome": "adverse events",
+      "intervention": "60 \u00b5g of YIC",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2430617"
+    }
+  ]
+}

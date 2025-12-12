@@ -1,0 +1,104 @@
+{
+  "pmcid": "2952311",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4479,
+    "output": 826
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Verbal rating scale pain intensity\",\n      \"intervention\": \"Acupressure at distal points\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Verbal rating scale pain intensity\",\n      \"intervention\": \"Acupressure at local points\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"State-Trait Anxiety Inventory-I\",\n      \"intervention\": \"Acupressure at local points\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Salivary alpha-amylase\",\n      \"intervention\": \"Acupressure at distal points\",\n      \"comparator\": \"Acupressure at local points\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Muscle hardness\",\n      \"intervention\": \"Acupressure at local points\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"State-Trait Anxiety Inventory-I\",\n      \"intervention\": \"Acupressure at distal points\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 11,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Verbal rating scale pain intensity",
+      "intervention": "Acupressure at distal points",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    },
+    {
+      "outcome": "Verbal rating scale pain intensity",
+      "intervention": "Acupressure at local points",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    },
+    {
+      "outcome": "State-Trait Anxiety Inventory-I",
+      "intervention": "Acupressure at local points",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    },
+    {
+      "outcome": "Salivary alpha-amylase",
+      "intervention": "Acupressure at distal points",
+      "comparator": "Acupressure at local points",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    },
+    {
+      "outcome": "Muscle hardness",
+      "intervention": "Acupressure at local points",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    },
+    {
+      "outcome": "State-Trait Anxiety Inventory-I",
+      "intervention": "Acupressure at distal points",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 11,
+      "comparator_events": null,
+      "comparator_group_size": 11,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2952311"
+    }
+  ]
+}

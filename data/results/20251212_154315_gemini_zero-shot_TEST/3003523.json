@@ -1,0 +1,104 @@
+{
+  "pmcid": "3003523",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 7491,
+    "output": 929
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Short-Form 36-Items improvement\",\n      \"intervention\": \"Certolizumab 200 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 393,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": 7.8,\n      \"intervention_standard_deviation\": 7.93,\n      \"comparator_mean\": 1.7,\n      \"comparator_standard_deviation\": 8.46\n    },\n    {\n      \"outcome\": \"Short-Form 36-Items improvement\",\n      \"intervention\": \"Certolizumab 400 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 390,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": 8.6,\n      \"intervention_standard_deviation\": 7.9,\n      \"comparator_mean\": 1.7,\n      \"comparator_standard_deviation\": 8.46\n    },\n    {\n      \"outcome\": \"Pain\",\n      \"intervention\": \"Certolizumab 400 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 390,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": 26.2,\n      \"intervention_standard_deviation\": 21.72,\n      \"comparator_mean\": 6.8,\n      \"comparator_standard_deviation\": 22.57\n    },\n    {\n      \"outcome\": \"Health-related quality of life improvement - Short-Form 36-Items improvement\",\n      \"intervention\": \"Certolizumab 200 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 393,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": 7.8,\n      \"intervention_standard_deviation\": 7.93,\n      \"comparator_mean\": 1.7,\n      \"comparator_standard_deviation\": 8.46\n    },\n    {\n      \"outcome\": \"Mental Component Summary improvement\",\n      \"intervention\": \"Certolizumab 400 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 390,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": 6.4,\n      \"intervention_standard_deviation\": 11.85,\n      \"comparator_mean\": 2.1,\n      \"comparator_standard_deviation\": 11.28\n    },\n    {\n      \"outcome\": \"Fatigue Assessment Scale improvement\",\n      \"intervention\": \"Certolizumab 200 mg\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 393,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 199,\n      \"intervention_mean\": -2.6,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -0.8,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 7.8,
+      "intervention_standard_deviation": 7.93,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": 8.46,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 8.6,
+      "intervention_standard_deviation": 7.9,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": 8.46,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Pain",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 26.2,
+      "intervention_standard_deviation": 21.72,
+      "comparator_mean": 6.8,
+      "comparator_standard_deviation": 22.57,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Health-related quality of life improvement - Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 7.8,
+      "intervention_standard_deviation": 7.93,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": 8.46,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Mental Component Summary improvement",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 6.4,
+      "intervention_standard_deviation": 11.85,
+      "comparator_mean": 2.1,
+      "comparator_standard_deviation": 11.28,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Fatigue Assessment Scale improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": -2.6,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -0.8,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    }
+  ]
+}

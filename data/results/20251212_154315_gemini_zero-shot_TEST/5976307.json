@@ -1,0 +1,119 @@
+{
+  "pmcid": "5976307",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5079,
+    "output": 1048
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"induction time\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": 2.46,\n      \"intervention_standard_deviation\": 0.993,\n      \"comparator_mean\": 2.21,\n      \"comparator_standard_deviation\": 1.0\n    },\n    {\n      \"outcome\": \"total procedure time\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": 29.73,\n      \"intervention_standard_deviation\": 12.23,\n      \"comparator_mean\": 29.46,\n      \"comparator_standard_deviation\": 16.04\n    },\n    {\n      \"outcome\": \"awake time\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": 15.08,\n      \"intervention_standard_deviation\": 10.06,\n      \"comparator_mean\": 17.07,\n      \"comparator_standard_deviation\": 11.83\n    },\n    {\n      \"outcome\": \"The incidence rate of all cardiopulmonary adverse events\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 34,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": 45,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The incidence rate of vital sign fluctuation (VSF)\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 17,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": 31,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"the incidence rate of adverse events disturbing the procedure\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 16,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": 5,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The incidence rate of myoclonus\",\n      \"intervention\": \"etomidate\",\n      \"comparator\": \"propofol based on midazolam\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 10,\n      \"intervention_group_size\": 62,\n      \"comparator_events\": 1,\n      \"comparator_group_size\": 62,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "induction time",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 62,
+      "comparator_events": null,
+      "comparator_group_size": 62,
+      "intervention_mean": 2.46,
+      "intervention_standard_deviation": 0.993,
+      "comparator_mean": 2.21,
+      "comparator_standard_deviation": 1.0,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "total procedure time",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 62,
+      "comparator_events": null,
+      "comparator_group_size": 62,
+      "intervention_mean": 29.73,
+      "intervention_standard_deviation": 12.23,
+      "comparator_mean": 29.46,
+      "comparator_standard_deviation": 16.04,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "awake time",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 62,
+      "comparator_events": null,
+      "comparator_group_size": 62,
+      "intervention_mean": 15.08,
+      "intervention_standard_deviation": 10.06,
+      "comparator_mean": 17.07,
+      "comparator_standard_deviation": 11.83,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "The incidence rate of all cardiopulmonary adverse events",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 34,
+      "intervention_group_size": 62,
+      "comparator_events": 45,
+      "comparator_group_size": 62,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "The incidence rate of vital sign fluctuation (VSF)",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 17,
+      "intervention_group_size": 62,
+      "comparator_events": 31,
+      "comparator_group_size": 62,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "the incidence rate of adverse events disturbing the procedure",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 16,
+      "intervention_group_size": 62,
+      "comparator_events": 5,
+      "comparator_group_size": 62,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5976307"
+    },
+    {
+      "outcome": "The incidence rate of myoclonus",
+      "intervention": "etomidate",
+      "comparator": "propofol based on midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 62,
+      "comparator_events": 1,
+      "comparator_group_size": 62,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5976307"
+    }
+  ]
+}

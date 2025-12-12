@@ -1,0 +1,74 @@
+{
+  "pmcid": "5976949",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5672,
+    "output": 804
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"ANGPTL4 expression\",\n      \"intervention\": \"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)\",\n      \"comparator\": \"control group- normal glucose tolerance\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": 23.1,\n      \"intervention_standard_deviation\": 25.6,\n      \"comparator_mean\": 98.3,\n      \"comparator_standard_deviation\": 104.6\n    },\n    {\n      \"outcome\": \"ANGPTL4 expression\",\n      \"intervention\": \"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)\",\n      \"comparator\": \"GDM2 (less tight glycaemic targets, <5.3_mmol/L and <_7.8_mmol/L)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 23.1,\n      \"intervention_standard_deviation\": 25.6,\n      \"comparator_mean\": 21.5,\n      \"comparator_standard_deviation\": 25.8\n    },\n    {\n      \"outcome\": \"leptin/adiponectin ratio (LAR)\",\n      \"intervention\": \"GDM2 (less tight glycaemic targets, <5.3 mmol/L and < 7.8 mmol/L)\",\n      \"comparator\": \"GDM1 (tight glycaemic targets, fasting blood glucose_<_5.1_mmol/L and <7.0_mmol/L postprandial) postprandial,), control group- normal glucose tolerance\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 21,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 1.7,\n      \"intervention_standard_deviation\": 1.66,\n      \"comparator_mean\": 0.97,\n      \"comparator_standard_deviation\": 1.31\n    },\n    {\n      \"outcome\": \"leptin/adiponectin ratio (LAR)\",\n      \"intervention\": \"GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)\",\n      \"comparator\": \"control group- normal glucose tolerance\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 20,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": 0.97,\n      \"intervention_standard_deviation\": 1.31,\n      \"comparator_mean\": 0.72,\n      \"comparator_standard_deviation\": 0.46\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "ANGPTL4 expression",
+      "intervention": "GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)",
+      "comparator": "control group- normal glucose tolerance",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 23.1,
+      "intervention_standard_deviation": 25.6,
+      "comparator_mean": 98.3,
+      "comparator_standard_deviation": 104.6,
+      "pmcid": "5976949"
+    },
+    {
+      "outcome": "ANGPTL4 expression",
+      "intervention": "GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)",
+      "comparator": "GDM2 (less tight glycaemic targets, <5.3_mmol/L and <_7.8_mmol/L)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 23.1,
+      "intervention_standard_deviation": 25.6,
+      "comparator_mean": 21.5,
+      "comparator_standard_deviation": 25.8,
+      "pmcid": "5976949"
+    },
+    {
+      "outcome": "leptin/adiponectin ratio (LAR)",
+      "intervention": "GDM2 (less tight glycaemic targets, <5.3 mmol/L and < 7.8 mmol/L)",
+      "comparator": "GDM1 (tight glycaemic targets, fasting blood glucose_<_5.1_mmol/L and <7.0_mmol/L postprandial) postprandial,), control group- normal glucose tolerance",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 21,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 1.7,
+      "intervention_standard_deviation": 1.66,
+      "comparator_mean": 0.97,
+      "comparator_standard_deviation": 1.31,
+      "pmcid": "5976949"
+    },
+    {
+      "outcome": "leptin/adiponectin ratio (LAR)",
+      "intervention": "GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)",
+      "comparator": "control group- normal glucose tolerance",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 0.97,
+      "intervention_standard_deviation": 1.31,
+      "comparator_mean": 0.72,
+      "comparator_standard_deviation": 0.46,
+      "pmcid": "5976949"
+    }
+  ]
+}

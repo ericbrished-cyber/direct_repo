@@ -1,0 +1,44 @@
+{
+  "pmcid": "4830045",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4328,
+    "output": 306
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Birth status\",\n      \"intervention\": \"Patients in the 3h group\",\n      \"comparator\": \"Patients in the 20h group\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 32,\n      \"intervention_group_size\": 74,\n      \"comparator_events\": 22,\n      \"comparator_group_size\": 60,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Embryo quality\",\n      \"intervention\": \"Patients in the 3h group\",\n      \"comparator\": \"Patients in the 20h group\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 524,\n      \"intervention_group_size\": 672,\n      \"comparator_events\": 503,\n      \"comparator_group_size\": 700,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Birth status",
+      "intervention": "Patients in the 3h group",
+      "comparator": "Patients in the 20h group",
+      "outcome_type": "binary",
+      "intervention_events": 32,
+      "intervention_group_size": 74,
+      "comparator_events": 22,
+      "comparator_group_size": 60,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4830045"
+    },
+    {
+      "outcome": "Embryo quality",
+      "intervention": "Patients in the 3h group",
+      "comparator": "Patients in the 20h group",
+      "outcome_type": "binary",
+      "intervention_events": 524,
+      "intervention_group_size": 672,
+      "comparator_events": 503,
+      "comparator_group_size": 700,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4830045"
+    }
+  ]
+}

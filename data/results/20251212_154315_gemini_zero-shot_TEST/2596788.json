@@ -1,0 +1,29 @@
+{
+  "pmcid": "2596788",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5194,
+    "output": 154
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"GERD-knowledge\",\n      \"intervention\": \"education\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 102,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 109,\n      \"intervention_mean\": 17.1,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 14.0,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "GERD-knowledge",
+      "intervention": "education",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 102,
+      "comparator_events": null,
+      "comparator_group_size": 109,
+      "intervention_mean": 17.1,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 14.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "2596788"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "3496170",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 7145,
+    "output": 793
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Learned irrelevance index\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 0.2,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"P3a amplitude\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"P3a latency\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Self-report questionnaire\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"N1 latency\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"N1 amplitude\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Learned irrelevance index",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.2,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "P3a amplitude",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "P3a latency",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "Self-report questionnaire",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "N1 latency",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "N1 amplitude",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    }
+  ]
+}

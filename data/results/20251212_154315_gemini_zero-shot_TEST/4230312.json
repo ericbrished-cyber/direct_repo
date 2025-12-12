@@ -1,0 +1,44 @@
+{
+  "pmcid": "4230312",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 7561,
+    "output": 312
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"improvement of disorder\",\n      \"intervention\": \"quetiapine 600 mg/day\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 289,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 204,\n      \"intervention_mean\": -14.88,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -11.61,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"improvement of disorder\",\n      \"intervention\": \"quetiapine 300 mg/day\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 283,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 204,\n      \"intervention_mean\": -15.58,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -11.61,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "improvement of disorder",
+      "intervention": "quetiapine 600 mg/day",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 289,
+      "comparator_events": null,
+      "comparator_group_size": 204,
+      "intervention_mean": -14.88,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -11.61,
+      "comparator_standard_deviation": null,
+      "pmcid": "4230312"
+    },
+    {
+      "outcome": "improvement of disorder",
+      "intervention": "quetiapine 300 mg/day",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 283,
+      "comparator_events": null,
+      "comparator_group_size": 204,
+      "intervention_mean": -15.58,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -11.61,
+      "comparator_standard_deviation": null,
+      "pmcid": "4230312"
+    }
+  ]
+}

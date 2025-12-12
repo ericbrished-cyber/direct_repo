@@ -1,0 +1,29 @@
+{
+  "pmcid": "4140238",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 6779,
+    "output": 167
+  },
+  "raw_text": "```json\n{\"extractions\":[\n{\n  \"outcome\": \"ocular itching for visit 3B at 7 min\",\n  \"intervention\": \"bepotastine besilate ophthalmic solution (BBOS) 1.5%\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 68,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 69,\n  \"intervention_mean\": 1.2,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": 2.1,\n  \"comparator_standard_deviation\": null\n}\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "ocular itching for visit 3B at 7 min",
+      "intervention": "bepotastine besilate ophthalmic solution (BBOS) 1.5%",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 68,
+      "comparator_events": null,
+      "comparator_group_size": 69,
+      "intervention_mean": 1.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 2.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "4140238"
+    }
+  ]
+}

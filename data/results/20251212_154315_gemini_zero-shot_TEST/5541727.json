@@ -1,0 +1,119 @@
+{
+  "pmcid": "5541727",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 7739,
+    "output": 959
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Tibial bone expansion\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 6,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 4,\n      \"intervention_mean\": -0.7,\n      \"intervention_standard_deviation\": 1.5,\n      \"comparator_mean\": 1.0,\n      \"comparator_standard_deviation\": 1.1\n    },\n    {\n      \"outcome\": \"Treatment-related serious adverse events\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 0,\n      \"intervention_group_size\": 11,\n      \"comparator_events\": 0,\n      \"comparator_group_size\": 6,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Activities of daily living\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Symptoms\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"SF-36 bodily pain score\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"medial tibial cartilage volume loss\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 6,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 4,\n      \"intervention_mean\": -1.4,\n      \"intervention_standard_deviation\": 4.2,\n      \"comparator_mean\": -3.3,\n      \"comparator_standard_deviation\": 5.3\n    },\n    {\n      \"outcome\": \"lateral tibial cartilage volume loss\",\n      \"intervention\": \"Allogeneic mesenchymal precursor cells\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 6,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 4,\n      \"intervention_mean\": -3.7,\n      \"intervention_standard_deviation\": 3.4,\n      \"comparator_mean\": -0.8,\n      \"comparator_standard_deviation\": 3.5\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Tibial bone expansion",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 6,
+      "comparator_events": null,
+      "comparator_group_size": 4,
+      "intervention_mean": -0.7,
+      "intervention_standard_deviation": 1.5,
+      "comparator_mean": 1.0,
+      "comparator_standard_deviation": 1.1,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "Treatment-related serious adverse events",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 11,
+      "comparator_events": 0,
+      "comparator_group_size": 6,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "Activities of daily living",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "Symptoms",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "SF-36 bodily pain score",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "medial tibial cartilage volume loss",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 6,
+      "comparator_events": null,
+      "comparator_group_size": 4,
+      "intervention_mean": -1.4,
+      "intervention_standard_deviation": 4.2,
+      "comparator_mean": -3.3,
+      "comparator_standard_deviation": 5.3,
+      "pmcid": "5541727"
+    },
+    {
+      "outcome": "lateral tibial cartilage volume loss",
+      "intervention": "Allogeneic mesenchymal precursor cells",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 6,
+      "comparator_events": null,
+      "comparator_group_size": 4,
+      "intervention_mean": -3.7,
+      "intervention_standard_deviation": 3.4,
+      "comparator_mean": -0.8,
+      "comparator_standard_deviation": 3.5,
+      "pmcid": "5541727"
+    }
+  ]
+}

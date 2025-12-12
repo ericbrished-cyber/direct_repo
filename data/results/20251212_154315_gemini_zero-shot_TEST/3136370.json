@@ -1,0 +1,74 @@
+{
+  "pmcid": "3136370",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4393,
+    "output": 546
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Fibromyalgia Impact Questionnaire scores\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Fibromyalgia Impact Questionnaire scores\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Casein shake (Placebo)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Center for Epidemiologic Studies Depression Scale score\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Center for Epidemiologic Studies Depression Scale score\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Casein shake (Placebo)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    }
+  ]
+}

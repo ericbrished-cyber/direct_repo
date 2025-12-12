@@ -1,0 +1,44 @@
+{
+  "pmcid": "1574360",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 4926,
+    "output": 386
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"The amount of saturated fat in the foods purchased\",\n      \"intervention\": \"fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat\",\n      \"comparator\": \"control received general non-specific advice about how to eat a diet lower in saturated fat\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 251,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 246,\n      \"intervention_mean\": 0.77,\n      \"intervention_standard_deviation\": 1.37,\n      \"comparator_mean\": 0.04,\n      \"comparator_standard_deviation\": 0.32\n    },\n    {\n      \"outcome\": \"the average cost of the food\",\n      \"intervention\": \"fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat\",\n      \"comparator\": \"control received general non-specific advice about how to eat a diet lower in saturated fat\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 251,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 246,\n      \"intervention_mean\": 0.63,\n      \"intervention_standard_deviation\": 0.4,\n      \"comparator_mean\": 0.62,\n      \"comparator_standard_deviation\": 0.36\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "The amount of saturated fat in the foods purchased",
+      "intervention": "fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat",
+      "comparator": "control received general non-specific advice about how to eat a diet lower in saturated fat",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 251,
+      "comparator_events": null,
+      "comparator_group_size": 246,
+      "intervention_mean": 0.77,
+      "intervention_standard_deviation": 1.37,
+      "comparator_mean": 0.04,
+      "comparator_standard_deviation": 0.32,
+      "pmcid": "1574360"
+    },
+    {
+      "outcome": "the average cost of the food",
+      "intervention": "fully automated advice that recommended specific switches from selected products higher in saturated fat to alternate similar products lower in saturated fat",
+      "comparator": "control received general non-specific advice about how to eat a diet lower in saturated fat",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 251,
+      "comparator_events": null,
+      "comparator_group_size": 246,
+      "intervention_mean": 0.63,
+      "intervention_standard_deviation": 0.4,
+      "comparator_mean": 0.62,
+      "comparator_standard_deviation": 0.36,
+      "pmcid": "1574360"
+    }
+  ]
+}

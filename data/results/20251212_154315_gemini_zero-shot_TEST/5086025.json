@@ -1,0 +1,104 @@
+{
+  "pmcid": "5086025",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12928,
+    "output": 844
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Intuitive eating total score\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 3.45,\n      \"intervention_standard_deviation\": 0.55,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Psychological flexibility\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 18.23,\n      \"intervention_standard_deviation\": 8.14,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"General mental health\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 50.24,\n      \"intervention_standard_deviation\": 7.41,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Binge eating\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 7,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"BMI\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 32.81,\n      \"intervention_standard_deviation\": 5.31,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"General physical health\",\n      \"intervention\": \"Intuitive Eating and Acceptance and Commitment Therapy\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 26,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 50.87,\n      \"intervention_standard_deviation\": 11.02,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Intuitive eating total score",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 3.45,
+      "intervention_standard_deviation": 0.55,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    },
+    {
+      "outcome": "Psychological flexibility",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 18.23,
+      "intervention_standard_deviation": 8.14,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    },
+    {
+      "outcome": "General mental health",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 50.24,
+      "intervention_standard_deviation": 7.41,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    },
+    {
+      "outcome": "Binge eating",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 7,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    },
+    {
+      "outcome": "BMI",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 32.81,
+      "intervention_standard_deviation": 5.31,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    },
+    {
+      "outcome": "General physical health",
+      "intervention": "Intuitive Eating and Acceptance and Commitment Therapy",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 26,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 50.87,
+      "intervention_standard_deviation": 11.02,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5086025"
+    }
+  ]
+}

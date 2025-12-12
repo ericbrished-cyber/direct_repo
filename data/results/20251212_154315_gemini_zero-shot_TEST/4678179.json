@@ -1,0 +1,74 @@
+{
+  "pmcid": "4678179",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 7148,
+    "output": 613
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"progression-free-survival (PFS)\",\n      \"intervention\": \"vismodegib plus gemcitabine (GV)\",\n      \"comparator\": \"gemcitabine plus placebo (GP)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 53,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 53,\n      \"intervention_mean\": 4.0,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 2.5,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Median overall survival (OS)\",\n      \"intervention\": \"vismodegib plus gemcitabine (GV)\",\n      \"comparator\": \"gemcitabine plus placebo (GP)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 53,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 53,\n      \"intervention_mean\": 6.9,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 6.1,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Response rates\",\n      \"intervention\": \"vismodegib plus gemcitabine (GV)\",\n      \"comparator\": \"gemcitabine plus placebo (GP)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 53,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 53,\n      \"intervention_mean\": 8.0,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 13.0,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"rate of adverse events\",\n      \"intervention\": \"vismodegib plus gemcitabine (GV)\",\n      \"comparator\": \"gemcitabine plus placebo (GP)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 53,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 53,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "progression-free-survival (PFS)",
+      "intervention": "vismodegib plus gemcitabine (GV)",
+      "comparator": "gemcitabine plus placebo (GP)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 53,
+      "comparator_events": null,
+      "comparator_group_size": 53,
+      "intervention_mean": 4.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 2.5,
+      "comparator_standard_deviation": null,
+      "pmcid": "4678179"
+    },
+    {
+      "outcome": "Median overall survival (OS)",
+      "intervention": "vismodegib plus gemcitabine (GV)",
+      "comparator": "gemcitabine plus placebo (GP)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 53,
+      "comparator_events": null,
+      "comparator_group_size": 53,
+      "intervention_mean": 6.9,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 6.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "4678179"
+    },
+    {
+      "outcome": "Response rates",
+      "intervention": "vismodegib plus gemcitabine (GV)",
+      "comparator": "gemcitabine plus placebo (GP)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 53,
+      "comparator_events": null,
+      "comparator_group_size": 53,
+      "intervention_mean": 8.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 13.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "4678179"
+    },
+    {
+      "outcome": "rate of adverse events",
+      "intervention": "vismodegib plus gemcitabine (GV)",
+      "comparator": "gemcitabine plus placebo (GP)",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 53,
+      "comparator_events": null,
+      "comparator_group_size": 53,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4678179"
+    }
+  ]
+}

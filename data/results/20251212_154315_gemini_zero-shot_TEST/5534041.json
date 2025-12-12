@@ -1,0 +1,89 @@
+{
+  "pmcid": "5534041",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 9438,
+    "output": 897
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"composite z-scores in autism spectrum disorder (ASD)\",\n      \"intervention\": \"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"comparator\": \"sham stimulation\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 0.11,\n      \"intervention_standard_deviation\": 0.81,\n      \"comparator_mean\": -0.25,\n      \"comparator_standard_deviation\": 0.71\n    },\n    {\n      \"outcome\": \"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\n      \"intervention\": \"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"comparator\": \"sham stimulation\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 0.11,\n      \"intervention_standard_deviation\": 0.81,\n      \"comparator_mean\": -0.25,\n      \"comparator_standard_deviation\": 0.71\n    },\n    {\n      \"outcome\": \"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\n      \"intervention\": \"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"comparator\": \"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 0.11,\n      \"intervention_standard_deviation\": 0.81,\n      \"comparator_mean\": 0.13,\n      \"comparator_standard_deviation\": 0.82\n    },\n    {\n      \"outcome\": \"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\n      \"intervention\": \"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"comparator\": \"sham stimulation\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 0.13,\n      \"intervention_standard_deviation\": 0.82,\n      \"comparator_mean\": -0.25,\n      \"comparator_standard_deviation\": 0.71\n    },\n    {\n      \"outcome\": \"composite z-scores in autism spectrum disorder (ASD)\",\n      \"intervention\": \"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\n      \"comparator\": \"sham stimulation\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 0.13,\n      \"intervention_standard_deviation\": 0.82,\n      \"comparator_mean\": -0.25,\n      \"comparator_standard_deviation\": 0.71\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "composite z-scores in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": 0.13,
+      "comparator_standard_deviation": 0.82,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.13,
+      "intervention_standard_deviation": 0.82,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "composite z-scores in autism spectrum disorder (ASD)",
+      "intervention": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.13,
+      "intervention_standard_deviation": 0.82,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    }
+  ]
+}

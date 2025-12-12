@@ -1,0 +1,74 @@
+{
+  "pmcid": "4323894",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 5850,
+    "output": 569
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Improvement in Glasgow outcome score at 6 months post-trauma\",\n      \"intervention\": \"Deep-cooling\",\n      \"comparator\": \"Mild-cooling\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 10,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Improvement in Glasgow outcome score at 6 months post-trauma\",\n      \"intervention\": \"Deep-cooling\",\n      \"comparator\": \"No cooling\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 13,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Rate of complications\",\n      \"intervention\": \"Mild-cooling or deep-cooling\",\n      \"comparator\": \"No cooling\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 10,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": 6,\n      \"comparator_group_size\": 13,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Improvement in Glasgow outcome score at 6 months post-trauma\",\n      \"intervention\": \"Mild-cooling\",\n      \"comparator\": \"No cooling\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 10,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 13,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Deep-cooling",
+      "comparator": "Mild-cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Deep-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Rate of complications",
+      "intervention": "Mild-cooling or deep-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 19,
+      "comparator_events": 6,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Mild-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    }
+  ]
+}

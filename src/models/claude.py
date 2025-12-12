@@ -91,7 +91,7 @@ class ClaudeModel(ModelAdapter):
             max_tokens=4096,
             messages=messages,
             output_config={
-                "effort": "high"  # Options: "low", "medium", "high" (default)
+                "effort": "medium"  # Options: "low", "medium", "high" (default)
             }
         )
 

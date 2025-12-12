@@ -1,0 +1,104 @@
+{
+  "pmcid": "5781260",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 6622,
+    "output": 811
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Exercise-induced Creatine kinase (CK)\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 17,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"exercise-related loss of muscle strength (MVC)\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 17,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Glutathione peroxidase (GPxP)\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 17,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"adverse events\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 22,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Movement induced pain (VAS)\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 17,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Interleukin 6\",\n      \"intervention\": \"lemon verbena extract\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 17,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Exercise-induced Creatine kinase (CK)",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 17,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    },
+    {
+      "outcome": "exercise-related loss of muscle strength (MVC)",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 17,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    },
+    {
+      "outcome": "Glutathione peroxidase (GPxP)",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 17,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    },
+    {
+      "outcome": "adverse events",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    },
+    {
+      "outcome": "Movement induced pain (VAS)",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 17,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    },
+    {
+      "outcome": "Interleukin 6",
+      "intervention": "lemon verbena extract",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 17,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5781260"
+    }
+  ]
+}
