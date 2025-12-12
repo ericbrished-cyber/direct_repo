@@ -47,9 +47,9 @@ def main():
         print("Error: Extraction failed or returned no run name. Aborting.")
         sys.exit(1)
 
-    # ---------------------------------------------------------
+
     # STEP 2: EVALUATION
-    # ---------------------------------------------------------
+
     if not args.skip_eval:
         print(f"\nPhase 2: Evaluating run '{run_name}'...")
         
