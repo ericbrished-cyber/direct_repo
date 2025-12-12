@@ -4,6 +4,33 @@ from typing import List, Dict, Any
 from sklearn.metrics import mean_squared_error
 from difflib import SequenceMatcher
 
+def _filter_subset(gold_standard: List[Dict], extractions: List[Dict], subset: str = None):
+    """
+    Optionally restrict evaluation to a subset.
+    Currently supports:
+      - subset == "figures": only gold rows with is_data_in_figure_graphics == True
+        and extractions that match those ICO keys.
+    """
+    if subset != "figures":
+        return gold_standard, extractions
+
+    gold_subset = [row for row in gold_standard if row.get("is_data_in_figure_graphics")]
+    if not gold_subset:
+        return [], []
+
+    def _key(row: Dict[str, Any]):
+        return (
+            str(row.get("pmcid")),
+            row.get("intervention", ""),
+            row.get("comparator", ""),
+            row.get("outcome", ""),
+            row.get("outcome_type", ""),
+        )
+
+    allowed_keys = {_key(row) for row in gold_subset}
+    pred_subset = [row for row in extractions if _key(row) in allowed_keys]
+    return gold_subset, pred_subset
+
 class Evaluator:
     def __init__(self, gold_standard: List[Dict], extractions: List[Dict]):
         # Restrict gold to only the PMCIDs present in predictions to avoid counting missing PMCIDs as FN when running subset evaluations
@@ -224,6 +251,10 @@ class Evaluator:
             "by_field": by_field
         }
 
-def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, Any]:
-    evaluator = Evaluator(gold_standard, extractions)
-    return evaluator.calculate_metrics()
+def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict], subset: str = None) -> Dict[str, Any]:
+    gold_filtered, pred_filtered = _filter_subset(gold_standard, extractions, subset)
+    evaluator = Evaluator(gold_filtered, pred_filtered)
+    metrics = evaluator.calculate_metrics()
+    if subset:
+        metrics["subset"] = subset
+    return metrics

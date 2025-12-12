@@ -68,14 +68,19 @@ def run_evaluation_task(run_folder, split):
     if not gold_standard:
         print(f"Error: No gold standard data found for split '{split}'.")
         return
+    
+    figure_gold_count = sum(1 for item in gold_standard if item.get("is_data_in_figure_graphics"))
 
     # 3. Calculate Metrics
     print("Step 3: Calculating metrics...")
     all_metrics = calculate_metrics(extractions, gold_standard)
+    figure_metrics = calculate_metrics(extractions, gold_standard, subset="figures")
     
     # Extract the parts
     agg = all_metrics["aggregated"]
     by_field = all_metrics["by_field"]
+    fig_agg = figure_metrics["aggregated"]
+    fig_by_field = figure_metrics["by_field"]
 
     # 4. Output Results
     print("\n" + "="*60)
@@ -98,9 +103,29 @@ def run_evaluation_task(run_folder, split):
     for field, m in by_field.items():
         print(f"{field:<35} | {m['precision']:.1%}   | {m['recall']:.1%}   | {m['f1']:.1%}   | {m['rmse']:.2f}")
 
+    print("\n--- FIGURE-ONLY METRICS (is_data_in_figure_graphics=True) ---")
+    print(f"Gold rows tagged as figures: {figure_gold_count}")
+    print(f"{'METRIC':<20} {'AGGREGATED':<10}")
+    print("-" * 60)
+    print(f"{'Precision':<20} {fig_agg['precision']:.2%}")
+    print(f"{'Recall':<20} {fig_agg['recall']:.2%}")
+    print(f"{'F1 Score':<20} {fig_agg['f1']:.2%}")
+    print(f"{'RMSE':<20} {fig_agg['rmse']:.4f}")
+    print(f"{'Exact Match':<20} {fig_agg['exact_match']:.2%}")
+    print("-" * 60)
+
+    print("\n--- FIGURE-ONLY BREAKDOWN BY FIELD TYPE ---")
+    print(header)
+    print("-" * len(header))
+    for field, m in fig_by_field.items():
+        print(f"{field:<35} | {m['precision']:.1%}   | {m['recall']:.1%}   | {m['f1']:.1%}   | {m['rmse']:.2f}")
+
     print("="*60)
 
     # Save metrics to file
+    # Keep overall metrics at the top level for backward compatibility and
+    # tuck figure-only metrics under a new key in the same file.
+    all_metrics["figure_subset"] = figure_metrics
     save_path = RESULTS_DIR / run_folder / "evaluation_metrics.json"
     with open(save_path, 'w') as f:
         json.dump(all_metrics, f, indent=2)
