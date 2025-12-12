@@ -2,9 +2,11 @@ import json
 import argparse
 import sys
 import os
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 from tqdm import tqdm
 from pathlib import Path
+import random
 
 # Add project root to path so we can import 'src'
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -17,26 +19,92 @@ from src.models.gpt import GPTModel
 from src.models.claude import ClaudeModel
 from src.models.gemini import GeminiModel
 
-def run_extraction(model_name: str, strategy: str, split: str, pmcids = None, dry_run: bool = False):
-    # 1. Setup Run Directory
+# Configuration
+MAX_RETRIES = 5
+INITIAL_BACKOFF = 2
+MAX_BACKOFF = 120
+TOTAL_TIMEOUT_HOURS = 4
+
+RETRYABLE_ERRORS = ("rate_limit", "overloaded", "timeout", "connection", "server_error")
+
+def exponential_backoff(attempt: int) -> float:
+    """Calculate wait time with exponential backoff and jitter."""
+    wait = min(INITIAL_BACKOFF * (2 ** attempt), MAX_BACKOFF)
+    jitter = random.uniform(0, wait * 0.1)
+    return wait + jitter
+
+def is_retryable_error(error: Exception) -> bool:
+    """Check if error should trigger retry."""
+    error_str = str(error).lower()
+    return any(keyword in error_str for keyword in RETRYABLE_ERRORS)
+
+def get_failed_pmcids(output_dir: Path) -> set:
+    """Get list of PMCIDs that have error files."""
+    error_files = output_dir.glob("*_error.txt")
+    return {f.stem.replace("_error", "") for f in error_files}
+
+def extract_single_pdf(pmcid: str, model, prompt_builder, strategy: str, dry_run: bool = False):
+    """Extract data from a single PDF. Returns (success: bool, data: dict, error: str)."""
+    try:
+        payload = prompt_builder.build(pmcid, mode=strategy)
+        raw_text, usage = model.generate(payload, dry_run=dry_run)
+        parsed_data = clean_and_parse_json(raw_text)
+        
+        extraction_list = []
+        if parsed_data:
+            if isinstance(parsed_data, dict):
+                raw_list = parsed_data.get("extractions", [parsed_data])
+            elif isinstance(parsed_data, list):
+                raw_list = parsed_data
+            else:
+                raw_list = []
+
+            for item in raw_list:
+                if isinstance(item, dict):
+                    item['pmcid'] = str(pmcid)
+                    extraction_list.append(item)
+        
+        return True, {"extraction": extraction_list, "raw_text": raw_text, "usage": usage}, None
+
+    except Exception as e:
+        return False, None, str(e)
+
+def save_result(pmcid: str, data: dict, output_dir: Path, model_name: str, strategy: str):
+    """Save successful extraction result."""
+    result_file = output_dir / f"{pmcid}.json"
+    file_data = {
+        "pmcid": pmcid,
+        "config": {"model": model_name, "strategy": strategy},
+        "usage": data.get("usage", {}),
+        "raw_text": data.get("raw_text", ""),
+        "extraction": data.get("extraction", [])
+    }
+    with open(result_file, 'w', encoding='utf-8') as f:
+        json.dump(file_data, f, indent=2)
+
+def save_error(pmcid: str, error: str, output_dir: Path):
+    """Save error log."""
+    error_file = output_dir / f"{pmcid}_error.txt"
+    with open(error_file, 'w') as f:
+        f.write(f"Error: {error}\n")
+
+def run_extraction(model_name: str, strategy: str, split: str, 
+                   pmcids=None, dry_run: bool = False):
+    # Setup
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    # When running a specific PMCID, suffix with _custom instead of the split
     run_suffix = "custom" if pmcids else split
     run_name = f"{timestamp}_{model_name}_{strategy}_{run_suffix}"
     output_dir = RESULTS_DIR / run_name
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"--- Starting Extraction Run: {run_name} ---")
-    print(f"Output Dir: {output_dir}")
+    print(f"Starting Extraction: {run_name}")
+    print(f"Output: {output_dir}")
 
-    # 2. Initialize Components
+    # Initialize
     loader = DataLoader()
-    # Get all PMCIDs for a split or PMCID overwrite to just run a single article.
-    provided_pmcids = pmcids
     pmcids = pmcids or loader.get_split_pmcids(split)
     prompt_builder = PromptBuilder(loader)
     
-    # Model Factory
     if model_name == "gpt":
         model = GPTModel()
     elif model_name == "claude":
@@ -46,85 +114,108 @@ def run_extraction(model_name: str, strategy: str, split: str, pmcids = None, dr
     else:
         raise ValueError(f"Unknown model: {model_name}")
 
-    if provided_pmcids:
-        print(f"Running extraction for specified PMCID(s): {', '.join(map(str, pmcids))}")
-    else:
-        print(f"Found {len(pmcids)} documents in split '{split}'")
+    print(f"Processing {len(pmcids)} documents")
 
-    # 3. Extraction Loop
-    stats = {"total": len(pmcids), "successful": 0, "failed": 0, "empty": 0,
-              "start_time": datetime.now().strftime("%Y%m%d_%H%M%S"), "end_time": None,}
+    # Statistics
+    stats = {
+        "total": len(pmcids),
+        "successful": 0,
+        "failed": 0,
+        "empty": 0,
+        "start_time": datetime.now().strftime("%Y%m%d_%H%M%S"),
+        "total_retries": 0
+    }
     
-    for pmcid in tqdm(pmcids, desc="Extracting"):
-        try:
-            # Build Prompt
-            payload = prompt_builder.build(pmcid, mode=strategy)
-
-            # Generate
-            raw_text, usage = model.generate(payload, dry_run=dry_run)
-
-            # Parse
-            parsed_data = clean_and_parse_json(raw_text)
+    retry_counts = {pmcid: 0 for pmcid in pmcids}
+    start_time = datetime.now()
+    timeout = timedelta(hours=TOTAL_TIMEOUT_HOURS)
+    
+    # Main loop
+    iteration = 0
+    with tqdm(total=len(pmcids), desc="Processing") as pbar:
+        while True:
+            # Check for failed PDFs
+            failed_pmcids = get_failed_pmcids(output_dir)
+            if not failed_pmcids:
+                break
+                
+            iteration += 1
             
-            # --- DATA VALIDATION & INJECTION ---
-            extraction_list = []
+            # Check timeout
+            if datetime.now() - start_time > timeout:
+                print(f"Timeout reached ({TOTAL_TIMEOUT_HOURS}h)")
+                print(f"Remaining: {len(failed_pmcids)} PDFs")
+                break
             
-            if parsed_data:
-                # Normalize to list
-                if isinstance(parsed_data, dict):
-                    # Handle wrapper keys like {"extractions": [...]}
-                    if "extractions" in parsed_data and isinstance(parsed_data["extractions"], list):
-                        raw_list = parsed_data["extractions"]
-                    else:
-                        raw_list = [parsed_data]
-                elif isinstance(parsed_data, list):
-                    raw_list = parsed_data
+            print(f"\nIteration {iteration}: {len(failed_pmcids)} PDFs to retry")
+            
+            for pmcid in list(failed_pmcids):
+                # Check retry limit
+                if retry_counts[pmcid] >= MAX_RETRIES:
+                    print(f"Max retries reached for {pmcid}")
+                    stats["failed"] += 1
+                    continue
+                
+                # Backoff
+                if retry_counts[pmcid] > 0:
+                    wait = exponential_backoff(retry_counts[pmcid] - 1)
+                    print(f"Waiting {wait:.1f}s before retry {retry_counts[pmcid]+1} for {pmcid}")
+                    time.sleep(wait)
+                
+                retry_counts[pmcid] += 1
+                if retry_counts[pmcid] > 1:
+                    stats["total_retries"] += 1
+                
+                # Attempt extraction
+                success, data, error = extract_single_pdf(pmcid, model, prompt_builder, strategy, dry_run)
+                
+                if success:
+                    save_result(pmcid, data, output_dir, model_name, strategy)
+                    # Remove error file
+                    error_file = output_dir / f"{pmcid}_error.txt"
+                    if error_file.exists():
+                        error_file.unlink()
+                    stats["successful"] += 1
+                    if not data["extraction"]:
+                        stats["empty"] += 1
+                    pbar.update(1)
+                    print(f"Success: {pmcid} (attempt {retry_counts[pmcid]})")
                 else:
-                    raw_list = []
+                    if is_retryable_error(Exception(error)):
+                        print(f"Retryable error for {pmcid} (attempt {retry_counts[pmcid]}/{MAX_RETRIES})")
+                        save_error(pmcid, error, output_dir)
+                    else:
+                        print(f"Permanent error for {pmcid}")
+                        save_error(pmcid, f"PERMANENT: {error}", output_dir)
+                        stats["failed"] += 1
+                        pbar.update(1)
 
-                # Inject PMCID into every extracted object
-                for item in raw_list:
-                    if isinstance(item, dict):
-                        item['pmcid'] = str(pmcid)
-                        extraction_list.append(item)
-            
-            if not extraction_list:
-                stats["empty"] += 1
-
-            # Save Individual Result (Atomic Save)
-            result_file = output_dir / f"{pmcid}.json"
-            file_data = {
-                "pmcid": pmcid,
-                "config": {"model": model_name, "strategy": strategy},
-                "usage": usage,
-                "raw_text": raw_text,
-                "extraction": extraction_list 
-            }
-
-            with open(result_file, 'w', encoding='utf-8') as f:
-                json.dump(file_data, f, indent=2)
-
-            stats["successful"] += 1
-
-        except Exception as e:
-            print(f"Error processing {pmcid}: {e}")
-            stats["failed"] += 1
-            # Save error log to avoid crashing the whole run
-            with open(output_dir / f"{pmcid}_error.txt", 'w') as f:
-                f.write(str(e))
-
-    # 4. Save Run Metadata
+    # Save metadata
     stats["end_time"] = datetime.now().strftime("%Y%m%d_%H%M%S")
+    stats["final_failed"] = list(get_failed_pmcids(output_dir))
+    
     with open(output_dir / "run_metadata.json", 'w') as f:
         json.dump(stats, f, indent=2)
 
-    print(f"\nExtraction complete. Results saved to {output_dir}")
-    print(f"Run 'python scripts/run_evaluation.py --run_folder {run_name} --split {split}' to evaluate.")
+    # Summary
+    print(f"\n{'='*60}")
+    print(f"EXTRACTION COMPLETE")
+    print(f"{'='*60}")
+    print(f"Total:       {stats['total']}")
+    print(f"Successful:  {stats['successful']}")
+    print(f"Failed:      {stats['failed']}")
+    print(f"Empty:       {stats['empty']}")
+    print(f"Retries:     {stats['total_retries']}")
+    
+    if stats["final_failed"]:
+        print(f"\nFailed PDFs: {', '.join(stats['final_failed'])}")
+    
+    print(f"\nResults: {output_dir}")
 
     return run_name
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run Extraction Phase")
+    parser = argparse.ArgumentParser(description="Run Extraction Phase with Retry Logic")
     parser.add_argument("--model", type=str, required=True, choices=["gpt", "claude", "gemini"])
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"])
     parser.add_argument("--split", type=str, default="DEV", help="Split to extract (DEV, TEST)")

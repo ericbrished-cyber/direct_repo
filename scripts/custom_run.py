@@ -21,7 +21,7 @@ SPLIT = "DEV"
 STRATEGY = "zero-shot"
 
 # Select Temperature: 0.0 (deterministic) to 1.0 (creative)
-TEMPERATURE = 0.0
+#TEMPERATURE = 0.0
 
 # Optional: run a specific list of PMCIDs (strings or ints). Leave empty to run the whole split.
 PMCIDS = [
