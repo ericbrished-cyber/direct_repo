@@ -10,7 +10,7 @@ class GPTModel(ModelAdapter):
     """
     OpenAI GPT-5.1 implementation with native PDF support.
     """
-    def __init__(self, model_version: str = "gpt-5.1"):
+    def __init__(self, model_version: str = "gpt-5.2"):
         self.model_version = model_version
         self.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -73,6 +73,7 @@ class GPTModel(ModelAdapter):
         # API call
         response = client.responses.create(
             model=self.model_version,
+            reasoning={"effort": "high"},
             input=messages
         )
 

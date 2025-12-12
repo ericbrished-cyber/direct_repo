@@ -41,7 +41,6 @@ class ClaudeModel(ModelAdapter):
         messages = []
 
         # Few-shot examples - cache the last assistant response
-        # Few-shot examples - cache the last assistant response
         if payload.few_shot_examples:
             for idx, example in enumerate(payload.few_shot_examples):
                 is_last = (idx == len(payload.few_shot_examples) - 1)
@@ -86,10 +85,11 @@ class ClaudeModel(ModelAdapter):
             raise ValueError("ANTHROPIC_API_KEY not found in environment variables.")
 
         # API call
-        response = client.messages.create(
+        response = client.beta.messages.create(
             model=self.model_version,
             max_tokens=4096,
             messages=messages,
+            output_config = {"effort": "low"}
             )
 
         # Extract text

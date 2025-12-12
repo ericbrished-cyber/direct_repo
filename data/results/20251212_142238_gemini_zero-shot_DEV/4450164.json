@@ -1,0 +1,29 @@
+{
+  "pmcid": "4450164",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 2661,
+    "output": 409
+  },
+  "raw_text": "Based on the article provided, here is the extraction for the specified ICO triplet.\n\n**Analysis of the Outcome \"ureteropelvic junction obstruction\":**\nThe Abstract states the authors compared groups regarding \"evidence of obstruction on postoperative IVP or DTPA scan\". Table 2 presents data for \"DTPA scan\" with a row for \"Partial obstruction\". The term \"Partial obstruction\" is the closest semantic match to \"ureteropelvic junction obstruction\" (representing the presence/persistence of obstruction) among the reported outcomes (others being leakage, stenosis, urinoma).\n- **Intervention (Internal drainage/With Stent):** The table shows \"8/20\" for Partial obstruction. Events = 8, Group Size = 20 (Note: Footnote d confirms DTPA was done in 20 patients of the stent group).\n- **Comparator (Stentless/Without Stent):** The table shows \"13/44\" for Partial obstruction. Events = 13, Group Size = 44 (Note: Although Footnote d mentions 32 cases in the stent-free group, the table body explicitly uses a denominator of 44 for this calculation; extraction follows the explicit data in the results table).\n\n```json\n{\"extractions\":[\n  {\n    \"outcome\": \"ureteropelvic junction obstruction\",\n    \"intervention\": \"internal drainage group\",\n    \"comparator\": \"stentless cases\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 8,\n    \"intervention_group_size\": 20,\n    \"comparator_events\": 13,\n    \"comparator_group_size\": 44,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "ureteropelvic junction obstruction",
+      "intervention": "internal drainage group",
+      "comparator": "stentless cases",
+      "outcome_type": "binary",
+      "intervention_events": 8,
+      "intervention_group_size": 20,
+      "comparator_events": 13,
+      "comparator_group_size": 44,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4450164"
+    }
+  ]
+}

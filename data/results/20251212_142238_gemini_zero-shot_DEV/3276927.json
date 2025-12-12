@@ -1,0 +1,104 @@
+{
+  "pmcid": "3276927",
+  "config": {
+    "model": "gemini",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 3832,
+    "output": 1221
+  },
+  "raw_text": "Based on the provided article, here are the extractions for the specified ICO triplets.\n\nThe study is a quasi-experimental single-arm trial (pre- vs post-intervention) with 19 participants. The outcomes were analyzed using non-parametric tests (Wilcoxon signed-rank test), and the results are reported as **medians** and quartiles/ranges. **Means and standard deviations are not reported** for the outcomes. Consequently, while the group sizes are available ($n=19$), the mean and standard deviation fields are extracted as null.\n\n1.  **ICO 1 (relieving factors):** Data found in Table 3 (\"Reliving factors\"). Reported as Median (Before: 2.00, After: 3.00), no Mean/SD.\n2.  **ICO 2 (effective in treatment):** This binary outcome (\"effective\") corresponds to the study's conclusion but is not quantified as a specific binary variable (e.g., number of successes) in the results.\n3.  **ICO 3 (frequency of occurrence):** Data found in Table 4 (\"Frequency of occurrence\"). Reported as Median (Before: 12.00, After: 2.00), no Mean/SD.\n4.  **ICO 4 (symptoms such as heaviness...):** This specific composite outcome description appears in the Discussion referencing general yoga benefits/literature, not as a measured variable in the Results section.\n5.  **ICO 5 (pain):** Data found in Table 1 (\"Pain\"). Reported as Median (Before: 6.00, After: 1.00), no Mean/SD.\n6.  **ICO 6 (aggravating factors):** Data found in Table 2 (\"Aggravating factors\"). Reported as Median (Before: 4.00, After: 1.00), no Mean/SD.\n\n```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"relieving factors in reversible inguinal hernia\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"effective in the treatment of reversible inguinal hernia\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"frequency of occurrence in reversible inguinal hernia\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"symptoms of hernia such as heaviness, fullness and pain\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"pain in reversible inguinal hernia\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"aggravating factors in reversible inguinal hernia\",\n      \"intervention\": \"post-Yoga\",\n      \"comparator\": \"pre-Yoga\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "relieving factors in reversible inguinal hernia",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    },
+    {
+      "outcome": "effective in the treatment of reversible inguinal hernia",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    },
+    {
+      "outcome": "frequency of occurrence in reversible inguinal hernia",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    },
+    {
+      "outcome": "symptoms of hernia such as heaviness, fullness and pain",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    },
+    {
+      "outcome": "pain in reversible inguinal hernia",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    },
+    {
+      "outcome": "aggravating factors in reversible inguinal hernia",
+      "intervention": "post-Yoga",
+      "comparator": "pre-Yoga",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3276927"
+    }
+  ]
+}

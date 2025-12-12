@@ -1,0 +1,29 @@
+{
+  "pmcid": "3580751",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12747,
+    "output": 1735
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP\",\"intervention\":\"Interrupted surveillance unit A\",\"comparator\":\"Continuous surveillance, unit B\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":408,\"comparator_events\":null,\"comparator_group_size\":782,\"intervention_mean\":9.9,\"intervention_standard_deviation\":14.8,\"comparator_mean\":9.1,\"comparator_standard_deviation\":9.9}]}",
+  "extraction": [
+    {
+      "outcome": "mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP",
+      "intervention": "Interrupted surveillance unit A",
+      "comparator": "Continuous surveillance, unit B",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 408,
+      "comparator_events": null,
+      "comparator_group_size": 782,
+      "intervention_mean": 9.9,
+      "intervention_standard_deviation": 14.8,
+      "comparator_mean": 9.1,
+      "comparator_standard_deviation": 9.9,
+      "pmcid": "3580751"
+    }
+  ]
+}

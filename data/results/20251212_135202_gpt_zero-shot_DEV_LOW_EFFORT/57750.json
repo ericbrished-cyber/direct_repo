@@ -1,0 +1,44 @@
+{
+  "pmcid": "57750",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 10222,
+    "output": 334
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Death or myocardial infarction\",\"intervention\":\"eptifibatide\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Myocardial infarction\",\"intervention\":\"eptifibatide\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Death or myocardial infarction",
+      "intervention": "eptifibatide",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "57750"
+    },
+    {
+      "outcome": "Myocardial infarction",
+      "intervention": "eptifibatide",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "57750"
+    }
+  ]
+}

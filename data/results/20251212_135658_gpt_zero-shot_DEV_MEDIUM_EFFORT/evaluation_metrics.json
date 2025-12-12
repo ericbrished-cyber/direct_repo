@@ -1,0 +1,100 @@
+{
+  "aggregated": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "rmse": 115.38196218766547,
+    "true_positives": 75,
+    "false_positives": 0,
+    "false_negatives": 75,
+    "exact_match": 0.45454545454545453
+  },
+  "by_field": {
+    "comparator_events": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rmse": 0.0,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "comparator_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 280.3570427661332,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "comparator_mean": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "rmse": 3.6927286659054728,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 10
+    },
+    "comparator_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.5263157894736842,
+      "f1": 0.6896551724137931,
+      "rmse": 4.501668111875161,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "intervention_events": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rmse": 0.0,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "intervention_group_size": {
+      "precision": 1.0,
+      "recall": 0.41935483870967744,
+      "f1": 0.5909090909090909,
+      "rmse": 142.18298069740976,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 18
+    },
+    "intervention_mean": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "rmse": 82.00517383067974,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 10
+    },
+    "intervention_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.47368421052631576,
+      "f1": 0.6428571428571429,
+      "rmse": 36.79812931458109,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 10
+    }
+  },
+  "figure_subset": {
+    "aggregated": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "exact_match": 0.0
+    },
+    "by_field": {},
+    "subset": "figures"
+  }
+}
