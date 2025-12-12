@@ -131,64 +131,67 @@ def run_extraction(model_name: str, strategy: str, split: str,
     timeout = timedelta(hours=TOTAL_TIMEOUT_HOURS)
     
     # Main loop
+    pending_pmcids = list(pmcids)
     iteration = 0
     with tqdm(total=len(pmcids), desc="Processing") as pbar:
-        while True:
-            # Check for failed PDFs
-            failed_pmcids = get_failed_pmcids(output_dir)
-            if not failed_pmcids:
-                break
-                
-            iteration += 1
-            
-            # Check timeout
+        while pending_pmcids:
             if datetime.now() - start_time > timeout:
                 print(f"Timeout reached ({TOTAL_TIMEOUT_HOURS}h)")
-                print(f"Remaining: {len(failed_pmcids)} PDFs")
+                print(f"Remaining: {len(pending_pmcids)} PDFs")
+                for pmcid in pending_pmcids:
+                    save_error(pmcid, "TIMEOUT: extraction not completed within limit", output_dir)
+                stats["failed"] += len(pending_pmcids)
+                pbar.update(len(pending_pmcids))
                 break
-            
-            print(f"\nIteration {iteration}: {len(failed_pmcids)} PDFs to retry")
-            
-            for pmcid in list(failed_pmcids):
-                # Check retry limit
-                if retry_counts[pmcid] >= MAX_RETRIES:
-                    print(f"Max retries reached for {pmcid}")
-                    stats["failed"] += 1
-                    continue
-                
-                # Backoff
-                if retry_counts[pmcid] > 0:
-                    wait = exponential_backoff(retry_counts[pmcid] - 1)
-                    print(f"Waiting {wait:.1f}s before retry {retry_counts[pmcid]+1} for {pmcid}")
+
+            iteration += 1
+            print(f"\nIteration {iteration}: {len(pending_pmcids)} PDFs to process")
+
+            for pmcid in list(pending_pmcids):
+                attempt_number = retry_counts[pmcid] + 1
+
+                if attempt_number > 1:
+                    wait = exponential_backoff(attempt_number - 2)
+                    print(f"Waiting {wait:.1f}s before attempt {attempt_number} for {pmcid}")
                     time.sleep(wait)
-                
-                retry_counts[pmcid] += 1
-                if retry_counts[pmcid] > 1:
                     stats["total_retries"] += 1
-                
-                # Attempt extraction
+
+                retry_counts[pmcid] += 1
                 success, data, error = extract_single_pdf(pmcid, model, prompt_builder, strategy, dry_run)
-                
+
                 if success:
                     save_result(pmcid, data, output_dir, model_name, strategy)
-                    # Remove error file
                     error_file = output_dir / f"{pmcid}_error.txt"
                     if error_file.exists():
                         error_file.unlink()
                     stats["successful"] += 1
                     if not data["extraction"]:
                         stats["empty"] += 1
+                    pending_pmcids.remove(pmcid)
                     pbar.update(1)
-                    print(f"Success: {pmcid} (attempt {retry_counts[pmcid]})")
+                    print(f"Success: {pmcid} (attempt {attempt_number})")
+                    continue
+
+                error_message = str(error)
+                retryable = is_retryable_error(Exception(error_message))
+
+                if not retryable:
+                    print(f"Permanent error for {pmcid}")
+                    save_error(pmcid, f"PERMANENT: {error_message}", output_dir)
+                    stats["failed"] += 1
+                    pending_pmcids.remove(pmcid)
+                    pbar.update(1)
+                    continue
+
+                if retry_counts[pmcid] >= MAX_RETRIES:
+                    print(f"Max retries reached for {pmcid}")
+                    save_error(pmcid, f"MAX_RETRIES: {error_message}", output_dir)
+                    stats["failed"] += 1
+                    pending_pmcids.remove(pmcid)
+                    pbar.update(1)
                 else:
-                    if is_retryable_error(Exception(error)):
-                        print(f"Retryable error for {pmcid} (attempt {retry_counts[pmcid]}/{MAX_RETRIES})")
-                        save_error(pmcid, error, output_dir)
-                    else:
-                        print(f"Permanent error for {pmcid}")
-                        save_error(pmcid, f"PERMANENT: {error}", output_dir)
-                        stats["failed"] += 1
-                        pbar.update(1)
+                    print(f"Retryable error for {pmcid} (attempt {attempt_number}/{MAX_RETRIES})")
+                    save_error(pmcid, error_message, output_dir)
 
     # Save metadata
     stats["end_time"] = datetime.now().strftime("%Y%m%d_%H%M%S")

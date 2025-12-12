@@ -1,0 +1,31 @@
+{
+  "pmcid": "3580751",
+  "config": {
+    "model": "claude",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 25321,
+    "output": 131,
+    "cache_creation": 0,
+    "cache_read": 0
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP\",\"intervention\":\"Interrupted surveillance unit A\",\"comparator\":\"Continuous surveillance, unit B\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":9.9,\"intervention_standard_deviation\":14.8,\"comparator_mean\":9.1,\"comparator_standard_deviation\":9.9}]}",
+  "extraction": [
+    {
+      "outcome": "mean \u00b1 SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP",
+      "intervention": "Interrupted surveillance unit A",
+      "comparator": "Continuous surveillance, unit B",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 9.9,
+      "intervention_standard_deviation": 14.8,
+      "comparator_mean": 9.1,
+      "comparator_standard_deviation": 9.9,
+      "pmcid": "3580751"
+    }
+  ]
+}

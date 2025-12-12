@@ -1,0 +1,100 @@
+{
+  "aggregated": {
+    "precision": 0.8987341772151899,
+    "recall": 0.47333333333333333,
+    "f1": 0.6200873362445415,
+    "rmse": 35.647644334168035,
+    "true_positives": 71,
+    "false_positives": 8,
+    "false_negatives": 79,
+    "exact_match": 0.30303030303030304
+  },
+  "by_field": {
+    "comparator_events": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "rmse": 0.0,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    "comparator_group_size": {
+      "precision": 1.0,
+      "recall": 0.45161290322580644,
+      "f1": 0.6222222222222222,
+      "rmse": 3.183289703016886,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 17
+    },
+    "comparator_mean": {
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1": 0.5,
+      "rmse": 27.54714259229077,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 12
+    },
+    "comparator_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.5263157894736842,
+      "f1": 0.6896551724137931,
+      "rmse": 4.501668111875161,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "intervention_events": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "rmse": 0.0,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    "intervention_group_size": {
+      "precision": 1.0,
+      "recall": 0.45161290322580644,
+      "f1": 0.6222222222222222,
+      "rmse": 3.9791121287711073,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 17
+    },
+    "intervention_mean": {
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1": 0.5,
+      "rmse": 84.69394402789376,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 12
+    },
+    "intervention_standard_deviation": {
+      "precision": 1.0,
+      "recall": 0.47368421052631576,
+      "f1": 0.6428571428571429,
+      "rmse": 36.79812931458109,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 10
+    }
+  },
+  "figure_subset": {
+    "aggregated": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "rmse": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "exact_match": 0.0
+    },
+    "by_field": {},
+    "subset": "figures"
+  }
+}
