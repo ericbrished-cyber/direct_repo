@@ -86,11 +86,14 @@ class ClaudeModel(ModelAdapter):
 
         # API call
         response = client.beta.messages.create(
-            model=self.model_version,
+            model="claude-opus-4-5-20251101",  # Must be Claude Opus 4.5
+            betas=["effort-2025-11-24"],  # Required beta header
             max_tokens=4096,
             messages=messages,
-            output_config = {"effort": "low"}
-            )
+            output_config={
+                "effort": "high"  # Options: "low", "medium", "high" (default)
+            }
+        )
 
         # Extract text
         raw_text = ""
