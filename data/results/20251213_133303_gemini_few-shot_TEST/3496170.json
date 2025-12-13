@@ -1,0 +1,104 @@
+{
+  "pmcid": "3496170",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 18301,
+    "output": 974
+  },
+  "raw_text": "Based on the provided article, here are the extractions for the specified ICO triplets.\n\nThe study employs a within-subject (crossover) design with **15 participants** included in the final analysis (Page 5: \"One participant did not meet the requirement... excluded... Part of the behavioural data was missing for another subject... leaving a total of 15 participants\"). Thus, the group size for both the intervention (Biperiden) and comparator (Placebo) arms is 15.\n\nFor the **Learned irrelevance index**, the text explicitly states the value for the placebo condition: \"The LIrr index in our experiment was 0.2 after placebo\" (Page 7). Numeric values for Biperiden or other outcomes are not explicitly reported in the text (only presented in figures or as test statistics), so those fields are set to null.\n\n```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Learned irrelevance index\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 0.2,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"P3a amplitude\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"P3a latency\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Self-report questionnaire\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"N1 latency\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"N1 amplitude\",\n      \"intervention\": \"Biperiden\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Learned irrelevance index",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.2,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "P3a amplitude",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "P3a latency",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "Self-report questionnaire",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "N1 latency",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    },
+    {
+      "outcome": "N1 amplitude",
+      "intervention": "Biperiden",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3496170"
+    }
+  ]
+}

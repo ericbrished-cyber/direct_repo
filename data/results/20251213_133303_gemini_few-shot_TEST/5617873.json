@@ -1,0 +1,104 @@
+{
+  "pmcid": "5617873",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 18322,
+    "output": 850
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Parent-rated Aberrant Behavior Checklis improvement\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": -11.4,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -7.5,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Clinician-rated Clinical Global Impression-Improvement scores\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": 2.7,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 3.4,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Serious adverse effects\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 0,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": 1,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Inappropriate speech\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": -2.2,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -1.5,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Social withdrawal\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": -5.2,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -4.7,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Compulsion scale\",\n      \"intervention\": \"Aripiprazole\",\n      \"comparator\": \"Placbeo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 47,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 45,\n      \"intervention_mean\": -2.0,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -1.3,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Parent-rated Aberrant Behavior Checklis improvement",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 47,
+      "comparator_events": null,
+      "comparator_group_size": 45,
+      "intervention_mean": -11.4,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -7.5,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    },
+    {
+      "outcome": "Clinician-rated Clinical Global Impression-Improvement scores",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 47,
+      "comparator_events": null,
+      "comparator_group_size": 45,
+      "intervention_mean": 2.7,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 3.4,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    },
+    {
+      "outcome": "Serious adverse effects",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 47,
+      "comparator_events": 1,
+      "comparator_group_size": 45,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    },
+    {
+      "outcome": "Inappropriate speech",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 47,
+      "comparator_events": null,
+      "comparator_group_size": 45,
+      "intervention_mean": -2.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -1.5,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    },
+    {
+      "outcome": "Social withdrawal",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 47,
+      "comparator_events": null,
+      "comparator_group_size": 45,
+      "intervention_mean": -5.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -4.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    },
+    {
+      "outcome": "Compulsion scale",
+      "intervention": "Aripiprazole",
+      "comparator": "Placbeo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 47,
+      "comparator_events": null,
+      "comparator_group_size": 45,
+      "intervention_mean": -2.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -1.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "5617873"
+    }
+  ]
+}

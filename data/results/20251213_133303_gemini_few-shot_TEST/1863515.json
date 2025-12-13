@@ -1,0 +1,104 @@
+{
+  "pmcid": "1863515",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16740,
+    "output": 866
+  },
+  "raw_text": "```json\n{\"extractions\":[\n{\n  \"outcome\": \"haemoglobin level between 26 and 35 wk\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": null,\n  \"comparator_events\": null,\n  \"comparator_group_size\": null,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"leucocyte count between 26 and 35 wk\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": null,\n  \"comparator_events\": null,\n  \"comparator_group_size\": null,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"absolute neutrophil count between 26 and 35 wk\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": null,\n  \"comparator_events\": null,\n  \"comparator_group_size\": null,\n  \"intervention_mean\": null,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": null,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"haemoglobin level at 35 wk gestation\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 723,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 626,\n  \"intervention_mean\": 10.7,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": 11.2,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"leucocyte count at 35 wk gestation\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 730,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 632,\n  \"intervention_mean\": 8362.0,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": 8818.0,\n  \"comparator_standard_deviation\": null\n},\n{\n  \"outcome\": \"absolute neutrophil count at 35 wk gestation\",\n  \"intervention\": \"Zidovudine prophylaxis initiation\",\n  \"comparator\": \"placebo\",\n  \"outcome_type\": \"continuous\",\n  \"intervention_events\": null,\n  \"intervention_group_size\": 730,\n  \"comparator_events\": null,\n  \"comparator_group_size\": 632,\n  \"intervention_mean\": 5639.0,\n  \"intervention_standard_deviation\": null,\n  \"comparator_mean\": 6150.0,\n  \"comparator_standard_deviation\": null\n}\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "haemoglobin level between 26 and 35 wk",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    },
+    {
+      "outcome": "leucocyte count between 26 and 35 wk",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    },
+    {
+      "outcome": "absolute neutrophil count between 26 and 35 wk",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    },
+    {
+      "outcome": "haemoglobin level at 35 wk gestation",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 723,
+      "comparator_events": null,
+      "comparator_group_size": 626,
+      "intervention_mean": 10.7,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 11.2,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    },
+    {
+      "outcome": "leucocyte count at 35 wk gestation",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 730,
+      "comparator_events": null,
+      "comparator_group_size": 632,
+      "intervention_mean": 8362.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 8818.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    },
+    {
+      "outcome": "absolute neutrophil count at 35 wk gestation",
+      "intervention": "Zidovudine prophylaxis initiation",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 730,
+      "comparator_events": null,
+      "comparator_group_size": 632,
+      "intervention_mean": 5639.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 6150.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "1863515"
+    }
+  ]
+}

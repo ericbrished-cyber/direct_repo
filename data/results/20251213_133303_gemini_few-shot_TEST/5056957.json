@@ -1,0 +1,104 @@
+{
+  "pmcid": "5056957",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16735,
+    "output": 970
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Weight reduction at 12 months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 592,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 459,\n      \"intervention_mean\": 55.22,\n      \"intervention_standard_deviation\": 12.51,\n      \"comparator_mean\": 55.96,\n      \"comparator_standard_deviation\": 12.60\n    },\n    {\n      \"outcome\": \"BMI reduction at 12 months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 592,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 459,\n      \"intervention_mean\": 20.77,\n      \"intervention_standard_deviation\": 3.96,\n      \"comparator_mean\": 21.04,\n      \"comparator_standard_deviation\": 3.76\n    },\n    {\n      \"outcome\": \"BMI z-score at 12months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 592,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 459,\n      \"intervention_mean\": 0.55,\n      \"intervention_standard_deviation\": 1.11,\n      \"comparator_mean\": 0.61,\n      \"comparator_standard_deviation\": 1.13\n    },\n    {\n      \"outcome\": \"Weight reduction at 24 months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 560,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 425,\n      \"intervention_mean\": 60.52,\n      \"intervention_standard_deviation\": 12.72,\n      \"comparator_mean\": 61.50,\n      \"comparator_standard_deviation\": 13.23\n    },\n    {\n      \"outcome\": \"BMI reduction at 24 months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 560,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 425,\n      \"intervention_mean\": 21.64,\n      \"intervention_standard_deviation\": 4.06,\n      \"comparator_mean\": 21.90,\n      \"comparator_standard_deviation\": 4.33\n    },\n    {\n      \"outcome\": \"BMI z-score at 24 months\",\n      \"intervention\": \"Multi-component physical activity\",\n      \"comparator\": \"Usual PE and sport programmes\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 560,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 425,\n      \"intervention_mean\": 0.65,\n      \"intervention_standard_deviation\": 1.12,\n      \"comparator_mean\": 0.72,\n      \"comparator_standard_deviation\": 1.09\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Weight reduction at 12 months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 592,
+      "comparator_events": null,
+      "comparator_group_size": 459,
+      "intervention_mean": 55.22,
+      "intervention_standard_deviation": 12.51,
+      "comparator_mean": 55.96,
+      "comparator_standard_deviation": 12.6,
+      "pmcid": "5056957"
+    },
+    {
+      "outcome": "BMI reduction at 12 months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 592,
+      "comparator_events": null,
+      "comparator_group_size": 459,
+      "intervention_mean": 20.77,
+      "intervention_standard_deviation": 3.96,
+      "comparator_mean": 21.04,
+      "comparator_standard_deviation": 3.76,
+      "pmcid": "5056957"
+    },
+    {
+      "outcome": "BMI z-score at 12months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 592,
+      "comparator_events": null,
+      "comparator_group_size": 459,
+      "intervention_mean": 0.55,
+      "intervention_standard_deviation": 1.11,
+      "comparator_mean": 0.61,
+      "comparator_standard_deviation": 1.13,
+      "pmcid": "5056957"
+    },
+    {
+      "outcome": "Weight reduction at 24 months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 560,
+      "comparator_events": null,
+      "comparator_group_size": 425,
+      "intervention_mean": 60.52,
+      "intervention_standard_deviation": 12.72,
+      "comparator_mean": 61.5,
+      "comparator_standard_deviation": 13.23,
+      "pmcid": "5056957"
+    },
+    {
+      "outcome": "BMI reduction at 24 months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 560,
+      "comparator_events": null,
+      "comparator_group_size": 425,
+      "intervention_mean": 21.64,
+      "intervention_standard_deviation": 4.06,
+      "comparator_mean": 21.9,
+      "comparator_standard_deviation": 4.33,
+      "pmcid": "5056957"
+    },
+    {
+      "outcome": "BMI z-score at 24 months",
+      "intervention": "Multi-component physical activity",
+      "comparator": "Usual PE and sport programmes",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 560,
+      "comparator_events": null,
+      "comparator_group_size": 425,
+      "intervention_mean": 0.65,
+      "intervention_standard_deviation": 1.12,
+      "comparator_mean": 0.72,
+      "comparator_standard_deviation": 1.09,
+      "pmcid": "5056957"
+    }
+  ]
+}

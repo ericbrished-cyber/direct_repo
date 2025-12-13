@@ -1,0 +1,74 @@
+{
+  "pmcid": "3136370",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15549,
+    "output": 575
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"Fibromyalgia Impact Questionnaire scores\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": -8.21,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -12.52,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Fibromyalgia Impact Questionnaire scores\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Casein shake (Placebo)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": -8.21,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -12.52,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Center for Epidemiologic Studies Depression Scale score\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": -1.92,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -5.12,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Center for Epidemiologic Studies Depression Scale score\",\n      \"intervention\": \"Soy shake\",\n      \"comparator\": \"Casein shake (Placebo)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 25,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 25,\n      \"intervention_mean\": -1.92,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": -5.12,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": -8.21,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -12.52,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": -8.21,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -12.52,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": -1.92,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -5.12,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": -1.92,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -5.12,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    }
+  ]
+}

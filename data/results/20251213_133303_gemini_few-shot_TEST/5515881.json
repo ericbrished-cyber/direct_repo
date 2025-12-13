@@ -1,0 +1,89 @@
+{
+  "pmcid": "5515881",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17737,
+    "output": 754
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"memory score\",\n      \"intervention\": \"demanding balance training program\",\n      \"comparator\": \"relaxation group\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 9.44,\n      \"intervention_standard_deviation\": 5.48,\n      \"comparator_mean\": 8.0,\n      \"comparator_standard_deviation\": 4.16\n    },\n    {\n      \"outcome\": \"dynamic balance performance on the stability platform\",\n      \"intervention\": \"demanding balance training program\",\n      \"comparator\": \"relaxation group\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 7.54,\n      \"intervention_standard_deviation\": 2.57,\n      \"comparator_mean\": 6.29,\n      \"comparator_standard_deviation\": 1.84\n    },\n    {\n      \"outcome\": \"center of pressure (CoP) sway velocity\",\n      \"intervention\": \"demanding balance training program\",\n      \"comparator\": \"relaxation group\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 0.63,\n      \"intervention_standard_deviation\": 0.11,\n      \"comparator_mean\": 0.67,\n      \"comparator_standard_deviation\": 0.18\n    },\n    {\n      \"outcome\": \"spatial score\",\n      \"intervention\": \"demanding balance training program\",\n      \"comparator\": \"relaxation group\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 0.443,\n      \"intervention_standard_deviation\": 0.75,\n      \"comparator_mean\": 0.04,\n      \"comparator_standard_deviation\": 0.91\n    },\n    {\n      \"outcome\": \"VO2peak\",\n      \"intervention\": \"demanding balance training program\",\n      \"comparator\": \"relaxation group\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 21,\n      \"intervention_mean\": 32.07,\n      \"intervention_standard_deviation\": 6.52,\n      \"comparator_mean\": 31.947,\n      \"comparator_standard_deviation\": 7.89\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "memory score",
+      "intervention": "demanding balance training program",
+      "comparator": "relaxation group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 9.44,
+      "intervention_standard_deviation": 5.48,
+      "comparator_mean": 8.0,
+      "comparator_standard_deviation": 4.16,
+      "pmcid": "5515881"
+    },
+    {
+      "outcome": "dynamic balance performance on the stability platform",
+      "intervention": "demanding balance training program",
+      "comparator": "relaxation group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 7.54,
+      "intervention_standard_deviation": 2.57,
+      "comparator_mean": 6.29,
+      "comparator_standard_deviation": 1.84,
+      "pmcid": "5515881"
+    },
+    {
+      "outcome": "center of pressure (CoP) sway velocity",
+      "intervention": "demanding balance training program",
+      "comparator": "relaxation group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 0.63,
+      "intervention_standard_deviation": 0.11,
+      "comparator_mean": 0.67,
+      "comparator_standard_deviation": 0.18,
+      "pmcid": "5515881"
+    },
+    {
+      "outcome": "spatial score",
+      "intervention": "demanding balance training program",
+      "comparator": "relaxation group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 0.443,
+      "intervention_standard_deviation": 0.75,
+      "comparator_mean": 0.04,
+      "comparator_standard_deviation": 0.91,
+      "pmcid": "5515881"
+    },
+    {
+      "outcome": "VO2peak",
+      "intervention": "demanding balance training program",
+      "comparator": "relaxation group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 32.07,
+      "intervention_standard_deviation": 6.52,
+      "comparator_mean": 31.947,
+      "comparator_standard_deviation": 7.89,
+      "pmcid": "5515881"
+    }
+  ]
+}

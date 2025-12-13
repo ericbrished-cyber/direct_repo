@@ -83,17 +83,28 @@ def run_evaluation_task(run_folder, split):
     fig_by_field = figure_metrics["by_field"]
 
     # 4. Output Results
-    print("\n" + "="*60)
+    print("\n" + "="*70)
     print(f"EVALUATION REPORT: {run_folder}")
-    print("="*60)
-    print(f"{'METRIC':<20} {'AGGREGATED':<10}")
-    print("-" * 60)
-    print(f"{'Precision':<20} {agg['precision']:.2%}")
-    print(f"{'Recall':<20} {agg['recall']:.2%}")
-    print(f"{'F1 Score':<20} {agg['f1']:.2%}")
-    print(f"{'RMSE':<20} {agg['rmse']:.4f}")
-    print(f"{'Exact Match':<20} {agg['exact_match']:.2%}")
-    print("-" * 60)
+    print("="*70)
+    print(f"{'METRIC':<25} {'VALUE':<10} {'95% CI':<20}")
+    print("-" * 70)
+    print(f"{'Precision':<25} {agg['precision']:.2%}")
+    print(f"{'Recall':<25} {agg['recall']:.2%}")
+    
+    # Updated F1 Line
+    f1_ci = f"[{agg.get('f1_ci_lower',0):.2f}, {agg.get('f1_ci_upper',0):.2f}]"
+    print(f"{'F1 Score':<25} {agg['f1']:.2%}      {f1_ci}")
+    
+    # Updated RMSE Line
+    rmse_ci = f"[{agg.get('rmse_ci_lower',0):.2f}, {agg.get('rmse_ci_upper',0):.2f}]"
+    print(f"{'RMSE':<25} {agg['rmse']:.4f}      {rmse_ci}")
+    
+    print(f"{'Exact Match':<25} {agg['exact_match']:.2%}")
+    print("-" * 70)
+    print(f"True Positives: {agg.get('true_positives', 0)}")
+    print(f"False Positives:{agg.get('false_positives', 0)}")
+    print(f"False Negatives:{agg.get('false_negatives', 0)}")
+    print("="*70)
     
     print("\n--- BREAKDOWN BY FIELD TYPE ---")
     header = f"{'FIELD':<35} | {'P':<8} | {'R':<8} | {'F1':<8} | {'RMSE':<8}"

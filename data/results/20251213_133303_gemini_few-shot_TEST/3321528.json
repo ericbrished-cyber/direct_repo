@@ -1,0 +1,104 @@
+{
+  "pmcid": "3321528",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16702,
+    "output": 815
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"wrist flexion\",\n      \"intervention\": \"electrical muscle stimulation (EMS)\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 24,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"hip flexion\",\n      \"intervention\": \"electrical muscle stimulation (EMS)\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 24,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"knee extension\",\n      \"intervention\": \"electrical muscle stimulation (EMS)\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 24,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"ankle dorsiflexion\",\n      \"intervention\": \"electrical muscle stimulation (EMS)\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 24,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"handgrip strength\",\n      \"intervention\": \"Intensive Care Unit acquired weakness (ICU-AW)\",\n      \"comparator\": \"without an ICU-AW diagnosis\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": 6.6,\n      \"intervention_standard_deviation\": 4.4,\n      \"comparator_mean\": 23.4,\n      \"comparator_standard_deviation\": 8.9\n    },\n    {\n      \"outcome\": \"the total MRC score of the legs\",\n      \"intervention\": \"electrical muscle stimulation (EMS)\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 24,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "wrist flexion",
+      "intervention": "electrical muscle stimulation (EMS)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3321528"
+    },
+    {
+      "outcome": "hip flexion",
+      "intervention": "electrical muscle stimulation (EMS)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3321528"
+    },
+    {
+      "outcome": "knee extension",
+      "intervention": "electrical muscle stimulation (EMS)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3321528"
+    },
+    {
+      "outcome": "ankle dorsiflexion",
+      "intervention": "electrical muscle stimulation (EMS)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3321528"
+    },
+    {
+      "outcome": "handgrip strength",
+      "intervention": "Intensive Care Unit acquired weakness (ICU-AW)",
+      "comparator": "without an ICU-AW diagnosis",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 6.6,
+      "intervention_standard_deviation": 4.4,
+      "comparator_mean": 23.4,
+      "comparator_standard_deviation": 8.9,
+      "pmcid": "3321528"
+    },
+    {
+      "outcome": "the total MRC score of the legs",
+      "intervention": "electrical muscle stimulation (EMS)",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 24,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3321528"
+    }
+  ]
+}

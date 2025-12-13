@@ -1,0 +1,104 @@
+{
+  "pmcid": "3493722",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15661,
+    "output": 853
+  },
+  "raw_text": "```json\n{\"extractions\":[\n  {\n    \"outcome\": \"eradication rate of H. pylori in ITT\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 71,\n    \"intervention_group_size\": 85,\n    \"comparator_events\": 72,\n    \"comparator_group_size\": 84,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"eradication rate of H. pylori in PP\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 71,\n    \"intervention_group_size\": 81,\n    \"comparator_events\": 72,\n    \"comparator_group_size\": 81,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"side effects\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 19,\n    \"intervention_group_size\": 85,\n    \"comparator_events\": 32,\n    \"comparator_group_size\": 84,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"good compliance rates\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 74,\n    \"intervention_group_size\": 81,\n    \"comparator_events\": 74,\n    \"comparator_group_size\": 81,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"well compliance rates\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 8,\n    \"intervention_group_size\": 81,\n    \"comparator_events\": 4,\n    \"comparator_group_size\": 81,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"poor compliance rates\",\n    \"intervention\": \"1-week quadruple rescue therapy\",\n    \"comparator\": \"2-week quadruple rescue therapy\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 2,\n    \"intervention_group_size\": 81,\n    \"comparator_events\": 3,\n    \"comparator_group_size\": 81,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "eradication rate of H. pylori in ITT",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 71,
+      "intervention_group_size": 85,
+      "comparator_events": 72,
+      "comparator_group_size": 84,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    },
+    {
+      "outcome": "eradication rate of H. pylori in PP",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 71,
+      "intervention_group_size": 81,
+      "comparator_events": 72,
+      "comparator_group_size": 81,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    },
+    {
+      "outcome": "side effects",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 19,
+      "intervention_group_size": 85,
+      "comparator_events": 32,
+      "comparator_group_size": 84,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    },
+    {
+      "outcome": "good compliance rates",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 74,
+      "intervention_group_size": 81,
+      "comparator_events": 74,
+      "comparator_group_size": 81,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    },
+    {
+      "outcome": "well compliance rates",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 8,
+      "intervention_group_size": 81,
+      "comparator_events": 4,
+      "comparator_group_size": 81,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    },
+    {
+      "outcome": "poor compliance rates",
+      "intervention": "1-week quadruple rescue therapy",
+      "comparator": "2-week quadruple rescue therapy",
+      "outcome_type": "binary",
+      "intervention_events": 2,
+      "intervention_group_size": 81,
+      "comparator_events": 3,
+      "comparator_group_size": 81,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3493722"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pmcid": "3263860",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16118,
+    "output": 701
+  },
+  "raw_text": "```json\n{\"extractions\":[\n  {\n    \"outcome\": \"HbA1c reduction\",\n    \"intervention\": \"Real-Time Continuous Glucose Monitoring\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 69,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 68,\n    \"intervention_mean\": -0.1,\n    \"intervention_standard_deviation\": 0.6,\n    \"comparator_mean\": -0.1,\n    \"comparator_standard_deviation\": 0.6\n  },\n  {\n    \"outcome\": \"Severe hypoglycemia\",\n    \"intervention\": \"Real-Time Continuous Glucose Monitoring\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 3,\n    \"intervention_group_size\": 73,\n    \"comparator_events\": 5,\n    \"comparator_group_size\": 71,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"Serious skin reactions\",\n    \"intervention\": \"Real-Time Continuous Glucose Monitoring\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 0,\n    \"intervention_group_size\": 73,\n    \"comparator_events\": 0,\n    \"comparator_group_size\": 71,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"Diabetic ketoacidosis\",\n    \"intervention\": \"Real-Time Continuous Glucose Monitoring\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"binary\",\n    \"intervention_events\": 0,\n    \"intervention_group_size\": 73,\n    \"comparator_events\": 0,\n    \"comparator_group_size\": 71,\n    \"intervention_mean\": null,\n    \"intervention_standard_deviation\": null,\n    \"comparator_mean\": null,\n    \"comparator_standard_deviation\": null\n  },\n  {\n    \"outcome\": \"PAID questionnaire fear of hypoglycemia\",\n    \"intervention\": \"Real-Time Continuous Glucose Monitoring\",\n    \"comparator\": \"Control\",\n    \"outcome_type\": \"continuous\",\n    \"intervention_events\": null,\n    \"intervention_group_size\": 69,\n    \"comparator_events\": null,\n    \"comparator_group_size\": 68,\n    \"intervention_mean\": 38.0,\n    \"intervention_standard_deviation\": 17.0,\n    \"comparator_mean\": 42.0,\n    \"comparator_standard_deviation\": 19.0\n  }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "HbA1c reduction",
+      "intervention": "Real-Time Continuous Glucose Monitoring",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 69,
+      "comparator_events": null,
+      "comparator_group_size": 68,
+      "intervention_mean": -0.1,
+      "intervention_standard_deviation": 0.6,
+      "comparator_mean": -0.1,
+      "comparator_standard_deviation": 0.6,
+      "pmcid": "3263860"
+    },
+    {
+      "outcome": "Severe hypoglycemia",
+      "intervention": "Real-Time Continuous Glucose Monitoring",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 3,
+      "intervention_group_size": 73,
+      "comparator_events": 5,
+      "comparator_group_size": 71,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3263860"
+    },
+    {
+      "outcome": "Serious skin reactions",
+      "intervention": "Real-Time Continuous Glucose Monitoring",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 73,
+      "comparator_events": 0,
+      "comparator_group_size": 71,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3263860"
+    },
+    {
+      "outcome": "Diabetic ketoacidosis",
+      "intervention": "Real-Time Continuous Glucose Monitoring",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 73,
+      "comparator_events": 0,
+      "comparator_group_size": 71,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3263860"
+    },
+    {
+      "outcome": "PAID questionnaire fear of hypoglycemia",
+      "intervention": "Real-Time Continuous Glucose Monitoring",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 69,
+      "comparator_events": null,
+      "comparator_group_size": 68,
+      "intervention_mean": 38.0,
+      "intervention_standard_deviation": 17.0,
+      "comparator_mean": 42.0,
+      "comparator_standard_deviation": 19.0,
+      "pmcid": "3263860"
+    }
+  ]
+}

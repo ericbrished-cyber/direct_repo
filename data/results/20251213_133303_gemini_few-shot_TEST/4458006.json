@@ -1,0 +1,29 @@
+{
+  "pmcid": "4458006",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16543,
+    "output": 181
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"amplitude of whisking\",\n      \"intervention\": \"facial nerve transection and subsequent repair either at the main trunk of the nerve (group 1)\",\n      \"comparator\": \"2 cm distally, at the main bifurcation (group 2)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": 17.2,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 5.9,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "amplitude of whisking",
+      "intervention": "facial nerve transection and subsequent repair either at the main trunk of the nerve (group 1)",
+      "comparator": "2 cm distally, at the main bifurcation (group 2)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 17.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 5.9,
+      "comparator_standard_deviation": null,
+      "pmcid": "4458006"
+    }
+  ]
+}

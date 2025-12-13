@@ -1,0 +1,29 @@
+{
+  "pmcid": "4709985",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15436,
+    "output": 143
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"would have liked more information on acupuncture\",\n      \"intervention\": \"tertiary education\",\n      \"comparator\": \"other educations\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "would have liked more information on acupuncture",
+      "intervention": "tertiary education",
+      "comparator": "other educations",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4709985"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "4928400",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15001,
+    "output": 881
+  },
+  "raw_text": "```json\n{\"extractions\":[\n    {\n      \"outcome\": \"Stone-free rate\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 22,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": 16,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Operative time\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 74.1,\n      \"intervention_standard_deviation\": 12.2,\n      \"comparator_mean\": 78.1,\n      \"comparator_standard_deviation\": 6.4\n    },\n    {\n      \"outcome\": \"Complication\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 5,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": 7,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Postoperative pain\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 4.3,\n      \"intervention_standard_deviation\": 1.0,\n      \"comparator_mean\": 3.6,\n      \"comparator_standard_deviation\": 1.2\n    },\n    {\n      \"outcome\": \"Hospital stay\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 4.2,\n      \"intervention_standard_deviation\": 1.2,\n      \"comparator_mean\": 2.1,\n      \"comparator_standard_deviation\": 1.1\n    },\n    {\n      \"outcome\": \"Time for return to daily activities\",\n      \"intervention\": \"Transperitoneal laparoscopic ureterolithotomy\",\n      \"comparator\": \"Flexible ureteroscopy\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 20,\n      \"intervention_mean\": 13.3,\n      \"intervention_standard_deviation\": 1.7,\n      \"comparator_mean\": 9.0,\n      \"comparator_standard_deviation\": 1.6\n    }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "Stone-free rate",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "binary",
+      "intervention_events": 22,
+      "intervention_group_size": 22,
+      "comparator_events": 16,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4928400"
+    },
+    {
+      "outcome": "Operative time",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 74.1,
+      "intervention_standard_deviation": 12.2,
+      "comparator_mean": 78.1,
+      "comparator_standard_deviation": 6.4,
+      "pmcid": "4928400"
+    },
+    {
+      "outcome": "Complication",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "binary",
+      "intervention_events": 5,
+      "intervention_group_size": 22,
+      "comparator_events": 7,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4928400"
+    },
+    {
+      "outcome": "Postoperative pain",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 4.3,
+      "intervention_standard_deviation": 1.0,
+      "comparator_mean": 3.6,
+      "comparator_standard_deviation": 1.2,
+      "pmcid": "4928400"
+    },
+    {
+      "outcome": "Hospital stay",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 4.2,
+      "intervention_standard_deviation": 1.2,
+      "comparator_mean": 2.1,
+      "comparator_standard_deviation": 1.1,
+      "pmcid": "4928400"
+    },
+    {
+      "outcome": "Time for return to daily activities",
+      "intervention": "Transperitoneal laparoscopic ureterolithotomy",
+      "comparator": "Flexible ureteroscopy",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 13.3,
+      "intervention_standard_deviation": 1.7,
+      "comparator_mean": 9.0,
+      "comparator_standard_deviation": 1.6,
+      "pmcid": "4928400"
+    }
+  ]
+}

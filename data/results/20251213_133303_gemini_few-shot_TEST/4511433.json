@@ -1,0 +1,44 @@
+{
+  "pmcid": "4511433",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 16547,
+    "output": 271
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"LDL cholesterol\",\n      \"intervention\": \"5 mg elobixibat\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"LDL cholesterol\",\n      \"intervention\": \"2.5 mg\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 12,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "LDL cholesterol",
+      "intervention": "5 mg elobixibat",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4511433"
+    },
+    {
+      "outcome": "LDL cholesterol",
+      "intervention": "2.5 mg",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4511433"
+    }
+  ]
+}
