@@ -9,7 +9,7 @@ TARGET_FILENAME = "evaluation_metrics"
 
 # Mapping folder substrings to display names in LaTeX
 MODEL_MAPPING = {
-    "gpt": "GPT-5.1",
+    "gpt": "GPT-5.2",
     "gemini": "Gemini-3-Pro",
     "claude": "Claude Opus 4.5"
 }

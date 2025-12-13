@@ -4,37 +4,14 @@ from typing import List, Dict, Any
 from sklearn.metrics import mean_squared_error
 from difflib import SequenceMatcher
 
-def _filter_subset(gold_standard: List[Dict], extractions: List[Dict], subset: str = None):
-    """
-    Optionally restrict evaluation to a subset.
-    """
-    if subset != "figures":
-        return gold_standard, extractions
-
-    gold_subset = [row for row in gold_standard if row.get("is_data_in_figure_graphics")]
-    if not gold_subset:
-        return [], []
-
-    def _key(row: Dict[str, Any]):
-        return (
-            str(row.get("pmcid")),
-            row.get("intervention", ""),
-            row.get("comparator", ""),
-            row.get("outcome", ""),
-            row.get("outcome_type", ""),
-        )
-
-    allowed_keys = {_key(row) for row in gold_subset}
-    pred_subset = [row for row in extractions if _key(row) in allowed_keys]
-    return gold_subset, pred_subset
-
 class Evaluator:
     def __init__(self, gold_standard: List[Dict], extractions: List[Dict]):
-        # Restrict gold to only the PMCIDs present in predictions
+        # 1. Filter Gold to only relevant PMCIDs
         pmcid_filter = {str(item.get('pmcid')) for item in extractions if item.get('pmcid') is not None}
         if pmcid_filter:
             gold_standard = [row for row in gold_standard if str(row.get('pmcid')) in pmcid_filter]
 
+        # 2. Align keys
         aligned_extractions = self._align_extractions(extractions, gold_standard)
 
         self.gold_df = pd.DataFrame(gold_standard)
@@ -51,7 +28,6 @@ class Evaluator:
         self.long_df = self._prepare_long_data()
 
     def _align_extractions(self, extractions: List[Dict], gold_standard: List[Dict], threshold: float = 0.85) -> List[Dict]:
-        """Aligns extraction keys to Gold Standard keys using fuzzy matching."""
         gold_map = {}
         for item in gold_standard:
             pmcid = str(item.get('pmcid'))
@@ -74,7 +50,6 @@ class Evaluator:
             if pmcid in gold_map:
                 candidates = gold_map[pmcid]
                 query_str = f"{new_item.get('intervention', '')} {new_item.get('comparator', '')} {new_item.get('outcome', '')}"
-                
                 best_ratio = 0.0
                 best_match = None
                 
@@ -98,9 +73,12 @@ class Evaluator:
         if self.gold_df.empty:
             return pd.DataFrame(columns=self.id_cols + ['field', 'gold', 'pred', 'category'])
         
-        gold_id_vars = [c for c in self.id_cols if c in self.gold_df.columns]
+        gold_keep_vars = [c for c in self.id_cols if c in self.gold_df.columns]
+        if 'is_data_in_figure_graphics' in self.gold_df.columns:
+            gold_keep_vars.append('is_data_in_figure_graphics')
+
         g_melt = self.gold_df.melt(
-            id_vars=gold_id_vars, 
+            id_vars=gold_keep_vars, 
             value_vars=[f for f in self.numeric_fields if f in self.gold_df.columns], 
             var_name='field', value_name='gold'
         ).assign(from_gold=True)
@@ -117,9 +95,12 @@ class Evaluator:
         
         merge_keys = self.id_cols + ['field']
         merged = pd.merge(g_melt, m_melt, on=merge_keys, how='outer')
-        merged['from_gold'] = merged['from_gold'].fillna(False)
-        merged['from_pred'] = merged['from_pred'].fillna(False)
         
+        if 'is_data_in_figure_graphics' in merged.columns:
+            merged['is_data_in_figure_graphics'] = merged['is_data_in_figure_graphics'].fillna(False)
+        else:
+            merged['is_data_in_figure_graphics'] = False
+
         merged['category'] = merged.apply(self._get_row_category, axis=1)
         return merged
 
@@ -147,7 +128,6 @@ class Evaluator:
             return False
 
     def _compute_stats(self, df_subset):
-        """Helper to compute P/R/F1/RMSE on a specific dataframe slice."""
         df_subset = df_subset[df_subset['category'] != 'IGNORE']
         if df_subset.empty:
             return {
@@ -176,45 +156,33 @@ class Evaluator:
         }
 
     def _calculate_bootstrap_ci(self, df, metric_key, n_iterations=1000, ci=0.95):
-        """
-        Bootstrap resampling to calculate Confidence Intervals.
-        """
-        if df.empty:
-            return 0.0, 0.0
-            
+        if df.empty: return 0.0, 0.0
         scores = []
         n = len(df)
-        
-        # Resample n_iterations times
         for _ in range(n_iterations):
-            # Sample with replacement
             sample = df.sample(n=n, replace=True)
-            # Re-compute stats using the exact same logic as main evaluation
             stats = self._compute_stats(sample)
             scores.append(stats[metric_key])
-            
+        
         lower = np.percentile(scores, (1 - ci) / 2 * 100)
         upper = np.percentile(scores, (1 + ci) / 2 * 100)
         return lower, upper
 
     def calculate_metrics(self) -> Dict[str, Any]:
+        """
+        Main calculation pipeline.
+        Returns aggregated, exact match, per-field, and figure-subset metrics.
+        """
         scorable_df = self.long_df[self.long_df['category'] != 'IGNORE']
         
-        # 1. Aggregated Metrics
+        # 1. Aggregated Metrics (Total)
         agg_stats = self._compute_stats(scorable_df)
-        
-        # --- Calculate 95% Confidence Intervals ---
         if not scorable_df.empty:
-            # F1 Confidence Interval
-            f1_low, f1_high = self._calculate_bootstrap_ci(scorable_df, "f1")
-            agg_stats["f1_ci_lower"] = f1_low
-            agg_stats["f1_ci_upper"] = f1_high
+            f1_l, f1_h = self._calculate_bootstrap_ci(scorable_df, "f1")
+            agg_stats["f1_ci_lower"], agg_stats["f1_ci_upper"] = f1_l, f1_h
             
-            # RMSE Confidence Interval
-            rmse_low, rmse_high = self._calculate_bootstrap_ci(scorable_df, "rmse")
-            agg_stats["rmse_ci_lower"] = rmse_low
-            agg_stats["rmse_ci_upper"] = rmse_high
-        # -----------------------------------------------
+            rmse_l, rmse_h = self._calculate_bootstrap_ci(scorable_df, "rmse")
+            agg_stats["rmse_ci_lower"], agg_stats["rmse_ci_upper"] = rmse_l, rmse_h
 
         # 2. Exact Match (ICO level)
         exact_matches = []
@@ -226,21 +194,59 @@ class Evaluator:
         
         agg_stats['exact_match'] = np.mean(exact_matches) if exact_matches else 0.0
 
-        # 3. Per-Field Metrics
+        # 3. Per-Field Metrics (Breakdown)
         by_field = {}
         if not scorable_df.empty:
             for field_name, group in scorable_df.groupby('field'):
-                by_field[field_name] = self._compute_stats(group)
+                field_stats = self._compute_stats(group)
+                if len(group) > 0:
+                    f1_l, f1_h = self._calculate_bootstrap_ci(group, "f1")
+                    field_stats["f1_ci_lower"], field_stats["f1_ci_upper"] = f1_l, f1_h
+                    
+                    rmse_l, rmse_h = self._calculate_bootstrap_ci(group, "rmse")
+                    field_stats["rmse_ci_lower"], field_stats["rmse_ci_upper"] = rmse_l, rmse_h
+                
+                by_field[field_name] = field_stats
+
+        # 4. Figure Subset Metrics (Aggregated + Breakdown)
+        figures_output = {}
+        if 'is_data_in_figure_graphics' in scorable_df.columns:
+            # Filter for rows where the GOLD data was marked as being in a figure
+            fig_group = scorable_df[scorable_df['is_data_in_figure_graphics'] == True]
+            
+            if not fig_group.empty:
+                # A. Aggregated Figures
+                fig_agg = self._compute_stats(fig_group)
+                f1_l, f1_h = self._calculate_bootstrap_ci(fig_group, "f1")
+                fig_agg["f1_ci_lower"], fig_agg["f1_ci_upper"] = f1_l, f1_h
+                
+                rmse_l, rmse_h = self._calculate_bootstrap_ci(fig_group, "rmse")
+                fig_agg["rmse_ci_lower"], fig_agg["rmse_ci_upper"] = rmse_l, rmse_h
+                
+                figures_output["aggregated"] = fig_agg
+
+                # B. By-Field Figures
+                fig_by_field = {}
+                for field_name, group in fig_group.groupby('field'):
+                    f_stats = self._compute_stats(group)
+                    if len(group) > 0:
+                        f1_l, f1_h = self._calculate_bootstrap_ci(group, "f1")
+                        f_stats["f1_ci_lower"], f_stats["f1_ci_upper"] = f1_l, f1_h
+                        
+                        rmse_l, rmse_h = self._calculate_bootstrap_ci(group, "rmse")
+                        f_stats["rmse_ci_lower"], f_stats["rmse_ci_upper"] = rmse_l, rmse_h
+                    
+                    fig_by_field[field_name] = f_stats
+                
+                figures_output["by_field"] = fig_by_field
 
         return {
             "aggregated": agg_stats,
-            "by_field": by_field
+            "exact_match": agg_stats.get('exact_match', 0.0),
+            "by_field": by_field,
+            "figures_subset": figures_output 
         }
 
-def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict], subset: str = None) -> Dict[str, Any]:
-    gold_filtered, pred_filtered = _filter_subset(gold_standard, extractions, subset)
-    evaluator = Evaluator(gold_filtered, pred_filtered)
-    metrics = evaluator.calculate_metrics()
-    if subset:
-        metrics["subset"] = subset
-    return metrics
+def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, Any]:
+    evaluator = Evaluator(gold_standard, extractions)
+    return evaluator.calculate_metrics()
