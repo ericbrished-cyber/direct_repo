@@ -1,0 +1,44 @@
+{
+  "pmcid": "5884950",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 21159,
+    "output": 567
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"objective-SCORAD score\",\"intervention\":\"extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).\",\"comparator\":\"extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":13,\"comparator_events\":null,\"comparator_group_size\":13,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"chemokines CXCL9\",\"intervention\":\"extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).\",\"comparator\":\"extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":21,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "objective-SCORAD score",
+      "intervention": "extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).",
+      "comparator": "extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 13,
+      "comparator_events": null,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5884950"
+    },
+    {
+      "outcome": "chemokines CXCL9",
+      "intervention": "extensively hydrolyzed whey-based formula with short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).",
+      "comparator": "extensively hydrolyzed whey-based formula without (control) short-chain galacto-oligosaccharides/long-chain fructo-oligosaccharides (9:1) and Bifidobacterium breve M-16V (active).",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 21,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5884950"
+    }
+  ]
+}

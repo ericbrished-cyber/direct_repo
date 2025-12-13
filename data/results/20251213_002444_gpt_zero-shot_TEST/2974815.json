@@ -1,0 +1,59 @@
+{
+  "pmcid": "2974815",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 13076,
+    "output": 563
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"discontinued treatment\",\"intervention\":\"phone calls\\\" group\",\"comparator\":\"\\\"no phone calls\\\" group\",\"outcome_type\":\"binary\",\"intervention_events\":4,\"intervention_group_size\":108,\"comparator_events\":30,\"comparator_group_size\":246,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The percentage of patients with controlled blood pressure (<140/90 mmHg)\",\"intervention\":\"\\\"phone calls\\\" group\",\"comparator\":\"\\\"no phone calls\\\" group\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":108,\"comparator_events\":null,\"comparator_group_size\":246,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"percentage of patients with controlled blood pressure\",\"intervention\":\"\\\"phone calls\\\" group\",\"comparator\":\"\\\"no phone calls\\\" group\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":108,\"comparator_events\":null,\"comparator_group_size\":246,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "discontinued treatment",
+      "intervention": "phone calls\" group",
+      "comparator": "\"no phone calls\" group",
+      "outcome_type": "binary",
+      "intervention_events": 4,
+      "intervention_group_size": 108,
+      "comparator_events": 30,
+      "comparator_group_size": 246,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2974815"
+    },
+    {
+      "outcome": "The percentage of patients with controlled blood pressure (<140/90 mmHg)",
+      "intervention": "\"phone calls\" group",
+      "comparator": "\"no phone calls\" group",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 108,
+      "comparator_events": null,
+      "comparator_group_size": 246,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2974815"
+    },
+    {
+      "outcome": "percentage of patients with controlled blood pressure",
+      "intervention": "\"phone calls\" group",
+      "comparator": "\"no phone calls\" group",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 108,
+      "comparator_events": null,
+      "comparator_group_size": 246,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2974815"
+    }
+  ]
+}

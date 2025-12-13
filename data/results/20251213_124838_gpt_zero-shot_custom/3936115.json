@@ -1,0 +1,59 @@
+{
+  "pmcid": "3936115",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8733,
+    "output": 595
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"The number of diverticulitis clinical symptom occurrences during 12months\",\"intervention\":\"Microencapsulated sodium butyrate (MSB) 300 mg daily\",\"comparator\":\"control group was administered placebo\",\"outcome_type\":\"binary\",\"intervention_events\":2,\"intervention_group_size\":30,\"comparator_events\":7,\"comparator_group_size\":22,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"the number of abdominal ultrasound examinations performed for suspected diverticulitis and subsequent number of diverticulitis diagnosed based on abdominal US\",\"intervention\":\"Microencapsulated sodium butyrate (MSB) 300 mg daily\",\"comparator\":\"control group was administered placebo\",\"outcome_type\":\"binary\",\"intervention_events\":1,\"intervention_group_size\":30,\"comparator_events\":5,\"comparator_group_size\":22,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Subjective improvement in observed symptoms based on a single closed-end question (yes or no answer): \\\"Did you observe adequate relief of diverticulosis related to abdominal pain or discomfort within the past 12 months?\\\"\",\"intervention\":\"Microencapsulated sodium butyrate (MSB) 300 mg daily\",\"comparator\":\"control group was administered placebo\",\"outcome_type\":\"binary\",\"intervention_events\":17,\"intervention_group_size\":30,\"comparator_events\":5,\"comparator_group_size\":22,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "The number of diverticulitis clinical symptom occurrences during 12months",
+      "intervention": "Microencapsulated sodium butyrate (MSB) 300 mg daily",
+      "comparator": "control group was administered placebo",
+      "outcome_type": "binary",
+      "intervention_events": 2,
+      "intervention_group_size": 30,
+      "comparator_events": 7,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3936115"
+    },
+    {
+      "outcome": "the number of abdominal ultrasound examinations performed for suspected diverticulitis and subsequent number of diverticulitis diagnosed based on abdominal US",
+      "intervention": "Microencapsulated sodium butyrate (MSB) 300 mg daily",
+      "comparator": "control group was administered placebo",
+      "outcome_type": "binary",
+      "intervention_events": 1,
+      "intervention_group_size": 30,
+      "comparator_events": 5,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3936115"
+    },
+    {
+      "outcome": "Subjective improvement in observed symptoms based on a single closed-end question (yes or no answer): \"Did you observe adequate relief of diverticulosis related to abdominal pain or discomfort within the past 12 months?\"",
+      "intervention": "Microencapsulated sodium butyrate (MSB) 300 mg daily",
+      "comparator": "control group was administered placebo",
+      "outcome_type": "binary",
+      "intervention_events": 17,
+      "intervention_group_size": 30,
+      "comparator_events": 5,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3936115"
+    }
+  ]
+}

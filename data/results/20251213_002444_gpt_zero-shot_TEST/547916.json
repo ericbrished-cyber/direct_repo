@@ -1,0 +1,29 @@
+{
+  "pmcid": "547916",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 13820,
+    "output": 289
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"matrix metalloproteinase-9 (MMP-9)\",\"intervention\":\"doxycycline (100 mg)\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":4,\"intervention_mean\":2.18,\"intervention_standard_deviation\":1.94,\"comparator_mean\":3.26,\"comparator_standard_deviation\":3.58}]}",
+  "extraction": [
+    {
+      "outcome": "matrix metalloproteinase-9 (MMP-9)",
+      "intervention": "doxycycline (100 mg)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 4,
+      "intervention_mean": 2.18,
+      "intervention_standard_deviation": 1.94,
+      "comparator_mean": 3.26,
+      "comparator_standard_deviation": 3.58,
+      "pmcid": "547916"
+    }
+  ]
+}

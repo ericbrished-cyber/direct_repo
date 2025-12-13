@@ -1,0 +1,119 @@
+{
+  "pmcid": "4879328",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 18781,
+    "output": 1275
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"waist circumference\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":103,\"comparator_events\":null,\"comparator_group_size\":112,\"intervention_mean\":98.26,\"intervention_standard_deviation\":null,\"comparator_mean\":98.58,\"comparator_standard_deviation\":null},{\"outcome\":\"effects for walking\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":104,\"comparator_events\":null,\"comparator_group_size\":114,\"intervention_mean\":2.75,\"intervention_standard_deviation\":null,\"comparator_mean\":4.3,\"comparator_standard_deviation\":null},{\"outcome\":\"effects for vigorous activity\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":104,\"comparator_events\":null,\"comparator_group_size\":114,\"intervention_mean\":2.53,\"intervention_standard_deviation\":null,\"comparator_mean\":1.16,\"comparator_standard_deviation\":null},{\"outcome\":\"FFBQ Total Index Score\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":104,\"comparator_events\":null,\"comparator_group_size\":114,\"intervention_mean\":3.37,\"intervention_standard_deviation\":null,\"comparator_mean\":3.31,\"comparator_standard_deviation\":null},{\"outcome\":\"weekly moderate physical activity sessions\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":104,\"comparator_events\":null,\"comparator_group_size\":114,\"intervention_mean\":1.79,\"intervention_standard_deviation\":null,\"comparator_mean\":0.43,\"comparator_standard_deviation\":null},{\"outcome\":\"accelerometer-assessed moderate to vigorous physical activity (MVPA)\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":99,\"comparator_events\":null,\"comparator_group_size\":108,\"intervention_mean\":203.61,\"intervention_standard_deviation\":null,\"comparator_mean\":180.8,\"comparator_standard_deviation\":null},{\"outcome\":\"weight loss\",\"intervention\":\"Get Healthy, Stay Healthy' (GHSH)\",\"comparator\":\"no continued contact\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":104,\"comparator_events\":null,\"comparator_group_size\":114,\"intervention_mean\":82.71,\"intervention_standard_deviation\":null,\"comparator_mean\":83.1,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "waist circumference",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 103,
+      "comparator_events": null,
+      "comparator_group_size": 112,
+      "intervention_mean": 98.26,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 98.58,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "effects for walking",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 104,
+      "comparator_events": null,
+      "comparator_group_size": 114,
+      "intervention_mean": 2.75,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 4.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "effects for vigorous activity",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 104,
+      "comparator_events": null,
+      "comparator_group_size": 114,
+      "intervention_mean": 2.53,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.16,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "FFBQ Total Index Score",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 104,
+      "comparator_events": null,
+      "comparator_group_size": 114,
+      "intervention_mean": 3.37,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 3.31,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "weekly moderate physical activity sessions",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 104,
+      "comparator_events": null,
+      "comparator_group_size": 114,
+      "intervention_mean": 1.79,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.43,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "accelerometer-assessed moderate to vigorous physical activity (MVPA)",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 99,
+      "comparator_events": null,
+      "comparator_group_size": 108,
+      "intervention_mean": 203.61,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 180.8,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    },
+    {
+      "outcome": "weight loss",
+      "intervention": "Get Healthy, Stay Healthy' (GHSH)",
+      "comparator": "no continued contact",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 104,
+      "comparator_events": null,
+      "comparator_group_size": 114,
+      "intervention_mean": 82.71,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 83.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "4879328"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "5773985",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15874,
+    "output": 937
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"mean volume of both the solutions used\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":4.15,\"intervention_standard_deviation\":0.52,\"comparator_mean\":4.12,\"comparator_standard_deviation\":0.6},{\"outcome\":\"subjective onset of action\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":3.0,\"intervention_standard_deviation\":1.08,\"comparator_mean\":2.92,\"comparator_standard_deviation\":1.03},{\"outcome\":\"objective onset of action\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":7.28,\"intervention_standard_deviation\":1.59,\"comparator_mean\":7.4,\"comparator_standard_deviation\":1.93},{\"outcome\":\"duration of surgical procedure\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":32.2,\"intervention_standard_deviation\":15.5,\"comparator_mean\":33.68,\"comparator_standard_deviation\":18.91},{\"outcome\":\"the mean duration of postoperative analgesia\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":508.92,\"intervention_standard_deviation\":63.3,\"comparator_mean\":1840.84,\"comparator_standard_deviation\":819.5},{\"outcome\":\"number of analgesic tablets\",\"intervention\":\"0.5% bupivacaine with 1:200000 epinephrine in group I\",\"comparator\":\"mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":1.64,\"intervention_standard_deviation\":0.99,\"comparator_mean\":0.8,\"comparator_standard_deviation\":1.08}]}",
+  "extraction": [
+    {
+      "outcome": "mean volume of both the solutions used",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 4.15,
+      "intervention_standard_deviation": 0.52,
+      "comparator_mean": 4.12,
+      "comparator_standard_deviation": 0.6,
+      "pmcid": "5773985"
+    },
+    {
+      "outcome": "subjective onset of action",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 3.0,
+      "intervention_standard_deviation": 1.08,
+      "comparator_mean": 2.92,
+      "comparator_standard_deviation": 1.03,
+      "pmcid": "5773985"
+    },
+    {
+      "outcome": "objective onset of action",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 7.28,
+      "intervention_standard_deviation": 1.59,
+      "comparator_mean": 7.4,
+      "comparator_standard_deviation": 1.93,
+      "pmcid": "5773985"
+    },
+    {
+      "outcome": "duration of surgical procedure",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 32.2,
+      "intervention_standard_deviation": 15.5,
+      "comparator_mean": 33.68,
+      "comparator_standard_deviation": 18.91,
+      "pmcid": "5773985"
+    },
+    {
+      "outcome": "the mean duration of postoperative analgesia",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 508.92,
+      "intervention_standard_deviation": 63.3,
+      "comparator_mean": 1840.84,
+      "comparator_standard_deviation": 819.5,
+      "pmcid": "5773985"
+    },
+    {
+      "outcome": "number of analgesic tablets",
+      "intervention": "0.5% bupivacaine with 1:200000 epinephrine in group I",
+      "comparator": "mixture of 39 ml of 0.5% bupivacaine with epinephrine 1:200000 and 1 ml of 300 _g buprenorphine (3 _g/kg)in group II",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": 1.64,
+      "intervention_standard_deviation": 0.99,
+      "comparator_mean": 0.8,
+      "comparator_standard_deviation": 1.08,
+      "pmcid": "5773985"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pmcid": "5380284",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8672,
+    "output": 665
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Pain scores 48 hours after the surgery\",\"intervention\":\"Gum-chewing group\",\"comparator\":\"No gum group\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":38,\"comparator_events\":null,\"comparator_group_size\":37,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Surgery duration\",\"intervention\":\"Gum-chewing group\",\"comparator\":\"No gum group\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":38,\"comparator_events\":null,\"comparator_group_size\":37,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Rates of POI\",\"intervention\":\"Gum-chewing group\",\"comparator\":\"No gum group\",\"outcome_type\":\"binary\",\"intervention_events\":21,\"intervention_group_size\":38,\"comparator_events\":21,\"comparator_group_size\":37,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Consumption of fentanyl\",\"intervention\":\"Gum-chewing group\",\"comparator\":\"No gum group\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":38,\"comparator_events\":null,\"comparator_group_size\":37,\"intervention_mean\":1.01,\"intervention_standard_deviation\":0.29,\"comparator_mean\":1.0,\"comparator_standard_deviation\":0.37},{\"outcome\":\"Pain scores 24 hours and 72 hours after the surgery\",\"intervention\":\"Gum-chewing group\",\"comparator\":\"No gum group\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":38,\"comparator_events\":null,\"comparator_group_size\":37,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Pain scores 48 hours after the surgery",
+      "intervention": "Gum-chewing group",
+      "comparator": "No gum group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 38,
+      "comparator_events": null,
+      "comparator_group_size": 37,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5380284"
+    },
+    {
+      "outcome": "Surgery duration",
+      "intervention": "Gum-chewing group",
+      "comparator": "No gum group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 38,
+      "comparator_events": null,
+      "comparator_group_size": 37,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5380284"
+    },
+    {
+      "outcome": "Rates of POI",
+      "intervention": "Gum-chewing group",
+      "comparator": "No gum group",
+      "outcome_type": "binary",
+      "intervention_events": 21,
+      "intervention_group_size": 38,
+      "comparator_events": 21,
+      "comparator_group_size": 37,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5380284"
+    },
+    {
+      "outcome": "Consumption of fentanyl",
+      "intervention": "Gum-chewing group",
+      "comparator": "No gum group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 38,
+      "comparator_events": null,
+      "comparator_group_size": 37,
+      "intervention_mean": 1.01,
+      "intervention_standard_deviation": 0.29,
+      "comparator_mean": 1.0,
+      "comparator_standard_deviation": 0.37,
+      "pmcid": "5380284"
+    },
+    {
+      "outcome": "Pain scores 24 hours and 72 hours after the surgery",
+      "intervention": "Gum-chewing group",
+      "comparator": "No gum group",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 38,
+      "comparator_events": null,
+      "comparator_group_size": 37,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5380284"
+    }
+  ]
+}

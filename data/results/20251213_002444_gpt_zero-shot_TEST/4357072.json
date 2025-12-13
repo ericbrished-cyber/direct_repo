@@ -1,0 +1,74 @@
+{
+  "pmcid": "4357072",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 11312,
+    "output": 867
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"improvement in symptom scores\",\"intervention\":\"topical pimecrolimus cream 1%\",\"comparator\":\"triamcinolone acetonide oral paste 0.1%\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":15,\"comparator_events\":null,\"comparator_group_size\":15,\"intervention_mean\":0.2,\"intervention_standard_deviation\":0.4,\"comparator_mean\":0.8,\"comparator_standard_deviation\":0.6},{\"outcome\":\"reduction in burning sensation\",\"intervention\":\"topical pimecrolimus cream 1%\",\"comparator\":\"triamcinolone acetonide oral paste 0.1%\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":15,\"comparator_events\":null,\"comparator_group_size\":15,\"intervention_mean\":1.0,\"intervention_standard_deviation\":2.1,\"comparator_mean\":5.3,\"comparator_standard_deviation\":6.1},{\"outcome\":\"reduction in erythematous area\",\"intervention\":\"topical pimecrolimus cream 1%\",\"comparator\":\"triamcinolone acetonide oral paste 0.1%\",\"outcome_type\":\"binary\",\"intervention_events\":15,\"intervention_group_size\":15,\"comparator_events\":15,\"comparator_group_size\":15,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"reappearance of erythematous areas after 2 months posttreatment\",\"intervention\":\"pimecrolimus\",\"comparator\":\"triamcinolone acetate\",\"outcome_type\":\"binary\",\"intervention_events\":1,\"intervention_group_size\":15,\"comparator_events\":5,\"comparator_group_size\":15,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "improvement in symptom scores",
+      "intervention": "topical pimecrolimus cream 1%",
+      "comparator": "triamcinolone acetonide oral paste 0.1%",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 0.2,
+      "intervention_standard_deviation": 0.4,
+      "comparator_mean": 0.8,
+      "comparator_standard_deviation": 0.6,
+      "pmcid": "4357072"
+    },
+    {
+      "outcome": "reduction in burning sensation",
+      "intervention": "topical pimecrolimus cream 1%",
+      "comparator": "triamcinolone acetonide oral paste 0.1%",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 1.0,
+      "intervention_standard_deviation": 2.1,
+      "comparator_mean": 5.3,
+      "comparator_standard_deviation": 6.1,
+      "pmcid": "4357072"
+    },
+    {
+      "outcome": "reduction in erythematous area",
+      "intervention": "topical pimecrolimus cream 1%",
+      "comparator": "triamcinolone acetonide oral paste 0.1%",
+      "outcome_type": "binary",
+      "intervention_events": 15,
+      "intervention_group_size": 15,
+      "comparator_events": 15,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4357072"
+    },
+    {
+      "outcome": "reappearance of erythematous areas after 2 months posttreatment",
+      "intervention": "pimecrolimus",
+      "comparator": "triamcinolone acetate",
+      "outcome_type": "binary",
+      "intervention_events": 1,
+      "intervention_group_size": 15,
+      "comparator_events": 5,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4357072"
+    }
+  ]
+}

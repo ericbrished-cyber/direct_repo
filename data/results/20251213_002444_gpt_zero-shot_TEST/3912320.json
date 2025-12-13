@@ -1,0 +1,59 @@
+{
+  "pmcid": "3912320",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8680,
+    "output": 370
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Correct response rate for 500 Hz frequency\",\"intervention\":\"Occupational noise\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":19,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":31.9,\"intervention_standard_deviation\":null,\"comparator_mean\":55.9,\"comparator_standard_deviation\":null},{\"outcome\":\"Correct response rate for 4,000 Hz frequency\",\"intervention\":\"Occupational noise\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":19,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":28.07,\"intervention_standard_deviation\":null,\"comparator_mean\":53.07,\"comparator_standard_deviation\":null},{\"outcome\":\"Correct response rate for 2,000 Hz frequency\",\"intervention\":\"Occupational noise\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":19,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":30.4,\"intervention_standard_deviation\":null,\"comparator_mean\":51.4,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Correct response rate for 500 Hz frequency",
+      "intervention": "Occupational noise",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 31.9,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 55.9,
+      "comparator_standard_deviation": null,
+      "pmcid": "3912320"
+    },
+    {
+      "outcome": "Correct response rate for 4,000 Hz frequency",
+      "intervention": "Occupational noise",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 28.07,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 53.07,
+      "comparator_standard_deviation": null,
+      "pmcid": "3912320"
+    },
+    {
+      "outcome": "Correct response rate for 2,000 Hz frequency",
+      "intervention": "Occupational noise",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 30.4,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 51.4,
+      "comparator_standard_deviation": null,
+      "pmcid": "3912320"
+    }
+  ]
+}

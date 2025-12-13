@@ -1,0 +1,104 @@
+{
+  "pmcid": "5055753",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12013,
+    "output": 776
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"The percentages of patients in the calm\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"binary\",\"intervention_events\":14,\"intervention_group_size\":40,\"comparator_events\":7,\"comparator_group_size\":40,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The percentages of patients in the sedated scale\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"binary\",\"intervention_events\":17,\"intervention_group_size\":40,\"comparator_events\":7,\"comparator_group_size\":40,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"the percentages of patients in the agitated sedation scale\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":40,\"comparator_events\":null,\"comparator_group_size\":40,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"the percentages of patients in the heavily sedated\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":40,\"comparator_events\":null,\"comparator_group_size\":40,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The mean \u00ac\u00b1 SD of intraoperatively administered fentany\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":40,\"comparator_events\":null,\"comparator_group_size\":40,\"intervention_mean\":105.0,\"intervention_standard_deviation\":30.8,\"comparator_mean\":165.0,\"comparator_standard_deviation\":34.5},{\"outcome\":\"Mean \u00b1 SD of heart rate at 60 min\",\"intervention\":\"0.2 mg oral clonidine\",\"comparator\":\"2 mg oral midazolam\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":40,\"comparator_events\":null,\"comparator_group_size\":40,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "The percentages of patients in the calm",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 14,
+      "intervention_group_size": 40,
+      "comparator_events": 7,
+      "comparator_group_size": 40,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5055753"
+    },
+    {
+      "outcome": "The percentages of patients in the sedated scale",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "binary",
+      "intervention_events": 17,
+      "intervention_group_size": 40,
+      "comparator_events": 7,
+      "comparator_group_size": 40,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5055753"
+    },
+    {
+      "outcome": "the percentages of patients in the agitated sedation scale",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5055753"
+    },
+    {
+      "outcome": "the percentages of patients in the heavily sedated",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5055753"
+    },
+    {
+      "outcome": "The mean \u00ac\u00b1 SD of intraoperatively administered fentany",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 105.0,
+      "intervention_standard_deviation": 30.8,
+      "comparator_mean": 165.0,
+      "comparator_standard_deviation": 34.5,
+      "pmcid": "5055753"
+    },
+    {
+      "outcome": "Mean \u00b1 SD of heart rate at 60 min",
+      "intervention": "0.2 mg oral clonidine",
+      "comparator": "2 mg oral midazolam",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5055753"
+    }
+  ]
+}

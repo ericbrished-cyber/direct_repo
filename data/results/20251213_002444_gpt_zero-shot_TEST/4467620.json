@@ -1,0 +1,89 @@
+{
+  "pmcid": "4467620",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 14461,
+    "output": 694
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"decrease in exercise intensity as time elapsed (at time 10)\",\"intervention\":\"Hot + Cooling conditions\",\"comparator\":\"Hot conditions\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":8,\"comparator_events\":null,\"comparator_group_size\":8,\"intervention_mean\":114.6,\"intervention_standard_deviation\":35.6,\"comparator_mean\":123.9,\"comparator_standard_deviation\":30.2},{\"outcome\":\"weight reduction\",\"intervention\":\"Hot + Cooling conditions\",\"comparator\":\"Hot conditions\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":8,\"comparator_events\":null,\"comparator_group_size\":8,\"intervention_mean\":0.37,\"intervention_standard_deviation\":0.22,\"comparator_mean\":0.41,\"comparator_standard_deviation\":0.07},{\"outcome\":\"accuracy of the cognitive tasks\",\"intervention\":\"Exercise - Hot + Cooling conditions\",\"comparator\":\"At rest - Hot + Cooling conditions\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"accuracy of the cognitive tasks\",\"intervention\":\"Exercise - Hot condition\",\"comparator\":\"At rest - Hot condition\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"differences in the accuracy\",\"intervention\":\"Hot + Cooling conditions\",\"comparator\":\"Hot conditions\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "decrease in exercise intensity as time elapsed (at time 10)",
+      "intervention": "Hot + Cooling conditions",
+      "comparator": "Hot conditions",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 8,
+      "comparator_events": null,
+      "comparator_group_size": 8,
+      "intervention_mean": 114.6,
+      "intervention_standard_deviation": 35.6,
+      "comparator_mean": 123.9,
+      "comparator_standard_deviation": 30.2,
+      "pmcid": "4467620"
+    },
+    {
+      "outcome": "weight reduction",
+      "intervention": "Hot + Cooling conditions",
+      "comparator": "Hot conditions",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 8,
+      "comparator_events": null,
+      "comparator_group_size": 8,
+      "intervention_mean": 0.37,
+      "intervention_standard_deviation": 0.22,
+      "comparator_mean": 0.41,
+      "comparator_standard_deviation": 0.07,
+      "pmcid": "4467620"
+    },
+    {
+      "outcome": "accuracy of the cognitive tasks",
+      "intervention": "Exercise - Hot + Cooling conditions",
+      "comparator": "At rest - Hot + Cooling conditions",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4467620"
+    },
+    {
+      "outcome": "accuracy of the cognitive tasks",
+      "intervention": "Exercise - Hot condition",
+      "comparator": "At rest - Hot condition",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4467620"
+    },
+    {
+      "outcome": "differences in the accuracy",
+      "intervention": "Hot + Cooling conditions",
+      "comparator": "Hot conditions",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4467620"
+    }
+  ]
+}

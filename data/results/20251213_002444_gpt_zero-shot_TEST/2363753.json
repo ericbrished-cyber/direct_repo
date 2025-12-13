@@ -1,0 +1,74 @@
+{
+  "pmcid": "2363753",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15212,
+    "output": 627
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Days with fever\",\"intervention\":\"Amifostine\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Hospital stay\",\"intervention\":\"Amifostine\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Grade III/IV stomatitis\",\"intervention\":\"Amifostine\",\"comparator\":\"Control\",\"outcome_type\":\"binary\",\"intervention_events\":5,\"intervention_group_size\":20,\"comparator_events\":10,\"comparator_group_size\":20,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Glomerular filtration rate fall\",\"intervention\":\"Amifostine\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Days with fever",
+      "intervention": "Amifostine",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2363753"
+    },
+    {
+      "outcome": "Hospital stay",
+      "intervention": "Amifostine",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2363753"
+    },
+    {
+      "outcome": "Grade III/IV stomatitis",
+      "intervention": "Amifostine",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 5,
+      "intervention_group_size": 20,
+      "comparator_events": 10,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2363753"
+    },
+    {
+      "outcome": "Glomerular filtration rate fall",
+      "intervention": "Amifostine",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2363753"
+    }
+  ]
+}

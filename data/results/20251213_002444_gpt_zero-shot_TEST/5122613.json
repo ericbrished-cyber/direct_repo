@@ -1,0 +1,89 @@
+{
+  "pmcid": "5122613",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12968,
+    "output": 949
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"Left SCTT\",\n      \"intervention\": \"Digestion-resistant maltodextrin\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 29,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": 10.2,\n      \"intervention_standard_deviation\": 8.6,\n      \"comparator_mean\": 12.1,\n      \"comparator_standard_deviation\": 9.5\n    },\n    {\n      \"outcome\": \"Adverse events\",\n      \"intervention\": \"Digestion-resistant maltodextrin\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 4,\n      \"intervention_group_size\": 33,\n      \"comparator_events\": 2,\n      \"comparator_group_size\": 33,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Baseline characteristics and diet\",\n      \"intervention\": \"Digestion-resistant maltodextrin\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 33,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 33,\n      \"intervention_mean\": 10.0,\n      \"intervention_standard_deviation\": 4.6,\n      \"comparator_mean\": 11.5,\n      \"comparator_standard_deviation\": 4.6\n    },\n    {\n      \"outcome\": \"Improvement in faeces consistency\",\n      \"intervention\": \"Digestion-resistant maltodextrin\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 33,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 33,\n      \"intervention_mean\": 3.4,\n      \"intervention_standard_deviation\": 1.0,\n      \"comparator_mean\": 3.2,\n      \"comparator_standard_deviation\": 0.5\n    },\n    {\n      \"outcome\": \"Colonic transit time\",\n      \"intervention\": \"Digestion-resistant maltodextrin\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 29,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 28,\n      \"intervention_mean\": 39.7,\n      \"intervention_standard_deviation\": 22.3,\n      \"comparator_mean\": 48.0,\n      \"comparator_standard_deviation\": 25.0\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "Left SCTT",
+      "intervention": "Digestion-resistant maltodextrin",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 29,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": 10.2,
+      "intervention_standard_deviation": 8.6,
+      "comparator_mean": 12.1,
+      "comparator_standard_deviation": 9.5,
+      "pmcid": "5122613"
+    },
+    {
+      "outcome": "Adverse events",
+      "intervention": "Digestion-resistant maltodextrin",
+      "comparator": "Placebo",
+      "outcome_type": "binary",
+      "intervention_events": 4,
+      "intervention_group_size": 33,
+      "comparator_events": 2,
+      "comparator_group_size": 33,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5122613"
+    },
+    {
+      "outcome": "Baseline characteristics and diet",
+      "intervention": "Digestion-resistant maltodextrin",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 33,
+      "comparator_events": null,
+      "comparator_group_size": 33,
+      "intervention_mean": 10.0,
+      "intervention_standard_deviation": 4.6,
+      "comparator_mean": 11.5,
+      "comparator_standard_deviation": 4.6,
+      "pmcid": "5122613"
+    },
+    {
+      "outcome": "Improvement in faeces consistency",
+      "intervention": "Digestion-resistant maltodextrin",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 33,
+      "comparator_events": null,
+      "comparator_group_size": 33,
+      "intervention_mean": 3.4,
+      "intervention_standard_deviation": 1.0,
+      "comparator_mean": 3.2,
+      "comparator_standard_deviation": 0.5,
+      "pmcid": "5122613"
+    },
+    {
+      "outcome": "Colonic transit time",
+      "intervention": "Digestion-resistant maltodextrin",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 29,
+      "comparator_events": null,
+      "comparator_group_size": 28,
+      "intervention_mean": 39.7,
+      "intervention_standard_deviation": 22.3,
+      "comparator_mean": 48.0,
+      "comparator_standard_deviation": 25.0,
+      "pmcid": "5122613"
+    }
+  ]
+}

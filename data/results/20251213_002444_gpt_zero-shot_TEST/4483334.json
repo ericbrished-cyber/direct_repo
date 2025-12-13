@@ -1,0 +1,104 @@
+{
+  "pmcid": "4483334",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12083,
+    "output": 687
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Total weight percentage of calcium\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"Distilled and deionized water (group A)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":18.06,\"intervention_standard_deviation\":15.683,\"comparator_mean\":6.98,\"comparator_standard_deviation\":4.42},{\"outcome\":\"Total weight percentage of calcium\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"Nd:YAG laser (group B)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":18.06,\"intervention_standard_deviation\":15.683,\"comparator_mean\":9.36,\"comparator_standard_deviation\":5.49},{\"outcome\":\"Total weight percentage of calcium\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"CPP-ACP cr\u00e8me (group C)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":18.06,\"intervention_standard_deviation\":15.683,\"comparator_mean\":13.17,\"comparator_standard_deviation\":7.1},{\"outcome\":\"Total weight percentage of phosphate\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"Distilled and deionized water (group A)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":12.68,\"intervention_standard_deviation\":10.505,\"comparator_mean\":6.99,\"comparator_standard_deviation\":3.37},{\"outcome\":\"Total weight percentage of phosphate\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"Nd:YAG laser (group B)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":12.68,\"intervention_standard_deviation\":10.505,\"comparator_mean\":8.19,\"comparator_standard_deviation\":3.3},{\"outcome\":\"Total weight percentage of phosphate\",\"intervention\":\"CPP-ACP plus laser (group D)\",\"comparator\":\"CPP-ACP cr\u00e8me (group C)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":20,\"comparator_events\":null,\"comparator_group_size\":20,\"intervention_mean\":12.68,\"intervention_standard_deviation\":10.505,\"comparator_mean\":10.12,\"comparator_standard_deviation\":2.724}]}",
+  "extraction": [
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Distilled and deionized water (group A)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.683,
+      "comparator_mean": 6.98,
+      "comparator_standard_deviation": 4.42,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Nd:YAG laser (group B)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.683,
+      "comparator_mean": 9.36,
+      "comparator_standard_deviation": 5.49,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of calcium",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "CPP-ACP cr\u00e8me (group C)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 18.06,
+      "intervention_standard_deviation": 15.683,
+      "comparator_mean": 13.17,
+      "comparator_standard_deviation": 7.1,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Distilled and deionized water (group A)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.505,
+      "comparator_mean": 6.99,
+      "comparator_standard_deviation": 3.37,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "Nd:YAG laser (group B)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.505,
+      "comparator_mean": 8.19,
+      "comparator_standard_deviation": 3.3,
+      "pmcid": "4483334"
+    },
+    {
+      "outcome": "Total weight percentage of phosphate",
+      "intervention": "CPP-ACP plus laser (group D)",
+      "comparator": "CPP-ACP cr\u00e8me (group C)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 20,
+      "comparator_events": null,
+      "comparator_group_size": 20,
+      "intervention_mean": 12.68,
+      "intervention_standard_deviation": 10.505,
+      "comparator_mean": 10.12,
+      "comparator_standard_deviation": 2.724,
+      "pmcid": "4483334"
+    }
+  ]
+}

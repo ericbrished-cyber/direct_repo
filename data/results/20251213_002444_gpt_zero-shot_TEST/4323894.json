@@ -1,0 +1,74 @@
+{
+  "pmcid": "4323894",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15895,
+    "output": 645
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Improvement in Glasgow outcome score at 6 months post-trauma\",\"intervention\":\"Deep-cooling\",\"comparator\":\"Mild-cooling\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":9,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Improvement in Glasgow outcome score at 6 months post-trauma\",\"intervention\":\"Deep-cooling\",\"comparator\":\"No cooling\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":9,\"comparator_events\":null,\"comparator_group_size\":13,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Rate of complications\",\"intervention\":\"Mild-cooling or deep-cooling\",\"comparator\":\"No cooling\",\"outcome_type\":\"binary\",\"intervention_events\":10,\"intervention_group_size\":19,\"comparator_events\":6,\"comparator_group_size\":13,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Improvement in Glasgow outcome score at 6 months post-trauma\",\"intervention\":\"Mild-cooling\",\"comparator\":\"No cooling\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":13,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Deep-cooling",
+      "comparator": "Mild-cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Deep-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Rate of complications",
+      "intervention": "Mild-cooling or deep-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 19,
+      "comparator_events": 6,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    },
+    {
+      "outcome": "Improvement in Glasgow outcome score at 6 months post-trauma",
+      "intervention": "Mild-cooling",
+      "comparator": "No cooling",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 13,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4323894"
+    }
+  ]
+}

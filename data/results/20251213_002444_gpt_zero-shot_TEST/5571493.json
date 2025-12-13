@@ -1,0 +1,104 @@
+{
+  "pmcid": "5571493",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8118,
+    "output": 777
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Glycemic level\",\"intervention\":\"Dw 5% with Quinine infusion\",\"comparator\":\"Dw 5% without Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":0.82,\"intervention_standard_deviation\":0.05,\"comparator_mean\":0.92,\"comparator_standard_deviation\":0.07},{\"outcome\":\"Glycemic level\",\"intervention\":\"Saline + Quinine infusion\",\"comparator\":\"Dw 5% + Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":0.74,\"intervention_standard_deviation\":0.05,\"comparator_mean\":0.82,\"comparator_standard_deviation\":0.05},{\"outcome\":\"Glycemic level\",\"intervention\":\"Saline + Quinine infusion\",\"comparator\":\"Saline without Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":0.74,\"intervention_standard_deviation\":0.05,\"comparator_mean\":0.83,\"comparator_standard_deviation\":0.05},{\"outcome\":\"QT interval\",\"intervention\":\"Saline + Quinine infusion\",\"comparator\":\"Saline without Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"QT interval\",\"intervention\":\"Dw 5%+ Quinine infusion\",\"comparator\":\"Dw 5% without Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Hypoglycemia\",\"intervention\":\"Saline + Quinine infusion\",\"comparator\":\"Saline without Quinine infusion\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Glycemic level",
+      "intervention": "Dw 5% with Quinine infusion",
+      "comparator": "Dw 5% without Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 0.82,
+      "intervention_standard_deviation": 0.05,
+      "comparator_mean": 0.92,
+      "comparator_standard_deviation": 0.07,
+      "pmcid": "5571493"
+    },
+    {
+      "outcome": "Glycemic level",
+      "intervention": "Saline + Quinine infusion",
+      "comparator": "Dw 5% + Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 0.74,
+      "intervention_standard_deviation": 0.05,
+      "comparator_mean": 0.82,
+      "comparator_standard_deviation": 0.05,
+      "pmcid": "5571493"
+    },
+    {
+      "outcome": "Glycemic level",
+      "intervention": "Saline + Quinine infusion",
+      "comparator": "Saline without Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": 0.74,
+      "intervention_standard_deviation": 0.05,
+      "comparator_mean": 0.83,
+      "comparator_standard_deviation": 0.05,
+      "pmcid": "5571493"
+    },
+    {
+      "outcome": "QT interval",
+      "intervention": "Saline + Quinine infusion",
+      "comparator": "Saline without Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5571493"
+    },
+    {
+      "outcome": "QT interval",
+      "intervention": "Dw 5%+ Quinine infusion",
+      "comparator": "Dw 5% without Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5571493"
+    },
+    {
+      "outcome": "Hypoglycemia",
+      "intervention": "Saline + Quinine infusion",
+      "comparator": "Saline without Quinine infusion",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5571493"
+    }
+  ]
+}

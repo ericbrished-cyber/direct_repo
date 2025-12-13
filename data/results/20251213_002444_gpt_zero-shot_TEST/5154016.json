@@ -1,0 +1,104 @@
+{
+  "pmcid": "5154016",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8943,
+    "output": 709
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"24 h drainage volume\",\"intervention\":\"Stypro hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":187.9,\"intervention_standard_deviation\":82.0,\"comparator_mean\":230.8,\"comparator_standard_deviation\":75.0},{\"outcome\":\"Second 24 h drainage volume\",\"intervention\":\"Stypro hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":53.7,\"intervention_standard_deviation\":3.8,\"comparator_mean\":63.5,\"comparator_standard_deviation\":14.2},{\"outcome\":\"Second 24 h drainage volume\",\"intervention\":\"Collagen hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":63.3,\"intervention_standard_deviation\":8.9,\"comparator_mean\":63.5,\"comparator_standard_deviation\":14.2},{\"outcome\":\"24 h drainage volume\",\"intervention\":\"Collagen hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":185.2,\"intervention_standard_deviation\":68.0,\"comparator_mean\":230.8,\"comparator_standard_deviation\":75.0},{\"outcome\":\"Total drainage volume\",\"intervention\":\"Stypro hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":231.5,\"intervention_standard_deviation\":18.1,\"comparator_mean\":318.5,\"comparator_standard_deviation\":26.7},{\"outcome\":\"Total drainage volume\",\"intervention\":\"Collagen hemostatic sponge\",\"comparator\":\"Gelatin sponge\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":32,\"intervention_mean\":248.5,\"intervention_standard_deviation\":18.8,\"comparator_mean\":318.5,\"comparator_standard_deviation\":26.7}]}",
+  "extraction": [
+    {
+      "outcome": "24 h drainage volume",
+      "intervention": "Stypro hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 187.9,
+      "intervention_standard_deviation": 82.0,
+      "comparator_mean": 230.8,
+      "comparator_standard_deviation": 75.0,
+      "pmcid": "5154016"
+    },
+    {
+      "outcome": "Second 24 h drainage volume",
+      "intervention": "Stypro hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 53.7,
+      "intervention_standard_deviation": 3.8,
+      "comparator_mean": 63.5,
+      "comparator_standard_deviation": 14.2,
+      "pmcid": "5154016"
+    },
+    {
+      "outcome": "Second 24 h drainage volume",
+      "intervention": "Collagen hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 63.3,
+      "intervention_standard_deviation": 8.9,
+      "comparator_mean": 63.5,
+      "comparator_standard_deviation": 14.2,
+      "pmcid": "5154016"
+    },
+    {
+      "outcome": "24 h drainage volume",
+      "intervention": "Collagen hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 185.2,
+      "intervention_standard_deviation": 68.0,
+      "comparator_mean": 230.8,
+      "comparator_standard_deviation": 75.0,
+      "pmcid": "5154016"
+    },
+    {
+      "outcome": "Total drainage volume",
+      "intervention": "Stypro hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 231.5,
+      "intervention_standard_deviation": 18.1,
+      "comparator_mean": 318.5,
+      "comparator_standard_deviation": 26.7,
+      "pmcid": "5154016"
+    },
+    {
+      "outcome": "Total drainage volume",
+      "intervention": "Collagen hemostatic sponge",
+      "comparator": "Gelatin sponge",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 32,
+      "intervention_mean": 248.5,
+      "intervention_standard_deviation": 18.8,
+      "comparator_mean": 318.5,
+      "comparator_standard_deviation": 26.7,
+      "pmcid": "5154016"
+    }
+  ]
+}
