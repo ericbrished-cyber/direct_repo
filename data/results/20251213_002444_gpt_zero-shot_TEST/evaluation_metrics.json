@@ -7,6 +7,10 @@
     "true_positives": 2147,
     "false_positives": 74,
     "false_negatives": 764,
+    "f1_ci_lower": 0.8264422162352877,
+    "f1_ci_upper": 0.847268665805495,
+    "rmse_ci_lower": 80.86988960106338,
+    "rmse_ci_upper": 143.2984338996962,
     "exact_match": 0.5477996965098634
   },
   "by_field": {
@@ -92,6 +96,10 @@
       "true_positives": 232,
       "false_positives": 24,
       "false_negatives": 151,
+      "f1_ci_lower": 0.6850154873861771,
+      "f1_ci_upper": 0.7649773319690192,
+      "rmse_ci_lower": 3.037567281317267,
+      "rmse_ci_upper": 5.825014890411562,
       "exact_match": 0.31958762886597936
     },
     "by_field": {
