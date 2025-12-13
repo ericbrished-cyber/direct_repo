@@ -1,0 +1,59 @@
+{
+  "pmcid": "5777645",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 19035,
+    "output": 462
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"HbA1c levels\",\n      \"intervention\": \"to peer-led structured patient education\",\n      \"comparator\": \"conventional care alone\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 70,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 70,\n      \"intervention_mean\": -1.05,\n      \"intervention_standard_deviation\": 2.0,\n      \"comparator_mean\": -0.15,\n      \"comparator_standard_deviation\": 1.7\n    },\n    {\n      \"outcome\": \"Mean BMI change\",\n      \"intervention\": \"to peer-led structured patient education\",\n      \"comparator\": \"conventional care alone\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 70,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 70,\n      \"intervention_mean\": -1.65,\n      \"intervention_standard_deviation\": 2.5,\n      \"comparator_mean\": 0.05,\n      \"comparator_standard_deviation\": 3.2\n    },\n    {\n      \"outcome\": \"Mean waist circumference\",\n      \"intervention\": \"to peer-led structured patient education\",\n      \"comparator\": \"conventional care alone\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 70,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 70,\n      \"intervention_mean\": -3.34,\n      \"intervention_standard_deviation\": 9.3,\n      \"comparator_mean\": 2.65,\n      \"comparator_standard_deviation\": 10.3\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "HbA1c levels",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -1.05,
+      "intervention_standard_deviation": 2.0,
+      "comparator_mean": -0.15,
+      "comparator_standard_deviation": 1.7,
+      "pmcid": "5777645"
+    },
+    {
+      "outcome": "Mean BMI change",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -1.65,
+      "intervention_standard_deviation": 2.5,
+      "comparator_mean": 0.05,
+      "comparator_standard_deviation": 3.2,
+      "pmcid": "5777645"
+    },
+    {
+      "outcome": "Mean waist circumference",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -3.34,
+      "intervention_standard_deviation": 9.3,
+      "comparator_mean": 2.65,
+      "comparator_standard_deviation": 10.3,
+      "pmcid": "5777645"
+    }
+  ]
+}

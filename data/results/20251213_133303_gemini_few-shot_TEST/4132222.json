@@ -1,0 +1,44 @@
+{
+  "pmcid": "4132222",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17452,
+    "output": 303
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"decrease in average lesion\",\n      \"intervention\": \"application of a canola phenolic acid-based cream (CPA)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"higher prevalence of lesion scabbing, a sign of healing\",\n      \"intervention\": \"application of a canola phenolic acid-based cream (CPA)\",\n      \"comparator\": \"placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 27,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": 6.8,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 1.3,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "decrease in average lesion",
+      "intervention": "application of a canola phenolic acid-based cream (CPA)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4132222"
+    },
+    {
+      "outcome": "higher prevalence of lesion scabbing, a sign of healing",
+      "intervention": "application of a canola phenolic acid-based cream (CPA)",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 6.8,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "4132222"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "5874317",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17781,
+    "output": 892
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Knee extension (1-rep Max)\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 237.2,\n      \"intervention_standard_deviation\": 51.0,\n      \"comparator_mean\": 182.4,\n      \"comparator_standard_deviation\": 8.4\n    },\n    {\n      \"outcome\": \"Knee flexion (1-rep Max)\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 99.8,\n      \"intervention_standard_deviation\": 10.2,\n      \"comparator_mean\": 86.8,\n      \"comparator_standard_deviation\": 2.9\n    },\n    {\n      \"outcome\": \"Change of direction improvement\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 5.46,\n      \"intervention_standard_deviation\": 0.2,\n      \"comparator_mean\": 5.67,\n      \"comparator_standard_deviation\": 0.16\n    },\n    {\n      \"outcome\": \"Squat jump\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 0.37,\n      \"intervention_standard_deviation\": 0.04,\n      \"comparator_mean\": 0.34,\n      \"comparator_standard_deviation\": 0.04\n    },\n    {\n      \"outcome\": \"Horizontal countermovement jump\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 2.34,\n      \"intervention_standard_deviation\": 0.07,\n      \"comparator_mean\": 2.21,\n      \"comparator_standard_deviation\": 0.15\n    },\n    {\n      \"outcome\": \"Horizontal triple jump (non-dominant leg)\",\n      \"intervention\": \"Bilateral training\",\n      \"comparator\": \"Unilateral training\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 9,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 9,\n      \"intervention_mean\": 6.29,\n      \"intervention_standard_deviation\": 0.31,\n      \"comparator_mean\": 6.35,\n      \"comparator_standard_deviation\": 0.34\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Knee extension (1-rep Max)",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 237.2,
+      "intervention_standard_deviation": 51.0,
+      "comparator_mean": 182.4,
+      "comparator_standard_deviation": 8.4,
+      "pmcid": "5874317"
+    },
+    {
+      "outcome": "Knee flexion (1-rep Max)",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 99.8,
+      "intervention_standard_deviation": 10.2,
+      "comparator_mean": 86.8,
+      "comparator_standard_deviation": 2.9,
+      "pmcid": "5874317"
+    },
+    {
+      "outcome": "Change of direction improvement",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 5.46,
+      "intervention_standard_deviation": 0.2,
+      "comparator_mean": 5.67,
+      "comparator_standard_deviation": 0.16,
+      "pmcid": "5874317"
+    },
+    {
+      "outcome": "Squat jump",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 0.37,
+      "intervention_standard_deviation": 0.04,
+      "comparator_mean": 0.34,
+      "comparator_standard_deviation": 0.04,
+      "pmcid": "5874317"
+    },
+    {
+      "outcome": "Horizontal countermovement jump",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 2.34,
+      "intervention_standard_deviation": 0.07,
+      "comparator_mean": 2.21,
+      "comparator_standard_deviation": 0.15,
+      "pmcid": "5874317"
+    },
+    {
+      "outcome": "Horizontal triple jump (non-dominant leg)",
+      "intervention": "Bilateral training",
+      "comparator": "Unilateral training",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 9,
+      "comparator_events": null,
+      "comparator_group_size": 9,
+      "intervention_mean": 6.29,
+      "intervention_standard_deviation": 0.31,
+      "comparator_mean": 6.35,
+      "comparator_standard_deviation": 0.34,
+      "pmcid": "5874317"
+    }
+  ]
+}

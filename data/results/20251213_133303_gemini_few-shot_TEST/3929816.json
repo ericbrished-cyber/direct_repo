@@ -1,0 +1,59 @@
+{
+  "pmcid": "3929816",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 14460,
+    "output": 450
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Baseline characteristics and general anesthesia procedure\",\n      \"intervention\": \"Intraabdominal pressure 20 mm Hg\",\n      \"comparator\": \"Intraabdominal pressure 12 mm Hg\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 10,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 10,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Pathologic changes in the liver\",\n      \"intervention\": \"Intraabdominal pressure 20 mm Hg\",\n      \"comparator\": \"Intraabdominal pressure 12 mm Hg\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 10,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 10,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Pathologic changes in the kidneys\",\n      \"intervention\": \"Intraabdominal pressure 20 mm Hg\",\n      \"comparator\": \"Intraabdominal pressure 12 mm Hg\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 10,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 10,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Baseline characteristics and general anesthesia procedure",
+      "intervention": "Intraabdominal pressure 20 mm Hg",
+      "comparator": "Intraabdominal pressure 12 mm Hg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3929816"
+    },
+    {
+      "outcome": "Pathologic changes in the liver",
+      "intervention": "Intraabdominal pressure 20 mm Hg",
+      "comparator": "Intraabdominal pressure 12 mm Hg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3929816"
+    },
+    {
+      "outcome": "Pathologic changes in the kidneys",
+      "intervention": "Intraabdominal pressure 20 mm Hg",
+      "comparator": "Intraabdominal pressure 12 mm Hg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3929816"
+    }
+  ]
+}

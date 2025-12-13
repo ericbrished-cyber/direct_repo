@@ -1,0 +1,74 @@
+{
+  "pmcid": "3687098",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 26913,
+    "output": 609
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"adverse event of constipation\",\n      \"intervention\": \"sitagliptin 100 mg/day\",\n      \"comparator\": \"comparator agent\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 7726,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 6885,\n      \"intervention_mean\": 2.3,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 1.8,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The incidence rates of malignancy\",\n      \"intervention\": \"sitagliptin 100 mg/day\",\n      \"comparator\": \"comparator agent\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 7726,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 6885,\n      \"intervention_mean\": 0.9,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 0.93,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The incidence rates of pancreatitis\",\n      \"intervention\": \"sitagliptin 100 mg/day\",\n      \"comparator\": \"comparator agent\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 7726,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 6885,\n      \"intervention_mean\": 0.1,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 0.1,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The incidence of the composite endpoint of rash\",\n      \"intervention\": \"sitagliptin 100 mg/day\",\n      \"comparator\": \"comparator agent\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 7726,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 6885,\n      \"intervention_mean\": 1.7,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": 1.1,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "adverse event of constipation",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": 2.3,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.8,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence rates of malignancy",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": 0.9,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.93,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence rates of pancreatitis",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": 0.1,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence of the composite endpoint of rash",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": 1.7,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    }
+  ]
+}

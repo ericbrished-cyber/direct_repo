@@ -1,0 +1,59 @@
+{
+  "pmcid": "5325897",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15453,
+    "output": 458
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"First test results\",\n      \"intervention\": \"Evaluation with feedback\",\n      \"comparator\": \"Evaluation without feedback\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": 10.26,\n      \"intervention_standard_deviation\": 2.99,\n      \"comparator_mean\": 9.73,\n      \"comparator_standard_deviation\": 2.94\n    },\n    {\n      \"outcome\": \"Second test results\",\n      \"intervention\": \"Evaluation with feedback\",\n      \"comparator\": \"Evaluation without feedback\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": 17.73,\n      \"intervention_standard_deviation\": 1.09,\n      \"comparator_mean\": 12.13,\n      \"comparator_standard_deviation\": 2.29\n    },\n    {\n      \"outcome\": \"Final test results\",\n      \"intervention\": \"Evaluation with feedback\",\n      \"comparator\": \"Evaluation without feedback\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 15,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 15,\n      \"intervention_mean\": 18.53,\n      \"intervention_standard_deviation\": 0.74,\n      \"comparator_mean\": 18.93,\n      \"comparator_standard_deviation\": 0.96\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "First test results",
+      "intervention": "Evaluation with feedback",
+      "comparator": "Evaluation without feedback",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 10.26,
+      "intervention_standard_deviation": 2.99,
+      "comparator_mean": 9.73,
+      "comparator_standard_deviation": 2.94,
+      "pmcid": "5325897"
+    },
+    {
+      "outcome": "Second test results",
+      "intervention": "Evaluation with feedback",
+      "comparator": "Evaluation without feedback",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 17.73,
+      "intervention_standard_deviation": 1.09,
+      "comparator_mean": 12.13,
+      "comparator_standard_deviation": 2.29,
+      "pmcid": "5325897"
+    },
+    {
+      "outcome": "Final test results",
+      "intervention": "Evaluation with feedback",
+      "comparator": "Evaluation without feedback",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 15,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": 18.53,
+      "intervention_standard_deviation": 0.74,
+      "comparator_mean": 18.93,
+      "comparator_standard_deviation": 0.96,
+      "pmcid": "5325897"
+    }
+  ]
+}

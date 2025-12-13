@@ -1,0 +1,29 @@
+{
+  "pmcid": "5268424",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 22093,
+    "output": 187
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"score on the general dimension scale of negative affects (referred to as NA from here onward)\",\n      \"intervention\": \"view a video featuring individuals that live in extreme poverty\",\n      \"comparator\": \"control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 55,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 50,\n      \"intervention_mean\": 21.036,\n      \"intervention_standard_deviation\": 6.327,\n      \"comparator_mean\": 17.68,\n      \"comparator_standard_deviation\": 5.859\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "score on the general dimension scale of negative affects (referred to as NA from here onward)",
+      "intervention": "view a video featuring individuals that live in extreme poverty",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 55,
+      "comparator_events": null,
+      "comparator_group_size": 50,
+      "intervention_mean": 21.036,
+      "intervention_standard_deviation": 6.327,
+      "comparator_mean": 17.68,
+      "comparator_standard_deviation": 5.859,
+      "pmcid": "5268424"
+    }
+  ]
+}

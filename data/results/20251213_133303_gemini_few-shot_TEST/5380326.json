@@ -1,0 +1,104 @@
+{
+  "pmcid": "5380326",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 19647,
+    "output": 909
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Interferon gamma-induced protein 10\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 40,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 40,\n      \"intervention_mean\": 636.47,\n      \"intervention_standard_deviation\": 448.47,\n      \"comparator_mean\": 748.88,\n      \"comparator_standard_deviation\": 551.0\n    },\n    {\n      \"outcome\": \"Vitamin D levels\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 40,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 40,\n      \"intervention_mean\": 45.93,\n      \"intervention_standard_deviation\": 15.37,\n      \"comparator_mean\": 21.87,\n      \"comparator_standard_deviation\": 5.31\n    },\n    {\n      \"outcome\": \"Th1/Th2 cytokines\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Interleukin 2\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 40,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 40,\n      \"intervention_mean\": 4.49,\n      \"intervention_standard_deviation\": 13.34,\n      \"comparator_mean\": 28.69,\n      \"comparator_standard_deviation\": 103.03\n    },\n    {\n      \"outcome\": \"Dipeptidyl peptidase-4\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 40,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 40,\n      \"intervention_mean\": 6032.37,\n      \"intervention_standard_deviation\": 1359.15,\n      \"comparator_mean\": 6408.33,\n      \"comparator_standard_deviation\": 1822.17\n    },\n    {\n      \"outcome\": \"Tumor necrosis factor alpha\",\n      \"intervention\": \"Vitamin D supplementation\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 40,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 40,\n      \"intervention_mean\": 752.94,\n      \"intervention_standard_deviation\": 1890.16,\n      \"comparator_mean\": 548.33,\n      \"comparator_standard_deviation\": 1210.9\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Interferon gamma-induced protein 10",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 636.47,
+      "intervention_standard_deviation": 448.47,
+      "comparator_mean": 748.88,
+      "comparator_standard_deviation": 551.0,
+      "pmcid": "5380326"
+    },
+    {
+      "outcome": "Vitamin D levels",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 45.93,
+      "intervention_standard_deviation": 15.37,
+      "comparator_mean": 21.87,
+      "comparator_standard_deviation": 5.31,
+      "pmcid": "5380326"
+    },
+    {
+      "outcome": "Th1/Th2 cytokines",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5380326"
+    },
+    {
+      "outcome": "Interleukin 2",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 4.49,
+      "intervention_standard_deviation": 13.34,
+      "comparator_mean": 28.69,
+      "comparator_standard_deviation": 103.03,
+      "pmcid": "5380326"
+    },
+    {
+      "outcome": "Dipeptidyl peptidase-4",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 6032.37,
+      "intervention_standard_deviation": 1359.15,
+      "comparator_mean": 6408.33,
+      "comparator_standard_deviation": 1822.17,
+      "pmcid": "5380326"
+    },
+    {
+      "outcome": "Tumor necrosis factor alpha",
+      "intervention": "Vitamin D supplementation",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 40,
+      "intervention_mean": 752.94,
+      "intervention_standard_deviation": 1890.16,
+      "comparator_mean": 548.33,
+      "comparator_standard_deviation": 1210.9,
+      "pmcid": "5380326"
+    }
+  ]
+}

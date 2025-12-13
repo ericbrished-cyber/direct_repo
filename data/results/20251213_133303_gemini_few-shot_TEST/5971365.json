@@ -1,0 +1,89 @@
+{
+  "pmcid": "5971365",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17861,
+    "output": 843
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"clinically meaningful improvement at week 144 (\u2a7e3-point increase on the SDMT)\",\n      \"intervention\": \"daclizumab beta\",\n      \"comparator\": \"intramuscular (IM) interferon (IFN) beta-1a\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 287,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 277,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Symbol Digit Modalities Test (SDMT) score at week 96\",\n      \"intervention\": \"daclizumab beta\",\n      \"comparator\": \"intramuscular (IM) interferon (IFN) beta-1a\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 720,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 682,\n      \"intervention_mean\": 4.1,\n      \"intervention_standard_deviation\": 12.4,\n      \"comparator_mean\": 2.9,\n      \"comparator_standard_deviation\": 12.7\n    },\n    {\n      \"outcome\": \"Symbol Digit Modalities Test (SDMT) score at week 144 in limited patients\",\n      \"intervention\": \"daclizumab beta\",\n      \"comparator\": \"intramuscular (IM) interferon (IFN) beta-1a\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 287,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 277,\n      \"intervention_mean\": 6.3,\n      \"intervention_standard_deviation\": 12.6,\n      \"comparator_mean\": 3.1,\n      \"comparator_standard_deviation\": 13.2\n    },\n    {\n      \"outcome\": \"clinically meaningful worsening at week 96 (\u2a7e3-point decrease on the SDMT)\",\n      \"intervention\": \"daclizumab beta\",\n      \"comparator\": \"intramuscular (IM) interferon (IFN) beta-1a\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 720,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 682,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"clinically meaningful improvement at week 96 (\u2a7e3-point increase on the SDMT)\",\n      \"intervention\": \"daclizumab beta\",\n      \"comparator\": \"intramuscular (IM) interferon (IFN) beta-1a\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 720,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 682,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "clinically meaningful improvement at week 144 (\u2a7e3-point increase on the SDMT)",
+      "intervention": "daclizumab beta",
+      "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 287,
+      "comparator_events": null,
+      "comparator_group_size": 277,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5971365"
+    },
+    {
+      "outcome": "Symbol Digit Modalities Test (SDMT) score at week 96",
+      "intervention": "daclizumab beta",
+      "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 720,
+      "comparator_events": null,
+      "comparator_group_size": 682,
+      "intervention_mean": 4.1,
+      "intervention_standard_deviation": 12.4,
+      "comparator_mean": 2.9,
+      "comparator_standard_deviation": 12.7,
+      "pmcid": "5971365"
+    },
+    {
+      "outcome": "Symbol Digit Modalities Test (SDMT) score at week 144 in limited patients",
+      "intervention": "daclizumab beta",
+      "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 287,
+      "comparator_events": null,
+      "comparator_group_size": 277,
+      "intervention_mean": 6.3,
+      "intervention_standard_deviation": 12.6,
+      "comparator_mean": 3.1,
+      "comparator_standard_deviation": 13.2,
+      "pmcid": "5971365"
+    },
+    {
+      "outcome": "clinically meaningful worsening at week 96 (\u2a7e3-point decrease on the SDMT)",
+      "intervention": "daclizumab beta",
+      "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 720,
+      "comparator_events": null,
+      "comparator_group_size": 682,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5971365"
+    },
+    {
+      "outcome": "clinically meaningful improvement at week 96 (\u2a7e3-point increase on the SDMT)",
+      "intervention": "daclizumab beta",
+      "comparator": "intramuscular (IM) interferon (IFN) beta-1a",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 720,
+      "comparator_events": null,
+      "comparator_group_size": 682,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5971365"
+    }
+  ]
+}

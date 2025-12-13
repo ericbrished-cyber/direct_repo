@@ -1,0 +1,74 @@
+{
+  "pmcid": "2667135",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17040,
+    "output": 609
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"proportion of patients completed therapy\",\n      \"intervention\": \"some portion of therapy outside of the hospital (CoPAT)\",\n      \"comparator\": \"full course of therapy in the hospital setting\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 93,\n      \"intervention_group_size\": 103,\n      \"comparator_events\": 44,\n      \"comparator_group_size\": 97,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"early discontinuations\",\n      \"intervention\": \"some portion of therapy outside of the hospital (CoPAT)\",\n      \"comparator\": \"full course of therapy in the hospital setting\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 10,\n      \"intervention_group_size\": 103,\n      \"comparator_events\": 53,\n      \"comparator_group_size\": 97,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"rate of clinical success at the test-of-cure visit\",\n      \"intervention\": \"some portion of therapy outside of the hospital (CoPAT)\",\n      \"comparator\": \"full course of therapy in the hospital setting\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 89,\n      \"intervention_group_size\": 103,\n      \"comparator_events\": 54,\n      \"comparator_group_size\": 97,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"deaths\",\n      \"intervention\": \"some portion of therapy outside of the hospital (CoPAT)\",\n      \"comparator\": \"full course of therapy in the hospital setting\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 4,\n      \"intervention_group_size\": 103,\n      \"comparator_events\": 18,\n      \"comparator_group_size\": 97,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "proportion of patients completed therapy",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 93,
+      "intervention_group_size": 103,
+      "comparator_events": 44,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "early discontinuations",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 103,
+      "comparator_events": 53,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "rate of clinical success at the test-of-cure visit",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 89,
+      "intervention_group_size": 103,
+      "comparator_events": 54,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "deaths",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 4,
+      "intervention_group_size": 103,
+      "comparator_events": 18,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    }
+  ]
+}

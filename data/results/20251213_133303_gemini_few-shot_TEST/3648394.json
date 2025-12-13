@@ -1,0 +1,104 @@
+{
+  "pmcid": "3648394",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 17792,
+    "output": 905
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"LF:HF component of HRV\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 0.35,\n      \"intervention_standard_deviation\": 0.43,\n      \"comparator_mean\": 0.04,\n      \"comparator_standard_deviation\": 0.38\n    },\n    {\n      \"outcome\": \"Push-up test\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 21.0,\n      \"intervention_standard_deviation\": 11.0,\n      \"comparator_mean\": 20.0,\n      \"comparator_standard_deviation\": 13.0\n    },\n    {\n      \"outcome\": \"Quality of life - PCS (SF36)\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 47.5,\n      \"intervention_standard_deviation\": 2.7,\n      \"comparator_mean\": 46.9,\n      \"comparator_standard_deviation\": 4.8\n    },\n    {\n      \"outcome\": \"Quality of life - MCS (SF36)\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 47.5,\n      \"intervention_standard_deviation\": 10.6,\n      \"comparator_mean\": 48.5,\n      \"comparator_standard_deviation\": 7.7\n    },\n    {\n      \"outcome\": \"pNN50\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 20.7,\n      \"intervention_standard_deviation\": 25.3,\n      \"comparator_mean\": 19.4,\n      \"comparator_standard_deviation\": 18.4\n    },\n    {\n      \"outcome\": \"Flexibility\",\n      \"intervention\": \"10-week yoga program\",\n      \"comparator\": \"Control\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 18,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 19,\n      \"intervention_mean\": 31.0,\n      \"intervention_standard_deviation\": 8.7,\n      \"comparator_mean\": 26.4,\n      \"comparator_standard_deviation\": 10.4\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "LF:HF component of HRV",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 0.35,
+      "intervention_standard_deviation": 0.43,
+      "comparator_mean": 0.04,
+      "comparator_standard_deviation": 0.38,
+      "pmcid": "3648394"
+    },
+    {
+      "outcome": "Push-up test",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 21.0,
+      "intervention_standard_deviation": 11.0,
+      "comparator_mean": 20.0,
+      "comparator_standard_deviation": 13.0,
+      "pmcid": "3648394"
+    },
+    {
+      "outcome": "Quality of life - PCS (SF36)",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 47.5,
+      "intervention_standard_deviation": 2.7,
+      "comparator_mean": 46.9,
+      "comparator_standard_deviation": 4.8,
+      "pmcid": "3648394"
+    },
+    {
+      "outcome": "Quality of life - MCS (SF36)",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 47.5,
+      "intervention_standard_deviation": 10.6,
+      "comparator_mean": 48.5,
+      "comparator_standard_deviation": 7.7,
+      "pmcid": "3648394"
+    },
+    {
+      "outcome": "pNN50",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 20.7,
+      "intervention_standard_deviation": 25.3,
+      "comparator_mean": 19.4,
+      "comparator_standard_deviation": 18.4,
+      "pmcid": "3648394"
+    },
+    {
+      "outcome": "Flexibility",
+      "intervention": "10-week yoga program",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 18,
+      "comparator_events": null,
+      "comparator_group_size": 19,
+      "intervention_mean": 31.0,
+      "intervention_standard_deviation": 8.7,
+      "comparator_mean": 26.4,
+      "comparator_standard_deviation": 10.4,
+      "pmcid": "3648394"
+    }
+  ]
+}

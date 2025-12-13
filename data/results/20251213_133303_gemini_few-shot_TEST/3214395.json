@@ -1,0 +1,104 @@
+{
+  "pmcid": "3214395",
+  "config": {
+    "model": "gemini",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 15774,
+    "output": 1036
+  },
+  "raw_text": "```json\n{\"extractions\":[\n    {\n      \"outcome\": \"laryngoscopy duration\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 45\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 35\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 30,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 30,\n      \"intervention_mean\": 7.4,\n      \"intervention_standard_deviation\": 1.0,\n      \"comparator_mean\": 7.2,\n      \"comparator_standard_deviation\": 1.4\n    },\n    {\n      \"outcome\": \"laryngospasm\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 46\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 36\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 5,\n      \"intervention_group_size\": 30,\n      \"comparator_events\": 3,\n      \"comparator_group_size\": 30,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"bronchospasm\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 47\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 37\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 0,\n      \"intervention_group_size\": 30,\n      \"comparator_events\": 0,\n      \"comparator_group_size\": 30,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"laryngoscopy failure\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 48\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 38\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": null,\n      \"comparator_events\": null,\n      \"comparator_group_size\": null,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"extremity movement\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 49\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 39\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 7,\n      \"intervention_group_size\": 30,\n      \"comparator_events\": 9,\n      \"comparator_group_size\": 30,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"awakening\",\n      \"intervention\": \"group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 50\",\n      \"comparator\": \"group 3 involved bispectral index (BIS) of 40\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 30,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 30,\n      \"intervention_mean\": 9.0,\n      \"intervention_standard_deviation\": 1.3,\n      \"comparator_mean\": 8.8,\n      \"comparator_standard_deviation\": 1.6\n    }\n]}\n```",
+  "extraction": [
+    {
+      "outcome": "laryngoscopy duration",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 45",
+      "comparator": "group 3 involved bispectral index (BIS) of 35",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 7.4,
+      "intervention_standard_deviation": 1.0,
+      "comparator_mean": 7.2,
+      "comparator_standard_deviation": 1.4,
+      "pmcid": "3214395"
+    },
+    {
+      "outcome": "laryngospasm",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 46",
+      "comparator": "group 3 involved bispectral index (BIS) of 36",
+      "outcome_type": "binary",
+      "intervention_events": 5,
+      "intervention_group_size": 30,
+      "comparator_events": 3,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3214395"
+    },
+    {
+      "outcome": "bronchospasm",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 47",
+      "comparator": "group 3 involved bispectral index (BIS) of 37",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 30,
+      "comparator_events": 0,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3214395"
+    },
+    {
+      "outcome": "laryngoscopy failure",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 48",
+      "comparator": "group 3 involved bispectral index (BIS) of 38",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3214395"
+    },
+    {
+      "outcome": "extremity movement",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 49",
+      "comparator": "group 3 involved bispectral index (BIS) of 39",
+      "outcome_type": "binary",
+      "intervention_events": 7,
+      "intervention_group_size": 30,
+      "comparator_events": 9,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3214395"
+    },
+    {
+      "outcome": "awakening",
+      "intervention": "group 1 included bispectral index (BIS) of 60, group 2 covered bispectral index (BIS) of 50",
+      "comparator": "group 3 involved bispectral index (BIS) of 40",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 9.0,
+      "intervention_standard_deviation": 1.3,
+      "comparator_mean": 8.8,
+      "comparator_standard_deviation": 1.6,
+      "pmcid": "3214395"
+    }
+  ]
+}
