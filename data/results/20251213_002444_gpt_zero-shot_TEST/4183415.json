@@ -1,0 +1,59 @@
+{
+  "pmcid": "4183415",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 18773,
+    "output": 671
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"completion of each dose at the correct time\",\"intervention\":\"receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).\",\"comparator\":\"no text message\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":453,\"comparator_events\":null,\"comparator_group_size\":451,\"intervention_mean\":33.1,\"intervention_standard_deviation\":21.6,\"comparator_mean\":32.6,\"comparator_standard_deviation\":18.4},{\"outcome\":\"patient adherence\",\"intervention\":\"receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).\",\"comparator\":\"no text message\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Completed treatment\",\"intervention\":\"receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).\",\"comparator\":\"no text message\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":453,\"comparator_events\":null,\"comparator_group_size\":451,\"intervention_mean\":68.3,\"intervention_standard_deviation\":23.4,\"comparator_mean\":69.8,\"comparator_standard_deviation\":20.9}]}",
+  "extraction": [
+    {
+      "outcome": "completion of each dose at the correct time",
+      "intervention": "receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).",
+      "comparator": "no text message",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 453,
+      "comparator_events": null,
+      "comparator_group_size": 451,
+      "intervention_mean": 33.1,
+      "intervention_standard_deviation": 21.6,
+      "comparator_mean": 32.6,
+      "comparator_standard_deviation": 18.4,
+      "pmcid": "4183415"
+    },
+    {
+      "outcome": "patient adherence",
+      "intervention": "receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).",
+      "comparator": "no text message",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4183415"
+    },
+    {
+      "outcome": "Completed treatment",
+      "intervention": "receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).",
+      "comparator": "no text message",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 453,
+      "comparator_events": null,
+      "comparator_group_size": 451,
+      "intervention_mean": 68.3,
+      "intervention_standard_deviation": 23.4,
+      "comparator_mean": 69.8,
+      "comparator_standard_deviation": 20.9,
+      "pmcid": "4183415"
+    }
+  ]
+}

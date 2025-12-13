@@ -1,0 +1,104 @@
+{
+  "pmcid": "4550271",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 32792,
+    "output": 835
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Community knowledge\",\"intervention\":\"provider\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Community knowledge\",\"intervention\":\"provider-school intervention\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"treatment according to guidelines\",\"intervention\":\"provider\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":14,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":36.4,\"intervention_standard_deviation\":32.0,\"comparator_mean\":22.6,\"comparator_standard_deviation\":23.0},{\"outcome\":\"treatment according to guidelines\",\"intervention\":\"provider-school intervention\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":14,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":23.5,\"intervention_standard_deviation\":26.0,\"comparator_mean\":22.6,\"comparator_standard_deviation\":23.0},{\"outcome\":\"the proportion of patients who tested positive and received (or were prescribed) an ACT\",\"intervention\":\"provider\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":14,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":56.1,\"intervention_standard_deviation\":31.0,\"comparator_mean\":64.2,\"comparator_standard_deviation\":28.0},{\"outcome\":\"the proportion of patients who tested positive and received (or were prescribed) an ACT\",\"intervention\":\"provider-school intervention\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":56.4,\"intervention_standard_deviation\":33.0,\"comparator_mean\":64.2,\"comparator_standard_deviation\":28.0}]}",
+  "extraction": [
+    {
+      "outcome": "Community knowledge",
+      "intervention": "provider",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4550271"
+    },
+    {
+      "outcome": "Community knowledge",
+      "intervention": "provider-school intervention",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4550271"
+    },
+    {
+      "outcome": "treatment according to guidelines",
+      "intervention": "provider",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 14,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 36.4,
+      "intervention_standard_deviation": 32.0,
+      "comparator_mean": 22.6,
+      "comparator_standard_deviation": 23.0,
+      "pmcid": "4550271"
+    },
+    {
+      "outcome": "treatment according to guidelines",
+      "intervention": "provider-school intervention",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 14,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 23.5,
+      "intervention_standard_deviation": 26.0,
+      "comparator_mean": 22.6,
+      "comparator_standard_deviation": 23.0,
+      "pmcid": "4550271"
+    },
+    {
+      "outcome": "the proportion of patients who tested positive and received (or were prescribed) an ACT",
+      "intervention": "provider",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 14,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 56.1,
+      "intervention_standard_deviation": 31.0,
+      "comparator_mean": 64.2,
+      "comparator_standard_deviation": 28.0,
+      "pmcid": "4550271"
+    },
+    {
+      "outcome": "the proportion of patients who tested positive and received (or were prescribed) an ACT",
+      "intervention": "provider-school intervention",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 56.4,
+      "intervention_standard_deviation": 33.0,
+      "comparator_mean": 64.2,
+      "comparator_standard_deviation": 28.0,
+      "pmcid": "4550271"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "4493951",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 11518,
+    "output": 1133
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period\",\n      \"intervention\": \"and H2 (haloperidol 2 mg)\",\n      \"comparator\": \"H0 (saline)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 50,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 50,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period\",\n      \"intervention\": \"and H2 (haloperidol 2 mg)\",\n      \"comparator\": \"H1(haloperidol 1 mg)\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 50,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 49,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"the incidence of postoperative nausea and vomiting (PONV)\",\n      \"intervention\": \"H1(haloperidol 1 mg)\",\n      \"comparator\": \"H0 (saline)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 14,\n      \"intervention_group_size\": 49,\n      \"comparator_events\": 27,\n      \"comparator_group_size\": 50,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"the incidence of postoperative nausea and vomiting (PONV)\",\n      \"intervention\": \"H2 (haloperidol 2 mg)\",\n      \"comparator\": \"H0 (saline)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 12,\n      \"intervention_group_size\": 50,\n      \"comparator_events\": 27,\n      \"comparator_group_size\": 50,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period\",\n      \"intervention\": \"H0 (saline)\",\n      \"comparator\": \"H1(haloperidol 1 mg),\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 50,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 49,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"the incidence of postoperative nausea and vomiting (PONV)\",\n      \"intervention\": \"H1(haloperidol 1 mg)\",\n      \"comparator\": \"H2 (haloperidol 2 mg)\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 14,\n      \"intervention_group_size\": 49,\n      \"comparator_events\": 12,\n      \"comparator_group_size\": 50,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+      "intervention": "and H2 (haloperidol 2 mg)",
+      "comparator": "H0 (saline)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 50,
+      "comparator_events": null,
+      "comparator_group_size": 50,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    },
+    {
+      "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+      "intervention": "and H2 (haloperidol 2 mg)",
+      "comparator": "H1(haloperidol 1 mg)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 50,
+      "comparator_events": null,
+      "comparator_group_size": 49,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    },
+    {
+      "outcome": "the incidence of postoperative nausea and vomiting (PONV)",
+      "intervention": "H1(haloperidol 1 mg)",
+      "comparator": "H0 (saline)",
+      "outcome_type": "binary",
+      "intervention_events": 14,
+      "intervention_group_size": 49,
+      "comparator_events": 27,
+      "comparator_group_size": 50,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    },
+    {
+      "outcome": "the incidence of postoperative nausea and vomiting (PONV)",
+      "intervention": "H2 (haloperidol 2 mg)",
+      "comparator": "H0 (saline)",
+      "outcome_type": "binary",
+      "intervention_events": 12,
+      "intervention_group_size": 50,
+      "comparator_events": 27,
+      "comparator_group_size": 50,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    },
+    {
+      "outcome": "The sedation score recorded in the postanesthesia care unit (PACU) over the 2-h observation period",
+      "intervention": "H0 (saline)",
+      "comparator": "H1(haloperidol 1 mg),",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 50,
+      "comparator_events": null,
+      "comparator_group_size": 49,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    },
+    {
+      "outcome": "the incidence of postoperative nausea and vomiting (PONV)",
+      "intervention": "H1(haloperidol 1 mg)",
+      "comparator": "H2 (haloperidol 2 mg)",
+      "outcome_type": "binary",
+      "intervention_events": 14,
+      "intervention_group_size": 49,
+      "comparator_events": 12,
+      "comparator_group_size": 50,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4493951"
+    }
+  ]
+}

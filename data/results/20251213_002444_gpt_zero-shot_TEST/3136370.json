@@ -1,0 +1,74 @@
+{
+  "pmcid": "3136370",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8787,
+    "output": 804
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Fibromyalgia Impact Questionnaire scores\",\"intervention\":\"Soy shake\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Fibromyalgia Impact Questionnaire scores\",\"intervention\":\"Soy shake\",\"comparator\":\"Casein shake (Placebo)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Center for Epidemiologic Studies Depression Scale score\",\"intervention\":\"Soy shake\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Center for Epidemiologic Studies Depression Scale score\",\"intervention\":\"Soy shake\",\"comparator\":\"Casein shake (Placebo)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":25,\"comparator_events\":null,\"comparator_group_size\":25,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Fibromyalgia Impact Questionnaire scores",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    },
+    {
+      "outcome": "Center for Epidemiologic Studies Depression Scale score",
+      "intervention": "Soy shake",
+      "comparator": "Casein shake (Placebo)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 25,
+      "comparator_events": null,
+      "comparator_group_size": 25,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3136370"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "pmcid": "2667135",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15005,
+    "output": 487
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"proportion of patients completed therapy\",\"intervention\":\"some portion of therapy outside of the hospital (CoPAT)\",\"comparator\":\"full course of therapy in the hospital setting\",\"outcome_type\":\"binary\",\"intervention_events\":93,\"intervention_group_size\":103,\"comparator_events\":44,\"comparator_group_size\":97,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"early discontinuations\",\"intervention\":\"some portion of therapy outside of the hospital (CoPAT)\",\"comparator\":\"full course of therapy in the hospital setting\",\"outcome_type\":\"binary\",\"intervention_events\":10,\"intervention_group_size\":103,\"comparator_events\":53,\"comparator_group_size\":97,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"rate of clinical success at the test-of-cure visit\",\"intervention\":\"some portion of therapy outside of the hospital (CoPAT)\",\"comparator\":\"full course of therapy in the hospital setting\",\"outcome_type\":\"binary\",\"intervention_events\":89,\"intervention_group_size\":103,\"comparator_events\":54,\"comparator_group_size\":97,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"deaths\",\"intervention\":\"some portion of therapy outside of the hospital (CoPAT)\",\"comparator\":\"full course of therapy in the hospital setting\",\"outcome_type\":\"binary\",\"intervention_events\":4,\"intervention_group_size\":103,\"comparator_events\":18,\"comparator_group_size\":97,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "proportion of patients completed therapy",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 93,
+      "intervention_group_size": 103,
+      "comparator_events": 44,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "early discontinuations",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 103,
+      "comparator_events": 53,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "rate of clinical success at the test-of-cure visit",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 89,
+      "intervention_group_size": 103,
+      "comparator_events": 54,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    },
+    {
+      "outcome": "deaths",
+      "intervention": "some portion of therapy outside of the hospital (CoPAT)",
+      "comparator": "full course of therapy in the hospital setting",
+      "outcome_type": "binary",
+      "intervention_events": 4,
+      "intervention_group_size": 103,
+      "comparator_events": 18,
+      "comparator_group_size": 97,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "2667135"
+    }
+  ]
+}

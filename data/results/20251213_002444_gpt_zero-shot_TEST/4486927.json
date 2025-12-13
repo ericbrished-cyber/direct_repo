@@ -1,0 +1,74 @@
+{
+  "pmcid": "4486927",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 19199,
+    "output": 1093
+  },
+  "raw_text": "{\n  \"extractions\": [\n    {\n      \"outcome\": \"The SVR rates if the patients had IL-28B rs8099917 TT genotype, and GT/GG genotype\",\n      \"intervention\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks\",\n      \"comparator\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 62,\n      \"intervention_group_size\": 88,\n      \"comparator_events\": 37,\n      \"comparator_group_size\": 84,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The early virologic response (EVR)\",\n      \"intervention\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks\",\n      \"comparator\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 86,\n      \"intervention_group_size\": 94,\n      \"comparator_events\": 82,\n      \"comparator_group_size\": 93,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"the end-of-treatment virologic response\",\n      \"intervention\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks\",\n      \"comparator\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 83,\n      \"intervention_group_size\": 94,\n      \"comparator_events\": 75,\n      \"comparator_group_size\": 93,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"The SVR rates when the patients had BMI >30 kg/m2\",\n      \"intervention\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks\",\n      \"comparator\": \"peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks\",\n      \"outcome_type\": \"binary\",\n      \"intervention_events\": 10,\n      \"intervention_group_size\": 19,\n      \"comparator_events\": 6,\n      \"comparator_group_size\": 12,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}",
+  "extraction": [
+    {
+      "outcome": "The SVR rates if the patients had IL-28B rs8099917 TT genotype, and GT/GG genotype",
+      "intervention": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks",
+      "comparator": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks",
+      "outcome_type": "binary",
+      "intervention_events": 62,
+      "intervention_group_size": 88,
+      "comparator_events": 37,
+      "comparator_group_size": 84,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4486927"
+    },
+    {
+      "outcome": "The early virologic response (EVR)",
+      "intervention": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks",
+      "comparator": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks",
+      "outcome_type": "binary",
+      "intervention_events": 86,
+      "intervention_group_size": 94,
+      "comparator_events": 82,
+      "comparator_group_size": 93,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4486927"
+    },
+    {
+      "outcome": "the end-of-treatment virologic response",
+      "intervention": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks",
+      "comparator": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks",
+      "outcome_type": "binary",
+      "intervention_events": 83,
+      "intervention_group_size": 94,
+      "comparator_events": 75,
+      "comparator_group_size": 93,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4486927"
+    },
+    {
+      "outcome": "The SVR rates when the patients had BMI >30 kg/m2",
+      "intervention": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 48 weeks",
+      "comparator": "peginterferon (Peg-IFN) plus ribavirin (RBV) for 24 weeks",
+      "outcome_type": "binary",
+      "intervention_events": 10,
+      "intervention_group_size": 19,
+      "comparator_events": 6,
+      "comparator_group_size": 12,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4486927"
+    }
+  ]
+}

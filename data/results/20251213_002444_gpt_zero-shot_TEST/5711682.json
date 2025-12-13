@@ -1,0 +1,89 @@
+{
+  "pmcid": "5711682",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 12658,
+    "output": 477
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"In-stent late lumen loss at 9 months\",\"intervention\":\"Genoss drug-eluting stent (DES)\",\"comparator\":\"Promus Element\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":38,\"comparator_events\":null,\"comparator_group_size\":39,\"intervention_mean\":0.11,\"intervention_standard_deviation\":0.25,\"comparator_mean\":0.16,\"comparator_standard_deviation\":0.43},{\"outcome\":\"myocardial infarction (MI)\",\"intervention\":\"Genoss drug-eluting stent (DES)\",\"comparator\":\"Promus Element\",\"outcome_type\":\"binary\",\"intervention_events\":0,\"intervention_group_size\":38,\"comparator_events\":0,\"comparator_group_size\":39,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"target lesion revascularization (TLR)\",\"intervention\":\"Genoss drug-eluting stent (DES)\",\"comparator\":\"Promus Element\",\"outcome_type\":\"binary\",\"intervention_events\":1,\"intervention_group_size\":38,\"comparator_events\":1,\"comparator_group_size\":39,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"stent thrombosis\",\"intervention\":\"Genoss drug-eluting stent (DES)\",\"comparator\":\"Promus Element\",\"outcome_type\":\"binary\",\"intervention_events\":0,\"intervention_group_size\":38,\"comparator_events\":0,\"comparator_group_size\":39,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"rates of death\",\"intervention\":\"Genoss drug-eluting stent (DES)\",\"comparator\":\"Promus Element\",\"outcome_type\":\"binary\",\"intervention_events\":1,\"intervention_group_size\":38,\"comparator_events\":0,\"comparator_group_size\":39,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "In-stent late lumen loss at 9 months",
+      "intervention": "Genoss drug-eluting stent (DES)",
+      "comparator": "Promus Element",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 38,
+      "comparator_events": null,
+      "comparator_group_size": 39,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.25,
+      "comparator_mean": 0.16,
+      "comparator_standard_deviation": 0.43,
+      "pmcid": "5711682"
+    },
+    {
+      "outcome": "myocardial infarction (MI)",
+      "intervention": "Genoss drug-eluting stent (DES)",
+      "comparator": "Promus Element",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 38,
+      "comparator_events": 0,
+      "comparator_group_size": 39,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5711682"
+    },
+    {
+      "outcome": "target lesion revascularization (TLR)",
+      "intervention": "Genoss drug-eluting stent (DES)",
+      "comparator": "Promus Element",
+      "outcome_type": "binary",
+      "intervention_events": 1,
+      "intervention_group_size": 38,
+      "comparator_events": 1,
+      "comparator_group_size": 39,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5711682"
+    },
+    {
+      "outcome": "stent thrombosis",
+      "intervention": "Genoss drug-eluting stent (DES)",
+      "comparator": "Promus Element",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 38,
+      "comparator_events": 0,
+      "comparator_group_size": 39,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5711682"
+    },
+    {
+      "outcome": "rates of death",
+      "intervention": "Genoss drug-eluting stent (DES)",
+      "comparator": "Promus Element",
+      "outcome_type": "binary",
+      "intervention_events": 1,
+      "intervention_group_size": 38,
+      "comparator_events": 0,
+      "comparator_group_size": 39,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5711682"
+    }
+  ]
+}

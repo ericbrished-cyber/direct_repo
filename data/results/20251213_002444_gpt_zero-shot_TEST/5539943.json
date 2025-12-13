@@ -1,0 +1,104 @@
+{
+  "pmcid": "5539943",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 13818,
+    "output": 687
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"reflections of sustain talk\",\"intervention\":\"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\"comparator\":\"MI training (MI-AU)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"\\\"sustain talk\\\" (ST)\",\"intervention\":\"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\"comparator\":\"baseline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Frequency of client \\\"change talk\\\" (CT)\",\"intervention\":\"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\"comparator\":\"MI training (MI-AU)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Motivational Interviewing (MI) knowledge\",\"intervention\":\"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\"comparator\":\"baseline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Motivational Interviewing (MI) knowledge\",\"intervention\":\"MI training (MI-AU)\",\"comparator\":\"baseline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Motivational Interviewing (MI) knowledge\",\"intervention\":\"Language Enhanced Attention and Focus MI training condition (MI-LEAF)\",\"comparator\":\"MI training (MI-AU)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "reflections of sustain talk",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "\"sustain talk\" (ST)",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Frequency of client \"change talk\" (CT)",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "MI training (MI-AU)",
+      "comparator": "baseline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    },
+    {
+      "outcome": "Motivational Interviewing (MI) knowledge",
+      "intervention": "Language Enhanced Attention and Focus MI training condition (MI-LEAF)",
+      "comparator": "MI training (MI-AU)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5539943"
+    }
+  ]
+}

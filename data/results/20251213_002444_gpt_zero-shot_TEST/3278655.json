@@ -1,0 +1,59 @@
+{
+  "pmcid": "3278655",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 9144,
+    "output": 451
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"maximum total point motion (MTPM)\",\"intervention\":\"The trabecular metal tibial monoblock component (TM)\",\"comparator\":\"cemented component.\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":27,\"comparator_events\":null,\"comparator_group_size\":18,\"intervention_mean\":0.98,\"intervention_standard_deviation\":null,\"comparator_mean\":0.79,\"comparator_standard_deviation\":null},{\"outcome\":\"subsidence\",\"intervention\":\"The trabecular metal tibial monoblock component (TM)\",\"comparator\":\"cemented component.\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":27,\"comparator_events\":null,\"comparator_group_size\":18,\"intervention_mean\":-0.38,\"intervention_standard_deviation\":0.37,\"comparator_mean\":-0.04,\"comparator_standard_deviation\":0.11},{\"outcome\":\"The proportion of \\\"at risk\\\" components at 5 years\",\"intervention\":\"The trabecular metal tibial monoblock component (TM)\",\"comparator\":\"cemented component.\",\"outcome_type\":\"binary\",\"intervention_events\":0,\"intervention_group_size\":27,\"comparator_events\":2,\"comparator_group_size\":18,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "maximum total point motion (MTPM)",
+      "intervention": "The trabecular metal tibial monoblock component (TM)",
+      "comparator": "cemented component.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 18,
+      "intervention_mean": 0.98,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.79,
+      "comparator_standard_deviation": null,
+      "pmcid": "3278655"
+    },
+    {
+      "outcome": "subsidence",
+      "intervention": "The trabecular metal tibial monoblock component (TM)",
+      "comparator": "cemented component.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 27,
+      "comparator_events": null,
+      "comparator_group_size": 18,
+      "intervention_mean": -0.38,
+      "intervention_standard_deviation": 0.37,
+      "comparator_mean": -0.04,
+      "comparator_standard_deviation": 0.11,
+      "pmcid": "3278655"
+    },
+    {
+      "outcome": "The proportion of \"at risk\" components at 5 years",
+      "intervention": "The trabecular metal tibial monoblock component (TM)",
+      "comparator": "cemented component.",
+      "outcome_type": "binary",
+      "intervention_events": 0,
+      "intervention_group_size": 27,
+      "comparator_events": 2,
+      "comparator_group_size": 18,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3278655"
+    }
+  ]
+}

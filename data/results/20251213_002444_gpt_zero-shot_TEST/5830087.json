@@ -1,0 +1,74 @@
+{
+  "pmcid": "5830087",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 22695,
+    "output": 911
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"objective response rate (ORR)\",\"intervention\":\"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)\",\"comparator\":\"Control arm ( bevacizumab/carboplatin/paclitaxel as above)\",\"outcome_type\":\"binary\",\"intervention_events\":29,\"intervention_group_size\":48,\"comparator_events\":10,\"comparator_group_size\":23,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"disease control rate\",\"intervention\":\"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)\",\"comparator\":\"Control arm ( bevacizumab/carboplatin/paclitaxel as above)\",\"outcome_type\":\"binary\",\"intervention_events\":45,\"intervention_group_size\":48,\"comparator_events\":21,\"comparator_group_size\":23,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"duration of objective response\",\"intervention\":\"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)\",\"comparator\":\"Control arm ( bevacizumab/carboplatin/paclitaxel as above)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":29,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"progression-free survival\",\"intervention\":\"BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)\",\"comparator\":\"Control arm ( bevacizumab/carboplatin/paclitaxel as above)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":50,\"comparator_events\":null,\"comparator_group_size\":23,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "objective response rate (ORR)",
+      "intervention": "BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",
+      "comparator": "Control arm ( bevacizumab/carboplatin/paclitaxel as above)",
+      "outcome_type": "binary",
+      "intervention_events": 29,
+      "intervention_group_size": 48,
+      "comparator_events": 10,
+      "comparator_group_size": 23,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5830087"
+    },
+    {
+      "outcome": "disease control rate",
+      "intervention": "BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",
+      "comparator": "Control arm ( bevacizumab/carboplatin/paclitaxel as above)",
+      "outcome_type": "binary",
+      "intervention_events": 45,
+      "intervention_group_size": 48,
+      "comparator_events": 21,
+      "comparator_group_size": 23,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5830087"
+    },
+    {
+      "outcome": "duration of objective response",
+      "intervention": "BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",
+      "comparator": "Control arm ( bevacizumab/carboplatin/paclitaxel as above)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 29,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5830087"
+    },
+    {
+      "outcome": "progression-free survival",
+      "intervention": "BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)",
+      "comparator": "Control arm ( bevacizumab/carboplatin/paclitaxel as above)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 50,
+      "comparator_events": null,
+      "comparator_group_size": 23,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5830087"
+    }
+  ]
+}

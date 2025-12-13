@@ -1,0 +1,104 @@
+{
+  "pmcid": "4033571",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15358,
+    "output": 837
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Overall seizure median percent improvement\",\"intervention\":\"Extended-release oxcarbazepine 2400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":111,\"comparator_events\":null,\"comparator_group_size\":117,\"intervention_mean\":-42.9,\"intervention_standard_deviation\":null,\"comparator_mean\":-28.7,\"comparator_standard_deviation\":null},{\"outcome\":\"Adverse effects\",\"intervention\":\"Extended-release oxcarbazepine 1200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"binary\",\"intervention_events\":69,\"intervention_group_size\":122,\"comparator_events\":67,\"comparator_group_size\":121,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Overall seizure median percent reduction\",\"intervention\":\"Extended-release oxcarbazepine 1200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":109,\"comparator_events\":null,\"comparator_group_size\":117,\"intervention_mean\":-38.2,\"intervention_standard_deviation\":null,\"comparator_mean\":-28.7,\"comparator_standard_deviation\":null},{\"outcome\":\"Seizure median percent improvement in North America\",\"intervention\":\"Extended-release oxcarbazepine 1200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":40,\"comparator_events\":null,\"comparator_group_size\":41,\"intervention_mean\":-34.5,\"intervention_standard_deviation\":null,\"comparator_mean\":-13.3,\"comparator_standard_deviation\":null},{\"outcome\":\"Seizure median percent improvement in North America\",\"intervention\":\"Extended-release oxcarbazepine 2400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":35,\"comparator_events\":null,\"comparator_group_size\":41,\"intervention_mean\":-52.7,\"intervention_standard_deviation\":null,\"comparator_mean\":-13.3,\"comparator_standard_deviation\":null},{\"outcome\":\"Adverse effects\",\"intervention\":\"Extended-release oxcarbazepine 2400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"binary\",\"intervention_events\":85,\"intervention_group_size\":123,\"comparator_events\":67,\"comparator_group_size\":121,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Overall seizure median percent improvement",
+      "intervention": "Extended-release oxcarbazepine 2400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 111,
+      "comparator_events": null,
+      "comparator_group_size": 117,
+      "intervention_mean": -42.9,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -28.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    },
+    {
+      "outcome": "Adverse effects",
+      "intervention": "Extended-release oxcarbazepine 1200 mg",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 69,
+      "intervention_group_size": 122,
+      "comparator_events": 67,
+      "comparator_group_size": 121,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    },
+    {
+      "outcome": "Overall seizure median percent reduction",
+      "intervention": "Extended-release oxcarbazepine 1200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 109,
+      "comparator_events": null,
+      "comparator_group_size": 117,
+      "intervention_mean": -38.2,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -28.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    },
+    {
+      "outcome": "Seizure median percent improvement in North America",
+      "intervention": "Extended-release oxcarbazepine 1200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 40,
+      "comparator_events": null,
+      "comparator_group_size": 41,
+      "intervention_mean": -34.5,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -13.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    },
+    {
+      "outcome": "Seizure median percent improvement in North America",
+      "intervention": "Extended-release oxcarbazepine 2400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 35,
+      "comparator_events": null,
+      "comparator_group_size": 41,
+      "intervention_mean": -52.7,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -13.3,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    },
+    {
+      "outcome": "Adverse effects",
+      "intervention": "Extended-release oxcarbazepine 2400 mg",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 85,
+      "intervention_group_size": 123,
+      "comparator_events": 67,
+      "comparator_group_size": 121,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4033571"
+    }
+  ]
+}

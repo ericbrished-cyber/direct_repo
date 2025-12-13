@@ -1,0 +1,44 @@
+{
+  "pmcid": "4830045",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 9061,
+    "output": 366
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Birth status\",\"intervention\":\"Patients in the 3h group\",\"comparator\":\"Patients in the 20h group\",\"outcome_type\":\"binary\",\"intervention_events\":32,\"intervention_group_size\":74,\"comparator_events\":22,\"comparator_group_size\":60,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Embryo quality\",\"intervention\":\"Patients in the 3h group\",\"comparator\":\"Patients in the 20h group\",\"outcome_type\":\"binary\",\"intervention_events\":524,\"intervention_group_size\":705,\"comparator_events\":503,\"comparator_group_size\":718,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Birth status",
+      "intervention": "Patients in the 3h group",
+      "comparator": "Patients in the 20h group",
+      "outcome_type": "binary",
+      "intervention_events": 32,
+      "intervention_group_size": 74,
+      "comparator_events": 22,
+      "comparator_group_size": 60,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4830045"
+    },
+    {
+      "outcome": "Embryo quality",
+      "intervention": "Patients in the 3h group",
+      "comparator": "Patients in the 20h group",
+      "outcome_type": "binary",
+      "intervention_events": 524,
+      "intervention_group_size": 705,
+      "comparator_events": 503,
+      "comparator_group_size": 718,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4830045"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pmcid": "5777645",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 25371,
+    "output": 442
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"HbA1c levels\",\"intervention\":\"to peer-led structured patient education\",\"comparator\":\"conventional care alone\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":70,\"comparator_events\":null,\"comparator_group_size\":70,\"intervention_mean\":-1.05,\"intervention_standard_deviation\":2.0,\"comparator_mean\":-0.15,\"comparator_standard_deviation\":1.7},{\"outcome\":\"Mean BMI change\",\"intervention\":\"to peer-led structured patient education\",\"comparator\":\"conventional care alone\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":70,\"comparator_events\":null,\"comparator_group_size\":70,\"intervention_mean\":-1.65,\"intervention_standard_deviation\":2.5,\"comparator_mean\":0.05,\"comparator_standard_deviation\":3.2},{\"outcome\":\"Mean waist circumference\",\"intervention\":\"to peer-led structured patient education\",\"comparator\":\"conventional care alone\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":70,\"comparator_events\":null,\"comparator_group_size\":70,\"intervention_mean\":-3.34,\"intervention_standard_deviation\":9.3,\"comparator_mean\":2.65,\"comparator_standard_deviation\":10.3}]}",
+  "extraction": [
+    {
+      "outcome": "HbA1c levels",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -1.05,
+      "intervention_standard_deviation": 2.0,
+      "comparator_mean": -0.15,
+      "comparator_standard_deviation": 1.7,
+      "pmcid": "5777645"
+    },
+    {
+      "outcome": "Mean BMI change",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -1.65,
+      "intervention_standard_deviation": 2.5,
+      "comparator_mean": 0.05,
+      "comparator_standard_deviation": 3.2,
+      "pmcid": "5777645"
+    },
+    {
+      "outcome": "Mean waist circumference",
+      "intervention": "to peer-led structured patient education",
+      "comparator": "conventional care alone",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 70,
+      "comparator_events": null,
+      "comparator_group_size": 70,
+      "intervention_mean": -3.34,
+      "intervention_standard_deviation": 9.3,
+      "comparator_mean": 2.65,
+      "comparator_standard_deviation": 10.3,
+      "pmcid": "5777645"
+    }
+  ]
+}

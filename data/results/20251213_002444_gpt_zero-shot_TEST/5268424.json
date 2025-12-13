@@ -1,0 +1,29 @@
+{
+  "pmcid": "5268424",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 34428,
+    "output": 171
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"score on the general dimension scale of negative affects (referred to as NA from here onward)\",\"intervention\":\"view a video featuring individuals that live in extreme poverty\",\"comparator\":\"control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":55,\"comparator_events\":null,\"comparator_group_size\":50,\"intervention_mean\":21.036,\"intervention_standard_deviation\":6.327,\"comparator_mean\":17.68,\"comparator_standard_deviation\":5.859}]}",
+  "extraction": [
+    {
+      "outcome": "score on the general dimension scale of negative affects (referred to as NA from here onward)",
+      "intervention": "view a video featuring individuals that live in extreme poverty",
+      "comparator": "control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 55,
+      "comparator_events": null,
+      "comparator_group_size": 50,
+      "intervention_mean": 21.036,
+      "intervention_standard_deviation": 6.327,
+      "comparator_mean": 17.68,
+      "comparator_standard_deviation": 5.859,
+      "pmcid": "5268424"
+    }
+  ]
+}

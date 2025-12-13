@@ -1,0 +1,59 @@
+{
+  "pmcid": "4996097",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 8844,
+    "output": 757
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"\\\"a\\\" vowel improvement\",\"intervention\":\"Septoplasty\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":33,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Total nasal resistance\",\"intervention\":\"Septoplasty\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":33,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":0.25,\"intervention_standard_deviation\":null,\"comparator_mean\":0.27,\"comparator_standard_deviation\":null},{\"outcome\":\"\\\"n\\\" consonant improvement\",\"intervention\":\"Septoplasty\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":33,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "\"a\" vowel improvement",
+      "intervention": "Septoplasty",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 33,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4996097"
+    },
+    {
+      "outcome": "Total nasal resistance",
+      "intervention": "Septoplasty",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 33,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 0.25,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.27,
+      "comparator_standard_deviation": null,
+      "pmcid": "4996097"
+    },
+    {
+      "outcome": "\"n\" consonant improvement",
+      "intervention": "Septoplasty",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 33,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4996097"
+    }
+  ]
+}

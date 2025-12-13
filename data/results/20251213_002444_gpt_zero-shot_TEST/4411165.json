@@ -1,0 +1,89 @@
+{
+  "pmcid": "4411165",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 32870,
+    "output": 999
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"tympanic temperature from Pre to P20 (-0.28 \u00b10.11\u00b0C)\",\"intervention\":\"whole-body to cold (whole-body cryostimulation, WBC)\",\"comparator\":\"whole-body except the head (partial-body cryostimulation, PBC)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":-0.28,\"intervention_standard_deviation\":0.11,\"comparator_mean\":-0.14,\"comparator_standard_deviation\":0.05},{\"outcome\":\"systolic BP\",\"intervention\":\"whole-body to cold (whole-body cryostimulation, WBC)\",\"comparator\":\"whole-body except the head (partial-body cryostimulation, PBC)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"diastolic BP\",\"intervention\":\"whole-body to cold (whole-body cryostimulation, WBC)\",\"comparator\":\"whole-body except the head (partial-body cryostimulation, PBC)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"effects of cryostimulation on the ANS - heart rate\",\"intervention\":\"whole-body to cold (whole-body cryostimulation, WBC)\",\"comparator\":\"whole-body except the head (partial-body cryostimulation, PBC)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":10,\"comparator_events\":null,\"comparator_group_size\":10,\"intervention_mean\":-7.7,\"intervention_standard_deviation\":2.3,\"comparator_mean\":-5.02,\"comparator_standard_deviation\":1.07},{\"outcome\":\"Tskin of the head\",\"intervention\":\"whole-body to cold (whole-body cryostimulation, WBC)\",\"comparator\":\"whole-body except the head (partial-body cryostimulation, PBC)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "tympanic temperature from Pre to P20 (-0.28 \u00b10.11\u00b0C)",
+      "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+      "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": -0.28,
+      "intervention_standard_deviation": 0.11,
+      "comparator_mean": -0.14,
+      "comparator_standard_deviation": 0.05,
+      "pmcid": "4411165"
+    },
+    {
+      "outcome": "systolic BP",
+      "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+      "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4411165"
+    },
+    {
+      "outcome": "diastolic BP",
+      "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+      "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4411165"
+    },
+    {
+      "outcome": "effects of cryostimulation on the ANS - heart rate",
+      "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+      "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 10,
+      "comparator_events": null,
+      "comparator_group_size": 10,
+      "intervention_mean": -7.7,
+      "intervention_standard_deviation": 2.3,
+      "comparator_mean": -5.02,
+      "comparator_standard_deviation": 1.07,
+      "pmcid": "4411165"
+    },
+    {
+      "outcome": "Tskin of the head",
+      "intervention": "whole-body to cold (whole-body cryostimulation, WBC)",
+      "comparator": "whole-body except the head (partial-body cryostimulation, PBC)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4411165"
+    }
+  ]
+}

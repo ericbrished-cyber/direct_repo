@@ -73,7 +73,7 @@ class GPTModel(ModelAdapter):
         # API call
         response = client.responses.create(
             model=self.model_version,
-            reasoning={"effort": "medium"},
+            reasoning={"effort": "low"},
             input=messages
         )
 

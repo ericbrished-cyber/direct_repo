@@ -1,0 +1,104 @@
+{
+  "pmcid": "3003523",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 20260,
+    "output": 1314
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Short-Form 36-Items improvement\",\"intervention\":\"Certolizumab 200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":393,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":7.8,\"intervention_standard_deviation\":null,\"comparator_mean\":1.7,\"comparator_standard_deviation\":null},{\"outcome\":\"Short-Form 36-Items improvement\",\"intervention\":\"Certolizumab 400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":390,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":8.6,\"intervention_standard_deviation\":null,\"comparator_mean\":1.7,\"comparator_standard_deviation\":null},{\"outcome\":\"Pain\",\"intervention\":\"Certolizumab 400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":390,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Health-related quality of life improvement - Short-Form 36-Items improvement\",\"intervention\":\"Certolizumab 200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":393,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":7.8,\"intervention_standard_deviation\":null,\"comparator_mean\":1.7,\"comparator_standard_deviation\":null},{\"outcome\":\"Mental Component Summary improvement\",\"intervention\":\"Certolizumab 400 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":390,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":6.4,\"intervention_standard_deviation\":null,\"comparator_mean\":2.1,\"comparator_standard_deviation\":null},{\"outcome\":\"Fatigue Assessment Scale improvement\",\"intervention\":\"Certolizumab 200 mg\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":393,\"comparator_events\":null,\"comparator_group_size\":199,\"intervention_mean\":-2.6,\"intervention_standard_deviation\":null,\"comparator_mean\":-0.8,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 7.8,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 8.6,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Pain",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Health-related quality of life improvement - Short-Form 36-Items improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 7.8,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 1.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Mental Component Summary improvement",
+      "intervention": "Certolizumab 400 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 390,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": 6.4,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 2.1,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    },
+    {
+      "outcome": "Fatigue Assessment Scale improvement",
+      "intervention": "Certolizumab 200 mg",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 393,
+      "comparator_events": null,
+      "comparator_group_size": 199,
+      "intervention_mean": -2.6,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -0.8,
+      "comparator_standard_deviation": null,
+      "pmcid": "3003523"
+    }
+  ]
+}

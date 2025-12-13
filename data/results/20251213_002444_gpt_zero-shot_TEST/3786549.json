@@ -1,0 +1,89 @@
+{
+  "pmcid": "3786549",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 15446,
+    "output": 684
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Improvement in Vaginal Maturation Index\",\"intervention\":\"Vaginal estriol plus viable Lactobacillus acidophilus KS400\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":44,\"comparator_events\":null,\"comparator_group_size\":44,\"intervention_mean\":35.2,\"intervention_standard_deviation\":21.7,\"comparator_mean\":9.9,\"comparator_standard_deviation\":14.5},{\"outcome\":\"Baseline characteristics: menopause\",\"intervention\":\"Vaginal estriol plus viable Lactobacillus acidophilus KS400\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":44,\"comparator_events\":null,\"comparator_group_size\":44,\"intervention_mean\":13.11,\"intervention_standard_deviation\":7.02,\"comparator_mean\":13.0,\"comparator_standard_deviation\":6.94},{\"outcome\":\"Baseline characteristics: height\",\"intervention\":\"Vaginal estriol plus viable Lactobacillus acidophilus KS400\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":44,\"comparator_events\":null,\"comparator_group_size\":44,\"intervention_mean\":154.86,\"intervention_standard_deviation\":5.45,\"comparator_mean\":153.43,\"comparator_standard_deviation\":5.88},{\"outcome\":\"Baseline characteristics: weight\",\"intervention\":\"Vaginal estriol plus viable Lactobacillus acidophilus KS400\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":44,\"comparator_events\":null,\"comparator_group_size\":44,\"intervention_mean\":56.16,\"intervention_standard_deviation\":8.1,\"comparator_mean\":57.82,\"comparator_standard_deviation\":8.24},{\"outcome\":\"Baseline characteristics: deliveries\",\"intervention\":\"Vaginal estriol plus viable Lactobacillus acidophilus KS400\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":44,\"comparator_events\":null,\"comparator_group_size\":44,\"intervention_mean\":2.14,\"intervention_standard_deviation\":1.76,\"comparator_mean\":2.64,\"comparator_standard_deviation\":1.79}]}",
+  "extraction": [
+    {
+      "outcome": "Improvement in Vaginal Maturation Index",
+      "intervention": "Vaginal estriol plus viable Lactobacillus acidophilus KS400",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 44,
+      "comparator_events": null,
+      "comparator_group_size": 44,
+      "intervention_mean": 35.2,
+      "intervention_standard_deviation": 21.7,
+      "comparator_mean": 9.9,
+      "comparator_standard_deviation": 14.5,
+      "pmcid": "3786549"
+    },
+    {
+      "outcome": "Baseline characteristics: menopause",
+      "intervention": "Vaginal estriol plus viable Lactobacillus acidophilus KS400",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 44,
+      "comparator_events": null,
+      "comparator_group_size": 44,
+      "intervention_mean": 13.11,
+      "intervention_standard_deviation": 7.02,
+      "comparator_mean": 13.0,
+      "comparator_standard_deviation": 6.94,
+      "pmcid": "3786549"
+    },
+    {
+      "outcome": "Baseline characteristics: height",
+      "intervention": "Vaginal estriol plus viable Lactobacillus acidophilus KS400",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 44,
+      "comparator_events": null,
+      "comparator_group_size": 44,
+      "intervention_mean": 154.86,
+      "intervention_standard_deviation": 5.45,
+      "comparator_mean": 153.43,
+      "comparator_standard_deviation": 5.88,
+      "pmcid": "3786549"
+    },
+    {
+      "outcome": "Baseline characteristics: weight",
+      "intervention": "Vaginal estriol plus viable Lactobacillus acidophilus KS400",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 44,
+      "comparator_events": null,
+      "comparator_group_size": 44,
+      "intervention_mean": 56.16,
+      "intervention_standard_deviation": 8.1,
+      "comparator_mean": 57.82,
+      "comparator_standard_deviation": 8.24,
+      "pmcid": "3786549"
+    },
+    {
+      "outcome": "Baseline characteristics: deliveries",
+      "intervention": "Vaginal estriol plus viable Lactobacillus acidophilus KS400",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 44,
+      "comparator_events": null,
+      "comparator_group_size": 44,
+      "intervention_mean": 2.14,
+      "intervention_standard_deviation": 1.76,
+      "comparator_mean": 2.64,
+      "comparator_standard_deviation": 1.79,
+      "pmcid": "3786549"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pmcid": "5614421",
+  "config": {
+    "model": "gpt",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 36029,
+    "output": 738
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"The incidence of respiratory distress syndrome\",\"intervention\":\"vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":42,\"intervention_group_size\":402,\"comparator_events\":41,\"comparator_group_size\":388,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"severity of any neonatal respiratory disease\",\"intervention\":\"vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":64,\"intervention_group_size\":402,\"comparator_events\":61,\"comparator_group_size\":388,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"other respiratory morbidities\",\"intervention\":\"vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"adverse infant outcomes, including serious infant composite outcome\",\"intervention\":\"vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":155,\"intervention_group_size\":406,\"comparator_events\":152,\"comparator_group_size\":393,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"side effects\",\"intervention\":\"vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":134,\"intervention_group_size\":394,\"comparator_events\":118,\"comparator_group_size\":382,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "The incidence of respiratory distress syndrome",
+      "intervention": "vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 42,
+      "intervention_group_size": 402,
+      "comparator_events": 41,
+      "comparator_group_size": 388,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5614421"
+    },
+    {
+      "outcome": "severity of any neonatal respiratory disease",
+      "intervention": "vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 64,
+      "intervention_group_size": 402,
+      "comparator_events": 61,
+      "comparator_group_size": 388,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5614421"
+    },
+    {
+      "outcome": "other respiratory morbidities",
+      "intervention": "vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5614421"
+    },
+    {
+      "outcome": "adverse infant outcomes, including serious infant composite outcome",
+      "intervention": "vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 155,
+      "intervention_group_size": 406,
+      "comparator_events": 152,
+      "comparator_group_size": 393,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5614421"
+    },
+    {
+      "outcome": "side effects",
+      "intervention": "vaginal progesterone pessaries (equivalent to 100 mg vaginal progesterone)",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": 134,
+      "intervention_group_size": 394,
+      "comparator_events": 118,
+      "comparator_group_size": 382,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5614421"
+    }
+  ]
+}
