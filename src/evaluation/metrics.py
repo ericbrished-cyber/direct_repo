@@ -171,7 +171,7 @@ class Evaluator:
     def calculate_metrics(self) -> Dict[str, Any]:
         """
         Main calculation pipeline.
-        Returns aggregated, exact match, per-field, and figure-subset metrics.
+        Returns aggregated, exact match (global + stratified), per-field, and figure-subset metrics.
         """
         scorable_df = self.long_df[self.long_df['category'] != 'IGNORE']
         
@@ -184,15 +184,35 @@ class Evaluator:
             rmse_l, rmse_h = self._calculate_bootstrap_ci(scorable_df, "rmse")
             agg_stats["rmse_ci_lower"], agg_stats["rmse_ci_upper"] = rmse_l, rmse_h
 
-        # 2. Exact Match (ICO level)
-        exact_matches = []
+        # 2. Exact Match (ICO level) - Global AND Stratified
+        exact_matches_all = []
+        exact_matches_by_type = {} # e.g. {'binary': [1, 0...], 'continuous': [0, 0...]}
+
         if not scorable_df.empty:
             groups = scorable_df.groupby(self.id_cols)
+            
             for _, group in groups:
+                # Check if this specific ICO is perfect
                 is_perfect = group['category'].isin(['TP', 'TN']).all()
-                exact_matches.append(1 if is_perfect else 0)
+                score = 1 if is_perfect else 0
+                
+                # Global list
+                exact_matches_all.append(score)
+                
+                # Stratified list
+                # We grab the outcome_type from the first row of the group
+                if 'outcome_type' in group.columns:
+                    otype = str(group['outcome_type'].iloc[0])
+                    if otype not in exact_matches_by_type:
+                        exact_matches_by_type[otype] = []
+                    exact_matches_by_type[otype].append(score)
         
-        agg_stats['exact_match'] = np.mean(exact_matches) if exact_matches else 0.0
+        # Calculate Means
+        agg_stats['exact_match'] = np.mean(exact_matches_all) if exact_matches_all else 0.0
+        
+        stratified_em = {}
+        for otype, scores in exact_matches_by_type.items():
+            stratified_em[otype] = np.mean(scores) if scores else 0.0
 
         # 3. Per-Field Metrics (Breakdown)
         by_field = {}
@@ -208,41 +228,30 @@ class Evaluator:
                 
                 by_field[field_name] = field_stats
 
-        # 4. Figure Subset Metrics (Aggregated + Breakdown)
+        # 4. Figure Subset Metrics
         figures_output = {}
         if 'is_data_in_figure_graphics' in scorable_df.columns:
-            # Filter for rows where the GOLD data was marked as being in a figure
             fig_group = scorable_df[scorable_df['is_data_in_figure_graphics'] == True]
-            
             if not fig_group.empty:
-                # A. Aggregated Figures
                 fig_agg = self._compute_stats(fig_group)
                 f1_l, f1_h = self._calculate_bootstrap_ci(fig_group, "f1")
                 fig_agg["f1_ci_lower"], fig_agg["f1_ci_upper"] = f1_l, f1_h
                 
                 rmse_l, rmse_h = self._calculate_bootstrap_ci(fig_group, "rmse")
                 fig_agg["rmse_ci_lower"], fig_agg["rmse_ci_upper"] = rmse_l, rmse_h
-                
                 figures_output["aggregated"] = fig_agg
-
-                # B. By-Field Figures
+                
                 fig_by_field = {}
                 for field_name, group in fig_group.groupby('field'):
                     f_stats = self._compute_stats(group)
-                    if len(group) > 0:
-                        f1_l, f1_h = self._calculate_bootstrap_ci(group, "f1")
-                        f_stats["f1_ci_lower"], f_stats["f1_ci_upper"] = f1_l, f1_h
-                        
-                        rmse_l, rmse_h = self._calculate_bootstrap_ci(group, "rmse")
-                        f_stats["rmse_ci_lower"], f_stats["rmse_ci_upper"] = rmse_l, rmse_h
-                    
+                    # (Optional: Add CI for figure fields here if desired)
                     fig_by_field[field_name] = f_stats
-                
                 figures_output["by_field"] = fig_by_field
 
         return {
             "aggregated": agg_stats,
             "exact_match": agg_stats.get('exact_match', 0.0),
+            "exact_match_stratified": stratified_em, # <--- NEW OUTPUT
             "by_field": by_field,
             "figures_subset": figures_output 
         }

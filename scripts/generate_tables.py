@@ -7,7 +7,6 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 from src.config import RESULTS_DIR
 
-
 # Name of the JSON file *inside* each run folder
 TARGET_FILENAME = "evaluation_metrics.json"
 
@@ -101,6 +100,7 @@ def get_metric_value(run_data, json_key, metric_name, data_source="main"):
     return metrics.get(metric_name)
 
 def generate_latex_tables(results_data):
+    # Sort models to ensure consistent order (e.g. Claude, Gemini, GPT)
     available_models = sorted(results_data.keys())
     
     field_map = [
@@ -115,164 +115,194 @@ def generate_latex_tables(results_data):
         ("Comparator Events", "comparator_events")
     ]
 
-    # Helper to generate standard comparison tables
-    def print_comparison_table(title, caption, label, setting, data_source="main"):
-        print("\n" + "%"*20 + f" {title.upper()} " + "%"*20 + "\n")
-        print(r"\begin{table}[ht]")
-        print(r"\centering")
-        print(f"\\caption{{{caption}}}")
-        print(f"\\label{{{label}}}")
-        print(r"\small")
-        print(r"\setlength{\tabcolsep}{4pt}")
-        print(r"\begin{tabular}{l l c c}")
-        print(r"\toprule")
-        print(r"\textbf{Category} & \textbf{Model} & \textbf{F1 [95\% CI]} & \textbf{RMSE [95\% CI]} \\")
-        print(r"\midrule")
-
-        for display_name, json_key in field_map:
-            print(f"\\multirow{{{len(available_models)}}}{{*}}{{\\textbf{{{display_name}}}}}")
-            
-            # Find bests
-            best_f1 = -1
-            best_rmse = float('inf')
-            
-            for m in available_models:
-                run_data = results_data.get(m, {}).get(setting, {})
-                f1 = get_metric_value(run_data, json_key, "f1", data_source)
-                rmse = get_metric_value(run_data, json_key, "rmse", data_source)
-                
-                if f1 is not None and f1 > best_f1: best_f1 = f1
-                if rmse is not None and rmse > 0 and rmse < best_rmse: best_rmse = rmse
-
-            for model in available_models:
-                run_data = results_data.get(model, {}).get(setting, {})
-                
-                # Navigate to specific metrics dict
-                if data_source == "figures":
-                    root = run_data.get("figures_subset", {})
-                else:
-                    root = run_data
-                
-                if json_key == "aggregated":
-                    metrics = root.get("aggregated", {}) if root else {}
-                else:
-                    metrics = root.get("by_field", {}).get(json_key, {}) if root else {}
-
-                if not metrics:
-                    print(f" & {model} & - & - \\\\")
-                    continue
-
-                # Format
-                val_f1 = metrics.get("f1", 0)
-                is_best_f1 = math.isclose(val_f1, best_f1, rel_tol=1e-4)
-                f1_str = format_metric(metrics, "f1", is_percent=True, is_best=is_best_f1)
-                
-                val_rmse = metrics.get("rmse", 0)
-                # RMSE best logic: must be > 0 and close to min
-                is_best_rmse = (val_rmse > 0 and math.isclose(val_rmse, best_rmse, rel_tol=1e-4))
-                rmse_str = format_metric(metrics, "rmse", is_percent=False, is_best=is_best_rmse)
-                
-                print(f" & {model} & {f1_str} & {rmse_str} \\\\")
-            print(r"\midrule")
-        print(r"\bottomrule")
-        print(r"\end{tabular}")
-        print(r"\end{table}")
-
-    # --- TABLE 1: MAIN RESULTS (Zero-Shot) ---
-    print_comparison_table(
-        "Table 1: Main Head-to-Head",
-        "Performance metrics on the full TEST set (Zero-Shot). Best scores in bold.",
-        "tab:main_results",
-        "Zero-Shot",
-        data_source="main"
-    )
-
-    # --- TABLE 2: STRATEGY ANALYSIS (Gemini Only) ---
-    target_model = "Gemini-3-Pro"
-    print("\n" + "%"*20 + " TABLE 2: STRATEGY ANALYSIS " + "%"*20 + "\n")
+    # -------------------------------------------------------------------------
+    # TABLE 1: HEAD-TO-HEAD (Zero-Shot) - Standard P/R/F1/RMSE table
+    # -------------------------------------------------------------------------
+    print("\n" + "%"*20 + " TABLE 1: ZERO-SHOT COMPARISON " + "%"*20 + "\n")
     print(r"\begin{table}[ht]")
     print(r"\centering")
-    print(f"\\caption{{Effect of Prompting Strategy on {target_model}.}}")
-    print(r"\label{tab:strategy_analysis}")
+    print(r"\caption{Zero-Shot Performance: Head-to-Head Comparison.}")
+    print(r"\label{tab:main_results}")
     print(r"\small")
-    print(r"\setlength{\tabcolsep}{5pt}")
-    print(r"\begin{tabular}{l c c c c}")
+    print(r"\setlength{\tabcolsep}{3pt}")
+    print(r"\begin{tabular}{l l c c c c}")
     print(r"\toprule")
-    print(r"& \multicolumn{2}{c}{\textbf{F1 Score}} & \multicolumn{2}{c}{\textbf{RMSE}} \\")
-    print(r"\cmidrule(lr){2-3} \cmidrule(lr){4-5}")
-    print(r"\textbf{Category} & \textbf{Zero-Shot} & \textbf{Few-Shot} & \textbf{Zero-Shot} & \textbf{Few-Shot} \\")
+    print(r"\textbf{Category} & \textbf{Model} & \textbf{Prec} & \textbf{Rec} & \textbf{F1 [95\% CI]} & \textbf{RMSE [95\% CI]} \\")
     print(r"\midrule")
 
     for display_name, json_key in field_map:
-        # Get raw values
-        run_zs = results_data.get(target_model, {}).get("Zero-Shot", {})
-        run_fs = results_data.get(target_model, {}).get("Few-Shot", {})
+        print(f"\\multirow{{{len(available_models)}}}{{*}}{{\\textbf{{{display_name}}}}}")
         
-        f1_zs = get_metric_value(run_zs, json_key, "f1")
-        f1_fs = get_metric_value(run_fs, json_key, "f1")
-        rmse_zs = get_metric_value(run_zs, json_key, "rmse")
-        rmse_fs = get_metric_value(run_fs, json_key, "rmse")
+        best_vals = {"precision": -1, "recall": -1, "f1": -1, "rmse": float('inf')}
+        setting = "Zero-Shot"
+        
+        # Determine Bests
+        for m in available_models:
+            run_data = results_data.get(m, {}).get(setting, {})
+            for metric in best_vals.keys():
+                val = get_metric_value(run_data, json_key, metric, "main")
+                if val is not None:
+                    if metric == "rmse":
+                        if val > 0 and val < best_vals[metric]: best_vals[metric] = val
+                    else:
+                        if val > best_vals[metric]: best_vals[metric] = val
 
-        # Comparisons
-        f1_zs = f1_zs if f1_zs else 0
-        f1_fs = f1_fs if f1_fs else 0
-        best_f1 = max(f1_zs, f1_fs)
-        
-        rmse_zs = rmse_zs if rmse_zs else float('inf')
-        rmse_fs = rmse_fs if rmse_fs else float('inf')
-        best_rmse = min(rmse_zs, rmse_fs)
-
-        # Print Row
-        row = f"\\textbf{{{display_name}}} "
-        
-        # F1 Columns
-        row += f"& \\textbf{{{f1_zs*100:.1f}}}" if math.isclose(f1_zs, best_f1) and f1_zs > 0 else f"& {f1_zs*100:.1f}"
-        row += f"& \\textbf{{{f1_fs*100:.1f}}}" if math.isclose(f1_fs, best_f1) and f1_fs > 0 else f"& {f1_fs*100:.1f}"
-        
-        # RMSE Columns
-        if rmse_zs == float('inf'): row += " & -"
-        else: row += f"& \\textbf{{{rmse_zs:.1f}}}" if math.isclose(rmse_zs, best_rmse) else f"& {rmse_zs:.1f}"
+        for model in available_models:
+            run_data = results_data.get(model, {}).get(setting, {})
+            metrics = run_data.get("aggregated", {}) if json_key == "aggregated" else run_data.get("by_field", {}).get(json_key, {})
             
-        if rmse_fs == float('inf'): row += " & - \\\\"
-        else: row += f"& \\textbf{{{rmse_fs:.1f}}}" if math.isclose(rmse_fs, best_rmse) else f"& {rmse_fs:.1f} \\\\"
-        
-        print(row)
+            if not metrics:
+                print(f" & {model} & - & - & - & - \\\\")
+                continue
+
+            row_str = f" & {model} "
+            p_val = metrics.get('precision', 0)
+            row_str += f"& {format_metric(metrics, 'precision', True, math.isclose(p_val, best_vals['precision'], rel_tol=1e-4))} "
+            r_val = metrics.get('recall', 0)
+            row_str += f"& {format_metric(metrics, 'recall', True, math.isclose(r_val, best_vals['recall'], rel_tol=1e-4))} "
+            f1_val = metrics.get('f1', 0)
+            row_str += f"& {format_metric(metrics, 'f1', True, math.isclose(f1_val, best_vals['f1'], rel_tol=1e-4))} "
+            rmse_val = metrics.get('rmse', 0)
+            is_best_rmse = (rmse_val > 0 and math.isclose(rmse_val, best_vals['rmse'], rel_tol=1e-4))
+            row_str += f"& {format_metric(metrics, 'rmse', False, is_best_rmse)} \\\\"
+            print(row_str)
+        print(r"\midrule")
+    print(r"\bottomrule")
+    print(r"\end{tabular}")
+    print(r"\end{table}")
+
+    # -------------------------------------------------------------------------
+    # TABLE 2: STRATEGY ANALYSIS (ALL MODELS)
+    # -------------------------------------------------------------------------
+    # Uses all available models since all now have Few-Shot data
+    strat_models = available_models 
+    
+    # Build dynamic column string: "l l | c c | c c | c c" etc.
+    col_def = "l l " + "| c c " * len(strat_models)
+    
+    print("\n" + "%"*20 + " TABLE 2: STRATEGY ANALYSIS (ALL MODELS) " + "%"*20 + "\n")
+    print(r"\begin{table}[ht]")
+    print(r"\centering")
+    print(r"\caption{Impact of Few-Shot Prompting across all models.}")
+    print(r"\label{tab:strategy_models}")
+    print(r"\scriptsize") # Use scriptsize to fit all columns
+    print(r"\setlength{\tabcolsep}{3pt}") # Tight columns
+    print(f"\\begin{{tabular}}{{{col_def}}}")
+    print(r"\toprule")
+    
+    # Dynamic Header Row 1: Model Names
+    header1 = "& "
+    for m in strat_models:
+        header1 += f"& \\multicolumn{{2}}{{c}}{{\\textbf{{{m}}}}} "
+    print(header1 + r"\\")
+    
+    # Dynamic Header Row 2: ZS / FS
+    header2 = r"\textbf{Category} & \textbf{Metric} "
+    for _ in strat_models:
+        header2 += r"& \textbf{ZS} & \textbf{FS} "
+    print(header2 + r"\\")
+    
+    print(r"\midrule")
+
+    for display_name, json_key in field_map:
+        # We print two rows per category: F1 and RMSE
+        for metric_name, label in [("f1", "F1"), ("rmse", "RMSE")]:
+            
+            # 1. Determine best value in this row (across all models/settings)
+            best_in_row = -1.0 if metric_name == "f1" else float('inf')
+            
+            values_map = {}
+            for m in strat_models:
+                for s in ["Zero-Shot", "Few-Shot"]:
+                    run = results_data.get(m, {}).get(s, {})
+                    val = get_metric_value(run, json_key, metric_name)
+                    
+                    if val is not None:
+                        if metric_name == "rmse" and val <= 0: continue
+                        values_map[(m, s)] = val
+                        
+                        if metric_name == "f1":
+                            if val > best_in_row: best_in_row = val
+                        else:
+                            if val < best_in_row: best_in_row = val
+
+            # 2. Build Row String
+            if metric_name == "f1":
+                row_str = f"\\multirow{{2}}{{*}}{{\\textbf{{{display_name}}}}} & {label} "
+            else:
+                row_str = f" & {label} "
+
+            for m in strat_models:
+                for s in ["Zero-Shot", "Few-Shot"]:
+                    val = values_map.get((m, s))
+                    
+                    if val is None:
+                        row_str += "& - "
+                    else:
+                        is_percent = (metric_name == "f1")
+                        display_val = val * 100 if is_percent else val
+                        
+                        # Check bolding
+                        is_best = False
+                        if metric_name == "f1" and best_in_row > 0:
+                            is_best = math.isclose(val, best_in_row, rel_tol=1e-4)
+                        elif metric_name == "rmse" and best_in_row < float('inf'):
+                            is_best = math.isclose(val, best_in_row, rel_tol=1e-4)
+
+                        if is_best:
+                            row_str += f"& \\textbf{{{display_val:.1f}}} "
+                        else:
+                            row_str += f"& {display_val:.1f} "
+            
+            print(row_str + r"\\")
+        print(r"\midrule")
 
     print(r"\bottomrule")
     print(r"\end{tabular}")
     print(r"\end{table}")
 
-    # --- TABLE 3: EXACT MATCH ---
+    # --- TABLE 3: EXACT MATCH (Zero-Shot) ---
     print("\n" + "%"*20 + " TABLE 3: EXACT MATCH " + "%"*20 + "\n")
     print(r"\begin{table}[ht]")
     print(r"\centering")
-    print(r"\caption{Exact Match (EM) accuracy at the ICO level. Comparison of all models and settings.}")
+    print(r"\caption{Exact Match (EM) accuracy on Zero-Shot, stratified by Outcome Type.}")
     print(r"\label{tab:exact_match}")
-    print(r"\begin{tabular}{l c c}")
+    print(r"\small")
+    print(r"\begin{tabular}{l c c c}")
     print(r"\toprule")
-    print(r"\textbf{Model} & \textbf{EM (Zero-Shot)} & \textbf{EM (Few-Shot)} \\")
+    print(r"\textbf{Model} & \textbf{Binary} & \textbf{Continuous} & \textbf{Total} \\")
     print(r"\midrule")
     
-    settings = ["Zero-Shot", "Few-Shot"]
-    # Find global best EM
-    global_best = -1
+    setting = "Zero-Shot"
+    bests = {"binary": -1, "continuous": -1, "total": -1}
     for m in available_models:
-        for s in settings:
-            val = results_data.get(m, {}).get(s, {}).get("exact_match", 0)
-            if val > global_best: global_best = val
+        run_data = results_data.get(m, {}).get(setting, {})
+        for k in bests:
+            if k == "total":
+                val = run_data.get("exact_match", 0)
+            else:
+                val = run_data.get("exact_match_stratified", {}).get(k, 0)
+            if val > bests[k]: bests[k] = val
 
     for model in available_models:
+        run_data = results_data.get(model, {}).get(setting, {})
         row_str = f"{model} "
-        for setting in settings:
-            val = results_data.get(model, {}).get(setting, {}).get("exact_match", 0)
-            val_pct = val * 100
-            
-            if math.isclose(val, global_best, rel_tol=1e-4) and val > 0:
-                row_str += f"& \\textbf{{{val_pct:.1f}}}\\% "
-            else:
-                if val == 0: row_str += "& - "
-                else: row_str += f"& {val_pct:.1f}\\% "
-        print(row_str + r"\\")
+        
+        # Binary
+        val = run_data.get("exact_match_stratified", {}).get("binary", 0)
+        txt = f"{val*100:.1f}\\%"
+        row_str += f"& \\textbf{{{txt}}} " if math.isclose(val, bests["binary"], rel_tol=1e-4) and val > 0 else f"& {txt} "
+        
+        # Continuous
+        val = run_data.get("exact_match_stratified", {}).get("continuous", 0)
+        txt = f"{val*100:.1f}\\%"
+        row_str += f"& \\textbf{{{txt}}} " if math.isclose(val, bests["continuous"], rel_tol=1e-4) and val > 0 else f"& {txt} "
+        
+        # Total
+        val = run_data.get("exact_match", 0)
+        txt = f"{val*100:.1f}\\%"
+        row_str += f"& \\textbf{{{txt}}} \\\\" if math.isclose(val, bests["total"], rel_tol=1e-4) and val > 0 else f"& {txt} \\\\"
+        print(row_str)
     
     print(r"\bottomrule")
     print(r"\end{tabular}")
@@ -281,7 +311,7 @@ def generate_latex_tables(results_data):
     # --- TABLE 4: FIGURE SUBSET (Zero-Shot) ---
     print_comparison_table(
         "Table 4: Figure Data Subset",
-        "Performance on data extracted purely from Figures/Graphs (Zero-Shot).",
+        "Performance on Figure-sourced data (Zero-Shot).",
         "tab:figure_subset",
         "Zero-Shot",
         data_source="figures"
