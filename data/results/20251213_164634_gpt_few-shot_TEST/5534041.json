@@ -1,0 +1,89 @@
+{
+  "pmcid": "5534041",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 49029,
+    "output": 882
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"composite z-scores in autism spectrum disorder (ASD)\",\"intervention\":\"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"comparator\":\"sham stimulation\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":0.11,\"intervention_standard_deviation\":0.81,\"comparator_mean\":-0.25,\"comparator_standard_deviation\":0.71},{\"outcome\":\"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\"intervention\":\"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"comparator\":\"sham stimulation\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":0.11,\"intervention_standard_deviation\":0.81,\"comparator_mean\":-0.25,\"comparator_standard_deviation\":0.71},{\"outcome\":\"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\"intervention\":\"right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"comparator\":\"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":0.11,\"intervention_standard_deviation\":0.81,\"comparator_mean\":0.13,\"comparator_standard_deviation\":0.82},{\"outcome\":\"overall working memory (WM) performance in autism spectrum disorder (ASD)\",\"intervention\":\"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"comparator\":\"sham stimulation\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":0.13,\"intervention_standard_deviation\":0.82,\"comparator_mean\":-0.25,\"comparator_standard_deviation\":0.71},{\"outcome\":\"composite z-scores in autism spectrum disorder (ASD)\",\"intervention\":\"left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)\",\"comparator\":\"sham stimulation\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":0.13,\"intervention_standard_deviation\":0.82,\"comparator_mean\":-0.25,\"comparator_standard_deviation\":0.71}]}",
+  "extraction": [
+    {
+      "outcome": "composite z-scores in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.11,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": 0.13,
+      "comparator_standard_deviation": 0.82,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "overall working memory (WM) performance in autism spectrum disorder (ASD)",
+      "intervention": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.13,
+      "intervention_standard_deviation": 0.82,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    },
+    {
+      "outcome": "composite z-scores in autism spectrum disorder (ASD)",
+      "intervention": "left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS)",
+      "comparator": "sham stimulation",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 0.13,
+      "intervention_standard_deviation": 0.82,
+      "comparator_mean": -0.25,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "5534041"
+    }
+  ]
+}

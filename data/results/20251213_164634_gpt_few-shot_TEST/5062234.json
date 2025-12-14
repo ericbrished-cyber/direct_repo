@@ -1,0 +1,74 @@
+{
+  "pmcid": "5062234",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 36967,
+    "output": 452
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"The visual analog scale scores at rest timepoint 24 h\",\"intervention\":\"Transversus abdominis plane block with 0.375% ropivacaine\",\"comparator\":\"local anesthetic infiltration of the port site.\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":21,\"comparator_events\":null,\"comparator_group_size\":21,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The visual analog scale score on coughing timepoint 24. h\",\"intervention\":\"Transversus abdominis plane block with 0.375% ropivacaine\",\"comparator\":\"local anesthetic infiltration of the port site.\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":21,\"comparator_events\":null,\"comparator_group_size\":21,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The 24 h morphine requirement\",\"intervention\":\"Transversus abdominis plane block with 0.375% ropivacaine\",\"comparator\":\"local anesthetic infiltration of the port site.\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":21,\"comparator_events\":null,\"comparator_group_size\":21,\"intervention_mean\":34.57,\"intervention_standard_deviation\":14.64,\"comparator_mean\":32.76,\"comparator_standard_deviation\":14.34},{\"outcome\":\"intraoperative supplemental fentanyl\",\"intervention\":\"Transversus abdominis plane block with 0.375% ropivacaine\",\"comparator\":\"local anesthetic infiltration of the port site.\",\"outcome_type\":\"binary\",\"intervention_events\":8,\"intervention_group_size\":21,\"comparator_events\":16,\"comparator_group_size\":21,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "The visual analog scale scores at rest timepoint 24 h",
+      "intervention": "Transversus abdominis plane block with 0.375% ropivacaine",
+      "comparator": "local anesthetic infiltration of the port site.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 21,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5062234"
+    },
+    {
+      "outcome": "The visual analog scale score on coughing timepoint 24. h",
+      "intervention": "Transversus abdominis plane block with 0.375% ropivacaine",
+      "comparator": "local anesthetic infiltration of the port site.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 21,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5062234"
+    },
+    {
+      "outcome": "The 24 h morphine requirement",
+      "intervention": "Transversus abdominis plane block with 0.375% ropivacaine",
+      "comparator": "local anesthetic infiltration of the port site.",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 21,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 34.57,
+      "intervention_standard_deviation": 14.64,
+      "comparator_mean": 32.76,
+      "comparator_standard_deviation": 14.34,
+      "pmcid": "5062234"
+    },
+    {
+      "outcome": "intraoperative supplemental fentanyl",
+      "intervention": "Transversus abdominis plane block with 0.375% ropivacaine",
+      "comparator": "local anesthetic infiltration of the port site.",
+      "outcome_type": "binary",
+      "intervention_events": 8,
+      "intervention_group_size": 21,
+      "comparator_events": 16,
+      "comparator_group_size": 21,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5062234"
+    }
+  ]
+}

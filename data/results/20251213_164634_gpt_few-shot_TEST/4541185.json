@@ -1,0 +1,119 @@
+{
+  "pmcid": "4541185",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 32570,
+    "output": 1026
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"duration of sensory block\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":29,\"intervention_mean\":703.83,\"intervention_standard_deviation\":42.90,\"comparator_mean\":556.38,\"comparator_standard_deviation\":37.96},{\"outcome\":\"duration of motor block\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":29,\"intervention_mean\":621.67,\"intervention_standard_deviation\":46.76,\"comparator_mean\":500.86,\"comparator_standard_deviation\":44.58},{\"outcome\":\"duration of analgesia\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":29,\"intervention_mean\":878.33,\"intervention_standard_deviation\":89.955,\"comparator_mean\":613.10,\"comparator_standard_deviation\":51.797},{\"outcome\":\"onset of sensory block\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":29,\"intervention_mean\":4.36,\"intervention_standard_deviation\":0.81,\"comparator_mean\":4.84,\"comparator_standard_deviation\":0.65},{\"outcome\":\"onset of motor block\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":29,\"intervention_mean\":9.83,\"intervention_standard_deviation\":1.12,\"comparator_mean\":10.85,\"comparator_standard_deviation\":0.79},{\"outcome\":\"heart rate\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":76.10,\"intervention_standard_deviation\":8.91,\"comparator_mean\":76.77,\"comparator_standard_deviation\":8.76},{\"outcome\":\"mean arterial pressure\",\"intervention\":\"ropivacaine + diluted clonidine with saline\",\"comparator\":\"ropivacaine + saline\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":30,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":92.04,\"intervention_standard_deviation\":7.15,\"comparator_mean\":91.20,\"comparator_standard_deviation\":6.62}]}",
+  "extraction": [
+    {
+      "outcome": "duration of sensory block",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 29,
+      "intervention_mean": 703.83,
+      "intervention_standard_deviation": 42.9,
+      "comparator_mean": 556.38,
+      "comparator_standard_deviation": 37.96,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "duration of motor block",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 29,
+      "intervention_mean": 621.67,
+      "intervention_standard_deviation": 46.76,
+      "comparator_mean": 500.86,
+      "comparator_standard_deviation": 44.58,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "duration of analgesia",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 29,
+      "intervention_mean": 878.33,
+      "intervention_standard_deviation": 89.955,
+      "comparator_mean": 613.1,
+      "comparator_standard_deviation": 51.797,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "onset of sensory block",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 29,
+      "intervention_mean": 4.36,
+      "intervention_standard_deviation": 0.81,
+      "comparator_mean": 4.84,
+      "comparator_standard_deviation": 0.65,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "onset of motor block",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 29,
+      "intervention_mean": 9.83,
+      "intervention_standard_deviation": 1.12,
+      "comparator_mean": 10.85,
+      "comparator_standard_deviation": 0.79,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "heart rate",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 76.1,
+      "intervention_standard_deviation": 8.91,
+      "comparator_mean": 76.77,
+      "comparator_standard_deviation": 8.76,
+      "pmcid": "4541185"
+    },
+    {
+      "outcome": "mean arterial pressure",
+      "intervention": "ropivacaine + diluted clonidine with saline",
+      "comparator": "ropivacaine + saline",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 30,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": 92.04,
+      "intervention_standard_deviation": 7.15,
+      "comparator_mean": 91.2,
+      "comparator_standard_deviation": 6.62,
+      "pmcid": "4541185"
+    }
+  ]
+}

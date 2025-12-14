@@ -1,0 +1,44 @@
+{
+  "pmcid": "4230312",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 44409,
+    "output": 315
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"improvement of disorder\",\"intervention\":\"quetiapine 600 mg/day\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":289,\"comparator_events\":null,\"comparator_group_size\":204,\"intervention_mean\":-14.88,\"intervention_standard_deviation\":null,\"comparator_mean\":-11.61,\"comparator_standard_deviation\":null},{\"outcome\":\"improvement of disorder\",\"intervention\":\"quetiapine 300 mg/day\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":283,\"comparator_events\":null,\"comparator_group_size\":204,\"intervention_mean\":-15.58,\"intervention_standard_deviation\":null,\"comparator_mean\":-11.61,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "improvement of disorder",
+      "intervention": "quetiapine 600 mg/day",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 289,
+      "comparator_events": null,
+      "comparator_group_size": 204,
+      "intervention_mean": -14.88,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -11.61,
+      "comparator_standard_deviation": null,
+      "pmcid": "4230312"
+    },
+    {
+      "outcome": "improvement of disorder",
+      "intervention": "quetiapine 300 mg/day",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 283,
+      "comparator_events": null,
+      "comparator_group_size": 204,
+      "intervention_mean": -15.58,
+      "intervention_standard_deviation": null,
+      "comparator_mean": -11.61,
+      "comparator_standard_deviation": null,
+      "pmcid": "4230312"
+    }
+  ]
+}

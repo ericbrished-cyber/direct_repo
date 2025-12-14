@@ -1,0 +1,104 @@
+{
+  "pmcid": "5559992",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 31662,
+    "output": 758
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 32 mg\",\"comparator\":\"No treatment\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":5,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":1.0,\"intervention_standard_deviation\":2.23,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 64 mg\",\"comparator\":\"No treatment\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":4,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":1.25,\"intervention_standard_deviation\":2.5,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 96 mg\",\"comparator\":\"No treatment\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":5,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":0.0,\"intervention_standard_deviation\":0.0,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 32 mg\",\"comparator\":\"Buprenophine 64 mg\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":5,\"comparator_events\":null,\"comparator_group_size\":4,\"intervention_mean\":1.0,\"intervention_standard_deviation\":2.23,\"comparator_mean\":1.25,\"comparator_standard_deviation\":2.5},{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 32 mg\",\"comparator\":\"Buprenophine 96 mg\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":5,\"comparator_events\":null,\"comparator_group_size\":5,\"intervention_mean\":1.0,\"intervention_standard_deviation\":2.23,\"comparator_mean\":0.0,\"comparator_standard_deviation\":0.0},{\"outcome\":\"Anxiety\",\"intervention\":\"Buprenophine 64 mg\",\"comparator\":\"Buprenophine 96 mg\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":4,\"comparator_events\":null,\"comparator_group_size\":5,\"intervention_mean\":1.25,\"intervention_standard_deviation\":2.5,\"comparator_mean\":0.0,\"comparator_standard_deviation\":0.0}]}",
+  "extraction": [
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 32 mg",
+      "comparator": "No treatment",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 1.0,
+      "intervention_standard_deviation": 2.23,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5559992"
+    },
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 64 mg",
+      "comparator": "No treatment",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 4,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 1.25,
+      "intervention_standard_deviation": 2.5,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5559992"
+    },
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 96 mg",
+      "comparator": "No treatment",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 0.0,
+      "intervention_standard_deviation": 0.0,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5559992"
+    },
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 32 mg",
+      "comparator": "Buprenophine 64 mg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": 4,
+      "intervention_mean": 1.0,
+      "intervention_standard_deviation": 2.23,
+      "comparator_mean": 1.25,
+      "comparator_standard_deviation": 2.5,
+      "pmcid": "5559992"
+    },
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 32 mg",
+      "comparator": "Buprenophine 96 mg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": 5,
+      "intervention_mean": 1.0,
+      "intervention_standard_deviation": 2.23,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 0.0,
+      "pmcid": "5559992"
+    },
+    {
+      "outcome": "Anxiety",
+      "intervention": "Buprenophine 64 mg",
+      "comparator": "Buprenophine 96 mg",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 4,
+      "comparator_events": null,
+      "comparator_group_size": 5,
+      "intervention_mean": 1.25,
+      "intervention_standard_deviation": 2.5,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 0.0,
+      "pmcid": "5559992"
+    }
+  ]
+}

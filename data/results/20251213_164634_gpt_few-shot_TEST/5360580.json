@@ -1,0 +1,74 @@
+{
+  "pmcid": "5360580",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 38945,
+    "output": 963
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Plasma PlsPE\",\"intervention\":\"1 mg/day of Pls purified from scallop\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":140,\"comparator_events\":null,\"comparator_group_size\":136,\"intervention_mean\":-0.24,\"intervention_standard_deviation\":1.0831791028246243,\"comparator_mean\":-0.38,\"comparator_standard_deviation\":1.2965662768500032},{\"outcome\":\"occurrence of adverse events\",\"intervention\":\"1 mg/day of Pls purified from scallop\",\"comparator\":\"placebo\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":169,\"comparator_events\":null,\"comparator_group_size\":167,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"WMS-R (30 min) In the patients aged 77 years or younger,\",\"intervention\":\"1 mg/day of Pls purified from scallop\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":19,\"comparator_events\":null,\"comparator_group_size\":21,\"intervention_mean\":1.84,\"intervention_standard_deviation\":3.8659369166704326,\"comparator_mean\":0.0,\"comparator_standard_deviation\":0.956046525875875},{\"outcome\":\"WMS-R (0 min)\",\"intervention\":\"1 mg/day of Pls purified from scallop\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":140,\"comparator_events\":null,\"comparator_group_size\":135,\"intervention_mean\":1.41,\"intervention_standard_deviation\":3.0262663022786292,\"comparator_mean\":1.39,\"comparator_standard_deviation\":3.093509886648255}]}",
+  "extraction": [
+    {
+      "outcome": "Plasma PlsPE",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 140,
+      "comparator_events": null,
+      "comparator_group_size": 136,
+      "intervention_mean": -0.24,
+      "intervention_standard_deviation": 1.0831791028246243,
+      "comparator_mean": -0.38,
+      "comparator_standard_deviation": 1.2965662768500033,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "occurrence of adverse events",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 169,
+      "comparator_events": null,
+      "comparator_group_size": 167,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "WMS-R (30 min) In the patients aged 77 years or younger,",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 19,
+      "comparator_events": null,
+      "comparator_group_size": 21,
+      "intervention_mean": 1.84,
+      "intervention_standard_deviation": 3.8659369166704325,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": 0.956046525875875,
+      "pmcid": "5360580"
+    },
+    {
+      "outcome": "WMS-R (0 min)",
+      "intervention": "1 mg/day of Pls purified from scallop",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 140,
+      "comparator_events": null,
+      "comparator_group_size": 135,
+      "intervention_mean": 1.41,
+      "intervention_standard_deviation": 3.0262663022786294,
+      "comparator_mean": 1.39,
+      "comparator_standard_deviation": 3.093509886648255,
+      "pmcid": "5360580"
+    }
+  ]
+}

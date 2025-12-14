@@ -1,0 +1,14 @@
+{
+  "total": 110,
+  "successful": 107,
+  "failed": 3,
+  "empty": 0,
+  "start_time": "20251213_164634",
+  "total_retries": 0,
+  "end_time": "20251213_215633",
+  "final_failed": [
+    "5459456",
+    "4132222",
+    "4493951"
+  ]
+}

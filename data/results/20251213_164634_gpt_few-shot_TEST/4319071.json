@@ -1,0 +1,104 @@
+{
+  "pmcid": "4319071",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 54737,
+    "output": 1182
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"High-energy snack intake\",\"intervention\":\"Individual cognition and self-regulation processes intervention\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":459,\"comparator_events\":null,\"comparator_group_size\":434,\"intervention_mean\":2.5,\"intervention_standard_deviation\":2.785,\"comparator_mean\":2.84,\"comparator_standard_deviation\":2.708},{\"outcome\":\"High-energy snack intake\",\"intervention\":\"Intervention + targeting environmental-level factors\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":456,\"comparator_events\":null,\"comparator_group_size\":434,\"intervention_mean\":2.5,\"intervention_standard_deviation\":2.776,\"comparator_mean\":2.84,\"comparator_standard_deviation\":2.708},{\"outcome\":\"Vegetable intake\",\"intervention\":\"Intervention + targeting environmental-level factors\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":456,\"comparator_events\":null,\"comparator_group_size\":434,\"intervention_mean\":167.61,\"intervention_standard_deviation\":83.71,\"comparator_mean\":158.67,\"comparator_standard_deviation\":78.33},{\"outcome\":\"Vegetable intake\",\"intervention\":\"Intervention + targeting environmental-level factors\",\"comparator\":\"Individual cognition and self-regulation processes intervention\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":456,\"comparator_events\":null,\"comparator_group_size\":459,\"intervention_mean\":167.61,\"intervention_standard_deviation\":83.71,\"comparator_mean\":173.28,\"comparator_standard_deviation\":81.64},{\"outcome\":\"Fruit intake\",\"intervention\":\"Intervention + targeting environmental-level factors\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":456,\"comparator_events\":null,\"comparator_group_size\":434,\"intervention_mean\":2.17,\"intervention_standard_deviation\":1.708,\"comparator_mean\":2.0,\"comparator_standard_deviation\":1.667},{\"outcome\":\"Fruit intake\",\"intervention\":\"Intervention + targeting environmental-level factors\",\"comparator\":\"Individual cognition and self-regulation processes intervention\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":456,\"comparator_events\":null,\"comparator_group_size\":459,\"intervention_mean\":2.17,\"intervention_standard_deviation\":1.708,\"comparator_mean\":2.14,\"comparator_standard_deviation\":1.714}]}",
+  "extraction": [
+    {
+      "outcome": "High-energy snack intake",
+      "intervention": "Individual cognition and self-regulation processes intervention",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 459,
+      "comparator_events": null,
+      "comparator_group_size": 434,
+      "intervention_mean": 2.5,
+      "intervention_standard_deviation": 2.785,
+      "comparator_mean": 2.84,
+      "comparator_standard_deviation": 2.708,
+      "pmcid": "4319071"
+    },
+    {
+      "outcome": "High-energy snack intake",
+      "intervention": "Intervention + targeting environmental-level factors",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 456,
+      "comparator_events": null,
+      "comparator_group_size": 434,
+      "intervention_mean": 2.5,
+      "intervention_standard_deviation": 2.776,
+      "comparator_mean": 2.84,
+      "comparator_standard_deviation": 2.708,
+      "pmcid": "4319071"
+    },
+    {
+      "outcome": "Vegetable intake",
+      "intervention": "Intervention + targeting environmental-level factors",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 456,
+      "comparator_events": null,
+      "comparator_group_size": 434,
+      "intervention_mean": 167.61,
+      "intervention_standard_deviation": 83.71,
+      "comparator_mean": 158.67,
+      "comparator_standard_deviation": 78.33,
+      "pmcid": "4319071"
+    },
+    {
+      "outcome": "Vegetable intake",
+      "intervention": "Intervention + targeting environmental-level factors",
+      "comparator": "Individual cognition and self-regulation processes intervention",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 456,
+      "comparator_events": null,
+      "comparator_group_size": 459,
+      "intervention_mean": 167.61,
+      "intervention_standard_deviation": 83.71,
+      "comparator_mean": 173.28,
+      "comparator_standard_deviation": 81.64,
+      "pmcid": "4319071"
+    },
+    {
+      "outcome": "Fruit intake",
+      "intervention": "Intervention + targeting environmental-level factors",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 456,
+      "comparator_events": null,
+      "comparator_group_size": 434,
+      "intervention_mean": 2.17,
+      "intervention_standard_deviation": 1.708,
+      "comparator_mean": 2.0,
+      "comparator_standard_deviation": 1.667,
+      "pmcid": "4319071"
+    },
+    {
+      "outcome": "Fruit intake",
+      "intervention": "Intervention + targeting environmental-level factors",
+      "comparator": "Individual cognition and self-regulation processes intervention",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 456,
+      "comparator_events": null,
+      "comparator_group_size": 459,
+      "intervention_mean": 2.17,
+      "intervention_standard_deviation": 1.708,
+      "comparator_mean": 2.14,
+      "comparator_standard_deviation": 1.714,
+      "pmcid": "4319071"
+    }
+  ]
+}

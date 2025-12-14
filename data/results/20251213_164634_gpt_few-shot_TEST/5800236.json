@@ -1,0 +1,29 @@
+{
+  "pmcid": "5800236",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 37046,
+    "output": 246
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Months of sick leave\",\"intervention\":\"Nacadia\u00ae nature-based therapy\",\"comparator\":\"Cognitive behavioral therapy\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":34,\"comparator_events\":null,\"comparator_group_size\":30,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Months of sick leave",
+      "intervention": "Nacadia\u00ae nature-based therapy",
+      "comparator": "Cognitive behavioral therapy",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 34,
+      "comparator_events": null,
+      "comparator_group_size": 30,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5800236"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "pmcid": "4511433",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 36156,
+    "output": 364
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"LDL cholesterol\",\"intervention\":\"5 mg elobixibat\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":4.78,\"intervention_standard_deviation\":0.65,\"comparator_mean\":4.29,\"comparator_standard_deviation\":0.71},{\"outcome\":\"LDL cholesterol\",\"intervention\":\"2.5 mg\",\"comparator\":\"placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":12,\"comparator_events\":null,\"comparator_group_size\":12,\"intervention_mean\":4.61,\"intervention_standard_deviation\":0.63,\"comparator_mean\":4.29,\"comparator_standard_deviation\":0.71}]}",
+  "extraction": [
+    {
+      "outcome": "LDL cholesterol",
+      "intervention": "5 mg elobixibat",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 4.78,
+      "intervention_standard_deviation": 0.65,
+      "comparator_mean": 4.29,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "4511433"
+    },
+    {
+      "outcome": "LDL cholesterol",
+      "intervention": "2.5 mg",
+      "comparator": "placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 12,
+      "comparator_events": null,
+      "comparator_group_size": 12,
+      "intervention_mean": 4.61,
+      "intervention_standard_deviation": 0.63,
+      "comparator_mean": 4.29,
+      "comparator_standard_deviation": 0.71,
+      "pmcid": "4511433"
+    }
+  ]
+}

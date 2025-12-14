@@ -1,0 +1,104 @@
+{
+  "pmcid": "4574984",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 62327,
+    "output": 1092
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"numbers overall complications\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping\",\"comparator\":\"control group, which received standard care\",\"outcome_type\":\"binary\",\"intervention_events\":238,\"intervention_group_size\":326,\"comparator_events\":241,\"comparator_group_size\":326,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"level of postoperative pain\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping\",\"comparator\":\"control group, which received standard care\",\"outcome_type\":\"binary\",\"intervention_events\":234,\"intervention_group_size\":311,\"comparator_events\":261,\"comparator_group_size\":317,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"overall mortality\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping\",\"comparator\":\"control group, which received standard care\",\"outcome_type\":\"binary\",\"intervention_events\":45,\"intervention_group_size\":326,\"comparator_events\":58,\"comparator_group_size\":326,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Health-Related Quality of Life at 12 month - females\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping - females\",\"comparator\":\"control group, which received standard care - females\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":61.07,\"intervention_standard_deviation\":null,\"comparator_mean\":63.27,\"comparator_standard_deviation\":null},{\"outcome\":\"Health-Related Quality of Life at 12 month - males\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping - males\",\"comparator\":\"control group, which received standard care - males\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":72.49,\"intervention_standard_deviation\":null,\"comparator_mean\":71.71,\"comparator_standard_deviation\":null},{\"outcome\":\"postoperative in-hospital stay\",\"intervention\":\"intervention group, i.e. patient empowerment through information booklet and diary keeping\",\"comparator\":\"control group, which received standard care\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":326,\"comparator_events\":null,\"comparator_group_size\":326,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "numbers overall complications",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping",
+      "comparator": "control group, which received standard care",
+      "outcome_type": "binary",
+      "intervention_events": 238,
+      "intervention_group_size": 326,
+      "comparator_events": 241,
+      "comparator_group_size": 326,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    },
+    {
+      "outcome": "level of postoperative pain",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping",
+      "comparator": "control group, which received standard care",
+      "outcome_type": "binary",
+      "intervention_events": 234,
+      "intervention_group_size": 311,
+      "comparator_events": 261,
+      "comparator_group_size": 317,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    },
+    {
+      "outcome": "overall mortality",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping",
+      "comparator": "control group, which received standard care",
+      "outcome_type": "binary",
+      "intervention_events": 45,
+      "intervention_group_size": 326,
+      "comparator_events": 58,
+      "comparator_group_size": 326,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    },
+    {
+      "outcome": "Health-Related Quality of Life at 12 month - females",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping - females",
+      "comparator": "control group, which received standard care - females",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 61.07,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 63.27,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    },
+    {
+      "outcome": "Health-Related Quality of Life at 12 month - males",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping - males",
+      "comparator": "control group, which received standard care - males",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": 72.49,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 71.71,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    },
+    {
+      "outcome": "postoperative in-hospital stay",
+      "intervention": "intervention group, i.e. patient empowerment through information booklet and diary keeping",
+      "comparator": "control group, which received standard care",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 326,
+      "comparator_events": null,
+      "comparator_group_size": 326,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4574984"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "pmcid": "4355974",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 38797,
+    "output": 1113
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Days of wheeze\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":28,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":1.5,\"intervention_standard_deviation\":null,\"comparator_mean\":0.9,\"comparator_standard_deviation\":null},{\"outcome\":\"ER visits\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"binary\",\"intervention_events\":1,\"intervention_group_size\":26,\"comparator_events\":1,\"comparator_group_size\":14,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Days limited activity from asthma\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":28,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":0.4,\"intervention_standard_deviation\":null,\"comparator_mean\":0.2,\"comparator_standard_deviation\":null},{\"outcome\":\"Knowledge\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"binary\",\"intervention_events\":9,\"intervention_group_size\":12,\"comparator_events\":3,\"comparator_group_size\":8,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"School days missed for asthma\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":28,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":0.0,\"intervention_standard_deviation\":null,\"comparator_mean\":0.0,\"comparator_standard_deviation\":null},{\"outcome\":\"Days patient had to slow down\",\"intervention\":\"BostonBreathes system\",\"comparator\":\"Control\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":28,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":1.1,\"intervention_standard_deviation\":null,\"comparator_mean\":0.7,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Days of wheeze",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 28,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": 1.5,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.9,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    },
+    {
+      "outcome": "ER visits",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 1,
+      "intervention_group_size": 26,
+      "comparator_events": 1,
+      "comparator_group_size": 14,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    },
+    {
+      "outcome": "Days limited activity from asthma",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 28,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": 0.4,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.2,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    },
+    {
+      "outcome": "Knowledge",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "binary",
+      "intervention_events": 9,
+      "intervention_group_size": 12,
+      "comparator_events": 3,
+      "comparator_group_size": 8,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    },
+    {
+      "outcome": "School days missed for asthma",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 28,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": 0.0,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.0,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    },
+    {
+      "outcome": "Days patient had to slow down",
+      "intervention": "BostonBreathes system",
+      "comparator": "Control",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 28,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": 1.1,
+      "intervention_standard_deviation": null,
+      "comparator_mean": 0.7,
+      "comparator_standard_deviation": null,
+      "pmcid": "4355974"
+    }
+  ]
+}

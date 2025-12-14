@@ -1,0 +1,74 @@
+{
+  "pmcid": "3687098",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 49051,
+    "output": 520
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"adverse event of constipation\",\"intervention\":\"sitagliptin 100 mg/day\",\"comparator\":\"comparator agent\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":7726,\"comparator_events\":null,\"comparator_group_size\":6885,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The incidence rates of malignancy\",\"intervention\":\"sitagliptin 100 mg/day\",\"comparator\":\"comparator agent\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":7726,\"comparator_events\":null,\"comparator_group_size\":6885,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The incidence rates of pancreatitis\",\"intervention\":\"sitagliptin 100 mg/day\",\"comparator\":\"comparator agent\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":7726,\"comparator_events\":null,\"comparator_group_size\":6885,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"The incidence of the composite endpoint of rash\",\"intervention\":\"sitagliptin 100 mg/day\",\"comparator\":\"comparator agent\",\"outcome_type\":\"binary\",\"intervention_events\":null,\"intervention_group_size\":7726,\"comparator_events\":null,\"comparator_group_size\":6885,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "adverse event of constipation",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence rates of malignancy",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence rates of pancreatitis",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    },
+    {
+      "outcome": "The incidence of the composite endpoint of rash",
+      "intervention": "sitagliptin 100 mg/day",
+      "comparator": "comparator agent",
+      "outcome_type": "binary",
+      "intervention_events": null,
+      "intervention_group_size": 7726,
+      "comparator_events": null,
+      "comparator_group_size": 6885,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3687098"
+    }
+  ]
+}

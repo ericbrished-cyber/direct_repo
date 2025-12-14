@@ -1,0 +1,89 @@
+{
+  "pmcid": "3504298",
+  "config": {
+    "model": "gpt",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 37765,
+    "output": 950
+  },
+  "raw_text": "{\"extractions\":[{\"outcome\":\"Anxious symptoms\",\"intervention\":\"Face-based attentional bias modification\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":16,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Attentional Function\",\"intervention\":\"Word-based attentional bias modification\",\"comparator\":\"Face-based attentional bias modification\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":null,\"comparator_events\":null,\"comparator_group_size\":null,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Difference of cortisol on waking and the highest level of following samples\",\"intervention\":\"Word-based attentional bias modification\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":16,\"comparator_events\":null,\"comparator_group_size\":15,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Depressive symptoms\",\"intervention\":\"Face-based attentional bias modification\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":16,\"comparator_events\":null,\"comparator_group_size\":14,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null},{\"outcome\":\"Depressive symptoms\",\"intervention\":\"Word-based attentional bias modification\",\"comparator\":\"Placebo\",\"outcome_type\":\"continuous\",\"intervention_events\":null,\"intervention_group_size\":16,\"comparator_events\":null,\"comparator_group_size\":15,\"intervention_mean\":null,\"intervention_standard_deviation\":null,\"comparator_mean\":null,\"comparator_standard_deviation\":null}]}",
+  "extraction": [
+    {
+      "outcome": "Anxious symptoms",
+      "intervention": "Face-based attentional bias modification",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 16,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3504298"
+    },
+    {
+      "outcome": "Attentional Function",
+      "intervention": "Word-based attentional bias modification",
+      "comparator": "Face-based attentional bias modification",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": null,
+      "comparator_events": null,
+      "comparator_group_size": null,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3504298"
+    },
+    {
+      "outcome": "Difference of cortisol on waking and the highest level of following samples",
+      "intervention": "Word-based attentional bias modification",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 16,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3504298"
+    },
+    {
+      "outcome": "Depressive symptoms",
+      "intervention": "Face-based attentional bias modification",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 16,
+      "comparator_events": null,
+      "comparator_group_size": 14,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3504298"
+    },
+    {
+      "outcome": "Depressive symptoms",
+      "intervention": "Word-based attentional bias modification",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 16,
+      "comparator_events": null,
+      "comparator_group_size": 15,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "3504298"
+    }
+  ]
+}
