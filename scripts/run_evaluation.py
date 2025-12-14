@@ -94,18 +94,22 @@ def run_evaluation_task(run_folder, split):
     print("-" * 80)
     
     f1_str = format_ci(agg['f1'], agg.get('f1_ci_lower',0), agg.get('f1_ci_upper',0))
-    rmse_str = format_rmse_ci(agg['rmse'], agg.get('rmse_ci_lower',0), agg.get('rmse_ci_upper',0))
+    rmse_ci = f"[{agg.get('rmse_ci_lower',0):.2f}, {agg.get('rmse_ci_upper',0):.2f}]"
     
     print(f"{'Precision':<25} {agg['precision']:.2%}")
     print(f"{'Recall':<25} {agg['recall']:.2%}")
     print(f"{'F1 Score':<25} {f1_str}")
-    print(f"{'RMSE':<25} {rmse_str}")
-    print(f"{'Exact Match':<25} {agg['exact_match']:.2%}")
+    print(f"{'RMSE':<25} {agg['rmse']:.4f} {rmse_ci}")
+    print(f"{'Exact Match (Overall)':<25} {agg['exact_match']:.2%}")
+    
+    # --- PRINT STRATIFIED EXACT MATCH ---
+    em_strat = all_metrics.get("exact_match_stratified", {})
+    if em_strat:
+        for otype, score in em_strat.items():
+            label = f"  - EM ({otype})"
+            print(f"{label:<25} {score:.2%}")
+
     print("-" * 80)
-    print(f"True Positives: {agg.get('true_positives', 0)}")
-    print(f"False Positives:{agg.get('false_positives', 0)}")
-    print(f"False Negatives:{agg.get('false_negatives', 0)}")
-    print("="*80)
 
     # --- FIELD BREAKDOWN (Overall) ---
     print_breakdown("OVERALL BREAKDOWN BY FIELD TYPE", all_metrics.get("by_field", {}))
