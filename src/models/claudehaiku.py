@@ -87,7 +87,7 @@ class ClaudeHaikuModel(ModelAdapter):
         # API call with extended thinking
         response = client.messages.create(
             model=self.model_version,
-            max_tokens=4096,
+            max_tokens=8192,
             messages=messages,
             thinking={
                 "type": "enabled",
