@@ -11,6 +11,7 @@ import random
 # Add project root to path so we can import 'src'
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+
 from src.config import RESULTS_DIR
 from src.utils.data_loader import DataLoader
 from src.utils.WIP_parsing import clean_and_parse_json 
@@ -18,6 +19,7 @@ from src.prompts.builder import PromptBuilder
 from src.models.gpt import GPTModel
 from src.models.claude import ClaudeModel
 from src.models.gemini import GeminiModel
+from src.models.claudehaiku import ClaudeHaikuModel
 
 # Configuration
 MAX_RETRIES = 5
@@ -86,7 +88,7 @@ def save_error(pmcid: str, error: str, output_dir: Path):
     """Save error log."""
     error_file = output_dir / f"{pmcid}_error.txt"
     with open(error_file, 'w') as f:
-        f.write(f"Error: {error}\n")
+        f.write(f"Error: {error}\n")  
 
 def run_extraction(model_name: str, strategy: str, split: str, 
                    pmcids=None, dry_run: bool = False):
@@ -109,6 +111,8 @@ def run_extraction(model_name: str, strategy: str, split: str,
         model = GPTModel()
     elif model_name == "claude":
         model = ClaudeModel()
+    elif model_name == "claude-haiku":  # NEW
+        model = ClaudeHaikuModel()
     elif model_name == "gemini":
         model = GeminiModel()
     else:
@@ -219,7 +223,7 @@ def run_extraction(model_name: str, strategy: str, split: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Extraction Phase with Retry Logic")
-    parser.add_argument("--model", type=str, required=True, choices=["gpt", "claude", "gemini"])
+    parser.add_argument("--model", type=str, required=True, choices=["gpt", "claude", "claude-haiku", "gemini"])
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"])
     parser.add_argument("--split", type=str, default="DEV", help="Split to extract (DEV, TEST)")
     parser.add_argument("--pmcid", help="Run only this PMCID")

@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run full RCT Experiment (Extraction + Evaluation)")
     
     # Model Args
-    parser.add_argument("--model", type=str, required=True, choices=["claude", "gpt", "gemini"], help="Model to use")
+    parser.add_argument("--model", type=str, required=True, choices=["claude", "claude-haiku", "gpt", "gemini"], help="Model to use")
     parser.add_argument("--strategy", type=str, default="zero-shot", choices=["zero-shot", "few-shot"], help="Prompting strategy")
     parser.add_argument("--split", type=str, default="DEV", help="Data split to run on (e.g., DEV, TEST)")
     parser.add_argument("--pmcid", help="Run only this PMCID")    

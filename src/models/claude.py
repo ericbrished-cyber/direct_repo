@@ -86,12 +86,12 @@ class ClaudeModel(ModelAdapter):
 
         # API call
         response = client.beta.messages.create(
-            model="claude-opus-4-5-20251101",  # Must be Claude Opus 4.5
+            model="claude-opus-4-5-20251101",  # Must be Claude Opus 4.5 "claude-opus-4-5-20251101"
             betas=["effort-2025-11-24"],  # Required beta header
             max_tokens=4096,
             messages=messages,
             output_config={
-                "effort": "medium"  # Options: "low", "medium", "high" (default)
+                "effort": "low"  # Options: "low", "medium", "high" (default)
             }
         )
 
