@@ -8,9 +8,9 @@ from anthropic import Anthropic
 
 class ClaudeModel(ModelAdapter):
     """
-    Anthropic Claude Opus 4.5 with prompt caching and PDF support.
+    Anthropic Claude with prompt caching and PDF support.
     """
-    def __init__(self, model_version: str = "claude-opus-4-5-20251101"):
+    def __init__(self, model_version: str = "claude-opus-4.5"):
         self.model_version = model_version
         self.api_key = os.getenv("ANTHROPIC_API_KEY")
 
