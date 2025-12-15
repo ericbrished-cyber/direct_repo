@@ -17,7 +17,9 @@ class Evaluator:
         self.gold_df = pd.DataFrame(gold_standard)
         self.extractions_df = pd.DataFrame(aligned_extractions)
         
-        self.id_cols = ['intervention', 'comparator', 'outcome', 'outcome_type']
+        # CHANGED: Added 'pmcid' to id_cols to preserve it for Cluster Bootstrap
+        self.id_cols = ['pmcid', 'intervention', 'comparator', 'outcome', 'outcome_type']
+        
         self.numeric_fields = [
             'intervention_group_size', 'comparator_group_size',
             'intervention_mean', 'intervention_standard_deviation',
@@ -73,6 +75,7 @@ class Evaluator:
         if self.gold_df.empty:
             return pd.DataFrame(columns=self.id_cols + ['field', 'gold', 'pred', 'category'])
         
+        # Ensure only columns present in DF are used as ID vars
         gold_keep_vars = [c for c in self.id_cols if c in self.gold_df.columns]
         if 'is_data_in_figure_graphics' in self.gold_df.columns:
             gold_keep_vars.append('is_data_in_figure_graphics')
@@ -93,7 +96,8 @@ class Evaluator:
                 var_name='field', value_name='pred'
             ).assign(from_pred=True)
         
-        merge_keys = self.id_cols + ['field']
+        # Merge on IDs + field.
+        merge_keys = [c for c in self.id_cols if c in g_melt.columns and c in m_melt.columns] + ['field']
         merged = pd.merge(g_melt, m_melt, on=merge_keys, how='outer')
         
         if 'is_data_in_figure_graphics' in merged.columns:
@@ -155,13 +159,40 @@ class Evaluator:
             "true_positives": int(TP), "false_positives": int(FP), "false_negatives": int(FN)
         }
 
-    def _calculate_bootstrap_ci(self, df, metric_key, n_iterations=1000, ci=0.95):
+    def _calculate_cluster_bootstrap_ci(self, df, metric_key, n_iterations=1000, ci=0.95):
+        """
+        Performs Cluster Bootstrap (resampling PMCIDs) to estimate Confidence Intervals.
+        This preserves the within-document correlation structure (One-Way Array).
+        """
         if df.empty: return 0.0, 0.0
+        
+        # 1. Identify Clusters (PMCIDs)
+        if 'pmcid' not in df.columns:
+            # Fallback if PMCID missing (should not happen with new id_cols)
+            return self._calculate_naive_bootstrap_ci(df, metric_key, n_iterations, ci)
+
+        unique_clusters = df['pmcid'].unique()
+        n_clusters = len(unique_clusters)
+        
+        if n_clusters < 2:
+            return 0.0, 0.0
+
         scores = []
-        n = len(df)
+        
+        # Optimization: Group data by PMCID once to avoid repeated filtering
+        grouped_data = {pmcid: group for pmcid, group in df.groupby('pmcid')}
+        
         for _ in range(n_iterations):
-            sample = df.sample(n=n, replace=True)
-            stats = self._compute_stats(sample)
+            # 2. Sample Clusters with replacement
+            sampled_clusters = np.random.choice(unique_clusters, size=n_clusters, replace=True)
+            
+            # 3. Reconstruct Dataset (concat all fields for selected clusters)
+            # Using list comprehension for speed
+            sample_parts = [grouped_data[c] for c in sampled_clusters]
+            cluster_sample = pd.concat(sample_parts)
+            
+            # 4. Compute Stats
+            stats = self._compute_stats(cluster_sample)
             scores.append(stats[metric_key])
         
         lower = np.percentile(scores, (1 - ci) / 2 * 100)
@@ -178,18 +209,25 @@ class Evaluator:
         # 1. Aggregated Metrics (Total)
         agg_stats = self._compute_stats(scorable_df)
         if not scorable_df.empty:
-            f1_l, f1_h = self._calculate_bootstrap_ci(scorable_df, "f1")
+            # CHANGED: Use Cluster Bootstrap
+            f1_l, f1_h = self._calculate_cluster_bootstrap_ci(scorable_df, "f1")
             agg_stats["f1_ci_lower"], agg_stats["f1_ci_upper"] = f1_l, f1_h
             
-            rmse_l, rmse_h = self._calculate_bootstrap_ci(scorable_df, "rmse")
+            rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(scorable_df, "rmse")
             agg_stats["rmse_ci_lower"], agg_stats["rmse_ci_upper"] = rmse_l, rmse_h
 
         # 2. Exact Match (ICO level) - Global AND Stratified
+        # Note: id_cols now includes 'pmcid', so grouping still works for exact matching specific ICOs
         exact_matches_all = []
-        exact_matches_by_type = {} # e.g. {'binary': [1, 0...], 'continuous': [0, 0...]}
+        exact_matches_by_type = {} 
 
         if not scorable_df.empty:
-            groups = scorable_df.groupby(self.id_cols)
+            # Group by the unique intervention/comparator/outcome tuple
+            # We exclude 'pmcid' from this grouping if we want to check ICO uniqueness across the whole dataset,
+            # but usually ICOs are unique per PMCID anyway. 
+            # We strictly group by the definition of an experimental unit: PMCID + ICO
+            group_cols = [c for c in self.id_cols if c in scorable_df.columns]
+            groups = scorable_df.groupby(group_cols)
             
             for _, group in groups:
                 # Check if this specific ICO is perfect
@@ -200,7 +238,6 @@ class Evaluator:
                 exact_matches_all.append(score)
                 
                 # Stratified list
-                # We grab the outcome_type from the first row of the group
                 if 'outcome_type' in group.columns:
                     otype = str(group['outcome_type'].iloc[0])
                     if otype not in exact_matches_by_type:
@@ -220,10 +257,11 @@ class Evaluator:
             for field_name, group in scorable_df.groupby('field'):
                 field_stats = self._compute_stats(group)
                 if len(group) > 0:
-                    f1_l, f1_h = self._calculate_bootstrap_ci(group, "f1")
+                    # CHANGED: Use Cluster Bootstrap
+                    f1_l, f1_h = self._calculate_cluster_bootstrap_ci(group, "f1")
                     field_stats["f1_ci_lower"], field_stats["f1_ci_upper"] = f1_l, f1_h
                     
-                    rmse_l, rmse_h = self._calculate_bootstrap_ci(group, "rmse")
+                    rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(group, "rmse")
                     field_stats["rmse_ci_lower"], field_stats["rmse_ci_upper"] = rmse_l, rmse_h
                 
                 by_field[field_name] = field_stats
@@ -234,24 +272,24 @@ class Evaluator:
             fig_group = scorable_df[scorable_df['is_data_in_figure_graphics'] == True]
             if not fig_group.empty:
                 fig_agg = self._compute_stats(fig_group)
-                f1_l, f1_h = self._calculate_bootstrap_ci(fig_group, "f1")
+                # CHANGED: Use Cluster Bootstrap
+                f1_l, f1_h = self._calculate_cluster_bootstrap_ci(fig_group, "f1")
                 fig_agg["f1_ci_lower"], fig_agg["f1_ci_upper"] = f1_l, f1_h
                 
-                rmse_l, rmse_h = self._calculate_bootstrap_ci(fig_group, "rmse")
+                rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(fig_group, "rmse")
                 fig_agg["rmse_ci_lower"], fig_agg["rmse_ci_upper"] = rmse_l, rmse_h
                 figures_output["aggregated"] = fig_agg
                 
                 fig_by_field = {}
                 for field_name, group in fig_group.groupby('field'):
                     f_stats = self._compute_stats(group)
-                    # (Optional: Add CI for figure fields here if desired)
                     fig_by_field[field_name] = f_stats
                 figures_output["by_field"] = fig_by_field
 
         return {
             "aggregated": agg_stats,
             "exact_match": agg_stats.get('exact_match', 0.0),
-            "exact_match_stratified": stratified_em, # <--- NEW OUTPUT
+            "exact_match_stratified": stratified_em,
             "by_field": by_field,
             "figures_subset": figures_output 
         }
