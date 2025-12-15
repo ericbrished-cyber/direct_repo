@@ -1,0 +1,16 @@
+{
+  "pmcid": "3003523",
+  "config": {
+    "model": "claude-haiku",
+    "strategy": "zero-shot"
+  },
+  "usage": {
+    "input": 37492,
+    "output": 4096,
+    "cache_creation": 0,
+    "cache_read": 0,
+    "thinking": 0
+  },
+  "raw_text": "",
+  "extraction": []
+}
