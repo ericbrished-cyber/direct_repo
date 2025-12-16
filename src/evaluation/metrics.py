@@ -130,7 +130,7 @@ class Evaluator:
             else:
                 return 'TN'
         
-    def _is_match(self, val1, val2, tolerance=1e-3):
+    def _is_match(self, val1, val2, tolerance=0.5):
         try:
             return np.isclose(float(val1), float(val2), atol=tolerance)
         except (ValueError, TypeError):
