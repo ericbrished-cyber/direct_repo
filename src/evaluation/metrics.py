@@ -16,6 +16,11 @@ class Evaluator:
 
         self.gold_df = pd.DataFrame(gold_standard)
         self.extractions_df = pd.DataFrame(aligned_extractions)
+        # Normalize pmcid type to string to avoid merge dtype mismatches
+        if 'pmcid' in self.gold_df.columns:
+            self.gold_df['pmcid'] = self.gold_df['pmcid'].astype(str)
+        if 'pmcid' in self.extractions_df.columns:
+            self.extractions_df['pmcid'] = self.extractions_df['pmcid'].astype(str)
         
         # CHANGED: Added 'pmcid' to id_cols to preserve it for Cluster Bootstrap
         self.id_cols = ['pmcid', 'intervention', 'comparator', 'outcome', 'outcome_type']
