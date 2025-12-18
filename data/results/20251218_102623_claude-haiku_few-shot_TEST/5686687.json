@@ -1,0 +1,92 @@
+{
+  "pmcid": "5686687",
+  "config": {
+    "model": "claude-haiku",
+    "strategy": "few-shot"
+  },
+  "usage": {
+    "input": 30222,
+    "output": 5192,
+    "cache_creation": 0,
+    "cache_read": 42754,
+    "thinking": 0
+  },
+  "raw_text": "```json\n{\n  \"extractions\": [\n    {\n      \"outcome\": \"Pain\",\n      \"intervention\": \"Resveratrol\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 22,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"Need for dipyrone\",\n      \"intervention\": \"Resveratrol\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 5,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 5,\n      \"intervention_mean\": 1944,\n      \"intervention_standard_deviation\": 1793,\n      \"comparator_mean\": 625,\n      \"comparator_standard_deviation\": 250\n    },\n    {\n      \"outcome\": \"Need for Ibuprofen\",\n      \"intervention\": \"Resveratrol\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 5,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 5,\n      \"intervention_mean\": 1200,\n      \"intervention_standard_deviation\": 848,\n      \"comparator_mean\": 5640,\n      \"comparator_standard_deviation\": 328\n    },\n    {\n      \"outcome\": \"Prolactin levels\",\n      \"intervention\": \"Resveratrol\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 22,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    },\n    {\n      \"outcome\": \"CA-125 levels\",\n      \"intervention\": \"Resveratrol\",\n      \"comparator\": \"Placebo\",\n      \"outcome_type\": \"continuous\",\n      \"intervention_events\": null,\n      \"intervention_group_size\": 22,\n      \"comparator_events\": null,\n      \"comparator_group_size\": 22,\n      \"intervention_mean\": null,\n      \"intervention_standard_deviation\": null,\n      \"comparator_mean\": null,\n      \"comparator_standard_deviation\": null\n    }\n  ]\n}\n```",
+  "extraction": [
+    {
+      "outcome": "Pain",
+      "intervention": "Resveratrol",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5686687"
+    },
+    {
+      "outcome": "Need for dipyrone",
+      "intervention": "Resveratrol",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": 5,
+      "intervention_mean": 1944,
+      "intervention_standard_deviation": 1793,
+      "comparator_mean": 625,
+      "comparator_standard_deviation": 250,
+      "pmcid": "5686687"
+    },
+    {
+      "outcome": "Need for Ibuprofen",
+      "intervention": "Resveratrol",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 5,
+      "comparator_events": null,
+      "comparator_group_size": 5,
+      "intervention_mean": 1200,
+      "intervention_standard_deviation": 848,
+      "comparator_mean": 5640,
+      "comparator_standard_deviation": 328,
+      "pmcid": "5686687"
+    },
+    {
+      "outcome": "Prolactin levels",
+      "intervention": "Resveratrol",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5686687"
+    },
+    {
+      "outcome": "CA-125 levels",
+      "intervention": "Resveratrol",
+      "comparator": "Placebo",
+      "outcome_type": "continuous",
+      "intervention_events": null,
+      "intervention_group_size": 22,
+      "comparator_events": null,
+      "comparator_group_size": 22,
+      "intervention_mean": null,
+      "intervention_standard_deviation": null,
+      "comparator_mean": null,
+      "comparator_standard_deviation": null,
+      "pmcid": "5686687"
+    }
+  ]
+}
