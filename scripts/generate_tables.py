@@ -9,6 +9,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 from src.config import RESULTS_DIR
 from src.evaluation.metrics import Evaluator
+from src.evaluation.diff_bootstrap import compute_paired_difference_ci
 
 # Path to your Gold Standard
 GOLD_STANDARD_PATH = os.path.join(str(Path(__file__).resolve().parents[1]), "data", "gold_standard_clean.json")
@@ -40,15 +41,19 @@ def load_gold_standard():
 
 def parse_folder_name(folder_name):
     name_lower = folder_name.lower()
+    name_norm = name_lower.replace("-", "_")
+    parts = [p for p in name_norm.split("_") if p]
     found_model = None
     for key, display_name in MODEL_MAPPING.items():
-        if f"_{key}_" in name_lower:
+        key_norm = key.replace("-", "_")
+        if key in name_lower or key_norm in name_norm or key_norm in parts:
             found_model = display_name
             break
             
     found_setting = None
     for key, display_name in SETTING_MAPPING.items():
-        if key in name_lower:
+        key_norm = key.replace("-", "_")
+        if key in name_lower or key_norm in name_norm or key_norm in parts:
             found_setting = display_name
             break
             
@@ -290,15 +295,15 @@ def generate_latex_tables(results_data, run_paths):
         eval_zs = Evaluator(gold_standard, zs_raw)
         eval_fs = Evaluator(gold_standard, fs_raw)
         
-        stats_zs = eval_zs.get_bootstrap_source_data()
-        stats_fs = eval_fs.get_bootstrap_source_data()
+        zs_long = eval_zs.long_df
+        fs_long = eval_fs.long_df
         
         # Get Baseline F1
         zs_metrics = results_data[model]["Zero-Shot"].get("aggregated", {})
         baseline_val = zs_metrics.get("f1", 0) * 100
         
-        # Calculate Paired Diff for F1
-        point, low, high = Evaluator.compute_paired_difference_ci(stats_zs, stats_fs, metric='f1')
+        # Calculate Paired Diff for F1 (Few-Shot minus Zero-Shot) using cluster bootstrap
+        point, low, high = compute_paired_difference_ci(zs_long, fs_long, metric='f1')
         
         point *= 100
         low *= 100

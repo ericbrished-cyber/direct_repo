@@ -116,11 +116,13 @@ class Evaluator:
     def _get_row_category(self, row):
         gold = row['gold']
         pred = row['pred']
+        field = row.get('field')  # Extract the field name
         gold_exists = pd.notna(gold)
         extraction_exists = pd.notna(pred)
         
         if gold_exists:
-            if extraction_exists and self._is_match(gold, pred):
+            # Pass the field name to _is_match
+            if extraction_exists and self._is_match(gold, pred, field_name=field):
                 return 'TP'
             else:
                 return 'FN' 
@@ -129,12 +131,30 @@ class Evaluator:
                 return 'FP'
             else:
                 return 'TN'
-                                                    ######################################
-    def _is_match(self, val1, val2, tolerance=0.01): #####CHANGE TOLERANCE HERE!!!!
-        try:                                       ##################################
-            return np.isclose(float(val1), float(val2), rtol=tolerance)
+                                                    
+    def _is_match(self, val1, val2, field_name=None, tolerance=0.001):
+        # Define the set of fields that require an exact match
+        exact_match_fields = {
+            'intervention_group_size', 
+            'comparator_group_size', 
+            'intervention_events', 
+            'comparator_events'
+        }
+
+        try:
+            # Convert both to float to handle cases like "5" (str) vs 5 (int) vs 5.0 (float)
+            v1 = float(val1)
+            v2 = float(val2)
         except (ValueError, TypeError):
             return False
+
+        # Apply specific logic based on the field name
+        if field_name in exact_match_fields:
+            # Exact match: 5.0 == 5 is True, but 5.1 == 5 is False
+            return v1 == v2
+        else:
+            # Fuzzy match for means and standard deviations
+            return np.isclose(v1, v2, rtol=tolerance)
 
     def _compute_stats(self, df_subset):
         df_subset = df_subset[df_subset['category'] != 'IGNORE']
