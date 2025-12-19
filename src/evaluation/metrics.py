@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 from sklearn.metrics import mean_squared_error
 from difflib import SequenceMatcher
 
@@ -172,10 +172,6 @@ class Evaluator:
         if df.empty: return 0.0, 0.0
         
         # 1. Identify Clusters (PMCIDs)
-        if 'pmcid' not in df.columns:
-            # Fallback if PMCID missing (should not happen with new id_cols)
-            return self._calculate_naive_bootstrap_ci(df, metric_key, n_iterations, ci)
-
         unique_clusters = df['pmcid'].unique()
         n_clusters = len(unique_clusters)
         
@@ -204,71 +200,57 @@ class Evaluator:
         upper = np.percentile(scores, (1 + ci) / 2 * 100)
         return lower, upper
 
-    def calculate_metrics(self) -> Dict[str, Any]:
+    def calculate_metrics(self) -> Tuple[Dict[str, Any], pd.DataFrame]:
         """
-        Main calculation pipeline.
-        Returns aggregated, exact match (global + stratified), per-field, and figure-subset metrics.
+        Returnerar aggregerade metrics OCH den detaljerade DataFramen (long format)
+        för felanalys.
         """
         scorable_df = self.long_df[self.long_df['category'] != 'IGNORE']
         
         # 1. Aggregated Metrics (Total)
         agg_stats = self._compute_stats(scorable_df)
         if not scorable_df.empty:
-            # CHANGED: Use Cluster Bootstrap
             f1_l, f1_h = self._calculate_cluster_bootstrap_ci(scorable_df, "f1")
             agg_stats["f1_ci_lower"], agg_stats["f1_ci_upper"] = f1_l, f1_h
             
             rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(scorable_df, "rmse")
             agg_stats["rmse_ci_lower"], agg_stats["rmse_ci_upper"] = rmse_l, rmse_h
 
-        # 2. Exact Match (ICO level) - Global AND Stratified
-        # Note: id_cols now includes 'pmcid', so grouping still works for exact matching specific ICOs
+        # 2. Exact Match (ICO level)
         exact_matches_all = []
         exact_matches_by_type = {} 
 
         if not scorable_df.empty:
-            # Group by the unique intervention/comparator/outcome tuple
-            # We exclude 'pmcid' from this grouping if we want to check ICO uniqueness across the whole dataset,
-            # but usually ICOs are unique per PMCID anyway. 
-            # We strictly group by the definition of an experimental unit: PMCID + ICO
             group_cols = [c for c in self.id_cols if c in scorable_df.columns]
             groups = scorable_df.groupby(group_cols)
             
             for _, group in groups:
-                # Check if this specific ICO is perfect
                 is_perfect = group['category'].isin(['TP', 'TN']).all()
                 score = 1 if is_perfect else 0
-                
-                # Global list
                 exact_matches_all.append(score)
                 
-                # Stratified list
                 if 'outcome_type' in group.columns:
                     otype = str(group['outcome_type'].iloc[0])
                     if otype not in exact_matches_by_type:
                         exact_matches_by_type[otype] = []
                     exact_matches_by_type[otype].append(score)
         
-        # Calculate Means
         agg_stats['exact_match'] = np.mean(exact_matches_all) if exact_matches_all else 0.0
         
         stratified_em = {}
         for otype, scores in exact_matches_by_type.items():
             stratified_em[otype] = np.mean(scores) if scores else 0.0
 
-        # 3. Per-Field Metrics (Breakdown)
+        # 3. Per-Field Metrics
         by_field = {}
         if not scorable_df.empty:
             for field_name, group in scorable_df.groupby('field'):
                 field_stats = self._compute_stats(group)
                 if len(group) > 0:
-                    # CHANGED: Use Cluster Bootstrap
                     f1_l, f1_h = self._calculate_cluster_bootstrap_ci(group, "f1")
                     field_stats["f1_ci_lower"], field_stats["f1_ci_upper"] = f1_l, f1_h
-                    
                     rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(group, "rmse")
                     field_stats["rmse_ci_lower"], field_stats["rmse_ci_upper"] = rmse_l, rmse_h
-                
                 by_field[field_name] = field_stats
 
         # 4. Figure Subset Metrics
@@ -277,28 +259,28 @@ class Evaluator:
             fig_group = scorable_df[scorable_df['is_data_in_figure_graphics'] == True]
             if not fig_group.empty:
                 fig_agg = self._compute_stats(fig_group)
-                # CHANGED: Use Cluster Bootstrap
                 f1_l, f1_h = self._calculate_cluster_bootstrap_ci(fig_group, "f1")
                 fig_agg["f1_ci_lower"], fig_agg["f1_ci_upper"] = f1_l, f1_h
-                
                 rmse_l, rmse_h = self._calculate_cluster_bootstrap_ci(fig_group, "rmse")
                 fig_agg["rmse_ci_lower"], fig_agg["rmse_ci_upper"] = rmse_l, rmse_h
                 figures_output["aggregated"] = fig_agg
                 
                 fig_by_field = {}
                 for field_name, group in fig_group.groupby('field'):
-                    f_stats = self._compute_stats(group)
-                    fig_by_field[field_name] = f_stats
+                    fig_by_field[field_name] = self._compute_stats(group)
                 figures_output["by_field"] = fig_by_field
 
-        return {
+        metrics_dict = {
             "aggregated": agg_stats,
             "exact_match": agg_stats.get('exact_match', 0.0),
             "exact_match_stratified": stratified_em,
             "by_field": by_field,
             "figures_subset": figures_output 
         }
+        
+        # HÄR ÄR ÄNDRINGEN: Returnera tuple
+        return metrics_dict, self.long_df
 
-def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Dict[str, Any]:
+def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Tuple[Dict[str, Any], pd.DataFrame]:
     evaluator = Evaluator(gold_standard, extractions)
     return evaluator.calculate_metrics()

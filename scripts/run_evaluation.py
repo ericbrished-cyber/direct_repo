@@ -80,8 +80,14 @@ def run_evaluation_task(run_folder, split):
         return
 
     print("Step 3: Calculating metrics (includes bootstrap for CI)...")
-    all_metrics = calculate_metrics(extractions, gold_standard)
+    # ÄNDRING: Ta emot två värden (metrics OCH detaljerad dataframe)
+    all_metrics, details_df = calculate_metrics(extractions, gold_standard)
     
+    # NYTT: Spara detaljerna till CSV för Jaccard-analys
+    details_csv_path = RESULTS_DIR / run_folder / "evaluation_details.csv"
+    details_df.to_csv(details_csv_path, index=False)
+    print(f"Detailed results saved to: {details_csv_path}")
+
     agg = all_metrics["aggregated"]
     
     # 4. Output Results
