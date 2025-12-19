@@ -19,7 +19,7 @@ TARGET_FILENAME = "evaluation_metrics.json"
 MODEL_MAPPING = {
     "gpt": "GPT-5.2",
     "gemini": "Gemini-3-Pro",
-    "claude": "Claude Opus 4.5"
+    "claude": "Claude Haiku 4.5"
 }
 
 SETTING_MAPPING = {
