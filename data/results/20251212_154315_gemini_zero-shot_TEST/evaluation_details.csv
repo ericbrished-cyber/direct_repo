@@ -666,7 +666,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_events,,True,,True,TN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_group_size,22.0,True,22.0,True,TP
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_mean,40.99,True,36.39,True,FN
-2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_standard_deviation,20.98,True,20.53,True,TP
+2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_standard_deviation,20.98,True,20.53,True,FN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_events,,True,,True,TN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_mean,48.13,True,44.33,True,FN
@@ -722,11 +722,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,comparator_events,,True,,True,TN
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,comparator_group_size,199.0,True,199.0,True,TP
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,comparator_mean,41.1,True,2.1,True,FN
-3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,comparator_standard_deviation,10.8,True,11.28,True,TP
+3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,comparator_standard_deviation,10.8,True,11.28,True,FN
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,intervention_events,,True,,True,TN
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,intervention_group_size,390.0,True,390.0,True,TP
 3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,intervention_mean,45.4,True,6.4,True,FN
-3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,intervention_standard_deviation,11.5,True,11.85,True,TP
+3003523,Certolizumab 400 mg,Control,Mental Component Summary improvement,continuous,False,intervention_standard_deviation,11.5,True,11.85,True,FN
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,comparator_events,,True,,True,TN
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,comparator_group_size,199.0,True,199.0,True,TP
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,comparator_mean,34.0,True,6.8,True,FN
@@ -734,7 +734,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,intervention_events,,True,,True,TN
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,intervention_group_size,390.0,True,390.0,True,TP
 3003523,Certolizumab 400 mg,Control,Pain,continuous,False,intervention_mean,53.9,True,26.2,True,FN
-3003523,Certolizumab 400 mg,Control,Pain,continuous,False,intervention_standard_deviation,22.2,True,21.72,True,TP
+3003523,Certolizumab 400 mg,Control,Pain,continuous,False,intervention_standard_deviation,22.2,True,21.72,True,FN
 3003523,Certolizumab 400 mg,Control,Short-Form 36-Items improvement,continuous,False,comparator_events,,True,,True,TN
 3003523,Certolizumab 400 mg,Control,Short-Form 36-Items improvement,continuous,False,comparator_group_size,199.0,True,199.0,True,TP
 3003523,Certolizumab 400 mg,Control,Short-Form 36-Items improvement,continuous,False,comparator_mean,31.5,True,1.7,True,FN
@@ -1681,12 +1681,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3546023,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,serum α1-antitrypsin,continuous,False,intervention_standard_deviation,0.39,True,0.39,True,TP
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_mean,14.4,True,14.06,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_standard_deviation,4.03,True,3.81,True,TP
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_mean,14.4,True,14.06,True,FN
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_standard_deviation,4.03,True,3.81,True,FN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_mean,14.06,True,14.4,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_standard_deviation,3.81,True,4.03,True,TP
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_mean,14.06,True,14.4,True,FN
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_standard_deviation,3.81,True,4.03,True,FN
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_mean,11.39,True,11.39,True,TP
@@ -1977,12 +1977,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3786549,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,Improvement in Vaginal Maturation Index,continuous,False,intervention_standard_deviation,21.7,True,21.7,True,TP
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_events,,True,,True,TN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_group_size,48.0,True,48.0,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_mean,20.0,True,19.8,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_standard_deviation,9.0,True,8.5,True,TP
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_mean,20.0,True,19.8,True,FN
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_standard_deviation,9.0,True,8.5,True,FN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_events,,True,,True,TN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_group_size,55.0,True,55.0,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_mean,32.0,True,31.7,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_standard_deviation,22.0,True,21.6,True,TP
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_mean,32.0,True,31.7,True,FN
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_standard_deviation,22.0,True,21.6,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_group_size,48.0,True,55.0,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_mean,11.28,True,11.28,True,TP
@@ -2450,7 +2450,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_events,,True,,True,TN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_mean,47.3,True,46.2,True,FN
-4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_standard_deviation,10.4,True,9.9,True,TP
+4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_standard_deviation,10.4,True,9.9,True,FN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_events,,True,,True,TN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_mean,47.1,True,47.1,True,TP
@@ -3165,7 +3165,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,comparator_standard_deviation,3.54,True,,True,FN
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,intervention_events,,True,,True,TN
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,intervention_group_size,104.0,True,103.0,True,FN
-4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,intervention_mean,-0.89,True,-1.34,True,TP
+4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,intervention_mean,-0.89,True,-1.34,True,FN
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,waist circumference,continuous,False,intervention_standard_deviation,3.32,True,,True,FN
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,weekly moderate physical activity sessions,continuous,False,comparator_events,,True,,True,TN
 4879328,"Get Healthy, Stay Healthy' (GHSH)",no continued contact,weekly moderate physical activity sessions,continuous,False,comparator_group_size,114.0,True,114.0,True,TP
@@ -3473,35 +3473,35 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5055753,0.2 mg oral clonidine,2 mg oral midazolam,the percentages of patients in the heavily sedated,binary,True,intervention_standard_deviation,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,comparator_group_size,459.0,True,440.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,comparator_mean,21.27,True,21.04,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,comparator_mean,21.27,True,21.04,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,comparator_standard_deviation,5.9,True,3.76,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,intervention_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,intervention_group_size,592.0,True,562.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,intervention_mean,21.07,True,20.77,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,intervention_mean,21.07,True,20.77,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 12 months,continuous,False,intervention_standard_deviation,6.39,True,3.96,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,comparator_group_size,425.0,True,409.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,comparator_mean,22.06,True,21.9,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,comparator_mean,22.06,True,21.9,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,comparator_standard_deviation,5.68,True,4.33,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,intervention_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,intervention_group_size,560.0,True,547.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,intervention_mean,21.86,True,21.64,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,intervention_mean,21.86,True,21.64,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI reduction at 24 months,continuous,False,intervention_standard_deviation,6.22,True,4.06,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,comparator_group_size,459.0,True,406.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,comparator_mean,0.66,True,0.61,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,comparator_mean,0.66,True,0.61,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,comparator_standard_deviation,1.69,True,1.13,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,intervention_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,intervention_group_size,592.0,True,502.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,intervention_mean,0.61,True,0.55,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,intervention_mean,0.61,True,0.55,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 12months,continuous,False,intervention_standard_deviation,1.8,True,1.11,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,comparator_group_size,425.0,True,343.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,comparator_mean,0.71,True,0.72,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,comparator_mean,0.71,True,0.72,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,comparator_standard_deviation,1.63,True,1.09,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,intervention_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,intervention_group_size,560.0,True,488.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,intervention_mean,0.69,True,0.65,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,intervention_mean,0.69,True,0.65,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,BMI z-score at 24 months,continuous,False,intervention_standard_deviation,1.81,True,1.12,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 12 months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 12 months,continuous,False,comparator_group_size,459.0,True,440.0,True,FN
@@ -3513,7 +3513,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 12 months,continuous,False,intervention_standard_deviation,15.64,True,12.51,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,comparator_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,comparator_group_size,425.0,True,410.0,True,FN
-5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,comparator_mean,61.94,True,61.5,True,TP
+5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,comparator_mean,61.94,True,61.5,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,comparator_standard_deviation,14.25,True,13.23,True,FN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,intervention_events,,True,,True,TN
 5056957,Multi-component physical activity,Usual PE and sport programmes,Weight reduction at 24 months,continuous,False,intervention_group_size,560.0,True,547.0,True,FN
@@ -3761,11 +3761,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5268424,view a video featuring individuals that live in extreme poverty,control,score on the general dimension scale of negative affects (referred to as NA from here onward),continuous,False,intervention_standard_deviation,6.327,True,6.327,True,TP
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
-5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_mean,18.99,True,18.53,True,TP
+5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_mean,18.99,True,18.53,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_standard_deviation,0.22,True,0.74,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_group_size,15.0,True,15.0,True,TP
-5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_mean,18.53,True,18.93,True,TP
+5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_mean,18.53,True,18.93,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_standard_deviation,0.22,True,0.96,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,comparator_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
@@ -3773,7 +3773,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,comparator_standard_deviation,0.77,True,2.94,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_group_size,15.0,True,15.0,True,TP
-5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_mean,10.24,True,10.26,True,TP
+5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_mean,10.24,True,10.26,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_standard_deviation,0.77,True,2.99,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Second test results,continuous,False,comparator_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Second test results,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
@@ -3786,11 +3786,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_group_size,131.0,True,131.0,True,TP
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_mean,-0.63,True,-0.63,True,TP
-5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_standard_deviation,1.08,True,1.04,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_standard_deviation,1.08,True,1.04,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_group_size,138.0,True,138.0,True,TP
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_mean,-0.59,True,-0.59,True,TP
-5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_standard_deviation,1.11,True,1.1,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_standard_deviation,1.11,True,1.1,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_group_size,24.0,True,78.0,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_mean,1.08,True,2.46,True,FN
@@ -3801,11 +3801,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_standard_deviation,3.14,True,3.68,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_group_size,21.0,True,21.0,True,TP
-5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_mean,0.0,True,0.48,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_mean,0.0,True,0.48,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_standard_deviation,0.96,True,2.19,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,intervention_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,intervention_group_size,19.0,True,19.0,True,TP
-5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,intervention_mean,1.84,True,2.21,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,intervention_mean,1.84,True,2.21,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,intervention_standard_deviation,3.87,True,3.32,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,occurrence of adverse events,binary,False,comparator_events,35.0,True,,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,occurrence of adverse events,binary,False,comparator_group_size,167.0,True,,True,FN
@@ -4073,24 +4073,24 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating,ACVC,new bone formation around the screws and bone-implant contact (BIC) in both sections,continuous,True,intervention_standard_deviation,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_mean,7.47,True,7.2,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_standard_deviation,1.45,True,1.33,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_mean,7.47,True,7.2,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_standard_deviation,1.45,True,1.33,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_mean,0.34,True,0.33,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_standard_deviation,0.12,True,0.11,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_mean,0.34,True,0.33,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_standard_deviation,0.12,True,0.11,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_mean,2.67,True,2.53,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_standard_deviation,0.68,True,0.67,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_mean,2.67,True,2.53,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_standard_deviation,0.68,True,0.67,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_mean,0.05,True,0.05,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_standard_deviation,0.02,True,0.01,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_standard_deviation,0.02,True,0.01,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_mean,1.62,True,1.53,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_standard_deviation,0.47,True,0.42,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_mean,1.62,True,1.53,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_standard_deviation,0.47,True,0.42,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_mean,0.02,True,0.02,True,TP
@@ -4258,7 +4258,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_mean,4.8,True,-0.25,True,FN
-5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,TP
+5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,FN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.2,True,0.13,True,FN
@@ -4270,7 +4270,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.0,True,0.11,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,FN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_mean,-0.25,True,-0.25,True,TP
@@ -4282,11 +4282,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_mean,4.8,True,-0.25,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,FN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.0,True,0.11,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,FN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_events,,True,,True,TN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_group_size,,True,,True,TN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_mean,,True,,True,TN
@@ -4533,7 +4533,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,comparator_standard_deviation,0.1,True,0.67,True,FN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_group_size,47.0,True,47.0,True,TP
-5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_mean,2.4,True,2.7,True,TP
+5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_mean,2.4,True,2.7,True,FN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_standard_deviation,0.1,True,0.69,True,FN
 5617873,Aripiprazole,Placbeo,Compulsion scale,continuous,False,comparator_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Compulsion scale,continuous,False,comparator_group_size,45.0,True,45.0,True,TP
@@ -4569,11 +4569,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5617873,Aripiprazole,Placbeo,Serious adverse effects,binary,False,intervention_standard_deviation,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,comparator_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,comparator_group_size,45.0,True,45.0,True,TP
-5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,comparator_mean,-5.2,True,-4.7,True,TP
+5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,comparator_mean,-5.2,True,-4.7,True,FN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,comparator_standard_deviation,1.0,True,7.38,True,FN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,intervention_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,intervention_group_size,47.0,True,47.0,True,TP
-5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,intervention_mean,-4.7,True,-5.2,True,TP
+5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,intervention_mean,-4.7,True,-5.2,True,FN
 5617873,Aripiprazole,Placbeo,Social withdrawal,continuous,False,intervention_standard_deviation,1.1,True,6.86,True,FN
 5655920,Lixisenatide with moderate impairment,Lixisenatide with mild impairment,Hypoglycaemia,binary,False,comparator_events,,True,,True,TN
 5655920,Lixisenatide with moderate impairment,Lixisenatide with mild impairment,Hypoglycaemia,binary,False,comparator_group_size,637.0,True,637.0,True,TP
@@ -5098,11 +5098,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_mean,5.7,True,6.35,True,FN
-5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_standard_deviation,0.45,True,0.34,True,TP
+5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_standard_deviation,0.45,True,0.34,True,FN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_mean,5.71,True,6.29,True,FN
-5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_standard_deviation,0.71,True,0.31,True,TP
+5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_standard_deviation,0.71,True,0.31,True,FN
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_mean,182.4,True,182.4,True,TP

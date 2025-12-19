@@ -521,12 +521,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2836833,1500 mg calcium,500 mg calcium,Fecal fat loss,continuous,False,intervention_standard_deviation,1.9,True,1.9,True,TP
 2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,comparator_events,,True,,True,TN
 2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,comparator_group_size,17.0,True,34.0,True,FN
-2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,comparator_mean,128.3,True,128.5,True,TP
+2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,comparator_mean,128.3,True,128.5,True,FN
 2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,comparator_standard_deviation,57.9,True,51.0,True,FN
 2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_events,,True,,True,TN
 2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_group_size,17.0,True,34.0,True,FN
-2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_mean,146.4,True,145.9,True,TP
-2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_standard_deviation,77.9,True,77.5,True,TP
+2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_mean,146.4,True,145.9,True,FN
+2836833,1500 mg calcium,500 mg calcium,Urinary calcium excretion,continuous,True,intervention_standard_deviation,77.9,True,77.5,True,FN
 2836833,1500 mg calcium,500 mg calcium,systolic or diastolic blood pressure,continuous,False,comparator_events,,True,,True,TN
 2836833,1500 mg calcium,500 mg calcium,systolic or diastolic blood pressure,continuous,False,comparator_group_size,17.0,True,,True,FN
 2836833,1500 mg calcium,500 mg calcium,systolic or diastolic blood pressure,continuous,False,comparator_mean,,True,,True,TN
@@ -561,7 +561,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2952311,Acupressure at distal points,Control,State-Trait Anxiety Inventory-I,continuous,True,intervention_standard_deviation,,True,6.8,True,FP
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,comparator_events,,True,,True,TN
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,comparator_group_size,11.0,True,11.0,True,TP
-2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,comparator_mean,1.6,True,1.8,True,TP
+2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,comparator_mean,1.6,True,1.8,True,FN
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,comparator_standard_deviation,,True,0.6,True,FP
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,intervention_events,,True,,True,TN
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,intervention_group_size,11.0,True,11.0,True,TP
@@ -569,7 +569,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2952311,Acupressure at distal points,Control,Verbal rating scale pain intensity,continuous,True,intervention_standard_deviation,,True,0.8,True,FP
 2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,comparator_events,,True,,True,TN
 2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,comparator_group_size,11.0,True,11.0,True,TP
-2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,comparator_mean,57.0,True,56.9,True,TP
+2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,comparator_mean,57.0,True,56.9,True,FN
 2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,comparator_standard_deviation,,True,5.0,True,FP
 2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,intervention_events,,True,,True,TN
 2952311,Acupressure at local points,Control,Muscle hardness,continuous,True,intervention_group_size,11.0,True,11.0,True,TP
@@ -585,7 +585,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2952311,Acupressure at local points,Control,State-Trait Anxiety Inventory-I,continuous,True,intervention_standard_deviation,,True,8.0,True,FP
 2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,comparator_events,,True,,True,TN
 2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,comparator_group_size,11.0,True,11.0,True,TP
-2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,comparator_mean,1.6,True,1.8,True,TP
+2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,comparator_mean,1.6,True,1.8,True,FN
 2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,comparator_standard_deviation,,True,0.6,True,FP
 2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,intervention_events,,True,,True,TN
 2952311,Acupressure at local points,Control,Verbal rating scale pain intensity,continuous,True,intervention_group_size,11.0,True,11.0,True,TP
@@ -666,7 +666,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_events,,True,,True,TN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_group_size,22.0,True,22.0,True,TP
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_mean,40.99,True,36.39,True,FN
-2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_standard_deviation,20.98,True,20.53,True,TP
+2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,comparator_standard_deviation,20.98,True,20.53,True,FN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_events,,True,,True,TN
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
 2972614,Laser therapy (Group I),Placebo laser therapy (Group II),Shoulder Pain and Disability Index score,continuous,False,intervention_mean,48.13,True,44.33,True,FN
@@ -986,11 +986,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,comparator_events,,True,,True,TN
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,comparator_group_size,68.0,True,68.0,True,TP
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,comparator_mean,-0.1,True,7.8,True,FN
-3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,comparator_standard_deviation,0.6,True,0.7,True,TP
+3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,comparator_standard_deviation,0.6,True,0.7,True,FN
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,intervention_events,,True,,True,TN
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,intervention_group_size,69.0,True,69.0,True,TP
 3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,intervention_mean,-0.1,True,7.8,True,FN
-3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,intervention_standard_deviation,0.6,True,0.8,True,TP
+3263860,Real-Time Continuous Glucose Monitoring,Control,HbA1c reduction,continuous,False,intervention_standard_deviation,0.6,True,0.8,True,FN
 3263860,Real-Time Continuous Glucose Monitoring,Control,PAID questionnaire fear of hypoglycemia,continuous,False,comparator_events,,True,,True,TN
 3263860,Real-Time Continuous Glucose Monitoring,Control,PAID questionnaire fear of hypoglycemia,continuous,False,comparator_group_size,68.0,True,68.0,True,TP
 3263860,Real-Time Continuous Glucose Monitoring,Control,PAID questionnaire fear of hypoglycemia,continuous,False,comparator_mean,42.0,True,49.0,True,FN
@@ -1681,12 +1681,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3546023,200 mg/day palmvitee smokers,200 mg/day palmvitee nonsmokers,serum α1-antitrypsin,continuous,False,intervention_standard_deviation,0.39,True,0.39,True,TP
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_mean,14.4,True,14.06,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_standard_deviation,4.03,True,3.81,True,TP
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_mean,14.4,True,14.06,True,FN
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,comparator_standard_deviation,4.03,True,3.81,True,FN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_mean,14.06,True,14.4,True,TP
-3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_standard_deviation,3.81,True,4.03,True,TP
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_mean,14.06,True,14.4,True,FN
+3546023,200 mg/day palmvitee smokers,baseline,The percentage of B cells,continuous,False,intervention_standard_deviation,3.81,True,4.03,True,FN
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_events,,True,,True,TN
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
 3546023,200 mg/day palmvitee smokers,baseline,tocopherol levels,continuous,False,comparator_mean,11.39,True,11.39,True,TP
@@ -1977,12 +1977,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3786549,Vaginal estriol plus viable Lactobacillus acidophilus KS400,Placebo,Improvement in Vaginal Maturation Index,continuous,False,intervention_standard_deviation,21.7,True,21.7,True,TP
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_events,,True,,True,TN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_group_size,48.0,True,48.0,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_mean,20.0,True,19.8,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_standard_deviation,9.0,True,8.5,True,TP
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_mean,20.0,True,19.8,True,FN
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,comparator_standard_deviation,9.0,True,8.5,True,FN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_events,,True,,True,TN
 3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_group_size,55.0,True,55.0,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_mean,32.0,True,31.7,True,TP
-3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_standard_deviation,22.0,True,21.6,True,TP
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_mean,32.0,True,31.7,True,FN
+3877023,high-field horizontal open MR scanner,short-bore MR scanner,Scanning times,continuous,False,intervention_standard_deviation,22.0,True,21.6,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_group_size,48.0,True,55.0,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,The mean signal-to-noise (SNR) values,continuous,False,comparator_mean,11.28,True,11.28,True,TP
@@ -2025,20 +2025,20 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,contrast-to-noise ratios (CNR) of Thoracolumbar Spine - T2w sagittal Cerebrospinal fluid – Vertebral bone,continuous,False,intervention_standard_deviation,12.9,True,12.9,True,TP
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_group_size,21.0,True,21.0,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_mean,1.43,True,1.1,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_standard_deviation,0.48,True,0.2,True,TP
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_mean,1.43,True,1.1,True,FN
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,comparator_standard_deviation,0.48,True,0.2,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_group_size,18.0,True,18.0,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_mean,0.95,True,0.8,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_standard_deviation,0.24,True,0.1,True,TP
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_mean,0.95,True,0.8,True,FN
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the Cervicothoracic Spine,continuous,False,intervention_standard_deviation,0.24,True,0.1,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_group_size,34.0,True,34.0,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_mean,1.32,True,1.5,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_standard_deviation,0.51,True,0.4,True,TP
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_mean,1.32,True,1.5,True,FN
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,comparator_standard_deviation,0.51,True,0.4,True,FN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_events,,True,,True,TN
 3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_mean,0.83,True,0.9,True,TP
-3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_standard_deviation,0.22,True,0.1,True,TP
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_mean,0.83,True,0.9,True,FN
+3877023,short-bore MR scanner,high-field horizontal open MR scanner,quantitative contour sharpness of the thoracolumbar spine,continuous,False,intervention_standard_deviation,0.22,True,0.1,True,FN
 3912320,Occupational noise,Control,"Correct response rate for 2,000 Hz frequency",continuous,True,comparator_events,,True,,True,TN
 3912320,Occupational noise,Control,"Correct response rate for 2,000 Hz frequency",continuous,True,comparator_group_size,10.0,True,10.0,True,TP
 3912320,Occupational noise,Control,"Correct response rate for 2,000 Hz frequency",continuous,True,comparator_mean,51.4,True,51.4,True,TP
@@ -2125,7 +2125,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,comparator_standard_deviation,,True,,True,TN
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,intervention_events,,True,,True,TN
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,intervention_group_size,109.0,True,109.0,True,TP
-4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,intervention_mean,-38.3,True,-38.2,True,TP
+4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,intervention_mean,-38.3,True,-38.2,True,FN
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Overall seizure median percent reduction,continuous,False,intervention_standard_deviation,,True,,True,TN
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Seizure median percent improvement in North America,continuous,True,comparator_events,,True,,True,TN
 4033571,Extended-release oxcarbazepine 1200 mg,Control,Seizure median percent improvement in North America,continuous,True,comparator_group_size,41.0,True,41.0,True,TP
@@ -2450,7 +2450,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_events,,True,,True,TN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_mean,47.3,True,46.2,True,FN
-4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_standard_deviation,10.4,True,9.9,True,TP
+4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,comparator_standard_deviation,10.4,True,9.9,True,FN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_events,,True,,True,TN
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
 4215531,facial affect training (FAT) in 20 daily 1-hour sessions,baseline,MCCB performance : Verbal Learning,continuous,False,intervention_mean,47.1,True,47.1,True,TP
@@ -2490,7 +2490,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,comparator_events,,True,,True,TN
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,comparator_group_size,204.0,True,204.0,True,TP
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,comparator_mean,-11.61,True,-11.61,True,TP
-4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,comparator_standard_deviation,10.12,True,10.0,True,TP
+4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,comparator_standard_deviation,10.12,True,10.0,True,FN
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,intervention_events,,True,,True,TN
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,intervention_group_size,283.0,True,283.0,True,TP
 4230312,quetiapine 300 mg/day,placebo,improvement of disorder,continuous,True,intervention_mean,-15.58,True,-15.58,True,TP
@@ -2498,7 +2498,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,comparator_events,,True,,True,TN
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,comparator_group_size,204.0,True,204.0,True,TP
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,comparator_mean,-11.61,True,-11.61,True,TP
-4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,comparator_standard_deviation,10.12,True,10.0,True,TP
+4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,comparator_standard_deviation,10.12,True,10.0,True,FN
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,intervention_events,,True,,True,TN
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,intervention_group_size,289.0,True,289.0,True,TP
 4230312,quetiapine 600 mg/day,placebo,improvement of disorder,continuous,True,intervention_mean,-14.88,True,-14.88,True,TP
@@ -2625,11 +2625,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4355974,BostonBreathes system,Control,Knowledge,binary,False,intervention_standard_deviation,,True,,True,TN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,comparator_events,,True,,True,TN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,comparator_group_size,14.0,True,14.0,True,TP
-4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,comparator_mean,-0.4,True,0.0,True,TP
+4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,comparator_mean,-0.4,True,0.0,True,FN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,comparator_standard_deviation,,True,,True,TN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,intervention_events,,True,,True,TN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,intervention_group_size,28.0,True,28.0,True,TP
-4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,intervention_mean,-0.2,True,0.0,True,TP
+4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,intervention_mean,-0.2,True,0.0,True,FN
 4355974,BostonBreathes system,Control,School days missed for asthma,continuous,False,intervention_standard_deviation,,True,,True,TN
 4357072,pimecrolimus,triamcinolone acetate,reappearance of erythematous areas after 2 months posttreatment,binary,False,comparator_events,5.0,True,5.0,True,TP
 4357072,pimecrolimus,triamcinolone acetate,reappearance of erythematous areas after 2 months posttreatment,binary,False,comparator_group_size,15.0,True,15.0,True,TP
@@ -2641,12 +2641,12 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4357072,pimecrolimus,triamcinolone acetate,reappearance of erythematous areas after 2 months posttreatment,binary,False,intervention_standard_deviation,,True,,True,TN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_events,,True,,True,TN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
-4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_mean,0.8,True,0.6,True,TP
-4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_standard_deviation,0.6,True,0.5,True,TP
+4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_mean,0.8,True,0.6,True,FN
+4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,comparator_standard_deviation,0.6,True,0.5,True,FN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,intervention_events,,True,,True,TN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,intervention_group_size,15.0,True,15.0,True,TP
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,intervention_mean,0.2,True,0.9,True,FN
-4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,intervention_standard_deviation,0.4,True,0.6,True,TP
+4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,improvement in symptom scores,continuous,False,intervention_standard_deviation,0.4,True,0.6,True,FN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,reduction in burning sensation,continuous,False,comparator_events,,True,,True,TN
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,reduction in burning sensation,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
 4357072,topical pimecrolimus cream 1%,triamcinolone acetonide oral paste 0.1%,reduction in burning sensation,continuous,False,comparator_mean,5.3,True,4.0,True,FN
@@ -2762,7 +2762,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,comparator_events,,True,,True,TN
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,comparator_group_size,20.0,True,20.0,True,TP
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,comparator_mean,10.12,True,10.12,True,TP
-4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,comparator_standard_deviation,2.72,True,2.724,True,TP
+4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,comparator_standard_deviation,2.72,True,2.724,True,FN
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,intervention_events,,True,,True,TN
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,intervention_group_size,20.0,True,20.0,True,TP
 4483334,CPP-ACP plus laser (group D),CPP-ACP crème (group C),Total weight percentage of phosphate,continuous,False,intervention_mean,12.68,True,12.68,True,TP
@@ -3273,7 +3273,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Hospital stay,continuous,False,intervention_standard_deviation,1.2,True,1.2,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,comparator_events,,True,,True,TN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,comparator_group_size,20.0,True,20.0,True,TP
-4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,comparator_mean,78.0,True,78.1,True,TP
+4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,comparator_mean,78.0,True,78.1,True,FN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,comparator_standard_deviation,6.4,True,6.4,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,intervention_events,,True,,True,TN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Operative time,continuous,False,intervention_group_size,22.0,True,22.0,True,TP
@@ -3282,11 +3282,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,comparator_events,,True,,True,TN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,comparator_group_size,20.0,True,20.0,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,comparator_mean,3.6,True,5.1,True,FN
-4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,comparator_standard_deviation,1.2,True,1.6,True,TP
+4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,comparator_standard_deviation,1.2,True,1.6,True,FN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,intervention_events,,True,,True,TN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,intervention_group_size,22.0,True,22.0,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,intervention_mean,4.3,True,6.4,True,FN
-4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,intervention_standard_deviation,1.0,True,1.3,True,TP
+4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Postoperative pain,continuous,False,intervention_standard_deviation,1.0,True,1.3,True,FN
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Stone-free rate,binary,False,comparator_events,16.0,True,16.0,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Stone-free rate,binary,False,comparator_group_size,20.0,True,20.0,True,TP
 4928400,Transperitoneal laparoscopic ureterolithotomy,Flexible ureteroscopy,Stone-free rate,binary,False,comparator_mean,,True,,True,TN
@@ -3761,7 +3761,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5268424,view a video featuring individuals that live in extreme poverty,control,score on the general dimension scale of negative affects (referred to as NA from here onward),continuous,False,intervention_standard_deviation,6.327,True,6.327,True,TP
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
-5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_mean,18.99,True,18.93,True,TP
+5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_mean,18.99,True,18.93,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,comparator_standard_deviation,0.22,True,0.96,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Final test results,continuous,False,intervention_group_size,15.0,True,15.0,True,TP
@@ -3773,7 +3773,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,comparator_standard_deviation,0.77,True,2.94,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_group_size,15.0,True,15.0,True,TP
-5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_mean,10.24,True,10.26,True,TP
+5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_mean,10.24,True,10.26,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,First test results,continuous,False,intervention_standard_deviation,0.77,True,2.99,True,FN
 5325897,Evaluation with feedback,Evaluation without feedback,Second test results,continuous,False,comparator_events,,True,,True,TN
 5325897,Evaluation with feedback,Evaluation without feedback,Second test results,continuous,False,comparator_group_size,15.0,True,15.0,True,TP
@@ -3786,18 +3786,18 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_group_size,131.0,True,140.0,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_mean,-0.63,True,3.93,True,FN
-5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_standard_deviation,1.08,True,1.28,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,comparator_standard_deviation,1.08,True,1.28,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_group_size,138.0,True,145.0,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_mean,-0.59,True,3.65,True,FN
-5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_standard_deviation,1.11,True,1.31,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,Plasma PlsPE,continuous,False,intervention_standard_deviation,1.11,True,1.31,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_group_size,24.0,True,135.0,True,FN
-5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_mean,1.08,True,1.39,True,TP
-5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_standard_deviation,1.55,True,1.73,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_mean,1.08,True,1.39,True,FN
+5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,comparator_standard_deviation,1.55,True,1.73,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_group_size,24.0,True,140.0,True,FN
-5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_mean,1.29,True,1.41,True,TP
+5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_mean,1.29,True,1.41,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,WMS-R (0 min),continuous,False,intervention_standard_deviation,3.14,True,1.73,True,FN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_events,,True,,True,TN
 5360580,1 mg/day of Pls purified from scallop,placebo,"WMS-R (30 min) In the patients aged 77 years or younger,",continuous,False,comparator_group_size,21.0,True,21.0,True,TP
@@ -3890,11 +3890,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,comparator_events,,True,,True,TN
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,comparator_group_size,40.0,True,40.0,True,TP
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,comparator_mean,548.33,True,548.33,True,TP
-5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,comparator_standard_deviation,1210.9,True,1209.86,True,FN
+5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,comparator_standard_deviation,1210.9,True,1209.86,True,TP
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,intervention_events,,True,,True,TN
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,intervention_group_size,40.0,True,40.0,True,TP
 5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,intervention_mean,752.94,True,752.94,True,TP
-5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,intervention_standard_deviation,1890.16,True,1888.54,True,FN
+5380326,Vitamin D supplementation,Control,Tumor necrosis factor alpha,continuous,False,intervention_standard_deviation,1890.16,True,1888.54,True,TP
 5380326,Vitamin D supplementation,Control,Vitamin D levels,continuous,False,comparator_events,,True,,True,TN
 5380326,Vitamin D supplementation,Control,Vitamin D levels,continuous,False,comparator_group_size,40.0,True,40.0,True,TP
 5380326,Vitamin D supplementation,Control,Vitamin D levels,continuous,False,comparator_mean,21.87,True,21.87,True,TP
@@ -4073,24 +4073,24 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating,ACVC,new bone formation around the screws and bone-implant contact (BIC) in both sections,continuous,True,intervention_standard_deviation,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_mean,7.47,True,7.2,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_standard_deviation,1.45,True,1.33,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_mean,7.47,True,7.2,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,comparator_standard_deviation,1.45,True,1.33,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_mean,0.34,True,0.33,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_standard_deviation,0.12,True,0.11,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_mean,0.34,True,0.33,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Flexion-Extension stiffness of C2-4,continuous,False,intervention_standard_deviation,0.12,True,0.11,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_mean,2.67,True,2.53,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_standard_deviation,0.68,True,0.67,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_mean,2.67,True,2.53,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,comparator_standard_deviation,0.68,True,0.67,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_mean,0.05,True,0.05,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_standard_deviation,0.02,True,0.01,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Lateral bending stiffness of C2-4,continuous,False,intervention_standard_deviation,0.02,True,0.01,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_group_size,8.0,True,8.0,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_mean,1.62,True,1.53,True,TP
-5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_standard_deviation,0.47,True,0.42,True,TP
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_mean,1.62,True,1.53,True,FN
+5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,comparator_standard_deviation,0.47,True,0.42,True,FN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_events,,True,,True,TN
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_group_size,8.0,True,8.0,True,TP
 5459456,ACVC-HA - artificial cervical vertebra and intervertebral complex (ACVC) with an HA biocoating or ACVC,anterior cervical corpectomy and fusion (ACCF),Rotation stiffness of C2-4,continuous,False,intervention_mean,0.02,True,0.02,True,TP
@@ -4258,7 +4258,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_mean,4.8,True,-0.25,True,FN
-5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,TP
+5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,FN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.2,True,0.13,True,FN
@@ -4270,7 +4270,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.0,True,0.11,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),left dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,FN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,composite z-scores in autism spectrum disorder (ASD),continuous,False,comparator_mean,-0.25,True,-0.25,True,TP
@@ -4282,11 +4282,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_mean,4.8,True,-0.25,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,comparator_standard_deviation,0.9,True,0.71,True,FN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_events,,True,,True,TN
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_group_size,12.0,True,12.0,True,TP
 5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_mean,6.0,True,0.11,True,FN
-5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,TP
+5534041,right dorsolateral prefrontal cortex (DLPFC) anodal transcranial direct current stimulation (tDCS),sham stimulation,overall working memory (WM) performance in autism spectrum disorder (ASD),continuous,False,intervention_standard_deviation,0.9,True,0.81,True,FN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_events,,True,,True,TN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_group_size,,True,,True,TN
 5539943,Language Enhanced Attention and Focus MI training condition (MI-LEAF),MI training (MI-AU),"Frequency of client ""change talk"" (CT)",continuous,False,comparator_mean,,True,,True,TN
@@ -4533,7 +4533,7 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,comparator_standard_deviation,0.1,True,0.67,True,FN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_group_size,47.0,True,47.0,True,TP
-5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_mean,2.4,True,2.7,True,TP
+5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_mean,2.4,True,2.7,True,FN
 5617873,Aripiprazole,Placbeo,Clinician-rated Clinical Global Impression-Improvement scores,continuous,False,intervention_standard_deviation,0.1,True,0.69,True,FN
 5617873,Aripiprazole,Placbeo,Compulsion scale,continuous,False,comparator_events,,True,,True,TN
 5617873,Aripiprazole,Placbeo,Compulsion scale,continuous,False,comparator_group_size,45.0,True,45.0,True,TP
@@ -5098,11 +5098,11 @@ pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,fi
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_mean,5.7,True,6.35,True,FN
-5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_standard_deviation,0.45,True,0.34,True,TP
+5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,comparator_standard_deviation,0.45,True,0.34,True,FN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_mean,5.71,True,6.29,True,FN
-5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_standard_deviation,0.71,True,0.31,True,TP
+5874317,Bilateral training,Unilateral training,Horizontal triple jump (non-dominant leg),continuous,False,intervention_standard_deviation,0.71,True,0.31,True,FN
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_events,,True,,True,TN
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_group_size,9.0,True,9.0,True,TP
 5874317,Bilateral training,Unilateral training,Knee extension (1-rep Max),continuous,False,comparator_mean,182.4,True,182.4,True,TP
