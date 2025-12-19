@@ -9,6 +9,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 from src.config import RESULTS_DIR
 from src.evaluation.metrics import Evaluator
+from src.evaluation.diff_bootstrap import compute_paired_difference_ci
 
 # Path to your Gold Standard
 GOLD_STANDARD_PATH = os.path.join(str(Path(__file__).resolve().parents[1]), "data", "gold_standard_clean.json")
@@ -19,7 +20,7 @@ TARGET_FILENAME = "evaluation_metrics.json"
 MODEL_MAPPING = {
     "gpt": "GPT-5.2",
     "gemini": "Gemini-3-Pro",
-    "claude": "Claude Opus 4.5"
+    "claude": "Claude Haiku 4.5"
 }
 
 SETTING_MAPPING = {
@@ -40,15 +41,19 @@ def load_gold_standard():
 
 def parse_folder_name(folder_name):
     name_lower = folder_name.lower()
+    name_norm = name_lower.replace("-", "_")
+    parts = [p for p in name_norm.split("_") if p]
     found_model = None
     for key, display_name in MODEL_MAPPING.items():
-        if f"_{key}_" in name_lower:
+        key_norm = key.replace("-", "_")
+        if key in name_lower or key_norm in name_norm or key_norm in parts:
             found_model = display_name
             break
             
     found_setting = None
     for key, display_name in SETTING_MAPPING.items():
-        if key in name_lower:
+        key_norm = key.replace("-", "_")
+        if key in name_lower or key_norm in name_norm or key_norm in parts:
             found_setting = display_name
             break
             
@@ -215,6 +220,63 @@ def generate_latex_tables(results_data, run_paths):
     print(r"\end{tabular}")
     print(r"\end{table}")
 
+    # -------------------------------------------------------------------------
+    # TABLE 1 (Figures Subset): ZERO-SHOT COMPARISON (DATA IN FIGURES ONLY)
+    # -------------------------------------------------------------------------
+    print("\n" + "%"*20 + " TABLE 1 (FIGURES): ZERO-SHOT COMPARISON " + "%"*20 + "\n")
+    print(r"\begin{table}[ht]")
+    print(r"\centering")
+    print(r"\caption{Zero-Shot Performance on data appearing in figures only.}")
+    print(r"\label{tab:main_results_figures}")
+    print(r"\small")
+    print(r"\setlength{\tabcolsep}{3pt}")
+    print(r"\begin{tabular}{l l c c c c}")
+    print(r"\toprule")
+    print(r"\textbf{Category} & \textbf{Model} & \textbf{Prec} & \textbf{Rec} & \textbf{F1 [95\% CI]} & \textbf{RMSE [95\% CI]} \\")
+    print(r"\midrule")
+
+    for display_name, json_key in field_map:
+        print(f"\\multirow{{{len(available_models)}}}{{*}}{{\\textbf{{{display_name}}}}}")
+        best_vals = {"precision": -1, "recall": -1, "f1": -1, "rmse": float('inf')}
+        setting = "Zero-Shot"
+        
+        for m in available_models:
+            run_data = results_data.get(m, {}).get(setting, {})
+            for metric in best_vals.keys():
+                val = get_metric_value(run_data, json_key, metric, data_source="figures")
+                if val is not None:
+                    if metric == "rmse":
+                        if val > 0 and val < best_vals[metric]: best_vals[metric] = val
+                    else:
+                        if val > best_vals[metric]: best_vals[metric] = val
+
+        for model in available_models:
+            run_data = results_data.get(model, {}).get(setting, {})
+            metrics = {}
+            if run_data:
+                fig_subset = run_data.get("figures_subset", {})
+                metrics = fig_subset.get("aggregated", {}) if json_key == "aggregated" else fig_subset.get("by_field", {}).get(json_key, {})
+            
+            if not metrics:
+                print(f" & {model} & - & - & - & - \\\\")
+                continue
+
+            row_str = f" & {model} "
+            p_val = metrics.get('precision', 0)
+            row_str += f"& {format_metric(metrics, 'precision', True, math.isclose(p_val, best_vals['precision'], rel_tol=1e-4))} "
+            r_val = metrics.get('recall', 0)
+            row_str += f"& {format_metric(metrics, 'recall', True, math.isclose(r_val, best_vals['recall'], rel_tol=1e-4))} "
+            f1_val = metrics.get('f1', 0)
+            row_str += f"& {format_metric(metrics, 'f1', True, math.isclose(f1_val, best_vals['f1'], rel_tol=1e-4))} "
+            rmse_val = metrics.get('rmse', 0)
+            is_best_rmse = (rmse_val > 0 and math.isclose(rmse_val, best_vals['rmse'], rel_tol=1e-4))
+            row_str += f"& {format_metric(metrics, 'rmse', False, is_best_rmse)} \\\\"
+            print(row_str)
+        print(r"\midrule")
+    print(r"\bottomrule")
+    print(r"\end{tabular}")
+    print(r"\end{table}")
+
     # ... [Same Table 3 Code] ...
     print("\n" + "%"*20 + " TABLE 3: EXACT MATCH " + "%"*20 + "\n")
     print(r"\begin{table}[ht]")
@@ -290,15 +352,15 @@ def generate_latex_tables(results_data, run_paths):
         eval_zs = Evaluator(gold_standard, zs_raw)
         eval_fs = Evaluator(gold_standard, fs_raw)
         
-        stats_zs = eval_zs.get_bootstrap_source_data()
-        stats_fs = eval_fs.get_bootstrap_source_data()
+        zs_long = eval_zs.long_df
+        fs_long = eval_fs.long_df
         
         # Get Baseline F1
         zs_metrics = results_data[model]["Zero-Shot"].get("aggregated", {})
         baseline_val = zs_metrics.get("f1", 0) * 100
         
-        # Calculate Paired Diff for F1
-        point, low, high = Evaluator.compute_paired_difference_ci(stats_zs, stats_fs, metric='f1')
+        # Calculate Paired Diff for F1 (Few-Shot minus Zero-Shot) using cluster bootstrap
+        point, low, high = compute_paired_difference_ci(zs_long, fs_long, metric='f1')
         
         point *= 100
         low *= 100
