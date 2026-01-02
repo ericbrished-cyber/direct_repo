@@ -28,15 +28,13 @@ This pipeline automates the extraction of statistical data from full-text RCT PD
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
-
-```
+   ```
 
 2. Create a `.env` file with your API keys:
 ```bash
 OPENAI_API_KEY=...
 ANTHROPIC_API_KEY=...
 GOOGLE_API_KEY=...
-
 ```
 ## Usage
 
@@ -46,7 +44,6 @@ Runs extraction on the PDFs and immediately calculates metrics.
 
 ```bash
 python scripts/run_experiment.py --model gpt --strategy zero-shot --split DEV
-
 ```
 
 **Arguments:**
@@ -76,7 +73,6 @@ Recalculate metrics for an existing run.
 
 ```bash
 python scripts/run_evaluation.py --run_folder <folder_name> --split DEV
-
 ```
 
 ## Output
@@ -88,7 +84,3 @@ Results are saved in `data/results/<timestamp>_<model>_<strategy>_<split>/`:
 * `evaluation_details.csv`: Detailed results per field (for analysis).
 * `run_metadata.json`: Run configuration and stats.
 * `*_error.txt`: Log of any failed extractions.
-
-```
-
-```
