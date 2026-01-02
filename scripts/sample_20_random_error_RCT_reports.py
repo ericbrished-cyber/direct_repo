@@ -4,11 +4,39 @@ import re
 from pathlib import Path
 from difflib import SequenceMatcher
 
+import numpy as np
+
 # --- CONFIGURATION ---
 GOLD_PATH = "data/gold_standard_clean.json"
-RESULTS_DIR = "data/results/GPTTEST/20251213_002444_gpt_zero-shot_TEST" 
-OUTPUT_FILE = "side_by_side_comparison.txt"
+RESULTS_DIR = "data/results/20251215_131614_claude-haiku_zero-shot_TEST" 
+OUTPUT_FILE = "side_by_side_comparison_haiku_ZERO.txt"
 SAMPLE_SIZE = 20
+
+MATCH_FIELDS = [
+    ("intervention_mean", "fuzzy"),
+    ("comparator_mean", "fuzzy"),
+    ("intervention_sd", "fuzzy"),
+    ("comparator_sd", "fuzzy"),
+    ("intervention_group_size", "exact"),
+    ("comparator_group_size", "exact"),
+    ("intervention_events", "exact"),
+    ("comparator_events", "exact"),
+]
+
+SD_KEYS = {
+    "intervention": [
+        "intervention_standard_deviation",
+        "intervention_sd",
+        "intervention_se",
+        "intervention_standard_error",
+    ],
+    "comparator": [
+        "comparator_standard_deviation",
+        "comparator_sd",
+        "comparator_se",
+        "comparator_standard_error",
+    ],
+}
 
 def similarity(a, b):
     """Calculates string similarity (0.0 to 1.0)"""
@@ -52,6 +80,80 @@ def get_sd_display(item, prefix):
         if item.get(k) is not None:
             return str(item.get(k))
     return "-"
+
+def get_sd_value(item, prefix):
+    for key in SD_KEYS[prefix]:
+        val = item.get(key)
+        if val is not None and str(val).strip() != "":
+            return val
+    return None
+
+def get_field_value(item, field):
+    if not item:
+        return None
+    if field == "intervention_sd":
+        return get_sd_value(item, "intervention")
+    if field == "comparator_sd":
+        return get_sd_value(item, "comparator")
+    return item.get(field)
+
+def parse_numeric(val):
+    if val is None:
+        return None
+    if isinstance(val, str):
+        cleaned = val.strip()
+        if cleaned in {"", "-"}:
+            return None
+        val = cleaned
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return None
+
+def values_match(val1, val2, match_type, tolerance=0.001):
+    v1 = parse_numeric(val1)
+    v2 = parse_numeric(val2)
+    if v1 is None and v2 is None:
+        return True
+    if v1 is None or v2 is None:
+        return False
+    if match_type == "exact":
+        return v1 == v2
+    return np.isclose(v1, v2, rtol=tolerance)
+
+def items_match(gold_item, pred_item, tolerance=0.001):
+    if not pred_item:
+        return False
+    for field, match_type in MATCH_FIELDS:
+        gold_val = get_field_value(gold_item, field)
+        pred_val = get_field_value(pred_item, field)
+        if not values_match(gold_val, pred_val, match_type, tolerance=tolerance):
+            return False
+    return True
+
+def report_has_error(gold_items, preds, tolerance=0.001):
+    for gold_item in gold_items:
+        best_pred = get_best_match(gold_item, preds)
+        if not items_match(gold_item, best_pred, tolerance=tolerance):
+            return True
+    return False
+
+def load_predictions(file_path):
+    with open(file_path, 'r') as f:
+        res_json = json.load(f)
+
+    pmcid = str(res_json.get('pmcid', file_path.stem))
+    raw_text = res_json.get('raw_text', '')
+
+    try:
+        clean_text = raw_text.replace("```json", "").replace("```", "").strip()
+        preds = json.loads(clean_text)
+        if isinstance(preds, dict):
+            preds = preds.get('extractions', [])
+    except:
+        preds = []
+
+    return pmcid, preds
 
 def generate_block(tag, item):
     """Generates the text block for a single item (Gold or Pred)"""
@@ -108,29 +210,28 @@ def run_analysis():
     valid_files = [f for f in all_files if str(json.load(open(f)).get('pmcid', f.stem)) in gold_map]
     
     print(f"Found {len(valid_files)} papers with Gold Standard data.")
-    sampled_files = random.sample(valid_files, min(SAMPLE_SIZE, len(valid_files)))
+
+    error_files = []
+    for file_path in valid_files:
+        pmcid, preds = load_predictions(file_path)
+        gold_items = gold_map.get(pmcid, [])
+        if not gold_items:
+            continue
+        if report_has_error(gold_items, preds):
+            error_files.append((file_path, pmcid, preds, gold_items))
+
+    if not error_files:
+        print("No error cases found to sample.")
+        return
+
+    print(f"Sampling from {len(error_files)} papers with errors.")
+    sampled_files = random.sample(error_files, min(SAMPLE_SIZE, len(error_files)))
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as out:
         out.write("QUALITATIVE ERROR ANALYSIS: PAIRED COMPARISON\n")
         out.write("=============================================\n\n")
 
-        for i, file_path in enumerate(sampled_files, 1):
-            # Load Prediction
-            with open(file_path, 'r') as f:
-                res_json = json.load(f)
-            
-            pmcid = str(res_json.get('pmcid', file_path.stem))
-            raw_text = res_json.get('raw_text', '')
-            
-            try:
-                # Clean and parse JSON
-                clean_text = raw_text.replace("```json", "").replace("```", "").strip()
-                preds = json.loads(clean_text)
-                if isinstance(preds, dict): preds = preds.get('extractions', [])
-            except:
-                preds = []
-
-            gold_items = gold_map.get(pmcid, [])
+        for i, (file_path, pmcid, preds, gold_items) in enumerate(sampled_files, 1):
 
             out.write(f"PAPER {i}: PMCID {pmcid}\n")
             out.write("-" * 80 + "\n")
@@ -140,12 +241,7 @@ def run_analysis():
                 best_pred = get_best_match(gold_item, preds)
                 
                 # Check for mismatch to highlight errors
-                is_perfect = False
-                if best_pred:
-                    # Simple equality check for flagging (optional)
-                    if (str(gold_item.get('intervention_mean')) == str(best_pred.get('intervention_mean')) and
-                        str(gold_item.get('intervention_group_size')) == str(best_pred.get('intervention_group_size'))):
-                        is_perfect = True
+                is_perfect = items_match(gold_item, best_pred)
 
                 header = f"PAIR {idx}: {gold_item.get('outcome')}"
                 if is_perfect: header += " [MATCH]"

@@ -1,13 +1,22 @@
 {
   "aggregated": {
-    "precision": 0.963302752293578,
-    "recall": 0.7,
-    "f1": 0.8108108108108107,
-    "rmse": 33.42515218530966,
-    "true_positives": 105,
+    "precision": 0.9629629629629629,
+    "recall": 0.6933333333333334,
+    "f1": 0.806201550387597,
+    "rmse": 33.42927494892929,
+    "true_positives": 104,
     "false_positives": 4,
-    "false_negatives": 45,
-    "exact_match": 0.5454545454545454
+    "false_negatives": 46,
+    "f1_ci_lower": 0.732536868973341,
+    "f1_ci_upper": 0.9610636199243794,
+    "rmse_ci_lower": 0.0,
+    "rmse_ci_upper": 40.381172776861256,
+    "exact_match": 0.5151515151515151
+  },
+  "exact_match": 0.5151515151515151,
+  "exact_match_stratified": {
+    "continuous": 0.48,
+    "binary": 0.625
   },
   "by_field": {
     "comparator_events": {
@@ -17,7 +26,11 @@
       "rmse": 0.0,
       "true_positives": 5,
       "false_positives": 0,
-      "false_negatives": 0
+      "false_negatives": 0,
+      "f1_ci_lower": 0.0,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 0.0
     },
     "comparator_group_size": {
       "precision": 1.0,
@@ -26,16 +39,24 @@
       "rmse": 0.0,
       "true_positives": 28,
       "false_positives": 0,
-      "false_negatives": 3
+      "false_negatives": 3,
+      "f1_ci_lower": 0.8234768907563025,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 0.0
     },
     "comparator_mean": {
-      "precision": 0.8333333333333334,
-      "recall": 0.5,
-      "f1": 0.625,
-      "rmse": 3.6927286659054728,
-      "true_positives": 10,
+      "precision": 0.8181818181818182,
+      "recall": 0.45,
+      "f1": 0.5806451612903226,
+      "rmse": 3.9523088189057307,
+      "true_positives": 9,
       "false_positives": 2,
-      "false_negatives": 10
+      "false_negatives": 11,
+      "f1_ci_lower": 0.4,
+      "f1_ci_upper": 0.923076923076923,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 4.263995778609545
     },
     "comparator_standard_deviation": {
       "precision": 1.0,
@@ -44,7 +65,11 @@
       "rmse": 4.501668111875161,
       "true_positives": 10,
       "false_positives": 0,
-      "false_negatives": 9
+      "false_negatives": 9,
+      "f1_ci_lower": 0.5714285714285715,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 5.024760331940481
     },
     "intervention_events": {
       "precision": 1.0,
@@ -53,7 +78,11 @@
       "rmse": 0.0,
       "true_positives": 5,
       "false_positives": 0,
-      "false_negatives": 0
+      "false_negatives": 0,
+      "f1_ci_lower": 0.0,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 0.0
     },
     "intervention_group_size": {
       "precision": 1.0,
@@ -62,7 +91,11 @@
       "rmse": 0.0,
       "true_positives": 28,
       "false_positives": 0,
-      "false_negatives": 3
+      "false_negatives": 3,
+      "f1_ci_lower": 0.8124255952380954,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 0.0
     },
     "intervention_mean": {
       "precision": 0.8333333333333334,
@@ -71,7 +104,11 @@
       "rmse": 82.00517383067974,
       "true_positives": 10,
       "false_positives": 2,
-      "false_negatives": 10
+      "false_negatives": 10,
+      "f1_ci_lower": 0.4166666666666667,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 93.65650840913997
     },
     "intervention_standard_deviation": {
       "precision": 1.0,
@@ -80,21 +117,12 @@
       "rmse": 36.79812931458109,
       "true_positives": 9,
       "false_positives": 0,
-      "false_negatives": 10
+      "false_negatives": 10,
+      "f1_ci_lower": 0.5,
+      "f1_ci_upper": 1.0,
+      "rmse_ci_lower": 0.0,
+      "rmse_ci_upper": 40.962292389783165
     }
   },
-  "figure_subset": {
-    "aggregated": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "rmse": 0.0,
-      "true_positives": 0,
-      "false_positives": 0,
-      "false_negatives": 0,
-      "exact_match": 0.0
-    },
-    "by_field": {},
-    "subset": "figures"
-  }
+  "figures_subset": {}
 }

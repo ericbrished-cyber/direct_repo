@@ -1,0 +1,3297 @@
+QUALITATIVE ERROR ANALYSIS: PAIRED COMPARISON
+=============================================
+
+PAPER 1: PMCID 4144850
+--------------------------------------------------------------------------------
+PAIR 1: Independent household latrines number [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Independent household latrines number
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 673.0                   | 366.0
+    Group Size    | 1.525                   | 1.514
+
+>>> PREDICTION:
+    Outcome:      Independent household latrines number
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 630                     | 342
+    Group Size    | 1522                    | 1512
+
+
+PAIR 2: Open defecation - adult men [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Open defecation - adult men
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1138.0                  | 1273.0
+    Group Size    | 1.525                   | 1.514
+
+>>> PREDICTION:
+    Outcome:      Open defecation - adult men
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1138                    | 1274
+    Group Size    | 1525                    | 1514
+
+
+PAIR 3: Open defecation - adult women [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Open defecation - adult women
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1116.0                  | 1264.0
+    Group Size    | 1.525                   | 1.514
+
+>>> PREDICTION:
+    Outcome:      Open defecation - adult women
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1116                    | 1265
+    Group Size    | 1525                    | 1514
+
+
+PAIR 4: Open defecation - children [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Open defecation - children
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1279.0                  | 1350.0
+    Group Size    | 1.525                   | 1.514
+
+>>> PREDICTION:
+    Outcome:      Open defecation - children
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1280                    | 1350
+    Group Size    | 1525                    | 1514
+
+
+PAIR 5: Helminth infections [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Helminth infections
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 34.0                    | 32.0
+    Group Size    | 581.0                   | 569.0
+
+>>> PREDICTION:
+    Outcome:      Helminth infections
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 34                      | 32
+    Group Size    | 581                     | 569
+
+
+PAIR 6: Anemia [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Anemia
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1.078                   | 976.0
+    Group Size    | 1.919                   | 1.922
+
+>>> PREDICTION:
+    Outcome:      Anemia
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1079                    | 977
+    Group Size    | 1919                    | 1922
+
+
+PAIR 7: Sanitation facility improvement [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Sanitation facility improvement
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 630.0                   | 342.0
+    Group Size    | 1.522                   | 1.512
+
+>>> PREDICTION:
+    Outcome:      Sanitation facility improvement
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 672                     | 366
+    Group Size    | 1525                    | 1514
+
+
+PAIR 8: E. coli contaminated water [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      E. coli contaminated water
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 310.0                   | 331.0
+    Group Size    | 404.0                   | 403.0
+
+>>> PREDICTION:
+    Outcome:      E. coli contaminated water
+    Intervention: Total Sanitation Campaign
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 310                     | 331
+    Group Size    | 404                     | 403
+
+
+================================================================================
+
+PAPER 2: PMCID 4879328
+--------------------------------------------------------------------------------
+PAIR 1: waist circumference [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      waist circumference
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.89    (3.32    )   | 0.3      (3.54    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      waist circumference
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 103                     | 112
+
+
+PAIR 2: effects for walking [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      effects for walking
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.55    (2.29    )   | 0.31     (3.84    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      effects for walking
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 103                     | 114
+
+
+PAIR 3: effects for vigorous activity [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      effects for vigorous activity
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.2      (1.56    )   | -0.4     (2.48    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      effects for vigorous activity
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 103                     | 114
+
+
+PAIR 4: FFBQ Total Index Score [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      FFBQ Total Index Score
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.07     (0.26    )   | 0.01     (0.33    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      FFBQ Total Index Score
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 104                     | 114
+
+
+PAIR 5: weekly moderate physical activity sessions [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      weekly moderate physical activity sessions
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.19     (1.82    )   | -0.68    (2.32    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      weekly moderate physical activity sessions
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 103                     | 114
+
+
+PAIR 6: accelerometer-assessed moderate to vigorous physical activity (MVPA) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      accelerometer-assessed moderate to vigorous physical activity (MVPA)
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 7.41     (66.12   )   | -16.1    (66.25   )
+    Group Size    | 99.0                    | 108.0
+
+>>> PREDICTION:
+    Outcome:      accelerometer-assessed moderate to vigorous physical activity (MVPA)
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 99                      | 108
+
+
+PAIR 7: weight loss [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      weight loss
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.89    (3.33    )   | 0.3      (3.54    )
+    Group Size    | 104.0                   | 114.0
+
+>>> PREDICTION:
+    Outcome:      weight loss
+    Intervention: Get Healthy, Stay Healthy' (GHSH)
+    Comparator:   no continued contact
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 104                     | 114
+
+
+================================================================================
+
+PAPER 3: PMCID 5976949
+--------------------------------------------------------------------------------
+PAIR 1: ANGPTL4 expression [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      ANGPTL4 expression
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 23.1     (25.6    )   | 98.3     (104.6   )
+    Group Size    | 20.0                    | 25.0
+
+>>> PREDICTION:
+    Outcome:      ANGPTL4 expression
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 23.1     (25.6    )   | 98.3     (104.6   )
+    Group Size    | 20                      | 25
+
+
+PAIR 2: ANGPTL4 expression [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      ANGPTL4 expression
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   GDM2 (less tight glycaemic targets, <5.3_mmol/L and <_7.8_mmol/L)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 23.1     (25.6    )   | 21.5     (25.8    )
+    Group Size    | 20.0                    | 21.0
+
+>>> PREDICTION:
+    Outcome:      ANGPTL4 expression
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   GDM2 (less tight glycaemic targets, <5.3_mmol/L and <_7.8_mmol/L)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 23.1     (25.6    )   | 21.5     (25.8    )
+    Group Size    | 20                      | 21
+
+
+PAIR 3: leptin/adiponectin ratio (LAR) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      leptin/adiponectin ratio (LAR)
+    Intervention: GDM2 (less tight glycaemic targets, <5.3 mmol/L and < 7.8 mmol/L)
+    Comparator:   GDM1 (tight glycaemic targets, fasting blood glucose_<_5.1_mmol/L and <7.0_mmol/L postprandial) postprandial,), control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.7      (-       )   | 1.66     (-       )
+    Group Size    | 21.0                    | 45.0
+
+>>> PREDICTION:
+    Outcome:      leptin/adiponectin ratio (LAR)
+    Intervention: GDM2 (less tight glycaemic targets, <5.3 mmol/L and < 7.8 mmol/L)
+    Comparator:   GDM1 (tight glycaemic targets, fasting blood glucose_<_5.1_mmol/L and <7.0_mmol/L postprandial) postprandial,), control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.7      (1.66    )   | -        (-       )
+    Group Size    | 21                      | -
+
+
+PAIR 4: leptin/adiponectin ratio (LAR) [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      leptin/adiponectin ratio (LAR)
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.97     (1.31    )   | 0.72     (0.46    )
+    Group Size    | 20.0                    | 25.0
+
+>>> PREDICTION:
+    Outcome:      leptin/adiponectin ratio (LAR)
+    Intervention: GDM1 (tight glycaemic targets, fasting blood glucose < 5.1 mmol/L and <7.0 mmol/L postprandial)
+    Comparator:   control group- normal glucose tolerance
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.97     (1.31    )   | 0.72     (0.46    )
+    Group Size    | 20                      | 25
+
+
+================================================================================
+
+PAPER 4: PMCID 4678179
+--------------------------------------------------------------------------------
+PAIR 1: progression-free-survival (PFS) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      progression-free-survival (PFS)
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 53.0                    | 53.0
+
+>>> PREDICTION:
+    Outcome:      progression-free-survival (PFS)
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 4.0      (-       )   | 2.5      (-       )
+    Group Size    | 53                      | 53
+
+
+PAIR 2: Median overall survival (OS) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Median overall survival (OS)
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 6.9      (4.09    )   | 6.1      (5.57    )
+    Group Size    | 53.0                    | 53.0
+
+>>> PREDICTION:
+    Outcome:      Median overall survival (OS)
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 6.9      (-       )   | 6.1      (-       )
+    Group Size    | 53                      | 53
+
+
+PAIR 3: Response rates [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Response rates
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 8.0      (-       )   | 13.0     (-       )
+    Group Size    | 53.0                    | 53.0
+
+>>> PREDICTION:
+    Outcome:      Response rates
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 8.0      (-       )   | 13.0     (-       )
+    Events        | 4                       | 7
+    Group Size    | 53                      | 53
+
+
+PAIR 4: rate of adverse events [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      rate of adverse events
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 4.0                     | 2.0
+    Group Size    | 53.0                    | 53.0
+
+>>> PREDICTION:
+    Outcome:      rate of adverse events
+    Intervention: vismodegib plus gemcitabine (GV)
+    Comparator:   gemcitabine plus placebo (GP)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 4                       | 2
+    Group Size    | 53                      | 53
+
+
+================================================================================
+
+PAPER 5: PMCID 5419060
+--------------------------------------------------------------------------------
+PAIR 1: Sample rejection rate: CHC A [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Sample rejection rate: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 79.0                    | 60.0
+    Group Size    | 10218.0                 | 7557.0
+
+>>> PREDICTION:
+    Outcome:      Sample rejection rate: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 79                      | 60
+    Group Size    | 10218                   | 7557
+
+
+PAIR 2: Sample rejection rate: CHC B [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Sample rejection rate: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 48.0                    | 45.0
+    Group Size    | 4114.0                  | 3973.0
+
+>>> PREDICTION:
+    Outcome:      Sample rejection rate: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 48                      | 45
+    Group Size    | 4114                    | 3973
+
+
+PAIR 3: Sample rejection rate: CDC C [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Sample rejection rate: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 37.0                    | 38.0
+    Group Size    | 2279.0                  | 2321.0
+
+>>> PREDICTION:
+    Outcome:      Sample rejection rate: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 37                      | 38
+    Group Size    | 2279                    | 2321
+
+
+PAIR 4: Sample rejection rate: CDC D [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Sample rejection rate: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 7.0                     | 8.0
+    Group Size    | 630.0                   | 589.0
+
+>>> PREDICTION:
+    Outcome:      Sample rejection rate: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 7                       | 8
+    Group Size    | 630                     | 589
+
+
+PAIR 5: Request-form errors: CHC A [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Request-form errors: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 8.0                     | 11.0
+    Group Size    | 10218.0                 | 7557.0
+
+>>> PREDICTION:
+    Outcome:      Request-form errors: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 8                       | 11
+    Group Size    | 10218                   | 7557
+
+
+PAIR 6: Request-form errors: CHC B [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Request-form errors: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 12.0                    | 11.0
+    Group Size    | 4114.0                  | 3973.0
+
+>>> PREDICTION:
+    Outcome:      Request-form errors: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 12                      | 11
+    Group Size    | 4114                    | 3973
+
+
+PAIR 7: Request-form errors: CDC C [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Request-form errors: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 6.0                     | 3.0
+    Group Size    | 2279.0                  | 2321.0
+
+>>> PREDICTION:
+    Outcome:      Request-form errors: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 6                       | 3
+    Group Size    | 2279                    | 2321
+
+
+PAIR 8: Request-form errors: CDC D [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Request-form errors: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0.0                     | 0.0
+    Group Size    | 630.0                   | 589.0
+
+>>> PREDICTION:
+    Outcome:      Request-form errors: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0                       | 0
+    Group Size    | 630                     | 589
+
+
+PAIR 9: Preanalytical errors: CHC A [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Preanalytical errors: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 27.0                    | 17.0
+    Group Size    | 10218.0                 | 7557.0
+
+>>> PREDICTION:
+    Outcome:      Preanalytical errors: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 79                      | 60
+    Group Size    | 10218                   | 7557
+
+
+PAIR 10: Preanalytical errors: CHC B [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Preanalytical errors: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 12.0                    | 10.0
+    Group Size    | 4114.0                  | 3973.0
+
+>>> PREDICTION:
+    Outcome:      Preanalytical errors: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 48                      | 45
+    Group Size    | 4114                    | 3973
+
+
+PAIR 11: Preanalytical errors: CDC C [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Preanalytical errors: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 10.0                    | 15.0
+    Group Size    | 2279.0                  | 2321.0
+
+>>> PREDICTION:
+    Outcome:      Preanalytical errors: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 37                      | 38
+    Group Size    | 2279                    | 2321
+
+
+PAIR 12: Preanalytical errors: CDC D [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Preanalytical errors: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 2.0                     | 4.0
+    Group Size    | 630.0                   | 589.0
+
+>>> PREDICTION:
+    Outcome:      Preanalytical errors: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 7                       | 8
+    Group Size    | 630                     | 589
+
+
+PAIR 13: Phlebotomy questionnaire score: CHC A [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Phlebotomy questionnaire score: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 96.0     (3.89    )   | 63.0     (12.31   )
+    Group Size    | 23.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      Phlebotomy questionnaire score: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 96       (-       )   | 63       (-       )
+    Group Size    | -                       | -
+
+
+PAIR 14: Phlebotomy questionnaire score: CHC B [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Phlebotomy questionnaire score: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 93.0     (1.37    )   | 58.0     (7.12    )
+    Group Size    | 23.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      Phlebotomy questionnaire score: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 93       (-       )   | 58       (-       )
+    Group Size    | -                       | -
+
+
+PAIR 15: Phlebotomy questionnaire score: CDC C [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Phlebotomy questionnaire score: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 97.0     (3.85    )   | 60.0     (5.25    )
+    Group Size    | 23.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      Phlebotomy questionnaire score: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 97       (-       )   | 60       (-       )
+    Group Size    | -                       | -
+
+
+PAIR 16: Phlebotomy questionnaire score: CDC D [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Phlebotomy questionnaire score: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 97.0     (1.21    )   | 63.0     (4.31    )
+    Group Size    | 23.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      Phlebotomy questionnaire score: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 97       (-       )   | 63       (-       )
+    Group Size    | -                       | -
+
+
+PAIR 17: Techinque related rejections: CHC A [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Techinque related rejections: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 20.0                    | 20.0
+    Group Size    | 10218.0                 | 7557.0
+
+>>> PREDICTION:
+    Outcome:      Techinque related rejections: CHC A
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 20                      | 20
+    Group Size    | 10218                   | 7557
+
+
+PAIR 18: Techinque related rejections: CHC B [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Techinque related rejections: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 15.0                    | 8.0
+    Group Size    | 4114.0                  | 3973.0
+
+>>> PREDICTION:
+    Outcome:      Techinque related rejections: CHC B
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 15                      | 8
+    Group Size    | 4114                    | 3973
+
+
+PAIR 19: Techinque related rejections: CDC C [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Techinque related rejections: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 18.0                    | 15.0
+    Group Size    | 2279.0                  | 2321.0
+
+>>> PREDICTION:
+    Outcome:      Techinque related rejections: CDC C
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 18                      | 15
+    Group Size    | 2279                    | 2321
+
+
+PAIR 20: Techinque related rejections: CDC D [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Techinque related rejections: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 2.0                     | 4.0
+    Group Size    | 630.0                   | 589.0
+
+>>> PREDICTION:
+    Outcome:      Techinque related rejections: CDC D
+    Intervention: Phlebotomy training programme
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 2                       | 4
+    Group Size    | 630                     | 589
+
+
+================================================================================
+
+PAPER 6: PMCID 4880652
+--------------------------------------------------------------------------------
+PAIR 1: SpO2 at 5 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      SpO2 at 5 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 97.8     (-       )   | 99.0     (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      SpO2 at 5 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 2: the modified Aldrete scores at 60 minutes [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      the modified Aldrete scores at 60 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.0     (0.0     )   | 10.0     (0.0     )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      the modified Aldrete scores at 60 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.0     (0.0     )   | 10.0     (0.0     )
+    Group Size    | 76                      | 70
+
+
+PAIR 3: systolic pressures at 0 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      systolic pressures at 0 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 128.0    (-       )   | 126.0    (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      systolic pressures at 0 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 4: oxygen saturation at 20 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      oxygen saturation at 20 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 98.6     (-       )   | 98.8     (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      oxygen saturation at 20 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 5: diastolic blood pressure at 10 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      diastolic blood pressure at 10 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 67.0     (-       )   | 69.9     (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      diastolic blood pressure at 10 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 6: heart rate at 0 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      heart rate at 0 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 93.0     (-       )   | 89.8     (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      heart rate at 0 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 7: visual analogue scores [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      visual analogue scores
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 3.65     (1.92    )   | 3.44     (1.61    )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      visual analogue scores
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 3.65     (1.92    )   | 3.44     (1.61    )
+    Group Size    | 76                      | 70
+
+
+PAIR 8: systolic blood pressures at 20 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      systolic blood pressures at 20 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 118.0    (-       )   | 121.0    (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      systolic blood pressures at 20 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+PAIR 9: Diastolic blood pressures at 5 minutes [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Diastolic blood pressures at 5 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 64.5     (-       )   | 69.0     (-       )
+    Group Size    | 76.0                    | 70.0
+
+>>> PREDICTION:
+    Outcome:      Diastolic blood pressures at 5 minutes
+    Intervention: fentanyl (1 µg/kg) and propofol
+    Comparator:   paracetamol (20 mg/kg) and propofol
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 76                      | 70
+
+
+================================================================================
+
+PAPER 7: PMCID 4467620
+--------------------------------------------------------------------------------
+PAIR 1: decrease in exercise intensity as time elapsed (at time 10) [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      decrease in exercise intensity as time elapsed (at time 10)
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 114.6    (35.6    )   | 123.9    (30.2    )
+    Group Size    | 8.0                     | 8.0
+
+>>> PREDICTION:
+    Outcome:      decrease in exercise intensity as time elapsed (at time 10)
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 114.6    (35.6    )   | 123.9    (30.2    )
+    Group Size    | 8                       | 8
+
+
+PAIR 2: weight reduction [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      weight reduction
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 68.6     (7.7     )   | 68.8     (7.5     )
+    Group Size    | 8.0                     | 8.0
+
+>>> PREDICTION:
+    Outcome:      weight reduction
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.37     (0.22    )   | 0.41     (0.07    )
+    Group Size    | 8                       | 8
+
+
+PAIR 3: accuracy of the cognitive tasks [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      accuracy of the cognitive tasks
+    Intervention: Exercise - Hot + Cooling conditions
+    Comparator:   At rest - Hot + Cooling conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8.0                     | 8.0
+
+>>> PREDICTION:
+    Outcome:      accuracy of the cognitive tasks
+    Intervention: Exercise - Hot + Cooling conditions
+    Comparator:   At rest - Hot + Cooling conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8                       | 8
+
+
+PAIR 4: accuracy of the cognitive tasks [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      accuracy of the cognitive tasks
+    Intervention: Exercise - Hot condition
+    Comparator:   At rest - Hot condition
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8.0                     | 8.0
+
+>>> PREDICTION:
+    Outcome:      accuracy of the cognitive tasks
+    Intervention: Exercise - Hot condition
+    Comparator:   At rest - Hot condition
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8                       | 8
+
+
+PAIR 5: differences in the accuracy [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      differences in the accuracy
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8.0                     | 8.0
+
+>>> PREDICTION:
+    Outcome:      differences in the accuracy
+    Intervention: Hot + Cooling conditions
+    Comparator:   Hot conditions
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 8                       | 8
+
+
+================================================================================
+
+PAPER 8: PMCID 1863515
+--------------------------------------------------------------------------------
+PAIR 1: haemoglobin level between 26 and 35 wk [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      haemoglobin level between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.4     (-       )   | 0.0      (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      haemoglobin level between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 769                     | 667
+
+
+PAIR 2: leucocyte count between 26 and 35 wk [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      leucocyte count between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -423.0   (-       )   | 0.0      (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      leucocyte count between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 769                     | 667
+
+
+PAIR 3: absolute neutrophil count between 26 and 35 wk [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      absolute neutrophil count between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -485.0   (-       )   | 0.0      (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      absolute neutrophil count between 26 and 35 wk
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 769                     | 667
+
+
+PAIR 4: haemoglobin level at 35 wk gestation [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      haemoglobin level at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.7     (-       )   | 11.2     (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      haemoglobin level at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.7     (-       )   | 11.2     (-       )
+    Group Size    | 739                     | 638
+
+
+PAIR 5: leucocyte count at 35 wk gestation [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      leucocyte count at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 8818.0   (-       )   | 8362.0   (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      leucocyte count at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 8818     (-       )   | 8362     (-       )
+    Group Size    | 739                     | 638
+
+
+PAIR 6: absolute neutrophil count at 35 wk gestation [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      absolute neutrophil count at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 5639.0   (-       )   | 6150.0   (-       )
+    Group Size    | 754.0                   | 656.0
+
+>>> PREDICTION:
+    Outcome:      absolute neutrophil count at 35 wk gestation
+    Intervention: Zidovudine prophylaxis initiation
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 5639     (-       )   | 6150     (-       )
+    Group Size    | 739                     | 638
+
+
+================================================================================
+
+PAPER 9: PMCID 115849
+--------------------------------------------------------------------------------
+PAIR 1: Discontinuation due to lack of efficacy [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 44                      | 19
+    Group Size    | 353                     | 181
+
+
+PAIR 2: patients discontinued due to lack of efficacy [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      patients discontinued due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 44.0                    | 90.0
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      patients discontinued due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 44                      | 90
+    Group Size    | 353                     | 357
+
+
+PAIR 3: patients discontinued due to lack of efficacy [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      patients discontinued due to lack of efficacy
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 19.0                    | 90.0
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      patients discontinued due to lack of efficacy
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 19                      | 90
+    Group Size    | 181                     | 357
+
+
+PAIR 4: Patient global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 5: investigator global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 6: Tender joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Tender joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Tender joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 7: Swollen joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Swollen joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Swollen joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 8: Patient global assessment of pain [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of pain
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of pain
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 9: Health Assessment Questionnaire disability [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 10: Serum C-reactive protein [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Serum C-reactive protein
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Serum C-reactive protein
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 357
+
+
+PAIR 11: ACR20 responder criteria [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      ACR20 responder criteria
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      ACR20 responder criteria
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 207                     | 146
+    Group Size    | 353                     | 357
+
+
+PAIR 12: Discontinuation due to lack of efficacy [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 44                      | 90
+    Group Size    | 353                     | 357
+
+
+PAIR 13: Patient global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 14: investigator global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 15: Tender joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Tender joint count
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Tender joint count
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 16: Swollen joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Swollen joint count
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Swollen joint count
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 17: Patient global assessment of pain [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of pain
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of pain
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 18: Health Assessment Questionnaire disability [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 19: Serum C-reactive protein [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Serum C-reactive protein
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Serum C-reactive protein
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181                     | 357
+
+
+PAIR 20: ACR20 responder criteria [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      ACR20 responder criteria
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      ACR20 responder criteria
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 104                     | 146
+    Group Size    | 181                     | 357
+
+
+PAIR 21: Discontinuation due to lack of efficacy [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 181.0                   | 357.0
+
+>>> PREDICTION:
+    Outcome:      Discontinuation due to lack of efficacy
+    Intervention: naproxen 500 mg twice daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 19                      | 90
+    Group Size    | 181                     | 357
+
+
+PAIR 22: Patient global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 23: investigator global assessment of disease activity [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      investigator global assessment of disease activity
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 24: Tender joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Tender joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Tender joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 25: Swollen joint count [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Swollen joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Swollen joint count
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 26: Patient global assessment of pain [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Patient global assessment of pain
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Patient global assessment of pain
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 27: Health Assessment Questionnaire disability [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Health Assessment Questionnaire disability
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 28: Serum C-reactive protein [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Serum C-reactive protein
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      Serum C-reactive protein
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353                     | 181
+
+
+PAIR 29: ACR20 responder criteria [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      ACR20 responder criteria
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 353.0                   | 181.0
+
+>>> PREDICTION:
+    Outcome:      ACR20 responder criteria
+    Intervention: etoricoxib 90 mg once daily
+    Comparator:   naproxen 500 mg twice daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 207                     | 104
+    Group Size    | 353                     | 181
+
+
+================================================================================
+
+PAPER 10: PMCID 4355974
+--------------------------------------------------------------------------------
+PAIR 1: Days of wheeze [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Days of wheeze
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -1.4     (-       )   | -4.2     (-       )
+    Group Size    | 28.0                    | 14.0
+
+>>> PREDICTION:
+    Outcome:      Days of wheeze
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.5      (-       )   | 0.9      (-       )
+    Group Size    | 28                      | 14
+
+
+PAIR 2: ER visits [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      ER visits
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1.0                     | 1.0
+    Group Size    | 28.0                    | 14.0
+
+>>> PREDICTION:
+    Outcome:      ER visits
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1                       | 1
+    Group Size    | 28                      | 14
+
+
+PAIR 3: Days limited activity from asthma [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Days limited activity from asthma
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.2     (-       )   | -1.8     (-       )
+    Group Size    | 28.0                    | 14.0
+
+>>> PREDICTION:
+    Outcome:      Days limited activity from asthma
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.4      (-       )   | 0.2      (-       )
+    Group Size    | 28                      | 14
+
+
+PAIR 4: Knowledge [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Knowledge
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 9.0                     | 3.0
+    Group Size    | 12.0                    | 8.0
+
+>>> PREDICTION:
+    Outcome:      Knowledge
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 9                       | 3
+    Group Size    | 12                      | 8
+
+
+PAIR 5: School days missed for asthma [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      School days missed for asthma
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.2     (-       )   | -0.4     (-       )
+    Group Size    | 28.0                    | 14.0
+
+>>> PREDICTION:
+    Outcome:      School days missed for asthma
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0        (-       )   | 0        (-       )
+    Group Size    | 28                      | 14
+
+
+PAIR 6: Days patient had to slow down [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Days patient had to slow down
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -1.4     (-       )   | -0.4     (-       )
+    Group Size    | 28.0                    | 14.0
+
+>>> PREDICTION:
+    Outcome:      Days patient had to slow down
+    Intervention: BostonBreathes system
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.1      (-       )   | 0.7      (-       )
+    Group Size    | 28                      | 14
+
+
+================================================================================
+
+PAPER 11: PMCID 5079604
+--------------------------------------------------------------------------------
+PAIR 1: Disposition index (DI) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Disposition index (DI)
+    Intervention: subjects who remained in remission
+    Comparator:   patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.8      (-       )   | 0.6      (-       )
+    Group Size    | 28.0                    | 20.0
+
+>>> PREDICTION:
+    Outcome:      Disposition index (DI)
+    Intervention: subjects who remained in remission
+    Comparator:   patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 28                      | 20
+
+
+PAIR 2: incremental area under the curve for insulin (AUCi) [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      incremental area under the curve for insulin (AUCi)
+    Intervention: subjects who remained in remission
+    Comparator:   patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 7900.0   (-       )   | 2900.0   (-       )
+    Group Size    | 28.0                    | 20.0
+
+>>> PREDICTION:
+    Outcome:      incremental area under the curve for insulin (AUCi)
+    Intervention: subjects who remained in remission
+    Comparator:   patients with hyperglycemia relapse without significant changes in insulin sensitivity (Si)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 28                      | 20
+
+
+PAIR 3: hyperglycemia relapse-free survival [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      hyperglycemia relapse-free survival
+    Intervention: metformin 1,000 mg daily
+    Comparator:   sitagliptin 100 mg daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 65.0     (-       )   | 58.0     (-       )
+    Group Size    | 17.0                    | 16.0
+
+>>> PREDICTION:
+    Outcome:      hyperglycemia relapse-free survival
+    Intervention: metformin 1,000 mg daily
+    Comparator:   sitagliptin 100 mg daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 17                      | 16
+
+
+PAIR 4: Cox proportional hazards of failure-free survival [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Cox proportional hazards of failure-free survival
+    Intervention: metformin 1,000 mg daily
+    Comparator:   sitagliptin 100 mg daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 17.0                    | 16.0
+
+>>> PREDICTION:
+    Outcome:      Cox proportional hazards of failure-free survival
+    Intervention: metformin 1,000 mg daily
+    Comparator:   sitagliptin 100 mg daily
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 17                      | 16
+
+
+PAIR 5: The restricted mean time to hyperglycemia relapse [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      The restricted mean time to hyperglycemia relapse
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 480.0    (-       )   | 305.0    (-       )
+    Group Size    | 33.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      The restricted mean time to hyperglycemia relapse
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 480      (-       )   | 305      (-       )
+    Group Size    | 33                      | 15
+
+
+PAIR 6: Hyperglycemia relapse-free survival [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Hyperglycemia relapse-free survival
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 65.0     (-       )   | 21.0     (-       )
+    Group Size    | 33.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      Hyperglycemia relapse-free survival
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 33                      | 15
+
+
+PAIR 7: The 2-year failure rate [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      The 2-year failure rate
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 13.0                    | 12.0
+    Group Size    | 33.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      The 2-year failure rate
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 33                      | 15
+
+
+PAIR 8: The probability of relapse [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      The probability of relapse
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 9.0                     | 11.0
+    Group Size    | 33.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      The probability of relapse
+    Intervention: metformin 1,000 mg daily, sitagliptin 100 mg daily
+    Comparator:   placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 33                      | 15
+
+
+================================================================================
+
+PAPER 12: PMCID 3577738
+--------------------------------------------------------------------------------
+PAIR 1: website use in terms of the number of pages visited [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      website use in terms of the number of pages visited
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 7.5      (4.0     )   | 8.0      (3.8     )
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      website use in terms of the number of pages visited
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 7.5      (4.0     )   | 8.0      (3.8     )
+    Group Size    | 231                     | 227
+
+
+PAIR 2: website use in terms of time on the website [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      website use in terms of time on the website
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 151.0    (117.4   )   | 150.8    (107.8   )
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      website use in terms of time on the website
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 151.0    (117.4   )   | 150.8    (107.8   )
+    Group Size    | 231                     | 227
+
+
+PAIR 3: focused on the social presence elements in terms of frequency [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      focused on the social presence elements in terms of frequency
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      focused on the social presence elements in terms of frequency
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | -                       | -
+
+
+PAIR 4: focused on the social presence elements in terms of duration [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      focused on the social presence elements in terms of duration
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      focused on the social presence elements in terms of duration
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | -                       | -
+
+
+PAIR 5: efficiency [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      efficiency
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      efficiency
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231                     | 227
+
+
+PAIR 6: effectiveness [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      effectiveness
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      effectiveness
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231                     | 227
+
+
+PAIR 7: enjoyment [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      enjoyment
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      enjoyment
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231                     | 227
+
+
+PAIR 8: active trust [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      active trust
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      active trust
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231                     | 227
+
+
+PAIR 9: interest [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      interest
+    Intervention: website with social presence elements.
+    Comparator:   website without social presence elements.
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231.0                   | 227.0
+
+>>> PREDICTION:
+    Outcome:      interest
+    Intervention: website with social presence elements
+    Comparator:   website without social presence elements
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 231                     | 227
+
+
+================================================================================
+
+PAPER 13: PMCID 4357072
+--------------------------------------------------------------------------------
+PAIR 1: improvement in symptom scores [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      improvement in symptom scores
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.2      (0.4     )   | 0.8      (0.6     )
+    Group Size    | 15.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      improvement in symptom scores
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.9      (0.6     )   | 0.6      (0.5     )
+    Group Size    | 15                      | 15
+
+
+PAIR 2: reduction in burning sensation [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      reduction in burning sensation
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 1.0      (2.1     )   | 5.3      (6.1     )
+    Group Size    | 15.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      reduction in burning sensation
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 4.0      (4.3     )   | 4.0      (4.3     )
+    Group Size    | 15                      | 15
+
+
+PAIR 3: reduction in erythematous area [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      reduction in erythematous area
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 14.0                    | 10.0
+    Group Size    | 15.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      reduction in erythematous area
+    Intervention: topical pimecrolimus cream 1%
+    Comparator:   triamcinolone acetonide oral paste 0.1%
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0                       | 0
+    Group Size    | 15                      | 15
+
+
+PAIR 4: reappearance of erythematous areas after 2 months posttreatment [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      reappearance of erythematous areas after 2 months posttreatment
+    Intervention: pimecrolimus
+    Comparator:   triamcinolone acetate
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1.0                     | 5.0
+    Group Size    | 15.0                    | 15.0
+
+>>> PREDICTION:
+    Outcome:      reappearance of erythematous areas after 2 months posttreatment
+    Intervention: pimecrolimus
+    Comparator:   triamcinolone acetate
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 1                       | 5
+    Group Size    | 15                      | 15
+
+
+================================================================================
+
+PAPER 14: PMCID 5830087
+--------------------------------------------------------------------------------
+PAIR 1: objective response rate (ORR) [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      objective response rate (ORR)
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 29.0                    | 10.0
+    Group Size    | 48.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      objective response rate (ORR)
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 29                      | 10
+    Group Size    | 48                      | 23
+
+
+PAIR 2: disease control rate [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      disease control rate
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 45.0                    | 21.0
+    Group Size    | 48.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      disease control rate
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 45                      | 21
+    Group Size    | 48                      | 23
+
+
+PAIR 3: duration of objective response [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      duration of objective response
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 48.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      duration of objective response
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 29                      | 10
+
+
+PAIR 4: progression-free survival [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      progression-free survival
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 48.0                    | 23.0
+
+>>> PREDICTION:
+    Outcome:      progression-free survival
+    Intervention: BTH1677 arm ( intravenous [IV] BTH1677, 4 mg/kg, weekly; IV bevacizumab, 15 mg/kg, once each 3-week cycle [Q3W]; IV carboplatin, 6 mg/mL/min Calvert formula area-under-the-curve, Q3W; and IV paclitaxel, 200 mg/m2, Q3W)
+    Comparator:   Control arm ( bevacizumab/carboplatin/paclitaxel as above)
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 50                      | 23
+
+
+================================================================================
+
+PAPER 15: PMCID 5122613
+--------------------------------------------------------------------------------
+PAIR 1: Left SCTT [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Left SCTT
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.2     (8.6     )   | 12.1     (9.5     )
+    Group Size    | 29.0                    | 28.0
+
+>>> PREDICTION:
+    Outcome:      Left SCTT
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.2     (8.6     )   | 12.1     (9.5     )
+    Group Size    | 29                      | 28
+
+
+PAIR 2: Adverse events [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Adverse events
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0.0                     | 0.0
+    Group Size    | 33.0                    | 33.0
+
+>>> PREDICTION:
+    Outcome:      Adverse events
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 4                       | 2
+    Group Size    | 33                      | 33
+
+
+PAIR 3: Baseline characteristics and diet [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Baseline characteristics and diet
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.0     (4.6     )   | 11.5     (4.6     )
+    Group Size    | 33.0                    | 33.0
+
+>>> PREDICTION:
+    Outcome:      Baseline characteristics and diet
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 10.0     (4.6     )   | 11.5     (4.6     )
+    Group Size    | 33                      | 33
+
+
+PAIR 4: Improvement in faeces consistency [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Improvement in faeces consistency
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 3.4      (1.0     )   | 3.2      (0.5     )
+    Group Size    | 33.0                    | 33.0
+
+>>> PREDICTION:
+    Outcome:      Improvement in faeces consistency
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 3.4      (1.0     )   | 3.2      (0.5     )
+    Group Size    | 33                      | 33
+
+
+PAIR 5: Colonic transit time [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Colonic transit time
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 39.7     (22.3    )   | 48.0     (25.0    )
+    Group Size    | 29.0                    | 28.0
+
+>>> PREDICTION:
+    Outcome:      Colonic transit time
+    Intervention: Digestion-resistant maltodextrin
+    Comparator:   Placebo
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 39.7     (22.3    )   | 48.0     (25.0    )
+    Group Size    | 29                      | 28
+
+
+================================================================================
+
+PAPER 16: PMCID 2596788
+--------------------------------------------------------------------------------
+PAIR 1: GERD-knowledge [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      GERD-knowledge
+    Intervention: education
+    Comparator:   control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 17.1     (-       )   | 14.0     (-       )
+    Group Size    | 102.0                   | 109.0
+
+>>> PREDICTION:
+    Outcome:      GERD-knowledge
+    Intervention: education
+    Comparator:   control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 17.1     (-       )   | 14.0     (-       )
+    Group Size    | 85                      | 88
+
+
+================================================================================
+
+PAPER 17: PMCID 4183415
+--------------------------------------------------------------------------------
+PAIR 1: completion of each dose at the correct time [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      completion of each dose at the correct time
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 33.1     (21.6    )   | 32.6     (18.4    )
+    Group Size    | 40.0                    | 37.0
+
+>>> PREDICTION:
+    Outcome:      completion of each dose at the correct time
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 33.1     (21.6    )   | 32.6     (18.4    )
+    Group Size    | 453                     | 451
+
+
+PAIR 2: patient adherence [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      patient adherence
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 68.3     (23.4    )   | 69.8     (20.9    )
+    Group Size    | 40.0                    | 37.0
+
+>>> PREDICTION:
+    Outcome:      patient adherence
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 68.3     (23.4    )   | 69.8     (20.9    )
+    Group Size    | 453                     | 451
+
+
+PAIR 3: Completed treatment [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Completed treatment
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 68.3     (23.4    )   | 69.8     (20.9    )
+    Group Size    | 40.0                    | 37.0
+
+>>> PREDICTION:
+    Outcome:      Completed treatment
+    Intervention: receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL).
+    Comparator:   no text message
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 68.3     (23.4    )   | 69.8     (20.9    )
+    Group Size    | 453                     | 451
+
+
+================================================================================
+
+PAPER 18: PMCID 4173437
+--------------------------------------------------------------------------------
+PAIR 1: Postoperatively hematocrit [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Postoperatively hematocrit
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 30.14    (2.2     )   | 29.36    (1.8     )
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Postoperatively hematocrit
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 30.14    (2.2     )   | 29.36    (1.8     )
+    Group Size    | 30                      | 30
+
+
+PAIR 2: Complications [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Complications
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0.0                     | 0.0
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Complications
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0                       | 0
+    Group Size    | 30                      | 30
+
+
+PAIR 3: Adverse effects [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Adverse effects
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0.0                     | 0.0
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Adverse effects
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0                       | 0
+    Group Size    | 30                      | 30
+
+
+PAIR 4: Total blood loss [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Total blood loss
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 576.0    (53.0    )   | 823.0    (74.0    )
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Total blood loss
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 576      (53      )   | 823      (74      )
+    Group Size    | 30                      | 30
+
+
+PAIR 5: Coagulation profile [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Coagulation profile
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Coagulation profile
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 14.1     (2.1     )   | 13.9     (0.8     )
+    Group Size    | 30                      | 30
+
+
+PAIR 6: Crystalloid solution needed [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Crystalloid solution needed
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 30.0                    | 30.0
+
+>>> PREDICTION:
+    Outcome:      Crystalloid solution needed
+    Intervention: Tranexamic acid
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 30                      | 30
+
+
+================================================================================
+
+PAPER 19: PMCID 5541727
+--------------------------------------------------------------------------------
+PAIR 1: Tibial bone expansion [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Tibial bone expansion
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -0.7     (1.5     )   | 1.0      (1.1     )
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      Tibial bone expansion
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.5      (2.4     )   | 4.0      (2.3     )
+    Group Size    | 9                       | 5
+
+
+PAIR 2: Treatment-related serious adverse events [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Treatment-related serious adverse events
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0.0                     | 0.0
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      Treatment-related serious adverse events
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Events        | 0                       | 0
+    Group Size    | 11                      | 6
+
+
+PAIR 3: Activities of daily living [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Activities of daily living
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      Activities of daily living
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | -                       | -
+
+
+PAIR 4: Symptoms [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Symptoms
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      Symptoms
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | -                       | -
+
+
+PAIR 5: SF-36 bodily pain score [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      SF-36 bodily pain score
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      SF-36 bodily pain score
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | -                       | -
+
+
+PAIR 6: medial tibial cartilage volume loss [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      medial tibial cartilage volume loss
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -1.4     (4.2     )   | -3.3     (5.3     )
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      medial tibial cartilage volume loss
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 0.7      (5.9     )   | -4.0     (3.9     )
+    Group Size    | 9                       | 5
+
+
+PAIR 7: lateral tibial cartilage volume loss [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      lateral tibial cartilage volume loss
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -3.7     (3.4     )   | -0.8     (3.5     )
+    Group Size    | 11.0                    | 6.0
+
+>>> PREDICTION:
+    Outcome:      lateral tibial cartilage volume loss
+    Intervention: Allogeneic mesenchymal precursor cells
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -1.4     (5.3     )   | -2.7     (4.4     )
+    Group Size    | 9                       | 5
+
+
+================================================================================
+
+PAPER 20: PMCID 5380326
+--------------------------------------------------------------------------------
+PAIR 1: Interferon gamma-induced protein 10 [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Interferon gamma-induced protein 10
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 636.47   (448.47  )   | 748.88   (551.0   )
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Interferon gamma-induced protein 10
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 636.47   (448.58  )   | 748.88   (551.1   )
+    Group Size    | 40                      | 40
+
+
+PAIR 2: Vitamin D levels [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Vitamin D levels
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 45.93    (15.37   )   | 21.87    (5.31    )
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Vitamin D levels
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 45.93    (15.37   )   | 21.87    (5.31    )
+    Group Size    | 40                      | 40
+
+
+PAIR 3: Th1/Th2 cytokines [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Th1/Th2 cytokines
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Th1/Th2 cytokines
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Group Size    | 40                      | 40
+
+
+PAIR 4: Interleukin 2 [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Interleukin 2
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 4.49     (13.34   )   | 28.69    (103.03  )
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Interleukin 2
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 4.49     (13.34   )   | 28.69    (102.95  )
+    Group Size    | 40                      | 40
+
+
+PAIR 5: Dipeptidyl peptidase-4 [MISMATCH/MISSING]
+>>> GOLD STANDARD:
+    Outcome:      Dipeptidyl peptidase-4
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | -        (1359.15 )   | 6408.33  (1822.17 )
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Dipeptidyl peptidase-4
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 6032.37  (1354.87 )   | 6408.33  (1819.55 )
+    Group Size    | 40                      | 40
+
+
+PAIR 6: Tumor necrosis factor alpha [MATCH]
+>>> GOLD STANDARD:
+    Outcome:      Tumor necrosis factor alpha
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 752.94   (1890.16 )   | 548.33   (1210.9  )
+    Group Size    | 40.0                    | 40.0
+
+>>> PREDICTION:
+    Outcome:      Tumor necrosis factor alpha
+    Intervention: Vitamin D supplementation
+    Comparator:   Control
+    ----------------------------------------------------------------
+    METRIC        | INTERVENTION                | COMPARATOR
+    ----------------------------------------------------------------
+    Mean (SD)     | 752.94   (1888.54 )   | 548.33   (1209.86 )
+    Group Size    | 40                      | 40
+
+
+================================================================================
+

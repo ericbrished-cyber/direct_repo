@@ -1,0 +1,265 @@
+pmcid,intervention,comparator,outcome,outcome_type,is_data_in_figure_graphics,field,gold,from_gold,pred,from_pred,category
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,comparator_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,comparator_mean,26.5,True,26.5,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,comparator_standard_deviation,27.4,True,27.4,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,intervention_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,intervention_mean,47.5,True,47.5,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The duration of the illness,continuous,False,intervention_standard_deviation,38.9,True,38.9,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,comparator_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,comparator_mean,2.19,True,2.19,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,comparator_standard_deviation,1.63,True,1.63,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,intervention_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,intervention_mean,3.59,True,3.59,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The fecal losses,continuous,False,intervention_standard_deviation,2.35,True,2.35,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,comparator_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,comparator_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,comparator_mean,-0.7,True,-7.0,True,FN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,comparator_standard_deviation,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,intervention_events,,True,,True,TN
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,intervention_group_size,30.0,True,30.0,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,intervention_mean,50.6,True,50.6,True,TP
+1216327,White Grape Juice (WGJ),colored and flavored water (WA),The mean body weight gain,continuous,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,aggravating factors in reversible inguinal hernia,continuous,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,comparator_group_size,19.0,True,,True,FN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,intervention_group_size,19.0,True,,True,FN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,effective in the treatment of reversible inguinal hernia,binary,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,frequency of occurrence in reversible inguinal hernia,continuous,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,pain in reversible inguinal hernia,continuous,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,comparator_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,relieving factors in reversible inguinal hernia,continuous,False,intervention_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,comparator_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,comparator_group_size,19.0,True,,True,FN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,comparator_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,comparator_standard_deviation,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,intervention_events,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,intervention_group_size,19.0,True,,True,FN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,intervention_mean,,True,,True,TN
+3276927,post-Yoga,pre-Yoga,"symptoms of hernia such as heaviness, fullness and pain",continuous,False,intervention_standard_deviation,,True,,True,TN
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,comparator_events,,True,,True,TN
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,comparator_group_size,1831.0,True,,True,FN
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,comparator_mean,9.1,True,9.1,True,TP
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,comparator_standard_deviation,9.9,True,9.9,True,TP
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,intervention_events,,True,,True,TN
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,intervention_group_size,940.0,True,,True,FN
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,intervention_mean,9.9,True,9.9,True,TP
+3580751,Interrupted surveillance unit A,"Continuous surveillance, unit B",mean ± SD length of hospital stay between periods 1 and 2 in patients who did not suffer from VAP,continuous,False,intervention_standard_deviation,14.8,True,14.8,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,comparator_events,,True,,True,TN
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,comparator_group_size,23.0,True,23.0,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,comparator_mean,158.52,True,158.52,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,comparator_standard_deviation,23.19,True,23.19,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,intervention_events,,True,,True,TN
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,intervention_group_size,19.0,True,19.0,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,intervention_mean,117.63,True,117.63,True,TP
+3751573,phase I externship program,phase II corporate-academic cooperation program,improvement in nursing,continuous,False,intervention_standard_deviation,19.01,True,19.01,True,TP
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,comparator_events,13.0,True,13.0,True,TP
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,comparator_group_size,44.0,True,44.0,True,TP
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,comparator_mean,,True,,True,TN
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,comparator_standard_deviation,,True,,True,TN
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,intervention_events,8.0,True,8.0,True,TP
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,intervention_group_size,20.0,True,20.0,True,TP
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,intervention_mean,,True,,True,TN
+4450164,internal drainage group,stentless cases,ureteropelvic junction obstruction,binary,False,intervention_standard_deviation,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,comparator_mean,26.53,True,26.59,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,comparator_standard_deviation,3.53,True,3.53,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,intervention_mean,25.78,True,25.32,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Body mass index,continuous,False,intervention_standard_deviation,3.3,True,3.05,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,comparator_mean,453.57,True,470.0,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,comparator_standard_deviation,60.87,True,80.46,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,intervention_mean,487.33,True,854.0,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Physical activity,continuous,False,intervention_standard_deviation,111.47,True,271.6,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,comparator_mean,0.7,True,0.58,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,comparator_standard_deviation,1.24,True,0.92,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,intervention_mean,0.33,True,0.06,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of amotivation,continuous,False,intervention_standard_deviation,1.06,True,0.36,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,comparator_mean,26.0,True,24.89,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,comparator_standard_deviation,4.68,True,5.2,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,intervention_mean,27.3,True,30.0,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of enjoyment,continuous,False,intervention_standard_deviation,6.77,True,3.83,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,comparator_mean,0.38,True,1.19,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,comparator_standard_deviation,0.98,True,1.37,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,intervention_mean,0.3,True,0.43,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of external regulation,continuous,False,intervention_standard_deviation,0.79,True,1.04,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,comparator_mean,69.89,True,69.57,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,comparator_standard_deviation,1.59,True,1.61,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,intervention_mean,80.5,True,83.1,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of health care climate,continuous,False,intervention_standard_deviation,9.97,True,1.37,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,comparator_mean,4.9,True,5.51,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,comparator_standard_deviation,1.88,True,2.39,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,intervention_mean,10.8,True,13.5,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of intrinsic motivation,continuous,False,intervention_standard_deviation,2.0,True,1.79,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,comparator_mean,19.89,True,19.85,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,comparator_standard_deviation,4.56,True,5.24,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,intervention_mean,26.6,True,30.4,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of autonomy,continuous,False,intervention_standard_deviation,4.43,True,2.83,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,comparator_mean,14.71,True,14.1,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,comparator_standard_deviation,3.87,True,3.82,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,intervention_mean,13.6,True,17.2,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Scores of perception of competence,continuous,False,intervention_standard_deviation,3.05,True,3.46,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,comparator_mean,5.75,True,5.91,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,comparator_standard_deviation,2.34,True,2.21,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,intervention_mean,5.28,True,4.26,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,Sedentary behavior,continuous,False,intervention_standard_deviation,2.34,True,1.76,True,FN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,comparator_mean,13.8,True,13.8,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,comparator_standard_deviation,1.14,True,1.14,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,intervention_mean,13.21,True,13.21,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,agility test,continuous,False,intervention_standard_deviation,1.44,True,1.44,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,comparator_mean,13.8,True,13.8,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,comparator_standard_deviation,1.14,True,1.14,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,intervention_mean,13.21,True,13.21,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - agility,continuous,False,intervention_standard_deviation,1.44,True,1.44,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,comparator_mean,37.99,True,37.99,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,comparator_standard_deviation,2.14,True,2.14,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,intervention_mean,39.1,True,39.1,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - cardiorespiratory endurance,continuous,False,intervention_standard_deviation,2.76,True,2.76,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,comparator_mean,26.83,True,26.83,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,comparator_standard_deviation,5.47,True,5.47,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,intervention_mean,35.53,True,35.53,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - flexibility,continuous,False,intervention_standard_deviation,5.87,True,5.87,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,comparator_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,comparator_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,comparator_mean,12.48,True,12.48,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,comparator_standard_deviation,2.9,True,2.9,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,intervention_events,,True,,True,TN
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,intervention_group_size,35.0,True,35.0,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,intervention_mean,17.83,True,17.83,True,TP
+5498715,Motivational interviewing through self-determination theory sessions,Standard education session,physical fitness - muscular endurance,continuous,False,intervention_standard_deviation,2.7,True,2.7,True,TP
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,comparator_events,62.0,True,62.0,True,TP
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,comparator_group_size,99.0,True,99.0,True,TP
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,comparator_mean,,True,,True,TN
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,comparator_standard_deviation,,True,,True,TN
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,intervention_events,68.0,True,68.0,True,TP
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,intervention_group_size,99.0,True,99.0,True,TP
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,intervention_mean,,True,,True,TN
+5771543,desvenlafaxine,placebo,CGI-I response rate,binary,False,intervention_standard_deviation,,True,,True,TN
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_events,79.0,True,79.0,True,TP
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_group_size,112.0,True,112.0,True,TP
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_mean,,True,,True,TN
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_standard_deviation,,True,,True,TN
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_events,69.0,True,69.0,True,TP
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_group_size,115.0,True,115.0,True,TP
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_mean,,True,,True,TN
+5771543,desvenlafaxine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_standard_deviation,,True,,True,TN
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,comparator_events,62.0,True,62.0,True,TP
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,comparator_group_size,99.0,True,99.0,True,TP
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,comparator_mean,,True,,True,TN
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,comparator_standard_deviation,,True,,True,TN
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,intervention_events,79.0,True,79.0,True,TP
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,intervention_group_size,101.0,True,101.0,True,TP
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,intervention_mean,,True,,True,TN
+5771543,fluoxetine,placebo,CGI-I response rate,binary,False,intervention_standard_deviation,,True,,True,TN
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_events,79.0,True,79.0,True,TP
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_group_size,112.0,True,112.0,True,TP
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_mean,,True,,True,TN
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,comparator_standard_deviation,,True,,True,TN
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_events,72.0,True,72.0,True,TP
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_group_size,112.0,True,112.0,True,TP
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_mean,,True,,True,TN
+5771543,fluoxetine,placebo,Treatment-emergent adverse events (TEAEs),binary,False,intervention_standard_deviation,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,comparator_events,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,comparator_group_size,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,comparator_mean,,True,15.7,True,FP
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,comparator_standard_deviation,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,intervention_events,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,intervention_group_size,,True,,True,TN
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,intervention_mean,,True,14.2,True,FP
+57750,eptifibatide,placebo,Death or myocardial infarction,binary,False,intervention_standard_deviation,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,comparator_events,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,comparator_group_size,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,comparator_mean,,True,13.6,True,FP
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,comparator_standard_deviation,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,intervention_events,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,intervention_group_size,,True,,True,TN
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,intervention_mean,,True,12.6,True,FP
+57750,eptifibatide,placebo,Myocardial infarction,binary,False,intervention_standard_deviation,,True,,True,TN
