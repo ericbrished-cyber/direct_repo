@@ -83,7 +83,7 @@ def run_evaluation_task(run_folder, split):
     # calculate_metrics now returns both metrics and the detailed dataframe
     all_metrics, details_df = calculate_metrics(extractions, gold_standard)
     
-    # NYTT: Spara detaljerna till CSV för Jaccard-analys
+    # Save detailed dataframe to CSV for Jaccard analysis
     details_csv_path = RESULTS_DIR / run_folder / "evaluation_details.csv"
     details_df.to_csv(details_csv_path, index=False)
     print(f"Detailed results saved to: {details_csv_path}")

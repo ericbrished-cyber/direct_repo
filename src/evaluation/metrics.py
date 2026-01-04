@@ -222,8 +222,7 @@ class Evaluator:
 
     def calculate_metrics(self) -> Tuple[Dict[str, Any], pd.DataFrame]:
         """
-        Returnerar aggregerade metrics OCH den detaljerade DataFramen (long format)
-        för felanalys.
+        Returns aggregated metrics and the detailed long-form DataFrame for error analysis.
         """
         scorable_df = self.long_df[self.long_df['category'] != 'IGNORE']
         

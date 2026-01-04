@@ -1,7 +1,7 @@
 import sys
 import os
 
-# Lägg till föräldramappen (roten) i Pythons sökväg
+# Add the repository root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.run_extraction import run_extraction
