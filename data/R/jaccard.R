@@ -1,6 +1,3 @@
-# ==============================================================================
-# SPECIALIZED SCRIPT: JACCARD COMPLETENESS, CONSENSUS & ERROR ANALYSIS
-# ==============================================================================
 
 library(tidyverse)
 library(knitr)
@@ -9,13 +6,10 @@ library(dplyr)
 
 rm(list = ls())
 
-# --- CONFIGURATION ---
+
 ROUNDING_TOLERANCE <- 0.00001 # Absolute tolerance
 RELATIVE_TOLERANCE <- 0.01    # 1% Relative tolerance for Mean/SD
 
-# ==============================================================================
-# 1. DATA LOADING & PREPARATION
-# ==============================================================================
 
 message("Loading and cleaning data...")
 
@@ -25,7 +19,7 @@ gemini   <- read_csv("20251212_154315_gemini_zero-shot_TEST_extractions.csv", sh
 gpt      <- read_csv("gpt_zero_shot_extractions.csv", show_col_types = FALSE) %>% mutate(Source = "GPT")
 claude   <- read_csv("20251215_131614_claude-haiku_zero-shot_TEST_extractions.csv", show_col_types = FALSE) %>% mutate(Source = "Claude")
 
-# Filter IDs and select TEST split
+# use test split
 remove_ids <- c(2681019, 5244530, 57750, 1216327, 3276927, 
                 3580751, 3751573, 4450164, 5498715, 5771543)
 
@@ -56,10 +50,7 @@ numeric_targets <- c("intervention_events", "intervention_group_size",
                      "intervention_mean", "intervention_standard_deviation", 
                      "comparator_mean", "comparator_standard_deviation")
 
-# ==============================================================================
-# 2. MATCHING LOGIC (REQUIRED FOR JACCARD)
-# ==============================================================================
-
+# Matching logic
 is_match <- function(gold, model, field_name) {
   diff <- abs(gold - model)
   match_abs <- diff <= ROUNDING_TOLERANCE
@@ -69,10 +60,7 @@ is_match <- function(gold, model, field_name) {
   return(match_abs | match_rel)
 }
 
-# ==============================================================================
-# 3. JACCARD CALCULATION FUNCTION
-# ==============================================================================
-
+# Jaccard Calculation
 calculate_numeric_jaccard <- function(gold_df, model_df, model_name) {
   joined <- left_join(gold_df, model_df, by = "ico_id", suffix = c(".gold", ".model")) %>% 
     mutate(intersection_count = 0, union_count = 0)
@@ -87,7 +75,7 @@ calculate_numeric_jaccard <- function(gold_df, model_df, model_name) {
       # Union: Data exists in either
       is_in_union = has_g | has_m,
       
-      # Intersection: Data exists in both AND matches tolerance
+      # Intersection: Data exists in both & matches tolerance
       is_in_intersection = has_g & has_m & is_match(val_g, val_m, field),
       
       union_count = union_count + as.integer(is_in_union),
@@ -103,11 +91,9 @@ calculate_numeric_jaccard <- function(gold_df, model_df, model_name) {
     select(ico_id, pmcid = pmcid.gold, Model, Jaccard_Index)
 }
 
-# ==============================================================================
-# 4. EXECUTE EVALUATIONS
-# ==============================================================================
+#evaluations
 
-# --- EVALUATION 1: COMPLETENESS (Model vs Gold) ---
+# model vs gold
 jaccard_vs_gold <- bind_rows(
   calculate_numeric_jaccard(gold_clean, models_list$Gemini, "Gemini"),
   calculate_numeric_jaccard(gold_clean, models_list$GPT, "GPT"),
@@ -116,7 +102,7 @@ jaccard_vs_gold <- bind_rows(
 table_completeness <- jaccard_vs_gold %>% group_by(Model) %>% 
   summarise(Mean_Jaccard = mean(Jaccard_Index, na.rm = TRUE))
 
-# --- EVALUATION 2: CONSENSUS (Model vs Model) ---
+# model vs model
 jaccard_consensus <- bind_rows(
   calculate_numeric_jaccard(models_list$Gemini, models_list$GPT, "Gemini vs GPT"),
   calculate_numeric_jaccard(models_list$GPT, models_list$Claude, "GPT vs Claude"),
@@ -125,7 +111,7 @@ jaccard_consensus <- bind_rows(
 table_consensus <- jaccard_consensus %>% group_by(Model) %>% 
   summarise(Mean_Agreement = mean(Jaccard_Index, na.rm = TRUE))
 
-# --- EVALUATION 3: ERROR ANALYSIS ---
+# error analysis
 analyze_errors <- function() {
   # Prepare wide data for comparison
   full_data <- gold_clean %>% select(ico_id, pmcid, all_of(numeric_targets)) %>% 
@@ -139,7 +125,7 @@ analyze_errors <- function() {
     GPT_Correct = is_match(Gold, GPT, Field), 
     Claude_Correct = is_match(Gold, Claude, Field),
     
-    # Consensus Check (Do models agree with each other?)
+    # Do models agree with each other?
     Models_Agree_Numeric = !is.na(Gemini) & !is.na(GPT) & !is.na(Claude) & is_match(Gemini, GPT, Field) & is_match(GPT, Claude, Field),
     Models_Agree_Missing = is.na(Gemini) & is.na(GPT) & is.na(Claude),
     Models_Consensus = Models_Agree_Numeric | Models_Agree_Missing,
@@ -158,23 +144,20 @@ analyze_errors <- function() {
 errors_df <- analyze_errors()
 table_error_dist <- errors_df %>% count(Error_Type, sort=TRUE) %>% mutate(Percentage = sprintf("%.1f%%", n/sum(n)*100))
 
-# ==============================================================================
-# 5. GENERATE OUTPUTS (CONSOLE + LATEX)
-# ==============================================================================
-
-# --- Table 1 ---
+#generate tables latex
+# Table 1
 cat("\n\n")
 print(kable(table_completeness, caption = "Table 1: Assessment of Extraction Completeness (Jaccard Index vs. Gold Standard)"))
 stargazer(as.data.frame(table_completeness), type = "latex", summary = FALSE, header = FALSE, rownames = FALSE,
           title = "Assessment of Extraction Completeness (Jaccard Index vs. Gold Standard)")
 
-# --- Table 2 ---
+# Table 2
 cat("\n\n")
 print(kable(table_consensus, caption = "Table 2: Inter-Model Consensus Assessment (Pairwise Jaccard Similarity)"))
 stargazer(as.data.frame(table_consensus), type = "latex", summary = FALSE, header = FALSE, rownames = FALSE,
           title = "Inter-Model Consensus Assessment (Pairwise Jaccard Similarity)")
 
-# --- Table 3 ---
+# Table 3
 cat("\n\n")
 print(kable(table_error_dist, caption = "Table 3: Taxonomy of Extraction Errors"))
 stargazer(as.data.frame(table_error_dist), type = "latex", summary = FALSE, header = FALSE, rownames = FALSE,
