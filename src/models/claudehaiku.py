@@ -43,7 +43,7 @@ class ClaudeHaikuModel(ModelAdapter):
         client = None if dry_run else Anthropic(api_key=self.api_key)
         messages = []
 
-        # Few-shot examples - cache the last assistant response
+        # Few-shot examples: cache only the final assistant response
         if payload.few_shot_examples:
             for idx, example in enumerate(payload.few_shot_examples):
                 is_last = (idx == len(payload.few_shot_examples) - 1)

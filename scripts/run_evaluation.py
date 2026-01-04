@@ -80,7 +80,7 @@ def run_evaluation_task(run_folder, split):
         return
 
     print("Step 3: Calculating metrics (includes bootstrap for CI)...")
-    # ÄNDRING: Ta emot två värden (metrics OCH detaljerad dataframe)
+    # calculate_metrics now returns both metrics and the detailed dataframe
     all_metrics, details_df = calculate_metrics(extractions, gold_standard)
     
     # NYTT: Spara detaljerna till CSV för Jaccard-analys

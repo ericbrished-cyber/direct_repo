@@ -18,7 +18,7 @@ CLAUDE_HAIKU_MODEL_VERSION = os.getenv("CLAUDE_HAIKU_MODEL_VERSION", "claude-hai
 GPT_MODEL_VERSION = os.getenv("GPT_MODEL_VERSION", "gpt-5.2")
 GEMINI_MODEL_VERSION = os.getenv("GEMINI_MODEL_VERSION", "gemini-3-pro-preview")
 
-CLAUDE_HAIKU_THINKING_BUDGET = int(os.getenv("CLAUDE_HAIKU_THINKING_BUDGET", "10000")) #resoning for haiku
+CLAUDE_HAIKU_THINKING_BUDGET = int(os.getenv("CLAUDE_HAIKU_THINKING_BUDGET", "10000")) # Thinking budget for Haiku
 
 # API Keys
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")

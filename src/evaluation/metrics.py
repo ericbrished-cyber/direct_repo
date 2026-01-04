@@ -22,7 +22,7 @@ class Evaluator:
         if 'pmcid' in self.extractions_df.columns:
             self.extractions_df['pmcid'] = self.extractions_df['pmcid'].astype(str)
         
-        # CHANGED: Added 'pmcid' to id_cols to preserve it for Cluster Bootstrap
+        # Keep pmcid so cluster bootstrap can still group by document
         self.id_cols = ['pmcid', 'intervention', 'comparator', 'outcome', 'outcome_type']
         
         self.numeric_fields = [
@@ -298,7 +298,7 @@ class Evaluator:
             "figures_subset": figures_output 
         }
         
-        # HÄR ÄR ÄNDRINGEN: Returnera tuple
+        # Return both the metrics dict and the long dataframe
         return metrics_dict, self.long_df
 
 def calculate_metrics(extractions: List[Dict], gold_standard: List[Dict]) -> Tuple[Dict[str, Any], pd.DataFrame]:

@@ -7,9 +7,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.run_extraction import run_extraction
 from scripts.run_evaluation import run_evaluation_task
 
-# ==========================================
-# CUSTOM CONFIGURATION
-# ==========================================
+
 
 # Select Model: "claude", "gpt", or "gemini"
 MODEL = "gemini"

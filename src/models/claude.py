@@ -40,7 +40,7 @@ class ClaudeModel(ModelAdapter):
         client = None if dry_run else Anthropic(api_key=self.api_key)
         messages = []
 
-        # Few-shot examples - cache the last assistant response
+        # Few-shot examples: cache only the last assistant response
         if payload.few_shot_examples:
             for idx, example in enumerate(payload.few_shot_examples):
                 is_last = (idx == len(payload.few_shot_examples) - 1)
@@ -58,17 +58,17 @@ class ClaudeModel(ModelAdapter):
                     ]
                 })
                 
-                # Assistant response - CACHE THE LAST ONE (this caches entire few-shot prefix)
+                # Assistant response: cache just the final few-shot reply to reuse the prefix
                 assistant_content = [{"type": "text", "text": example_answer}]
                 if is_last:
-                    assistant_content[0]["cache_control"] = {"type": "ephemeral", "ttl": "5m"} #MAYBE CHANGE TO "1h" before Test run
+                    assistant_content[0]["cache_control"] = {"type": "ephemeral", "ttl": "5m"} # Adjust TTL if we need longer cache later
                 
                 messages.append({
                     "role": "assistant",
                     "content": assistant_content
                 })
 
-        # Target PDF - NO CACHE (each PDF is processed only once)
+        # Target PDF is processed once, so skip caching here
         messages.append({
             "role": "user",
             "content": [
@@ -86,7 +86,7 @@ class ClaudeModel(ModelAdapter):
 
         # API call
         response = client.beta.messages.create(
-            model="claude-opus-4-5-20251101",  # Must be Claude Opus 4.5 "claude-opus-4-5-20251101"
+            model="claude-opus-4-5-20251101",  # Fixed to Claude Opus 4.5
             betas=["effort-2025-11-24"],  # Required beta header
             max_tokens=4096,
             messages=messages,

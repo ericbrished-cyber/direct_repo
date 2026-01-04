@@ -26,16 +26,13 @@ def main():
     print("Starting Experiment Pipeline")
     print("-" * 60)
 
-    # ---------------------------------------------------------
-    # STEP 1: EXTRACTION
-    # ---------------------------------------------------------
+    # Step 1: extraction
     if args.pmcid:
         print(f"\nPhase 1: Running Extraction ({args.model}, pmcid={args.pmcid})...")
     else:
         print(f"\nPhase 1: Running Extraction ({args.model}, split={args.split})...")
     
-    # Call the extraction script. 
-    # It returns the 'run_name' (e.g., "20251211_gpt_zero-shot_DEV")
+    # run_extraction returns the run folder name (e.g., "20251211_gpt_zero-shot_DEV")
     run_name = run_extraction(
         model_name=args.model,
         strategy=args.strategy,
@@ -47,8 +44,7 @@ def main():
         print("Error: Extraction failed or returned no run name. Aborting.")
         sys.exit(1)
 
-
-    # STEP 2: EVALUATION
+    # Step 2: evaluation
 
     if not args.skip_eval:
         print(f"\nPhase 2: Evaluating run '{run_name}'...")

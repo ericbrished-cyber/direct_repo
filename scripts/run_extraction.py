@@ -111,7 +111,7 @@ def run_extraction(model_name: str, strategy: str, split: str,
         model = GPTModel()
     elif model_name == "claude":
         model = ClaudeModel()
-    elif model_name == "claude-haiku":  # NEW
+    elif model_name == "claude-haiku":  # support for Claude Haiku runs
         model = ClaudeHaikuModel()
     elif model_name == "gemini":
         model = GeminiModel()
